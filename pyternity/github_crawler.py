@@ -34,11 +34,12 @@ class Tag:
     def is_major_version(self) -> bool:
         return bool(IS_MAJOR_VERSION.fullmatch(self.name))
 
-    def download_tarball(self, project_name: str, clean_download=True):
+    def download_tarball(self, project_name: str) -> Path:
         out_dir = EXAMPLES_DIR / project_name / self.name
         if out_dir.exists():
-            if not clean_download:
-                return
+            if not CLEAN_DOWNLOADS:
+                return out_dir
+
             shutil.rmtree(out_dir)
 
         tmp_file = TMP_DIR / f"{project_name}-{self.name}.tar.gz"
@@ -49,9 +50,13 @@ class Tag:
 
         tmp_file.unlink()
 
+        return out_dir
+
 
 @dataclass
 class GitHubProject:
+    owner: str
+    repo: str
     tags: list[Tag]
 
 
