@@ -71,4 +71,7 @@ if __name__ == '__main__':
         for major_tag in filter(attrgetter("is_major_version"), tags):
             path = major_tag.download_tarball("django")
             sign = calculate_signature_project(path)
-            plot_signature(sign, f"Modernity Signature for {repo}:{major_tag.name}")
+            plot_signature(
+                sign,
+                f"Modernity Signature for {repo}:{major_tag.name} ({major_tag.commit_date.date().isoformat()})"
+            )

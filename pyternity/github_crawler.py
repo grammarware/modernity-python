@@ -4,6 +4,7 @@ import shutil
 import tarfile
 import urllib
 from dataclasses import dataclass
+from datetime import datetime
 from functools import cached_property
 from itertools import count
 from urllib import request
@@ -26,9 +27,9 @@ class Tag:
     commit_url: str
 
     @cached_property
-    def commit_date(self) -> str:
+    def commit_date(self) -> datetime:
         commit = make_json_request(self.commit_url)
-        return commit["commit"]["author"]["date"]
+        return datetime.fromisoformat(commit["commit"]["author"]["date"])
 
     @property
     def is_major_version(self) -> bool:
