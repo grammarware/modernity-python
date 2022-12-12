@@ -1,3 +1,4 @@
+import multiprocessing
 import re
 from collections import defaultdict
 from operator import attrgetter
@@ -24,24 +25,25 @@ def get_features(project_folder: Path):
     # Per version, per feature
     detected_features = defaultdict(lambda: defaultdict(int))
 
-    for py_path in py_paths:
-        res = vermin.process_individual((py_path, VERMIN_CONFIG))
+    with multiprocessing.Pool(processes=VERMIN_CONFIG.processes()) as pool:
+        results = pool.imap_unordered(vermin.process_individual, ((path, VERMIN_CONFIG) for path in py_paths))
 
-        for line in res.text.splitlines():
-            # Grab the features that were detected which belong to a specific version
-            require_log = VERMIN_REQUIRE_LOG.fullmatch(line)
-            if not require_log:
-                # TODO Handles files with errors
-                logger.error(f"ERROR for {res.path}:\n{line}")
-                continue
+        for res in results:
+            for line in res.text.splitlines():
+                # Grab the features that were detected which belong to a specific version
+                require_log = VERMIN_REQUIRE_LOG.fullmatch(line)
+                if not require_log:
+                    # TODO Handles files with errors
+                    logger.error(f"ERROR for {res.path}:\n{line}")
+                    continue
 
-            feature, min_versions = require_log.groups()
-            min_v2, min_v3 = map(parse_vermin_version, min_versions.split(', '))
+                feature, min_versions = require_log.groups()
+                min_v2, min_v3 = map(parse_vermin_version, min_versions.split(', '))
 
-            if min_v2:
-                detected_features[min_v2][feature] += 1
-            elif min_v3:
-                detected_features[min_v3][feature] += 1
+                if min_v2:
+                    detected_features[min_v2][feature] += 1
+                elif min_v3:
+                    detected_features[min_v3][feature] += 1
 
     for version, features in sorted(detected_features.items()):
         print(version, max(features, key=features.get))
