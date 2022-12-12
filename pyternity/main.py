@@ -11,6 +11,7 @@ VERMIN_REQUIRE_LOG = re.compile(r"(.+) requires? (.+)")
 
 
 # TODO Check we if we need Backports, see --help
+@measure_time
 def get_features(project_folder: Path):
     logger.debug(f"Calculating signature for project: {project_folder.parent.name} {project_folder.name}")
     assert project_folder.exists()
@@ -25,9 +26,6 @@ def get_features(project_folder: Path):
 
     for py_path in py_paths:
         res = vermin.process_individual((py_path, VERMIN_CONFIG))
-
-        if not res.text:
-            continue
 
         for line in res.text.splitlines():
             # Grab the features that were detected which belong to a specific version
@@ -51,7 +49,8 @@ def get_features(project_folder: Path):
     return detected_features
 
 
-if __name__ == '__main__':
+@measure_time
+def main():
     setup_project()
 
     projects = ("django",)
@@ -69,3 +68,7 @@ if __name__ == '__main__':
                 signature,
                 f"Modernity Signature for {project.name} {release.version} ({release.upload_time.date().isoformat()}) [{release.requires_python}]"
             )
+
+
+if __name__ == '__main__':
+    main()
