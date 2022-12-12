@@ -18,6 +18,11 @@ logger = logging.getLogger('pyternity_logger')
 VERMIN_CONFIG = vermin.Config.parse_file(vermin.Config.detect_config_file())
 
 
+def parse_vermin_version(version: str) -> tuple[int, int] | None:
+    if target := vermin.utility.parse_target(version):
+        return target[1]
+
+
 class NonErrorsFilter(logging.Filter):
     def filter(self, logRecord: logging.LogRecord):
         return logRecord.levelno < logging.ERROR
