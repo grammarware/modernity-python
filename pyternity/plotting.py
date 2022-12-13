@@ -3,7 +3,7 @@ from pyternity.utils import *
 import matplotlib.pyplot as plt
 
 
-def plot_signature(signature: ModernitySignature, title: str):
+def plot_signature(signature, title: str):
     fig, ax = plt.subplots()
     fig.suptitle(title)
     ax.bar(

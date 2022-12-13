@@ -6,11 +6,12 @@ from typing import TypeAlias
 
 import vermin
 
-ModernitySignature: TypeAlias = dict[tuple[int, int], int]
+Features: TypeAlias = dict[tuple[int, int], dict[str, int]]
 
 ROOT_DIR = Path(__file__).parent.parent
 TMP_DIR = ROOT_DIR / "tmp"
 EXAMPLES_DIR = ROOT_DIR / "examples"
+RESULTS_DIR = ROOT_DIR / "results"
 
 CLEAN_DOWNLOADS = False
 
@@ -44,6 +45,7 @@ def setup_project():
     # Create missing directories
     TMP_DIR.mkdir(exist_ok=True)
     EXAMPLES_DIR.mkdir(exist_ok=True)
+    RESULTS_DIR.mkdir(exist_ok=True)
 
     # Setup logger, log normal logs and errors separately
     logger.setLevel(logging.DEBUG)
