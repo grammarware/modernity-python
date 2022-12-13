@@ -13,14 +13,14 @@ def get_features(project_folder: Path) -> Features:
     assert project_folder.exists()
 
     # Get all Python files in this folder
-    py_paths = vermin.detect_paths(str(project_folder.absolute()), config=VERMIN_CONFIG)
+    py_paths = vermin.detect_paths(str(project_folder.absolute()), config=Config.vermin)
     logger.debug(f"Found {len(py_paths)} python files.")
 
     # Per version, per feature
     detected_features = defaultdict(lambda: defaultdict(int))
 
-    with multiprocessing.Pool(processes=VERMIN_CONFIG.processes()) as pool:
-        results = pool.imap_unordered(vermin.process_individual, ((path, VERMIN_CONFIG) for path in py_paths))
+    with multiprocessing.Pool(processes=Config.vermin.processes()) as pool:
+        results = pool.imap_unordered(vermin.process_individual, ((path, Config.vermin) for path in py_paths))
 
         for res in results:
             for line in res.text.splitlines():
