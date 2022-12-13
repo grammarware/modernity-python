@@ -1,5 +1,5 @@
 from pyternity.pypi_crawler import Release
-from pyternity.python_versions import PYTHON_RELEASE_DATES, possible_versions
+from pyternity.python_versions import PYTHON_RELEASES, possible_versions
 import matplotlib.pyplot as plt
 
 from pyternity.utils import *
@@ -17,9 +17,9 @@ def plot_signature(signature: Signature, release: Release):
     )
     ax.set_xlabel("Python version")
     ax.set_ylabel("Amount of version-specific features")
-    bar_colors = ['tab:blue' if version in valid_versions else 'tab:red' for version in PYTHON_RELEASE_DATES]
+    bar_colors = ['tab:blue' if version in valid_versions else 'tab:red' for version in PYTHON_RELEASES]
     ax.bar(
-        list(PYTHON_RELEASE_DATES), [signature.get(version, 0) for version in PYTHON_RELEASE_DATES],
+        list(PYTHON_RELEASES), [signature.get(version, 0) for version in PYTHON_RELEASES],
         color=bar_colors
     )
 

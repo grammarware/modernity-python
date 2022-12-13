@@ -1,6 +1,6 @@
 from datetime import date
 
-PYTHON_RELEASE_DATES = {version: date.fromisoformat(d) for version, d in {
+PYTHON_RELEASES = {version: date.fromisoformat(d) for version, d in {
     "2.0": "2000-10-16",
     "2.1": "2001-04-15",
     "2.2": "2001-12-21",
@@ -25,4 +25,4 @@ PYTHON_RELEASE_DATES = {version: date.fromisoformat(d) for version, d in {
 
 
 def possible_versions(commit_date: date) -> set[tuple[int, int]]:
-    return {version for version, v_date in PYTHON_RELEASE_DATES.items() if v_date <= commit_date}
+    return {version for version, v_date in PYTHON_RELEASES.items() if v_date <= commit_date}
