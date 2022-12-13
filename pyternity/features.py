@@ -39,7 +39,8 @@ def get_features(project_folder: Path) -> Features:
                 elif min_v3:
                     detected_features[min_v3][feature] += 1
 
-    for version, features in sorted(detected_features.items()):
-        print(version, max(features, key=features.get))
-
     return detected_features
+
+
+def most_popular_per_version(all_features: Features):
+    return {version: max(features, key=features.get) for version, features in sorted(all_features.items())}

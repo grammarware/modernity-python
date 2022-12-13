@@ -7,6 +7,7 @@ from typing import TypeAlias
 import vermin
 
 Features: TypeAlias = dict[str, dict[str, int]]
+Signature: TypeAlias = dict[str, int]
 
 ROOT_DIR = Path(__file__).parent.parent
 TMP_DIR = ROOT_DIR / "tmp"

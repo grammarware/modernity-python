@@ -27,7 +27,7 @@ class Release:
         self.version = version
         self.filename: str = tar_file['filename']
         self.requires_python: str = tar_file['requires_python']
-        self.upload_time = datetime.fromisoformat(tar_file['upload_time'])
+        self.upload_date = datetime.fromisoformat(tar_file['upload_time']).date()
         self.url: str = tar_file['url']
 
     def download_files(self):

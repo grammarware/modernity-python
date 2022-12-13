@@ -24,5 +24,5 @@ PYTHON_RELEASE_DATES = {version: date.fromisoformat(d) for version, d in {
 }.items()}
 
 
-def possible_versions(commit_date: date) -> list[tuple[int, int]]:
-    return [version for version, v_date in PYTHON_RELEASE_DATES.items() if v_date <= commit_date]
+def possible_versions(commit_date: date) -> set[tuple[int, int]]:
+    return {version for version, v_date in PYTHON_RELEASE_DATES.items() if v_date <= commit_date}
