@@ -2,6 +2,7 @@ import json
 import re
 import shutil
 import tarfile
+import zipfile
 from datetime import datetime
 from typing import Any, Iterable
 from urllib import request
@@ -21,14 +22,14 @@ MINOR_VERSION = re.compile(r"\d+\.\d+")  # Also includes MAJOR_VERSIONS
 
 class Release:
     def __init__(self, project_name: str, version: str, files: list[dict[str, Any]]):
-        tar_file = next(file for file in files if file['packagetype'] == "sdist")
+        sdist_file = next(file for file in files if file['packagetype'] == "sdist")
 
         self.project_name = project_name.lower()
         self.version = version
-        self.filename: str = tar_file['filename']
-        self.requires_python: str = tar_file['requires_python']
-        self.upload_date = datetime.fromisoformat(tar_file['upload_time']).date()
-        self.url: str = tar_file['url']
+        self.filename: str = sdist_file['filename']
+        self.requires_python: str = sdist_file['requires_python']
+        self.upload_date = datetime.fromisoformat(sdist_file['upload_time']).date()
+        self.url: str = sdist_file['url']
 
     def download_files(self):
         out_dir = EXAMPLES_DIR / self.project_name / self.version
@@ -41,9 +42,13 @@ class Release:
         tmp_file = TMP_DIR / self.filename
         request.urlretrieve(self.url, tmp_file)
 
-        with tarfile.open(tmp_file, "r") as tar:
-            # TODO optimize: We only have to keep python files
-            tar.extractall(out_dir)
+        # TODO optimize: We only have to keep python files
+        if tarfile.is_tarfile(tmp_file):
+            with tarfile.open(tmp_file) as tar:
+                tar.extractall(out_dir)
+        else:
+            with zipfile.ZipFile(tmp_file) as tmp_zip:
+                tmp_zip.extractall(out_dir)
 
         tmp_file.unlink()
 
