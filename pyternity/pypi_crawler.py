@@ -16,7 +16,7 @@ from pyternity.utils import *
 
 PYPI_ENDPOINT = "https://pypi.org"
 
-MAJOR_VERSION = re.compile(r"\d+[.0]+")
+MAJOR_VERSION = re.compile(r"\d{1,7}(\.0)+")  # Exclude version schemes like 20171021.0 (e.g. home-assistant-frontend)
 MINOR_VERSION = re.compile(r"\d+\.\d+")  # Also includes MAJOR_VERSIONS
 
 
