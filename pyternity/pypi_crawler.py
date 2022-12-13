@@ -3,7 +3,7 @@ import re
 import shutil
 import tarfile
 from datetime import datetime
-from typing import Any
+from typing import Any, Iterable
 from urllib import request
 
 from pyternity import features
@@ -13,7 +13,7 @@ from pyternity.utils import *
 # Ideally we should use the Simple API, but we would also like to get the upload time for each version,
 # which is not yet supported (https://peps.python.org/pep-0700)
 
-PYPI_ENDPOINT = "https://pypi.org/pypi"
+PYPI_ENDPOINT = "https://pypi.org"
 
 MAJOR_VERSION = re.compile(r"\d+[.0]+")
 MINOR_VERSION = re.compile(r"\d+\.\d+")  # Also includes MAJOR_VERSIONS
@@ -79,8 +79,8 @@ class Release:
 
 class PyPIProject:
     def __init__(self, project_name: str):
-        with request.urlopen(f"{PYPI_ENDPOINT}/{project_name}/json") as f:
-            meta_data = json.loads(f.read())
+        with request.urlopen(f"{PYPI_ENDPOINT}/pypi/{project_name}/json") as f:
+            meta_data = json.load(f)
 
             self.name = meta_data['info']['name']
             self.releases = []
@@ -91,3 +91,14 @@ class PyPIProject:
                 except StopIteration:
                     # Not all releases have a tar file, skip those
                     continue
+
+
+def get_most_popular_projects() -> Iterable[str]:
+    """
+    See: https://pypi.org/stats, refreshes each 24 hours
+    :return: 100 most Popular PyPI projects
+    """
+    req = request.Request(f"{PYPI_ENDPOINT}/stats", headers={"accept": "application/json"})
+    with request.urlopen(req) as f:
+        res = json.load(f)
+        return res["top_packages"].keys()
