@@ -16,8 +16,9 @@ from pyternity.utils import *
 
 PYPI_ENDPOINT = "https://pypi.org"
 
-MAJOR_VERSION = re.compile(r"\d{1,7}(\.0)+")  # Exclude version schemes like 20171021.0 (e.g. home-assistant-frontend)
-MINOR_VERSION = re.compile(r"\d+\.\d+")  # Also includes MAJOR_VERSIONS
+# Exclude version schemes like 20171021.0 (e.g. home-assistant-frontend)
+MAJOR_VERSION = re.compile(r"\d{1,7}(\.0)*")
+MINOR_VERSION = re.compile(r"\d{1,7}\.\d+(\.0)*")  # Also includes MAJOR_VERSIONS
 
 
 class Release:
@@ -27,7 +28,7 @@ class Release:
         self.project_name = project_name.lower()
         self.version = version
         self.filename: str = sdist_file['filename']
-        self.requires_python: str = sdist_file['requires_python']
+        self.requires_python: str = sdist_file['requires_python'] or ''
         self.upload_date = datetime.fromisoformat(sdist_file['upload_time']).date()
         self.url: str = sdist_file['url']
 
@@ -40,6 +41,7 @@ class Release:
         return bool(MINOR_VERSION.fullmatch(self.version))
 
     def __lt__(self, other: Self):
+        # TODO we need the time part here also
         return self.upload_date < other.upload_date
 
     def download_files(self):
