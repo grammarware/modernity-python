@@ -39,12 +39,8 @@ class Release:
     def is_minor(self) -> bool:
         return bool(MINOR_VERSION.fullmatch(self.version))
 
-    @property
-    def parsed_version(self) -> tuple[int, ...]:
-        return tuple(int(''.join(filter(str.isdigit, v)) or '0') for v in self.version.split('.'))
-
     def __lt__(self, other: Self):
-        return self.parsed_version < other.parsed_version
+        return self.upload_date < other.upload_date
 
     def download_files(self):
         out_dir = EXAMPLES_DIR / self.project_name / self.version
