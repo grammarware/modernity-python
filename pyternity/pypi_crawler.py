@@ -4,7 +4,7 @@ import shutil
 import tarfile
 import zipfile
 from datetime import datetime
-from typing import Any, Iterable
+from typing import Any, Iterable, Self
 from urllib import request
 
 from pyternity import features
@@ -31,6 +31,21 @@ class Release:
         self.upload_date = datetime.fromisoformat(sdist_file['upload_time']).date()
         self.url: str = sdist_file['url']
 
+    @property
+    def is_major(self) -> bool:
+        return bool(MAJOR_VERSION.fullmatch(self.version))
+
+    @property
+    def is_minor(self) -> bool:
+        return bool(MINOR_VERSION.fullmatch(self.version))
+
+    @property
+    def parsed_version(self) -> tuple[int, ...]:
+        return tuple(int(''.join(filter(str.isdigit, v)) or '0') for v in self.version.split('.'))
+
+    def __lt__(self, other: Self):
+        return self.parsed_version < other.parsed_version
+
     def download_files(self):
         out_dir = EXAMPLES_DIR / self.project_name / self.version
         if out_dir.exists():
@@ -53,14 +68,6 @@ class Release:
         tmp_file.unlink()
 
         return out_dir
-
-    @property
-    def is_major(self) -> bool:
-        return bool(MAJOR_VERSION.fullmatch(self.version))
-
-    @property
-    def is_minor(self) -> bool:
-        return bool(MINOR_VERSION.fullmatch(self.version))
 
     def get_features(self) -> Features:
         result_path = RESULTS_DIR / self.project_name / (self.version + '.json')
@@ -88,14 +95,16 @@ class PyPIProject:
             meta_data = json.load(f)
 
             self.name = meta_data['info']['name']
-            self.releases = []
 
+            releases = []
             for version, files in meta_data['releases'].items():
                 try:
-                    self.releases.append(Release(self.name, version, files))
+                    releases.append(Release(self.name, version, files))
                 except StopIteration:
                     # Not all releases have a tar file, skip those
                     continue
+
+            self.releases = sorted(releases)
 
 
 def get_most_popular_projects() -> Iterable[str]:
