@@ -1,9 +1,6 @@
 import multiprocessing
-import re
 from collections import defaultdict
 from pyternity.utils import *
-
-VERMIN_REQUIRE_LOG = re.compile(r"(.+) requires? (.+)")
 
 
 # TODO Check we if we need Backports, see --help
@@ -25,23 +22,24 @@ def get_features(project_folder: Path) -> Features:
         for res in results:
             for line in res.text.splitlines():
                 # It also dumps the whole AST, skip that
-                if line.startswith('|'):
+                # But we need print_visits=yes, else it will only output unique missing features
+                if line[0] == '|':
                     continue
 
-                # Grab the features that were detected which belong to a specific version
-                require_log = VERMIN_REQUIRE_LOG.fullmatch(line)
-                if not require_log:
-                    # TODO Handles files with errors
+                try:
+                    # Grab the features that were detected which belong to a specific version
+                    # Format: file:line:column:py2:py3:feature
+                    _, py2, py3, feature = line.rsplit(':', maxsplit=3)
+
+                    if min_v2 := parse_vermin_version(py2):
+                        detected_features[min_v2][feature] += 1
+                    elif min_v3 := parse_vermin_version(py3):
+                        detected_features[min_v3][feature] += 1
+
+                except ValueError:
+                    # TODO Handle files with errors
                     logger.error(f"ERROR for {res.path}:\n{line}")
                     continue
-
-                feature, min_versions = require_log.groups()
-                min_v2, min_v3 = map(parse_vermin_version, min_versions.split(', '))
-
-                if min_v2:
-                    detected_features[min_v2][feature] += 1
-                elif min_v3:
-                    detected_features[min_v3][feature] += 1
 
     return detected_features
 
