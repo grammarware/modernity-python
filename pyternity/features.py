@@ -35,6 +35,8 @@ def get_features(project_folder: Path) -> Features:
                         detected_features[min_v2][feature] += 1
                     elif min_v3 := parse_vermin_version(py3):
                         detected_features[min_v3][feature] += 1
+                    else:
+                        logger.error(f"ERROR for {res.path}:\n{line}")
 
                 except ValueError:
                     # TODO Handle files with errors
