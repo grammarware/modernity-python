@@ -24,6 +24,10 @@ def get_features(project_folder: Path) -> Features:
 
         for res in results:
             for line in res.text.splitlines():
+                # It also dumps the whole AST, skip that
+                if line.startswith('|'):
+                    continue
+
                 # Grab the features that were detected which belong to a specific version
                 require_log = VERMIN_REQUIRE_LOG.fullmatch(line)
                 if not require_log:
