@@ -99,7 +99,7 @@ class PyPIProject:
                 try:
                     releases.append(Release(self.name, version, files))
                 except StopIteration:
-                    # Not all releases have a tar file, skip those
+                    # Not all releases have a sdist file, skip those
                     continue
 
             self.releases = sorted(releases)
