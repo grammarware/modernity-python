@@ -34,12 +34,11 @@ def get_features(project_folder: Path) -> Features:
                     # Format: file:line:column:py2:py3:feature
                     _, py2, py3, feature = line.rsplit(':', maxsplit=3)
 
+                    # Some features are both specified in 2 and 3 (like argparse module)
                     if min_v2 := parse_vermin_version(py2):
                         detected_features[min_v2][feature] += 1
-                    elif min_v3 := parse_vermin_version(py3):
+                    if min_v3 := parse_vermin_version(py3):
                         detected_features[min_v3][feature] += 1
-                    else:
-                        logger.error(f"ERROR for {res.path}:\n{line}")
 
                 except ValueError:
                     # TODO Handle files with errors
