@@ -1,19 +1,15 @@
-import re
+import shutil
 import unittest
-from pathlib import Path
+import warnings
 
-from sphinx.builders.changes import ChangesBuilder
+from sphinx.application import Sphinx
 
-from pyternity import features
-from pyternity.utils import Features, TMP_DIR, setup_project, Config
-
-
-def msg_features(d: Features):
-    return {k: dict(sorted(v.items())) for k, v in sorted(d.items())}
-
+from pyternity.utils import TMP_DIR, setup_project, Config, ROOT_DIR
+from tests.test_utils import test_code
 
 # Idea; read all doc files, and look for  .. versionchanged / .. versionadded
 # https://github.com/python/cpython/tree/main/Doc/library
+# Changelogs itself don't always include all changes from the whole documentation, as it turns out
 
 
 # https://docs.python.org/3/whatsnew/3.9.html
@@ -64,9 +60,13 @@ PYTHON_3_9 = {
 
 }
 
+sphinx_test_case: unittest.TestCase
 
-# from concurrent import futures
-# futures.Executor().shutdown(cancel_futures=True)
+
+def get_sphinx_test_case():
+    global sphinx_test_case
+    return sphinx_test_case
+
 
 class TestFeatures(unittest.TestCase):
 
@@ -76,101 +76,54 @@ class TestFeatures(unittest.TestCase):
         Config.vermin.set_processes(1)
 
     def test_version_3_9(self):
-        for test_code, test_result in PYTHON_3_9.items():
-            # Note: tempfile library cannot be used here, since Vermin reopens the file
-            tmp_file = TMP_DIR / "python39.py"
+        for code, test_result in PYTHON_3_9.items():
+            test_code(self, code, test_result)
 
-            if not tmp_file.exists():
-                with tmp_file.open('w') as f:
-                    f.write(test_code)
+    def test_from_changelog(self):
+        # Copy the custom sphinx extension to the right place
+        doc_dir = TMP_DIR / 'Python' / 'Doc'
+        sphinx_file = ROOT_DIR / 'tests' / 'sphinx_extension.py'
+        shutil.copyfile(sphinx_file, doc_dir / 'tools' / 'extensions' / 'sphinx_extension.py')
 
-            f = features.get_features(tmp_file)
-            tmp_file.unlink()
+        # TODO Download (the latest) python source
 
-            with self.subTest(test_code):
-                self.assertDictEqual(f, test_result, msg_features(f))
+        # We need the whole Python source, since a sphinx-extension uses relative importing
 
+        # TODO load extensions dynamically from the conf.py file
+        # spec = importlib.util.spec_from_file_location('sphinx.conf', doc_dir / 'conf.py')
+        # module = importlib.util.module_from_spec(spec)
+        # sys.modules['sphinx.conf'] = module
+        # spec.loader.exec_module(module)
+        # See conf.py for all settings (https://github.com/python/cpython/blob/main/Doc/conf.py)
+        extensions = ['sphinx.ext.coverage', 'sphinx.ext.doctest', 'pyspecific', 'c_annotations', 'escape4chm',
+                      'asdl_highlight', 'peg_highlight', 'glossary_search', 'sphinx_extension']
 
-from html.parser import HTMLParser
+        # TODO do something with the warnings (not from my code, but from python source)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
 
+            srcdir = str(doc_dir.absolute())
+            exclude_patterns = {f"{f.name}/*" if f.is_dir() else f.name for f in doc_dir.iterdir()} - {"library/*"}
 
-class MyHTMLParser(HTMLParser):
+            # Options can be found here:
+            # https://www.sphinx-doc.org/en/master/usage/configuration.html
+            # https://www.sphinx-doc.org/en/master/man/sphinx-build.html
+            app = Sphinx(
+                srcdir=srcdir,
+                confdir=srcdir,
+                outdir=str((doc_dir / 'build').absolute()),
+                doctreedir=str(((doc_dir / 'build' / '.doctrees').absolute())),
+                buildername="dummy",
+                freshenv=True,
+                keep_going=True,
+                confoverrides={
+                    'extensions': ','.join(extensions),
+                    'exclude_patterns': ','.join(exclude_patterns)  # We are only interested in library changes
+                }
+            )
 
-    CLEAN_DATA = re.compile(r" +")
-    ADDED_PARAMETER = re.compile(r"Added the (.*) parameter")
-    NEW_IN_VERSION = re.compile(r"New in version \d+\.\d+\.")
-
-    def __init__(self, *, convert_charrefs: bool = ...):
-        super().__init__()
-        self.new_thing = ""
-        self.current_module = ""
-
-    def handle_starttag(self, tag, attrs):
-        pass
-        # print("Encountered a start tag:", tag)
-
-    def handle_endtag(self, tag):
-        pass
-        # print("Encountered an end tag :", tag)
-
-    def handle_data(self, data):
-        data = data.strip().replace('\n', '')
-        data = self.CLEAN_DATA.sub(' ', data)
-        if data in ("", ":"):
-            return
-
-        # print(f"{self.lasttag=}; {data=}")
-
-        if self.lasttag == 'h4':
-            self.current_module = data.lower()
-
-        elif self.lasttag == 'b':
-            self.new_thing = data
-
-        elif self.lasttag == 'h2' and data != 'Library changes':
-            raise StopIteration
-
-        elif self.lasttag == 'i':
-            if self.NEW_IN_VERSION.fullmatch(data):
-
-                if self.new_thing.startswith('-'):
-                    # We do not test for newly added CLI parameters
-                    return
-
-                # print('new function/class etc..', self.current_module, self.new_thing)
-                print(f"import {self.current_module}\n{self.current_module}.{self.new_thing}")
-
-            #
-
-
-
-            # if self.ADDED_PARAMETER.match(data):
-            #     print("New parameter: ...", data)
-
-        pass
-        # print("Encountered some data  :", data)
-
-
-def build_tests_from_changes(changes_html_file: Path):
-    parser = MyHTMLParser()
-
-    with changes_html_file.open() as f:
-        try:
-            parser.feed(f.read())
-        except StopIteration:
-            pass
-
-
-class TestFromDocs(unittest.TestCase):
-    def test_docs(self):
-        html_file = TMP_DIR / 'cpython-main' / 'Doc' / 'build' / 'changes311' / 'changes.html'
-
-        build_tests_from_changes(html_file)
-
-    # Steps:
-    # Download the latest python source
-    # See conf.py for all settings (https://github.com/python/cpython/blob/main/Doc/conf.py)
-    # Run .\sphinx-build.exe -bchanges -D version=3.11 -D release=3.11.0 C:\Users\cpAdm\PycharmProjects\Pyternity\tmp\cpython-main\Doc C:\Users\cpAdm\PycharmProjects\Pyternity\tmp\cpython-main\Doc\build\changes311
+            app.build()
+            self.assertEquals(app.statuscode, 0)
 
 
 if __name__ == '__main__':
