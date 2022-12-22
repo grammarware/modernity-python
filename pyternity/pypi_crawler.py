@@ -52,6 +52,7 @@ class Release:
 
             shutil.rmtree(out_dir)
 
+        # TODO use tempfile https://docs.python.org/3/library/tempfile.html
         tmp_file = TMP_DIR / self.filename
         request.urlretrieve(self.url, tmp_file)
 
