@@ -1,20 +1,20 @@
+from pathlib import Path
+
 import sphinx.application
 import sphinx.addnodes
 
-from pyternity.utils import Features
-from tests.test_utils import get_features_from_test_code
-
-
-def save_test_case(code: str, expected: Features):
-    print(repr(code), expected)
-    # TODO Instead of testing here, just write all test_cases to file
+from tests.test_utils import get_features_from_test_code, save_test_case
 
 
 def generate_test_cases(app: sphinx.application.Sphinx, doctree: sphinx.addnodes.document):
-    print(doctree.attributes['source'])
+    # We are only interested in changes in the library
+    source = doctree.attributes['source']
+    if Path(source).parent.name != "library":
+        return
+
+    print(source)
 
     # TODO This does not test features that are completely removed in the Python docs
-
     for node in doctree.findall():
         if node.tagname != "versionmodified":
             continue
@@ -22,7 +22,11 @@ def generate_test_cases(app: sphinx.application.Sphinx, doctree: sphinx.addnodes
         version = node.attributes['version']
         # TODO handle version if it is a tuple
         if isinstance(version, str):
-            test_case = handle_versionmodified(version, node)
+            try:
+                test_case = handle_versionmodified(version, node)
+            except:
+                # TODO fix all errors
+                continue
             if test_case:
                 save_test_case(*test_case)
             else:

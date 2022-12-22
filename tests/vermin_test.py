@@ -1,11 +1,11 @@
+import ast
 import shutil
 import unittest
-import warnings
 
 from sphinx.application import Sphinx
 
 from pyternity.utils import TMP_DIR, setup_project, Config, ROOT_DIR
-from tests.test_utils import test_code
+from tests.test_utils import test_code, get_test_cases, TEST_CASES_FILE
 
 # Idea; read all doc files, and look for  .. versionchanged / .. versionadded
 # https://github.com/python/cpython/tree/main/Doc/library
@@ -60,13 +60,6 @@ PYTHON_3_9 = {
 
 }
 
-sphinx_test_case: unittest.TestCase
-
-
-def get_sphinx_test_case():
-    global sphinx_test_case
-    return sphinx_test_case
-
 
 class TestFeatures(unittest.TestCase):
 
@@ -80,50 +73,46 @@ class TestFeatures(unittest.TestCase):
             test_code(self, code, test_result)
 
     def test_from_changelog(self):
+        # Clear previous run
+        TEST_CASES_FILE.unlink(missing_ok=True)
+
         # Copy the custom sphinx extension to the right place
         doc_dir = TMP_DIR / 'Python' / 'Doc'
         sphinx_file = ROOT_DIR / 'tests' / 'sphinx_extension.py'
         shutil.copyfile(sphinx_file, doc_dir / 'tools' / 'extensions' / 'sphinx_extension.py')
 
-        # TODO Download (the latest) python source
-
+        # TODO Download (the latest?) python source
         # We need the whole Python source, since a sphinx-extension uses relative importing
 
-        # TODO load extensions dynamically from the conf.py file
-        # spec = importlib.util.spec_from_file_location('sphinx.conf', doc_dir / 'conf.py')
-        # module = importlib.util.module_from_spec(spec)
-        # sys.modules['sphinx.conf'] = module
-        # spec.loader.exec_module(module)
-        # See conf.py for all settings (https://github.com/python/cpython/blob/main/Doc/conf.py)
-        extensions = ['sphinx.ext.coverage', 'sphinx.ext.doctest', 'pyspecific', 'c_annotations', 'escape4chm',
-                      'asdl_highlight', 'peg_highlight', 'glossary_search', 'sphinx_extension']
+        # Load 'extensions' dynamically from the conf.py file (https://github.com/python/cpython/blob/main/Doc/conf.py)
+        # And add our extension to it
+        with (doc_dir / 'conf.py').open() as f:
+            for e in ast.parse(f.read()).body:
+                if isinstance(e, ast.Assign):
+                    name = e.targets[0]
+                    if isinstance(name, ast.Name) and name.id == "extensions":
+                        extensions = [c.value for c in e.value.elts] + ['sphinx_extension']
 
-        # TODO do something with the warnings (not from my code, but from python source)
-        with warnings.catch_warnings():
-            warnings.simplefilter("ignore")
+        # Options can be found here:
+        # https://www.sphinx-doc.org/en/master/usage/configuration.html
+        # https://www.sphinx-doc.org/en/master/man/sphinx-build.html
+        app = Sphinx(
+            srcdir=doc_dir,
+            confdir=doc_dir,
+            outdir=doc_dir / 'build',
+            doctreedir=doc_dir / 'build' / '.doctrees',
+            buildername="dummy",
+            freshenv=True,
+            keep_going=True,
+            confoverrides={'extensions': ','.join(extensions)}
+        )
 
-            srcdir = str(doc_dir.absolute())
-            exclude_patterns = {f"{f.name}/*" if f.is_dir() else f.name for f in doc_dir.iterdir()} - {"library/*"}
+        app.build()
 
-            # Options can be found here:
-            # https://www.sphinx-doc.org/en/master/usage/configuration.html
-            # https://www.sphinx-doc.org/en/master/man/sphinx-build.html
-            app = Sphinx(
-                srcdir=srcdir,
-                confdir=srcdir,
-                outdir=str((doc_dir / 'build').absolute()),
-                doctreedir=str(((doc_dir / 'build' / '.doctrees').absolute())),
-                buildername="dummy",
-                freshenv=True,
-                keep_going=True,
-                confoverrides={
-                    'extensions': ','.join(extensions),
-                    'exclude_patterns': ','.join(exclude_patterns)  # We are only interested in library changes
-                }
-            )
+        for code, expected in get_test_cases().items():
+            test_code(self, code, expected)
 
-            app.build()
-            self.assertEquals(app.statuscode, 0)
+        self.assertEqual(app.statuscode, 0)
 
 
 if __name__ == '__main__':

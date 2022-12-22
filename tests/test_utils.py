@@ -1,7 +1,10 @@
+import json
 import unittest
 
 from pyternity import features
-from pyternity.utils import TMP_DIR, Features
+from pyternity.utils import TMP_DIR, Features, ROOT_DIR
+
+TEST_CASES_FILE = ROOT_DIR / 'tests' / 'generated_test_cases.json'
 
 
 def msg_features(code: str, actual: Features, expected: Features):
@@ -13,10 +16,7 @@ def test_code(test_case: unittest.TestCase, code: str, test_result: Features):
     print(f"TEST: {code=}")
     actual = get_features_from_test_code(code)
     with test_case.subTest(code):
-        try:
-            test_case.assertDictEqual(actual, test_result, msg_features(code, actual, test_result))
-        except AssertionError as e:
-            print(e)
+        test_case.assertDictEqual(actual, test_result, msg_features(code, actual, test_result))
 
 
 def get_features_from_test_code(code: str) -> Features:
@@ -29,5 +29,19 @@ def get_features_from_test_code(code: str) -> Features:
     return features.get_features(tmp_file)
 
 
-def get_import_feature(module: str):
-    pass
+def save_test_case(code: str, expected: Features):
+    print(repr(code), expected)
+
+    test_cases = get_test_cases()
+    test_cases[code] = expected
+
+    with TEST_CASES_FILE.open('w+') as f:
+        json.dump(test_cases, f)
+
+
+def get_test_cases():
+    try:
+        with TEST_CASES_FILE.open() as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {}
