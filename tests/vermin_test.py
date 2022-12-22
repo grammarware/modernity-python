@@ -1,6 +1,6 @@
 import ast
-import shutil
 import unittest
+from pathlib import Path
 
 from sphinx.application import Sphinx
 
@@ -76,22 +76,13 @@ class TestFeatures(unittest.TestCase):
         # Clear previous run
         TEST_CASES_FILE.unlink(missing_ok=True)
 
-        # Copy the custom sphinx extension to the right place
-        doc_dir = TMP_DIR / 'Python' / 'Doc'
-        sphinx_file = ROOT_DIR / 'tests' / 'sphinx_extension.py'
-        shutil.copyfile(sphinx_file, doc_dir / 'tools' / 'extensions' / 'sphinx_extension.py')
-
         # TODO Download (the latest?) python source
         # We need the whole Python source, since a sphinx-extension uses relative importing
 
         # Load 'extensions' dynamically from the conf.py file (https://github.com/python/cpython/blob/main/Doc/conf.py)
         # And add our extension to it
-        with (doc_dir / 'conf.py').open() as f:
-            for e in ast.parse(f.read()).body:
-                if isinstance(e, ast.Assign):
-                    name = e.targets[0]
-                    if isinstance(name, ast.Name) and name.id == "extensions":
-                        extensions = [c.value for c in e.value.elts] + ['sphinx_extension']
+        doc_dir = TMP_DIR / 'Python' / 'Doc'
+        extensions = get_variable_from_file(doc_dir / 'conf.py', "extensions") + ['sphinx_extension']
 
         # Options can be found here:
         # https://www.sphinx-doc.org/en/master/usage/configuration.html
@@ -107,12 +98,22 @@ class TestFeatures(unittest.TestCase):
             confoverrides={'extensions': ','.join(extensions)}
         )
 
+        # Generate test cases and test them
         app.build()
 
         for code, expected in get_test_cases().items():
             test_code(self, code, expected)
 
         self.assertEqual(app.statuscode, 0)
+
+
+def get_variable_from_file(file: Path, variable_name: str):
+    with file.open() as f:
+        for e in ast.parse(f.read()).body:
+            if isinstance(e, ast.Assign):
+                name = e.targets[0]
+                if isinstance(name, ast.Name) and name.id == variable_name:
+                    return [c.value for c in e.value.elts]
 
 
 if __name__ == '__main__':
