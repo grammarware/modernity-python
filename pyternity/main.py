@@ -1,5 +1,5 @@
 from pyternity.features import most_popular_per_version
-from pyternity.plotting import plot_signature
+from pyternity.plotting import plot_signature, plot_signatures
 from pyternity.pypi_crawler import PyPIProject, get_most_popular_projects
 from pyternity.utils import *
 
@@ -14,7 +14,9 @@ def main():
     for project_name in projects:
         project = PyPIProject(project_name)
 
-        releases = [release for release in project.releases if release.is_major]
+        signatures = {}
+
+        releases = [release for release in project.releases if release.is_minor]
         for release in releases:
             try:
                 features = release.get_features()
@@ -24,9 +26,12 @@ def main():
                 continue
 
             signature = {version: sum(features.values()) for version, features in features.items()}
-            plot_signature(signature, release)
+            # plot_signature(signature, release)
+            signatures[release] = signature
 
-        if not releases:
+        if releases:
+            plot_signatures(project, signatures)
+        else:
             logger.warning(f"No major versions found for {project.name:30}: "
                            f"{[release.version for release in project.releases]}")
 
