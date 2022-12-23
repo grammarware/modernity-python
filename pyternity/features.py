@@ -34,11 +34,13 @@ def get_features(project_folder: Path) -> Features:
                     # Format: file:line:column:py2:py3:feature
                     _, py2, py3, feature = line.rsplit(':', maxsplit=3)
 
-                    # Some features are both specified in 2 and 3 (like argparse module)
-                    # TODO But don't include general 3.0, if already added by a python 2.x version
-                    if min_v2 := parse_vermin_version(py2):
+                    # Some features are both specified in 2.7 and 3.1 (like argparse module)
+                    # But don't include general 3.0, if features was already added by a python 2.x version
+                    min_v2, min_v3 = parse_vermin_version(py2), parse_vermin_version(py3)
+
+                    if min_v2:
                         detected_features[min_v2][feature] += 1
-                    if min_v3 := parse_vermin_version(py3):
+                    if min_v3 and (not min_v2 or min_v3 != "3.0"):
                         detected_features[min_v3][feature] += 1
 
                 except ValueError:
