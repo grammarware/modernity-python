@@ -1,5 +1,6 @@
 import json
 import unittest
+from pathlib import Path
 
 from pyternity import features
 from pyternity.utils import TMP_DIR, Features, ROOT_DIR
@@ -45,3 +46,12 @@ def get_test_cases():
             return json.load(f)
     except FileNotFoundError:
         return {}
+
+
+
+def save_doc_tree(out_dir: str, tree_name: str, doc_tree: str):
+    doc_trees_dir = Path(out_dir) / 'doctrees'
+    doc_trees_dir.mkdir(exist_ok=True)
+
+    with (doc_trees_dir / (tree_name + '.xml')).open('w', encoding='utf-8') as f:
+        f.write(doc_tree)

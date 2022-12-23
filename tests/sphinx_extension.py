@@ -3,22 +3,22 @@ from pathlib import Path
 import sphinx.application
 import sphinx.addnodes
 
-from tests.test_utils import get_features_from_test_code, save_test_case
+from tests.test_utils import get_features_from_test_code, save_test_case, save_doc_tree
 
 
 def generate_test_cases(app: sphinx.application.Sphinx, doctree: sphinx.addnodes.document):
     # We are only interested in changes in the library
-    source = doctree.attributes['source']
-    if Path(source).parent.name != "library":
+    source = Path(doctree.attributes['source'])
+    if source.parent.name != "library":
         return
 
     print(source)
 
-    # TODO This does not test features that are completely removed in the Python docs
-    for node in doctree.findall():
-        if node.tagname != "versionmodified":
-            continue
+    # Save doctree for debugging purposes
+    save_doc_tree(app.outdir, source.stem, doctree.asdom().toprettyxml())
 
+    # TODO This does not test features that are completely removed in the Python docs
+    for node in doctree.findall(sphinx.addnodes.versionmodified):
         version = node.attributes['version']
         # TODO handle version if it is a tuple
         if isinstance(version, str):
