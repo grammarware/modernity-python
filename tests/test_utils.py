@@ -34,7 +34,15 @@ def save_test_case(code: str, expected: Features):
     print(repr(code), expected)
 
     test_cases = get_test_cases()
-    test_cases[code] = expected
+    # FIXME code='import collections\ncollections.deque'
+    #  --> Actual: {'2.4': {"'collections' module": 1, "'collections.deque' member": 1}}
+    #  --> Expect: {'2.4': {"'collections.deque' member": 1}}
+    #  It should iterate over the versions and combine that
+
+    # for version, expected_features in expected.items():
+    #     for expected_feature, count in expected_features.items():
+
+    test_cases[code] = test_cases.get(code, {}) | expected
 
     with TEST_CASES_FILE.open('w+') as f:
         json.dump(test_cases, f)

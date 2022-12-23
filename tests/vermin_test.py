@@ -2,9 +2,10 @@ import ast
 import unittest
 from pathlib import Path
 
-from sphinx.application import Sphinx
+import sphinx.domains.python
+import sphinx.application
 
-from pyternity.utils import TMP_DIR, setup_project, Config, ROOT_DIR
+from pyternity.utils import TMP_DIR, setup_project, Config
 from tests.test_utils import test_code, get_test_cases, TEST_CASES_FILE
 
 # Idea; read all doc files, and look for  .. versionchanged / .. versionadded
@@ -76,35 +77,49 @@ class TestFeatures(unittest.TestCase):
         # Clear previous run
         TEST_CASES_FILE.unlink(missing_ok=True)
 
-        # TODO Download (the latest?) python source
+        # TODO Download (the latest?) python sources:
+        #  2.7 will not change: https://www.python.org/downloads/release/python-2718/
+        #  3.x
+        # We combine the results, since some features are both belonging to python 2.x and python 3.x
         # We need the whole Python source, since a sphinx-extension uses relative importing
 
-        # Load 'extensions' dynamically from the conf.py file (https://github.com/python/cpython/blob/main/Doc/conf.py)
-        # And add our extension to it
-        doc_dir = TMP_DIR / 'Python' / 'Doc'
-        extensions = get_variable_from_file(doc_dir / 'conf.py', "extensions") + ['sphinx_extension']
+        # Monkey patch the following two classes, which are replacements in newer version of sphinx
+        # Used in extensions/pyspecific.py (only for Python 2.7)
+        sphinx.domains.python.PyModulelevel = sphinx.domains.python.PyFunction
+        sphinx.domains.python.PyClassmember = sphinx.domains.python.PyMethod
+        self.assertEqual(generate_test_cases(TMP_DIR / 'Python-2.7.18' / 'Doc'), 0)
 
-        # Options can be found here:
-        # https://www.sphinx-doc.org/en/master/usage/configuration.html
-        # https://www.sphinx-doc.org/en/master/man/sphinx-build.html
-        app = Sphinx(
-            srcdir=doc_dir,
-            confdir=doc_dir,
-            outdir=doc_dir / 'build',
-            doctreedir=doc_dir / 'build' / '.doctrees',
-            buildername="dummy",
-            freshenv=True,
-            keep_going=True,
-            confoverrides={'extensions': ','.join(extensions)}
-        )
-
-        # Generate test cases and test them
-        app.build()
+        # Using Sphinx app twice, does cause some errors, which don't appear when running this version solely
+        # But these errors don't seem to hinder our results
+        self.assertEqual(generate_test_cases(TMP_DIR / 'Python3' / 'Doc'), 0)
 
         for code, expected in get_test_cases().items():
             test_code(self, code, expected)
 
-        self.assertEqual(app.statuscode, 0)
+
+def generate_test_cases(doc_dir: Path):
+    # Load 'extensions' dynamically from the conf.py file (https://github.com/python/cpython/blob/main/Doc/conf.py)
+    # And add our extension to it
+    extensions = get_variable_from_file(doc_dir / 'conf.py', "extensions") + ['sphinx_extension']
+
+    # Options can be found here:
+    # https://www.sphinx-doc.org/en/master/usage/configuration.html
+    # https://www.sphinx-doc.org/en/master/man/sphinx-build.html
+    app = sphinx.application.Sphinx(
+        srcdir=doc_dir,
+        confdir=doc_dir,
+        outdir=doc_dir / 'build',
+        doctreedir=doc_dir / 'build' / '.doctrees',
+        buildername="dummy",
+        freshenv=True,
+        keep_going=True,
+        confoverrides={'extensions': ','.join(extensions)}
+    )
+
+    # Generate test cases
+    app.build()
+
+    return app.statuscode
 
 
 def get_variable_from_file(file: Path, variable_name: str):

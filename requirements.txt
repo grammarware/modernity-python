@@ -1,2 +1,4 @@
 vermin==1.5.1
 matplotlib==3.6.2
+Sphinx==4.5.0
+docutils==0.19
