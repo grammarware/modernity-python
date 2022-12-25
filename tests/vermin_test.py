@@ -1,11 +1,8 @@
-import ast
+import subprocess
+import sys
 import unittest
-from pathlib import Path
 
-import sphinx.domains.python
-import sphinx.application
-
-from pyternity.utils import TMP_DIR, setup_project, Config
+from pyternity.utils import setup_project, Config
 from tests.test_utils import test_code, get_test_cases, TEST_CASES_FILE
 
 # Idea; read all doc files, and look for  .. versionchanged / .. versionadded
@@ -83,57 +80,20 @@ class TestFeatures(unittest.TestCase):
         # We combine the results, since some features are both belonging to python 2.x and python 3.x
         # We need the whole Python source, since a sphinx-extension uses relative importing
 
-        # Monkey patch the following two classes, which are replacements in newer version of sphinx
-        # Used in extensions/pyspecific.py (only for Python 2.7)
-        sphinx.domains.python.PyModulelevel = sphinx.domains.python.PyFunction
-        sphinx.domains.python.PyClassmember = sphinx.domains.python.PyMethod
-        self.assertEqual(generate_test_cases(TMP_DIR / 'Python-2.7.18' / 'Doc'), 0)
+        # Using Sphinx app twice in same Python process, does cause some errors, so run them in a subprocess
+        sub = subprocess.Popen([sys.executable, "generate_test_cases.py", "Python-2.7.18"])
+        self.assertEqual(sub.wait(), 0)
 
-        # FIXME Using Sphinx app twice, does cause some errors, which don't appear when running this version solely
-        #  But these errors don't seem to hinder our results?
-        #  Maybe run
-        self.assertEqual(generate_test_cases(TMP_DIR / 'Python3' / 'Doc'), 0)
+        sub = subprocess.Popen([sys.executable, "generate_test_cases.py", "Python3"])
+        self.assertEqual(sub.wait(), 0)
 
         # Now test the test-cases, in alphabetic order
+        # TODO Run subTest for each module
         for code, expected in sorted(get_test_cases().items()):
             # TODO Normalize expected first: remove python 1.x.x and 2.0, and generalize x.y.z to x.y
             test_code(self, code, expected)
 
         # TODO Make test to ensure all modules are covered (all non-submodules: sys.stdlib_module_names)
-
-
-def generate_test_cases(doc_dir: Path):
-    # Load 'extensions' dynamically from the conf.py file (https://github.com/python/cpython/blob/main/Doc/conf.py)
-    # And add our extension to it
-    extensions = get_variable_from_file(doc_dir / 'conf.py', "extensions") + ['sphinx_extension']
-
-    # Options can be found here:
-    # https://www.sphinx-doc.org/en/master/usage/configuration.html
-    # https://www.sphinx-doc.org/en/master/man/sphinx-build.html
-    app = sphinx.application.Sphinx(
-        srcdir=doc_dir,
-        confdir=doc_dir,
-        outdir=doc_dir / 'build',
-        doctreedir=doc_dir / 'build' / '.doctrees',
-        buildername="dummy",
-        freshenv=True,
-        keep_going=True,
-        confoverrides={'extensions': ','.join(extensions)}
-    )
-
-    # Generate test cases
-    app.build()
-
-    return app.statuscode
-
-
-def get_variable_from_file(file: Path, variable_name: str):
-    with file.open() as f:
-        for e in ast.parse(f.read()).body:
-            if isinstance(e, ast.Assign):
-                name = e.targets[0]
-                if isinstance(name, ast.Name) and name.id == variable_name:
-                    return [c.value for c in e.value.elts]
 
 
 if __name__ == '__main__':

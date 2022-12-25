@@ -1,0 +1,58 @@
+import ast
+import sys
+from pathlib import Path
+
+import sphinx.application
+import sphinx.domains.python
+
+from pyternity.utils import TMP_DIR, Config, setup_project
+
+
+def get_variable_from_file(file: Path, variable_name: str):
+    with file.open() as f:
+        for e in ast.parse(f.read()).body:
+            if isinstance(e, ast.Assign):
+                name = e.targets[0]
+                if isinstance(name, ast.Name) and name.id == variable_name:
+                    return [c.value for c in e.value.elts]
+
+
+def generate_test_cases(doc_dir: Path):
+    # Monkey patch the following two classes, which are replacements in newer version of sphinx
+    # Only need for Python-2.7.18\Doc\tools\extensions\pyspecific.py
+    sphinx.domains.python.PyModulelevel = sphinx.domains.python.PyFunction
+    sphinx.domains.python.PyClassmember = sphinx.domains.python.PyMethod
+
+    # Load 'extensions' dynamically from the conf.py file (https://github.com/python/cpython/blob/main/Doc/conf.py)
+    # And add our extension to it
+    extensions = get_variable_from_file(doc_dir / 'conf.py', "extensions") + ['sphinx_extension']
+
+    # Options can be found here:
+    # https://www.sphinx-doc.org/en/master/usage/configuration.html
+    # https://www.sphinx-doc.org/en/master/man/sphinx-build.html
+    app = sphinx.application.Sphinx(
+        srcdir=doc_dir,
+        confdir=doc_dir,
+        outdir=doc_dir / 'build',
+        doctreedir=doc_dir / 'build' / '.doctrees',
+        buildername="dummy",
+        freshenv=True,
+        keep_going=True,
+        # parallel=os.cpu_count(),
+        confoverrides={'extensions': ','.join(extensions)}
+    )
+
+    # Generate test cases
+    app.build()
+
+    return app.statuscode
+
+
+if __name__ == '__main__':
+    # Since this is a separate subprocess, also initiate config here
+    setup_project()
+    Config.vermin.set_processes(1)
+
+    python_version = sys.argv[1]
+    status_code = generate_test_cases(TMP_DIR / python_version / 'Doc')
+    exit(status_code)
