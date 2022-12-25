@@ -1,12 +1,14 @@
 import logging
+import os
 import sys
 import time
+from collections import defaultdict
 from pathlib import Path
 from typing import TypeAlias
 
 import vermin
 
-Features: TypeAlias = dict[str, dict[str, int]]
+Features: TypeAlias = defaultdict[str, defaultdict[str, int]]
 Signature: TypeAlias = dict[str, int]
 
 ROOT_DIR = Path(__file__).parent.parent
@@ -44,14 +46,16 @@ class NonErrorsFilter(logging.Filter):
         return logRecord.levelno < logging.ERROR
 
 
-def setup_project():
+def setup_project(vermin_processes: int = os.cpu_count()):
+    Config.vermin.set_processes(vermin_processes)
+
     # Create missing directories
     TMP_DIR.mkdir(exist_ok=True)
     EXAMPLES_DIR.mkdir(exist_ok=True)
     RESULTS_DIR.mkdir(exist_ok=True)
 
     # Setup logger, log normal logs and errors separately
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.WARN)
 
     normal_handler = logging.StreamHandler(sys.stdout)
     normal_handler.setLevel(logging.DEBUG)

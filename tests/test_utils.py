@@ -1,11 +1,13 @@
 import json
 import unittest
+from collections import defaultdict
 from pathlib import Path
 
 from pyternity import features
 from pyternity.utils import TMP_DIR, Features, ROOT_DIR
 
-TEST_CASES_FILE = ROOT_DIR / 'tests' / 'generated_test_cases.json'
+TEST_CASES_FILE_PY2 = ROOT_DIR / 'tests' / 'generated_test_cases_py2.json'
+TEST_CASES_FILE_PY3 = ROOT_DIR / 'tests' / 'generated_test_cases_py3.json'
 
 
 def msg_features(code: str, actual: Features, expected: Features):
@@ -14,7 +16,6 @@ def msg_features(code: str, actual: Features, expected: Features):
 
 
 def test_code(test_case: unittest.TestCase, code: str, test_result: Features):
-    print(f"TEST: {code=}")
     actual = get_features_from_test_code(code)
     with test_case.subTest(code):
         test_case.assertDictEqual(actual, test_result, msg_features(code, actual, test_result))
@@ -30,36 +31,36 @@ def get_features_from_test_code(code: str) -> Features:
     return features.get_features(tmp_file)
 
 
-def save_test_case(code: str, expected: Features):
-    print(repr(code), expected)
-
-    test_cases = get_test_cases()
-    # FIXME code='import collections\ncollections.deque'
-    #  --> Actual: {'2.4': {"'collections' module": 1, "'collections.deque' member": 1}}
-    #  --> Expect: {'2.4': {"'collections.deque' member": 1}}
-    #  It should iterate over the versions and combine that
-
-    # for version, expected_features in expected.items():
-    #     for expected_feature, count in expected_features.items():
-
-    test_cases[code] = test_cases.get(code, {}) | expected
-
-    with TEST_CASES_FILE.open('w+') as f:
+def save_test_cases(output_file: Path, test_cases: defaultdict[str, Features]) -> None:
+    # Save in separate files, such that they can run in parallel
+    with output_file.open('w') as f:
         json.dump(test_cases, f)
 
 
-def get_test_cases():
-    try:
-        with TEST_CASES_FILE.open() as f:
-            return json.load(f)
-    except FileNotFoundError:
-        return {}
+def get_test_cases() -> dict[str, Features]:
+    # Combine test cases from python 2 and 3
+    with TEST_CASES_FILE_PY2.open() as f2, TEST_CASES_FILE_PY3.open() as f3:
+        test_cases = json.load(f2)
 
+        for code, expected in json.load(f3).items():
+            test_cases[code] = test_cases.get(code, {}) | expected
+
+        return test_cases
 
 
 def save_doc_tree(out_dir: str, tree_name: str, doc_tree: str):
     doc_trees_dir = Path(out_dir) / 'doctrees'
     doc_trees_dir.mkdir(exist_ok=True)
 
-    with (doc_trees_dir / (tree_name + '.xml')).open('w', encoding='utf-8') as f:
+    doc_tree_file = doc_trees_dir / (tree_name + '.xml')
+    with doc_tree_file.open('w', encoding='utf-8') as f:
         f.write(doc_tree)
+
+
+def combine_features(features0: Features, features1: Features) -> Features:
+    for version, version_features in features1.items():
+        for name in version_features.keys():
+            # Don't actually increase the count, since you will count 'double' then
+            features0[version][name] = 1
+
+    return features0

@@ -2,8 +2,8 @@ import subprocess
 import sys
 import unittest
 
-from pyternity.utils import setup_project, Config
-from tests.test_utils import test_code, get_test_cases, TEST_CASES_FILE
+from pyternity.utils import setup_project
+from tests.test_utils import test_code, get_test_cases, TEST_CASES_FILE_PY2, TEST_CASES_FILE_PY3
 
 # Idea; read all doc files, and look for  .. versionchanged / .. versionadded
 # https://github.com/python/cpython/tree/main/Doc/library
@@ -63,8 +63,7 @@ class TestFeatures(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls) -> None:
-        setup_project()
-        Config.vermin.set_processes(1)
+        setup_project(1)
 
     def test_version_3_9(self):
         for code, test_result in PYTHON_3_9.items():
@@ -72,7 +71,8 @@ class TestFeatures(unittest.TestCase):
 
     def test_from_changelog(self):
         # Clear previous run
-        TEST_CASES_FILE.unlink(missing_ok=True)
+        TEST_CASES_FILE_PY2.unlink(missing_ok=True)
+        TEST_CASES_FILE_PY3.unlink(missing_ok=True)
 
         # TODO Download (the latest?) python sources:
         #  2.7 will not change: https://www.python.org/downloads/release/python-2718/
@@ -80,12 +80,11 @@ class TestFeatures(unittest.TestCase):
         # We combine the results, since some features are both belonging to python 2.x and python 3.x
         # We need the whole Python source, since a sphinx-extension uses relative importing
 
-        # Using Sphinx app twice in same Python process, does cause some errors, so run them in a subprocess
-        sub = subprocess.Popen([sys.executable, "generate_test_cases.py", "Python-2.7.18"])
-        self.assertEqual(sub.wait(), 0)
-
-        sub = subprocess.Popen([sys.executable, "generate_test_cases.py", "Python3"])
-        self.assertEqual(sub.wait(), 0)
+        # Using Sphinx app twice in same Python process does cause some errors, so run them in a subprocess (parallel)
+        sub2 = subprocess.Popen([sys.executable, "generate_test_cases.py", "Python-2.7.18", TEST_CASES_FILE_PY2.absolute()])
+        sub3 = subprocess.Popen([sys.executable, "generate_test_cases.py", "Python3", TEST_CASES_FILE_PY3.absolute()])
+        self.assertEqual(sub2.wait(), 0)
+        self.assertEqual(sub3.wait(), 0)
 
         # Now test the test-cases, in alphabetic order
         # TODO Run subTest for each module

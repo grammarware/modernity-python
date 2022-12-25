@@ -5,7 +5,7 @@ from pathlib import Path
 import sphinx.application
 import sphinx.domains.python
 
-from pyternity.utils import TMP_DIR, Config, setup_project
+from pyternity.utils import TMP_DIR, setup_project
 
 
 def get_variable_from_file(file: Path, variable_name: str):
@@ -17,7 +17,7 @@ def get_variable_from_file(file: Path, variable_name: str):
                     return [c.value for c in e.value.elts]
 
 
-def generate_test_cases(doc_dir: Path):
+def generate_test_cases(doc_dir: Path, output_file: Path):
     # Monkey patch the following two classes, which are replacements in newer version of sphinx
     # Only need for Python-2.7.18\Doc\tools\extensions\pyspecific.py
     sphinx.domains.python.PyModulelevel = sphinx.domains.python.PyFunction
@@ -39,7 +39,7 @@ def generate_test_cases(doc_dir: Path):
         freshenv=True,
         keep_going=True,
         # parallel=os.cpu_count(),
-        confoverrides={'extensions': ','.join(extensions)}
+        confoverrides={'extensions': ','.join(extensions), 'pyternity_test_cases_file': output_file}
     )
 
     # Generate test cases
@@ -49,10 +49,10 @@ def generate_test_cases(doc_dir: Path):
 
 
 if __name__ == '__main__':
-    # Since this is a separate subprocess, also initiate config here
-    setup_project()
-    Config.vermin.set_processes(1)
+    _, python_version, test_cases_file = sys.argv
 
-    python_version = sys.argv[1]
-    status_code = generate_test_cases(TMP_DIR / python_version / 'Doc')
+    # Since this is a separate subprocess, also initiate config here
+    setup_project(1)
+
+    status_code = generate_test_cases(TMP_DIR / python_version / 'Doc', Path(test_cases_file))
     exit(status_code)
