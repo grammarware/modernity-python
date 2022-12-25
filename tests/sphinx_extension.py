@@ -7,23 +7,7 @@ import sphinx.addnodes
 import docutils.nodes
 
 from pyternity.utils import Features
-from tests.test_utils import get_features_from_test_code, save_doc_tree, combine_features, save_test_cases
-
-
-# TODO Maybe use XML builder instead?
-def _dom_node(self, domroot):
-    element = domroot.createElement(self.tagname)
-    for attribute, value in self.attlist():
-        if isinstance(value, list) or isinstance(value, tuple):  # Added `isinstance(value, tuple)` to support tuples
-            value = ' '.join(docutils.nodes.serial_escape('%s' % (v,)) for v in value)
-        element.setAttribute(attribute, '%s' % value)
-    for child in self.children:
-        element.appendChild(child._dom_node(domroot))
-    return element
-
-
-# Monkey patch to support tuple values (used in Python3\Doc\library\2to3.rst)
-docutils.nodes.Element._dom_node = _dom_node
+from tests.test_utils import get_features_from_test_code, combine_features, save_test_cases
 
 T = TypeVar('T')
 
@@ -44,9 +28,6 @@ def generate_test_cases(app: sphinx.application.Sphinx, doctree: sphinx.addnodes
         return
 
     print(source)
-
-    # Save doctree for debugging purposes
-    save_doc_tree(app.outdir, source.stem, doctree.asdom().toprettyxml())
 
     # TODO This does not test features that are completely removed in the Python docs
     for node in doctree.findall(sphinx.addnodes.versionmodified):

@@ -35,7 +35,7 @@ def generate_test_cases(doc_dir: Path, output_file: Path):
         confdir=doc_dir,
         outdir=doc_dir / 'build',
         doctreedir=doc_dir / 'build' / '.doctrees',
-        buildername="dummy",
+        buildername="xml",  # Can also be dummy; trees are now only generated for debugging purposes
         freshenv=True,
         keep_going=True,
         # parallel=os.cpu_count(),

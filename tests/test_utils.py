@@ -48,15 +48,6 @@ def get_test_cases() -> dict[str, Features]:
         return test_cases
 
 
-def save_doc_tree(out_dir: str, tree_name: str, doc_tree: str):
-    doc_trees_dir = Path(out_dir) / 'doctrees'
-    doc_trees_dir.mkdir(exist_ok=True)
-
-    doc_tree_file = doc_trees_dir / (tree_name + '.xml')
-    with doc_tree_file.open('w', encoding='utf-8') as f:
-        f.write(doc_tree)
-
-
 def combine_features(features0: Features, features1: Features) -> Features:
     for version, version_features in features1.items():
         for name in version_features.keys():
