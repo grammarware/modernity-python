@@ -89,12 +89,17 @@ class TestFeatures(unittest.TestCase):
         sphinx.domains.python.PyClassmember = sphinx.domains.python.PyMethod
         self.assertEqual(generate_test_cases(TMP_DIR / 'Python-2.7.18' / 'Doc'), 0)
 
-        # Using Sphinx app twice, does cause some errors, which don't appear when running this version solely
-        # But these errors don't seem to hinder our results
+        # FIXME Using Sphinx app twice, does cause some errors, which don't appear when running this version solely
+        #  But these errors don't seem to hinder our results?
+        #  Maybe run
         self.assertEqual(generate_test_cases(TMP_DIR / 'Python3' / 'Doc'), 0)
 
-        for code, expected in get_test_cases().items():
+        # Now test the test-cases, in alphabetic order
+        for code, expected in sorted(get_test_cases().items()):
+            # TODO Normalize expected first: remove python 1.x.x and 2.0, and generalize x.y.z to x.y
             test_code(self, code, expected)
+
+        # TODO Make test to ensure all modules are covered (all non-submodules: sys.stdlib_module_names)
 
 
 def generate_test_cases(doc_dir: Path):
