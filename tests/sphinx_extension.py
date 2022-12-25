@@ -1,10 +1,10 @@
 from collections import defaultdict
 from pathlib import Path
+from typing import TypeVar
 
 import sphinx.application
 import sphinx.addnodes
 import docutils.nodes
-from docutils.nodes import paragraph, serial_escape
 
 from pyternity.utils import Features
 from tests.test_utils import get_features_from_test_code, save_doc_tree, combine_features, save_test_cases
@@ -15,7 +15,7 @@ def _dom_node(self, domroot):
     element = domroot.createElement(self.tagname)
     for attribute, value in self.attlist():
         if isinstance(value, list) or isinstance(value, tuple):  # Added `isinstance(value, tuple)` to support tuples
-            value = ' '.join(serial_escape('%s' % (v,)) for v in value)
+            value = ' '.join(docutils.nodes.serial_escape('%s' % (v,)) for v in value)
         element.setAttribute(attribute, '%s' % value)
     for child in self.children:
         element.appendChild(child._dom_node(domroot))
@@ -25,6 +25,13 @@ def _dom_node(self, domroot):
 # Monkey patch to support tuple values (used in Python3\Doc\library\2to3.rst)
 docutils.nodes.Element._dom_node = _dom_node
 
+T = TypeVar('T')
+
+
+def first_child_matching_class(node: docutils.nodes.Element, child_class: type[T]) -> T:
+    return next(child for child in node if isinstance(child, child_class))
+
+
 test_cases: defaultdict[str, Features]
 
 
@@ -32,7 +39,7 @@ def generate_test_cases(app: sphinx.application.Sphinx, doctree: sphinx.addnodes
     global test_cases
 
     # We are only interested in changes in the library
-    source = Path(doctree.attributes['source'])
+    source = Path(doctree.get('source'))
     if source.parent.name != "library":
         return
 
@@ -43,7 +50,7 @@ def generate_test_cases(app: sphinx.application.Sphinx, doctree: sphinx.addnodes
 
     # TODO This does not test features that are completely removed in the Python docs
     for node in doctree.findall(sphinx.addnodes.versionmodified):
-        version = node.attributes['version']
+        version = node.get('version')
         # TODO handle version if it is a tuple
         if isinstance(version, str):
             try:
@@ -60,54 +67,61 @@ def generate_test_cases(app: sphinx.application.Sphinx, doctree: sphinx.addnodes
 
 
 def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) -> tuple[str, Features]:
-    desc = node.parent.parent
-    desc_signature: sphinx.addnodes.desc_signature = desc[0]
+    description = first_child_matching_class(node, docutils.nodes.paragraph)
+    feature_added = node.get('type') == "versionadded"
 
-    if node.attributes['type'] == "versionadded":
-        # New method for some class, or a new class, or a new function
-        if desc.attributes.get('objtype') in ("method", "class", "function"):
-            module = desc_signature.attributes['module']
-            ids: str = desc_signature.attributes['ids'][0]
-            prev_ids = ids.rsplit('.', maxsplit=1)[0]
+    if isinstance(desc := node.parent.parent, sphinx.addnodes.desc):
+        desc_signature = first_child_matching_class(desc, sphinx.addnodes.desc_signature)
 
-            # If there is no import statement (i.e. it is a builtin), call the thing
-            # TODO Maybe there are also constants?
-            import_stmt = f"import {module}\n" if module else ""
-            prev_features = get_features_from_test_code(f"{import_stmt}{prev_ids}{'()' if not import_stmt else ''}")
+        if feature_added:
+            # New method for some class, or a new class, or a new function
+            # These nodes have only 1 (inline) element in their paragraph
+            if desc.get('objtype') in ("method", "class", "function") and len(description.children) == 1:
+                module = desc_signature.get('module')
+                ids = desc_signature.get('ids')[0]
+                prev_ids = ids.rsplit('.', maxsplit=1)[0]
 
-            return (
-                f"{import_stmt}{ids}{'()' if not import_stmt else ''}",
-                combine_features(prev_features, {version: {f"'{ids}' member": 1}})
-            )
+                # If there is no import statement (i.e. it is a builtin), call the thing
+                # TODO Maybe there are also constants?
+                import_stmt = f"import {module}\n" if module else ""
+                prev_features = get_features_from_test_code(f"{import_stmt}{prev_ids}{'()' if not import_stmt else ''}")
 
-        # New module
-        # This node should be before a <paragraph>, then it tells something about the whole module
-        if desc.tagname == "document" \
-                and node.line < desc_signature[desc_signature.first_child_matching_class(paragraph)].line:
-            module = desc_signature.attributes['names'][0].split(' ')[0]
+                return (
+                    f"{import_stmt}{ids}{'()' if not import_stmt else ''}",
+                    combine_features(prev_features, {version: {f"'{ids}' member": 1}})
+                )
 
-            # TODO Currently only AST module has two versionmodified nodes, take first one
-            # p: paragraph = node[0]
-            # if len(p.children) != 1:
-            #     # AST (2/3),
-            #     print(module)
-            #     # breakpoint()
+    if isinstance(document := node.parent.parent, sphinx.addnodes.document):
+        section = first_child_matching_class(document, docutils.nodes.section)
 
-            return f"import {module}", {version: {f"'{module}' module": 1}}
+        if feature_added:
+            # New module
+            # This node should be before a <paragraph>, then it tells something about the whole module
+            if node.line < first_child_matching_class(section, docutils.nodes.paragraph).line:
+                module_name = section.get('names')[0].split(' ')[0]
 
-    elif node.attributes['type'] == "versionchanged":
-        # New parameter has been added to a method
-        if desc.attributes.get('objtype') in ("method",):
-            try:
-                param_name = node[0][1][1][0]
-            except IndexError:
-                # Case when argument already existed, but was now given default value
-                return
+                # TODO Currently only AST module has two versionmodified nodes, take first one
+                # p: paragraph = node[0]
+                # if len(p.children) != 1:
+                #     # AST (2/3),
+                #     print(module)
+                #     # breakpoint()
 
-            # The value assigned to the named parameter does not matter
-            # (technically you good also grab the default parameter value from desc_signature)
+                return f"import {module_name}", {version: {f"'{module_name}' module": 1}}
 
-            # TODO return desc_signature.attributes['module'], f"{desc_signature.attributes['ids'][0]}({param_name}=None)"
+    # elif node.attributes['type'] == "versionchanged":
+    #     # New parameter has been added to a method
+    #     if parent_parent.attributes.get('objtype') in ("method",):
+    #         try:
+    #             param_name = node[0][1][1][0]
+    #         except IndexError:
+    #             # Case when argument already existed, but was now given default value
+    #             return
+    #
+    #         # The value assigned to the named parameter does not matter
+    #         # (technically you good also grab the default parameter value from desc_signature)
+    #
+    #         # TODO return desc_signature.attributes['module'], f"{desc_signature.attributes['ids'][0]}({param_name}=None)"
 
 
 def build_finished(app: sphinx.application.Sphinx, _):
