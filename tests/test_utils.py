@@ -2,6 +2,7 @@ import json
 import unittest
 from collections import defaultdict
 from pathlib import Path
+from uuid import uuid4
 
 from pyternity import features
 from pyternity.utils import TMP_DIR, Features, ROOT_DIR
@@ -23,12 +24,15 @@ def test_code(test_case: unittest.TestCase, code: str, test_result: Features):
 
 def get_features_from_test_code(code: str) -> Features:
     # Note: tempfile library cannot be used here, since Vermin reopens the file
-    tmp_file = TMP_DIR / "test_file.py"
+    # Do make the file name random, such that this function can be called concurrently
+    tmp_file = TMP_DIR / f"{uuid4()}.py"
 
     with tmp_file.open('w') as f:
         f.write(code)
 
-    return features.get_features(tmp_file)
+    result = features.get_features(tmp_file)
+    tmp_file.unlink()
+    return result
 
 
 def save_test_cases(output_file: Path, test_cases: defaultdict[str, Features]) -> None:

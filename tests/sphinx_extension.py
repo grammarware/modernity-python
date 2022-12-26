@@ -118,4 +118,4 @@ def setup(app: sphinx.application.Sphinx):
 
     app.connect('doctree-read', generate_test_cases)
     app.connect('build-finished', build_finished)
-    return {'version': '1.0', 'parallel_read_safe': True}
+    return {'version': '1.0'}
