@@ -1,0 +1,5030 @@
+{
+  "import _winreg\nwinreg.ExpandEnvironmentStrings": {
+    "2.0": {
+      "'_winreg' module": 1
+    },
+    "2.6": {
+      "'winreg.ExpandEnvironmentStrings' member": 1
+    }
+  },
+  "import _winreg\nwinreg.PyHKEY.__enter__": {
+    "2.0": {
+      "'_winreg' module": 1
+    },
+    "2.6": {
+      "'winreg.PyHKEY.__enter__' member": 1
+    }
+  },
+  "import abc": {
+    "2.6": {
+      "'abc' module": 1
+    }
+  },
+  "import argparse": {
+    "2.7": {
+      "'argparse' module": 1
+    }
+  },
+  "import ast": {
+    "2.5": {
+      "'ast' module": 1
+    }
+  },
+  "import atexit": {
+    "2.0": {
+      "'atexit' module": 1
+    }
+  },
+  "import audioop\naudioop.alaw2lin": {
+    "2.5": {
+      "'audioop.alaw2lin' member": 1
+    }
+  },
+  "import audioop\naudioop.lin2alaw": {
+    "2.5": {
+      "'audioop.lin2alaw' member": 1
+    }
+  },
+  "import bisect": {
+    "2.1": {
+      "'bisect' module": 1
+    }
+  },
+  "import bz2": {
+    "2.3": {
+      "'bz2' module": 1
+    }
+  },
+  "import calendar\ncalendar.Calendar": {
+    "2.5": {
+      "'calendar.Calendar' member": 1
+    }
+  },
+  "import calendar\ncalendar.TextCalendar": {
+    "2.5": {
+      "'calendar.TextCalendar' member": 1
+    }
+  },
+  "import calendar\ncalendar.HTMLCalendar": {
+    "2.5": {
+      "'calendar.HTMLCalendar' member": 1
+    }
+  },
+  "import calendar\ncalendar.LocaleTextCalendar": {
+    "2.5": {
+      "'calendar.LocaleTextCalendar' member": 1
+    }
+  },
+  "import calendar\ncalendar.LocaleHTMLCalendar": {
+    "2.5": {
+      "'calendar.LocaleHTMLCalendar' member": 1
+    }
+  },
+  "import calendar\ncalendar.setfirstweekday": {
+    "2.0": {
+      "'calendar.setfirstweekday' member": 1
+    }
+  },
+  "import calendar\ncalendar.firstweekday": {
+    "2.0": {
+      "'calendar.firstweekday' member": 1
+    }
+  },
+  "import calendar\ncalendar.month": {
+    "2.0": {
+      "'calendar.month' member": 1
+    }
+  },
+  "import calendar\ncalendar.calendar": {
+    "2.0": {
+      "'calendar.calendar' member": 1
+    }
+  },
+  "import calendar\ncalendar.timegm": {
+    "2.0": {
+      "'calendar.timegm' member": 1
+    }
+  },
+  "import cgitb": {
+    "2.2": {
+      "'cgitb' module": 1
+    }
+  },
+  "import cmath\ncmath.phase": {
+    "2.6": {
+      "'cmath.phase' member": 1
+    }
+  },
+  "import cmath\ncmath.polar": {
+    "2.6": {
+      "'cmath.polar' member": 1
+    }
+  },
+  "import cmath\ncmath.rect": {
+    "2.6": {
+      "'cmath.rect' member": 1
+    }
+  },
+  "import cmath\ncmath.isinf": {
+    "2.6": {
+      "'cmath.isinf' member": 1
+    }
+  },
+  "import cmath\ncmath.isnan": {
+    "2.6": {
+      "'cmath.isnan' member": 1
+    }
+  },
+  "import codecs\ncodecs.encode": {
+    "2.4": {
+      "'codecs.encode' member": 1
+    }
+  },
+  "import codecs\ncodecs.decode": {
+    "2.4": {
+      "'codecs.decode' member": 1
+    }
+  },
+  "import codecs\ncodecs.getincrementalencoder": {
+    "2.5": {
+      "'codecs.getincrementalencoder' member": 1
+    }
+  },
+  "import codecs\ncodecs.getincrementaldecoder": {
+    "2.5": {
+      "'codecs.getincrementaldecoder' member": 1
+    }
+  },
+  "import codecs\ncodecs.iterencode": {
+    "2.5": {
+      "'codecs.iterencode' member": 1
+    }
+  },
+  "import codecs\ncodecs.iterdecode": {
+    "2.5": {
+      "'codecs.iterdecode' member": 1
+    }
+  },
+  "import collections": {
+    "2.4": {
+      "'collections' module": 1
+    }
+  },
+  "import collections\ncollections.Counter": {
+    "2.4": {
+      "'collections' module": 1
+    },
+    "2.7": {
+      "'collections.Counter' member": 1
+    }
+  },
+  "import collections\ncollections.deque": {
+    "2.4": {
+      "'collections' module": 1,
+      "'collections.deque' member": 1
+    }
+  },
+  "import collections\ncollections.deque.count": {
+    "2.4": {
+      "'collections' module": 1,
+      "'collections.deque' member": 1
+    },
+    "2.7": {
+      "'collections.deque.count' member": 1
+    }
+  },
+  "import collections\ncollections.deque.remove": {
+    "2.4": {
+      "'collections' module": 1,
+      "'collections.deque' member": 1
+    },
+    "2.5": {
+      "'collections.deque.remove' member": 1
+    }
+  },
+  "import collections\ncollections.deque.reverse": {
+    "2.4": {
+      "'collections' module": 1,
+      "'collections.deque' member": 1
+    },
+    "2.7": {
+      "'collections.deque.reverse' member": 1
+    }
+  },
+  "import collections\ncollections.deque.maxlen": {
+    "2.4": {
+      "'collections' module": 1,
+      "'collections.deque' member": 1
+    },
+    "2.7": {
+      "'collections.deque.maxlen' member": 1
+    }
+  },
+  "import collections\ncollections.defaultdict": {
+    "2.4": {
+      "'collections' module": 1
+    },
+    "2.5": {
+      "'collections.defaultdict' member": 1
+    }
+  },
+  "import collections\ncollections.namedtuple": {
+    "2.4": {
+      "'collections' module": 1
+    },
+    "2.6": {
+      "'collections.namedtuple' member": 1
+    }
+  },
+  "import collections\ncollections.OrderedDict": {
+    "2.4": {
+      "'collections' module": 1
+    },
+    "2.7": {
+      "'collections.OrderedDict' member": 1
+    }
+  },
+  "import compileall\ncompileall.compile_file": {
+    "2.7": {
+      "'compileall.compile_file' member": 1
+    }
+  },
+  "import ConfigParser\nConfigParser.RawConfigParser": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.RawConfigParser' member": 1
+    }
+  },
+  "import ConfigParser\nConfigParser.ConfigParser": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.ConfigParser' member": 1
+    }
+  },
+  "import ConfigParser\nConfigParser.SafeConfigParser": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.SafeConfigParser' member": 1
+    }
+  },
+  "import ConfigParser\nConfigParser.InterpolationMissingOptionError": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.InterpolationMissingOptionError' member": 1
+    }
+  },
+  "import ConfigParser\nConfigParser.InterpolationSyntaxError": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.InterpolationSyntaxError' member": 1
+    }
+  },
+  "import ConfigParser\nConfigParser.RawConfigParser.has_option": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.RawConfigParser' member": 1
+    },
+    "1.6": {
+      "'ConfigParser.RawConfigParser.has_option' member": 1
+    }
+  },
+  "import ConfigParser\nConfigParser.RawConfigParser.set": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.RawConfigParser' member": 1
+    },
+    "1.6": {
+      "'ConfigParser.RawConfigParser.set' member": 1
+    }
+  },
+  "import ConfigParser\nConfigParser.RawConfigParser.write": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.RawConfigParser' member": 1
+    },
+    "1.6": {
+      "'ConfigParser.RawConfigParser.write' member": 1
+    }
+  },
+  "import ConfigParser\nConfigParser.RawConfigParser.remove_option": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.RawConfigParser' member": 1
+    },
+    "1.6": {
+      "'ConfigParser.RawConfigParser.remove_option' member": 1
+    }
+  },
+  "import ConfigParser\nConfigParser.ConfigParser.items": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.ConfigParser' member": 1,
+      "'ConfigParser.ConfigParser.items' member": 1
+    }
+  },
+  "import ConfigParser\nConfigParser.SafeConfigParser.set": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.SafeConfigParser' member": 1
+    },
+    "2.4": {
+      "'ConfigParser.SafeConfigParser.set' member": 1
+    }
+  },
+  "False()": {
+    "2.3": {
+      "'False' member": 1
+    }
+  },
+  "True()": {
+    "2.3": {
+      "'True' member": 1
+    }
+  },
+  "import contextlib": {
+    "2.5": {
+      "'contextlib' module": 1
+    }
+  },
+  "import cookielib\ncookielib.DefaultCookiePolicy.rfc2109_as_netscape": {
+    "2.4": {
+      "'cookielib' module": 1
+    },
+    "2.5": {
+      "'cookielib.DefaultCookiePolicy.rfc2109_as_netscape' member": 1
+    }
+  },
+  "import cookielib\ncookielib.Cookie.rfc2109": {
+    "2.4": {
+      "'cookielib' module": 1
+    },
+    "2.5": {
+      "'cookielib.Cookie.rfc2109' member": 1
+    }
+  },
+  "import csv": {
+    "2.3": {
+      "'csv' module": 1
+    }
+  },
+  "import csv\ncsv.field_size_limit": {
+    "2.3": {
+      "'csv' module": 1
+    },
+    "2.5": {
+      "'csv.field_size_limit' member": 1
+    }
+  },
+  "import csv\ncsv.csvreader.line_num": {
+    "2.3": {
+      "'csv' module": 1
+    },
+    "2.5": {
+      "'csv.csvreader.line_num' member": 1
+    }
+  },
+  "import csv\ncsv.DictWriter.writeheader": {
+    "2.3": {
+      "'csv' module": 1
+    },
+    "2.7": {
+      "'csv.DictWriter.writeheader' member": 1
+    }
+  },
+  "import ctypes": {
+    "2.5": {
+      "'ctypes' module": 1
+    }
+  },
+  "import ctypes.util\nctypes.util.find_msvcrt": {
+    "2.6": {
+      "'ctypes.util.find_msvcrt' member": 1
+    }
+  },
+  "import ctypes\nctypes.get_errno": {
+    "2.5": {
+      "'ctypes' module": 1
+    },
+    "2.6": {
+      "'ctypes.get_errno' member": 1
+    }
+  },
+  "import ctypes\nctypes.get_last_error": {
+    "2.5": {
+      "'ctypes' module": 1
+    },
+    "2.6": {
+      "'ctypes.get_last_error' member": 1
+    }
+  },
+  "import ctypes\nctypes.set_errno": {
+    "2.5": {
+      "'ctypes' module": 1
+    },
+    "2.6": {
+      "'ctypes.set_errno' member": 1
+    }
+  },
+  "import ctypes\nctypes.set_last_error": {
+    "2.5": {
+      "'ctypes' module": 1
+    },
+    "2.6": {
+      "'ctypes.set_last_error' member": 1
+    }
+  },
+  "import ctypes\nctypes._CData.from_buffer": {
+    "2.5": {
+      "'ctypes' module": 1
+    },
+    "2.6": {
+      "'ctypes._CData.from_buffer' member": 1
+    }
+  },
+  "import ctypes\nctypes._CData.from_buffer_copy": {
+    "2.5": {
+      "'ctypes' module": 1
+    },
+    "2.6": {
+      "'ctypes._CData.from_buffer_copy' member": 1
+    }
+  },
+  "import ctypes\nctypes.c_longdouble": {
+    "2.5": {
+      "'ctypes' module": 1
+    },
+    "2.6": {
+      "'ctypes.c_longdouble' member": 1
+    }
+  },
+  "import ctypes\nctypes.c_ssize_t": {
+    "2.5": {
+      "'ctypes' module": 1
+    },
+    "2.7": {
+      "'ctypes.c_ssize_t' member": 1
+    }
+  },
+  "import ctypes\nctypes.c_bool": {
+    "2.5": {
+      "'ctypes' module": 1
+    },
+    "2.6": {
+      "'ctypes.c_bool' member": 1
+    }
+  },
+  "import curses.ascii": {
+    "1.6": {
+      "'curses.ascii' module": 1
+    }
+  },
+  "import datetime": {
+    "2.3": {
+      "'datetime' module": 1
+    }
+  },
+  "import datetime\ndatetime.timedelta.total_seconds": {
+    "2.3": {
+      "'datetime' module": 1
+    },
+    "2.7": {
+      "'datetime.timedelta.total_seconds' member": 1
+    }
+  },
+  "import datetime\ndatetime.datetime.strptime": {
+    "2.3": {
+      "'datetime' module": 1
+    },
+    "2.5": {
+      "'datetime.datetime.strptime' member": 1
+    }
+  },
+  "import decimal": {
+    "2.4": {
+      "'decimal' module": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.canonical": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.canonical' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.compare_signal": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.compare_signal' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.compare_total": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.compare_total' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.compare_total_mag": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.compare_total_mag' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.conjugate": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.conjugate' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.copy_abs": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.copy_abs' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.copy_negate": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.copy_negate' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.copy_sign": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.copy_sign' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.exp": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.exp' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.from_float": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.7": {
+      "'decimal.Decimal.from_float' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.fma": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.fma' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.is_canonical": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.is_canonical' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.is_finite": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.is_finite' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.is_infinite": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.is_infinite' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.is_nan": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.is_nan' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.is_normal": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.is_normal' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.is_qnan": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.is_qnan' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.is_signed": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.is_signed' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.is_snan": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.is_snan' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.is_subnormal": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.is_subnormal' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.is_zero": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.is_zero' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.ln": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.ln' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.log10": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.log10' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.logb": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.logb' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.logical_and": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.logical_and' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.logical_invert": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.logical_invert' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.logical_or": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.logical_or' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.logical_xor": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.logical_xor' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.max_mag": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.max_mag' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.min_mag": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.min_mag' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.next_minus": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.next_minus' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.next_plus": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.next_plus' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.next_toward": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.next_toward' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.number_class": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.number_class' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.radix": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.radix' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.rotate": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.rotate' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.scaleb": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.scaleb' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.shift": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.shift' member": 1
+    }
+  },
+  "import decimal\ndecimal.Decimal.to_integral_exact": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.6": {
+      "'decimal.Decimal.to_integral_exact' member": 1
+    }
+  },
+  "import decimal\ndecimal.localcontext": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.5": {
+      "'decimal.localcontext' member": 1
+    }
+  },
+  "import decimal\ndecimal.Context.create_decimal_from_float": {
+    "2.4": {
+      "'decimal' module": 1
+    },
+    "2.7": {
+      "'decimal.Context.create_decimal_from_float' member": 1
+    }
+  },
+  "import difflib": {
+    "2.1": {
+      "'difflib' module": 1
+    }
+  },
+  "import difflib\ndifflib.HtmlDiff": {
+    "2.1": {
+      "'difflib' module": 1
+    },
+    "2.4": {
+      "'difflib.HtmlDiff' member": 1
+    }
+  },
+  "import difflib\ndifflib.context_diff": {
+    "2.1": {
+      "'difflib' module": 1
+    },
+    "2.3": {
+      "'difflib.context_diff' member": 1
+    }
+  },
+  "import difflib\ndifflib.unified_diff": {
+    "2.1": {
+      "'difflib' module": 1
+    },
+    "2.3": {
+      "'difflib.unified_diff' member": 1
+    }
+  },
+  "import difflib\ndifflib.SequenceMatcher.get_grouped_opcodes": {
+    "2.1": {
+      "'difflib' module": 1
+    },
+    "2.3": {
+      "'difflib.SequenceMatcher.get_grouped_opcodes' member": 1
+    }
+  },
+  "import doctest\ndoctest.register_optionflag": {
+    "2.4": {
+      "'doctest.register_optionflag' member": 1
+    }
+  },
+  "import doctest\ndoctest.testfile": {
+    "2.4": {
+      "'doctest.testfile' member": 1
+    }
+  },
+  "import doctest\ndoctest.DocFileSuite": {
+    "2.4": {
+      "'doctest.DocFileSuite' member": 1
+    }
+  },
+  "import doctest\ndoctest.DocTestSuite": {
+    "2.3": {
+      "'doctest.DocTestSuite' member": 1
+    }
+  },
+  "import doctest\ndoctest.set_unittest_reportflags": {
+    "2.4": {
+      "'doctest.set_unittest_reportflags' member": 1
+    }
+  },
+  "import doctest\ndoctest.DocTest": {
+    "2.4": {
+      "'doctest.DocTest' member": 1
+    }
+  },
+  "import doctest\ndoctest.Example": {
+    "2.4": {
+      "'doctest.Example' member": 1
+    }
+  },
+  "import doctest\ndoctest.DocTestFinder": {
+    "2.4": {
+      "'doctest.DocTestFinder' member": 1
+    }
+  },
+  "import doctest\ndoctest.DocTestParser": {
+    "2.4": {
+      "'doctest.DocTestParser' member": 1
+    }
+  },
+  "import doctest\ndoctest.DocTestRunner": {
+    "2.4": {
+      "'doctest.DocTestRunner' member": 1
+    }
+  },
+  "import doctest\ndoctest.OutputChecker": {
+    "2.4": {
+      "'doctest.OutputChecker' member": 1
+    }
+  },
+  "import doctest\ndoctest.script_from_examples": {
+    "2.4": {
+      "'doctest.script_from_examples' member": 1
+    }
+  },
+  "import doctest\ndoctest.testsource": {
+    "2.3": {
+      "'doctest.testsource' member": 1
+    }
+  },
+  "import doctest\ndoctest.debug": {
+    "2.3": {
+      "'doctest.debug' member": 1
+    }
+  },
+  "import doctest\ndoctest.debug_src": {
+    "2.4": {
+      "'doctest.debug_src' member": 1
+    }
+  },
+  "import EasyDialogs\nEasyDialogs.GetArgv": {
+    "2.0": {
+      "'EasyDialogs.GetArgv' member": 1
+    }
+  },
+  "import email": {
+    "2.2": {
+      "'email' module": 1
+    }
+  },
+  "import email.generator\nemail.generator.Generator.flatten": {
+    "2.2.2": {
+      "'email.generator.Generator.flatten' member": 1
+    }
+  },
+  "import email.generator\nemail.generator.Generator.clone": {
+    "2.2.2": {
+      "'email.generator.Generator.clone' member": 1
+    }
+  },
+  "import email.generator\nemail.generator.DecodedGenerator": {
+    "2.2.2": {
+      "'email.generator.DecodedGenerator' member": 1
+    }
+  },
+  "import email.message\nemail.message.Message.set_charset": {
+    "2.2.2": {
+      "'email.message.Message.set_charset' member": 1
+    }
+  },
+  "import email.message\nemail.message.Message.get_charset": {
+    "2.2.2": {
+      "'email.message.Message.get_charset' member": 1
+    }
+  },
+  "import email.message\nemail.message.Message.replace_header": {
+    "2.2.2": {
+      "'email.message.Message.replace_header' member": 1
+    }
+  },
+  "import email.message\nemail.message.Message.get_content_type": {
+    "2.2.2": {
+      "'email.message.Message.get_content_type' member": 1
+    }
+  },
+  "import email.message\nemail.message.Message.get_content_maintype": {
+    "2.2.2": {
+      "'email.message.Message.get_content_maintype' member": 1
+    }
+  },
+  "import email.message\nemail.message.Message.get_content_subtype": {
+    "2.2.2": {
+      "'email.message.Message.get_content_subtype' member": 1
+    }
+  },
+  "import email.message\nemail.message.Message.get_default_type": {
+    "2.2.2": {
+      "'email.message.Message.get_default_type' member": 1
+    }
+  },
+  "import email.message\nemail.message.Message.set_default_type": {
+    "2.2.2": {
+      "'email.message.Message.set_default_type' member": 1
+    }
+  },
+  "import email.message\nemail.message.Message.set_param": {
+    "2.2.2": {
+      "'email.message.Message.set_param' member": 1
+    }
+  },
+  "import email.message\nemail.message.Message.del_param": {
+    "2.2.2": {
+      "'email.message.Message.del_param' member": 1
+    }
+  },
+  "import email.message\nemail.message.Message.set_type": {
+    "2.2.2": {
+      "'email.message.Message.set_type' member": 1
+    }
+  },
+  "import email.message\nemail.message.Message.get_content_charset": {
+    "2.2.2": {
+      "'email.message.Message.get_content_charset' member": 1
+    }
+  },
+  "import email.message\nemail.message.Message.defects": {
+    "2.4": {
+      "'email.message.Message.defects' member": 1
+    }
+  },
+  "import email.mime.nonmultipart\nemail.mime.nonmultipart.MIMENonMultipart": {
+    "2.2.2": {
+      "'email.mime.nonmultipart.MIMENonMultipart' member": 1
+    }
+  },
+  "import email.mime.multipart\nemail.mime.multipart.MIMEMultipart": {
+    "2.2.2": {
+      "'email.mime.multipart.MIMEMultipart' member": 1
+    }
+  },
+  "import email.mime.application\nemail.mime.application.MIMEApplication": {
+    "2.5": {
+      "'email.mime.application.MIMEApplication' member": 1
+    }
+  },
+  "import email.utils\nemail.utils.formatdate": {
+    "2.4": {
+      "'email.utils.formatdate' member": 1
+    }
+  },
+  "import ensurepip": {
+    "2.7.9": {
+      "'ensurepip' module": 1
+    }
+  },
+  "import exceptions\nexceptions.BaseException": {
+    "2.5": {
+      "'exceptions.BaseException' member": 1
+    }
+  },
+  "import exceptions\nexceptions.EnvironmentError": {
+    "1.5.2": {
+      "'exceptions.EnvironmentError' member": 1
+    }
+  },
+  "import exceptions\nexceptions.GeneratorExit": {
+    "2.5": {
+      "'exceptions.GeneratorExit' member": 1
+    }
+  },
+  "import exceptions\nexceptions.NotImplementedError": {
+    "1.5.2": {
+      "'exceptions.NotImplementedError' member": 1
+    }
+  },
+  "import exceptions\nexceptions.OSError": {
+    "1.5.2": {
+      "'exceptions.OSError' member": 1
+    }
+  },
+  "import exceptions\nexceptions.StopIteration": {
+    "2.2": {
+      "'exceptions.StopIteration' member": 1
+    }
+  },
+  "import exceptions\nexceptions.UnboundLocalError": {
+    "2.0": {
+      "'exceptions.UnboundLocalError' member": 1
+    }
+  },
+  "import exceptions\nexceptions.UnicodeError": {
+    "2.0": {
+      "'exceptions.UnicodeError' member": 1
+    }
+  },
+  "import exceptions\nexceptions.UnicodeEncodeError": {
+    "2.3": {
+      "'exceptions.UnicodeEncodeError' member": 1
+    }
+  },
+  "import exceptions\nexceptions.UnicodeDecodeError": {
+    "2.3": {
+      "'exceptions.UnicodeDecodeError' member": 1
+    }
+  },
+  "import exceptions\nexceptions.UnicodeTranslateError": {
+    "2.3": {
+      "'exceptions.UnicodeTranslateError' member": 1
+    }
+  },
+  "import exceptions\nexceptions.WindowsError": {
+    "2.0": {
+      "'exceptions.WindowsError' member": 1
+    }
+  },
+  "import exceptions\nexceptions.ImportWarning": {
+    "2.5": {
+      "'exceptions.ImportWarning' member": 1
+    }
+  },
+  "import exceptions\nexceptions.UnicodeWarning": {
+    "2.5": {
+      "'exceptions.UnicodeWarning' member": 1
+    }
+  },
+  "import exceptions\nexceptions.BytesWarning": {
+    "2.6": {
+      "'exceptions.BytesWarning' member": 1
+    }
+  },
+  "import fileinput\nfileinput.fileno": {
+    "2.5": {
+      "'fileinput.fileno' member": 1
+    }
+  },
+  "import fileinput\nfileinput.hook_compressed": {
+    "2.5": {
+      "'fileinput.hook_compressed' member": 1
+    }
+  },
+  "import fileinput\nfileinput.hook_encoded": {
+    "2.5": {
+      "'fileinput.hook_encoded' member": 1
+    }
+  },
+  "import fnmatch\nfnmatch.filter": {
+    "2.2": {
+      "'fnmatch.filter' member": 1
+    }
+  },
+  "import fractions": {
+    "2.6": {
+      "'fractions' module": 1
+    }
+  },
+  "import ftplib\nftplib.FTP_TLS": {
+    "2.7": {
+      "'ftplib.FTP_TLS' member": 1
+    }
+  },
+  "all()": {
+    "2.5": {
+      "'all' member": 1
+    }
+  },
+  "any()": {
+    "2.5": {
+      "'any' member": 1
+    }
+  },
+  "basestring()": {
+    "2.3": {
+      "'basestring' member": 1
+    }
+  },
+  "bin()": {
+    "2.6": {
+      "'bin' member": 1
+    }
+  },
+  "bool()": {
+    "2.2": {
+      "'bool' member": 1
+    },
+    "2.2.1": {
+      "'bool' member": 1
+    }
+  },
+  "bytearray()": {
+    "2.6": {
+      "'bytearray' member": 1
+    }
+  },
+  "classmethod()": {
+    "2.2": {
+      "'classmethod' member": 1
+    }
+  },
+  "enumerate()": {
+    "2.3": {
+      "'enumerate' member": 1
+    }
+  },
+  "file()": {
+    "2.0": {
+      "'file' member": 1
+    },
+    "2.2": {
+      "'file' member": 1
+    }
+  },
+  "format()": {
+    "2.6": {
+      "'format' member": 1
+    }
+  },
+  "help()": {
+    "2.2": {
+      "'help' member": 1
+    }
+  },
+  "iter()": {
+    "2.2": {
+      "'iter' member": 1
+    }
+  },
+  "next()": {
+    "2.6": {
+      "'next' member": 1
+    }
+  },
+  "object()": {
+    "2.2": {
+      "'object' member": 1
+    }
+  },
+  "print()": {
+    "2.0": {
+      "print(expr)": 1
+    },
+    "2.6": {
+      "'print' member": 1
+    }
+  },
+  "property()": {
+    "2.2": {
+      "'property' member": 1
+    }
+  },
+  "reversed()": {
+    "2.4": {
+      "'reversed' member": 1
+    }
+  },
+  "sorted()": {
+    "2.4": {
+      "'sorted' member": 1
+    }
+  },
+  "staticmethod()": {
+    "2.2": {
+      "'staticmethod' member": 1
+    }
+  },
+  "sum()": {
+    "2.3": {
+      "'sum' member": 1
+    }
+  },
+  "super()": {
+    "2.2": {
+      "'super' member": 1
+    },
+    "3.0": {
+      "super() without arguments": 1
+    }
+  },
+  "type()": {
+    "2.2": {
+      "'type' member": 1
+    }
+  },
+  "unichr()": {
+    "2.0": {
+      "'unichr' member": 1
+    }
+  },
+  "unicode()": {
+    "2.0": {
+      "'unicode' member": 1
+    }
+  },
+  "zip()": {
+    "2.0": {
+      "'zip' member": 1
+    }
+  },
+  "import functools": {
+    "2.5": {
+      "'functools' module": 1
+    }
+  },
+  "import functools\nfunctools.cmp_to_key": {
+    "2.5": {
+      "'functools' module": 1
+    },
+    "2.7": {
+      "'functools.cmp_to_key' member": 1
+    }
+  },
+  "import functools\nfunctools.total_ordering": {
+    "2.5": {
+      "'functools' module": 1
+    },
+    "2.7": {
+      "'functools.total_ordering' member": 1
+    }
+  },
+  "import functools\nfunctools.reduce": {
+    "2.5": {
+      "'functools' module": 1
+    },
+    "2.6": {
+      "'functools.reduce' member": 1
+    }
+  },
+  "import future_builtins": {
+    "2.6": {
+      "'future_builtins' module": 1
+    }
+  },
+  "import gc\ngc.get_objects": {
+    "2.2": {
+      "'gc.get_objects' member": 1
+    }
+  },
+  "import gc\ngc.get_count": {
+    "2.5": {
+      "'gc.get_count' member": 1
+    }
+  },
+  "import gc\ngc.get_referrers": {
+    "2.2": {
+      "'gc.get_referrers' member": 1
+    }
+  },
+  "import gc\ngc.get_referents": {
+    "2.3": {
+      "'gc.get_referents' member": 1
+    }
+  },
+  "import gc\ngc.is_tracked": {
+    "2.7": {
+      "'gc.is_tracked' member": 1
+    }
+  },
+  "import getopt\ngetopt.gnu_getopt": {
+    "2.3": {
+      "'getopt.gnu_getopt' member": 1
+    }
+  },
+  "import gettext\ngettext.bind_textdomain_codeset": {
+    "2.4": {
+      "'gettext.bind_textdomain_codeset' member": 1
+    }
+  },
+  "import gettext\ngettext.lgettext": {
+    "2.4": {
+      "'gettext.lgettext' member": 1
+    }
+  },
+  "import gettext\ngettext.ldgettext": {
+    "2.4": {
+      "'gettext.ldgettext' member": 1
+    }
+  },
+  "import gettext\ngettext.ngettext": {
+    "2.3": {
+      "'gettext.ngettext' member": 1
+    }
+  },
+  "import gettext\ngettext.lngettext": {
+    "2.4": {
+      "'gettext.lngettext' member": 1
+    }
+  },
+  "import gettext\ngettext.dngettext": {
+    "2.3": {
+      "'gettext.dngettext' member": 1
+    }
+  },
+  "import gettext\ngettext.ldngettext": {
+    "2.4": {
+      "'gettext.ldngettext' member": 1
+    }
+  },
+  "import gettext\ngettext.NullTranslations.lgettext": {
+    "2.4": {
+      "'gettext.NullTranslations.lgettext' member": 1
+    }
+  },
+  "import gettext\ngettext.NullTranslations.ngettext": {
+    "2.3": {
+      "'gettext.NullTranslations.ngettext' member": 1
+    }
+  },
+  "import gettext\ngettext.NullTranslations.lngettext": {
+    "2.4": {
+      "'gettext.NullTranslations.lngettext' member": 1
+    }
+  },
+  "import gettext\ngettext.NullTranslations.ungettext": {
+    "2.3": {
+      "'gettext.NullTranslations.ungettext' member": 1
+    }
+  },
+  "import gettext\ngettext.NullTranslations.output_charset": {
+    "2.4": {
+      "'gettext.NullTranslations.output_charset' member": 1
+    }
+  },
+  "import gettext\ngettext.NullTranslations.set_output_charset": {
+    "2.4": {
+      "'gettext.NullTranslations.set_output_charset' member": 1
+    }
+  },
+  "import gettext\ngettext.GNUTranslations.lgettext": {
+    "2.4": {
+      "'gettext.GNUTranslations.lgettext' member": 1
+    }
+  },
+  "import gettext\ngettext.GNUTranslations.ngettext": {
+    "2.3": {
+      "'gettext.GNUTranslations.ngettext' member": 1
+    }
+  },
+  "import gettext\ngettext.GNUTranslations.lngettext": {
+    "2.4": {
+      "'gettext.GNUTranslations.lngettext' member": 1
+    }
+  },
+  "import gettext\ngettext.GNUTranslations.ungettext": {
+    "2.3": {
+      "'gettext.GNUTranslations.ungettext' member": 1
+    }
+  },
+  "import glob\nglob.iglob": {
+    "2.5": {
+      "'glob.iglob' member": 1
+    }
+  },
+  "import hashlib": {
+    "2.5": {
+      "'hashlib' module": 1
+    }
+  },
+  "import hashlib\nhashlib.hashlib.algorithms": {
+    "2.5": {
+      "'hashlib' module": 1
+    },
+    "2.7": {
+      "'hashlib.hashlib.algorithms' member": 1
+    }
+  },
+  "import hashlib\nhashlib.algorithms_guaranteed": {
+    "2.5": {
+      "'hashlib' module": 1
+    },
+    "2.7.9": {
+      "'hashlib.algorithms_guaranteed' member": 1
+    }
+  },
+  "import hashlib\nhashlib.algorithms_available": {
+    "2.5": {
+      "'hashlib' module": 1
+    },
+    "2.7.9": {
+      "'hashlib.algorithms_available' member": 1
+    }
+  },
+  "import hashlib\nhashlib.pbkdf2_hmac": {
+    "2.5": {
+      "'hashlib' module": 1
+    },
+    "2.7.8": {
+      "'hashlib.pbkdf2_hmac' member": 1
+    }
+  },
+  "import heapq": {
+    "2.3": {
+      "'heapq' module": 1
+    }
+  },
+  "import heapq\nheapq.heappushpop": {
+    "2.3": {
+      "'heapq' module": 1
+    },
+    "2.6": {
+      "'heapq.heappushpop' member": 1
+    }
+  },
+  "import heapq\nheapq.merge": {
+    "2.3": {
+      "'heapq' module": 1
+    },
+    "2.6": {
+      "'heapq.merge' member": 1
+    }
+  },
+  "import heapq\nheapq.nlargest": {
+    "2.3": {
+      "'heapq' module": 1
+    },
+    "2.4": {
+      "'heapq.nlargest' member": 1
+    }
+  },
+  "import heapq\nheapq.nsmallest": {
+    "2.3": {
+      "'heapq' module": 1
+    },
+    "2.4": {
+      "'heapq.nsmallest' member": 1
+    }
+  },
+  "import hmac": {
+    "2.2": {
+      "'hmac' module": 1
+    }
+  },
+  "import hmac\nhmac.compare_digest": {
+    "2.2": {
+      "'hmac' module": 1
+    },
+    "2.7.7": {
+      "'hmac.compare_digest' member": 1
+    }
+  },
+  "import hotshot": {
+    "2.2": {
+      "'hotshot' module": 1
+    }
+  },
+  "import htmllib\nhtmllib.HTMLParseError": {
+    "2.4": {
+      "'htmllib.HTMLParseError' member": 1
+    }
+  },
+  "import htmlentitydefs\nhtmlentitydefs.name2codepoint": {
+    "2.0": {
+      "'htmlentitydefs' module": 1
+    },
+    "2.3": {
+      "'htmlentitydefs.name2codepoint' member": 1
+    }
+  },
+  "import htmlentitydefs\nhtmlentitydefs.codepoint2name": {
+    "2.0": {
+      "'htmlentitydefs' module": 1
+    },
+    "2.3": {
+      "'htmlentitydefs.codepoint2name' member": 1
+    }
+  },
+  "import httplib\nhttplib.HTTPConnection": {
+    "2.0": {
+      "'httplib.HTTPConnection' member": 1
+    }
+  },
+  "import httplib\nhttplib.HTTPSConnection": {
+    "2.0": {
+      "'httplib.HTTPSConnection' member": 1
+    }
+  },
+  "import httplib\nhttplib.HTTPResponse": {
+    "2.0": {
+      "'httplib.HTTPResponse' member": 1
+    }
+  },
+  "import httplib\nhttplib.HTTPException": {
+    "2.0": {
+      "'httplib.HTTPException' member": 1
+    }
+  },
+  "import httplib\nhttplib.NotConnected": {
+    "2.0": {
+      "'httplib.NotConnected' member": 1
+    }
+  },
+  "import httplib\nhttplib.InvalidURL": {
+    "2.3": {
+      "'httplib.InvalidURL' member": 1
+    }
+  },
+  "import httplib\nhttplib.UnknownProtocol": {
+    "2.0": {
+      "'httplib.UnknownProtocol' member": 1
+    }
+  },
+  "import httplib\nhttplib.UnknownTransferEncoding": {
+    "2.0": {
+      "'httplib.UnknownTransferEncoding' member": 1
+    }
+  },
+  "import httplib\nhttplib.UnimplementedFileMode": {
+    "2.0": {
+      "'httplib.UnimplementedFileMode' member": 1
+    }
+  },
+  "import httplib\nhttplib.IncompleteRead": {
+    "2.0": {
+      "'httplib.IncompleteRead' member": 1
+    }
+  },
+  "import httplib\nhttplib.ImproperConnectionState": {
+    "2.0": {
+      "'httplib.ImproperConnectionState' member": 1
+    }
+  },
+  "import httplib\nhttplib.CannotSendRequest": {
+    "2.0": {
+      "'httplib.CannotSendRequest' member": 1
+    }
+  },
+  "import httplib\nhttplib.CannotSendHeader": {
+    "2.0": {
+      "'httplib.CannotSendHeader' member": 1
+    }
+  },
+  "import httplib\nhttplib.ResponseNotReady": {
+    "2.0": {
+      "'httplib.ResponseNotReady' member": 1
+    }
+  },
+  "import httplib\nhttplib.BadStatusLine": {
+    "2.0": {
+      "'httplib.BadStatusLine' member": 1
+    }
+  },
+  "import httplib\nhttplib.responses": {
+    "2.5": {
+      "'httplib.responses' member": 1
+    }
+  },
+  "import httplib\nhttplib.HTTPConnection.set_tunnel": {
+    "2.0": {
+      "'httplib.HTTPConnection' member": 1
+    },
+    "2.7": {
+      "'httplib.HTTPConnection.set_tunnel' member": 1
+    }
+  },
+  "import httplib\nhttplib.HTTPResponse.getheaders": {
+    "2.0": {
+      "'httplib.HTTPResponse' member": 1
+    },
+    "2.4": {
+      "'httplib.HTTPResponse.getheaders' member": 1
+    }
+  },
+  "import imaplib\nimaplib.IMAP4_stream": {
+    "2.3": {
+      "'imaplib.IMAP4_stream' member": 1
+    }
+  },
+  "import imaplib\nimaplib.IMAP4.deleteacl": {
+    "2.4": {
+      "'imaplib.IMAP4.deleteacl' member": 1
+    }
+  },
+  "import imaplib\nimaplib.IMAP4.getannotation": {
+    "2.5": {
+      "'imaplib.IMAP4.getannotation' member": 1
+    }
+  },
+  "import imaplib\nimaplib.IMAP4.getquota": {
+    "2.3": {
+      "'imaplib.IMAP4.getquota' member": 1
+    }
+  },
+  "import imaplib\nimaplib.IMAP4.getquotaroot": {
+    "2.3": {
+      "'imaplib.IMAP4.getquotaroot' member": 1
+    }
+  },
+  "import imaplib\nimaplib.IMAP4.login_cram_md5": {
+    "2.3": {
+      "'imaplib.IMAP4.login_cram_md5' member": 1
+    }
+  },
+  "import imaplib\nimaplib.IMAP4.myrights": {
+    "2.4": {
+      "'imaplib.IMAP4.myrights' member": 1
+    }
+  },
+  "import imaplib\nimaplib.IMAP4.namespace": {
+    "2.3": {
+      "'imaplib.IMAP4.namespace' member": 1
+    }
+  },
+  "import imaplib\nimaplib.IMAP4.proxyauth": {
+    "2.3": {
+      "'imaplib.IMAP4.proxyauth' member": 1
+    }
+  },
+  "import imaplib\nimaplib.IMAP4.setannotation": {
+    "2.5": {
+      "'imaplib.IMAP4.setannotation' member": 1
+    }
+  },
+  "import imaplib\nimaplib.IMAP4.setquota": {
+    "2.3": {
+      "'imaplib.IMAP4.setquota' member": 1
+    }
+  },
+  "import imaplib\nimaplib.IMAP4.thread": {
+    "2.4": {
+      "'imaplib.IMAP4.thread' member": 1
+    }
+  },
+  "import imp\nimp.acquire_lock": {
+    "2.3": {
+      "'imp.acquire_lock' member": 1
+    }
+  },
+  "import imp\nimp.release_lock": {
+    "2.3": {
+      "'imp.release_lock' member": 1
+    }
+  },
+  "import imp\nimp.NullImporter": {
+    "2.5": {
+      "'imp.NullImporter' member": 1
+    }
+  },
+  "import importlib": {
+    "2.7": {
+      "'importlib' module": 1
+    }
+  },
+  "import inspect": {
+    "2.1": {
+      "'inspect' module": 1
+    }
+  },
+  "import inspect\ninspect.isgeneratorfunction": {
+    "2.1": {
+      "'inspect' module": 1
+    },
+    "2.6": {
+      "'inspect.isgeneratorfunction' member": 1
+    }
+  },
+  "import inspect\ninspect.isgenerator": {
+    "2.1": {
+      "'inspect' module": 1
+    },
+    "2.6": {
+      "'inspect.isgenerator' member": 1
+    }
+  },
+  "import inspect\ninspect.isabstract": {
+    "2.1": {
+      "'inspect' module": 1
+    },
+    "2.6": {
+      "'inspect.isabstract' member": 1
+    }
+  },
+  "import inspect\ninspect.isdatadescriptor": {
+    "2.1": {
+      "'inspect' module": 1
+    },
+    "2.3": {
+      "'inspect.isdatadescriptor' member": 1
+    }
+  },
+  "import inspect\ninspect.isgetsetdescriptor": {
+    "2.1": {
+      "'inspect' module": 1
+    },
+    "2.5": {
+      "'inspect.isgetsetdescriptor' member": 1
+    }
+  },
+  "import inspect\ninspect.ismemberdescriptor": {
+    "2.1": {
+      "'inspect' module": 1
+    },
+    "2.5": {
+      "'inspect.ismemberdescriptor' member": 1
+    }
+  },
+  "import inspect\ninspect.cleandoc": {
+    "2.1": {
+      "'inspect' module": 1
+    },
+    "2.6": {
+      "'inspect.cleandoc' member": 1
+    }
+  },
+  "import inspect\ninspect.getcallargs": {
+    "2.1": {
+      "'inspect' module": 1
+    },
+    "2.7": {
+      "'inspect.getcallargs' member": 1
+    }
+  },
+  "import io": {
+    "2.6": {
+      "'io' module": 1
+    }
+  },
+  "import io\nio.BufferedIOBase.detach": {
+    "2.6": {
+      "'io' module": 1
+    },
+    "2.7": {
+      "'io.BufferedIOBase.detach' member": 1
+    }
+  },
+  "import io\nio.TextIOBase.detach": {
+    "2.6": {
+      "'io' module": 1
+    },
+    "2.7": {
+      "'io.TextIOBase.detach' member": 1
+    }
+  },
+  "import itertools": {
+    "2.3": {
+      "'itertools' module": 1
+    }
+  },
+  "import itertools\nitertools.chain.from_iterable": {
+    "2.3": {
+      "'itertools' module": 1
+    },
+    "2.6": {
+      "'itertools.chain.from_iterable' member": 1
+    }
+  },
+  "import itertools\nitertools.combinations": {
+    "2.3": {
+      "'itertools' module": 1
+    },
+    "2.6": {
+      "'itertools.combinations' member": 1
+    }
+  },
+  "import itertools\nitertools.combinations_with_replacement": {
+    "2.3": {
+      "'itertools' module": 1
+    },
+    "2.7": {
+      "'itertools.combinations_with_replacement' member": 1
+    }
+  },
+  "import itertools\nitertools.compress": {
+    "2.3": {
+      "'itertools' module": 1
+    },
+    "2.7": {
+      "'itertools.compress' member": 1
+    }
+  },
+  "import itertools\nitertools.groupby": {
+    "2.3": {
+      "'itertools' module": 1
+    },
+    "2.4": {
+      "'itertools.groupby' member": 1
+    }
+  },
+  "import itertools\nitertools.izip_longest": {
+    "2.3": {
+      "'itertools' module": 1
+    },
+    "2.6": {
+      "'itertools.izip_longest' member": 1
+    }
+  },
+  "import itertools\nitertools.permutations": {
+    "2.3": {
+      "'itertools' module": 1
+    },
+    "2.6": {
+      "'itertools.permutations' member": 1
+    }
+  },
+  "import itertools\nitertools.product": {
+    "2.3": {
+      "'itertools' module": 1
+    },
+    "2.6": {
+      "'itertools.product' member": 1
+    }
+  },
+  "import itertools\nitertools.tee": {
+    "2.3": {
+      "'itertools' module": 1
+    },
+    "2.4": {
+      "'itertools.tee' member": 1
+    }
+  },
+  "import json": {
+    "2.6": {
+      "'json' module": 1
+    }
+  },
+  "import locale\nlocale.getdefaultlocale": {
+    "2.0": {
+      "'locale.getdefaultlocale' member": 1
+    }
+  },
+  "import locale\nlocale.getlocale": {
+    "2.0": {
+      "'locale.getlocale' member": 1
+    }
+  },
+  "import locale\nlocale.getpreferredencoding": {
+    "2.3": {
+      "'locale.getpreferredencoding' member": 1
+    }
+  },
+  "import locale\nlocale.normalize": {
+    "2.0": {
+      "'locale.normalize' member": 1
+    }
+  },
+  "import locale\nlocale.resetlocale": {
+    "2.0": {
+      "'locale.resetlocale' member": 1
+    }
+  },
+  "import locale\nlocale.format_string": {
+    "2.5": {
+      "'locale.format_string' member": 1
+    }
+  },
+  "import locale\nlocale.currency": {
+    "2.5": {
+      "'locale.currency' member": 1
+    }
+  },
+  "import logging\nlogging.Logger.getChild": {
+    "2.3": {
+      "'logging' module": 1
+    },
+    "2.7": {
+      "'logging.Logger.getChild' member": 1
+    }
+  },
+  "import logging.config\nlogging.config.dictConfig": {
+    "2.7": {
+      "'logging.config.dictConfig' member": 1
+    }
+  },
+  "import marshal\nmarshal.version": {
+    "2.4": {
+      "'marshal.version' member": 1
+    }
+  },
+  "import math\nmath.copysign": {
+    "2.6": {
+      "'math.copysign' member": 1
+    }
+  },
+  "import math\nmath.factorial": {
+    "2.6": {
+      "'math.factorial' member": 1
+    }
+  },
+  "import math\nmath.fsum": {
+    "2.6": {
+      "'math.fsum' member": 1
+    }
+  },
+  "import math\nmath.isinf": {
+    "2.6": {
+      "'math.isinf' member": 1
+    }
+  },
+  "import math\nmath.isnan": {
+    "2.6": {
+      "'math.isnan' member": 1
+    }
+  },
+  "import math\nmath.trunc": {
+    "2.6": {
+      "'math.trunc' member": 1
+    }
+  },
+  "import math\nmath.expm1": {
+    "2.7": {
+      "'math.expm1' member": 1
+    }
+  },
+  "import math\nmath.log1p": {
+    "2.6": {
+      "'math.log1p' member": 1
+    }
+  },
+  "import math\nmath.acosh": {
+    "2.6": {
+      "'math.acosh' member": 1
+    }
+  },
+  "import math\nmath.asinh": {
+    "2.6": {
+      "'math.asinh' member": 1
+    }
+  },
+  "import math\nmath.atanh": {
+    "2.6": {
+      "'math.atanh' member": 1
+    }
+  },
+  "import math\nmath.erf": {
+    "2.7": {
+      "'math.erf' member": 1
+    }
+  },
+  "import math\nmath.erfc": {
+    "2.7": {
+      "'math.erfc' member": 1
+    }
+  },
+  "import math\nmath.gamma": {
+    "2.7": {
+      "'math.gamma' member": 1
+    }
+  },
+  "import math\nmath.lgamma": {
+    "2.7": {
+      "'math.lgamma' member": 1
+    }
+  },
+  "import mimetypes\nmimetypes.MimeTypes.read_windows_registry": {
+    "2.7": {
+      "'mimetypes.MimeTypes.read_windows_registry' member": 1
+    }
+  },
+  "import modulefinder": {
+    "2.3": {
+      "'modulefinder' module": 1
+    }
+  },
+  "import msilib": {
+    "2.5": {
+      "'msilib' module": 1
+    }
+  },
+  "import msvcrt\nmsvcrt.getwch": {
+    "2.6": {
+      "'msvcrt.getwch' member": 1
+    }
+  },
+  "import msvcrt\nmsvcrt.getwche": {
+    "2.6": {
+      "'msvcrt.getwche' member": 1
+    }
+  },
+  "import msvcrt\nmsvcrt.putwch": {
+    "2.6": {
+      "'msvcrt.putwch' member": 1
+    }
+  },
+  "import msvcrt\nmsvcrt.ungetwch": {
+    "2.6": {
+      "'msvcrt.ungetwch' member": 1
+    }
+  },
+  "import multiprocessing": {
+    "2.6": {
+      "'multiprocessing' module": 1
+    }
+  },
+  "import netrc": {
+    "1.5.2": {
+      "'netrc' module": 1
+    }
+  },
+  "import nis\nnis.get_default_domain": {
+    "2.5": {
+      "'nis.get_default_domain' member": 1
+    }
+  },
+  "import nntplib\nnntplib.NNTP.descriptions": {
+    "2.4": {
+      "'nntplib.NNTP.descriptions' member": 1
+    }
+  },
+  "import nntplib\nnntplib.NNTP.description": {
+    "2.4": {
+      "'nntplib.NNTP.description' member": 1
+    }
+  },
+  "import numbers": {
+    "2.6": {
+      "'numbers' module": 1
+    }
+  },
+  "import operator\noperator.lt": {
+    "2.2": {
+      "'operator.lt' member": 1
+    }
+  },
+  "import operator\noperator.is_": {
+    "2.3": {
+      "'operator.is_' member": 1
+    }
+  },
+  "import operator\noperator.is_not": {
+    "2.3": {
+      "'operator.is_not' member": 1
+    }
+  },
+  "import operator\noperator.floordiv": {
+    "2.2": {
+      "'operator.floordiv' member": 1
+    }
+  },
+  "import operator\noperator.index": {
+    "2.5": {
+      "'operator.index' member": 1
+    }
+  },
+  "import operator\noperator.pow": {
+    "2.3": {
+      "'operator.pow' member": 1
+    }
+  },
+  "import operator\noperator.truediv": {
+    "2.2": {
+      "'operator.truediv' member": 1
+    }
+  },
+  "import operator\noperator.iadd": {
+    "2.5": {
+      "'operator.iadd' member": 1
+    }
+  },
+  "import operator\noperator.iand": {
+    "2.5": {
+      "'operator.iand' member": 1
+    }
+  },
+  "import operator\noperator.iconcat": {
+    "2.5": {
+      "'operator.iconcat' member": 1
+    }
+  },
+  "import operator\noperator.idiv": {
+    "2.5": {
+      "'operator.idiv' member": 1
+    }
+  },
+  "import operator\noperator.ifloordiv": {
+    "2.5": {
+      "'operator.ifloordiv' member": 1
+    }
+  },
+  "import operator\noperator.ilshift": {
+    "2.5": {
+      "'operator.ilshift' member": 1
+    }
+  },
+  "import operator\noperator.imod": {
+    "2.5": {
+      "'operator.imod' member": 1
+    }
+  },
+  "import operator\noperator.imul": {
+    "2.5": {
+      "'operator.imul' member": 1
+    }
+  },
+  "import operator\noperator.ior": {
+    "2.5": {
+      "'operator.ior' member": 1
+    }
+  },
+  "import operator\noperator.ipow": {
+    "2.5": {
+      "'operator.ipow' member": 1
+    }
+  },
+  "import operator\noperator.irepeat": {
+    "2.5": {
+      "'operator.irepeat' member": 1
+    }
+  },
+  "import operator\noperator.irshift": {
+    "2.5": {
+      "'operator.irshift' member": 1
+    }
+  },
+  "import operator\noperator.isub": {
+    "2.5": {
+      "'operator.isub' member": 1
+    }
+  },
+  "import operator\noperator.itruediv": {
+    "2.5": {
+      "'operator.itruediv' member": 1
+    }
+  },
+  "import operator\noperator.ixor": {
+    "2.5": {
+      "'operator.ixor' member": 1
+    }
+  },
+  "import operator\noperator.attrgetter": {
+    "2.4": {
+      "'operator.attrgetter' member": 1
+    }
+  },
+  "import operator\noperator.itemgetter": {
+    "2.4": {
+      "'operator.itemgetter' member": 1
+    }
+  },
+  "import operator\noperator.methodcaller": {
+    "2.6": {
+      "'operator.methodcaller' member": 1
+    }
+  },
+  "import optparse": {
+    "2.3": {
+      "'optparse' module": 1
+    }
+  },
+  "import os\nos.initgroups": {
+    "2.7": {
+      "'os.initgroups' member": 1
+    }
+  },
+  "import os\nos.getpgid": {
+    "2.3": {
+      "'os.getpgid' member": 1
+    }
+  },
+  "import os\nos.getresuid": {
+    "2.7": {
+      "'os.getresuid' member": 1
+    }
+  },
+  "import os\nos.getresgid": {
+    "2.7": {
+      "'os.getresgid' member": 1
+    }
+  },
+  "import os\nos.setgroups": {
+    "2.2": {
+      "'os.setgroups' member": 1
+    }
+  },
+  "import os\nos.setresgid": {
+    "2.7": {
+      "'os.setresgid' member": 1
+    }
+  },
+  "import os\nos.setresuid": {
+    "2.7": {
+      "'os.setresuid' member": 1
+    }
+  },
+  "import os\nos.getsid": {
+    "2.4": {
+      "'os.getsid' member": 1
+    }
+  },
+  "import os\nos.popen2": {
+    "2.0": {
+      "'os.popen2' member": 1
+    }
+  },
+  "import os\nos.popen3": {
+    "2.0": {
+      "'os.popen3' member": 1
+    }
+  },
+  "import os\nos.popen4": {
+    "2.0": {
+      "'os.popen4' member": 1
+    }
+  },
+  "import os\nos.closerange": {
+    "2.6": {
+      "'os.closerange' member": 1
+    }
+  },
+  "import os\nos.fchmod": {
+    "2.6": {
+      "'os.fchmod' member": 1
+    }
+  },
+  "import os\nos.fchown": {
+    "2.6": {
+      "'os.fchown' member": 1
+    }
+  },
+  "import os\nos.SEEK_SET": {
+    "2.5": {
+      "'os.SEEK_SET' member": 1
+    }
+  },
+  "import os\nos.fchdir": {
+    "2.3": {
+      "'os.fchdir' member": 1
+    }
+  },
+  "import os\nos.getcwdu": {
+    "2.3": {
+      "'os.getcwdu' member": 1
+    }
+  },
+  "import os\nos.chflags": {
+    "2.6": {
+      "'os.chflags' member": 1
+    }
+  },
+  "import os\nos.chroot": {
+    "2.2": {
+      "'os.chroot' member": 1
+    }
+  },
+  "import os\nos.lchflags": {
+    "2.6": {
+      "'os.lchflags' member": 1
+    }
+  },
+  "import os\nos.lchmod": {
+    "2.6": {
+      "'os.lchmod' member": 1
+    }
+  },
+  "import os\nos.lchown": {
+    "2.3": {
+      "'os.lchown' member": 1
+    }
+  },
+  "import os\nos.mknod": {
+    "2.3": {
+      "'os.mknod' member": 1
+    }
+  },
+  "import os\nos.major": {
+    "2.3": {
+      "'os.major' member": 1
+    }
+  },
+  "import os\nos.minor": {
+    "2.3": {
+      "'os.minor' member": 1
+    }
+  },
+  "import os\nos.makedev": {
+    "2.3": {
+      "'os.makedev' member": 1
+    }
+  },
+  "import os\nos.makedirs": {
+    "1.5.2": {
+      "'os.makedirs' member": 1
+    }
+  },
+  "import os\nos.removedirs": {
+    "1.5.2": {
+      "'os.removedirs' member": 1
+    }
+  },
+  "import os\nos.renames": {
+    "1.5.2": {
+      "'os.renames' member": 1
+    }
+  },
+  "import os\nos.walk": {
+    "2.3": {
+      "'os.walk' member": 1
+    }
+  },
+  "import os\nos.EX_OK": {
+    "2.3": {
+      "'os.EX_OK' member": 1
+    }
+  },
+  "import os\nos.EX_USAGE": {
+    "2.3": {
+      "'os.EX_USAGE' member": 1
+    }
+  },
+  "import os\nos.EX_DATAERR": {
+    "2.3": {
+      "'os.EX_DATAERR' member": 1
+    }
+  },
+  "import os\nos.EX_NOINPUT": {
+    "2.3": {
+      "'os.EX_NOINPUT' member": 1
+    }
+  },
+  "import os\nos.EX_NOUSER": {
+    "2.3": {
+      "'os.EX_NOUSER' member": 1
+    }
+  },
+  "import os\nos.EX_NOHOST": {
+    "2.3": {
+      "'os.EX_NOHOST' member": 1
+    }
+  },
+  "import os\nos.EX_UNAVAILABLE": {
+    "2.3": {
+      "'os.EX_UNAVAILABLE' member": 1
+    }
+  },
+  "import os\nos.EX_SOFTWARE": {
+    "2.3": {
+      "'os.EX_SOFTWARE' member": 1
+    }
+  },
+  "import os\nos.EX_OSERR": {
+    "2.3": {
+      "'os.EX_OSERR' member": 1
+    }
+  },
+  "import os\nos.EX_OSFILE": {
+    "2.3": {
+      "'os.EX_OSFILE' member": 1
+    }
+  },
+  "import os\nos.EX_CANTCREAT": {
+    "2.3": {
+      "'os.EX_CANTCREAT' member": 1
+    }
+  },
+  "import os\nos.EX_IOERR": {
+    "2.3": {
+      "'os.EX_IOERR' member": 1
+    }
+  },
+  "import os\nos.EX_TEMPFAIL": {
+    "2.3": {
+      "'os.EX_TEMPFAIL' member": 1
+    }
+  },
+  "import os\nos.EX_PROTOCOL": {
+    "2.3": {
+      "'os.EX_PROTOCOL' member": 1
+    }
+  },
+  "import os\nos.EX_NOPERM": {
+    "2.3": {
+      "'os.EX_NOPERM' member": 1
+    }
+  },
+  "import os\nos.EX_CONFIG": {
+    "2.3": {
+      "'os.EX_CONFIG' member": 1
+    }
+  },
+  "import os\nos.EX_NOTFOUND": {
+    "2.3": {
+      "'os.EX_NOTFOUND' member": 1
+    }
+  },
+  "import os\nos.killpg": {
+    "2.3": {
+      "'os.killpg' member": 1
+    }
+  },
+  "import os\nos.spawnl": {
+    "1.6": {
+      "'os.spawnl' member": 1
+    }
+  },
+  "import os\nos.P_NOWAIT": {
+    "1.6": {
+      "'os.P_NOWAIT' member": 1
+    }
+  },
+  "import os\nos.P_WAIT": {
+    "1.6": {
+      "'os.P_WAIT' member": 1
+    }
+  },
+  "import os\nos.P_DETACH": {
+    "1.6": {
+      "'os.P_DETACH' member": 1
+    }
+  },
+  "import os\nos.startfile": {
+    "2.0": {
+      "'os.startfile' member": 1
+    }
+  },
+  "import os\nos.wait3": {
+    "2.5": {
+      "'os.wait3' member": 1
+    }
+  },
+  "import os\nos.wait4": {
+    "2.5": {
+      "'os.wait4' member": 1
+    }
+  },
+  "import os\nos.WCONTINUED": {
+    "2.3": {
+      "'os.WCONTINUED' member": 1
+    }
+  },
+  "import os\nos.WUNTRACED": {
+    "2.3": {
+      "'os.WUNTRACED' member": 1
+    }
+  },
+  "import os\nos.WCOREDUMP": {
+    "2.3": {
+      "'os.WCOREDUMP' member": 1
+    }
+  },
+  "import os\nos.WIFCONTINUED": {
+    "2.3": {
+      "'os.WIFCONTINUED' member": 1
+    }
+  },
+  "import os\nos.getloadavg": {
+    "2.3": {
+      "'os.getloadavg' member": 1
+    }
+  },
+  "import os\nos.extsep": {
+    "2.2": {
+      "'os.extsep' member": 1
+    }
+  },
+  "import os\nos.devnull": {
+    "2.4": {
+      "'os.devnull' member": 1
+    }
+  },
+  "import os\nos.urandom": {
+    "2.4": {
+      "'os.urandom' member": 1
+    }
+  },
+  "import os.path\nos.path.abspath": {
+    "1.5.2": {
+      "'os.path.abspath' member": 1
+    }
+  },
+  "import os.path\nos.path.lexists": {
+    "2.4": {
+      "'os.path.lexists' member": 1
+    }
+  },
+  "import os.path\nos.path.getatime": {
+    "1.5.2": {
+      "'os.path.getatime' member": 1
+    }
+  },
+  "import os.path\nos.path.getmtime": {
+    "1.5.2": {
+      "'os.path.getmtime' member": 1
+    }
+  },
+  "import os.path\nos.path.getctime": {
+    "2.3": {
+      "'os.path.getctime' member": 1
+    }
+  },
+  "import os.path\nos.path.getsize": {
+    "1.5.2": {
+      "'os.path.getsize' member": 1
+    }
+  },
+  "import os.path\nos.path.realpath": {
+    "2.2": {
+      "'os.path.realpath' member": 1
+    }
+  },
+  "import os.path\nos.path.relpath": {
+    "2.6": {
+      "'os.path.relpath' member": 1
+    }
+  },
+  "import os.path\nos.path.splitdrive": {
+    "1.3": {
+      "'os.path.splitdrive' member": 1
+    }
+  },
+  "import os.path\nos.path.supports_unicode_filenames": {
+    "2.3": {
+      "'os.path.supports_unicode_filenames' member": 1
+    }
+  },
+  "import ossaudiodev": {
+    "2.3": {
+      "'ossaudiodev' module": 1
+    }
+  },
+  "import pickle\npickle.HIGHEST_PROTOCOL": {
+    "2.3": {
+      "'pickle.HIGHEST_PROTOCOL' member": 1
+    }
+  },
+  "import pickletools": {
+    "2.3": {
+      "'pickletools' module": 1
+    }
+  },
+  "import pickletools\npickletools.optimize": {
+    "2.3": {
+      "'pickletools' module": 1
+    },
+    "2.6": {
+      "'pickletools.optimize' member": 1
+    }
+  },
+  "import pkgutil": {
+    "2.3": {
+      "'pkgutil' module": 1
+    }
+  },
+  "import pkgutil\npkgutil.get_data": {
+    "2.3": {
+      "'pkgutil' module": 1
+    },
+    "2.6": {
+      "'pkgutil.get_data' member": 1
+    }
+  },
+  "import platform": {
+    "2.3": {
+      "'platform' module": 1
+    }
+  },
+  "import platform\nplatform.python_branch": {
+    "2.3": {
+      "'platform' module": 1
+    },
+    "2.6": {
+      "'platform.python_branch' member": 1
+    }
+  },
+  "import platform\nplatform.python_implementation": {
+    "2.3": {
+      "'platform' module": 1
+    },
+    "2.6": {
+      "'platform.python_implementation' member": 1
+    }
+  },
+  "import platform\nplatform.python_revision": {
+    "2.3": {
+      "'platform' module": 1
+    },
+    "2.6": {
+      "'platform.python_revision' member": 1
+    }
+  },
+  "import platform\nplatform.linux_distribution": {
+    "2.3": {
+      "'platform' module": 1
+    },
+    "2.6": {
+      "'platform.linux_distribution' member": 1
+    }
+  },
+  "import popen2\npopen2.popen4": {
+    "2.0": {
+      "'popen2' module": 1,
+      "'popen2.popen4' member": 1
+    }
+  },
+  "import popen2\npopen2.Popen4": {
+    "2.0": {
+      "'popen2' module": 1,
+      "'popen2.Popen4' member": 1
+    }
+  },
+  "import poplib\npoplib.POP3_SSL": {
+    "2.4": {
+      "'poplib.POP3_SSL' member": 1
+    }
+  },
+  "import pprint\npprint.PrettyPrinter.format": {
+    "2.3": {
+      "'pprint.PrettyPrinter.format' member": 1
+    }
+  },
+  "import pstats\npstats.Stats": {
+    "2.3": {
+      "'pstats.Stats' member": 1
+    }
+  },
+  "import pydoc": {
+    "2.1": {
+      "'pydoc' module": 1
+    }
+  },
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.GetInputContext": {
+    "2.1": {
+      "'xml.parsers.expat.xmlparser.GetInputContext' member": 1
+    }
+  },
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.UseForeignDTD": {
+    "2.3": {
+      "'xml.parsers.expat.xmlparser.UseForeignDTD' member": 1
+    }
+  },
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.buffer_size": {
+    "2.3": {
+      "'xml.parsers.expat.xmlparser.buffer_size' member": 1
+    }
+  },
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.buffer_text": {
+    "2.3": {
+      "'xml.parsers.expat.xmlparser.buffer_text' member": 1
+    }
+  },
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.buffer_used": {
+    "2.3": {
+      "'xml.parsers.expat.xmlparser.buffer_used' member": 1
+    }
+  },
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.ordered_attributes": {
+    "2.1": {
+      "'xml.parsers.expat.xmlparser.ordered_attributes' member": 1
+    }
+  },
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.specified_attributes": {
+    "2.1": {
+      "'xml.parsers.expat.xmlparser.specified_attributes' member": 1
+    }
+  },
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.XmlDeclHandler": {
+    "2.1": {
+      "'xml.parsers.expat.xmlparser.XmlDeclHandler' member": 1
+    }
+  },
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.EntityDeclHandler": {
+    "2.1": {
+      "'xml.parsers.expat.xmlparser.EntityDeclHandler' member": 1
+    }
+  },
+  "import xml.parsers.expat\nxml.parsers.expat.ExpatError.code": {
+    "2.1": {
+      "'xml.parsers.expat.ExpatError.code' member": 1
+    }
+  },
+  "import xml.parsers.expat\nxml.parsers.expat.ExpatError.lineno": {
+    "2.1": {
+      "'xml.parsers.expat.ExpatError.lineno' member": 1
+    }
+  },
+  "import xml.parsers.expat\nxml.parsers.expat.ExpatError.offset": {
+    "2.1": {
+      "'xml.parsers.expat.ExpatError.offset' member": 1
+    }
+  },
+  "import Queue\nQueue.LifoQueue": {
+    "2.0": {
+      "'Queue' module": 1
+    },
+    "2.6": {
+      "'Queue.LifoQueue' member": 1
+    }
+  },
+  "import Queue\nQueue.PriorityQueue": {
+    "2.0": {
+      "'Queue' module": 1
+    },
+    "2.6": {
+      "'Queue.PriorityQueue' member": 1
+    }
+  },
+  "import Queue\nQueue.Queue.task_done": {
+    "2.0": {
+      "'Queue' module": 1
+    },
+    "2.5": {
+      "'Queue.Queue.task_done' member": 1
+    }
+  },
+  "import Queue\nQueue.Queue.join": {
+    "2.0": {
+      "'Queue' module": 1
+    },
+    "2.5": {
+      "'Queue.Queue.join' member": 1
+    }
+  },
+  "import random\nrandom.getstate": {
+    "2.1": {
+      "'random.getstate' member": 1
+    }
+  },
+  "import random\nrandom.setstate": {
+    "2.1": {
+      "'random.setstate' member": 1
+    }
+  },
+  "import random\nrandom.jumpahead": {
+    "2.1": {
+      "'random.jumpahead' member": 1
+    }
+  },
+  "import random\nrandom.getrandbits": {
+    "2.4": {
+      "'random.getrandbits' member": 1
+    }
+  },
+  "import random\nrandom.randrange": {
+    "1.5.2": {
+      "'random.randrange' member": 1
+    }
+  },
+  "import random\nrandom.sample": {
+    "2.3": {
+      "'random.sample' member": 1
+    }
+  },
+  "import random\nrandom.triangular": {
+    "2.6": {
+      "'random.triangular' member": 1
+    }
+  },
+  "import random\nrandom.SystemRandom": {
+    "2.4": {
+      "'random.SystemRandom' member": 1
+    }
+  },
+  "import re\nre.U": {
+    "2.0": {
+      "'re.U' member": 1
+    }
+  },
+  "import re\nre.findall": {
+    "1.5.2": {
+      "'re.findall' member": 1
+    }
+  },
+  "import re\nre.finditer": {
+    "2.2": {
+      "'re.finditer' member": 1
+    }
+  },
+  "import readline\nreadline.clear_history": {
+    "2.4": {
+      "'readline.clear_history' member": 1
+    }
+  },
+  "import readline\nreadline.get_current_history_length": {
+    "2.3": {
+      "'readline.get_current_history_length' member": 1
+    }
+  },
+  "import readline\nreadline.get_history_item": {
+    "2.3": {
+      "'readline.get_history_item' member": 1
+    }
+  },
+  "import readline\nreadline.remove_history_item": {
+    "2.4": {
+      "'readline.remove_history_item' member": 1
+    }
+  },
+  "import readline\nreadline.replace_history_item": {
+    "2.4": {
+      "'readline.replace_history_item' member": 1
+    }
+  },
+  "import readline\nreadline.get_completer": {
+    "2.3": {
+      "'readline.get_completer' member": 1
+    }
+  },
+  "import readline\nreadline.get_completion_type": {
+    "2.6": {
+      "'readline.get_completion_type' member": 1
+    }
+  },
+  "import readline\nreadline.set_completion_display_matches_hook": {
+    "2.6": {
+      "'readline.set_completion_display_matches_hook' member": 1
+    }
+  },
+  "import runpy": {
+    "2.5": {
+      "'runpy' module": 1
+    }
+  },
+  "import runpy\nrunpy.run_path": {
+    "2.5": {
+      "'runpy' module": 1
+    },
+    "2.7": {
+      "'runpy.run_path' member": 1
+    }
+  },
+  "import sched\nsched.scheduler.queue": {
+    "2.6": {
+      "'sched.scheduler.queue' member": 1
+    }
+  },
+  "import select\nselect.epoll": {
+    "2.6": {
+      "'select.epoll' member": 1
+    }
+  },
+  "import select\nselect.kqueue": {
+    "2.6": {
+      "'select.kqueue' member": 1
+    }
+  },
+  "import select\nselect.kevent": {
+    "2.6": {
+      "'select.kevent' member": 1
+    }
+  },
+  "import select\nselect.select.PIPE_BUF": {
+    "2.7": {
+      "'select.select.PIPE_BUF' member": 1
+    }
+  },
+  "import select\nselect.poll.modify": {
+    "2.6": {
+      "'select.poll.modify' member": 1
+    }
+  },
+  "import sets": {
+    "2.3": {
+      "'sets' module": 1
+    }
+  },
+  "import sgmllib\nsgmllib.SGMLParseError": {
+    "2.1": {
+      "'sgmllib.SGMLParseError' member": 1
+    }
+  },
+  "import sgmllib\nsgmllib.SGMLParser.convert_charref": {
+    "2.5": {
+      "'sgmllib.SGMLParser.convert_charref' member": 1
+    }
+  },
+  "import sgmllib\nsgmllib.SGMLParser.convert_codepoint": {
+    "2.5": {
+      "'sgmllib.SGMLParser.convert_codepoint' member": 1
+    }
+  },
+  "import sgmllib\nsgmllib.SGMLParser.convert_entityref": {
+    "2.5": {
+      "'sgmllib.SGMLParser.convert_entityref' member": 1
+    }
+  },
+  "import shlex": {
+    "1.5.2": {
+      "'shlex' module": 1
+    }
+  },
+  "import shlex\nshlex.split": {
+    "2.3": {
+      "'shlex.split' member": 1
+    }
+  },
+  "import shlex\nshlex.shlex.push_source": {
+    "2.1": {
+      "'shlex.shlex.push_source' member": 1
+    }
+  },
+  "import shlex\nshlex.shlex.pop_source": {
+    "2.1": {
+      "'shlex.shlex.pop_source' member": 1
+    }
+  },
+  "import shlex\nshlex.shlex.escape": {
+    "2.3": {
+      "'shlex.shlex.escape' member": 1
+    }
+  },
+  "import shlex\nshlex.shlex.escapedquotes": {
+    "2.3": {
+      "'shlex.shlex.escapedquotes' member": 1
+    }
+  },
+  "import shlex\nshlex.shlex.whitespace_split": {
+    "2.3": {
+      "'shlex.shlex.whitespace_split' member": 1
+    }
+  },
+  "import shlex\nshlex.shlex.eof": {
+    "2.3": {
+      "'shlex.shlex.eof' member": 1
+    }
+  },
+  "import shutil\nshutil.ignore_patterns": {
+    "2.6": {
+      "'shutil.ignore_patterns' member": 1
+    }
+  },
+  "import shutil\nshutil.move": {
+    "2.3": {
+      "'shutil.move' member": 1
+    }
+  },
+  "import shutil\nshutil.Error": {
+    "2.3": {
+      "'shutil.Error' member": 1
+    }
+  },
+  "import shutil\nshutil.make_archive": {
+    "2.7": {
+      "'shutil.make_archive' member": 1
+    }
+  },
+  "import shutil\nshutil.get_archive_formats": {
+    "2.7": {
+      "'shutil.get_archive_formats' member": 1
+    }
+  },
+  "import shutil\nshutil.register_archive_format": {
+    "2.7": {
+      "'shutil.register_archive_format' member": 1
+    }
+  },
+  "import shutil\nshutil.unregister_archive_format": {
+    "2.7": {
+      "'shutil.unregister_archive_format' member": 1
+    }
+  },
+  "import signal\nsignal.CTRL_C_EVENT": {
+    "2.7": {
+      "'signal.CTRL_C_EVENT' member": 1
+    }
+  },
+  "import signal\nsignal.CTRL_BREAK_EVENT": {
+    "2.7": {
+      "'signal.CTRL_BREAK_EVENT' member": 1
+    }
+  },
+  "import signal\nsignal.setitimer": {
+    "2.6": {
+      "'signal.setitimer' member": 1
+    }
+  },
+  "import signal\nsignal.getitimer": {
+    "2.6": {
+      "'signal.getitimer' member": 1
+    }
+  },
+  "import signal\nsignal.set_wakeup_fd": {
+    "2.6": {
+      "'signal.set_wakeup_fd' member": 1
+    }
+  },
+  "import signal\nsignal.siginterrupt": {
+    "2.6": {
+      "'signal.siginterrupt' member": 1
+    }
+  },
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.CGIXMLRPCRequestHandler": {
+    "2.2": {
+      "'SimpleXMLRPCServer' module": 1
+    },
+    "2.3": {
+      "'SimpleXMLRPCServer.CGIXMLRPCRequestHandler' member": 1
+    }
+  },
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCServer.register_introspection_functions": {
+    "2.2": {
+      "'SimpleXMLRPCServer' module": 1
+    },
+    "2.3": {
+      "'SimpleXMLRPCServer.SimpleXMLRPCServer.register_introspection_functions' member": 1
+    }
+  },
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCRequestHandler.rpc_paths": {
+    "2.2": {
+      "'SimpleXMLRPCServer' module": 1
+    },
+    "2.5": {
+      "'SimpleXMLRPCServer.SimpleXMLRPCRequestHandler.rpc_paths' member": 1
+    }
+  },
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCRequestHandler.encode_threshold": {
+    "2.2": {
+      "'SimpleXMLRPCServer' module": 1
+    },
+    "2.7": {
+      "'SimpleXMLRPCServer.SimpleXMLRPCRequestHandler.encode_threshold' member": 1
+    }
+  },
+  "import site\nsite.PREFIXES": {
+    "2.6": {
+      "'site.PREFIXES' member": 1
+    }
+  },
+  "import site\nsite.ENABLE_USER_SITE": {
+    "2.6": {
+      "'site.ENABLE_USER_SITE' member": 1
+    }
+  },
+  "import site\nsite.USER_SITE": {
+    "2.6": {
+      "'site.USER_SITE' member": 1
+    }
+  },
+  "import site\nsite.USER_BASE": {
+    "2.6": {
+      "'site.USER_BASE' member": 1
+    }
+  },
+  "import site\nsite.getsitepackages": {
+    "2.7": {
+      "'site.getsitepackages' member": 1
+    }
+  },
+  "import site\nsite.getuserbase": {
+    "2.7": {
+      "'site.getuserbase' member": 1
+    }
+  },
+  "import site\nsite.getusersitepackages": {
+    "2.7": {
+      "'site.getusersitepackages' member": 1
+    }
+  },
+  "import smtplib\nsmtplib.SMTP_SSL": {
+    "2.6": {
+      "'smtplib.SMTP_SSL' member": 1
+    }
+  },
+  "import smtplib\nsmtplib.LMTP": {
+    "2.6": {
+      "'smtplib.LMTP' member": 1
+    }
+  },
+  "import smtplib\nsmtplib.SMTP.ehlo_or_helo_if_needed": {
+    "2.6": {
+      "'smtplib.SMTP.ehlo_or_helo_if_needed' member": 1
+    }
+  },
+  "import socket\nsocket.timeout": {
+    "2.3": {
+      "'socket.timeout' member": 1
+    }
+  },
+  "import socket\nsocket.has_ipv6": {
+    "2.3": {
+      "'socket.has_ipv6' member": 1
+    }
+  },
+  "import socket\nsocket.create_connection": {
+    "2.6": {
+      "'socket.create_connection' member": 1
+    }
+  },
+  "import socket\nsocket.getaddrinfo": {
+    "2.2": {
+      "'socket.getaddrinfo' member": 1
+    }
+  },
+  "import socket\nsocket.getfqdn": {
+    "2.0": {
+      "'socket.getfqdn' member": 1
+    }
+  },
+  "import socket\nsocket.getnameinfo": {
+    "2.2": {
+      "'socket.getnameinfo' member": 1
+    }
+  },
+  "import socket\nsocket.socketpair": {
+    "2.4": {
+      "'socket.socketpair' member": 1
+    }
+  },
+  "import socket\nsocket.inet_pton": {
+    "2.3": {
+      "'socket.inet_pton' member": 1
+    }
+  },
+  "import socket\nsocket.inet_ntop": {
+    "2.3": {
+      "'socket.inet_ntop' member": 1
+    }
+  },
+  "import socket\nsocket.getdefaulttimeout": {
+    "2.3": {
+      "'socket.getdefaulttimeout' member": 1
+    }
+  },
+  "import socket\nsocket.setdefaulttimeout": {
+    "2.3": {
+      "'socket.setdefaulttimeout' member": 1
+    }
+  },
+  "import socket\nsocket.socket.ioctl": {
+    "2.6": {
+      "'socket.socket.ioctl' member": 1
+    }
+  },
+  "import socket\nsocket.socket.recvfrom_into": {
+    "2.5": {
+      "'socket.socket.recvfrom_into' member": 1
+    }
+  },
+  "import socket\nsocket.socket.recv_into": {
+    "2.5": {
+      "'socket.socket.recv_into' member": 1
+    }
+  },
+  "import socket\nsocket.socket.settimeout": {
+    "2.3": {
+      "'socket.socket.settimeout' member": 1
+    }
+  },
+  "import socket\nsocket.socket.gettimeout": {
+    "2.3": {
+      "'socket.socket.gettimeout' member": 1
+    }
+  },
+  "import socket\nsocket.socket.family": {
+    "2.5": {
+      "'socket.socket.family' member": 1
+    }
+  },
+  "import socket\nsocket.socket.type": {
+    "2.5": {
+      "'socket.socket.type' member": 1
+    }
+  },
+  "import socket\nsocket.socket.proto": {
+    "2.5": {
+      "'socket.socket.proto' member": 1
+    }
+  },
+  "import SocketServer\nSocketServer.BaseServer.shutdown": {
+    "2.0": {
+      "'SocketServer' module": 1
+    },
+    "2.6": {
+      "'SocketServer.BaseServer.shutdown' member": 1
+    }
+  },
+  "import SocketServer\nSocketServer.BaseServer.server_close": {
+    "2.0": {
+      "'SocketServer' module": 1
+    },
+    "2.6": {
+      "'SocketServer.BaseServer.server_close' member": 1
+    }
+  },
+  "import spwd": {
+    "2.5": {
+      "'spwd' module": 1
+    }
+  },
+  "import sqlite3": {
+    "2.5": {
+      "'sqlite3' module": 1
+    }
+  },
+  "import sqlite3\nsqlite3.Connection.set_progress_handler": {
+    "2.5": {
+      "'sqlite3' module": 1
+    },
+    "2.6": {
+      "'sqlite3.Connection.set_progress_handler' member": 1
+    }
+  },
+  "import sqlite3\nsqlite3.Connection.enable_load_extension": {
+    "2.5": {
+      "'sqlite3' module": 1
+    },
+    "2.7": {
+      "'sqlite3.Connection.enable_load_extension' member": 1
+    }
+  },
+  "import sqlite3\nsqlite3.Connection.load_extension": {
+    "2.5": {
+      "'sqlite3' module": 1
+    },
+    "2.7": {
+      "'sqlite3.Connection.load_extension' member": 1
+    }
+  },
+  "import sqlite3\nsqlite3.Connection.iterdump": {
+    "2.5": {
+      "'sqlite3' module": 1
+    },
+    "2.6": {
+      "'sqlite3.Connection.iterdump' member": 1
+    }
+  },
+  "import sqlite3\nsqlite3.Row.keys": {
+    "2.5": {
+      "'sqlite3' module": 1
+    },
+    "2.6": {
+      "'sqlite3.Row.keys' member": 1
+    }
+  },
+  "import ssl": {
+    "2.6": {
+      "'ssl' module": 1
+    }
+  },
+  "import ssl\nssl.SSLError.library": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.SSLError.library' member": 1
+    }
+  },
+  "import ssl\nssl.SSLError.reason": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.SSLError.reason' member": 1
+    }
+  },
+  "import ssl\nssl.SSLZeroReturnError": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.SSLZeroReturnError' member": 1
+    }
+  },
+  "import ssl\nssl.SSLWantReadError": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.SSLWantReadError' member": 1
+    }
+  },
+  "import ssl\nssl.SSLWantWriteError": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.SSLWantWriteError' member": 1
+    }
+  },
+  "import ssl\nssl.SSLSyscallError": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.SSLSyscallError' member": 1
+    }
+  },
+  "import ssl\nssl.SSLEOFError": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.SSLEOFError' member": 1
+    }
+  },
+  "import ssl\nssl.create_default_context": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.create_default_context' member": 1
+    }
+  },
+  "import ssl\nssl._https_verify_certificates": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.12": {
+      "'ssl._https_verify_certificates' member": 1
+    }
+  },
+  "import ssl\nssl.match_hostname": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.match_hostname' member": 1
+    }
+  },
+  "import ssl\nssl.get_default_verify_paths": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.get_default_verify_paths' member": 1
+    }
+  },
+  "import ssl\nssl.enum_certificates": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.enum_certificates' member": 1
+    }
+  },
+  "import ssl\nssl.enum_crls": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.enum_crls' member": 1
+    }
+  },
+  "import ssl\nssl.VERIFY_DEFAULT": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.VERIFY_DEFAULT' member": 1
+    }
+  },
+  "import ssl\nssl.VERIFY_CRL_CHECK_LEAF": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.VERIFY_CRL_CHECK_LEAF' member": 1
+    }
+  },
+  "import ssl\nssl.VERIFY_CRL_CHECK_CHAIN": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.VERIFY_CRL_CHECK_CHAIN' member": 1
+    }
+  },
+  "import ssl\nssl.VERIFY_X509_STRICT": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.VERIFY_X509_STRICT' member": 1
+    }
+  },
+  "import ssl\nssl.VERIFY_X509_TRUSTED_FIRST": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.10": {
+      "'ssl.VERIFY_X509_TRUSTED_FIRST' member": 1
+    }
+  },
+  "import ssl\nssl.PROTOCOL_TLS": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.13": {
+      "'ssl.PROTOCOL_TLS' member": 1
+    }
+  },
+  "import ssl\nssl.PROTOCOL_TLSv1_1": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.PROTOCOL_TLSv1_1' member": 1
+    }
+  },
+  "import ssl\nssl.PROTOCOL_TLSv1_2": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.PROTOCOL_TLSv1_2' member": 1
+    }
+  },
+  "import ssl\nssl.OP_ALL": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.OP_ALL' member": 1
+    }
+  },
+  "import ssl\nssl.OP_NO_SSLv2": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.OP_NO_SSLv2' member": 1
+    }
+  },
+  "import ssl\nssl.OP_NO_SSLv3": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.OP_NO_SSLv3' member": 1
+    }
+  },
+  "import ssl\nssl.OP_NO_TLSv1": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.OP_NO_TLSv1' member": 1
+    }
+  },
+  "import ssl\nssl.OP_NO_TLSv1_1": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.OP_NO_TLSv1_1' member": 1
+    }
+  },
+  "import ssl\nssl.OP_NO_TLSv1_2": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.OP_NO_TLSv1_2' member": 1
+    }
+  },
+  "import ssl\nssl.OP_NO_TLSv1_3": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.15": {
+      "'ssl.OP_NO_TLSv1_3' member": 1
+    }
+  },
+  "import ssl\nssl.OP_CIPHER_SERVER_PREFERENCE": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.OP_CIPHER_SERVER_PREFERENCE' member": 1
+    }
+  },
+  "import ssl\nssl.OP_SINGLE_DH_USE": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.OP_SINGLE_DH_USE' member": 1
+    }
+  },
+  "import ssl\nssl.OP_SINGLE_ECDH_USE": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.OP_SINGLE_ECDH_USE' member": 1
+    }
+  },
+  "import ssl\nssl.OP_ENABLE_MIDDLEBOX_COMPAT": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.16": {
+      "'ssl.OP_ENABLE_MIDDLEBOX_COMPAT' member": 1
+    }
+  },
+  "import ssl\nssl.OP_NO_COMPRESSION": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.OP_NO_COMPRESSION' member": 1
+    }
+  },
+  "import ssl\nssl.HAS_ALPN": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.10": {
+      "'ssl.HAS_ALPN' member": 1
+    }
+  },
+  "import ssl\nssl.HAS_ECDH": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.HAS_ECDH' member": 1
+    }
+  },
+  "import ssl\nssl.HAS_SNI": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.HAS_SNI' member": 1
+    }
+  },
+  "import ssl\nssl.HAS_NPN": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.HAS_NPN' member": 1
+    }
+  },
+  "import ssl\nssl.HAS_TLSv1_3": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.15": {
+      "'ssl.HAS_TLSv1_3' member": 1
+    }
+  },
+  "import ssl\nssl.CHANNEL_BINDING_TYPES": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.CHANNEL_BINDING_TYPES' member": 1
+    }
+  },
+  "import ssl\nssl.OPENSSL_VERSION": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7": {
+      "'ssl.OPENSSL_VERSION' member": 1
+    }
+  },
+  "import ssl\nssl.OPENSSL_VERSION_INFO": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7": {
+      "'ssl.OPENSSL_VERSION_INFO' member": 1
+    }
+  },
+  "import ssl\nssl.OPENSSL_VERSION_NUMBER": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7": {
+      "'ssl.OPENSSL_VERSION_NUMBER' member": 1
+    }
+  },
+  "import ssl\nssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE' member": 1
+    }
+  },
+  "import ssl\nssl.Purpose.SERVER_AUTH": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.Purpose.SERVER_AUTH' member": 1
+    }
+  },
+  "import ssl\nssl.Purpose.CLIENT_AUTH": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.Purpose.CLIENT_AUTH' member": 1
+    }
+  },
+  "import ssl\nssl.SSLSocket.compression": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.SSLSocket.compression' member": 1
+    }
+  },
+  "import ssl\nssl.SSLSocket.get_channel_binding": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.SSLSocket.get_channel_binding' member": 1
+    }
+  },
+  "import ssl\nssl.SSLSocket.selected_alpn_protocol": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.10": {
+      "'ssl.SSLSocket.selected_alpn_protocol' member": 1
+    }
+  },
+  "import ssl\nssl.SSLSocket.selected_npn_protocol": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.SSLSocket.selected_npn_protocol' member": 1
+    }
+  },
+  "import ssl\nssl.SSLSocket.version": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.SSLSocket.version' member": 1
+    }
+  },
+  "import ssl\nssl.SSLSocket.context": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7.9": {
+      "'ssl.SSLSocket.context' member": 1
+    }
+  },
+  "import ssl\nssl.SSLContext.set_alpn_protocols": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7": {
+      "'ssl.SSLContext' member": 1
+    },
+    "3.2": {
+      "'ssl.SSLContext' member": 1
+    },
+    "2.7.10": {
+      "'ssl.SSLContext.set_alpn_protocols' member": 1
+    }
+  },
+  "long.bit_length()": {
+    "2.0": {
+      "'long' member": 1
+    },
+    "2.7": {
+      "'long.bit_length' member": 1
+    }
+  },
+  "float.as_integer_ratio()": {
+    "2.6": {
+      "'float.as_integer_ratio' member": 1
+    }
+  },
+  "float.is_integer()": {
+    "2.6": {
+      "'float.is_integer' member": 1
+    }
+  },
+  "float.hex()": {
+    "2.6": {
+      "'float.hex' member": 1
+    }
+  },
+  "float.fromhex()": {
+    "2.6": {
+      "'float.fromhex' member": 1
+    }
+  },
+  "str.decode()": {
+    "2.2": {
+      "'str.decode' member": 1
+    }
+  },
+  "str.encode()": {
+    "2.0": {
+      "'str.encode' member": 1
+    }
+  },
+  "str.format()": {
+    "2.6": {
+      "'str.format' member": 1
+    }
+  },
+  "str.partition()": {
+    "2.5": {
+      "'str.partition' member": 1
+    }
+  },
+  "str.rpartition()": {
+    "2.5": {
+      "'str.rpartition' member": 1
+    }
+  },
+  "str.rsplit()": {
+    "2.4": {
+      "'str.rsplit' member": 1
+    }
+  },
+  "str.zfill()": {
+    "2.2.2": {
+      "'str.zfill' member": 1
+    }
+  },
+  "frozenset.isdisjoint()": {
+    "2.4": {
+      "'frozenset' member": 1
+    },
+    "2.6": {
+      "'frozenset.isdisjoint' member": 1
+    }
+  },
+  "dict()": {
+    "2.2": {
+      "'dict' member": 1
+    }
+  },
+  "dict.fromkeys()": {
+    "2.2": {
+      "'dict' member": 1
+    },
+    "2.3": {
+      "'dict.fromkeys' member": 1
+    }
+  },
+  "dict.iteritems()": {
+    "2.2": {
+      "'dict' member": 1,
+      "'dict.iteritems' member": 1
+    }
+  },
+  "dict.iterkeys()": {
+    "2.2": {
+      "'dict' member": 1,
+      "'dict.iterkeys' member": 1
+    }
+  },
+  "dict.itervalues()": {
+    "2.2": {
+      "'dict' member": 1,
+      "'dict.itervalues' member": 1
+    }
+  },
+  "dict.pop()": {
+    "2.2": {
+      "'dict' member": 1
+    },
+    "2.3": {
+      "'dict.pop' member": 1
+    }
+  },
+  "dict.viewitems()": {
+    "2.2": {
+      "'dict' member": 1
+    },
+    "2.7": {
+      "'dict.viewitems' member": 1
+    }
+  },
+  "dict.viewkeys()": {
+    "2.2": {
+      "'dict' member": 1
+    },
+    "2.7": {
+      "'dict.viewkeys' member": 1
+    }
+  },
+  "dict.viewvalues()": {
+    "2.2": {
+      "'dict' member": 1
+    },
+    "2.7": {
+      "'dict.viewvalues' member": 1
+    }
+  },
+  "file.next()": {
+    "2.0": {
+      "'file' member": 1
+    },
+    "2.3": {
+      "'file.next' member": 1
+    }
+  },
+  "file.xreadlines()": {
+    "2.0": {
+      "'file' member": 1
+    },
+    "2.1": {
+      "'file.xreadlines' member": 1
+    }
+  },
+  "file.encoding()": {
+    "2.0": {
+      "'file' member": 1
+    },
+    "2.3": {
+      "'file.encoding' member": 1
+    }
+  },
+  "file.errors()": {
+    "2.0": {
+      "'file' member": 1
+    },
+    "2.6": {
+      "'file.errors' member": 1
+    }
+  },
+  "import string\nstring.rsplit": {
+    "2.4": {
+      "'string.rsplit' member": 1
+    }
+  },
+  "import stringprep": {
+    "2.3": {
+      "'stringprep' module": 1
+    }
+  },
+  "import struct\nstruct.pack_into": {
+    "2.5": {
+      "'struct.pack_into' member": 1
+    }
+  },
+  "import struct\nstruct.unpack_from": {
+    "2.5": {
+      "'struct.unpack_from' member": 1
+    }
+  },
+  "import struct\nstruct.Struct": {
+    "2.5": {
+      "'struct.Struct' member": 1
+    }
+  },
+  "import subprocess": {
+    "2.4": {
+      "'subprocess' module": 1
+    }
+  },
+  "import subprocess\nsubprocess.check_call": {
+    "2.4": {
+      "'subprocess' module": 1
+    },
+    "2.5": {
+      "'subprocess.check_call' member": 1
+    }
+  },
+  "import subprocess\nsubprocess.check_output": {
+    "2.4": {
+      "'subprocess' module": 1
+    },
+    "2.7": {
+      "'subprocess.check_output' member": 1
+    }
+  },
+  "import subprocess\nsubprocess.Popen.send_signal": {
+    "2.4": {
+      "'subprocess' module": 1
+    },
+    "2.6": {
+      "'subprocess.Popen.send_signal' member": 1
+    }
+  },
+  "import subprocess\nsubprocess.Popen.terminate": {
+    "2.4": {
+      "'subprocess' module": 1
+    },
+    "2.6": {
+      "'subprocess.Popen.terminate' member": 1
+    }
+  },
+  "import subprocess\nsubprocess.Popen.kill": {
+    "2.4": {
+      "'subprocess' module": 1
+    },
+    "2.6": {
+      "'subprocess.Popen.kill' member": 1
+    }
+  },
+  "import sys\nsys.byteorder": {
+    "2.0": {
+      "'sys.byteorder' member": 1
+    }
+  },
+  "import sys\nsys._clear_type_cache": {
+    "2.6": {
+      "'sys._clear_type_cache' member": 1
+    }
+  },
+  "import sys\nsys._current_frames": {
+    "2.5": {
+      "'sys._current_frames' member": 1
+    }
+  },
+  "import sys\nsys.dont_write_bytecode": {
+    "2.6": {
+      "'sys.dont_write_bytecode' member": 1
+    }
+  },
+  "import sys\nsys.exc_clear": {
+    "2.3": {
+      "'sys.exc_clear' member": 1
+    }
+  },
+  "import sys\nsys.flags": {
+    "2.6": {
+      "'sys.flags' member": 1
+    }
+  },
+  "import sys\nsys.float_info": {
+    "2.6": {
+      "'sys.float_info' member": 1
+    }
+  },
+  "import sys\nsys.float_repr_style": {
+    "2.7": {
+      "'sys.float_repr_style' member": 1
+    }
+  },
+  "import sys\nsys.getcheckinterval": {
+    "2.3": {
+      "'sys.getcheckinterval' member": 1
+    }
+  },
+  "import sys\nsys.getdefaultencoding": {
+    "2.0": {
+      "'sys.getdefaultencoding' member": 1
+    }
+  },
+  "import sys\nsys.getdlopenflags": {
+    "2.2": {
+      "'sys.getdlopenflags' member": 1
+    }
+  },
+  "import sys\nsys.getfilesystemencoding": {
+    "2.3": {
+      "'sys.getfilesystemencoding' member": 1
+    }
+  },
+  "import sys\nsys.getsizeof": {
+    "2.6": {
+      "'sys.getsizeof' member": 1
+    }
+  },
+  "import sys\nsys.getprofile": {
+    "2.6": {
+      "'sys.getprofile' member": 1
+    }
+  },
+  "import sys\nsys.gettrace": {
+    "2.6": {
+      "'sys.gettrace' member": 1
+    }
+  },
+  "import sys\nsys.getwindowsversion": {
+    "2.3": {
+      "'sys.getwindowsversion' member": 1
+    }
+  },
+  "import sys\nsys.hexversion": {
+    "1.5.2": {
+      "'sys.hexversion' member": 1
+    }
+  },
+  "import sys\nsys.long_info": {
+    "2.7": {
+      "'sys.long_info' member": 1
+    }
+  },
+  "import sys\nsys.py3kwarning": {
+    "2.6": {
+      "'sys.py3kwarning' member": 1
+    }
+  },
+  "import sys\nsys.setdefaultencoding": {
+    "2.0": {
+      "'sys.setdefaultencoding' member": 1
+    }
+  },
+  "import sys\nsys.setdlopenflags": {
+    "2.2": {
+      "'sys.setdlopenflags' member": 1
+    }
+  },
+  "import sys\nsys.settscdump": {
+    "2.4": {
+      "'sys.settscdump' member": 1
+    }
+  },
+  "import sys\nsys.subversion": {
+    "2.5": {
+      "'sys.subversion' member": 1
+    }
+  },
+  "import sys\nsys.api_version": {
+    "2.3": {
+      "'sys.api_version' member": 1
+    }
+  },
+  "import sys\nsys.version_info": {
+    "2.0": {
+      "'sys.version_info' member": 1
+    }
+  },
+  "import sysconfig": {
+    "2.7": {
+      "'sysconfig' module": 1
+    }
+  },
+  "import tarfile": {
+    "2.3": {
+      "'tarfile' module": 1
+    }
+  },
+  "import tarfile\ntarfile.HeaderError": {
+    "2.3": {
+      "'tarfile' module": 1
+    },
+    "2.6": {
+      "'tarfile.HeaderError' member": 1
+    }
+  },
+  "import tarfile\nid0": {
+    "2.3": {
+      "'tarfile' module": 1
+    },
+    "2.6": {
+      "'id0' member": 1
+    }
+  },
+  "import tarfile\ntarfile.TarFile.extractall": {
+    "2.3": {
+      "'tarfile' module": 1
+    },
+    "2.5": {
+      "'tarfile.TarFile.extractall' member": 1
+    }
+  },
+  "import tarfile\ntarfile.TarFile.pax_headers": {
+    "2.3": {
+      "'tarfile' module": 1
+    },
+    "2.6": {
+      "'tarfile.TarFile.pax_headers' member": 1
+    }
+  },
+  "import tarfile\ntarfile.TarInfo.fromtarfile": {
+    "2.3": {
+      "'tarfile' module": 1
+    },
+    "2.6": {
+      "'tarfile.TarInfo.fromtarfile' member": 1
+    }
+  },
+  "import tarfile\ntarfile.TarInfo.pax_headers": {
+    "2.3": {
+      "'tarfile' module": 1
+    },
+    "2.6": {
+      "'tarfile.TarInfo.pax_headers' member": 1
+    }
+  },
+  "import telnetlib\ntelnetlib.Telnet.read_sb_data": {
+    "2.3": {
+      "'telnetlib.Telnet.read_sb_data' member": 1
+    }
+  },
+  "import tempfile\ntempfile.NamedTemporaryFile": {
+    "2.3": {
+      "'tempfile.NamedTemporaryFile' member": 1
+    }
+  },
+  "import tempfile\ntempfile.SpooledTemporaryFile": {
+    "2.6": {
+      "'tempfile.SpooledTemporaryFile' member": 1
+    }
+  },
+  "import tempfile\ntempfile.mkstemp": {
+    "2.3": {
+      "'tempfile.mkstemp' member": 1
+    }
+  },
+  "import tempfile\ntempfile.mkdtemp": {
+    "2.3": {
+      "'tempfile.mkdtemp' member": 1
+    }
+  },
+  "import tempfile\ntempfile.gettempdir": {
+    "2.3": {
+      "'tempfile.gettempdir' member": 1
+    }
+  },
+  "import tempfile\ntempfile.gettempprefix": {
+    "1.5.2": {
+      "'tempfile.gettempprefix' member": 1
+    }
+  },
+  "import test.support\ntest.support.check_warnings": {
+    "2.6": {
+      "'test.support.check_warnings' member": 1
+    }
+  },
+  "import test.support\ntest.support.check_py3k_warnings": {
+    "2.7": {
+      "'test.support.check_py3k_warnings' member": 1
+    }
+  },
+  "import test.support\ntest.support.captured_stdout": {
+    "2.6": {
+      "'test.support.captured_stdout' member": 1
+    }
+  },
+  "import test.support\ntest.support.import_module": {
+    "2.7": {
+      "'test.support.import_module' member": 1
+    }
+  },
+  "import test.support\ntest.support.import_fresh_module": {
+    "2.7": {
+      "'test.support.import_fresh_module' member": 1
+    }
+  },
+  "import test.support\ntest.support.TransientResource": {
+    "2.6": {
+      "'test.support.TransientResource' member": 1
+    }
+  },
+  "import test.support\ntest.support.EnvironmentVarGuard": {
+    "2.6": {
+      "'test.support.EnvironmentVarGuard' member": 1
+    }
+  },
+  "import test.support\ntest.support.WarningsRecorder": {
+    "2.6": {
+      "'test.support.WarningsRecorder' member": 1
+    }
+  },
+  "import textwrap": {
+    "2.3": {
+      "'textwrap' module": 1
+    }
+  },
+  "import textwrap\ntextwrap.TextWrapper.break_on_hyphens": {
+    "2.3": {
+      "'textwrap' module": 1
+    },
+    "2.6": {
+      "'textwrap.TextWrapper.break_on_hyphens' member": 1
+    }
+  },
+  "import thread\nthread.interrupt_main": {
+    "2.3": {
+      "'thread.interrupt_main' member": 1
+    }
+  },
+  "import thread\nthread.stack_size": {
+    "2.5": {
+      "'thread.stack_size' member": 1
+    }
+  },
+  "import threading\nthreading.local": {
+    "2.4": {
+      "'threading.local' member": 1
+    }
+  },
+  "import threading\nthreading.settrace": {
+    "2.3": {
+      "'threading.settrace' member": 1
+    }
+  },
+  "import threading\nthreading.setprofile": {
+    "2.3": {
+      "'threading.setprofile' member": 1
+    }
+  },
+  "import threading\nthreading.stack_size": {
+    "2.5": {
+      "'threading.stack_size' member": 1
+    }
+  },
+  "import threading\nthreading.Thread.name": {
+    "2.6": {
+      "'threading.Thread.name' member": 1
+    }
+  },
+  "import threading\nthreading.Thread.ident": {
+    "2.6": {
+      "'threading.Thread.ident' member": 1
+    }
+  },
+  "import threading\nthreading.Thread.daemon": {
+    "2.6": {
+      "'threading.Thread.daemon' member": 1
+    }
+  },
+  "import time\ntime.struct_time": {
+    "2.2": {
+      "'time.struct_time' member": 1
+    }
+  },
+  "import time\ntime.tzset": {
+    "2.3": {
+      "'time.tzset' member": 1
+    }
+  },
+  "import timeit": {
+    "2.3": {
+      "'timeit' module": 1
+    }
+  },
+  "import timeit\ntimeit.timeit": {
+    "2.3": {
+      "'timeit' module": 1
+    },
+    "2.6": {
+      "'timeit.timeit' member": 1
+    }
+  },
+  "import timeit\ntimeit.repeat": {
+    "2.3": {
+      "'timeit' module": 1
+    },
+    "2.6": {
+      "'timeit.repeat' member": 1
+    }
+  },
+  "import Tkinter\nTkinter.Tcl": {
+    "2.0": {
+      "'Tkinter' module": 1
+    },
+    "2.4": {
+      "'Tkinter.Tcl' member": 1
+    }
+  },
+  "import tokenize\ntokenize.generate_tokens": {
+    "2.2": {
+      "'tokenize.generate_tokens' member": 1
+    }
+  },
+  "import tokenize\ntokenize.untokenize": {
+    "2.5": {
+      "'tokenize.untokenize' member": 1
+    }
+  },
+  "import traceback\ntraceback.format_exc": {
+    "2.4": {
+      "'traceback.format_exc' member": 1
+    }
+  },
+  "import types\ntypes.BooleanType": {
+    "2.3": {
+      "'types.BooleanType' member": 1
+    }
+  },
+  "import types\ntypes.GeneratorType": {
+    "2.2": {
+      "'types.GeneratorType' member": 1
+    }
+  },
+  "import types\ntypes.GetSetDescriptorType": {
+    "2.5": {
+      "'types.GetSetDescriptorType' member": 1
+    }
+  },
+  "import types\ntypes.MemberDescriptorType": {
+    "2.5": {
+      "'types.MemberDescriptorType' member": 1
+    }
+  },
+  "import types\ntypes.StringTypes": {
+    "2.2": {
+      "'types.StringTypes' member": 1
+    }
+  },
+  "import unicodedata\nunicodedata.east_asian_width": {
+    "2.4": {
+      "'unicodedata.east_asian_width' member": 1
+    }
+  },
+  "import unicodedata\nunicodedata.normalize": {
+    "2.3": {
+      "'unicodedata.normalize' member": 1
+    }
+  },
+  "import unicodedata\nunicodedata.unidata_version": {
+    "2.3": {
+      "'unicodedata.unidata_version' member": 1
+    }
+  },
+  "import unicodedata\nunicodedata.ucd_3_2_0": {
+    "2.5": {
+      "'unicodedata.ucd_3_2_0' member": 1
+    }
+  },
+  "import unittest": {
+    "2.1": {
+      "'unittest' module": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.setUpClass": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.setUpClass' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.tearDownClass": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.tearDownClass' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.skipTest": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.skipTest' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertIs": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertIs' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertIsNone": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertIsNone' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertIn": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertIn' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertIsInstance": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertIsInstance' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertRaisesRegexp": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertRaisesRegexp' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertGreater": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertGreater' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertRegexpMatches": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertRegexpMatches' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertNotRegexpMatches": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertNotRegexpMatches' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertItemsEqual": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertItemsEqual' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertDictContainsSubset": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertDictContainsSubset' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.addTypeEqualityFunc": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.addTypeEqualityFunc' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertMultiLineEqual": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertMultiLineEqual' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertSequenceEqual": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertSequenceEqual' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertListEqual": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertListEqual' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertSetEqual": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertSetEqual' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertDictEqual": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertDictEqual' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.longMessage": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.longMessage' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.maxDiff": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.maxDiff' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.addCleanup": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.addCleanup' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.doCleanups": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.doCleanups' member": 1
+    }
+  },
+  "import unittest\nunittest.TestLoader.discover": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestLoader.discover' member": 1
+    }
+  },
+  "import unittest\nunittest.TestResult.skipped": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestResult.skipped' member": 1
+    }
+  },
+  "import unittest\nunittest.TestResult.buffer": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestResult.buffer' member": 1
+    }
+  },
+  "import unittest\nunittest.TestResult.failfast": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestResult.failfast' member": 1
+    }
+  },
+  "import unittest\nunittest.TestResult.startTestRun": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestResult.startTestRun' member": 1
+    }
+  },
+  "import unittest\nunittest.TestResult.stopTestRun": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestResult.stopTestRun' member": 1
+    }
+  },
+  "import unittest\nunittest.installHandler": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.installHandler' member": 1
+    }
+  },
+  "import unittest\nunittest.registerResult": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.registerResult' member": 1
+    }
+  },
+  "import unittest\nunittest.removeResult": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.removeResult' member": 1
+    }
+  },
+  "import unittest\nunittest.removeHandler": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.removeHandler' member": 1
+    }
+  },
+  "import urllib\nurllib.ContentTooShortError": {
+    "2.5": {
+      "'urllib.ContentTooShortError' member": 1
+    }
+  },
+  "import urllib2\nurllib2.Request.add_unredirected_header": {
+    "2.0": {
+      "'urllib2' module": 1
+    },
+    "2.4": {
+      "'urllib2.Request.add_unredirected_header' member": 1
+    }
+  },
+  "import urllib2\nurllib2.Request.has_header": {
+    "2.0": {
+      "'urllib2' module": 1
+    },
+    "2.4": {
+      "'urllib2.Request.has_header' member": 1
+    }
+  },
+  "import urlparse\nurlparse.urlsplit": {
+    "2.0": {
+      "'urlparse' module": 1
+    },
+    "2.2": {
+      "'urlparse.urlsplit' member": 1
+    }
+  },
+  "import urlparse\nurlparse.urlunsplit": {
+    "2.0": {
+      "'urlparse' module": 1
+    },
+    "2.2": {
+      "'urlparse.urlunsplit' member": 1
+    }
+  },
+  "import urlparse\nurlparse.ParseResult.geturl": {
+    "2.0": {
+      "'urlparse' module": 1
+    },
+    "2.5": {
+      "'urlparse.ParseResult.geturl' member": 1
+    }
+  },
+  "import uuid": {
+    "2.5": {
+      "'uuid' module": 1
+    }
+  },
+  "import warnings": {
+    "2.1": {
+      "'warnings' module": 1
+    }
+  },
+  "import warnings\nwarnings.warnpy3k": {
+    "2.1": {
+      "'warnings' module": 1
+    },
+    "2.6": {
+      "'warnings.warnpy3k' member": 1
+    }
+  },
+  "import warnings\nwarnings.catch_warnings": {
+    "2.1": {
+      "'warnings' module": 1
+    },
+    "2.6": {
+      "'warnings.catch_warnings' member": 1
+    }
+  },
+  "import weakref": {
+    "2.1": {
+      "'weakref' module": 1
+    }
+  },
+  "import weakref\nweakref.WeakKeyDictionary.iterkeyrefs": {
+    "2.1": {
+      "'weakref' module": 1
+    },
+    "2.5": {
+      "'weakref.WeakKeyDictionary.iterkeyrefs' member": 1
+    }
+  },
+  "import weakref\nweakref.WeakKeyDictionary.keyrefs": {
+    "2.1": {
+      "'weakref' module": 1
+    },
+    "2.5": {
+      "'weakref.WeakKeyDictionary.keyrefs' member": 1
+    }
+  },
+  "import weakref\nweakref.WeakValueDictionary.itervaluerefs": {
+    "2.1": {
+      "'weakref' module": 1
+    },
+    "2.5": {
+      "'weakref.WeakValueDictionary.itervaluerefs' member": 1
+    }
+  },
+  "import weakref\nweakref.WeakValueDictionary.valuerefs": {
+    "2.1": {
+      "'weakref' module": 1
+    },
+    "2.5": {
+      "'weakref.WeakValueDictionary.valuerefs' member": 1
+    }
+  },
+  "import weakref\nweakref.WeakSet": {
+    "2.1": {
+      "'weakref' module": 1
+    },
+    "2.7": {
+      "'weakref.WeakSet' member": 1
+    }
+  },
+  "import webbrowser\nwebbrowser.open_new_tab": {
+    "2.5": {
+      "'webbrowser.open_new_tab' member": 1
+    }
+  },
+  "import webbrowser\nwebbrowser.controller.open_new_tab": {
+    "2.5": {
+      "'webbrowser.controller.open_new_tab' member": 1
+    }
+  },
+  "import winsound": {
+    "1.5.2": {
+      "'winsound' module": 1
+    }
+  },
+  "import winsound\nwinsound.Beep": {
+    "1.6": {
+      "'winsound.Beep' member": 1
+    }
+  },
+  "import winsound\nwinsound.MessageBeep": {
+    "2.3": {
+      "'winsound.MessageBeep' member": 1
+    }
+  },
+  "import wsgiref": {
+    "2.5": {
+      "'wsgiref' module": 1
+    }
+  },
+  "import xml.dom": {
+    "2.0": {
+      "'xml.dom' module": 1
+    }
+  },
+  "import xml.dom\nxml.dom.EMPTY_NAMESPACE": {
+    "2.2": {
+      "'xml.dom.EMPTY_NAMESPACE' member": 1
+    }
+  },
+  "import xml.dom\nxml.dom.XML_NAMESPACE": {
+    "2.2": {
+      "'xml.dom.XML_NAMESPACE' member": 1
+    }
+  },
+  "import xml.dom\nxml.dom.XMLNS_NAMESPACE": {
+    "2.2": {
+      "'xml.dom.XMLNS_NAMESPACE' member": 1
+    }
+  },
+  "import xml.dom\nxml.dom.XHTML_NAMESPACE": {
+    "2.2": {
+      "'xml.dom.XHTML_NAMESPACE' member": 1
+    }
+  },
+  "import xml.dom\nxml.dom.Node.normalize": {
+    "2.1": {
+      "'xml.dom.Node.normalize' member": 1
+    }
+  },
+  "import xml.dom.minidom": {
+    "2.0": {
+      "'xml.dom.minidom' module": 1
+    }
+  },
+  "import xml.dom.minidom\nxml.dom.minidom.Node.toprettyxml": {
+    "2.1": {
+      "'xml.dom.minidom.Node.toprettyxml' member": 1
+    }
+  },
+  "import xml.dom.pulldom": {
+    "2.0": {
+      "'xml.dom.pulldom' module": 1
+    }
+  },
+  "import xml.etree.elementtree": {
+    "2.5": {
+      "'xml.etree.elementtree' module": 1
+    }
+  },
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.fromstringlist": {
+    "2.5": {
+      "'xml.etree.ElementTree' module": 1
+    },
+    "2.7": {
+      "'xml.etree.ElementTree.fromstringlist' member": 1
+    }
+  },
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.register_namespace": {
+    "2.5": {
+      "'xml.etree.ElementTree' module": 1
+    },
+    "2.7": {
+      "'xml.etree.ElementTree.register_namespace' member": 1
+    }
+  },
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.tostringlist": {
+    "2.5": {
+      "'xml.etree.ElementTree' module": 1
+    },
+    "2.7": {
+      "'xml.etree.ElementTree.tostringlist' member": 1
+    }
+  },
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.Element.extend": {
+    "2.5": {
+      "'xml.etree.ElementTree' module": 1
+    },
+    "2.7": {
+      "'xml.etree.ElementTree.Element.extend' member": 1
+    }
+  },
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.Element.iter": {
+    "2.5": {
+      "'xml.etree.ElementTree' module": 1
+    },
+    "2.7": {
+      "'xml.etree.ElementTree.Element.iter' member": 1
+    }
+  },
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.Element.iterfind": {
+    "2.5": {
+      "'xml.etree.ElementTree' module": 1
+    },
+    "2.7": {
+      "'xml.etree.ElementTree.Element.iterfind' member": 1
+    }
+  },
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.Element.itertext": {
+    "2.5": {
+      "'xml.etree.ElementTree' module": 1
+    },
+    "2.7": {
+      "'xml.etree.ElementTree.Element.itertext' member": 1
+    }
+  },
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.ElementTree.iterfind": {
+    "2.5": {
+      "'xml.etree.ElementTree' module": 1
+    },
+    "2.7": {
+      "'xml.etree.ElementTree.ElementTree.iterfind' member": 1
+    }
+  },
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.TreeBuilder.doctype": {
+    "2.5": {
+      "'xml.etree.ElementTree' module": 1
+    },
+    "2.7": {
+      "'xml.etree.ElementTree.TreeBuilder.doctype' member": 1
+    }
+  },
+  "import xml.sax": {
+    "2.0": {
+      "'xml.sax' module": 1
+    }
+  },
+  "import xml.sax.handler": {
+    "2.0": {
+      "'xml.sax.handler' module": 1
+    }
+  },
+  "import xml.sax.xmlreader": {
+    "2.0": {
+      "'xml.sax.xmlreader' module": 1
+    }
+  },
+  "import xml.sax.saxutils": {
+    "2.0": {
+      "'xml.sax.saxutils' module": 1
+    }
+  },
+  "import xml.sax.saxutils\nxml.sax.saxutils.unescape": {
+    "2.3": {
+      "'xml.sax.saxutils.unescape' member": 1
+    }
+  },
+  "import xml.sax.saxutils\nxml.sax.saxutils.quoteattr": {
+    "2.2": {
+      "'xml.sax.saxutils.quoteattr' member": 1
+    }
+  },
+  "import zipfile": {
+    "1.6": {
+      "'zipfile' module": 1
+    }
+  },
+  "import zipfile\nzipfile.ZipFile.open": {
+    "2.6": {
+      "'zipfile.ZipFile.open' member": 1
+    }
+  },
+  "import zipfile\nzipfile.ZipFile.extract": {
+    "2.6": {
+      "'zipfile.ZipFile.extract' member": 1
+    }
+  },
+  "import zipfile\nzipfile.ZipFile.extractall": {
+    "2.6": {
+      "'zipfile.ZipFile.extractall' member": 1
+    }
+  },
+  "import zipfile\nzipfile.ZipFile.setpassword": {
+    "2.6": {
+      "'zipfile.ZipFile.setpassword' member": 1
+    }
+  },
+  "import zipimport": {
+    "2.3": {
+      "'zipimport' module": 1
+    }
+  },
+  "import zipimport\nzipimport.zipimporter": {
+    "2.3": {
+      "'zipimport' module": 1
+    },
+    "2.7": {
+      "'zipimport.zipimporter' member": 1
+    }
+  },
+  "import zlib\nzlib.Compress.copy": {
+    "2.5": {
+      "'zlib.Compress.copy' member": 1
+    }
+  },
+  "import zlib\nzlib.Decompress.copy": {
+    "2.5": {
+      "'zlib.Decompress.copy' member": 1
+    }
+  }
+}
