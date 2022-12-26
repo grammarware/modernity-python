@@ -11,11 +11,6 @@ from tests.test_utils import get_features_from_test_code, combine_features, save
 
 T = TypeVar('T')
 
-
-def first_child_matching_class(node: docutils.nodes.Element, child_class: type[T]) -> T:
-    return next(child for child in node if isinstance(child, child_class))
-
-
 test_cases: defaultdict[str, Features]
 
 
@@ -48,11 +43,11 @@ def generate_test_cases(app: sphinx.application.Sphinx, doctree: sphinx.addnodes
 
 
 def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) -> tuple[str, Features]:
-    description = first_child_matching_class(node, docutils.nodes.paragraph)
+    description = node.next_node(docutils.nodes.paragraph)
     feature_added = node.get('type') == "versionadded"
 
     if isinstance(desc := node.parent.parent, sphinx.addnodes.desc):
-        desc_signature = first_child_matching_class(desc, sphinx.addnodes.desc_signature)
+        desc_signature = desc.next_node(sphinx.addnodes.desc_signature)
 
         if feature_added:
             # New method for some class, or a new class, or a new function
@@ -73,20 +68,17 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
                 )
 
     if isinstance(document := node.parent.parent, sphinx.addnodes.document):
-        section = first_child_matching_class(document, docutils.nodes.section)
+        section = document.next_node(docutils.nodes.section)
 
         if feature_added:
             # New module
             # This node should be before a <paragraph>, then it tells something about the whole module
-            if node.line < first_child_matching_class(section, docutils.nodes.paragraph).line:
+            # "When this applies to an entire module,
+            # it should be placed at the top of the module section before any prose."
+            if node.line < section.next_node(docutils.nodes.paragraph).line:
                 module_name = section.get('names')[0].split(' ')[0]
 
                 # TODO Currently only AST module has two versionmodified nodes, take first one
-                # p: paragraph = node[0]
-                # if len(p.children) != 1:
-                #     # AST (2/3),
-                #     print(module)
-                #     # breakpoint()
 
                 return f"import {module_name}", {version: {f"'{module_name}' module": 1}}
 
