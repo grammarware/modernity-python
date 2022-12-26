@@ -1,5 +1,6 @@
 from collections import defaultdict
 from pathlib import Path
+from traceback import TracebackException
 from typing import TypeVar
 
 import sphinx.application
@@ -30,13 +31,22 @@ def generate_test_cases(app: sphinx.application.Sphinx, doctree: sphinx.addnodes
         # TODO handle version if it is a tuple
         if isinstance(version, str):
             try:
-                code, expected = handle_versionmodified(version, node)
-                test_cases[code] |= expected
+                new_test_case = handle_versionmodified(version, node)
+                if not new_test_case:
+                    # TODO Handle cases it does not find anything
+                    continue
+
+                code, expected = new_test_case
+                # Only update, if test_code was not a test_case yet
+                test_cases.setdefault(code, expected)
 
             except Exception as e:
                 # TODO fix all errors; and code that did not result in a testcase
-                print("VERSIONMODIFIED ERROR:")
-                print(e)
+                doc_tree_file = Path(app.outdir) / source.parent.name / (source.stem + '.xml')
+                print(f':: VERSIONMODIFIED ERROR ::')
+                print(f"File {source}, line {node.line}")
+                print(f"File {doc_tree_file}, line {node.line}")
+                print(''.join(TracebackException.from_exception(e).format()))
                 continue
 
     print("\n\n")
