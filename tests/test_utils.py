@@ -38,7 +38,7 @@ def get_features_from_test_code(code: str) -> Features:
 def save_test_cases(output_file: Path, test_cases: defaultdict[str, Features]) -> None:
     # Save in separate files, such that they can run in parallel
     with output_file.open('w') as f:
-        json.dump(test_cases, f)
+        json.dump(test_cases, f, indent=2)
 
 
 def get_test_cases() -> dict[str, Features]:
