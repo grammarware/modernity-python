@@ -60,22 +60,25 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
         desc_signature = desc.next_node(sphinx.addnodes.desc_signature)
 
         if feature_added:
-            # New method for some class, or a new class, or a new function
-            # These nodes have only 1 (inline) element in their paragraph
-            if desc.get('objtype') in ("method", "class", "function") and len(description.children) == 1:
-                module = desc_signature.get('module')
-                ids = desc_signature.get('ids')[0]
-                prev_ids = ids.rsplit('.', maxsplit=1)[0]
+            # New method/class/function/exception/attribute/constants(data)
+            # https://devguide.python.org/documentation/markup/#information-units
+            # These nodes should have only 1 (inline) element in their paragraph?
+            if desc.get('objtype') in ("method", "class", "function", "exception", "attribute", "data"):
+                if len(description.children) == 1:
+                    module = desc_signature.get('module')
+                    ids = desc_signature.get('ids')[0]
+                    prev_ids = ids.rsplit('.', maxsplit=1)[0]
 
-                # If there is no import statement (i.e. it is a builtin), call the thing
-                # TODO Maybe there are also constants?
-                import_stmt = f"import {module}\n" if module else ""
-                prev_features = get_features_from_test_code(f"{import_stmt}{prev_ids}{'()' if not import_stmt else ''}")
+                    # If there is no import statement (i.e. it is a builtin), call the thing
+                    # TODO Maybe there are also constants?
+                    import_stmt = f"import {module}\n" if module else ""
+                    prev_features = get_features_from_test_code(
+                        f"{import_stmt}{prev_ids}{'()' if not import_stmt else ''}")
 
-                return (
-                    f"{import_stmt}{ids}{'()' if not import_stmt else ''}",
-                    combine_features(prev_features, {version: {f"'{ids}' member": 1}})
-                )
+                    return (
+                        f"{import_stmt}{ids}{'()' if not import_stmt else ''}",
+                        combine_features(prev_features, {version: {f"'{ids}' member": 1}})
+                    )
 
     if isinstance(document := node.parent.parent, sphinx.addnodes.document):
         section = document.next_node(docutils.nodes.section)
