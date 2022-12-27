@@ -114,7 +114,7 @@
     "3.4": {
       "'asyncio' module": 1
     },
-    "3.5.2": {
+    "3.5": {
       "'asyncio.loop.create_future' member": 1
     }
   },
@@ -122,7 +122,7 @@
     "3.4": {
       "'asyncio' module": 1
     },
-    "3.5.3": {
+    "3.5": {
       "'asyncio.loop.connect_accepted_socket' member": 1
     }
   },
@@ -186,7 +186,7 @@
     "3.4": {
       "'asyncio' module": 1
     },
-    "3.5.2": {
+    "3.5": {
       "'asyncio.loop.get_exception_handler' member": 1
     }
   },
@@ -296,9 +296,7 @@
   },
   "import asyncio\nasyncio.WriteTransport.get_write_buffer_limits": {
     "3.4": {
-      "'asyncio' module": 1
-    },
-    "3.4.2": {
+      "'asyncio' module": 1,
       "'asyncio.WriteTransport.get_write_buffer_limits' member": 1
     }
   },
@@ -322,7 +320,7 @@
     "3.4": {
       "'asyncio' module": 1
     },
-    "3.5.2": {
+    "3.5": {
       "'asyncio.StreamReader.readuntil' member": 1
     }
   },
@@ -402,7 +400,7 @@
     "3.4": {
       "'asyncio' module": 1
     },
-    "3.5.1": {
+    "3.5": {
       "'asyncio.run_coroutine_threadsafe' member": 1
     }
   },
@@ -994,9 +992,7 @@
   },
   "import contextvars\ncontextvars.ContextVar.name": {
     "3.7": {
-      "'contextvars' module": 1
-    },
-    "3.7.1": {
+      "'contextvars' module": 1,
       "'contextvars.ContextVar.name' member": 1
     }
   },
@@ -4376,7 +4372,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "3.4.4": {
+    "3.4": {
       "'ssl.VERIFY_X509_TRUSTED_FIRST' member": 1
     }
   },
@@ -6305,9 +6301,7 @@
   },
   "import typing\ntyping.NoReturn": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.4": {
+      "'typing' module": 1,
       "'typing.NoReturn' member": 1
     }
   },
@@ -6329,9 +6323,7 @@
   },
   "import typing\ntyping.Type": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.2": {
+      "'typing' module": 1,
       "'typing.Type' member": 1
     }
   },
@@ -6345,9 +6337,7 @@
   },
   "import typing\ntyping.ClassVar": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.3": {
+      "'typing' module": 1,
       "'typing.ClassVar' member": 1
     }
   },
@@ -6433,9 +6423,7 @@
   },
   "import typing\ntyping.NewType": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.2": {
+      "'typing' module": 1,
       "'typing.NewType' member": 1
     }
   },
@@ -6471,9 +6459,7 @@
   },
   "import typing\ntyping.DefaultDict": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.2": {
+      "'typing' module": 1,
       "'typing.DefaultDict' member": 1
     }
   },
@@ -6481,39 +6467,31 @@
     "3.5": {
       "'typing' module": 1
     },
-    "3.7.2": {
+    "3.7": {
       "'typing.OrderedDict' member": 1
     }
   },
   "import typing\ntyping.ChainMap": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.4": {
+      "'typing' module": 1,
       "'typing.ChainMap' member": 1
     }
   },
   "import typing\ntyping.Counter": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.4": {
+      "'typing' module": 1,
       "'typing.Counter' member": 1
     }
   },
   "import typing\ntyping.Deque": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.4": {
+      "'typing' module": 1,
       "'typing.Deque' member": 1
     }
   },
   "import typing\ntyping.Text": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.2": {
+      "'typing' module": 1,
       "'typing.Text' member": 1
     }
   },
@@ -6521,15 +6499,13 @@
     "3.5": {
       "'typing' module": 1
     },
-    "3.6.0": {
+    "3.6": {
       "'typing.Collection' member": 1
     }
   },
   "import typing\ntyping.Coroutine": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.3": {
+      "'typing' module": 1,
       "'typing.Coroutine' member": 1
     }
   },
@@ -6537,47 +6513,37 @@
     "3.5": {
       "'typing' module": 1
     },
-    "3.6.1": {
+    "3.6": {
       "'typing.AsyncGenerator' member": 1
     }
   },
   "import typing\ntyping.AsyncIterable": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.2": {
+      "'typing' module": 1,
       "'typing.AsyncIterable' member": 1
     }
   },
   "import typing\ntyping.AsyncIterator": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.2": {
+      "'typing' module": 1,
       "'typing.AsyncIterator' member": 1
     }
   },
   "import typing\ntyping.Awaitable": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.2": {
+      "'typing' module": 1,
       "'typing.Awaitable' member": 1
     }
   },
   "import typing\ntyping.ContextManager": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.4": {
+      "'typing' module": 1,
       "'typing.ContextManager' member": 1
     }
   },
   "import typing\ntyping.AsyncContextManager": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.4": {
+      "'typing' module": 1,
       "'typing.AsyncContextManager' member": 1
     }
   },
@@ -6665,15 +6631,13 @@
     "3.5": {
       "'typing' module": 1
     },
-    "3.7.4": {
+    "3.7": {
       "'typing.ForwardRef' member": 1
     }
   },
   "import typing\ntyping.TYPE_CHECKING": {
     "3.5": {
-      "'typing' module": 1
-    },
-    "3.5.2": {
+      "'typing' module": 1,
       "'typing.TYPE_CHECKING' member": 1
     }
   },

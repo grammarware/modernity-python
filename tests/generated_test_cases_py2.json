@@ -295,9 +295,6 @@
     },
     "2.3": {
       "'ConfigParser.RawConfigParser' member": 1
-    },
-    "1.6": {
-      "'ConfigParser.RawConfigParser.has_option' member": 1
     }
   },
   "import ConfigParser\nConfigParser.RawConfigParser.set": {
@@ -306,9 +303,6 @@
     },
     "2.3": {
       "'ConfigParser.RawConfigParser' member": 1
-    },
-    "1.6": {
-      "'ConfigParser.RawConfigParser.set' member": 1
     }
   },
   "import ConfigParser\nConfigParser.RawConfigParser.write": {
@@ -317,9 +311,6 @@
     },
     "2.3": {
       "'ConfigParser.RawConfigParser' member": 1
-    },
-    "1.6": {
-      "'ConfigParser.RawConfigParser.write' member": 1
     }
   },
   "import ConfigParser\nConfigParser.RawConfigParser.remove_option": {
@@ -328,9 +319,6 @@
     },
     "2.3": {
       "'ConfigParser.RawConfigParser' member": 1
-    },
-    "1.6": {
-      "'ConfigParser.RawConfigParser.remove_option' member": 1
     }
   },
   "import ConfigParser\nConfigParser.ConfigParser.items": {
@@ -495,11 +483,7 @@
       "'ctypes.c_bool' member": 1
     }
   },
-  "import curses.ascii": {
-    "1.6": {
-      "'curses.ascii' module": 1
-    }
-  },
+  "import curses.ascii": {},
   "import datetime": {
     "2.3": {
       "'datetime' module": 1
@@ -977,77 +961,77 @@
     }
   },
   "import email.generator\nemail.generator.Generator.flatten": {
-    "2.2.2": {
+    "2.2": {
       "'email.generator.Generator.flatten' member": 1
     }
   },
   "import email.generator\nemail.generator.Generator.clone": {
-    "2.2.2": {
+    "2.2": {
       "'email.generator.Generator.clone' member": 1
     }
   },
   "import email.generator\nemail.generator.DecodedGenerator": {
-    "2.2.2": {
+    "2.2": {
       "'email.generator.DecodedGenerator' member": 1
     }
   },
   "import email.message\nemail.message.Message.set_charset": {
-    "2.2.2": {
+    "2.2": {
       "'email.message.Message.set_charset' member": 1
     }
   },
   "import email.message\nemail.message.Message.get_charset": {
-    "2.2.2": {
+    "2.2": {
       "'email.message.Message.get_charset' member": 1
     }
   },
   "import email.message\nemail.message.Message.replace_header": {
-    "2.2.2": {
+    "2.2": {
       "'email.message.Message.replace_header' member": 1
     }
   },
   "import email.message\nemail.message.Message.get_content_type": {
-    "2.2.2": {
+    "2.2": {
       "'email.message.Message.get_content_type' member": 1
     }
   },
   "import email.message\nemail.message.Message.get_content_maintype": {
-    "2.2.2": {
+    "2.2": {
       "'email.message.Message.get_content_maintype' member": 1
     }
   },
   "import email.message\nemail.message.Message.get_content_subtype": {
-    "2.2.2": {
+    "2.2": {
       "'email.message.Message.get_content_subtype' member": 1
     }
   },
   "import email.message\nemail.message.Message.get_default_type": {
-    "2.2.2": {
+    "2.2": {
       "'email.message.Message.get_default_type' member": 1
     }
   },
   "import email.message\nemail.message.Message.set_default_type": {
-    "2.2.2": {
+    "2.2": {
       "'email.message.Message.set_default_type' member": 1
     }
   },
   "import email.message\nemail.message.Message.set_param": {
-    "2.2.2": {
+    "2.2": {
       "'email.message.Message.set_param' member": 1
     }
   },
   "import email.message\nemail.message.Message.del_param": {
-    "2.2.2": {
+    "2.2": {
       "'email.message.Message.del_param' member": 1
     }
   },
   "import email.message\nemail.message.Message.set_type": {
-    "2.2.2": {
+    "2.2": {
       "'email.message.Message.set_type' member": 1
     }
   },
   "import email.message\nemail.message.Message.get_content_charset": {
-    "2.2.2": {
+    "2.2": {
       "'email.message.Message.get_content_charset' member": 1
     }
   },
@@ -1057,12 +1041,12 @@
     }
   },
   "import email.mime.nonmultipart\nemail.mime.nonmultipart.MIMENonMultipart": {
-    "2.2.2": {
+    "2.2": {
       "'email.mime.nonmultipart.MIMENonMultipart' member": 1
     }
   },
   "import email.mime.multipart\nemail.mime.multipart.MIMEMultipart": {
-    "2.2.2": {
+    "2.2": {
       "'email.mime.multipart.MIMEMultipart' member": 1
     }
   },
@@ -1076,36 +1060,19 @@
       "'email.utils.formatdate' member": 1
     }
   },
-  "import ensurepip": {
-    "2.7.9": {
-      "'ensurepip' module": 1
-    }
-  },
   "import exceptions\nexceptions.BaseException": {
     "2.5": {
       "'exceptions.BaseException' member": 1
     }
   },
-  "import exceptions\nexceptions.EnvironmentError": {
-    "1.5.2": {
-      "'exceptions.EnvironmentError' member": 1
-    }
-  },
+  "import exceptions\nexceptions.EnvironmentError": {},
   "import exceptions\nexceptions.GeneratorExit": {
     "2.5": {
       "'exceptions.GeneratorExit' member": 1
     }
   },
-  "import exceptions\nexceptions.NotImplementedError": {
-    "1.5.2": {
-      "'exceptions.NotImplementedError' member": 1
-    }
-  },
-  "import exceptions\nexceptions.OSError": {
-    "1.5.2": {
-      "'exceptions.OSError' member": 1
-    }
-  },
+  "import exceptions\nexceptions.NotImplementedError": {},
+  "import exceptions\nexceptions.OSError": {},
   "import exceptions\nexceptions.StopIteration": {
     "2.2": {
       "'exceptions.StopIteration' member": 1
@@ -1208,9 +1175,6 @@
   },
   "bool()": {
     "2.2": {
-      "'bool' member": 1
-    },
-    "2.2.1": {
       "'bool' member": 1
     }
   },
@@ -1494,7 +1458,7 @@
     "2.5": {
       "'hashlib' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'hashlib.algorithms_guaranteed' member": 1
     }
   },
@@ -1502,7 +1466,7 @@
     "2.5": {
       "'hashlib' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'hashlib.algorithms_available' member": 1
     }
   },
@@ -1510,7 +1474,7 @@
     "2.5": {
       "'hashlib' module": 1
     },
-    "2.7.8": {
+    "2.7": {
       "'hashlib.pbkdf2_hmac' member": 1
     }
   },
@@ -1560,7 +1524,7 @@
     "2.2": {
       "'hmac' module": 1
     },
-    "2.7.7": {
+    "2.7": {
       "'hmac.compare_digest' member": 1
     }
   },
@@ -2106,11 +2070,7 @@
       "'multiprocessing' module": 1
     }
   },
-  "import netrc": {
-    "1.5.2": {
-      "'netrc' module": 1
-    }
-  },
+  "import netrc": {},
   "import nis\nnis.get_default_domain": {
     "2.5": {
       "'nis.get_default_domain' member": 1
@@ -2391,21 +2351,9 @@
       "'os.makedev' member": 1
     }
   },
-  "import os\nos.makedirs": {
-    "1.5.2": {
-      "'os.makedirs' member": 1
-    }
-  },
-  "import os\nos.removedirs": {
-    "1.5.2": {
-      "'os.removedirs' member": 1
-    }
-  },
-  "import os\nos.renames": {
-    "1.5.2": {
-      "'os.renames' member": 1
-    }
-  },
+  "import os\nos.makedirs": {},
+  "import os\nos.removedirs": {},
+  "import os\nos.renames": {},
   "import os\nos.walk": {
     "2.3": {
       "'os.walk' member": 1
@@ -2501,26 +2449,10 @@
       "'os.killpg' member": 1
     }
   },
-  "import os\nos.spawnl": {
-    "1.6": {
-      "'os.spawnl' member": 1
-    }
-  },
-  "import os\nos.P_NOWAIT": {
-    "1.6": {
-      "'os.P_NOWAIT' member": 1
-    }
-  },
-  "import os\nos.P_WAIT": {
-    "1.6": {
-      "'os.P_WAIT' member": 1
-    }
-  },
-  "import os\nos.P_DETACH": {
-    "1.6": {
-      "'os.P_DETACH' member": 1
-    }
-  },
+  "import os\nos.spawnl": {},
+  "import os\nos.P_NOWAIT": {},
+  "import os\nos.P_WAIT": {},
+  "import os\nos.P_DETACH": {},
   "import os\nos.startfile": {
     "2.0": {
       "'os.startfile' member": 1
@@ -2576,36 +2508,20 @@
       "'os.urandom' member": 1
     }
   },
-  "import os.path\nos.path.abspath": {
-    "1.5.2": {
-      "'os.path.abspath' member": 1
-    }
-  },
+  "import os.path\nos.path.abspath": {},
   "import os.path\nos.path.lexists": {
     "2.4": {
       "'os.path.lexists' member": 1
     }
   },
-  "import os.path\nos.path.getatime": {
-    "1.5.2": {
-      "'os.path.getatime' member": 1
-    }
-  },
-  "import os.path\nos.path.getmtime": {
-    "1.5.2": {
-      "'os.path.getmtime' member": 1
-    }
-  },
+  "import os.path\nos.path.getatime": {},
+  "import os.path\nos.path.getmtime": {},
   "import os.path\nos.path.getctime": {
     "2.3": {
       "'os.path.getctime' member": 1
     }
   },
-  "import os.path\nos.path.getsize": {
-    "1.5.2": {
-      "'os.path.getsize' member": 1
-    }
-  },
+  "import os.path\nos.path.getsize": {},
   "import os.path\nos.path.realpath": {
     "2.2": {
       "'os.path.realpath' member": 1
@@ -2616,11 +2532,7 @@
       "'os.path.relpath' member": 1
     }
   },
-  "import os.path\nos.path.splitdrive": {
-    "1.3": {
-      "'os.path.splitdrive' member": 1
-    }
-  },
+  "import os.path\nos.path.splitdrive": {},
   "import os.path\nos.path.supports_unicode_filenames": {
     "2.3": {
       "'os.path.supports_unicode_filenames' member": 1
@@ -2843,11 +2755,7 @@
       "'random.getrandbits' member": 1
     }
   },
-  "import random\nrandom.randrange": {
-    "1.5.2": {
-      "'random.randrange' member": 1
-    }
-  },
+  "import random\nrandom.randrange": {},
   "import random\nrandom.sample": {
     "2.3": {
       "'random.sample' member": 1
@@ -2868,11 +2776,7 @@
       "'re.U' member": 1
     }
   },
-  "import re\nre.findall": {
-    "1.5.2": {
-      "'re.findall' member": 1
-    }
-  },
+  "import re\nre.findall": {},
   "import re\nre.finditer": {
     "2.2": {
       "'re.finditer' member": 1
@@ -2986,11 +2890,7 @@
       "'sgmllib.SGMLParser.convert_entityref' member": 1
     }
   },
-  "import shlex": {
-    "1.5.2": {
-      "'shlex' module": 1
-    }
-  },
+  "import shlex": {},
   "import shlex\nshlex.split": {
     "2.3": {
       "'shlex.split' member": 1
@@ -3343,7 +3243,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.SSLError.library' member": 1
     }
   },
@@ -3351,7 +3251,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.SSLError.reason' member": 1
     }
   },
@@ -3359,7 +3259,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.SSLZeroReturnError' member": 1
     }
   },
@@ -3367,7 +3267,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.SSLWantReadError' member": 1
     }
   },
@@ -3375,7 +3275,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.SSLWantWriteError' member": 1
     }
   },
@@ -3383,7 +3283,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.SSLSyscallError' member": 1
     }
   },
@@ -3391,7 +3291,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.SSLEOFError' member": 1
     }
   },
@@ -3399,7 +3299,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.create_default_context' member": 1
     }
   },
@@ -3407,7 +3307,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.12": {
+    "2.7": {
       "'ssl._https_verify_certificates' member": 1
     }
   },
@@ -3415,7 +3315,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.match_hostname' member": 1
     }
   },
@@ -3423,7 +3323,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.get_default_verify_paths' member": 1
     }
   },
@@ -3431,7 +3331,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.enum_certificates' member": 1
     }
   },
@@ -3439,7 +3339,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.enum_crls' member": 1
     }
   },
@@ -3447,7 +3347,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.VERIFY_DEFAULT' member": 1
     }
   },
@@ -3455,7 +3355,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.VERIFY_CRL_CHECK_LEAF' member": 1
     }
   },
@@ -3463,7 +3363,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.VERIFY_CRL_CHECK_CHAIN' member": 1
     }
   },
@@ -3471,7 +3371,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.VERIFY_X509_STRICT' member": 1
     }
   },
@@ -3479,7 +3379,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.10": {
+    "2.7": {
       "'ssl.VERIFY_X509_TRUSTED_FIRST' member": 1
     }
   },
@@ -3487,7 +3387,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.13": {
+    "2.7": {
       "'ssl.PROTOCOL_TLS' member": 1
     }
   },
@@ -3495,7 +3395,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.PROTOCOL_TLSv1_1' member": 1
     }
   },
@@ -3503,7 +3403,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.PROTOCOL_TLSv1_2' member": 1
     }
   },
@@ -3511,7 +3411,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.OP_ALL' member": 1
     }
   },
@@ -3519,7 +3419,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.OP_NO_SSLv2' member": 1
     }
   },
@@ -3527,7 +3427,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.OP_NO_SSLv3' member": 1
     }
   },
@@ -3535,7 +3435,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.OP_NO_TLSv1' member": 1
     }
   },
@@ -3543,7 +3443,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.OP_NO_TLSv1_1' member": 1
     }
   },
@@ -3551,7 +3451,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.OP_NO_TLSv1_2' member": 1
     }
   },
@@ -3559,7 +3459,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.15": {
+    "2.7": {
       "'ssl.OP_NO_TLSv1_3' member": 1
     }
   },
@@ -3567,7 +3467,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.OP_CIPHER_SERVER_PREFERENCE' member": 1
     }
   },
@@ -3575,7 +3475,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.OP_SINGLE_DH_USE' member": 1
     }
   },
@@ -3583,7 +3483,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.OP_SINGLE_ECDH_USE' member": 1
     }
   },
@@ -3591,7 +3491,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.16": {
+    "2.7": {
       "'ssl.OP_ENABLE_MIDDLEBOX_COMPAT' member": 1
     }
   },
@@ -3599,7 +3499,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.OP_NO_COMPRESSION' member": 1
     }
   },
@@ -3607,7 +3507,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.10": {
+    "2.7": {
       "'ssl.HAS_ALPN' member": 1
     }
   },
@@ -3615,7 +3515,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.HAS_ECDH' member": 1
     }
   },
@@ -3623,7 +3523,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.HAS_SNI' member": 1
     }
   },
@@ -3631,7 +3531,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.HAS_NPN' member": 1
     }
   },
@@ -3639,7 +3539,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.15": {
+    "2.7": {
       "'ssl.HAS_TLSv1_3' member": 1
     }
   },
@@ -3647,7 +3547,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.CHANNEL_BINDING_TYPES' member": 1
     }
   },
@@ -3679,7 +3579,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE' member": 1
     }
   },
@@ -3687,7 +3587,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.Purpose.SERVER_AUTH' member": 1
     }
   },
@@ -3695,7 +3595,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.Purpose.CLIENT_AUTH' member": 1
     }
   },
@@ -3703,7 +3603,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.SSLSocket.compression' member": 1
     }
   },
@@ -3711,7 +3611,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.SSLSocket.get_channel_binding' member": 1
     }
   },
@@ -3719,7 +3619,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.10": {
+    "2.7": {
       "'ssl.SSLSocket.selected_alpn_protocol' member": 1
     }
   },
@@ -3727,7 +3627,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.SSLSocket.selected_npn_protocol' member": 1
     }
   },
@@ -3735,7 +3635,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.SSLSocket.version' member": 1
     }
   },
@@ -3743,7 +3643,7 @@
     "2.6": {
       "'ssl' module": 1
     },
-    "2.7.9": {
+    "2.7": {
       "'ssl.SSLSocket.context' member": 1
     }
   },
@@ -3752,13 +3652,11 @@
       "'ssl' module": 1
     },
     "2.7": {
-      "'ssl.SSLContext' member": 1
+      "'ssl.SSLContext' member": 1,
+      "'ssl.SSLContext.set_alpn_protocols' member": 1
     },
     "3.2": {
       "'ssl.SSLContext' member": 1
-    },
-    "2.7.10": {
-      "'ssl.SSLContext.set_alpn_protocols' member": 1
     }
   },
   "long.bit_length()": {
@@ -3820,7 +3718,7 @@
     }
   },
   "str.zfill()": {
-    "2.2.2": {
+    "2.2": {
       "'str.zfill' member": 1
     }
   },
@@ -4077,11 +3975,7 @@
       "'sys.getwindowsversion' member": 1
     }
   },
-  "import sys\nsys.hexversion": {
-    "1.5.2": {
-      "'sys.hexversion' member": 1
-    }
-  },
+  "import sys\nsys.hexversion": {},
   "import sys\nsys.long_info": {
     "2.7": {
       "'sys.long_info' member": 1
@@ -4210,11 +4104,7 @@
       "'tempfile.gettempdir' member": 1
     }
   },
-  "import tempfile\ntempfile.gettempprefix": {
-    "1.5.2": {
-      "'tempfile.gettempprefix' member": 1
-    }
-  },
+  "import tempfile\ntempfile.gettempprefix": {},
   "import test.support\ntest.support.check_warnings": {
     "2.6": {
       "'test.support.check_warnings' member": 1
@@ -4807,16 +4697,8 @@
       "'webbrowser.controller.open_new_tab' member": 1
     }
   },
-  "import winsound": {
-    "1.5.2": {
-      "'winsound' module": 1
-    }
-  },
-  "import winsound\nwinsound.Beep": {
-    "1.6": {
-      "'winsound.Beep' member": 1
-    }
-  },
+  "import winsound": {},
+  "import winsound\nwinsound.Beep": {},
   "import winsound\nwinsound.MessageBeep": {
     "2.3": {
       "'winsound.MessageBeep' member": 1
@@ -4979,11 +4861,7 @@
       "'xml.sax.saxutils.quoteattr' member": 1
     }
   },
-  "import zipfile": {
-    "1.6": {
-      "'zipfile' module": 1
-    }
-  },
+  "import zipfile": {},
   "import zipfile\nzipfile.ZipFile.open": {
     "2.6": {
       "'zipfile.ZipFile.open' member": 1

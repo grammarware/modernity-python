@@ -59,3 +59,15 @@ def combine_features(features0: Features, features1: Features) -> Features:
             features0[version][name] = 1
 
     return features0
+
+
+def normalize_expected(expected: Features) -> None:
+    # Normalize expected first: remove python 1.x.x, and generalize x.y.z to x.y
+    for version, expected_per_version in list(expected.items()):
+        if version.startswith('1'):
+            del expected[version]
+
+        elif version.count('.') == 2:
+            new_version = version.rsplit('.', 1)[0]
+            expected[new_version] |= expected_per_version
+            del expected[version]

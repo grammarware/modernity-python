@@ -8,7 +8,7 @@ import sphinx.addnodes
 import docutils.nodes
 
 from pyternity.utils import Features
-from tests.test_utils import get_features_from_test_code, combine_features, save_test_cases
+from tests.test_utils import get_features_from_test_code, combine_features, save_test_cases, normalize_expected
 
 T = TypeVar('T')
 
@@ -37,6 +37,7 @@ def generate_test_cases(app: sphinx.application.Sphinx, doctree: sphinx.addnodes
                     continue
 
                 code, expected = new_test_case
+                normalize_expected(expected)
                 # Only update, if test_code was not a test_case yet
                 test_cases.setdefault(code, expected)
 
