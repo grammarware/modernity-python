@@ -119,7 +119,7 @@ def build_finished(app: sphinx.application.Sphinx, _):
             doctree = pickle.load(f)
             generate_test_cases(app, doctree, test_cases)
 
-    save_test_cases(app.config.overrides.get('pyternity_test_cases_file'), test_cases)
+    save_test_cases(app.config['pyternity_test_cases_file'], test_cases)
 
 
 def setup(app: sphinx.application.Sphinx):

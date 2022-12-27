@@ -38,11 +38,12 @@ def generate_test_cases(doc_dir: Path, output_file: Path):
         buildername="xml",  # Can also be dummy; trees are now only generated for debugging purposes
         keep_going=True,
         # parallel=os.cpu_count() // 2,
-        confoverrides={
-            'extensions': ','.join(extensions),
-            'pyternity_test_cases_file': output_file  # TODO Fix the warning this gives
-        }
+        confoverrides={'extensions': ','.join(extensions)}
     )
+
+    # Add this custom config value so extension knows where to save the test cases (different for version 2/3)
+    # Doing this in 'confoverrides' will give a warning
+    app.add_config_value('pyternity_test_cases_file', output_file, False, str)
 
     # Generate test cases
     app.build()
