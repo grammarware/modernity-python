@@ -1,5 +1,5 @@
+import contextlib
 import multiprocessing
-from collections import defaultdict
 from pyternity.utils import *
 
 
@@ -17,8 +17,11 @@ def get_features(project_folder: Path) -> Features:
 
     # Per version, per feature
     detected_features = defaultdict(lambda: defaultdict(int))
-
-    with multiprocessing.Pool(processes=Config.vermin.processes()) as pool:
+    with (
+        multiprocessing.Pool(processes=Config.vermin.processes())
+        if Config.vermin.processes() != 1
+        else contextlib.nullcontext() as pool
+    ):
         mapping = map if Config.vermin.processes() == 1 else pool.imap_unordered
         results = mapping(vermin.process_individual, ((path, Config.vermin) for path in py_paths))
 
