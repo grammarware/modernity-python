@@ -26,11 +26,14 @@ class Config:
 
 
 def measure_time(func):
+    if not logger.isEnabledFor(logging.DEBUG):
+        return func
+
     def func_timer(*args, **kwargs):
         start = time.perf_counter()
         res = func(*args, **kwargs)
         end = time.perf_counter()
-        logger.info(f"TIMER {func.__name__} took {end - start:.3f}s")
+        logger.debug(f"TIMER {func.__name__} took {end - start:.3f}s")
         return res
 
     return func_timer
@@ -55,7 +58,7 @@ def setup_project(vermin_processes: int = os.cpu_count()):
     RESULTS_DIR.mkdir(exist_ok=True)
 
     # Setup logger, log normal logs and errors separately
-    logger.setLevel(logging.WARN)
+    logger.setLevel(logging.INFO)
 
     normal_handler = logging.StreamHandler(sys.stdout)
     normal_handler.setLevel(logging.DEBUG)
