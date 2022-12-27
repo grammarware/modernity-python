@@ -1,9 +1,10 @@
+import multiprocessing
 import pickle
-from collections import defaultdict
+from functools import reduce
 from pathlib import Path
 from traceback import TracebackException
 
-import sphinx.application
+from sphinx.application import Sphinx
 import sphinx.addnodes
 import docutils.nodes
 
@@ -11,10 +12,13 @@ from pyternity.utils import Features
 from tests.test_utils import get_features_from_test_code, combine_features, save_test_cases, normalize_expected
 
 
-def generate_test_cases(
-        app: sphinx.application.Sphinx, doctree: sphinx.addnodes.document, test_cases: defaultdict[str, Features]
-):
+def generate_test_cases(outdir: str, doctree_file: Path) -> dict[str, Features]:
+    with doctree_file.open('rb') as f:
+        doctree = pickle.load(f)
+
+    test_cases = {}
     source = Path(doctree.get('source'))
+    print(source)
 
     # TODO This does not test features that are completely removed in the Python docs
     for node in doctree.findall(sphinx.addnodes.versionmodified):
@@ -30,18 +34,19 @@ def generate_test_cases(
                 code, expected = new_test_case
                 normalize_expected(expected)
                 # Only update, if test_code was not a test_case yet
-                test_cases.setdefault(code, expected)
+                test_cases.setdefault(code, dict(expected))
 
             except Exception as e:
                 # TODO fix all errors; and code that did not result in a testcase
-                doc_tree_file = Path(app.outdir) / source.parent.name / (source.stem + '.xml')
+                doc_tree_file = Path(outdir) / source.parent.name / (source.stem + '.xml')
                 print(f':: VERSIONMODIFIED ERROR ::')
                 print(f"File {source}, line {node.line}")
                 print(f"File {doc_tree_file}, line {node.line}")
                 print(''.join(TracebackException.from_exception(e).format()))
                 continue
 
-    print("\n\n")
+    print("\n")
+    return test_cases
 
 
 def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) -> tuple[str, Features]:
@@ -85,7 +90,7 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
 
                 # TODO Currently only AST module has two versionmodified nodes, take first one
 
-                return f"import {module_name}", {version: {f"'{module_name}' module": 1}}
+                return f"import {module_name}", Features(Features, {version: {f"'{module_name}' module": 1}})
 
     # elif node.attributes['type'] == "versionchanged":
     #     # New parameter has been added to a method
@@ -102,26 +107,21 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
     #         # TODO return desc_signature.attributes['module'], f"{desc_signature.attributes['ids'][0]}({param_name}=None)"
 
 
-def build_finished(app: sphinx.application.Sphinx, _):
-    test_cases = defaultdict(lambda: defaultdict(Features))
-
+def build_finished(app: Sphinx, _):
     # Build finished event will always be triggered. Using this event we can also generate our test cases even when
     # then input files have not changed, so we used the cached doctrees. We can do this, since our extension does not
     # modify this doctree.
     # Load doctree files here with pickle
-    # TODO This can also be run in parallel
 
     # We are only interested in changes in the library
     library_doctrees_dir = Path(app.doctreedir) / 'library'
-    for doctree_file in library_doctrees_dir.iterdir():
-        print(doctree_file.absolute())
-        with doctree_file.open('rb') as f:
-            doctree = pickle.load(f)
-            generate_test_cases(app, doctree, test_cases)
 
-    save_test_cases(app.config['pyternity_test_cases_file'], test_cases)
+    with multiprocessing.Pool(processes=app.parallel) as pool:
+        new_test_cases = pool.starmap(generate_test_cases, ((app.outdir, p) for p in library_doctrees_dir.iterdir()))
+        test_cases = reduce(dict.__ior__, new_test_cases)
+        save_test_cases(app.config['pyternity_test_cases_file'], test_cases)
 
 
-def setup(app: sphinx.application.Sphinx):
+def setup(app: Sphinx):
     app.connect('build-finished', build_finished)
     return {'version': '1.0'}

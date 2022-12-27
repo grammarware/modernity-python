@@ -1,4 +1,5 @@
 import ast
+import os
 import sys
 from pathlib import Path
 
@@ -37,7 +38,7 @@ def generate_test_cases(doc_dir: Path, output_file: Path):
         doctreedir=doc_dir / 'build' / '.doctrees',
         buildername="xml",  # Can also be dummy; trees are now only generated for debugging purposes
         keep_going=True,
-        # parallel=os.cpu_count() // 2,
+        parallel=os.cpu_count() // 2,
         confoverrides={'extensions': ','.join(extensions)}
     )
 

@@ -9,7 +9,7 @@ from urllib import request
 from uuid import uuid4
 
 from pyternity import features
-from pyternity.utils import TMP_DIR, Features, ROOT_DIR, logger
+from pyternity.utils import TMP_DIR, Features, ROOT_DIR, logger, Config
 
 PYTHON_2_VERSION = '2.7.18'
 PYTHON_3_VERSION = f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}"
@@ -30,6 +30,8 @@ def test_code(test_case: unittest.TestCase, code: str, test_result: Features):
 
 
 def get_features_from_test_code(code: str) -> Features:
+    Config.vermin.set_processes(1)
+
     # Note: tempfile library cannot be used here, since Vermin reopens the file
     # Do make the file name random, such that this function can be called concurrently
     tmp_file = TMP_DIR / f"{uuid4()}.py"

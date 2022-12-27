@@ -1044,6 +1044,11 @@
       "'email.utils.formatdate' member": 1
     }
   },
+  "import ensurepip": {
+    "2.7": {
+      "'ensurepip' module": 1
+    }
+  },
   "import exceptions\nexceptions.BaseException": {
     "2.5": {
       "'exceptions.BaseException' member": 1
