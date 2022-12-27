@@ -1,7 +1,7 @@
+import pickle
 from collections import defaultdict
 from pathlib import Path
 from traceback import TracebackException
-from typing import TypeVar
 
 import sphinx.application
 import sphinx.addnodes
@@ -10,20 +10,11 @@ import docutils.nodes
 from pyternity.utils import Features
 from tests.test_utils import get_features_from_test_code, combine_features, save_test_cases, normalize_expected
 
-T = TypeVar('T')
 
-test_cases: defaultdict[str, Features]
-
-
-def generate_test_cases(app: sphinx.application.Sphinx, doctree: sphinx.addnodes.document):
-    global test_cases
-
-    # We are only interested in changes in the library
+def generate_test_cases(
+        app: sphinx.application.Sphinx, doctree: sphinx.addnodes.document, test_cases: defaultdict[str, Features]
+):
     source = Path(doctree.get('source'))
-    if source.parent.name != "library":
-        return
-
-    print(source)
 
     # TODO This does not test features that are completely removed in the Python docs
     for node in doctree.findall(sphinx.addnodes.versionmodified):
@@ -112,14 +103,25 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
 
 
 def build_finished(app: sphinx.application.Sphinx, _):
-    global test_cases
+    test_cases = defaultdict(lambda: defaultdict(Features))
+
+    # Build finished event will always be triggered. Using this event we can also generate our test cases even when
+    # then input files have not changed, so we used the cached doctrees. We can do this, since our extension does not
+    # modify this doctree.
+    # Load doctree files here with pickle
+    # TODO This can also be run in parallel
+
+    # We are only interested in changes in the library
+    library_doctrees_dir = Path(app.doctreedir) / 'library'
+    for doctree_file in library_doctrees_dir.iterdir():
+        print(doctree_file.absolute())
+        with doctree_file.open('rb') as f:
+            doctree = pickle.load(f)
+            generate_test_cases(app, doctree, test_cases)
+
     save_test_cases(app.config.overrides.get('pyternity_test_cases_file'), test_cases)
 
 
 def setup(app: sphinx.application.Sphinx):
-    global test_cases
-    test_cases = defaultdict(lambda: defaultdict(Features))
-
-    app.connect('doctree-read', generate_test_cases)
     app.connect('build-finished', build_finished)
     return {'version': '1.0'}

@@ -1,20 +1,4 @@
 {
-  "import _winreg\nwinreg.ExpandEnvironmentStrings": {
-    "2.0": {
-      "'_winreg' module": 1
-    },
-    "2.6": {
-      "'winreg.ExpandEnvironmentStrings' member": 1
-    }
-  },
-  "import _winreg\nwinreg.PyHKEY.__enter__": {
-    "2.0": {
-      "'_winreg' module": 1
-    },
-    "2.6": {
-      "'winreg.PyHKEY.__enter__' member": 1
-    }
-  },
   "import abc": {
     "2.6": {
       "'abc' module": 1
@@ -1937,17 +1921,17 @@
       "'locale.currency' member": 1
     }
   },
+  "import logging.config\nlogging.config.dictConfig": {
+    "2.7": {
+      "'logging.config.dictConfig' member": 1
+    }
+  },
   "import logging\nlogging.Logger.getChild": {
     "2.3": {
       "'logging' module": 1
     },
     "2.7": {
       "'logging.Logger.getChild' member": 1
-    }
-  },
-  "import logging.config\nlogging.config.dictConfig": {
-    "2.7": {
-      "'logging.config.dictConfig' member": 1
     }
   },
   "import marshal\nmarshal.version": {
@@ -4903,6 +4887,22 @@
   "import zlib\nzlib.Decompress.copy": {
     "2.5": {
       "'zlib.Decompress.copy' member": 1
+    }
+  },
+  "import _winreg\nwinreg.ExpandEnvironmentStrings": {
+    "2.0": {
+      "'_winreg' module": 1
+    },
+    "2.6": {
+      "'winreg.ExpandEnvironmentStrings' member": 1
+    }
+  },
+  "import _winreg\nwinreg.PyHKEY.__enter__": {
+    "2.0": {
+      "'_winreg' module": 1
+    },
+    "2.6": {
+      "'winreg.PyHKEY.__enter__' member": 1
     }
   }
 }

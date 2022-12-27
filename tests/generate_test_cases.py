@@ -36,10 +36,12 @@ def generate_test_cases(doc_dir: Path, output_file: Path):
         outdir=doc_dir / 'build',
         doctreedir=doc_dir / 'build' / '.doctrees',
         buildername="xml",  # Can also be dummy; trees are now only generated for debugging purposes
-        freshenv=True,
         keep_going=True,
-        # parallel=os.cpu_count(),
-        confoverrides={'extensions': ','.join(extensions), 'pyternity_test_cases_file': output_file}
+        # parallel=os.cpu_count() // 2,
+        confoverrides={
+            'extensions': ','.join(extensions),
+            'pyternity_test_cases_file': output_file  # TODO Fix the warning this gives
+        }
     )
 
     # Generate test cases
