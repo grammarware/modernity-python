@@ -3,7 +3,8 @@ import sys
 import unittest
 
 from pyternity.utils import setup_project
-from tests.test_utils import test_code, get_test_cases, TEST_CASES_FILE_PY2, TEST_CASES_FILE_PY3
+from tests.test_utils import test_code, get_test_cases, TEST_CASES_FILE_PY2, TEST_CASES_FILE_PY3, \
+    download_latest_python_source, PYTHON_2_VERSION, PYTHON_3_VERSION
 
 # Idea; read all doc files, and look for  .. versionchanged / .. versionadded
 # https://github.com/python/cpython/tree/main/Doc/library
@@ -64,6 +65,8 @@ class TestFeatures(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         setup_project(1)
+        download_latest_python_source(PYTHON_2_VERSION)
+        download_latest_python_source(PYTHON_3_VERSION)
 
     def test_version_3_9(self):
         for code, test_result in PYTHON_3_9.items():
@@ -74,15 +77,16 @@ class TestFeatures(unittest.TestCase):
         TEST_CASES_FILE_PY2.unlink(missing_ok=True)
         TEST_CASES_FILE_PY3.unlink(missing_ok=True)
 
-        # TODO Download (the latest?) python sources:
-        #  2.7 will not change: https://www.python.org/downloads/release/python-2718/
-        #  3.x
         # We combine the results, since some features are both belonging to python 2.x and python 3.x
         # We need the whole Python source, since a sphinx-extension uses relative importing
 
         # Using Sphinx app twice in same Python process does cause some errors, so run them in a subprocess (parallel)
-        sub2 = subprocess.Popen([sys.executable, "generate_test_cases.py", "Python-2.7.18", TEST_CASES_FILE_PY2.absolute()])
-        sub3 = subprocess.Popen([sys.executable, "generate_test_cases.py", "Python3", TEST_CASES_FILE_PY3.absolute()])
+        sub2 = subprocess.Popen([
+            sys.executable, "generate_test_cases.py", PYTHON_2_VERSION, TEST_CASES_FILE_PY2.absolute()
+        ])
+        sub3 = subprocess.Popen([
+            sys.executable, "generate_test_cases.py", PYTHON_3_VERSION, TEST_CASES_FILE_PY3.absolute()
+        ])
         self.assertEqual(sub2.wait(), 0)
         self.assertEqual(sub3.wait(), 0)
 

@@ -54,5 +54,5 @@ if __name__ == '__main__':
     # Since this is a separate subprocess, also initiate config here
     setup_project(1)
 
-    status_code = generate_test_cases(TMP_DIR / python_version / 'Doc', Path(test_cases_file))
+    status_code = generate_test_cases(TMP_DIR / f"Python-{python_version}" / 'Doc', Path(test_cases_file))
     exit(status_code)
