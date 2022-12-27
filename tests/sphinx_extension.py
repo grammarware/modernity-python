@@ -8,17 +8,17 @@ from sphinx.application import Sphinx
 import sphinx.addnodes
 import docutils.nodes
 
-from pyternity.utils import Features
+from pyternity.utils import Features, logger
 from tests.test_utils import get_features_from_test_code, combine_features, save_test_cases, normalize_expected
 
 
 def generate_test_cases(outdir: str, doctree_file: Path) -> dict[str, Features]:
     with doctree_file.open('rb') as f:
-        doctree = pickle.load(f)
+        doctree: sphinx.addnodes.document = pickle.load(f)
 
     test_cases = {}
     source = Path(doctree.get('source'))
-    print(source)
+    logger.info(f"Processing {source}...")
 
     # TODO This does not test features that are completely removed in the Python docs
     for node in doctree.findall(sphinx.addnodes.versionmodified):
@@ -39,13 +39,13 @@ def generate_test_cases(outdir: str, doctree_file: Path) -> dict[str, Features]:
             except Exception as e:
                 # TODO fix all errors; and code that did not result in a testcase
                 doc_tree_file = Path(outdir) / source.parent.name / (source.stem + '.xml')
-                print(f':: VERSIONMODIFIED ERROR ::')
-                print(f"File {source}, line {node.line}")
-                print(f"File {doc_tree_file}, line {node.line}")
-                print(''.join(TracebackException.from_exception(e).format()))
-                continue
+                logger.error(
+                    f":: VERSIONMODIFIED ERROR ::\n"
+                    f'File "{source}", line {node.line}\n'
+                    f'File "{doc_tree_file}", line {node.line}\n'
+                    ''.join(TracebackException.from_exception(e).format())
+                )
 
-    print("\n")
     return test_cases
 
 
