@@ -1,5 +1,6 @@
 import multiprocessing
 import pickle
+import re
 from functools import reduce
 from pathlib import Path
 from traceback import TracebackException
@@ -10,6 +11,16 @@ import docutils.nodes
 
 from pyternity.utils import Features, logger
 from tests.test_utils import get_features_from_test_code, combine_features, save_test_cases, normalize_expected
+
+# Python documentation is not consistent in when a new parameter has been added...
+HAS_NEW_PARAMETER = re.compile(
+    r"((the )?((optional|keyword-only|keyword) )?((parameter|flag|argument)s?) ((was|were) )?added)|"
+    r"((added|introduced) (support for )?(the )?((optional|keyword-only|keyword) )?((parameter|flag|argument)s?))|"
+    r"(^(was|were|attributes) added$)|"
+    r"(^added support for$)|"
+    r"(^the parameter is new$)",
+    re.IGNORECASE
+)
 
 
 def generate_test_cases(outdir: str, doctree_file: Path) -> dict[str, Features]:
@@ -49,33 +60,80 @@ def generate_test_cases(outdir: str, doctree_file: Path) -> dict[str, Features]:
     return test_cases
 
 
-def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) -> tuple[str, Features]:
+def new_parameters_from_node(node: sphinx.addnodes.versionmodified):
+    # Parameter names are stored in emphasis nodes
+    emphasises = [param.astext() for param in node.traverse(docutils.nodes.emphasis)]
+    if not emphasises:
+        return
+
+    nodes = node.next_node(docutils.nodes.paragraph)[0].traverse(docutils.nodes.Text, descend=False, siblings=True)
+    text = ' '.join(str(n).strip() for n in nodes).replace('and ', '').replace(' ,', '').rstrip(' .')
+
+    if HAS_NEW_PARAMETER.match(text):
+        return emphasises
+    else:
+        print(repr(''.join(n.astext() for n in node[0][1:]).replace('\n', ' ')))
+        print(repr(text))
+        print()
+
+
+def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) -> tuple[str, Features] | None:
+    # Vermin does not detect deprecation, so skip these nodes
+    if node.get('type') == 'deprecated':
+        return
+
     description = node.next_node(docutils.nodes.paragraph)
-    feature_added = node.get('type') == "versionadded"
+    feature_added = node.get('type') == 'versionadded'
 
     if isinstance(desc := node.parent.parent, sphinx.addnodes.desc):
         desc_signature = desc.next_node(sphinx.addnodes.desc_signature)
 
+        if desc.get('objtype') in ('opcode', 'cmdoption', 'pdbcommand'):
+            return
+
         if feature_added:
             # New method/class/function/exception/attribute/constants(data)
             # https://devguide.python.org/documentation/markup/#information-units
+            assert desc.get('objtype') in ('method', 'class', 'function', 'exception', 'attribute', 'data'), \
+                f"Other objtype={desc.get('objtype')} found"
+
             # These nodes should have only 1 (inline) element in their paragraph?
-            if desc.get('objtype') in ("method", "class", "function", "exception", "attribute", "data"):
-                if len(description.children) == 1:
-                    module = desc_signature.get('module')
-                    ids = desc_signature.get('ids')[0]
-                    prev_ids = ids.rsplit('.', maxsplit=1)[0]
+            if len(description.children) == 1:
+                module = desc_signature.get('module')
+                ids = desc_signature.get('ids')[0]
+                prev_ids = ids.rsplit('.', maxsplit=1)[0]
 
-                    # If there is no import statement (i.e. it is a builtin), call the thing
-                    # TODO Maybe there are also constants?
-                    import_stmt = f"import {module}\n" if module else ""
-                    prev_features = get_features_from_test_code(
-                        f"{import_stmt}{prev_ids}{'()' if not import_stmt else ''}")
+                # TODO Maybe there are also constants?
+                import_stmt = f"import {module}\n" if module else ''
+                prev_features = get_features_from_test_code(f"{import_stmt}{prev_ids}")
 
-                    return (
-                        f"{import_stmt}{ids}{'()' if not import_stmt else ''}",
-                        combine_features(prev_features, {version: {f"'{ids}' member": 1}})
-                    )
+                return f"{import_stmt}{ids}()", combine_features(prev_features, {version: {f"'{ids}' member": 1}})
+
+        else:
+            # Thing changed, check if new parameters were added
+
+            # Only callables can have parameters added
+            if desc.get('objtype') not in ('method', 'class', 'function', 'exception'):
+                return
+
+            new_parameters = new_parameters_from_node(node)
+            if not new_parameters:
+                return
+
+            # The value assigned to the named parameter does not matter
+            # (technically you good also grab the default parameter value from desc_signature)
+            parameters = ', '.join(f"{param}=None" for param in new_parameters)
+            # TODO Generate separate test cases for each parameter, else combine 2 and 3 test cases may clash
+
+            module = desc_signature.get('module')
+            ids = desc_signature.get('ids')[0]
+            import_stmt = f"import {module}\n" if module else ''
+            prev_features = get_features_from_test_code(f"{import_stmt}{ids}()")
+
+            return (
+                f"{import_stmt}{ids}({parameters})",
+                combine_features(prev_features, {version: {f"'{ids}({p})'": 1 for p in new_parameters}})
+            )
 
     if isinstance(document := node.parent.parent, sphinx.addnodes.document):
         section = document.next_node(docutils.nodes.section)
@@ -91,20 +149,6 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
                 # TODO Currently only AST module has two versionmodified nodes, take first one
 
                 return f"import {module_name}", Features(Features, {version: {f"'{module_name}' module": 1}})
-
-    # elif node.attributes['type'] == "versionchanged":
-    #     # New parameter has been added to a method
-    #     if parent_parent.attributes.get('objtype') in ("method",):
-    #         try:
-    #             param_name = node[0][1][1][0]
-    #         except IndexError:
-    #             # Case when argument already existed, but was now given default value
-    #             return
-    #
-    #         # The value assigned to the named parameter does not matter
-    #         # (technically you good also grab the default parameter value from desc_signature)
-    #
-    #         # TODO return desc_signature.attributes['module'], f"{desc_signature.attributes['ids'][0]}({param_name}=None)"
 
 
 def build_finished(app: Sphinx, _):

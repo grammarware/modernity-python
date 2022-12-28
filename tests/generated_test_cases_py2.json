@@ -19,12 +19,12 @@
       "'atexit' module": 1
     }
   },
-  "import audioop\naudioop.alaw2lin": {
+  "import audioop\naudioop.alaw2lin()": {
     "2.5": {
       "'audioop.alaw2lin' member": 1
     }
   },
-  "import audioop\naudioop.lin2alaw": {
+  "import audioop\naudioop.lin2alaw()": {
     "2.5": {
       "'audioop.lin2alaw' member": 1
     }
@@ -39,52 +39,52 @@
       "'bz2' module": 1
     }
   },
-  "import calendar\ncalendar.Calendar": {
+  "import calendar\ncalendar.Calendar()": {
     "2.5": {
       "'calendar.Calendar' member": 1
     }
   },
-  "import calendar\ncalendar.TextCalendar": {
+  "import calendar\ncalendar.TextCalendar()": {
     "2.5": {
       "'calendar.TextCalendar' member": 1
     }
   },
-  "import calendar\ncalendar.HTMLCalendar": {
+  "import calendar\ncalendar.HTMLCalendar()": {
     "2.5": {
       "'calendar.HTMLCalendar' member": 1
     }
   },
-  "import calendar\ncalendar.LocaleTextCalendar": {
+  "import calendar\ncalendar.LocaleTextCalendar()": {
     "2.5": {
       "'calendar.LocaleTextCalendar' member": 1
     }
   },
-  "import calendar\ncalendar.LocaleHTMLCalendar": {
+  "import calendar\ncalendar.LocaleHTMLCalendar()": {
     "2.5": {
       "'calendar.LocaleHTMLCalendar' member": 1
     }
   },
-  "import calendar\ncalendar.setfirstweekday": {
+  "import calendar\ncalendar.setfirstweekday()": {
     "2.0": {
       "'calendar.setfirstweekday' member": 1
     }
   },
-  "import calendar\ncalendar.firstweekday": {
+  "import calendar\ncalendar.firstweekday()": {
     "2.0": {
       "'calendar.firstweekday' member": 1
     }
   },
-  "import calendar\ncalendar.month": {
+  "import calendar\ncalendar.month()": {
     "2.0": {
       "'calendar.month' member": 1
     }
   },
-  "import calendar\ncalendar.calendar": {
+  "import calendar\ncalendar.calendar()": {
     "2.0": {
       "'calendar.calendar' member": 1
     }
   },
-  "import calendar\ncalendar.timegm": {
+  "import calendar\ncalendar.timegm()": {
     "2.0": {
       "'calendar.timegm' member": 1
     }
@@ -94,59 +94,85 @@
       "'cgitb' module": 1
     }
   },
-  "import cmath\ncmath.phase": {
+  "import cmath\ncmath.phase()": {
     "2.6": {
       "'cmath.phase' member": 1
     }
   },
-  "import cmath\ncmath.polar": {
+  "import cmath\ncmath.polar()": {
     "2.6": {
       "'cmath.polar' member": 1
     }
   },
-  "import cmath\ncmath.rect": {
+  "import cmath\ncmath.rect()": {
     "2.6": {
       "'cmath.rect' member": 1
     }
   },
-  "import cmath\ncmath.isinf": {
+  "import cmath\ncmath.log(base=None)": {
+    "2.4": {
+      "'cmath.log(base)'": 1
+    }
+  },
+  "import cmath\ncmath.isinf()": {
     "2.6": {
       "'cmath.isinf' member": 1
     }
   },
-  "import cmath\ncmath.isnan": {
+  "import cmath\ncmath.isnan()": {
     "2.6": {
       "'cmath.isnan' member": 1
     }
   },
-  "import codecs\ncodecs.encode": {
+  "import cmd\ncmd.Cmd(stdin=None, stdout=None)": {
+    "2.3": {
+      "'cmd.Cmd(stdin)'": 1,
+      "'cmd.Cmd(stdout)'": 1
+    }
+  },
+  "import codecs\ncodecs.encode()": {
     "2.4": {
       "'codecs.encode' member": 1
     }
   },
-  "import codecs\ncodecs.decode": {
+  "import codecs\ncodecs.decode()": {
     "2.4": {
       "'codecs.decode' member": 1
     }
   },
-  "import codecs\ncodecs.getincrementalencoder": {
+  "import codecs\ncodecs.getincrementalencoder()": {
     "2.5": {
       "'codecs.getincrementalencoder' member": 1
     }
   },
-  "import codecs\ncodecs.getincrementaldecoder": {
+  "import codecs\ncodecs.getincrementaldecoder()": {
     "2.5": {
       "'codecs.getincrementaldecoder' member": 1
     }
   },
-  "import codecs\ncodecs.iterencode": {
+  "import codecs\ncodecs.iterencode()": {
     "2.5": {
       "'codecs.iterencode' member": 1
     }
   },
-  "import codecs\ncodecs.iterdecode": {
+  "import codecs\ncodecs.iterdecode()": {
     "2.5": {
       "'codecs.iterdecode' member": 1
+    }
+  },
+  "import codecs\ncodecs.StreamReader.read(chars=None)": {
+    "2.4": {
+      "'codecs.StreamReader.read(chars)'": 1
+    }
+  },
+  "import codecs\ncodecs.StreamReader.read(firstline=None)": {
+    "2.4": {
+      "'codecs.StreamReader.read(firstline)'": 1
+    }
+  },
+  "import codecs\ncodecs.StreamReader.readline(keepends=None)": {
+    "2.4": {
+      "'codecs.StreamReader.readline(keepends)'": 1
     }
   },
   "import collections": {
@@ -154,7 +180,7 @@
       "'collections' module": 1
     }
   },
-  "import collections\ncollections.Counter": {
+  "import collections\ncollections.Counter()": {
     "2.4": {
       "'collections' module": 1
     },
@@ -162,13 +188,22 @@
       "'collections.Counter' member": 1
     }
   },
-  "import collections\ncollections.deque": {
+  "import collections\ncollections.deque()": {
     "2.4": {
       "'collections' module": 1,
       "'collections.deque' member": 1
     }
   },
-  "import collections\ncollections.deque.count": {
+  "import collections\ncollections.deque(maxlen=None)": {
+    "2.4": {
+      "'collections' module": 1,
+      "'collections.deque' member": 1
+    },
+    "2.6": {
+      "'collections.deque(maxlen)'": 1
+    }
+  },
+  "import collections\ncollections.deque.count()": {
     "2.4": {
       "'collections' module": 1,
       "'collections.deque' member": 1
@@ -177,7 +212,7 @@
       "'collections.deque.count' member": 1
     }
   },
-  "import collections\ncollections.deque.remove": {
+  "import collections\ncollections.deque.remove()": {
     "2.4": {
       "'collections' module": 1,
       "'collections.deque' member": 1
@@ -186,7 +221,7 @@
       "'collections.deque.remove' member": 1
     }
   },
-  "import collections\ncollections.deque.reverse": {
+  "import collections\ncollections.deque.reverse()": {
     "2.4": {
       "'collections' module": 1,
       "'collections.deque' member": 1
@@ -195,7 +230,7 @@
       "'collections.deque.reverse' member": 1
     }
   },
-  "import collections\ncollections.deque.maxlen": {
+  "import collections\ncollections.deque.maxlen()": {
     "2.4": {
       "'collections' module": 1,
       "'collections.deque' member": 1
@@ -204,7 +239,7 @@
       "'collections.deque.maxlen' member": 1
     }
   },
-  "import collections\ncollections.defaultdict": {
+  "import collections\ncollections.defaultdict()": {
     "2.4": {
       "'collections' module": 1
     },
@@ -212,7 +247,7 @@
       "'collections.defaultdict' member": 1
     }
   },
-  "import collections\ncollections.namedtuple": {
+  "import collections\ncollections.namedtuple()": {
     "2.4": {
       "'collections' module": 1
     },
@@ -220,7 +255,18 @@
       "'collections.namedtuple' member": 1
     }
   },
-  "import collections\ncollections.OrderedDict": {
+  "import collections\ncollections.namedtuple(rename=None)": {
+    "2.4": {
+      "'collections' module": 1
+    },
+    "2.6": {
+      "'collections.namedtuple' member": 1
+    },
+    "2.7": {
+      "'collections.namedtuple(rename)'": 1
+    }
+  },
+  "import collections\ncollections.OrderedDict()": {
     "2.4": {
       "'collections' module": 1
     },
@@ -228,12 +274,12 @@
       "'collections.OrderedDict' member": 1
     }
   },
-  "import compileall\ncompileall.compile_file": {
+  "import compileall\ncompileall.compile_file()": {
     "2.7": {
       "'compileall.compile_file' member": 1
     }
   },
-  "import ConfigParser\nConfigParser.RawConfigParser": {
+  "import ConfigParser\nConfigParser.RawConfigParser()": {
     "2.0": {
       "'ConfigParser' module": 1
     },
@@ -241,7 +287,18 @@
       "'ConfigParser.RawConfigParser' member": 1
     }
   },
-  "import ConfigParser\nConfigParser.ConfigParser": {
+  "import ConfigParser\nConfigParser.RawConfigParser(dict_type=None)": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.RawConfigParser' member": 1
+    },
+    "2.6": {
+      "'ConfigParser.RawConfigParser(dict_type)'": 1
+    }
+  },
+  "import ConfigParser\nConfigParser.ConfigParser()": {
     "2.0": {
       "'ConfigParser' module": 1
     },
@@ -249,7 +306,18 @@
       "'ConfigParser.ConfigParser' member": 1
     }
   },
-  "import ConfigParser\nConfigParser.SafeConfigParser": {
+  "import ConfigParser\nConfigParser.ConfigParser(dict_type=None)": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.ConfigParser' member": 1
+    },
+    "2.6": {
+      "'ConfigParser.ConfigParser(dict_type)'": 1
+    }
+  },
+  "import ConfigParser\nConfigParser.SafeConfigParser()": {
     "2.0": {
       "'ConfigParser' module": 1
     },
@@ -257,7 +325,18 @@
       "'ConfigParser.SafeConfigParser' member": 1
     }
   },
-  "import ConfigParser\nConfigParser.InterpolationMissingOptionError": {
+  "import ConfigParser\nConfigParser.SafeConfigParser(dict_type=None)": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.SafeConfigParser' member": 1
+    },
+    "2.6": {
+      "'ConfigParser.SafeConfigParser(dict_type)'": 1
+    }
+  },
+  "import ConfigParser\nConfigParser.InterpolationMissingOptionError()": {
     "2.0": {
       "'ConfigParser' module": 1
     },
@@ -265,7 +344,7 @@
       "'ConfigParser.InterpolationMissingOptionError' member": 1
     }
   },
-  "import ConfigParser\nConfigParser.InterpolationSyntaxError": {
+  "import ConfigParser\nConfigParser.InterpolationSyntaxError()": {
     "2.0": {
       "'ConfigParser' module": 1
     },
@@ -273,7 +352,7 @@
       "'ConfigParser.InterpolationSyntaxError' member": 1
     }
   },
-  "import ConfigParser\nConfigParser.RawConfigParser.has_option": {
+  "import ConfigParser\nConfigParser.RawConfigParser.has_option()": {
     "2.0": {
       "'ConfigParser' module": 1
     },
@@ -281,7 +360,7 @@
       "'ConfigParser.RawConfigParser' member": 1
     }
   },
-  "import ConfigParser\nConfigParser.RawConfigParser.set": {
+  "import ConfigParser\nConfigParser.RawConfigParser.set()": {
     "2.0": {
       "'ConfigParser' module": 1
     },
@@ -289,7 +368,7 @@
       "'ConfigParser.RawConfigParser' member": 1
     }
   },
-  "import ConfigParser\nConfigParser.RawConfigParser.write": {
+  "import ConfigParser\nConfigParser.RawConfigParser.write()": {
     "2.0": {
       "'ConfigParser' module": 1
     },
@@ -297,7 +376,7 @@
       "'ConfigParser.RawConfigParser' member": 1
     }
   },
-  "import ConfigParser\nConfigParser.RawConfigParser.remove_option": {
+  "import ConfigParser\nConfigParser.RawConfigParser.remove_option()": {
     "2.0": {
       "'ConfigParser' module": 1
     },
@@ -305,7 +384,7 @@
       "'ConfigParser.RawConfigParser' member": 1
     }
   },
-  "import ConfigParser\nConfigParser.ConfigParser.items": {
+  "import ConfigParser\nConfigParser.ConfigParser.items()": {
     "2.0": {
       "'ConfigParser' module": 1
     },
@@ -314,7 +393,7 @@
       "'ConfigParser.ConfigParser.items' member": 1
     }
   },
-  "import ConfigParser\nConfigParser.SafeConfigParser.set": {
+  "import ConfigParser\nConfigParser.SafeConfigParser.set()": {
     "2.0": {
       "'ConfigParser' module": 1
     },
@@ -340,7 +419,7 @@
       "'contextlib' module": 1
     }
   },
-  "import cookielib\ncookielib.DefaultCookiePolicy.rfc2109_as_netscape": {
+  "import cookielib\ncookielib.DefaultCookiePolicy.rfc2109_as_netscape()": {
     "2.4": {
       "'cookielib' module": 1
     },
@@ -348,7 +427,7 @@
       "'cookielib.DefaultCookiePolicy.rfc2109_as_netscape' member": 1
     }
   },
-  "import cookielib\ncookielib.Cookie.rfc2109": {
+  "import cookielib\ncookielib.Cookie.rfc2109()": {
     "2.4": {
       "'cookielib' module": 1
     },
@@ -361,7 +440,7 @@
       "'csv' module": 1
     }
   },
-  "import csv\ncsv.field_size_limit": {
+  "import csv\ncsv.field_size_limit()": {
     "2.3": {
       "'csv' module": 1
     },
@@ -369,7 +448,7 @@
       "'csv.field_size_limit' member": 1
     }
   },
-  "import csv\ncsv.csvreader.line_num": {
+  "import csv\ncsv.csvreader.line_num()": {
     "2.3": {
       "'csv' module": 1
     },
@@ -377,7 +456,7 @@
       "'csv.csvreader.line_num' member": 1
     }
   },
-  "import csv\ncsv.DictWriter.writeheader": {
+  "import csv\ncsv.DictWriter.writeheader()": {
     "2.3": {
       "'csv' module": 1
     },
@@ -390,12 +469,21 @@
       "'ctypes' module": 1
     }
   },
-  "import ctypes.util\nctypes.util.find_msvcrt": {
+  "import ctypes\nctypes.CFUNCTYPE(use_errno=None, use_last_error=None)": {
+    "2.5": {
+      "'ctypes' module": 1
+    },
+    "2.6": {
+      "'ctypes.CFUNCTYPE(use_errno)'": 1,
+      "'ctypes.CFUNCTYPE(use_last_error)'": 1
+    }
+  },
+  "import ctypes.util\nctypes.util.find_msvcrt()": {
     "2.6": {
       "'ctypes.util.find_msvcrt' member": 1
     }
   },
-  "import ctypes\nctypes.get_errno": {
+  "import ctypes\nctypes.get_errno()": {
     "2.5": {
       "'ctypes' module": 1
     },
@@ -403,7 +491,7 @@
       "'ctypes.get_errno' member": 1
     }
   },
-  "import ctypes\nctypes.get_last_error": {
+  "import ctypes\nctypes.get_last_error()": {
     "2.5": {
       "'ctypes' module": 1
     },
@@ -411,7 +499,7 @@
       "'ctypes.get_last_error' member": 1
     }
   },
-  "import ctypes\nctypes.set_errno": {
+  "import ctypes\nctypes.set_errno()": {
     "2.5": {
       "'ctypes' module": 1
     },
@@ -419,7 +507,7 @@
       "'ctypes.set_errno' member": 1
     }
   },
-  "import ctypes\nctypes.set_last_error": {
+  "import ctypes\nctypes.set_last_error()": {
     "2.5": {
       "'ctypes' module": 1
     },
@@ -427,7 +515,7 @@
       "'ctypes.set_last_error' member": 1
     }
   },
-  "import ctypes\nctypes._CData.from_buffer": {
+  "import ctypes\nctypes._CData.from_buffer()": {
     "2.5": {
       "'ctypes' module": 1
     },
@@ -435,7 +523,7 @@
       "'ctypes._CData.from_buffer' member": 1
     }
   },
-  "import ctypes\nctypes._CData.from_buffer_copy": {
+  "import ctypes\nctypes._CData.from_buffer_copy()": {
     "2.5": {
       "'ctypes' module": 1
     },
@@ -443,7 +531,7 @@
       "'ctypes._CData.from_buffer_copy' member": 1
     }
   },
-  "import ctypes\nctypes.c_longdouble": {
+  "import ctypes\nctypes.c_longdouble()": {
     "2.5": {
       "'ctypes' module": 1
     },
@@ -451,7 +539,7 @@
       "'ctypes.c_longdouble' member": 1
     }
   },
-  "import ctypes\nctypes.c_ssize_t": {
+  "import ctypes\nctypes.c_ssize_t()": {
     "2.5": {
       "'ctypes' module": 1
     },
@@ -459,7 +547,7 @@
       "'ctypes.c_ssize_t' member": 1
     }
   },
-  "import ctypes\nctypes.c_bool": {
+  "import ctypes\nctypes.c_bool()": {
     "2.5": {
       "'ctypes' module": 1
     },
@@ -473,7 +561,7 @@
       "'datetime' module": 1
     }
   },
-  "import datetime\ndatetime.timedelta.total_seconds": {
+  "import datetime\ndatetime.timedelta.total_seconds()": {
     "2.3": {
       "'datetime' module": 1
     },
@@ -481,7 +569,7 @@
       "'datetime.timedelta.total_seconds' member": 1
     }
   },
-  "import datetime\ndatetime.datetime.strptime": {
+  "import datetime\ndatetime.datetime.strptime()": {
     "2.3": {
       "'datetime' module": 1
     },
@@ -494,7 +582,7 @@
       "'decimal' module": 1
     }
   },
-  "import decimal\ndecimal.Decimal.canonical": {
+  "import decimal\ndecimal.Decimal.canonical()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -502,7 +590,7 @@
       "'decimal.Decimal.canonical' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.compare_signal": {
+  "import decimal\ndecimal.Decimal.compare_signal()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -510,7 +598,7 @@
       "'decimal.Decimal.compare_signal' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.compare_total": {
+  "import decimal\ndecimal.Decimal.compare_total()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -518,7 +606,7 @@
       "'decimal.Decimal.compare_total' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.compare_total_mag": {
+  "import decimal\ndecimal.Decimal.compare_total_mag()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -526,7 +614,7 @@
       "'decimal.Decimal.compare_total_mag' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.conjugate": {
+  "import decimal\ndecimal.Decimal.conjugate()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -534,7 +622,7 @@
       "'decimal.Decimal.conjugate' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.copy_abs": {
+  "import decimal\ndecimal.Decimal.copy_abs()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -542,7 +630,7 @@
       "'decimal.Decimal.copy_abs' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.copy_negate": {
+  "import decimal\ndecimal.Decimal.copy_negate()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -550,7 +638,7 @@
       "'decimal.Decimal.copy_negate' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.copy_sign": {
+  "import decimal\ndecimal.Decimal.copy_sign()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -558,7 +646,7 @@
       "'decimal.Decimal.copy_sign' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.exp": {
+  "import decimal\ndecimal.Decimal.exp()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -566,7 +654,7 @@
       "'decimal.Decimal.exp' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.from_float": {
+  "import decimal\ndecimal.Decimal.from_float()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -574,7 +662,7 @@
       "'decimal.Decimal.from_float' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.fma": {
+  "import decimal\ndecimal.Decimal.fma()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -582,7 +670,7 @@
       "'decimal.Decimal.fma' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.is_canonical": {
+  "import decimal\ndecimal.Decimal.is_canonical()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -590,7 +678,7 @@
       "'decimal.Decimal.is_canonical' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.is_finite": {
+  "import decimal\ndecimal.Decimal.is_finite()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -598,7 +686,7 @@
       "'decimal.Decimal.is_finite' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.is_infinite": {
+  "import decimal\ndecimal.Decimal.is_infinite()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -606,7 +694,7 @@
       "'decimal.Decimal.is_infinite' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.is_nan": {
+  "import decimal\ndecimal.Decimal.is_nan()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -614,7 +702,7 @@
       "'decimal.Decimal.is_nan' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.is_normal": {
+  "import decimal\ndecimal.Decimal.is_normal()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -622,7 +710,7 @@
       "'decimal.Decimal.is_normal' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.is_qnan": {
+  "import decimal\ndecimal.Decimal.is_qnan()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -630,7 +718,7 @@
       "'decimal.Decimal.is_qnan' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.is_signed": {
+  "import decimal\ndecimal.Decimal.is_signed()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -638,7 +726,7 @@
       "'decimal.Decimal.is_signed' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.is_snan": {
+  "import decimal\ndecimal.Decimal.is_snan()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -646,7 +734,7 @@
       "'decimal.Decimal.is_snan' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.is_subnormal": {
+  "import decimal\ndecimal.Decimal.is_subnormal()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -654,7 +742,7 @@
       "'decimal.Decimal.is_subnormal' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.is_zero": {
+  "import decimal\ndecimal.Decimal.is_zero()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -662,7 +750,7 @@
       "'decimal.Decimal.is_zero' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.ln": {
+  "import decimal\ndecimal.Decimal.ln()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -670,7 +758,7 @@
       "'decimal.Decimal.ln' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.log10": {
+  "import decimal\ndecimal.Decimal.log10()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -678,7 +766,7 @@
       "'decimal.Decimal.log10' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.logb": {
+  "import decimal\ndecimal.Decimal.logb()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -686,7 +774,7 @@
       "'decimal.Decimal.logb' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.logical_and": {
+  "import decimal\ndecimal.Decimal.logical_and()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -694,7 +782,7 @@
       "'decimal.Decimal.logical_and' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.logical_invert": {
+  "import decimal\ndecimal.Decimal.logical_invert()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -702,7 +790,7 @@
       "'decimal.Decimal.logical_invert' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.logical_or": {
+  "import decimal\ndecimal.Decimal.logical_or()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -710,7 +798,7 @@
       "'decimal.Decimal.logical_or' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.logical_xor": {
+  "import decimal\ndecimal.Decimal.logical_xor()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -718,7 +806,7 @@
       "'decimal.Decimal.logical_xor' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.max_mag": {
+  "import decimal\ndecimal.Decimal.max_mag()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -726,7 +814,7 @@
       "'decimal.Decimal.max_mag' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.min_mag": {
+  "import decimal\ndecimal.Decimal.min_mag()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -734,7 +822,7 @@
       "'decimal.Decimal.min_mag' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.next_minus": {
+  "import decimal\ndecimal.Decimal.next_minus()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -742,7 +830,7 @@
       "'decimal.Decimal.next_minus' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.next_plus": {
+  "import decimal\ndecimal.Decimal.next_plus()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -750,7 +838,7 @@
       "'decimal.Decimal.next_plus' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.next_toward": {
+  "import decimal\ndecimal.Decimal.next_toward()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -758,7 +846,7 @@
       "'decimal.Decimal.next_toward' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.number_class": {
+  "import decimal\ndecimal.Decimal.number_class()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -766,7 +854,7 @@
       "'decimal.Decimal.number_class' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.radix": {
+  "import decimal\ndecimal.Decimal.radix()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -774,7 +862,7 @@
       "'decimal.Decimal.radix' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.rotate": {
+  "import decimal\ndecimal.Decimal.rotate()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -782,7 +870,7 @@
       "'decimal.Decimal.rotate' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.scaleb": {
+  "import decimal\ndecimal.Decimal.scaleb()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -790,7 +878,7 @@
       "'decimal.Decimal.scaleb' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.shift": {
+  "import decimal\ndecimal.Decimal.shift()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -798,7 +886,7 @@
       "'decimal.Decimal.shift' member": 1
     }
   },
-  "import decimal\ndecimal.Decimal.to_integral_exact": {
+  "import decimal\ndecimal.Decimal.to_integral_exact()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -806,7 +894,7 @@
       "'decimal.Decimal.to_integral_exact' member": 1
     }
   },
-  "import decimal\ndecimal.localcontext": {
+  "import decimal\ndecimal.localcontext()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -814,7 +902,7 @@
       "'decimal.localcontext' member": 1
     }
   },
-  "import decimal\ndecimal.Context.create_decimal_from_float": {
+  "import decimal\ndecimal.Context.create_decimal_from_float()": {
     "2.4": {
       "'decimal' module": 1
     },
@@ -827,7 +915,7 @@
       "'difflib' module": 1
     }
   },
-  "import difflib\ndifflib.HtmlDiff": {
+  "import difflib\ndifflib.HtmlDiff()": {
     "2.1": {
       "'difflib' module": 1
     },
@@ -835,7 +923,7 @@
       "'difflib.HtmlDiff' member": 1
     }
   },
-  "import difflib\ndifflib.context_diff": {
+  "import difflib\ndifflib.context_diff()": {
     "2.1": {
       "'difflib' module": 1
     },
@@ -843,7 +931,7 @@
       "'difflib.context_diff' member": 1
     }
   },
-  "import difflib\ndifflib.unified_diff": {
+  "import difflib\ndifflib.unified_diff()": {
     "2.1": {
       "'difflib' module": 1
     },
@@ -851,7 +939,7 @@
       "'difflib.unified_diff' member": 1
     }
   },
-  "import difflib\ndifflib.SequenceMatcher.get_grouped_opcodes": {
+  "import difflib\ndifflib.SequenceMatcher.get_grouped_opcodes()": {
     "2.1": {
       "'difflib' module": 1
     },
@@ -859,82 +947,131 @@
       "'difflib.SequenceMatcher.get_grouped_opcodes' member": 1
     }
   },
-  "import doctest\ndoctest.register_optionflag": {
+  "import doctest\ndoctest.register_optionflag()": {
     "2.4": {
       "'doctest.register_optionflag' member": 1
     }
   },
-  "import doctest\ndoctest.testfile": {
+  "import doctest\ndoctest.testfile()": {
     "2.4": {
       "'doctest.testfile' member": 1
     }
   },
-  "import doctest\ndoctest.DocFileSuite": {
+  "import doctest\ndoctest.testfile(encoding=None)": {
+    "2.4": {
+      "'doctest.testfile' member": 1
+    },
+    "2.5": {
+      "'doctest.testfile(encoding)'": 1
+    }
+  },
+  "import doctest\ndoctest.testmod(optionflags=None)": {
+    "2.3": {
+      "'doctest.testmod(optionflags)'": 1
+    }
+  },
+  "import doctest\ndoctest.testmod(extraglobs=None, raise_on_error=None, exclude_empty=None)": {
+    "2.4": {
+      "'doctest.testmod(extraglobs)'": 1,
+      "'doctest.testmod(raise_on_error)'": 1,
+      "'doctest.testmod(exclude_empty)'": 1
+    }
+  },
+  "import doctest\ndoctest.DocFileSuite()": {
     "2.4": {
       "'doctest.DocFileSuite' member": 1
     }
   },
-  "import doctest\ndoctest.DocTestSuite": {
+  "import doctest\ndoctest.DocFileSuite(encoding=None)": {
+    "2.4": {
+      "'doctest.DocFileSuite' member": 1
+    },
+    "2.5": {
+      "'doctest.DocFileSuite(encoding)'": 1
+    }
+  },
+  "import doctest\ndoctest.DocTestSuite()": {
     "2.3": {
       "'doctest.DocTestSuite' member": 1
     }
   },
-  "import doctest\ndoctest.set_unittest_reportflags": {
+  "import doctest\ndoctest.DocTestSuite(globs=None, extraglobs=None, test_finder=None, setUp=None, tearDown=None, optionflags=None)": {
+    "2.3": {
+      "'doctest.DocTestSuite' member": 1
+    },
+    "2.4": {
+      "'doctest.DocTestSuite(globs)'": 1,
+      "'doctest.DocTestSuite(extraglobs)'": 1,
+      "'doctest.DocTestSuite(test_finder)'": 1,
+      "'doctest.DocTestSuite(setUp)'": 1,
+      "'doctest.DocTestSuite(tearDown)'": 1,
+      "'doctest.DocTestSuite(optionflags)'": 1
+    }
+  },
+  "import doctest\ndoctest.set_unittest_reportflags()": {
     "2.4": {
       "'doctest.set_unittest_reportflags' member": 1
     }
   },
-  "import doctest\ndoctest.DocTest": {
+  "import doctest\ndoctest.DocTest()": {
     "2.4": {
       "'doctest.DocTest' member": 1
     }
   },
-  "import doctest\ndoctest.Example": {
+  "import doctest\ndoctest.Example()": {
     "2.4": {
       "'doctest.Example' member": 1
     }
   },
-  "import doctest\ndoctest.DocTestFinder": {
+  "import doctest\ndoctest.DocTestFinder()": {
     "2.4": {
       "'doctest.DocTestFinder' member": 1
     }
   },
-  "import doctest\ndoctest.DocTestParser": {
+  "import doctest\ndoctest.DocTestParser()": {
     "2.4": {
       "'doctest.DocTestParser' member": 1
     }
   },
-  "import doctest\ndoctest.DocTestRunner": {
+  "import doctest\ndoctest.DocTestRunner()": {
     "2.4": {
       "'doctest.DocTestRunner' member": 1
     }
   },
-  "import doctest\ndoctest.OutputChecker": {
+  "import doctest\ndoctest.OutputChecker()": {
     "2.4": {
       "'doctest.OutputChecker' member": 1
     }
   },
-  "import doctest\ndoctest.script_from_examples": {
+  "import doctest\ndoctest.script_from_examples()": {
     "2.4": {
       "'doctest.script_from_examples' member": 1
     }
   },
-  "import doctest\ndoctest.testsource": {
+  "import doctest\ndoctest.testsource()": {
     "2.3": {
       "'doctest.testsource' member": 1
     }
   },
-  "import doctest\ndoctest.debug": {
+  "import doctest\ndoctest.debug()": {
     "2.3": {
       "'doctest.debug' member": 1
     }
   },
-  "import doctest\ndoctest.debug_src": {
+  "import doctest\ndoctest.debug(pm=None)": {
+    "2.3": {
+      "'doctest.debug' member": 1
+    },
+    "2.4": {
+      "'doctest.debug(pm)'": 1
+    }
+  },
+  "import doctest\ndoctest.debug_src()": {
     "2.4": {
       "'doctest.debug_src' member": 1
     }
   },
-  "import EasyDialogs\nEasyDialogs.GetArgv": {
+  "import EasyDialogs\nEasyDialogs.GetArgv()": {
     "2.0": {
       "'EasyDialogs.GetArgv' member": 1
     }
@@ -944,102 +1081,144 @@
       "'email' module": 1
     }
   },
-  "import email.generator\nemail.generator.Generator.flatten": {
+  "import email.generator\nemail.generator.Generator.flatten()": {
     "2.2": {
       "'email.generator.Generator.flatten' member": 1
     }
   },
-  "import email.generator\nemail.generator.Generator.clone": {
+  "import email.generator\nemail.generator.Generator.clone()": {
     "2.2": {
       "'email.generator.Generator.clone' member": 1
     }
   },
-  "import email.generator\nemail.generator.DecodedGenerator": {
+  "import email.generator\nemail.generator.DecodedGenerator()": {
     "2.2": {
       "'email.generator.DecodedGenerator' member": 1
     }
   },
-  "import email.message\nemail.message.Message.set_charset": {
+  "import email.message\nemail.message.Message.set_payload(charset=None)": {
+    "2.2": {
+      "'email.message.Message.set_payload(charset)'": 1
+    }
+  },
+  "import email.message\nemail.message.Message.set_charset()": {
     "2.2": {
       "'email.message.Message.set_charset' member": 1
     }
   },
-  "import email.message\nemail.message.Message.get_charset": {
+  "import email.message\nemail.message.Message.get_charset()": {
     "2.2": {
       "'email.message.Message.get_charset' member": 1
     }
   },
-  "import email.message\nemail.message.Message.replace_header": {
+  "import email.message\nemail.message.Message.replace_header()": {
     "2.2": {
       "'email.message.Message.replace_header' member": 1
     }
   },
-  "import email.message\nemail.message.Message.get_content_type": {
+  "import email.message\nemail.message.Message.get_content_type()": {
     "2.2": {
       "'email.message.Message.get_content_type' member": 1
     }
   },
-  "import email.message\nemail.message.Message.get_content_maintype": {
+  "import email.message\nemail.message.Message.get_content_maintype()": {
     "2.2": {
       "'email.message.Message.get_content_maintype' member": 1
     }
   },
-  "import email.message\nemail.message.Message.get_content_subtype": {
+  "import email.message\nemail.message.Message.get_content_subtype()": {
     "2.2": {
       "'email.message.Message.get_content_subtype' member": 1
     }
   },
-  "import email.message\nemail.message.Message.get_default_type": {
+  "import email.message\nemail.message.Message.get_default_type()": {
     "2.2": {
       "'email.message.Message.get_default_type' member": 1
     }
   },
-  "import email.message\nemail.message.Message.set_default_type": {
+  "import email.message\nemail.message.Message.set_default_type()": {
     "2.2": {
       "'email.message.Message.set_default_type' member": 1
     }
   },
-  "import email.message\nemail.message.Message.set_param": {
+  "import email.message\nemail.message.Message.get_params(unquote=None)": {
+    "2.2": {
+      "'email.message.Message.get_params(unquote)'": 1
+    }
+  },
+  "import email.message\nemail.message.Message.get_param(unquote=None)": {
+    "2.2": {
+      "'email.message.Message.get_param(unquote)'": 1
+    }
+  },
+  "import email.message\nemail.message.Message.set_param()": {
     "2.2": {
       "'email.message.Message.set_param' member": 1
     }
   },
-  "import email.message\nemail.message.Message.del_param": {
+  "import email.message\nemail.message.Message.del_param()": {
     "2.2": {
       "'email.message.Message.del_param' member": 1
     }
   },
-  "import email.message\nemail.message.Message.set_type": {
+  "import email.message\nemail.message.Message.set_type()": {
     "2.2": {
       "'email.message.Message.set_type' member": 1
     }
   },
-  "import email.message\nemail.message.Message.get_content_charset": {
+  "import email.message\nemail.message.Message.get_content_charset()": {
     "2.2": {
       "'email.message.Message.get_content_charset' member": 1
     }
   },
-  "import email.message\nemail.message.Message.defects": {
+  "import email.message\nemail.message.Message.defects()": {
     "2.4": {
       "'email.message.Message.defects' member": 1
     }
   },
-  "import email.mime.nonmultipart\nemail.mime.nonmultipart.MIMENonMultipart": {
+  "import email.mime.nonmultipart\nemail.mime.nonmultipart.MIMENonMultipart()": {
     "2.2": {
       "'email.mime.nonmultipart.MIMENonMultipart' member": 1
     }
   },
-  "import email.mime.multipart\nemail.mime.multipart.MIMEMultipart": {
+  "import email.mime.multipart\nemail.mime.multipart.MIMEMultipart()": {
     "2.2": {
       "'email.mime.multipart.MIMEMultipart' member": 1
     }
   },
-  "import email.mime.application\nemail.mime.application.MIMEApplication": {
+  "import email.mime.application\nemail.mime.application.MIMEApplication()": {
     "2.5": {
       "'email.mime.application.MIMEApplication' member": 1
     }
   },
-  "import email.utils\nemail.utils.formatdate": {
+  "import email.parser\nemail.parser.Parser(strict=None)": {
+    "2.2": {
+      "'email.parser.Parser(strict)'": 1
+    }
+  },
+  "import email.parser\nemail.parser.Parser.parse(headersonly=None)": {
+    "2.2": {
+      "'email.parser.Parser.parse(headersonly)'": 1
+    }
+  },
+  "import email.parser\nemail.parser.Parser.parsestr(headersonly=None)": {
+    "2.2": {
+      "'email.parser.Parser.parsestr(headersonly)'": 1
+    }
+  },
+  "import email\nemail.message_from_string(strict=None)": {
+    "2.2": {
+      "'email' module": 1,
+      "'email.message_from_string(strict)'": 1
+    }
+  },
+  "import email\nemail.message_from_file(strict=None)": {
+    "2.2": {
+      "'email' module": 1,
+      "'email.message_from_file(strict)'": 1
+    }
+  },
+  "import email.utils\nemail.utils.formatdate()": {
     "2.4": {
       "'email.utils.formatdate' member": 1
     }
@@ -1049,85 +1228,97 @@
       "'ensurepip' module": 1
     }
   },
-  "import exceptions\nexceptions.BaseException": {
+  "import exceptions\nexceptions.BaseException()": {
     "2.5": {
       "'exceptions.BaseException' member": 1
     }
   },
-  "import exceptions\nexceptions.EnvironmentError": {},
-  "import exceptions\nexceptions.GeneratorExit": {
+  "import exceptions\nexceptions.EnvironmentError()": {},
+  "import exceptions\nexceptions.GeneratorExit()": {
     "2.5": {
       "'exceptions.GeneratorExit' member": 1
     }
   },
-  "import exceptions\nexceptions.NotImplementedError": {},
-  "import exceptions\nexceptions.OSError": {},
-  "import exceptions\nexceptions.StopIteration": {
+  "import exceptions\nexceptions.NotImplementedError()": {},
+  "import exceptions\nexceptions.OSError()": {},
+  "import exceptions\nexceptions.StopIteration()": {
     "2.2": {
       "'exceptions.StopIteration' member": 1
     }
   },
-  "import exceptions\nexceptions.UnboundLocalError": {
+  "import exceptions\nexceptions.UnboundLocalError()": {
     "2.0": {
       "'exceptions.UnboundLocalError' member": 1
     }
   },
-  "import exceptions\nexceptions.UnicodeError": {
+  "import exceptions\nexceptions.UnicodeError()": {
     "2.0": {
       "'exceptions.UnicodeError' member": 1
     }
   },
-  "import exceptions\nexceptions.UnicodeEncodeError": {
+  "import exceptions\nexceptions.UnicodeEncodeError()": {
     "2.3": {
       "'exceptions.UnicodeEncodeError' member": 1
     }
   },
-  "import exceptions\nexceptions.UnicodeDecodeError": {
+  "import exceptions\nexceptions.UnicodeDecodeError()": {
     "2.3": {
       "'exceptions.UnicodeDecodeError' member": 1
     }
   },
-  "import exceptions\nexceptions.UnicodeTranslateError": {
+  "import exceptions\nexceptions.UnicodeTranslateError()": {
     "2.3": {
       "'exceptions.UnicodeTranslateError' member": 1
     }
   },
-  "import exceptions\nexceptions.WindowsError": {
+  "import exceptions\nexceptions.WindowsError()": {
     "2.0": {
       "'exceptions.WindowsError' member": 1
     }
   },
-  "import exceptions\nexceptions.ImportWarning": {
+  "import exceptions\nexceptions.ImportWarning()": {
     "2.5": {
       "'exceptions.ImportWarning' member": 1
     }
   },
-  "import exceptions\nexceptions.UnicodeWarning": {
+  "import exceptions\nexceptions.UnicodeWarning()": {
     "2.5": {
       "'exceptions.UnicodeWarning' member": 1
     }
   },
-  "import exceptions\nexceptions.BytesWarning": {
+  "import exceptions\nexceptions.BytesWarning()": {
     "2.6": {
       "'exceptions.BytesWarning' member": 1
     }
   },
-  "import fileinput\nfileinput.fileno": {
+  "import fileinput\nfileinput.input(mode=None, openhook=None)": {
+    "2.5": {
+      "'fileinput.input(mode)'": 1,
+      "'fileinput.input(openhook)'": 1
+    }
+  },
+  "import fileinput\nfileinput.fileno()": {
     "2.5": {
       "'fileinput.fileno' member": 1
     }
   },
-  "import fileinput\nfileinput.hook_compressed": {
+  "import fileinput\nfileinput.FileInput(mode=None, openhook=None)": {
+    "2.5": {
+      "'fileinput.FileInput(mode)'": 1,
+      "'fileinput.FileInput(openhook)'": 1
+    }
+  },
+  "import fileinput\nfileinput.hook_compressed()": {
     "2.5": {
       "'fileinput.hook_compressed' member": 1
     }
   },
-  "import fileinput\nfileinput.hook_encoded": {
+  "import fileinput\nfileinput.hook_encoded()": {
     "2.5": {
       "'fileinput.hook_encoded' member": 1
     }
   },
-  "import fnmatch\nfnmatch.filter": {
+  "import fnmatch\nfnmatch.filter()": {
     "2.2": {
       "'fnmatch.filter' member": 1
     }
@@ -1137,9 +1328,43 @@
       "'fractions' module": 1
     }
   },
-  "import ftplib\nftplib.FTP_TLS": {
+  "import ftplib\nftplib.FTP(timeout=None)": {
+    "2.6": {
+      "'ftplib.FTP(timeout)'": 1
+    }
+  },
+  "import ftplib\nftplib.FTP_TLS()": {
     "2.7": {
       "'ftplib.FTP_TLS' member": 1
+    }
+  },
+  "import ftplib\nftplib.FTP_TLS(context=None)": {
+    "2.7": {
+      "'ftplib.FTP_TLS' member": 1,
+      "'ftplib.FTP_TLS(context)'": 1
+    },
+    "3.2": {
+      "'ftplib.FTP_TLS' member": 1
+    }
+  },
+  "import ftplib\nftplib.FTP.connect(timeout=None)": {
+    "2.6": {
+      "'ftplib.FTP.connect(timeout)'": 1
+    }
+  },
+  "import ftplib\nftplib.FTP.storbinary(callback=None)": {
+    "2.6": {
+      "'ftplib.FTP.storbinary(callback)'": 1
+    }
+  },
+  "import ftplib\nftplib.FTP.storbinary(rest=None)": {
+    "2.7": {
+      "'ftplib.FTP.storbinary(rest)'": 1
+    }
+  },
+  "import ftplib\nftplib.FTP.storlines(callback=None)": {
+    "2.6": {
+      "'ftplib.FTP.storlines(callback)'": 1
     }
   },
   "all()": {
@@ -1177,15 +1402,26 @@
       "'classmethod' member": 1
     }
   },
+  "compile(flags=None, dont_inherit=None)": {
+    "2.3": {
+      "'compile(flags)'": 1,
+      "'compile(dont_inherit)'": 1
+    }
+  },
   "enumerate()": {
     "2.3": {
       "'enumerate' member": 1
     }
   },
-  "file()": {
-    "2.0": {
-      "'file' member": 1
+  "enumerate(start=None)": {
+    "2.3": {
+      "'enumerate' member": 1
     },
+    "2.6": {
+      "'enumerate(start)'": 1
+    }
+  },
+  "file()": {
     "2.2": {
       "'file' member": 1
     }
@@ -1205,6 +1441,16 @@
       "'iter' member": 1
     }
   },
+  "max(key=None)": {
+    "2.5": {
+      "'max(key)'": 1
+    }
+  },
+  "min(key=None)": {
+    "2.5": {
+      "'min(key)'": 1
+    }
+  },
   "next()": {
     "2.6": {
       "'next' member": 1
@@ -1216,9 +1462,6 @@
     }
   },
   "print()": {
-    "2.0": {
-      "print(expr)": 1
-    },
     "2.6": {
       "'print' member": 1
     }
@@ -1251,9 +1494,6 @@
   "super()": {
     "2.2": {
       "'super' member": 1
-    },
-    "3.0": {
-      "super() without arguments": 1
     }
   },
   "type()": {
@@ -1281,7 +1521,7 @@
       "'functools' module": 1
     }
   },
-  "import functools\nfunctools.cmp_to_key": {
+  "import functools\nfunctools.cmp_to_key()": {
     "2.5": {
       "'functools' module": 1
     },
@@ -1289,7 +1529,7 @@
       "'functools.cmp_to_key' member": 1
     }
   },
-  "import functools\nfunctools.total_ordering": {
+  "import functools\nfunctools.total_ordering()": {
     "2.5": {
       "'functools' module": 1
     },
@@ -1297,7 +1537,7 @@
       "'functools.total_ordering' member": 1
     }
   },
-  "import functools\nfunctools.reduce": {
+  "import functools\nfunctools.reduce()": {
     "2.5": {
       "'functools' module": 1
     },
@@ -1310,122 +1550,152 @@
       "'future_builtins' module": 1
     }
   },
-  "import gc\ngc.get_objects": {
+  "import gc\ngc.collect(generation=None)": {
+    "2.5": {
+      "'gc.collect(generation)'": 1
+    }
+  },
+  "import gc\ngc.get_objects()": {
     "2.2": {
       "'gc.get_objects' member": 1
     }
   },
-  "import gc\ngc.get_count": {
+  "import gc\ngc.get_count()": {
     "2.5": {
       "'gc.get_count' member": 1
     }
   },
-  "import gc\ngc.get_referrers": {
+  "import gc\ngc.get_referrers()": {
     "2.2": {
       "'gc.get_referrers' member": 1
     }
   },
-  "import gc\ngc.get_referents": {
+  "import gc\ngc.get_referents()": {
     "2.3": {
       "'gc.get_referents' member": 1
     }
   },
-  "import gc\ngc.is_tracked": {
+  "import gc\ngc.is_tracked()": {
     "2.7": {
       "'gc.is_tracked' member": 1
     }
   },
-  "import getopt\ngetopt.gnu_getopt": {
+  "import getopt\ngetopt.gnu_getopt()": {
     "2.3": {
       "'getopt.gnu_getopt' member": 1
     }
   },
-  "import gettext\ngettext.bind_textdomain_codeset": {
+  "import getpass\ngetpass.getpass(stream=None)": {
+    "2.5": {
+      "'getpass.getpass(stream)'": 1
+    }
+  },
+  "import gettext\ngettext.bind_textdomain_codeset()": {
     "2.4": {
       "'gettext.bind_textdomain_codeset' member": 1
     }
   },
-  "import gettext\ngettext.lgettext": {
+  "import gettext\ngettext.lgettext()": {
     "2.4": {
       "'gettext.lgettext' member": 1
     }
   },
-  "import gettext\ngettext.ldgettext": {
+  "import gettext\ngettext.ldgettext()": {
     "2.4": {
       "'gettext.ldgettext' member": 1
     }
   },
-  "import gettext\ngettext.ngettext": {
+  "import gettext\ngettext.ngettext()": {
     "2.3": {
       "'gettext.ngettext' member": 1
     }
   },
-  "import gettext\ngettext.lngettext": {
+  "import gettext\ngettext.lngettext()": {
     "2.4": {
       "'gettext.lngettext' member": 1
     }
   },
-  "import gettext\ngettext.dngettext": {
+  "import gettext\ngettext.dngettext()": {
     "2.3": {
       "'gettext.dngettext' member": 1
     }
   },
-  "import gettext\ngettext.ldngettext": {
+  "import gettext\ngettext.ldngettext()": {
     "2.4": {
       "'gettext.ldngettext' member": 1
     }
   },
-  "import gettext\ngettext.NullTranslations.lgettext": {
+  "import gettext\ngettext.translation(codeset=None)": {
+    "2.4": {
+      "'gettext.translation(codeset)'": 1
+    }
+  },
+  "import gettext\ngettext.install(codeset=None)": {
+    "2.4": {
+      "'gettext.install(codeset)'": 1
+    }
+  },
+  "import gettext\ngettext.install(names=None)": {
+    "2.5": {
+      "'gettext.install(names)'": 1
+    }
+  },
+  "import gettext\ngettext.NullTranslations.lgettext()": {
     "2.4": {
       "'gettext.NullTranslations.lgettext' member": 1
     }
   },
-  "import gettext\ngettext.NullTranslations.ngettext": {
+  "import gettext\ngettext.NullTranslations.ngettext()": {
     "2.3": {
       "'gettext.NullTranslations.ngettext' member": 1
     }
   },
-  "import gettext\ngettext.NullTranslations.lngettext": {
+  "import gettext\ngettext.NullTranslations.lngettext()": {
     "2.4": {
       "'gettext.NullTranslations.lngettext' member": 1
     }
   },
-  "import gettext\ngettext.NullTranslations.ungettext": {
+  "import gettext\ngettext.NullTranslations.ungettext()": {
     "2.3": {
       "'gettext.NullTranslations.ungettext' member": 1
     }
   },
-  "import gettext\ngettext.NullTranslations.output_charset": {
+  "import gettext\ngettext.NullTranslations.output_charset()": {
     "2.4": {
       "'gettext.NullTranslations.output_charset' member": 1
     }
   },
-  "import gettext\ngettext.NullTranslations.set_output_charset": {
+  "import gettext\ngettext.NullTranslations.set_output_charset()": {
     "2.4": {
       "'gettext.NullTranslations.set_output_charset' member": 1
     }
   },
-  "import gettext\ngettext.GNUTranslations.lgettext": {
+  "import gettext\ngettext.NullTranslations.install(names=None)": {
+    "2.5": {
+      "'gettext.NullTranslations.install(names)'": 1
+    }
+  },
+  "import gettext\ngettext.GNUTranslations.lgettext()": {
     "2.4": {
       "'gettext.GNUTranslations.lgettext' member": 1
     }
   },
-  "import gettext\ngettext.GNUTranslations.ngettext": {
+  "import gettext\ngettext.GNUTranslations.ngettext()": {
     "2.3": {
       "'gettext.GNUTranslations.ngettext' member": 1
     }
   },
-  "import gettext\ngettext.GNUTranslations.lngettext": {
+  "import gettext\ngettext.GNUTranslations.lngettext()": {
     "2.4": {
       "'gettext.GNUTranslations.lngettext' member": 1
     }
   },
-  "import gettext\ngettext.GNUTranslations.ungettext": {
+  "import gettext\ngettext.GNUTranslations.ungettext()": {
     "2.3": {
       "'gettext.GNUTranslations.ungettext' member": 1
     }
   },
-  "import glob\nglob.iglob": {
+  "import glob\nglob.iglob()": {
     "2.5": {
       "'glob.iglob' member": 1
     }
@@ -1435,7 +1705,7 @@
       "'hashlib' module": 1
     }
   },
-  "import hashlib\nhashlib.hashlib.algorithms": {
+  "import hashlib\nhashlib.hashlib.algorithms()": {
     "2.5": {
       "'hashlib' module": 1
     },
@@ -1443,7 +1713,7 @@
       "'hashlib.hashlib.algorithms' member": 1
     }
   },
-  "import hashlib\nhashlib.algorithms_guaranteed": {
+  "import hashlib\nhashlib.algorithms_guaranteed()": {
     "2.5": {
       "'hashlib' module": 1
     },
@@ -1451,7 +1721,7 @@
       "'hashlib.algorithms_guaranteed' member": 1
     }
   },
-  "import hashlib\nhashlib.algorithms_available": {
+  "import hashlib\nhashlib.algorithms_available()": {
     "2.5": {
       "'hashlib' module": 1
     },
@@ -1459,7 +1729,7 @@
       "'hashlib.algorithms_available' member": 1
     }
   },
-  "import hashlib\nhashlib.pbkdf2_hmac": {
+  "import hashlib\nhashlib.pbkdf2_hmac()": {
     "2.5": {
       "'hashlib' module": 1
     },
@@ -1472,7 +1742,7 @@
       "'heapq' module": 1
     }
   },
-  "import heapq\nheapq.heappushpop": {
+  "import heapq\nheapq.heappushpop()": {
     "2.3": {
       "'heapq' module": 1
     },
@@ -1480,7 +1750,7 @@
       "'heapq.heappushpop' member": 1
     }
   },
-  "import heapq\nheapq.merge": {
+  "import heapq\nheapq.merge()": {
     "2.3": {
       "'heapq' module": 1
     },
@@ -1488,7 +1758,7 @@
       "'heapq.merge' member": 1
     }
   },
-  "import heapq\nheapq.nlargest": {
+  "import heapq\nheapq.nlargest()": {
     "2.3": {
       "'heapq' module": 1
     },
@@ -1496,7 +1766,18 @@
       "'heapq.nlargest' member": 1
     }
   },
-  "import heapq\nheapq.nsmallest": {
+  "import heapq\nheapq.nlargest(key=None)": {
+    "2.3": {
+      "'heapq' module": 1
+    },
+    "2.4": {
+      "'heapq.nlargest' member": 1
+    },
+    "2.5": {
+      "'heapq.nlargest(key)'": 1
+    }
+  },
+  "import heapq\nheapq.nsmallest()": {
     "2.3": {
       "'heapq' module": 1
     },
@@ -1504,12 +1785,23 @@
       "'heapq.nsmallest' member": 1
     }
   },
+  "import heapq\nheapq.nsmallest(key=None)": {
+    "2.3": {
+      "'heapq' module": 1
+    },
+    "2.4": {
+      "'heapq.nsmallest' member": 1
+    },
+    "2.5": {
+      "'heapq.nsmallest(key)'": 1
+    }
+  },
   "import hmac": {
     "2.2": {
       "'hmac' module": 1
     }
   },
-  "import hmac\nhmac.compare_digest": {
+  "import hmac\nhmac.compare_digest()": {
     "2.2": {
       "'hmac' module": 1
     },
@@ -1522,12 +1814,12 @@
       "'hotshot' module": 1
     }
   },
-  "import htmllib\nhtmllib.HTMLParseError": {
+  "import htmllib\nhtmllib.HTMLParseError()": {
     "2.4": {
       "'htmllib.HTMLParseError' member": 1
     }
   },
-  "import htmlentitydefs\nhtmlentitydefs.name2codepoint": {
+  "import htmlentitydefs\nhtmlentitydefs.name2codepoint()": {
     "2.0": {
       "'htmlentitydefs' module": 1
     },
@@ -1535,7 +1827,7 @@
       "'htmlentitydefs.name2codepoint' member": 1
     }
   },
-  "import htmlentitydefs\nhtmlentitydefs.codepoint2name": {
+  "import htmlentitydefs\nhtmlentitydefs.codepoint2name()": {
     "2.0": {
       "'htmlentitydefs' module": 1
     },
@@ -1543,87 +1835,127 @@
       "'htmlentitydefs.codepoint2name' member": 1
     }
   },
-  "import httplib\nhttplib.HTTPConnection": {
+  "import httplib\nhttplib.HTTPConnection()": {
     "2.0": {
       "'httplib.HTTPConnection' member": 1
     }
   },
-  "import httplib\nhttplib.HTTPSConnection": {
+  "import httplib\nhttplib.HTTPConnection(timeout=None)": {
+    "2.0": {
+      "'httplib.HTTPConnection' member": 1
+    },
+    "2.6": {
+      "'httplib.HTTPConnection(timeout)'": 1
+    }
+  },
+  "import httplib\nhttplib.HTTPConnection(source_address=None)": {
+    "2.0": {
+      "'httplib.HTTPConnection' member": 1
+    },
+    "2.7": {
+      "'httplib.HTTPConnection(source_address)'": 1
+    }
+  },
+  "import httplib\nhttplib.HTTPSConnection()": {
     "2.0": {
       "'httplib.HTTPSConnection' member": 1
     }
   },
-  "import httplib\nhttplib.HTTPResponse": {
+  "import httplib\nhttplib.HTTPSConnection(timeout=None)": {
+    "2.0": {
+      "'httplib.HTTPSConnection' member": 1
+    },
+    "2.6": {
+      "'httplib.HTTPSConnection(timeout)'": 1
+    }
+  },
+  "import httplib\nhttplib.HTTPSConnection(source_address=None)": {
+    "2.0": {
+      "'httplib.HTTPSConnection' member": 1
+    },
+    "2.7": {
+      "'httplib.HTTPSConnection(source_address)'": 1
+    }
+  },
+  "import httplib\nhttplib.HTTPSConnection(context=None, context=None)": {
+    "2.0": {
+      "'httplib.HTTPSConnection' member": 1
+    },
+    "2.7": {
+      "'httplib.HTTPSConnection(context)'": 1
+    }
+  },
+  "import httplib\nhttplib.HTTPResponse()": {
     "2.0": {
       "'httplib.HTTPResponse' member": 1
     }
   },
-  "import httplib\nhttplib.HTTPException": {
+  "import httplib\nhttplib.HTTPException()": {
     "2.0": {
       "'httplib.HTTPException' member": 1
     }
   },
-  "import httplib\nhttplib.NotConnected": {
+  "import httplib\nhttplib.NotConnected()": {
     "2.0": {
       "'httplib.NotConnected' member": 1
     }
   },
-  "import httplib\nhttplib.InvalidURL": {
+  "import httplib\nhttplib.InvalidURL()": {
     "2.3": {
       "'httplib.InvalidURL' member": 1
     }
   },
-  "import httplib\nhttplib.UnknownProtocol": {
+  "import httplib\nhttplib.UnknownProtocol()": {
     "2.0": {
       "'httplib.UnknownProtocol' member": 1
     }
   },
-  "import httplib\nhttplib.UnknownTransferEncoding": {
+  "import httplib\nhttplib.UnknownTransferEncoding()": {
     "2.0": {
       "'httplib.UnknownTransferEncoding' member": 1
     }
   },
-  "import httplib\nhttplib.UnimplementedFileMode": {
+  "import httplib\nhttplib.UnimplementedFileMode()": {
     "2.0": {
       "'httplib.UnimplementedFileMode' member": 1
     }
   },
-  "import httplib\nhttplib.IncompleteRead": {
+  "import httplib\nhttplib.IncompleteRead()": {
     "2.0": {
       "'httplib.IncompleteRead' member": 1
     }
   },
-  "import httplib\nhttplib.ImproperConnectionState": {
+  "import httplib\nhttplib.ImproperConnectionState()": {
     "2.0": {
       "'httplib.ImproperConnectionState' member": 1
     }
   },
-  "import httplib\nhttplib.CannotSendRequest": {
+  "import httplib\nhttplib.CannotSendRequest()": {
     "2.0": {
       "'httplib.CannotSendRequest' member": 1
     }
   },
-  "import httplib\nhttplib.CannotSendHeader": {
+  "import httplib\nhttplib.CannotSendHeader()": {
     "2.0": {
       "'httplib.CannotSendHeader' member": 1
     }
   },
-  "import httplib\nhttplib.ResponseNotReady": {
+  "import httplib\nhttplib.ResponseNotReady()": {
     "2.0": {
       "'httplib.ResponseNotReady' member": 1
     }
   },
-  "import httplib\nhttplib.BadStatusLine": {
+  "import httplib\nhttplib.BadStatusLine()": {
     "2.0": {
       "'httplib.BadStatusLine' member": 1
     }
   },
-  "import httplib\nhttplib.responses": {
+  "import httplib\nhttplib.responses()": {
     "2.5": {
       "'httplib.responses' member": 1
     }
   },
-  "import httplib\nhttplib.HTTPConnection.set_tunnel": {
+  "import httplib\nhttplib.HTTPConnection.set_tunnel()": {
     "2.0": {
       "'httplib.HTTPConnection' member": 1
     },
@@ -1631,7 +1963,23 @@
       "'httplib.HTTPConnection.set_tunnel' member": 1
     }
   },
-  "import httplib\nhttplib.HTTPResponse.getheaders": {
+  "import httplib\nhttplib.HTTPConnection.putrequest(skip_accept_encoding=None)": {
+    "2.0": {
+      "'httplib.HTTPConnection' member": 1
+    },
+    "2.4": {
+      "'httplib.HTTPConnection.putrequest(skip_accept_encoding)'": 1
+    }
+  },
+  "import httplib\nhttplib.HTTPConnection.endheaders(message_body=None)": {
+    "2.0": {
+      "'httplib.HTTPConnection' member": 1
+    },
+    "2.7": {
+      "'httplib.HTTPConnection.endheaders(message_body)'": 1
+    }
+  },
+  "import httplib\nhttplib.HTTPResponse.getheaders()": {
     "2.0": {
       "'httplib.HTTPResponse' member": 1
     },
@@ -1639,77 +1987,77 @@
       "'httplib.HTTPResponse.getheaders' member": 1
     }
   },
-  "import imaplib\nimaplib.IMAP4_stream": {
+  "import imaplib\nimaplib.IMAP4_stream()": {
     "2.3": {
       "'imaplib.IMAP4_stream' member": 1
     }
   },
-  "import imaplib\nimaplib.IMAP4.deleteacl": {
+  "import imaplib\nimaplib.IMAP4.deleteacl()": {
     "2.4": {
       "'imaplib.IMAP4.deleteacl' member": 1
     }
   },
-  "import imaplib\nimaplib.IMAP4.getannotation": {
+  "import imaplib\nimaplib.IMAP4.getannotation()": {
     "2.5": {
       "'imaplib.IMAP4.getannotation' member": 1
     }
   },
-  "import imaplib\nimaplib.IMAP4.getquota": {
+  "import imaplib\nimaplib.IMAP4.getquota()": {
     "2.3": {
       "'imaplib.IMAP4.getquota' member": 1
     }
   },
-  "import imaplib\nimaplib.IMAP4.getquotaroot": {
+  "import imaplib\nimaplib.IMAP4.getquotaroot()": {
     "2.3": {
       "'imaplib.IMAP4.getquotaroot' member": 1
     }
   },
-  "import imaplib\nimaplib.IMAP4.login_cram_md5": {
+  "import imaplib\nimaplib.IMAP4.login_cram_md5()": {
     "2.3": {
       "'imaplib.IMAP4.login_cram_md5' member": 1
     }
   },
-  "import imaplib\nimaplib.IMAP4.myrights": {
+  "import imaplib\nimaplib.IMAP4.myrights()": {
     "2.4": {
       "'imaplib.IMAP4.myrights' member": 1
     }
   },
-  "import imaplib\nimaplib.IMAP4.namespace": {
+  "import imaplib\nimaplib.IMAP4.namespace()": {
     "2.3": {
       "'imaplib.IMAP4.namespace' member": 1
     }
   },
-  "import imaplib\nimaplib.IMAP4.proxyauth": {
+  "import imaplib\nimaplib.IMAP4.proxyauth()": {
     "2.3": {
       "'imaplib.IMAP4.proxyauth' member": 1
     }
   },
-  "import imaplib\nimaplib.IMAP4.setannotation": {
+  "import imaplib\nimaplib.IMAP4.setannotation()": {
     "2.5": {
       "'imaplib.IMAP4.setannotation' member": 1
     }
   },
-  "import imaplib\nimaplib.IMAP4.setquota": {
+  "import imaplib\nimaplib.IMAP4.setquota()": {
     "2.3": {
       "'imaplib.IMAP4.setquota' member": 1
     }
   },
-  "import imaplib\nimaplib.IMAP4.thread": {
+  "import imaplib\nimaplib.IMAP4.thread()": {
     "2.4": {
       "'imaplib.IMAP4.thread' member": 1
     }
   },
-  "import imp\nimp.acquire_lock": {
+  "import imp\nimp.acquire_lock()": {
     "2.3": {
       "'imp.acquire_lock' member": 1
     }
   },
-  "import imp\nimp.release_lock": {
+  "import imp\nimp.release_lock()": {
     "2.3": {
       "'imp.release_lock' member": 1
     }
   },
-  "import imp\nimp.NullImporter": {
+  "import imp\nimp.NullImporter()": {
     "2.5": {
       "'imp.NullImporter' member": 1
     }
@@ -1724,7 +2072,7 @@
       "'inspect' module": 1
     }
   },
-  "import inspect\ninspect.isgeneratorfunction": {
+  "import inspect\ninspect.isgeneratorfunction()": {
     "2.1": {
       "'inspect' module": 1
     },
@@ -1732,7 +2080,7 @@
       "'inspect.isgeneratorfunction' member": 1
     }
   },
-  "import inspect\ninspect.isgenerator": {
+  "import inspect\ninspect.isgenerator()": {
     "2.1": {
       "'inspect' module": 1
     },
@@ -1740,7 +2088,7 @@
       "'inspect.isgenerator' member": 1
     }
   },
-  "import inspect\ninspect.isabstract": {
+  "import inspect\ninspect.isabstract()": {
     "2.1": {
       "'inspect' module": 1
     },
@@ -1748,7 +2096,7 @@
       "'inspect.isabstract' member": 1
     }
   },
-  "import inspect\ninspect.isdatadescriptor": {
+  "import inspect\ninspect.isdatadescriptor()": {
     "2.1": {
       "'inspect' module": 1
     },
@@ -1756,7 +2104,7 @@
       "'inspect.isdatadescriptor' member": 1
     }
   },
-  "import inspect\ninspect.isgetsetdescriptor": {
+  "import inspect\ninspect.isgetsetdescriptor()": {
     "2.1": {
       "'inspect' module": 1
     },
@@ -1764,7 +2112,7 @@
       "'inspect.isgetsetdescriptor' member": 1
     }
   },
-  "import inspect\ninspect.ismemberdescriptor": {
+  "import inspect\ninspect.ismemberdescriptor()": {
     "2.1": {
       "'inspect' module": 1
     },
@@ -1772,7 +2120,7 @@
       "'inspect.ismemberdescriptor' member": 1
     }
   },
-  "import inspect\ninspect.cleandoc": {
+  "import inspect\ninspect.cleandoc()": {
     "2.1": {
       "'inspect' module": 1
     },
@@ -1780,7 +2128,7 @@
       "'inspect.cleandoc' member": 1
     }
   },
-  "import inspect\ninspect.getcallargs": {
+  "import inspect\ninspect.getcallargs()": {
     "2.1": {
       "'inspect' module": 1
     },
@@ -1793,7 +2141,7 @@
       "'io' module": 1
     }
   },
-  "import io\nio.BufferedIOBase.detach": {
+  "import io\nio.BufferedIOBase.detach()": {
     "2.6": {
       "'io' module": 1
     },
@@ -1801,7 +2149,7 @@
       "'io.BufferedIOBase.detach' member": 1
     }
   },
-  "import io\nio.TextIOBase.detach": {
+  "import io\nio.TextIOBase.detach()": {
     "2.6": {
       "'io' module": 1
     },
@@ -1814,7 +2162,7 @@
       "'itertools' module": 1
     }
   },
-  "import itertools\nitertools.chain.from_iterable": {
+  "import itertools\nitertools.chain.from_iterable()": {
     "2.3": {
       "'itertools' module": 1
     },
@@ -1822,7 +2170,7 @@
       "'itertools.chain.from_iterable' member": 1
     }
   },
-  "import itertools\nitertools.combinations": {
+  "import itertools\nitertools.combinations()": {
     "2.3": {
       "'itertools' module": 1
     },
@@ -1830,7 +2178,7 @@
       "'itertools.combinations' member": 1
     }
   },
-  "import itertools\nitertools.combinations_with_replacement": {
+  "import itertools\nitertools.combinations_with_replacement()": {
     "2.3": {
       "'itertools' module": 1
     },
@@ -1838,7 +2186,7 @@
       "'itertools.combinations_with_replacement' member": 1
     }
   },
-  "import itertools\nitertools.compress": {
+  "import itertools\nitertools.compress()": {
     "2.3": {
       "'itertools' module": 1
     },
@@ -1846,7 +2194,15 @@
       "'itertools.compress' member": 1
     }
   },
-  "import itertools\nitertools.groupby": {
+  "import itertools\nitertools.count(step=None)": {
+    "2.3": {
+      "'itertools' module": 1
+    },
+    "2.7": {
+      "'itertools.count(step)'": 1
+    }
+  },
+  "import itertools\nitertools.groupby()": {
     "2.3": {
       "'itertools' module": 1
     },
@@ -1854,7 +2210,7 @@
       "'itertools.groupby' member": 1
     }
   },
-  "import itertools\nitertools.izip_longest": {
+  "import itertools\nitertools.izip_longest()": {
     "2.3": {
       "'itertools' module": 1
     },
@@ -1862,7 +2218,7 @@
       "'itertools.izip_longest' member": 1
     }
   },
-  "import itertools\nitertools.permutations": {
+  "import itertools\nitertools.permutations()": {
     "2.3": {
       "'itertools' module": 1
     },
@@ -1870,7 +2226,7 @@
       "'itertools.permutations' member": 1
     }
   },
-  "import itertools\nitertools.product": {
+  "import itertools\nitertools.product()": {
     "2.3": {
       "'itertools' module": 1
     },
@@ -1878,7 +2234,7 @@
       "'itertools.product' member": 1
     }
   },
-  "import itertools\nitertools.tee": {
+  "import itertools\nitertools.tee()": {
     "2.3": {
       "'itertools' module": 1
     },
@@ -1891,47 +2247,73 @@
       "'json' module": 1
     }
   },
-  "import locale\nlocale.getdefaultlocale": {
+  "import json\njson.load(object_pairs_hook=None)": {
+    "2.6": {
+      "'json' module": 1
+    },
+    "2.7": {
+      "'json.load(object_pairs_hook)'": 1
+    }
+  },
+  "import json\njson.JSONDecoder(object_pairs_hook=None)": {
+    "2.6": {
+      "'json' module": 1
+    },
+    "2.7": {
+      "'json.JSONDecoder(object_pairs_hook)'": 1
+    }
+  },
+  "import locale\nlocale.getdefaultlocale()": {
     "2.0": {
       "'locale.getdefaultlocale' member": 1
     }
   },
-  "import locale\nlocale.getlocale": {
+  "import locale\nlocale.getlocale()": {
     "2.0": {
       "'locale.getlocale' member": 1
     }
   },
-  "import locale\nlocale.getpreferredencoding": {
+  "import locale\nlocale.getpreferredencoding()": {
     "2.3": {
       "'locale.getpreferredencoding' member": 1
     }
   },
-  "import locale\nlocale.normalize": {
+  "import locale\nlocale.normalize()": {
     "2.0": {
       "'locale.normalize' member": 1
     }
   },
-  "import locale\nlocale.resetlocale": {
+  "import locale\nlocale.resetlocale()": {
     "2.0": {
       "'locale.resetlocale' member": 1
     }
   },
-  "import locale\nlocale.format_string": {
+  "import locale\nlocale.format(monetary=None)": {
+    "2.5": {
+      "'locale.format(monetary)'": 1
+    }
+  },
+  "import locale\nlocale.format_string()": {
     "2.5": {
       "'locale.format_string' member": 1
     }
   },
-  "import locale\nlocale.currency": {
+  "import locale\nlocale.currency()": {
     "2.5": {
       "'locale.currency' member": 1
     }
   },
-  "import logging.config\nlogging.config.dictConfig": {
+  "import logging.config\nlogging.config.dictConfig()": {
     "2.7": {
       "'logging.config.dictConfig' member": 1
     }
   },
-  "import logging\nlogging.Logger.getChild": {
+  "import logging.config\nlogging.config.fileConfig(always=None)": {
+    "2.6": {
+      "'logging.config.fileConfig(always)'": 1
+    }
+  },
+  "import logging\nlogging.Logger.getChild()": {
     "2.3": {
       "'logging' module": 1
     },
@@ -1939,87 +2321,151 @@
       "'logging.Logger.getChild' member": 1
     }
   },
-  "import marshal\nmarshal.version": {
+  "import logging\nlogging.Logger.makeRecord(func=None, extra=None)": {
+    "2.3": {
+      "'logging' module": 1
+    },
+    "2.5": {
+      "'logging.Logger.makeRecord(func)'": 1,
+      "'logging.Logger.makeRecord(extra)'": 1
+    }
+  },
+  "import logging\nlogging.LogRecord(func=None)": {
+    "2.3": {
+      "'logging' module": 1
+    },
+    "2.5": {
+      "'logging.LogRecord(func)'": 1
+    }
+  },
+  "import logging\nlogging.debug(extra=None)": {
+    "2.3": {
+      "'logging' module": 1
+    },
+    "2.5": {
+      "'logging.debug(extra)'": 1
+    }
+  },
+  "import logging\nlogging.FileHandler(delay=None)": {
+    "2.3": {
+      "'logging' module": 1
+    },
+    "2.6": {
+      "'logging.FileHandler(delay)'": 1
+    }
+  },
+  "import logging.handlers\nlogging.handlers.RotatingFileHandler(delay=None)": {
+    "2.6": {
+      "'logging.handlers.RotatingFileHandler(delay)'": 1
+    }
+  },
+  "import logging.handlers\nlogging.handlers.TimedRotatingFileHandler(delay=None, utc=None)": {
+    "2.6": {
+      "'logging.handlers.TimedRotatingFileHandler(delay)'": 1,
+      "'logging.handlers.TimedRotatingFileHandler(utc)'": 1
+    }
+  },
+  "import logging.handlers\nlogging.handlers.SysLogHandler(socktype=None)": {
+    "2.7": {
+      "'logging.handlers.SysLogHandler(socktype)'": 1
+    }
+  },
+  "import logging.handlers\nlogging.handlers.SMTPHandler(credentials=None)": {
+    "2.6": {
+      "'logging.handlers.SMTPHandler(credentials)'": 1
+    }
+  },
+  "import logging.handlers\nlogging.handlers.SMTPHandler(secure=None)": {
+    "2.7": {
+      "'logging.handlers.SMTPHandler(secure)'": 1
+    }
+  },
+  "import marshal\nmarshal.version()": {
     "2.4": {
       "'marshal.version' member": 1
     }
   },
-  "import math\nmath.copysign": {
+  "import math\nmath.copysign()": {
     "2.6": {
       "'math.copysign' member": 1
     }
   },
-  "import math\nmath.factorial": {
+  "import math\nmath.factorial()": {
     "2.6": {
       "'math.factorial' member": 1
     }
   },
-  "import math\nmath.fsum": {
+  "import math\nmath.fsum()": {
     "2.6": {
       "'math.fsum' member": 1
     }
   },
-  "import math\nmath.isinf": {
+  "import math\nmath.isinf()": {
     "2.6": {
       "'math.isinf' member": 1
     }
   },
-  "import math\nmath.isnan": {
+  "import math\nmath.isnan()": {
     "2.6": {
       "'math.isnan' member": 1
     }
   },
-  "import math\nmath.trunc": {
+  "import math\nmath.trunc()": {
     "2.6": {
       "'math.trunc' member": 1
     }
   },
-  "import math\nmath.expm1": {
+  "import math\nmath.expm1()": {
     "2.7": {
       "'math.expm1' member": 1
     }
   },
-  "import math\nmath.log1p": {
+  "import math\nmath.log(base=None)": {
+    "2.3": {
+      "'math.log(base)'": 1
+    }
+  },
+  "import math\nmath.log1p()": {
     "2.6": {
       "'math.log1p' member": 1
     }
   },
-  "import math\nmath.acosh": {
+  "import math\nmath.acosh()": {
     "2.6": {
       "'math.acosh' member": 1
     }
   },
-  "import math\nmath.asinh": {
+  "import math\nmath.asinh()": {
     "2.6": {
       "'math.asinh' member": 1
     }
   },
-  "import math\nmath.atanh": {
+  "import math\nmath.atanh()": {
     "2.6": {
       "'math.atanh' member": 1
     }
   },
-  "import math\nmath.erf": {
+  "import math\nmath.erf()": {
     "2.7": {
       "'math.erf' member": 1
     }
   },
-  "import math\nmath.erfc": {
+  "import math\nmath.erfc()": {
     "2.7": {
       "'math.erfc' member": 1
     }
   },
-  "import math\nmath.gamma": {
+  "import math\nmath.gamma()": {
     "2.7": {
       "'math.gamma' member": 1
     }
   },
-  "import math\nmath.lgamma": {
+  "import math\nmath.lgamma()": {
     "2.7": {
       "'math.lgamma' member": 1
     }
   },
-  "import mimetypes\nmimetypes.MimeTypes.read_windows_registry": {
+  "import mimetypes\nmimetypes.MimeTypes.read_windows_registry()": {
     "2.7": {
       "'mimetypes.MimeTypes.read_windows_registry' member": 1
     }
@@ -2034,22 +2480,22 @@
       "'msilib' module": 1
     }
   },
-  "import msvcrt\nmsvcrt.getwch": {
+  "import msvcrt\nmsvcrt.getwch()": {
     "2.6": {
       "'msvcrt.getwch' member": 1
     }
   },
-  "import msvcrt\nmsvcrt.getwche": {
+  "import msvcrt\nmsvcrt.getwche()": {
     "2.6": {
       "'msvcrt.getwche' member": 1
     }
   },
-  "import msvcrt\nmsvcrt.putwch": {
+  "import msvcrt\nmsvcrt.putwch()": {
     "2.6": {
       "'msvcrt.putwch' member": 1
     }
   },
-  "import msvcrt\nmsvcrt.ungetwch": {
+  "import msvcrt\nmsvcrt.ungetwch()": {
     "2.6": {
       "'msvcrt.ungetwch' member": 1
     }
@@ -2060,17 +2506,22 @@
     }
   },
   "import netrc": {},
-  "import nis\nnis.get_default_domain": {
+  "import nis\nnis.get_default_domain()": {
     "2.5": {
       "'nis.get_default_domain' member": 1
     }
   },
-  "import nntplib\nnntplib.NNTP.descriptions": {
+  "import nntplib\nnntplib.NNTP(usenetrc=None)": {
+    "2.4": {
+      "'nntplib.NNTP(usenetrc)'": 1
+    }
+  },
+  "import nntplib\nnntplib.NNTP.descriptions()": {
     "2.4": {
       "'nntplib.NNTP.descriptions' member": 1
     }
   },
-  "import nntplib\nnntplib.NNTP.description": {
+  "import nntplib\nnntplib.NNTP.description()": {
     "2.4": {
       "'nntplib.NNTP.description' member": 1
     }
@@ -2080,127 +2531,127 @@
       "'numbers' module": 1
     }
   },
-  "import operator\noperator.lt": {
+  "import operator\noperator.lt()": {
     "2.2": {
       "'operator.lt' member": 1
     }
   },
-  "import operator\noperator.is_": {
+  "import operator\noperator.is_()": {
     "2.3": {
       "'operator.is_' member": 1
     }
   },
-  "import operator\noperator.is_not": {
+  "import operator\noperator.is_not()": {
     "2.3": {
       "'operator.is_not' member": 1
     }
   },
-  "import operator\noperator.floordiv": {
+  "import operator\noperator.floordiv()": {
     "2.2": {
       "'operator.floordiv' member": 1
     }
   },
-  "import operator\noperator.index": {
+  "import operator\noperator.index()": {
     "2.5": {
       "'operator.index' member": 1
     }
   },
-  "import operator\noperator.pow": {
+  "import operator\noperator.pow()": {
     "2.3": {
       "'operator.pow' member": 1
     }
   },
-  "import operator\noperator.truediv": {
+  "import operator\noperator.truediv()": {
     "2.2": {
       "'operator.truediv' member": 1
     }
   },
-  "import operator\noperator.iadd": {
+  "import operator\noperator.iadd()": {
     "2.5": {
       "'operator.iadd' member": 1
     }
   },
-  "import operator\noperator.iand": {
+  "import operator\noperator.iand()": {
     "2.5": {
       "'operator.iand' member": 1
     }
   },
-  "import operator\noperator.iconcat": {
+  "import operator\noperator.iconcat()": {
     "2.5": {
       "'operator.iconcat' member": 1
     }
   },
-  "import operator\noperator.idiv": {
+  "import operator\noperator.idiv()": {
     "2.5": {
       "'operator.idiv' member": 1
     }
   },
-  "import operator\noperator.ifloordiv": {
+  "import operator\noperator.ifloordiv()": {
     "2.5": {
       "'operator.ifloordiv' member": 1
     }
   },
-  "import operator\noperator.ilshift": {
+  "import operator\noperator.ilshift()": {
     "2.5": {
       "'operator.ilshift' member": 1
     }
   },
-  "import operator\noperator.imod": {
+  "import operator\noperator.imod()": {
     "2.5": {
       "'operator.imod' member": 1
     }
   },
-  "import operator\noperator.imul": {
+  "import operator\noperator.imul()": {
     "2.5": {
       "'operator.imul' member": 1
     }
   },
-  "import operator\noperator.ior": {
+  "import operator\noperator.ior()": {
     "2.5": {
       "'operator.ior' member": 1
     }
   },
-  "import operator\noperator.ipow": {
+  "import operator\noperator.ipow()": {
     "2.5": {
       "'operator.ipow' member": 1
     }
   },
-  "import operator\noperator.irepeat": {
+  "import operator\noperator.irepeat()": {
     "2.5": {
       "'operator.irepeat' member": 1
     }
   },
-  "import operator\noperator.irshift": {
+  "import operator\noperator.irshift()": {
     "2.5": {
       "'operator.irshift' member": 1
     }
   },
-  "import operator\noperator.isub": {
+  "import operator\noperator.isub()": {
     "2.5": {
       "'operator.isub' member": 1
     }
   },
-  "import operator\noperator.itruediv": {
+  "import operator\noperator.itruediv()": {
     "2.5": {
       "'operator.itruediv' member": 1
     }
   },
-  "import operator\noperator.ixor": {
+  "import operator\noperator.ixor()": {
     "2.5": {
       "'operator.ixor' member": 1
     }
   },
-  "import operator\noperator.attrgetter": {
+  "import operator\noperator.attrgetter()": {
     "2.4": {
       "'operator.attrgetter' member": 1
     }
   },
-  "import operator\noperator.itemgetter": {
+  "import operator\noperator.itemgetter()": {
     "2.4": {
       "'operator.itemgetter' member": 1
     }
   },
-  "import operator\noperator.methodcaller": {
+  "import operator\noperator.methodcaller()": {
     "2.6": {
       "'operator.methodcaller' member": 1
     }
@@ -2210,319 +2661,319 @@
       "'optparse' module": 1
     }
   },
-  "import os\nos.initgroups": {
+  "import os\nos.initgroups()": {
     "2.7": {
       "'os.initgroups' member": 1
     }
   },
-  "import os\nos.getpgid": {
+  "import os\nos.getpgid()": {
     "2.3": {
       "'os.getpgid' member": 1
     }
   },
-  "import os\nos.getresuid": {
+  "import os\nos.getresuid()": {
     "2.7": {
       "'os.getresuid' member": 1
     }
   },
-  "import os\nos.getresgid": {
+  "import os\nos.getresgid()": {
     "2.7": {
       "'os.getresgid' member": 1
     }
   },
-  "import os\nos.setgroups": {
+  "import os\nos.setgroups()": {
     "2.2": {
       "'os.setgroups' member": 1
     }
   },
-  "import os\nos.setresgid": {
+  "import os\nos.setresgid()": {
     "2.7": {
       "'os.setresgid' member": 1
     }
   },
-  "import os\nos.setresuid": {
+  "import os\nos.setresuid()": {
     "2.7": {
       "'os.setresuid' member": 1
     }
   },
-  "import os\nos.getsid": {
+  "import os\nos.getsid()": {
     "2.4": {
       "'os.getsid' member": 1
     }
   },
-  "import os\nos.popen2": {
+  "import os\nos.popen2()": {
     "2.0": {
       "'os.popen2' member": 1
     }
   },
-  "import os\nos.popen3": {
+  "import os\nos.popen3()": {
     "2.0": {
       "'os.popen3' member": 1
     }
   },
-  "import os\nos.popen4": {
+  "import os\nos.popen4()": {
     "2.0": {
       "'os.popen4' member": 1
     }
   },
-  "import os\nos.closerange": {
+  "import os\nos.closerange()": {
     "2.6": {
       "'os.closerange' member": 1
     }
   },
-  "import os\nos.fchmod": {
+  "import os\nos.fchmod()": {
     "2.6": {
       "'os.fchmod' member": 1
     }
   },
-  "import os\nos.fchown": {
+  "import os\nos.fchown()": {
     "2.6": {
       "'os.fchown' member": 1
     }
   },
-  "import os\nos.SEEK_SET": {
+  "import os\nos.SEEK_SET()": {
     "2.5": {
       "'os.SEEK_SET' member": 1
     }
   },
-  "import os\nos.fchdir": {
+  "import os\nos.fchdir()": {
     "2.3": {
       "'os.fchdir' member": 1
     }
   },
-  "import os\nos.getcwdu": {
+  "import os\nos.getcwdu()": {
     "2.3": {
       "'os.getcwdu' member": 1
     }
   },
-  "import os\nos.chflags": {
+  "import os\nos.chflags()": {
     "2.6": {
       "'os.chflags' member": 1
     }
   },
-  "import os\nos.chroot": {
+  "import os\nos.chroot()": {
     "2.2": {
       "'os.chroot' member": 1
     }
   },
-  "import os\nos.lchflags": {
+  "import os\nos.lchflags()": {
     "2.6": {
       "'os.lchflags' member": 1
     }
   },
-  "import os\nos.lchmod": {
+  "import os\nos.lchmod()": {
     "2.6": {
       "'os.lchmod' member": 1
     }
   },
-  "import os\nos.lchown": {
+  "import os\nos.lchown()": {
     "2.3": {
       "'os.lchown' member": 1
     }
   },
-  "import os\nos.mknod": {
+  "import os\nos.mknod()": {
     "2.3": {
       "'os.mknod' member": 1
     }
   },
-  "import os\nos.major": {
+  "import os\nos.major()": {
     "2.3": {
       "'os.major' member": 1
     }
   },
-  "import os\nos.minor": {
+  "import os\nos.minor()": {
     "2.3": {
       "'os.minor' member": 1
     }
   },
-  "import os\nos.makedev": {
+  "import os\nos.makedev()": {
     "2.3": {
       "'os.makedev' member": 1
     }
   },
-  "import os\nos.makedirs": {},
-  "import os\nos.removedirs": {},
-  "import os\nos.renames": {},
-  "import os\nos.walk": {
+  "import os\nos.makedirs()": {},
+  "import os\nos.removedirs()": {},
+  "import os\nos.renames()": {},
+  "import os\nos.walk()": {
     "2.3": {
       "'os.walk' member": 1
     }
   },
-  "import os\nos.EX_OK": {
+  "import os\nos.EX_OK()": {
     "2.3": {
       "'os.EX_OK' member": 1
     }
   },
-  "import os\nos.EX_USAGE": {
+  "import os\nos.EX_USAGE()": {
     "2.3": {
       "'os.EX_USAGE' member": 1
     }
   },
-  "import os\nos.EX_DATAERR": {
+  "import os\nos.EX_DATAERR()": {
     "2.3": {
       "'os.EX_DATAERR' member": 1
     }
   },
-  "import os\nos.EX_NOINPUT": {
+  "import os\nos.EX_NOINPUT()": {
     "2.3": {
       "'os.EX_NOINPUT' member": 1
     }
   },
-  "import os\nos.EX_NOUSER": {
+  "import os\nos.EX_NOUSER()": {
     "2.3": {
       "'os.EX_NOUSER' member": 1
     }
   },
-  "import os\nos.EX_NOHOST": {
+  "import os\nos.EX_NOHOST()": {
     "2.3": {
       "'os.EX_NOHOST' member": 1
     }
   },
-  "import os\nos.EX_UNAVAILABLE": {
+  "import os\nos.EX_UNAVAILABLE()": {
     "2.3": {
       "'os.EX_UNAVAILABLE' member": 1
     }
   },
-  "import os\nos.EX_SOFTWARE": {
+  "import os\nos.EX_SOFTWARE()": {
     "2.3": {
       "'os.EX_SOFTWARE' member": 1
     }
   },
-  "import os\nos.EX_OSERR": {
+  "import os\nos.EX_OSERR()": {
     "2.3": {
       "'os.EX_OSERR' member": 1
     }
   },
-  "import os\nos.EX_OSFILE": {
+  "import os\nos.EX_OSFILE()": {
     "2.3": {
       "'os.EX_OSFILE' member": 1
     }
   },
-  "import os\nos.EX_CANTCREAT": {
+  "import os\nos.EX_CANTCREAT()": {
     "2.3": {
       "'os.EX_CANTCREAT' member": 1
     }
   },
-  "import os\nos.EX_IOERR": {
+  "import os\nos.EX_IOERR()": {
     "2.3": {
       "'os.EX_IOERR' member": 1
     }
   },
-  "import os\nos.EX_TEMPFAIL": {
+  "import os\nos.EX_TEMPFAIL()": {
     "2.3": {
       "'os.EX_TEMPFAIL' member": 1
     }
   },
-  "import os\nos.EX_PROTOCOL": {
+  "import os\nos.EX_PROTOCOL()": {
     "2.3": {
       "'os.EX_PROTOCOL' member": 1
     }
   },
-  "import os\nos.EX_NOPERM": {
+  "import os\nos.EX_NOPERM()": {
     "2.3": {
       "'os.EX_NOPERM' member": 1
     }
   },
-  "import os\nos.EX_CONFIG": {
+  "import os\nos.EX_CONFIG()": {
     "2.3": {
       "'os.EX_CONFIG' member": 1
     }
   },
-  "import os\nos.EX_NOTFOUND": {
+  "import os\nos.EX_NOTFOUND()": {
     "2.3": {
       "'os.EX_NOTFOUND' member": 1
     }
   },
-  "import os\nos.killpg": {
+  "import os\nos.killpg()": {
     "2.3": {
       "'os.killpg' member": 1
     }
   },
-  "import os\nos.spawnl": {},
-  "import os\nos.P_NOWAIT": {},
-  "import os\nos.P_WAIT": {},
-  "import os\nos.P_DETACH": {},
-  "import os\nos.startfile": {
+  "import os\nos.spawnl()": {},
+  "import os\nos.P_NOWAIT()": {},
+  "import os\nos.P_WAIT()": {},
+  "import os\nos.P_DETACH()": {},
+  "import os\nos.startfile()": {
     "2.0": {
       "'os.startfile' member": 1
     }
   },
-  "import os\nos.wait3": {
+  "import os\nos.wait3()": {
     "2.5": {
       "'os.wait3' member": 1
     }
   },
-  "import os\nos.wait4": {
+  "import os\nos.wait4()": {
     "2.5": {
       "'os.wait4' member": 1
     }
   },
-  "import os\nos.WCONTINUED": {
+  "import os\nos.WCONTINUED()": {
     "2.3": {
       "'os.WCONTINUED' member": 1
     }
   },
-  "import os\nos.WUNTRACED": {
+  "import os\nos.WUNTRACED()": {
     "2.3": {
       "'os.WUNTRACED' member": 1
     }
   },
-  "import os\nos.WCOREDUMP": {
+  "import os\nos.WCOREDUMP()": {
     "2.3": {
       "'os.WCOREDUMP' member": 1
     }
   },
-  "import os\nos.WIFCONTINUED": {
+  "import os\nos.WIFCONTINUED()": {
     "2.3": {
       "'os.WIFCONTINUED' member": 1
     }
   },
-  "import os\nos.getloadavg": {
+  "import os\nos.getloadavg()": {
     "2.3": {
       "'os.getloadavg' member": 1
     }
   },
-  "import os\nos.extsep": {
+  "import os\nos.extsep()": {
     "2.2": {
       "'os.extsep' member": 1
     }
   },
-  "import os\nos.devnull": {
+  "import os\nos.devnull()": {
     "2.4": {
       "'os.devnull' member": 1
     }
   },
-  "import os\nos.urandom": {
+  "import os\nos.urandom()": {
     "2.4": {
       "'os.urandom' member": 1
     }
   },
-  "import os.path\nos.path.abspath": {},
-  "import os.path\nos.path.lexists": {
+  "import os.path\nos.path.abspath()": {},
+  "import os.path\nos.path.lexists()": {
     "2.4": {
       "'os.path.lexists' member": 1
     }
   },
-  "import os.path\nos.path.getatime": {},
-  "import os.path\nos.path.getmtime": {},
-  "import os.path\nos.path.getctime": {
+  "import os.path\nos.path.getatime()": {},
+  "import os.path\nos.path.getmtime()": {},
+  "import os.path\nos.path.getctime()": {
     "2.3": {
       "'os.path.getctime' member": 1
     }
   },
-  "import os.path\nos.path.getsize": {},
-  "import os.path\nos.path.realpath": {
+  "import os.path\nos.path.getsize()": {},
+  "import os.path\nos.path.realpath()": {
     "2.2": {
       "'os.path.realpath' member": 1
     }
   },
-  "import os.path\nos.path.relpath": {
+  "import os.path\nos.path.relpath()": {
     "2.6": {
       "'os.path.relpath' member": 1
     }
   },
-  "import os.path\nos.path.splitdrive": {},
-  "import os.path\nos.path.supports_unicode_filenames": {
+  "import os.path\nos.path.splitdrive()": {},
+  "import os.path\nos.path.supports_unicode_filenames()": {
     "2.3": {
       "'os.path.supports_unicode_filenames' member": 1
     }
@@ -2532,9 +2983,24 @@
       "'ossaudiodev' module": 1
     }
   },
-  "import pickle\npickle.HIGHEST_PROTOCOL": {
+  "import pickle\npickle.HIGHEST_PROTOCOL()": {
     "2.3": {
       "'pickle.HIGHEST_PROTOCOL' member": 1
+    }
+  },
+  "import pickle\npickle.dump(protocol=None)": {
+    "2.3": {
+      "'pickle.dump(protocol)'": 1
+    }
+  },
+  "import pickle\npickle.dumps(protocol=None)": {
+    "2.3": {
+      "'pickle.dumps(protocol)'": 1
+    }
+  },
+  "import pickle\npickle.Pickler(protocol=None)": {
+    "2.3": {
+      "'pickle.Pickler(protocol)'": 1
     }
   },
   "import pickletools": {
@@ -2542,7 +3008,7 @@
       "'pickletools' module": 1
     }
   },
-  "import pickletools\npickletools.optimize": {
+  "import pickletools\npickletools.optimize()": {
     "2.3": {
       "'pickletools' module": 1
     },
@@ -2555,7 +3021,7 @@
       "'pkgutil' module": 1
     }
   },
-  "import pkgutil\npkgutil.get_data": {
+  "import pkgutil\npkgutil.get_data()": {
     "2.3": {
       "'pkgutil' module": 1
     },
@@ -2568,7 +3034,7 @@
       "'platform' module": 1
     }
   },
-  "import platform\nplatform.python_branch": {
+  "import platform\nplatform.python_branch()": {
     "2.3": {
       "'platform' module": 1
     },
@@ -2576,7 +3042,7 @@
       "'platform.python_branch' member": 1
     }
   },
-  "import platform\nplatform.python_implementation": {
+  "import platform\nplatform.python_implementation()": {
     "2.3": {
       "'platform' module": 1
     },
@@ -2584,7 +3050,7 @@
       "'platform.python_implementation' member": 1
     }
   },
-  "import platform\nplatform.python_revision": {
+  "import platform\nplatform.python_revision()": {
     "2.3": {
       "'platform' module": 1
     },
@@ -2592,7 +3058,7 @@
       "'platform.python_revision' member": 1
     }
   },
-  "import platform\nplatform.linux_distribution": {
+  "import platform\nplatform.linux_distribution()": {
     "2.3": {
       "'platform' module": 1
     },
@@ -2600,29 +3066,48 @@
       "'platform.linux_distribution' member": 1
     }
   },
-  "import popen2\npopen2.popen4": {
+  "import popen2\npopen2.popen4()": {
     "2.0": {
       "'popen2' module": 1,
       "'popen2.popen4' member": 1
     }
   },
-  "import popen2\npopen2.Popen4": {
+  "import popen2\npopen2.Popen4()": {
     "2.0": {
       "'popen2' module": 1,
       "'popen2.Popen4' member": 1
     }
   },
-  "import poplib\npoplib.POP3_SSL": {
+  "import poplib\npoplib.POP3(timeout=None)": {
+    "2.6": {
+      "'poplib.POP3(timeout)'": 1
+    }
+  },
+  "import poplib\npoplib.POP3_SSL()": {
     "2.4": {
       "'poplib.POP3_SSL' member": 1
     }
   },
-  "import pprint\npprint.PrettyPrinter.format": {
+  "import pprint\npprint.pformat(indent=None, width=None, depth=None)": {
+    "2.4": {
+      "'pprint.pformat(indent)'": 1,
+      "'pprint.pformat(width)'": 1,
+      "'pprint.pformat(depth)'": 1
+    }
+  },
+  "import pprint\npprint.pprint(indent=None, width=None, depth=None)": {
+    "2.4": {
+      "'pprint.pprint(indent)'": 1,
+      "'pprint.pprint(width)'": 1,
+      "'pprint.pprint(depth)'": 1
+    }
+  },
+  "import pprint\npprint.PrettyPrinter.format()": {
     "2.3": {
       "'pprint.PrettyPrinter.format' member": 1
     }
   },
-  "import pstats\npstats.Stats": {
+  "import pstats\npstats.Stats()": {
     "2.3": {
       "'pstats.Stats' member": 1
     }
@@ -2632,67 +3117,67 @@
       "'pydoc' module": 1
     }
   },
-  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.GetInputContext": {
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.GetInputContext()": {
     "2.1": {
       "'xml.parsers.expat.xmlparser.GetInputContext' member": 1
     }
   },
-  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.UseForeignDTD": {
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.UseForeignDTD()": {
     "2.3": {
       "'xml.parsers.expat.xmlparser.UseForeignDTD' member": 1
     }
   },
-  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.buffer_size": {
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.buffer_size()": {
     "2.3": {
       "'xml.parsers.expat.xmlparser.buffer_size' member": 1
     }
   },
-  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.buffer_text": {
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.buffer_text()": {
     "2.3": {
       "'xml.parsers.expat.xmlparser.buffer_text' member": 1
     }
   },
-  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.buffer_used": {
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.buffer_used()": {
     "2.3": {
       "'xml.parsers.expat.xmlparser.buffer_used' member": 1
     }
   },
-  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.ordered_attributes": {
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.ordered_attributes()": {
     "2.1": {
       "'xml.parsers.expat.xmlparser.ordered_attributes' member": 1
     }
   },
-  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.specified_attributes": {
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.specified_attributes()": {
     "2.1": {
       "'xml.parsers.expat.xmlparser.specified_attributes' member": 1
     }
   },
-  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.XmlDeclHandler": {
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.XmlDeclHandler()": {
     "2.1": {
       "'xml.parsers.expat.xmlparser.XmlDeclHandler' member": 1
     }
   },
-  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.EntityDeclHandler": {
+  "import xml.parsers.expat\nxml.parsers.expat.xmlparser.EntityDeclHandler()": {
     "2.1": {
       "'xml.parsers.expat.xmlparser.EntityDeclHandler' member": 1
     }
   },
-  "import xml.parsers.expat\nxml.parsers.expat.ExpatError.code": {
+  "import xml.parsers.expat\nxml.parsers.expat.ExpatError.code()": {
     "2.1": {
       "'xml.parsers.expat.ExpatError.code' member": 1
     }
   },
-  "import xml.parsers.expat\nxml.parsers.expat.ExpatError.lineno": {
+  "import xml.parsers.expat\nxml.parsers.expat.ExpatError.lineno()": {
     "2.1": {
       "'xml.parsers.expat.ExpatError.lineno' member": 1
     }
   },
-  "import xml.parsers.expat\nxml.parsers.expat.ExpatError.offset": {
+  "import xml.parsers.expat\nxml.parsers.expat.ExpatError.offset()": {
     "2.1": {
       "'xml.parsers.expat.ExpatError.offset' member": 1
     }
   },
-  "import Queue\nQueue.LifoQueue": {
+  "import Queue\nQueue.LifoQueue()": {
     "2.0": {
       "'Queue' module": 1
     },
@@ -2700,7 +3185,7 @@
       "'Queue.LifoQueue' member": 1
     }
   },
-  "import Queue\nQueue.PriorityQueue": {
+  "import Queue\nQueue.PriorityQueue()": {
     "2.0": {
       "'Queue' module": 1
     },
@@ -2708,7 +3193,7 @@
       "'Queue.PriorityQueue' member": 1
     }
   },
-  "import Queue\nQueue.Queue.task_done": {
+  "import Queue\nQueue.Queue.task_done()": {
     "2.0": {
       "'Queue' module": 1
     },
@@ -2716,7 +3201,7 @@
       "'Queue.Queue.task_done' member": 1
     }
   },
-  "import Queue\nQueue.Queue.join": {
+  "import Queue\nQueue.Queue.join()": {
     "2.0": {
       "'Queue' module": 1
     },
@@ -2724,89 +3209,89 @@
       "'Queue.Queue.join' member": 1
     }
   },
-  "import random\nrandom.getstate": {
+  "import random\nrandom.getstate()": {
     "2.1": {
       "'random.getstate' member": 1
     }
   },
-  "import random\nrandom.setstate": {
+  "import random\nrandom.setstate()": {
     "2.1": {
       "'random.setstate' member": 1
     }
   },
-  "import random\nrandom.jumpahead": {
+  "import random\nrandom.jumpahead()": {
     "2.1": {
       "'random.jumpahead' member": 1
     }
   },
-  "import random\nrandom.getrandbits": {
+  "import random\nrandom.getrandbits()": {
     "2.4": {
       "'random.getrandbits' member": 1
     }
   },
-  "import random\nrandom.randrange": {},
-  "import random\nrandom.sample": {
+  "import random\nrandom.randrange()": {},
+  "import random\nrandom.sample()": {
     "2.3": {
       "'random.sample' member": 1
     }
   },
-  "import random\nrandom.triangular": {
+  "import random\nrandom.triangular()": {
     "2.6": {
       "'random.triangular' member": 1
     }
   },
-  "import random\nrandom.SystemRandom": {
+  "import random\nrandom.SystemRandom()": {
     "2.4": {
       "'random.SystemRandom' member": 1
     }
   },
-  "import re\nre.U": {
+  "import re\nre.U()": {
     "2.0": {
       "'re.U' member": 1
     }
   },
-  "import re\nre.findall": {},
-  "import re\nre.finditer": {
+  "import re\nre.findall()": {},
+  "import re\nre.finditer()": {
     "2.2": {
       "'re.finditer' member": 1
     }
   },
-  "import readline\nreadline.clear_history": {
+  "import readline\nreadline.clear_history()": {
     "2.4": {
       "'readline.clear_history' member": 1
     }
   },
-  "import readline\nreadline.get_current_history_length": {
+  "import readline\nreadline.get_current_history_length()": {
     "2.3": {
       "'readline.get_current_history_length' member": 1
     }
   },
-  "import readline\nreadline.get_history_item": {
+  "import readline\nreadline.get_history_item()": {
     "2.3": {
       "'readline.get_history_item' member": 1
     }
   },
-  "import readline\nreadline.remove_history_item": {
+  "import readline\nreadline.remove_history_item()": {
     "2.4": {
       "'readline.remove_history_item' member": 1
     }
   },
-  "import readline\nreadline.replace_history_item": {
+  "import readline\nreadline.replace_history_item()": {
     "2.4": {
       "'readline.replace_history_item' member": 1
     }
   },
-  "import readline\nreadline.get_completer": {
+  "import readline\nreadline.get_completer()": {
     "2.3": {
       "'readline.get_completer' member": 1
     }
   },
-  "import readline\nreadline.get_completion_type": {
+  "import readline\nreadline.get_completion_type()": {
     "2.6": {
       "'readline.get_completion_type' member": 1
     }
   },
-  "import readline\nreadline.set_completion_display_matches_hook": {
+  "import readline\nreadline.set_completion_display_matches_hook()": {
     "2.6": {
       "'readline.set_completion_display_matches_hook' member": 1
     }
@@ -2816,7 +3301,7 @@
       "'runpy' module": 1
     }
   },
-  "import runpy\nrunpy.run_path": {
+  "import runpy\nrunpy.run_path()": {
     "2.5": {
       "'runpy' module": 1
     },
@@ -2824,32 +3309,32 @@
       "'runpy.run_path' member": 1
     }
   },
-  "import sched\nsched.scheduler.queue": {
+  "import sched\nsched.scheduler.queue()": {
     "2.6": {
       "'sched.scheduler.queue' member": 1
     }
   },
-  "import select\nselect.epoll": {
+  "import select\nselect.epoll()": {
     "2.6": {
       "'select.epoll' member": 1
     }
   },
-  "import select\nselect.kqueue": {
+  "import select\nselect.kqueue()": {
     "2.6": {
       "'select.kqueue' member": 1
     }
   },
-  "import select\nselect.kevent": {
+  "import select\nselect.kevent()": {
     "2.6": {
       "'select.kevent' member": 1
     }
   },
-  "import select\nselect.select.PIPE_BUF": {
+  "import select\nselect.select.PIPE_BUF()": {
     "2.7": {
       "'select.select.PIPE_BUF' member": 1
     }
   },
-  "import select\nselect.poll.modify": {
+  "import select\nselect.poll.modify()": {
     "2.6": {
       "'select.poll.modify' member": 1
     }
@@ -2859,128 +3344,168 @@
       "'sets' module": 1
     }
   },
-  "import sgmllib\nsgmllib.SGMLParseError": {
+  "import sgmllib\nsgmllib.SGMLParseError()": {
     "2.1": {
       "'sgmllib.SGMLParseError' member": 1
     }
   },
-  "import sgmllib\nsgmllib.SGMLParser.convert_charref": {
+  "import sgmllib\nsgmllib.SGMLParser.convert_charref()": {
     "2.5": {
       "'sgmllib.SGMLParser.convert_charref' member": 1
     }
   },
-  "import sgmllib\nsgmllib.SGMLParser.convert_codepoint": {
+  "import sgmllib\nsgmllib.SGMLParser.convert_codepoint()": {
     "2.5": {
       "'sgmllib.SGMLParser.convert_codepoint' member": 1
     }
   },
-  "import sgmllib\nsgmllib.SGMLParser.convert_entityref": {
+  "import sgmllib\nsgmllib.SGMLParser.convert_entityref()": {
     "2.5": {
       "'sgmllib.SGMLParser.convert_entityref' member": 1
     }
   },
+  "import shelve\nshelve.open(protocol=None)": {
+    "2.3": {
+      "'shelve.open(protocol)'": 1
+    }
+  },
+  "import shelve\nshelve.Shelf(protocol=None)": {
+    "2.3": {
+      "'shelve.Shelf(protocol)'": 1
+    }
+  },
   "import shlex": {},
-  "import shlex\nshlex.split": {
+  "import shlex\nshlex.split()": {
     "2.3": {
       "'shlex.split' member": 1
     }
   },
-  "import shlex\nshlex.shlex.push_source": {
+  "import shlex\nshlex.split(posix=None)": {
+    "2.3": {
+      "'shlex.split' member": 1
+    },
+    "2.6": {
+      "'shlex.split(posix)'": 1
+    }
+  },
+  "import shlex\nshlex.shlex.push_source()": {
     "2.1": {
       "'shlex.shlex.push_source' member": 1
     }
   },
-  "import shlex\nshlex.shlex.pop_source": {
+  "import shlex\nshlex.shlex.pop_source()": {
     "2.1": {
       "'shlex.shlex.pop_source' member": 1
     }
   },
-  "import shlex\nshlex.shlex.escape": {
+  "import shlex\nshlex.shlex.escape()": {
     "2.3": {
       "'shlex.shlex.escape' member": 1
     }
   },
-  "import shlex\nshlex.shlex.escapedquotes": {
+  "import shlex\nshlex.shlex.escapedquotes()": {
     "2.3": {
       "'shlex.shlex.escapedquotes' member": 1
     }
   },
-  "import shlex\nshlex.shlex.whitespace_split": {
+  "import shlex\nshlex.shlex.whitespace_split()": {
     "2.3": {
       "'shlex.shlex.whitespace_split' member": 1
     }
   },
-  "import shlex\nshlex.shlex.eof": {
+  "import shlex\nshlex.shlex.eof()": {
     "2.3": {
       "'shlex.shlex.eof' member": 1
     }
   },
-  "import shutil\nshutil.ignore_patterns": {
+  "import shutil\nshutil.ignore_patterns()": {
     "2.6": {
       "'shutil.ignore_patterns' member": 1
     }
   },
-  "import shutil\nshutil.move": {
+  "import shutil\nshutil.copytree(ignore=None)": {
+    "2.6": {
+      "'shutil.copytree(ignore)'": 1
+    }
+  },
+  "import shutil\nshutil.move()": {
     "2.3": {
       "'shutil.move' member": 1
     }
   },
-  "import shutil\nshutil.Error": {
+  "import shutil\nshutil.Error()": {
     "2.3": {
       "'shutil.Error' member": 1
     }
   },
-  "import shutil\nshutil.make_archive": {
+  "import shutil\nshutil.make_archive()": {
     "2.7": {
       "'shutil.make_archive' member": 1
     }
   },
-  "import shutil\nshutil.get_archive_formats": {
+  "import shutil\nshutil.get_archive_formats()": {
     "2.7": {
       "'shutil.get_archive_formats' member": 1
     }
   },
-  "import shutil\nshutil.register_archive_format": {
+  "import shutil\nshutil.register_archive_format()": {
     "2.7": {
       "'shutil.register_archive_format' member": 1
     }
   },
-  "import shutil\nshutil.unregister_archive_format": {
+  "import shutil\nshutil.unregister_archive_format()": {
     "2.7": {
       "'shutil.unregister_archive_format' member": 1
     }
   },
-  "import signal\nsignal.CTRL_C_EVENT": {
+  "import signal\nsignal.CTRL_C_EVENT()": {
     "2.7": {
       "'signal.CTRL_C_EVENT' member": 1
     }
   },
-  "import signal\nsignal.CTRL_BREAK_EVENT": {
+  "import signal\nsignal.CTRL_BREAK_EVENT()": {
     "2.7": {
       "'signal.CTRL_BREAK_EVENT' member": 1
     }
   },
-  "import signal\nsignal.setitimer": {
+  "import signal\nsignal.setitimer()": {
     "2.6": {
       "'signal.setitimer' member": 1
     }
   },
-  "import signal\nsignal.getitimer": {
+  "import signal\nsignal.getitimer()": {
     "2.6": {
       "'signal.getitimer' member": 1
     }
   },
-  "import signal\nsignal.set_wakeup_fd": {
+  "import signal\nsignal.set_wakeup_fd()": {
     "2.6": {
       "'signal.set_wakeup_fd' member": 1
     }
   },
-  "import signal\nsignal.siginterrupt": {
+  "import signal\nsignal.siginterrupt()": {
     "2.6": {
       "'signal.siginterrupt' member": 1
     }
   },
-  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.CGIXMLRPCRequestHandler": {
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCServer(allow_none=None, encoding=None)": {
+    "2.2": {
+      "'SimpleXMLRPCServer' module": 1
+    },
+    "2.5": {
+      "'SimpleXMLRPCServer.SimpleXMLRPCServer(allow_none)'": 1,
+      "'SimpleXMLRPCServer.SimpleXMLRPCServer(encoding)'": 1
+    }
+  },
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCServer(bind_and_activate=None)": {
+    "2.2": {
+      "'SimpleXMLRPCServer' module": 1
+    },
+    "2.6": {
+      "'SimpleXMLRPCServer.SimpleXMLRPCServer(bind_and_activate)'": 1
+    }
+  },
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.CGIXMLRPCRequestHandler()": {
     "2.2": {
       "'SimpleXMLRPCServer' module": 1
     },
@@ -2988,7 +3513,19 @@
       "'SimpleXMLRPCServer.CGIXMLRPCRequestHandler' member": 1
     }
   },
-  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCServer.register_introspection_functions": {
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.CGIXMLRPCRequestHandler(allow_none=None, encoding=None)": {
+    "2.2": {
+      "'SimpleXMLRPCServer' module": 1
+    },
+    "2.3": {
+      "'SimpleXMLRPCServer.CGIXMLRPCRequestHandler' member": 1
+    },
+    "2.5": {
+      "'SimpleXMLRPCServer.CGIXMLRPCRequestHandler(allow_none)'": 1,
+      "'SimpleXMLRPCServer.CGIXMLRPCRequestHandler(encoding)'": 1
+    }
+  },
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCServer.register_introspection_functions()": {
     "2.2": {
       "'SimpleXMLRPCServer' module": 1
     },
@@ -2996,7 +3533,7 @@
       "'SimpleXMLRPCServer.SimpleXMLRPCServer.register_introspection_functions' member": 1
     }
   },
-  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCRequestHandler.rpc_paths": {
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCRequestHandler.rpc_paths()": {
     "2.2": {
       "'SimpleXMLRPCServer' module": 1
     },
@@ -3004,7 +3541,7 @@
       "'SimpleXMLRPCServer.SimpleXMLRPCRequestHandler.rpc_paths' member": 1
     }
   },
-  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCRequestHandler.encode_threshold": {
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCRequestHandler.encode_threshold()": {
     "2.2": {
       "'SimpleXMLRPCServer' module": 1
     },
@@ -3012,152 +3549,165 @@
       "'SimpleXMLRPCServer.SimpleXMLRPCRequestHandler.encode_threshold' member": 1
     }
   },
-  "import site\nsite.PREFIXES": {
+  "import site\nsite.PREFIXES()": {
     "2.6": {
       "'site.PREFIXES' member": 1
     }
   },
-  "import site\nsite.ENABLE_USER_SITE": {
+  "import site\nsite.ENABLE_USER_SITE()": {
     "2.6": {
       "'site.ENABLE_USER_SITE' member": 1
     }
   },
-  "import site\nsite.USER_SITE": {
+  "import site\nsite.USER_SITE()": {
     "2.6": {
       "'site.USER_SITE' member": 1
     }
   },
-  "import site\nsite.USER_BASE": {
+  "import site\nsite.USER_BASE()": {
     "2.6": {
       "'site.USER_BASE' member": 1
     }
   },
-  "import site\nsite.getsitepackages": {
+  "import site\nsite.getsitepackages()": {
     "2.7": {
       "'site.getsitepackages' member": 1
     }
   },
-  "import site\nsite.getuserbase": {
+  "import site\nsite.getuserbase()": {
     "2.7": {
       "'site.getuserbase' member": 1
     }
   },
-  "import site\nsite.getusersitepackages": {
+  "import site\nsite.getusersitepackages()": {
     "2.7": {
       "'site.getusersitepackages' member": 1
     }
   },
-  "import smtplib\nsmtplib.SMTP_SSL": {
+  "import smtplib\nsmtplib.SMTP(timeout=None)": {
+    "2.6": {
+      "'smtplib.SMTP(timeout)'": 1
+    }
+  },
+  "import smtplib\nsmtplib.SMTP_SSL()": {
     "2.6": {
       "'smtplib.SMTP_SSL' member": 1
     }
   },
-  "import smtplib\nsmtplib.LMTP": {
+  "import smtplib\nsmtplib.LMTP()": {
     "2.6": {
       "'smtplib.LMTP' member": 1
     }
   },
-  "import smtplib\nsmtplib.SMTP.ehlo_or_helo_if_needed": {
+  "import smtplib\nsmtplib.SMTP.ehlo_or_helo_if_needed()": {
     "2.6": {
       "'smtplib.SMTP.ehlo_or_helo_if_needed' member": 1
     }
   },
-  "import socket\nsocket.timeout": {
+  "import socket\nsocket.timeout()": {
     "2.3": {
       "'socket.timeout' member": 1
     }
   },
-  "import socket\nsocket.has_ipv6": {
+  "import socket\nsocket.has_ipv6()": {
     "2.3": {
       "'socket.has_ipv6' member": 1
     }
   },
-  "import socket\nsocket.create_connection": {
+  "import socket\nsocket.create_connection()": {
     "2.6": {
       "'socket.create_connection' member": 1
     }
   },
-  "import socket\nsocket.getaddrinfo": {
+  "import socket\nsocket.create_connection(source_address=None)": {
+    "2.6": {
+      "'socket.create_connection' member": 1
+    },
+    "2.7": {
+      "'socket.create_connection(source_address)'": 1
+    }
+  },
+  "import socket\nsocket.getaddrinfo()": {
     "2.2": {
       "'socket.getaddrinfo' member": 1
     }
   },
-  "import socket\nsocket.getfqdn": {
+  "import socket\nsocket.getfqdn()": {
     "2.0": {
       "'socket.getfqdn' member": 1
     }
   },
-  "import socket\nsocket.getnameinfo": {
+  "import socket\nsocket.getnameinfo()": {
     "2.2": {
       "'socket.getnameinfo' member": 1
     }
   },
-  "import socket\nsocket.socketpair": {
+  "import socket\nsocket.socketpair()": {
     "2.4": {
       "'socket.socketpair' member": 1
     }
   },
-  "import socket\nsocket.inet_pton": {
+  "import socket\nsocket.inet_pton()": {
     "2.3": {
       "'socket.inet_pton' member": 1
     }
   },
-  "import socket\nsocket.inet_ntop": {
+  "import socket\nsocket.inet_ntop()": {
     "2.3": {
       "'socket.inet_ntop' member": 1
     }
   },
-  "import socket\nsocket.getdefaulttimeout": {
+  "import socket\nsocket.getdefaulttimeout()": {
     "2.3": {
       "'socket.getdefaulttimeout' member": 1
     }
   },
-  "import socket\nsocket.setdefaulttimeout": {
+  "import socket\nsocket.setdefaulttimeout()": {
     "2.3": {
       "'socket.setdefaulttimeout' member": 1
     }
   },
-  "import socket\nsocket.socket.ioctl": {
+  "import socket\nsocket.socket.ioctl()": {
     "2.6": {
       "'socket.socket.ioctl' member": 1
     }
   },
-  "import socket\nsocket.socket.recvfrom_into": {
+  "import socket\nsocket.socket.recvfrom_into()": {
     "2.5": {
       "'socket.socket.recvfrom_into' member": 1
     }
   },
-  "import socket\nsocket.socket.recv_into": {
+  "import socket\nsocket.socket.recv_into()": {
     "2.5": {
       "'socket.socket.recv_into' member": 1
     }
   },
-  "import socket\nsocket.socket.settimeout": {
+  "import socket\nsocket.socket.settimeout()": {
     "2.3": {
       "'socket.socket.settimeout' member": 1
     }
   },
-  "import socket\nsocket.socket.gettimeout": {
+  "import socket\nsocket.socket.gettimeout()": {
     "2.3": {
       "'socket.socket.gettimeout' member": 1
     }
   },
-  "import socket\nsocket.socket.family": {
+  "import socket\nsocket.socket.family()": {
     "2.5": {
       "'socket.socket.family' member": 1
     }
   },
-  "import socket\nsocket.socket.type": {
+  "import socket\nsocket.socket.type()": {
     "2.5": {
       "'socket.socket.type' member": 1
     }
   },
-  "import socket\nsocket.socket.proto": {
+  "import socket\nsocket.socket.proto()": {
     "2.5": {
       "'socket.socket.proto' member": 1
     }
   },
-  "import SocketServer\nSocketServer.BaseServer.shutdown": {
+  "import SocketServer\nSocketServer.BaseServer.shutdown()": {
     "2.0": {
       "'SocketServer' module": 1
     },
@@ -3165,7 +3715,7 @@
       "'SocketServer.BaseServer.shutdown' member": 1
     }
   },
-  "import SocketServer\nSocketServer.BaseServer.server_close": {
+  "import SocketServer\nSocketServer.BaseServer.server_close()": {
     "2.0": {
       "'SocketServer' module": 1
     },
@@ -3183,7 +3733,7 @@
       "'sqlite3' module": 1
     }
   },
-  "import sqlite3\nsqlite3.Connection.set_progress_handler": {
+  "import sqlite3\nsqlite3.Connection.set_progress_handler()": {
     "2.5": {
       "'sqlite3' module": 1
     },
@@ -3191,7 +3741,7 @@
       "'sqlite3.Connection.set_progress_handler' member": 1
     }
   },
-  "import sqlite3\nsqlite3.Connection.enable_load_extension": {
+  "import sqlite3\nsqlite3.Connection.enable_load_extension()": {
     "2.5": {
       "'sqlite3' module": 1
     },
@@ -3199,7 +3749,7 @@
       "'sqlite3.Connection.enable_load_extension' member": 1
     }
   },
-  "import sqlite3\nsqlite3.Connection.load_extension": {
+  "import sqlite3\nsqlite3.Connection.load_extension()": {
     "2.5": {
       "'sqlite3' module": 1
     },
@@ -3207,7 +3757,7 @@
       "'sqlite3.Connection.load_extension' member": 1
     }
   },
-  "import sqlite3\nsqlite3.Connection.iterdump": {
+  "import sqlite3\nsqlite3.Connection.iterdump()": {
     "2.5": {
       "'sqlite3' module": 1
     },
@@ -3215,7 +3765,7 @@
       "'sqlite3.Connection.iterdump' member": 1
     }
   },
-  "import sqlite3\nsqlite3.Row.keys": {
+  "import sqlite3\nsqlite3.Row.keys()": {
     "2.5": {
       "'sqlite3' module": 1
     },
@@ -3228,7 +3778,7 @@
       "'ssl' module": 1
     }
   },
-  "import ssl\nssl.SSLError.library": {
+  "import ssl\nssl.SSLError.library()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3236,7 +3786,7 @@
       "'ssl.SSLError.library' member": 1
     }
   },
-  "import ssl\nssl.SSLError.reason": {
+  "import ssl\nssl.SSLError.reason()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3244,7 +3794,7 @@
       "'ssl.SSLError.reason' member": 1
     }
   },
-  "import ssl\nssl.SSLZeroReturnError": {
+  "import ssl\nssl.SSLZeroReturnError()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3252,7 +3802,7 @@
       "'ssl.SSLZeroReturnError' member": 1
     }
   },
-  "import ssl\nssl.SSLWantReadError": {
+  "import ssl\nssl.SSLWantReadError()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3260,7 +3810,7 @@
       "'ssl.SSLWantReadError' member": 1
     }
   },
-  "import ssl\nssl.SSLWantWriteError": {
+  "import ssl\nssl.SSLWantWriteError()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3268,7 +3818,7 @@
       "'ssl.SSLWantWriteError' member": 1
     }
   },
-  "import ssl\nssl.SSLSyscallError": {
+  "import ssl\nssl.SSLSyscallError()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3276,7 +3826,7 @@
       "'ssl.SSLSyscallError' member": 1
     }
   },
-  "import ssl\nssl.SSLEOFError": {
+  "import ssl\nssl.SSLEOFError()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3284,7 +3834,7 @@
       "'ssl.SSLEOFError' member": 1
     }
   },
-  "import ssl\nssl.create_default_context": {
+  "import ssl\nssl.create_default_context()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3292,7 +3842,7 @@
       "'ssl.create_default_context' member": 1
     }
   },
-  "import ssl\nssl._https_verify_certificates": {
+  "import ssl\nssl._https_verify_certificates()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3300,7 +3850,7 @@
       "'ssl._https_verify_certificates' member": 1
     }
   },
-  "import ssl\nssl.match_hostname": {
+  "import ssl\nssl.match_hostname()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3308,7 +3858,7 @@
       "'ssl.match_hostname' member": 1
     }
   },
-  "import ssl\nssl.get_default_verify_paths": {
+  "import ssl\nssl.get_default_verify_paths()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3316,7 +3866,7 @@
       "'ssl.get_default_verify_paths' member": 1
     }
   },
-  "import ssl\nssl.enum_certificates": {
+  "import ssl\nssl.enum_certificates()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3324,7 +3874,7 @@
       "'ssl.enum_certificates' member": 1
     }
   },
-  "import ssl\nssl.enum_crls": {
+  "import ssl\nssl.enum_crls()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3332,7 +3882,7 @@
       "'ssl.enum_crls' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_DEFAULT": {
+  "import ssl\nssl.VERIFY_DEFAULT()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3340,7 +3890,7 @@
       "'ssl.VERIFY_DEFAULT' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_CRL_CHECK_LEAF": {
+  "import ssl\nssl.VERIFY_CRL_CHECK_LEAF()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3348,7 +3898,7 @@
       "'ssl.VERIFY_CRL_CHECK_LEAF' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_CRL_CHECK_CHAIN": {
+  "import ssl\nssl.VERIFY_CRL_CHECK_CHAIN()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3356,7 +3906,7 @@
       "'ssl.VERIFY_CRL_CHECK_CHAIN' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_X509_STRICT": {
+  "import ssl\nssl.VERIFY_X509_STRICT()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3364,7 +3914,7 @@
       "'ssl.VERIFY_X509_STRICT' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_X509_TRUSTED_FIRST": {
+  "import ssl\nssl.VERIFY_X509_TRUSTED_FIRST()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3372,7 +3922,7 @@
       "'ssl.VERIFY_X509_TRUSTED_FIRST' member": 1
     }
   },
-  "import ssl\nssl.PROTOCOL_TLS": {
+  "import ssl\nssl.PROTOCOL_TLS()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3380,7 +3930,7 @@
       "'ssl.PROTOCOL_TLS' member": 1
     }
   },
-  "import ssl\nssl.PROTOCOL_TLSv1_1": {
+  "import ssl\nssl.PROTOCOL_TLSv1_1()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3388,7 +3938,7 @@
       "'ssl.PROTOCOL_TLSv1_1' member": 1
     }
   },
-  "import ssl\nssl.PROTOCOL_TLSv1_2": {
+  "import ssl\nssl.PROTOCOL_TLSv1_2()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3396,7 +3946,7 @@
       "'ssl.PROTOCOL_TLSv1_2' member": 1
     }
   },
-  "import ssl\nssl.OP_ALL": {
+  "import ssl\nssl.OP_ALL()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3404,7 +3954,7 @@
       "'ssl.OP_ALL' member": 1
     }
   },
-  "import ssl\nssl.OP_NO_SSLv2": {
+  "import ssl\nssl.OP_NO_SSLv2()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3412,7 +3962,7 @@
       "'ssl.OP_NO_SSLv2' member": 1
     }
   },
-  "import ssl\nssl.OP_NO_SSLv3": {
+  "import ssl\nssl.OP_NO_SSLv3()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3420,7 +3970,7 @@
       "'ssl.OP_NO_SSLv3' member": 1
     }
   },
-  "import ssl\nssl.OP_NO_TLSv1": {
+  "import ssl\nssl.OP_NO_TLSv1()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3428,7 +3978,7 @@
       "'ssl.OP_NO_TLSv1' member": 1
     }
   },
-  "import ssl\nssl.OP_NO_TLSv1_1": {
+  "import ssl\nssl.OP_NO_TLSv1_1()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3436,7 +3986,7 @@
       "'ssl.OP_NO_TLSv1_1' member": 1
     }
   },
-  "import ssl\nssl.OP_NO_TLSv1_2": {
+  "import ssl\nssl.OP_NO_TLSv1_2()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3444,7 +3994,7 @@
       "'ssl.OP_NO_TLSv1_2' member": 1
     }
   },
-  "import ssl\nssl.OP_NO_TLSv1_3": {
+  "import ssl\nssl.OP_NO_TLSv1_3()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3452,7 +4002,7 @@
       "'ssl.OP_NO_TLSv1_3' member": 1
     }
   },
-  "import ssl\nssl.OP_CIPHER_SERVER_PREFERENCE": {
+  "import ssl\nssl.OP_CIPHER_SERVER_PREFERENCE()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3460,7 +4010,7 @@
       "'ssl.OP_CIPHER_SERVER_PREFERENCE' member": 1
     }
   },
-  "import ssl\nssl.OP_SINGLE_DH_USE": {
+  "import ssl\nssl.OP_SINGLE_DH_USE()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3468,7 +4018,7 @@
       "'ssl.OP_SINGLE_DH_USE' member": 1
     }
   },
-  "import ssl\nssl.OP_SINGLE_ECDH_USE": {
+  "import ssl\nssl.OP_SINGLE_ECDH_USE()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3476,7 +4026,7 @@
       "'ssl.OP_SINGLE_ECDH_USE' member": 1
     }
   },
-  "import ssl\nssl.OP_ENABLE_MIDDLEBOX_COMPAT": {
+  "import ssl\nssl.OP_ENABLE_MIDDLEBOX_COMPAT()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3484,7 +4034,7 @@
       "'ssl.OP_ENABLE_MIDDLEBOX_COMPAT' member": 1
     }
   },
-  "import ssl\nssl.OP_NO_COMPRESSION": {
+  "import ssl\nssl.OP_NO_COMPRESSION()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3492,7 +4042,7 @@
       "'ssl.OP_NO_COMPRESSION' member": 1
     }
   },
-  "import ssl\nssl.HAS_ALPN": {
+  "import ssl\nssl.HAS_ALPN()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3500,7 +4050,7 @@
       "'ssl.HAS_ALPN' member": 1
     }
   },
-  "import ssl\nssl.HAS_ECDH": {
+  "import ssl\nssl.HAS_ECDH()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3508,7 +4058,7 @@
       "'ssl.HAS_ECDH' member": 1
     }
   },
-  "import ssl\nssl.HAS_SNI": {
+  "import ssl\nssl.HAS_SNI()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3516,7 +4066,7 @@
       "'ssl.HAS_SNI' member": 1
     }
   },
-  "import ssl\nssl.HAS_NPN": {
+  "import ssl\nssl.HAS_NPN()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3524,7 +4074,7 @@
       "'ssl.HAS_NPN' member": 1
     }
   },
-  "import ssl\nssl.HAS_TLSv1_3": {
+  "import ssl\nssl.HAS_TLSv1_3()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3532,7 +4082,7 @@
       "'ssl.HAS_TLSv1_3' member": 1
     }
   },
-  "import ssl\nssl.CHANNEL_BINDING_TYPES": {
+  "import ssl\nssl.CHANNEL_BINDING_TYPES()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3540,7 +4090,7 @@
       "'ssl.CHANNEL_BINDING_TYPES' member": 1
     }
   },
-  "import ssl\nssl.OPENSSL_VERSION": {
+  "import ssl\nssl.OPENSSL_VERSION()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3548,7 +4098,7 @@
       "'ssl.OPENSSL_VERSION' member": 1
     }
   },
-  "import ssl\nssl.OPENSSL_VERSION_INFO": {
+  "import ssl\nssl.OPENSSL_VERSION_INFO()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3556,7 +4106,7 @@
       "'ssl.OPENSSL_VERSION_INFO' member": 1
     }
   },
-  "import ssl\nssl.OPENSSL_VERSION_NUMBER": {
+  "import ssl\nssl.OPENSSL_VERSION_NUMBER()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3564,7 +4114,7 @@
       "'ssl.OPENSSL_VERSION_NUMBER' member": 1
     }
   },
-  "import ssl\nssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE": {
+  "import ssl\nssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3572,7 +4122,7 @@
       "'ssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE' member": 1
     }
   },
-  "import ssl\nssl.Purpose.SERVER_AUTH": {
+  "import ssl\nssl.Purpose.SERVER_AUTH()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3580,7 +4130,7 @@
       "'ssl.Purpose.SERVER_AUTH' member": 1
     }
   },
-  "import ssl\nssl.Purpose.CLIENT_AUTH": {
+  "import ssl\nssl.Purpose.CLIENT_AUTH()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3588,7 +4138,7 @@
       "'ssl.Purpose.CLIENT_AUTH' member": 1
     }
   },
-  "import ssl\nssl.SSLSocket.compression": {
+  "import ssl\nssl.SSLSocket.compression()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3596,7 +4146,7 @@
       "'ssl.SSLSocket.compression' member": 1
     }
   },
-  "import ssl\nssl.SSLSocket.get_channel_binding": {
+  "import ssl\nssl.SSLSocket.get_channel_binding()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3604,7 +4154,7 @@
       "'ssl.SSLSocket.get_channel_binding' member": 1
     }
   },
-  "import ssl\nssl.SSLSocket.selected_alpn_protocol": {
+  "import ssl\nssl.SSLSocket.selected_alpn_protocol()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3612,7 +4162,7 @@
       "'ssl.SSLSocket.selected_alpn_protocol' member": 1
     }
   },
-  "import ssl\nssl.SSLSocket.selected_npn_protocol": {
+  "import ssl\nssl.SSLSocket.selected_npn_protocol()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3620,7 +4170,7 @@
       "'ssl.SSLSocket.selected_npn_protocol' member": 1
     }
   },
-  "import ssl\nssl.SSLSocket.version": {
+  "import ssl\nssl.SSLSocket.version()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3628,7 +4178,7 @@
       "'ssl.SSLSocket.version' member": 1
     }
   },
-  "import ssl\nssl.SSLSocket.context": {
+  "import ssl\nssl.SSLSocket.context()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3636,7 +4186,7 @@
       "'ssl.SSLSocket.context' member": 1
     }
   },
-  "import ssl\nssl.SSLContext.set_alpn_protocols": {
+  "import ssl\nssl.SSLContext.set_alpn_protocols()": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -3649,9 +4199,6 @@
     }
   },
   "long.bit_length()": {
-    "2.0": {
-      "'long' member": 1
-    },
     "2.7": {
       "'long.bit_length' member": 1
     }
@@ -3712,9 +4259,6 @@
     }
   },
   "frozenset.isdisjoint()": {
-    "2.4": {
-      "'frozenset' member": 1
-    },
     "2.6": {
       "'frozenset.isdisjoint' member": 1
     }
@@ -3725,98 +4269,83 @@
     }
   },
   "dict.fromkeys()": {
-    "2.2": {
-      "'dict' member": 1
-    },
     "2.3": {
       "'dict.fromkeys' member": 1
     }
   },
   "dict.iteritems()": {
     "2.2": {
-      "'dict' member": 1,
       "'dict.iteritems' member": 1
     }
   },
   "dict.iterkeys()": {
     "2.2": {
-      "'dict' member": 1,
       "'dict.iterkeys' member": 1
     }
   },
   "dict.itervalues()": {
     "2.2": {
-      "'dict' member": 1,
       "'dict.itervalues' member": 1
     }
   },
   "dict.pop()": {
-    "2.2": {
-      "'dict' member": 1
-    },
     "2.3": {
       "'dict.pop' member": 1
     }
   },
   "dict.viewitems()": {
-    "2.2": {
-      "'dict' member": 1
-    },
     "2.7": {
       "'dict.viewitems' member": 1
     }
   },
   "dict.viewkeys()": {
-    "2.2": {
-      "'dict' member": 1
-    },
     "2.7": {
       "'dict.viewkeys' member": 1
     }
   },
   "dict.viewvalues()": {
-    "2.2": {
-      "'dict' member": 1
-    },
     "2.7": {
       "'dict.viewvalues' member": 1
     }
   },
   "file.next()": {
-    "2.0": {
-      "'file' member": 1
-    },
     "2.3": {
       "'file.next' member": 1
     }
   },
   "file.xreadlines()": {
-    "2.0": {
-      "'file' member": 1
-    },
     "2.1": {
       "'file.xreadlines' member": 1
     }
   },
   "file.encoding()": {
-    "2.0": {
-      "'file' member": 1
-    },
     "2.3": {
       "'file.encoding' member": 1
     }
   },
   "file.errors()": {
-    "2.0": {
-      "'file' member": 1
-    },
     "2.6": {
       "'file.errors' member": 1
     }
   },
-  "import string\nstring.rsplit": {
+  "import string\nstring.rsplit()": {
     "2.4": {
       "'string.rsplit' member": 1
+    }
+  },
+  "import string\nstring.lstrip(chars=None, chars=None)": {
+    "2.2": {
+      "'string.lstrip(chars)'": 1
+    }
+  },
+  "import string\nstring.rstrip(chars=None, chars=None)": {
+    "2.2": {
+      "'string.rstrip(chars)'": 1
+    }
+  },
+  "import string\nstring.strip(chars=None, chars=None)": {
+    "2.2": {
+      "'string.strip(chars)'": 1
     }
   },
   "import stringprep": {
@@ -3824,17 +4353,17 @@
       "'stringprep' module": 1
     }
   },
-  "import struct\nstruct.pack_into": {
+  "import struct\nstruct.pack_into()": {
     "2.5": {
       "'struct.pack_into' member": 1
     }
   },
-  "import struct\nstruct.unpack_from": {
+  "import struct\nstruct.unpack_from()": {
     "2.5": {
       "'struct.unpack_from' member": 1
     }
   },
-  "import struct\nstruct.Struct": {
+  "import struct\nstruct.Struct()": {
     "2.5": {
       "'struct.Struct' member": 1
     }
@@ -3844,7 +4373,7 @@
       "'subprocess' module": 1
     }
   },
-  "import subprocess\nsubprocess.check_call": {
+  "import subprocess\nsubprocess.check_call()": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -3852,7 +4381,7 @@
       "'subprocess.check_call' member": 1
     }
   },
-  "import subprocess\nsubprocess.check_output": {
+  "import subprocess\nsubprocess.check_output()": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -3860,7 +4389,7 @@
       "'subprocess.check_output' member": 1
     }
   },
-  "import subprocess\nsubprocess.Popen.send_signal": {
+  "import subprocess\nsubprocess.Popen.send_signal()": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -3868,7 +4397,7 @@
       "'subprocess.Popen.send_signal' member": 1
     }
   },
-  "import subprocess\nsubprocess.Popen.terminate": {
+  "import subprocess\nsubprocess.Popen.terminate()": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -3876,7 +4405,7 @@
       "'subprocess.Popen.terminate' member": 1
     }
   },
-  "import subprocess\nsubprocess.Popen.kill": {
+  "import subprocess\nsubprocess.Popen.kill()": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -3884,123 +4413,123 @@
       "'subprocess.Popen.kill' member": 1
     }
   },
-  "import sys\nsys.byteorder": {
+  "import sys\nsys.byteorder()": {
     "2.0": {
       "'sys.byteorder' member": 1
     }
   },
-  "import sys\nsys._clear_type_cache": {
+  "import sys\nsys._clear_type_cache()": {
     "2.6": {
       "'sys._clear_type_cache' member": 1
     }
   },
-  "import sys\nsys._current_frames": {
+  "import sys\nsys._current_frames()": {
     "2.5": {
       "'sys._current_frames' member": 1
     }
   },
-  "import sys\nsys.dont_write_bytecode": {
+  "import sys\nsys.dont_write_bytecode()": {
     "2.6": {
       "'sys.dont_write_bytecode' member": 1
     }
   },
-  "import sys\nsys.exc_clear": {
+  "import sys\nsys.exc_clear()": {
     "2.3": {
       "'sys.exc_clear' member": 1
     }
   },
-  "import sys\nsys.flags": {
+  "import sys\nsys.flags()": {
     "2.6": {
       "'sys.flags' member": 1
     }
   },
-  "import sys\nsys.float_info": {
+  "import sys\nsys.float_info()": {
     "2.6": {
       "'sys.float_info' member": 1
     }
   },
-  "import sys\nsys.float_repr_style": {
+  "import sys\nsys.float_repr_style()": {
     "2.7": {
       "'sys.float_repr_style' member": 1
     }
   },
-  "import sys\nsys.getcheckinterval": {
+  "import sys\nsys.getcheckinterval()": {
     "2.3": {
       "'sys.getcheckinterval' member": 1
     }
   },
-  "import sys\nsys.getdefaultencoding": {
+  "import sys\nsys.getdefaultencoding()": {
     "2.0": {
       "'sys.getdefaultencoding' member": 1
     }
   },
-  "import sys\nsys.getdlopenflags": {
+  "import sys\nsys.getdlopenflags()": {
     "2.2": {
       "'sys.getdlopenflags' member": 1
     }
   },
-  "import sys\nsys.getfilesystemencoding": {
+  "import sys\nsys.getfilesystemencoding()": {
     "2.3": {
       "'sys.getfilesystemencoding' member": 1
     }
   },
-  "import sys\nsys.getsizeof": {
+  "import sys\nsys.getsizeof()": {
     "2.6": {
       "'sys.getsizeof' member": 1
     }
   },
-  "import sys\nsys.getprofile": {
+  "import sys\nsys.getprofile()": {
     "2.6": {
       "'sys.getprofile' member": 1
     }
   },
-  "import sys\nsys.gettrace": {
+  "import sys\nsys.gettrace()": {
     "2.6": {
       "'sys.gettrace' member": 1
     }
   },
-  "import sys\nsys.getwindowsversion": {
+  "import sys\nsys.getwindowsversion()": {
     "2.3": {
       "'sys.getwindowsversion' member": 1
     }
   },
-  "import sys\nsys.hexversion": {},
-  "import sys\nsys.long_info": {
+  "import sys\nsys.hexversion()": {},
+  "import sys\nsys.long_info()": {
     "2.7": {
       "'sys.long_info' member": 1
     }
   },
-  "import sys\nsys.py3kwarning": {
+  "import sys\nsys.py3kwarning()": {
     "2.6": {
       "'sys.py3kwarning' member": 1
     }
   },
-  "import sys\nsys.setdefaultencoding": {
+  "import sys\nsys.setdefaultencoding()": {
     "2.0": {
       "'sys.setdefaultencoding' member": 1
     }
   },
-  "import sys\nsys.setdlopenflags": {
+  "import sys\nsys.setdlopenflags()": {
     "2.2": {
       "'sys.setdlopenflags' member": 1
     }
   },
-  "import sys\nsys.settscdump": {
+  "import sys\nsys.settscdump()": {
     "2.4": {
       "'sys.settscdump' member": 1
     }
   },
-  "import sys\nsys.subversion": {
+  "import sys\nsys.subversion()": {
     "2.5": {
       "'sys.subversion' member": 1
     }
   },
-  "import sys\nsys.api_version": {
+  "import sys\nsys.api_version()": {
     "2.3": {
       "'sys.api_version' member": 1
     }
   },
-  "import sys\nsys.version_info": {
+  "import sys\nsys.version_info()": {
     "2.0": {
       "'sys.version_info' member": 1
     }
@@ -4015,7 +4544,7 @@
       "'tarfile' module": 1
     }
   },
-  "import tarfile\ntarfile.HeaderError": {
+  "import tarfile\ntarfile.HeaderError()": {
     "2.3": {
       "'tarfile' module": 1
     },
@@ -4023,7 +4552,7 @@
       "'tarfile.HeaderError' member": 1
     }
   },
-  "import tarfile\nid0": {
+  "import tarfile\nid0()": {
     "2.3": {
       "'tarfile' module": 1
     },
@@ -4031,7 +4560,7 @@
       "'id0' member": 1
     }
   },
-  "import tarfile\ntarfile.TarFile.extractall": {
+  "import tarfile\ntarfile.TarFile.extractall()": {
     "2.3": {
       "'tarfile' module": 1
     },
@@ -4039,7 +4568,23 @@
       "'tarfile.TarFile.extractall' member": 1
     }
   },
-  "import tarfile\ntarfile.TarFile.pax_headers": {
+  "import tarfile\ntarfile.TarFile.add(exclude=None)": {
+    "2.3": {
+      "'tarfile' module": 1
+    },
+    "2.6": {
+      "'tarfile.TarFile.add(exclude)'": 1
+    }
+  },
+  "import tarfile\ntarfile.TarFile.add(filter=None)": {
+    "2.3": {
+      "'tarfile' module": 1
+    },
+    "2.7": {
+      "'tarfile.TarFile.add(filter)'": 1
+    }
+  },
+  "import tarfile\ntarfile.TarFile.pax_headers()": {
     "2.3": {
       "'tarfile' module": 1
     },
@@ -4047,7 +4592,7 @@
       "'tarfile.TarFile.pax_headers' member": 1
     }
   },
-  "import tarfile\ntarfile.TarInfo.fromtarfile": {
+  "import tarfile\ntarfile.TarInfo.fromtarfile()": {
     "2.3": {
       "'tarfile' module": 1
     },
@@ -4055,7 +4600,7 @@
       "'tarfile.TarInfo.fromtarfile' member": 1
     }
   },
-  "import tarfile\ntarfile.TarInfo.pax_headers": {
+  "import tarfile\ntarfile.TarInfo.pax_headers()": {
     "2.3": {
       "'tarfile' module": 1
     },
@@ -4063,73 +4608,83 @@
       "'tarfile.TarInfo.pax_headers' member": 1
     }
   },
-  "import telnetlib\ntelnetlib.Telnet.read_sb_data": {
+  "import telnetlib\ntelnetlib.Telnet(timeout=None)": {
+    "2.6": {
+      "'telnetlib.Telnet(timeout)'": 1
+    }
+  },
+  "import telnetlib\ntelnetlib.Telnet.read_sb_data()": {
     "2.3": {
       "'telnetlib.Telnet.read_sb_data' member": 1
     }
   },
-  "import tempfile\ntempfile.NamedTemporaryFile": {
+  "import telnetlib\ntelnetlib.Telnet.open(timeout=None)": {
+    "2.6": {
+      "'telnetlib.Telnet.open(timeout)'": 1
+    }
+  },
+  "import tempfile\ntempfile.NamedTemporaryFile()": {
     "2.3": {
       "'tempfile.NamedTemporaryFile' member": 1
     }
   },
-  "import tempfile\ntempfile.SpooledTemporaryFile": {
+  "import tempfile\ntempfile.SpooledTemporaryFile()": {
     "2.6": {
       "'tempfile.SpooledTemporaryFile' member": 1
     }
   },
-  "import tempfile\ntempfile.mkstemp": {
+  "import tempfile\ntempfile.mkstemp()": {
     "2.3": {
       "'tempfile.mkstemp' member": 1
     }
   },
-  "import tempfile\ntempfile.mkdtemp": {
+  "import tempfile\ntempfile.mkdtemp()": {
     "2.3": {
       "'tempfile.mkdtemp' member": 1
     }
   },
-  "import tempfile\ntempfile.gettempdir": {
+  "import tempfile\ntempfile.gettempdir()": {
     "2.3": {
       "'tempfile.gettempdir' member": 1
     }
   },
-  "import tempfile\ntempfile.gettempprefix": {},
-  "import test.support\ntest.support.check_warnings": {
+  "import tempfile\ntempfile.gettempprefix()": {},
+  "import test.support\ntest.support.check_warnings()": {
     "2.6": {
       "'test.support.check_warnings' member": 1
     }
   },
-  "import test.support\ntest.support.check_py3k_warnings": {
+  "import test.support\ntest.support.check_py3k_warnings()": {
     "2.7": {
       "'test.support.check_py3k_warnings' member": 1
     }
   },
-  "import test.support\ntest.support.captured_stdout": {
+  "import test.support\ntest.support.captured_stdout()": {
     "2.6": {
       "'test.support.captured_stdout' member": 1
     }
   },
-  "import test.support\ntest.support.import_module": {
+  "import test.support\ntest.support.import_module()": {
     "2.7": {
       "'test.support.import_module' member": 1
     }
   },
-  "import test.support\ntest.support.import_fresh_module": {
+  "import test.support\ntest.support.import_fresh_module()": {
     "2.7": {
       "'test.support.import_fresh_module' member": 1
     }
   },
-  "import test.support\ntest.support.TransientResource": {
+  "import test.support\ntest.support.TransientResource()": {
     "2.6": {
       "'test.support.TransientResource' member": 1
     }
   },
-  "import test.support\ntest.support.EnvironmentVarGuard": {
+  "import test.support\ntest.support.EnvironmentVarGuard()": {
     "2.6": {
       "'test.support.EnvironmentVarGuard' member": 1
     }
   },
-  "import test.support\ntest.support.WarningsRecorder": {
+  "import test.support\ntest.support.WarningsRecorder()": {
     "2.6": {
       "'test.support.WarningsRecorder' member": 1
     }
@@ -4139,7 +4694,7 @@
       "'textwrap' module": 1
     }
   },
-  "import textwrap\ntextwrap.TextWrapper.break_on_hyphens": {
+  "import textwrap\ntextwrap.TextWrapper.break_on_hyphens()": {
     "2.3": {
       "'textwrap' module": 1
     },
@@ -4147,57 +4702,57 @@
       "'textwrap.TextWrapper.break_on_hyphens' member": 1
     }
   },
-  "import thread\nthread.interrupt_main": {
+  "import thread\nthread.interrupt_main()": {
     "2.3": {
       "'thread.interrupt_main' member": 1
     }
   },
-  "import thread\nthread.stack_size": {
+  "import thread\nthread.stack_size()": {
     "2.5": {
       "'thread.stack_size' member": 1
     }
   },
-  "import threading\nthreading.local": {
+  "import threading\nthreading.local()": {
     "2.4": {
       "'threading.local' member": 1
     }
   },
-  "import threading\nthreading.settrace": {
+  "import threading\nthreading.settrace()": {
     "2.3": {
       "'threading.settrace' member": 1
     }
   },
-  "import threading\nthreading.setprofile": {
+  "import threading\nthreading.setprofile()": {
     "2.3": {
       "'threading.setprofile' member": 1
     }
   },
-  "import threading\nthreading.stack_size": {
+  "import threading\nthreading.stack_size()": {
     "2.5": {
       "'threading.stack_size' member": 1
     }
   },
-  "import threading\nthreading.Thread.name": {
+  "import threading\nthreading.Thread.name()": {
     "2.6": {
       "'threading.Thread.name' member": 1
     }
   },
-  "import threading\nthreading.Thread.ident": {
+  "import threading\nthreading.Thread.ident()": {
     "2.6": {
       "'threading.Thread.ident' member": 1
     }
   },
-  "import threading\nthreading.Thread.daemon": {
+  "import threading\nthreading.Thread.daemon()": {
     "2.6": {
       "'threading.Thread.daemon' member": 1
     }
   },
-  "import time\ntime.struct_time": {
+  "import time\ntime.struct_time()": {
     "2.2": {
       "'time.struct_time' member": 1
     }
   },
-  "import time\ntime.tzset": {
+  "import time\ntime.tzset()": {
     "2.3": {
       "'time.tzset' member": 1
     }
@@ -4207,7 +4762,7 @@
       "'timeit' module": 1
     }
   },
-  "import timeit\ntimeit.timeit": {
+  "import timeit\ntimeit.timeit()": {
     "2.3": {
       "'timeit' module": 1
     },
@@ -4215,7 +4770,7 @@
       "'timeit.timeit' member": 1
     }
   },
-  "import timeit\ntimeit.repeat": {
+  "import timeit\ntimeit.repeat()": {
     "2.3": {
       "'timeit' module": 1
     },
@@ -4223,7 +4778,15 @@
       "'timeit.repeat' member": 1
     }
   },
-  "import Tkinter\nTkinter.Tcl": {
+  "import Tkinter\nTkinter.Tk(useTk=None)": {
+    "2.0": {
+      "'Tkinter' module": 1
+    },
+    "2.4": {
+      "'Tkinter.Tk(useTk)'": 1
+    }
+  },
+  "import Tkinter\nTkinter.Tcl()": {
     "2.0": {
       "'Tkinter' module": 1
     },
@@ -4231,62 +4794,62 @@
       "'Tkinter.Tcl' member": 1
     }
   },
-  "import tokenize\ntokenize.generate_tokens": {
+  "import tokenize\ntokenize.generate_tokens()": {
     "2.2": {
       "'tokenize.generate_tokens' member": 1
     }
   },
-  "import tokenize\ntokenize.untokenize": {
+  "import tokenize\ntokenize.untokenize()": {
     "2.5": {
       "'tokenize.untokenize' member": 1
     }
   },
-  "import traceback\ntraceback.format_exc": {
+  "import traceback\ntraceback.format_exc()": {
     "2.4": {
       "'traceback.format_exc' member": 1
     }
   },
-  "import types\ntypes.BooleanType": {
+  "import types\ntypes.BooleanType()": {
     "2.3": {
       "'types.BooleanType' member": 1
     }
   },
-  "import types\ntypes.GeneratorType": {
+  "import types\ntypes.GeneratorType()": {
     "2.2": {
       "'types.GeneratorType' member": 1
     }
   },
-  "import types\ntypes.GetSetDescriptorType": {
+  "import types\ntypes.GetSetDescriptorType()": {
     "2.5": {
       "'types.GetSetDescriptorType' member": 1
     }
   },
-  "import types\ntypes.MemberDescriptorType": {
+  "import types\ntypes.MemberDescriptorType()": {
     "2.5": {
       "'types.MemberDescriptorType' member": 1
     }
   },
-  "import types\ntypes.StringTypes": {
+  "import types\ntypes.StringTypes()": {
     "2.2": {
       "'types.StringTypes' member": 1
     }
   },
-  "import unicodedata\nunicodedata.east_asian_width": {
+  "import unicodedata\nunicodedata.east_asian_width()": {
     "2.4": {
       "'unicodedata.east_asian_width' member": 1
     }
   },
-  "import unicodedata\nunicodedata.normalize": {
+  "import unicodedata\nunicodedata.normalize()": {
     "2.3": {
       "'unicodedata.normalize' member": 1
     }
   },
-  "import unicodedata\nunicodedata.unidata_version": {
+  "import unicodedata\nunicodedata.unidata_version()": {
     "2.3": {
       "'unicodedata.unidata_version' member": 1
     }
   },
-  "import unicodedata\nunicodedata.ucd_3_2_0": {
+  "import unicodedata\nunicodedata.ucd_3_2_0()": {
     "2.5": {
       "'unicodedata.ucd_3_2_0' member": 1
     }
@@ -4296,7 +4859,7 @@
       "'unittest' module": 1
     }
   },
-  "import unittest\nunittest.TestCase.setUpClass": {
+  "import unittest\nunittest.TestCase.setUpClass()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4304,7 +4867,7 @@
       "'unittest.TestCase.setUpClass' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.tearDownClass": {
+  "import unittest\nunittest.TestCase.tearDownClass()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4312,7 +4875,7 @@
       "'unittest.TestCase.tearDownClass' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.skipTest": {
+  "import unittest\nunittest.TestCase.skipTest()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4320,7 +4883,7 @@
       "'unittest.TestCase.skipTest' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertIs": {
+  "import unittest\nunittest.TestCase.assertIs()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4328,7 +4891,7 @@
       "'unittest.TestCase.assertIs' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertIsNone": {
+  "import unittest\nunittest.TestCase.assertIsNone()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4336,7 +4899,7 @@
       "'unittest.TestCase.assertIsNone' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertIn": {
+  "import unittest\nunittest.TestCase.assertIn()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4344,7 +4907,7 @@
       "'unittest.TestCase.assertIn' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertIsInstance": {
+  "import unittest\nunittest.TestCase.assertIsInstance()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4352,7 +4915,7 @@
       "'unittest.TestCase.assertIsInstance' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertRaisesRegexp": {
+  "import unittest\nunittest.TestCase.assertRaisesRegexp()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4360,7 +4923,7 @@
       "'unittest.TestCase.assertRaisesRegexp' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertGreater": {
+  "import unittest\nunittest.TestCase.assertGreater()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4368,7 +4931,7 @@
       "'unittest.TestCase.assertGreater' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertRegexpMatches": {
+  "import unittest\nunittest.TestCase.assertRegexpMatches()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4376,7 +4939,7 @@
       "'unittest.TestCase.assertRegexpMatches' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertNotRegexpMatches": {
+  "import unittest\nunittest.TestCase.assertNotRegexpMatches()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4384,7 +4947,7 @@
       "'unittest.TestCase.assertNotRegexpMatches' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertItemsEqual": {
+  "import unittest\nunittest.TestCase.assertItemsEqual()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4392,7 +4955,7 @@
       "'unittest.TestCase.assertItemsEqual' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertDictContainsSubset": {
+  "import unittest\nunittest.TestCase.assertDictContainsSubset()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4400,7 +4963,7 @@
       "'unittest.TestCase.assertDictContainsSubset' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.addTypeEqualityFunc": {
+  "import unittest\nunittest.TestCase.addTypeEqualityFunc()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4408,7 +4971,7 @@
       "'unittest.TestCase.addTypeEqualityFunc' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertMultiLineEqual": {
+  "import unittest\nunittest.TestCase.assertMultiLineEqual()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4416,7 +4979,7 @@
       "'unittest.TestCase.assertMultiLineEqual' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertSequenceEqual": {
+  "import unittest\nunittest.TestCase.assertSequenceEqual()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4424,7 +4987,7 @@
       "'unittest.TestCase.assertSequenceEqual' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertListEqual": {
+  "import unittest\nunittest.TestCase.assertListEqual()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4432,7 +4995,7 @@
       "'unittest.TestCase.assertListEqual' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertSetEqual": {
+  "import unittest\nunittest.TestCase.assertSetEqual()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4440,7 +5003,7 @@
       "'unittest.TestCase.assertSetEqual' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.assertDictEqual": {
+  "import unittest\nunittest.TestCase.assertDictEqual()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4448,7 +5011,7 @@
       "'unittest.TestCase.assertDictEqual' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.longMessage": {
+  "import unittest\nunittest.TestCase.longMessage()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4456,7 +5019,7 @@
       "'unittest.TestCase.longMessage' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.maxDiff": {
+  "import unittest\nunittest.TestCase.maxDiff()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4464,7 +5027,7 @@
       "'unittest.TestCase.maxDiff' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.addCleanup": {
+  "import unittest\nunittest.TestCase.addCleanup()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4472,7 +5035,7 @@
       "'unittest.TestCase.addCleanup' member": 1
     }
   },
-  "import unittest\nunittest.TestCase.doCleanups": {
+  "import unittest\nunittest.TestCase.doCleanups()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4480,7 +5043,7 @@
       "'unittest.TestCase.doCleanups' member": 1
     }
   },
-  "import unittest\nunittest.TestLoader.discover": {
+  "import unittest\nunittest.TestLoader.discover()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4488,7 +5051,7 @@
       "'unittest.TestLoader.discover' member": 1
     }
   },
-  "import unittest\nunittest.TestResult.skipped": {
+  "import unittest\nunittest.TestResult.skipped()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4496,7 +5059,7 @@
       "'unittest.TestResult.skipped' member": 1
     }
   },
-  "import unittest\nunittest.TestResult.buffer": {
+  "import unittest\nunittest.TestResult.buffer()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4504,7 +5067,7 @@
       "'unittest.TestResult.buffer' member": 1
     }
   },
-  "import unittest\nunittest.TestResult.failfast": {
+  "import unittest\nunittest.TestResult.failfast()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4512,7 +5075,7 @@
       "'unittest.TestResult.failfast' member": 1
     }
   },
-  "import unittest\nunittest.TestResult.startTestRun": {
+  "import unittest\nunittest.TestResult.startTestRun()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4520,7 +5083,7 @@
       "'unittest.TestResult.startTestRun' member": 1
     }
   },
-  "import unittest\nunittest.TestResult.stopTestRun": {
+  "import unittest\nunittest.TestResult.stopTestRun()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4528,7 +5091,19 @@
       "'unittest.TestResult.stopTestRun' member": 1
     }
   },
-  "import unittest\nunittest.installHandler": {
+  "import unittest\nunittest.main(exit=None, verbosity=None, failfast=None, catchbreak=None, buffer=None)": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.main(exit)'": 1,
+      "'unittest.main(verbosity)'": 1,
+      "'unittest.main(failfast)'": 1,
+      "'unittest.main(catchbreak)'": 1,
+      "'unittest.main(buffer)'": 1
+    }
+  },
+  "import unittest\nunittest.installHandler()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4536,7 +5111,7 @@
       "'unittest.installHandler' member": 1
     }
   },
-  "import unittest\nunittest.registerResult": {
+  "import unittest\nunittest.registerResult()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4544,7 +5119,7 @@
       "'unittest.registerResult' member": 1
     }
   },
-  "import unittest\nunittest.removeResult": {
+  "import unittest\nunittest.removeResult()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4552,7 +5127,7 @@
       "'unittest.removeResult' member": 1
     }
   },
-  "import unittest\nunittest.removeHandler": {
+  "import unittest\nunittest.removeHandler()": {
     "2.1": {
       "'unittest' module": 1
     },
@@ -4560,12 +5135,35 @@
       "'unittest.removeHandler' member": 1
     }
   },
-  "import urllib\nurllib.ContentTooShortError": {
+  "import urllib\nurllib.urlopen(context=None)": {
+    "2.7": {
+      "'urllib.urlopen(context)'": 1
+    }
+  },
+  "import urllib\nurllib.urlretrieve(context=None)": {
+    "2.7": {
+      "'urllib.urlretrieve(context)'": 1
+    }
+  },
+  "import urllib\nurllib.URLopener(context=None)": {
+    "2.7": {
+      "'urllib.URLopener(context)'": 1
+    }
+  },
+  "import urllib\nurllib.ContentTooShortError()": {
     "2.5": {
       "'urllib.ContentTooShortError' member": 1
     }
   },
-  "import urllib2\nurllib2.Request.add_unredirected_header": {
+  "import urllib2\nurllib2.urlopen(timeout=None)": {
+    "2.0": {
+      "'urllib2' module": 1
+    },
+    "2.6": {
+      "'urllib2.urlopen(timeout)'": 1
+    }
+  },
+  "import urllib2\nurllib2.Request.add_unredirected_header()": {
     "2.0": {
       "'urllib2' module": 1
     },
@@ -4573,7 +5171,7 @@
       "'urllib2.Request.add_unredirected_header' member": 1
     }
   },
-  "import urllib2\nurllib2.Request.has_header": {
+  "import urllib2\nurllib2.Request.has_header()": {
     "2.0": {
       "'urllib2' module": 1
     },
@@ -4581,7 +5179,37 @@
       "'urllib2.Request.has_header' member": 1
     }
   },
-  "import urlparse\nurlparse.urlsplit": {
+  "import urllib2\nurllib2.OpenerDirector.open(timeout=None)": {
+    "2.0": {
+      "'urllib2' module": 1
+    },
+    "2.6": {
+      "'urllib2.OpenerDirector.open(timeout)'": 1
+    }
+  },
+  "import urlparse\nurlparse.parse_qs(max_num_fields=None)": {
+    "2.0": {
+      "'urlparse' module": 1
+    },
+    "2.6": {
+      "'urlparse.parse_qs' member": 1
+    },
+    "2.7": {
+      "'urlparse.parse_qs(max_num_fields)'": 1
+    }
+  },
+  "import urlparse\nurlparse.parse_qsl(max_num_fields=None)": {
+    "2.0": {
+      "'urlparse' module": 1
+    },
+    "2.6": {
+      "'urlparse.parse_qsl' member": 1
+    },
+    "2.7": {
+      "'urlparse.parse_qsl(max_num_fields)'": 1
+    }
+  },
+  "import urlparse\nurlparse.urlsplit()": {
     "2.0": {
       "'urlparse' module": 1
     },
@@ -4589,7 +5217,7 @@
       "'urlparse.urlsplit' member": 1
     }
   },
-  "import urlparse\nurlparse.urlunsplit": {
+  "import urlparse\nurlparse.urlunsplit()": {
     "2.0": {
       "'urlparse' module": 1
     },
@@ -4597,7 +5225,7 @@
       "'urlparse.urlunsplit' member": 1
     }
   },
-  "import urlparse\nurlparse.ParseResult.geturl": {
+  "import urlparse\nurlparse.ParseResult.geturl()": {
     "2.0": {
       "'urlparse' module": 1
     },
@@ -4615,7 +5243,15 @@
       "'warnings' module": 1
     }
   },
-  "import warnings\nwarnings.warnpy3k": {
+  "import warnings\nwarnings.warn_explicit(module_globals=None)": {
+    "2.1": {
+      "'warnings' module": 1
+    },
+    "2.5": {
+      "'warnings.warn_explicit(module_globals)'": 1
+    }
+  },
+  "import warnings\nwarnings.warnpy3k()": {
     "2.1": {
       "'warnings' module": 1
     },
@@ -4623,7 +5259,15 @@
       "'warnings.warnpy3k' member": 1
     }
   },
-  "import warnings\nwarnings.catch_warnings": {
+  "import warnings\nwarnings.formatwarning(line=None)": {
+    "2.1": {
+      "'warnings' module": 1
+    },
+    "2.6": {
+      "'warnings.formatwarning(line)'": 1
+    }
+  },
+  "import warnings\nwarnings.catch_warnings()": {
     "2.1": {
       "'warnings' module": 1
     },
@@ -4636,7 +5280,7 @@
       "'weakref' module": 1
     }
   },
-  "import weakref\nweakref.WeakKeyDictionary.iterkeyrefs": {
+  "import weakref\nweakref.WeakKeyDictionary.iterkeyrefs()": {
     "2.1": {
       "'weakref' module": 1
     },
@@ -4644,7 +5288,7 @@
       "'weakref.WeakKeyDictionary.iterkeyrefs' member": 1
     }
   },
-  "import weakref\nweakref.WeakKeyDictionary.keyrefs": {
+  "import weakref\nweakref.WeakKeyDictionary.keyrefs()": {
     "2.1": {
       "'weakref' module": 1
     },
@@ -4652,7 +5296,7 @@
       "'weakref.WeakKeyDictionary.keyrefs' member": 1
     }
   },
-  "import weakref\nweakref.WeakValueDictionary.itervaluerefs": {
+  "import weakref\nweakref.WeakValueDictionary.itervaluerefs()": {
     "2.1": {
       "'weakref' module": 1
     },
@@ -4660,7 +5304,7 @@
       "'weakref.WeakValueDictionary.itervaluerefs' member": 1
     }
   },
-  "import weakref\nweakref.WeakValueDictionary.valuerefs": {
+  "import weakref\nweakref.WeakValueDictionary.valuerefs()": {
     "2.1": {
       "'weakref' module": 1
     },
@@ -4668,7 +5312,7 @@
       "'weakref.WeakValueDictionary.valuerefs' member": 1
     }
   },
-  "import weakref\nweakref.WeakSet": {
+  "import weakref\nweakref.WeakSet()": {
     "2.1": {
       "'weakref' module": 1
     },
@@ -4676,19 +5320,19 @@
       "'weakref.WeakSet' member": 1
     }
   },
-  "import webbrowser\nwebbrowser.open_new_tab": {
+  "import webbrowser\nwebbrowser.open_new_tab()": {
     "2.5": {
       "'webbrowser.open_new_tab' member": 1
     }
   },
-  "import webbrowser\nwebbrowser.controller.open_new_tab": {
+  "import webbrowser\nwebbrowser.controller.open_new_tab()": {
     "2.5": {
       "'webbrowser.controller.open_new_tab' member": 1
     }
   },
   "import winsound": {},
-  "import winsound\nwinsound.Beep": {},
-  "import winsound\nwinsound.MessageBeep": {
+  "import winsound\nwinsound.Beep()": {},
+  "import winsound\nwinsound.MessageBeep()": {
     "2.3": {
       "'winsound.MessageBeep' member": 1
     }
@@ -4703,27 +5347,27 @@
       "'xml.dom' module": 1
     }
   },
-  "import xml.dom\nxml.dom.EMPTY_NAMESPACE": {
+  "import xml.dom\nxml.dom.EMPTY_NAMESPACE()": {
     "2.2": {
       "'xml.dom.EMPTY_NAMESPACE' member": 1
     }
   },
-  "import xml.dom\nxml.dom.XML_NAMESPACE": {
+  "import xml.dom\nxml.dom.XML_NAMESPACE()": {
     "2.2": {
       "'xml.dom.XML_NAMESPACE' member": 1
     }
   },
-  "import xml.dom\nxml.dom.XMLNS_NAMESPACE": {
+  "import xml.dom\nxml.dom.XMLNS_NAMESPACE()": {
     "2.2": {
       "'xml.dom.XMLNS_NAMESPACE' member": 1
     }
   },
-  "import xml.dom\nxml.dom.XHTML_NAMESPACE": {
+  "import xml.dom\nxml.dom.XHTML_NAMESPACE()": {
     "2.2": {
       "'xml.dom.XHTML_NAMESPACE' member": 1
     }
   },
-  "import xml.dom\nxml.dom.Node.normalize": {
+  "import xml.dom\nxml.dom.Node.normalize()": {
     "2.1": {
       "'xml.dom.Node.normalize' member": 1
     }
@@ -4733,7 +5377,7 @@
       "'xml.dom.minidom' module": 1
     }
   },
-  "import xml.dom.minidom\nxml.dom.minidom.Node.toprettyxml": {
+  "import xml.dom.minidom\nxml.dom.minidom.Node.toprettyxml()": {
     "2.1": {
       "'xml.dom.minidom.Node.toprettyxml' member": 1
     }
@@ -4748,7 +5392,7 @@
       "'xml.etree.elementtree' module": 1
     }
   },
-  "import xml.etree.ElementTree\nxml.etree.ElementTree.fromstringlist": {
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.fromstringlist()": {
     "2.5": {
       "'xml.etree.ElementTree' module": 1
     },
@@ -4756,7 +5400,7 @@
       "'xml.etree.ElementTree.fromstringlist' member": 1
     }
   },
-  "import xml.etree.ElementTree\nxml.etree.ElementTree.register_namespace": {
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.register_namespace()": {
     "2.5": {
       "'xml.etree.ElementTree' module": 1
     },
@@ -4764,7 +5408,7 @@
       "'xml.etree.ElementTree.register_namespace' member": 1
     }
   },
-  "import xml.etree.ElementTree\nxml.etree.ElementTree.tostringlist": {
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.tostringlist()": {
     "2.5": {
       "'xml.etree.ElementTree' module": 1
     },
@@ -4772,7 +5416,7 @@
       "'xml.etree.ElementTree.tostringlist' member": 1
     }
   },
-  "import xml.etree.ElementTree\nxml.etree.ElementTree.Element.extend": {
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.Element.extend()": {
     "2.5": {
       "'xml.etree.ElementTree' module": 1
     },
@@ -4780,7 +5424,7 @@
       "'xml.etree.ElementTree.Element.extend' member": 1
     }
   },
-  "import xml.etree.ElementTree\nxml.etree.ElementTree.Element.iter": {
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.Element.iter()": {
     "2.5": {
       "'xml.etree.ElementTree' module": 1
     },
@@ -4788,7 +5432,7 @@
       "'xml.etree.ElementTree.Element.iter' member": 1
     }
   },
-  "import xml.etree.ElementTree\nxml.etree.ElementTree.Element.iterfind": {
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.Element.iterfind()": {
     "2.5": {
       "'xml.etree.ElementTree' module": 1
     },
@@ -4796,7 +5440,7 @@
       "'xml.etree.ElementTree.Element.iterfind' member": 1
     }
   },
-  "import xml.etree.ElementTree\nxml.etree.ElementTree.Element.itertext": {
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.Element.itertext()": {
     "2.5": {
       "'xml.etree.ElementTree' module": 1
     },
@@ -4804,7 +5448,7 @@
       "'xml.etree.ElementTree.Element.itertext' member": 1
     }
   },
-  "import xml.etree.ElementTree\nxml.etree.ElementTree.ElementTree.iterfind": {
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.ElementTree.iterfind()": {
     "2.5": {
       "'xml.etree.ElementTree' module": 1
     },
@@ -4812,7 +5456,7 @@
       "'xml.etree.ElementTree.ElementTree.iterfind' member": 1
     }
   },
-  "import xml.etree.ElementTree\nxml.etree.ElementTree.TreeBuilder.doctype": {
+  "import xml.etree.ElementTree\nxml.etree.ElementTree.TreeBuilder.doctype()": {
     "2.5": {
       "'xml.etree.ElementTree' module": 1
     },
@@ -4840,33 +5484,57 @@
       "'xml.sax.saxutils' module": 1
     }
   },
-  "import xml.sax.saxutils\nxml.sax.saxutils.unescape": {
+  "import xml.sax.saxutils\nxml.sax.saxutils.unescape()": {
     "2.3": {
       "'xml.sax.saxutils.unescape' member": 1
     }
   },
-  "import xml.sax.saxutils\nxml.sax.saxutils.quoteattr": {
+  "import xml.sax.saxutils\nxml.sax.saxutils.quoteattr()": {
     "2.2": {
       "'xml.sax.saxutils.quoteattr' member": 1
     }
   },
+  "import xmlrpclib\nxmlrpclib.ServerProxy(use_datetime=None)": {
+    "2.2": {
+      "'xmlrpclib' module": 1
+    },
+    "2.5": {
+      "'xmlrpclib.ServerProxy(use_datetime)'": 1
+    }
+  },
+  "import xmlrpclib\nxmlrpclib.ServerProxy(context=None)": {
+    "2.2": {
+      "'xmlrpclib' module": 1
+    },
+    "2.7": {
+      "'xmlrpclib.ServerProxy(context)'": 1
+    }
+  },
+  "import xmlrpclib\nxmlrpclib.loads(use_datetime=None)": {
+    "2.2": {
+      "'xmlrpclib' module": 1
+    },
+    "2.5": {
+      "'xmlrpclib.loads(use_datetime)'": 1
+    }
+  },
   "import zipfile": {},
-  "import zipfile\nzipfile.ZipFile.open": {
+  "import zipfile\nzipfile.ZipFile.open()": {
     "2.6": {
       "'zipfile.ZipFile.open' member": 1
     }
   },
-  "import zipfile\nzipfile.ZipFile.extract": {
+  "import zipfile\nzipfile.ZipFile.extract()": {
     "2.6": {
       "'zipfile.ZipFile.extract' member": 1
     }
   },
-  "import zipfile\nzipfile.ZipFile.extractall": {
+  "import zipfile\nzipfile.ZipFile.extractall()": {
     "2.6": {
       "'zipfile.ZipFile.extractall' member": 1
     }
   },
-  "import zipfile\nzipfile.ZipFile.setpassword": {
+  "import zipfile\nzipfile.ZipFile.setpassword()": {
     "2.6": {
       "'zipfile.ZipFile.setpassword' member": 1
     }
@@ -4876,7 +5544,7 @@
       "'zipimport' module": 1
     }
   },
-  "import zipimport\nzipimport.zipimporter": {
+  "import zipimport\nzipimport.zipimporter()": {
     "2.3": {
       "'zipimport' module": 1
     },
@@ -4884,17 +5552,17 @@
       "'zipimport.zipimporter' member": 1
     }
   },
-  "import zlib\nzlib.Compress.copy": {
+  "import zlib\nzlib.Compress.copy()": {
     "2.5": {
       "'zlib.Compress.copy' member": 1
     }
   },
-  "import zlib\nzlib.Decompress.copy": {
+  "import zlib\nzlib.Decompress.copy()": {
     "2.5": {
       "'zlib.Decompress.copy' member": 1
     }
   },
-  "import _winreg\nwinreg.ExpandEnvironmentStrings": {
+  "import _winreg\nwinreg.ExpandEnvironmentStrings()": {
     "2.0": {
       "'_winreg' module": 1
     },
@@ -4902,7 +5570,7 @@
       "'winreg.ExpandEnvironmentStrings' member": 1
     }
   },
-  "import _winreg\nwinreg.PyHKEY.__enter__": {
+  "import _winreg\nwinreg.PyHKEY.__enter__()": {
     "2.0": {
       "'_winreg' module": 1
     },
