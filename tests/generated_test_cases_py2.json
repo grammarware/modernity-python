@@ -124,7 +124,13 @@
       "'cmath.isnan' member": 1
     }
   },
-  "import cmd\ncmd.Cmd(stdin=None, stdout=None)": {
+  "import cmd\ncmd.Cmd(stdin=None)": {
+    "2.3": {
+      "'cmd.Cmd(stdin)'": 1,
+      "'cmd.Cmd(stdout)'": 1
+    }
+  },
+  "import cmd\ncmd.Cmd(stdout=None)": {
     "2.3": {
       "'cmd.Cmd(stdin)'": 1,
       "'cmd.Cmd(stdout)'": 1
@@ -469,7 +475,16 @@
       "'ctypes' module": 1
     }
   },
-  "import ctypes\nctypes.CFUNCTYPE(use_errno=None, use_last_error=None)": {
+  "import ctypes\nctypes.CFUNCTYPE(use_errno=None)": {
+    "2.5": {
+      "'ctypes' module": 1
+    },
+    "2.6": {
+      "'ctypes.CFUNCTYPE(use_errno)'": 1,
+      "'ctypes.CFUNCTYPE(use_last_error)'": 1
+    }
+  },
+  "import ctypes\nctypes.CFUNCTYPE(use_last_error=None)": {
     "2.5": {
       "'ctypes' module": 1
     },
@@ -970,7 +985,21 @@
       "'doctest.testmod(optionflags)'": 1
     }
   },
-  "import doctest\ndoctest.testmod(extraglobs=None, raise_on_error=None, exclude_empty=None)": {
+  "import doctest\ndoctest.testmod(extraglobs=None)": {
+    "2.4": {
+      "'doctest.testmod(extraglobs)'": 1,
+      "'doctest.testmod(raise_on_error)'": 1,
+      "'doctest.testmod(exclude_empty)'": 1
+    }
+  },
+  "import doctest\ndoctest.testmod(raise_on_error=None)": {
+    "2.4": {
+      "'doctest.testmod(extraglobs)'": 1,
+      "'doctest.testmod(raise_on_error)'": 1,
+      "'doctest.testmod(exclude_empty)'": 1
+    }
+  },
+  "import doctest\ndoctest.testmod(exclude_empty=None)": {
     "2.4": {
       "'doctest.testmod(extraglobs)'": 1,
       "'doctest.testmod(raise_on_error)'": 1,
@@ -995,7 +1024,72 @@
       "'doctest.DocTestSuite' member": 1
     }
   },
-  "import doctest\ndoctest.DocTestSuite(globs=None, extraglobs=None, test_finder=None, setUp=None, tearDown=None, optionflags=None)": {
+  "import doctest\ndoctest.DocTestSuite(globs=None)": {
+    "2.3": {
+      "'doctest.DocTestSuite' member": 1
+    },
+    "2.4": {
+      "'doctest.DocTestSuite(globs)'": 1,
+      "'doctest.DocTestSuite(extraglobs)'": 1,
+      "'doctest.DocTestSuite(test_finder)'": 1,
+      "'doctest.DocTestSuite(setUp)'": 1,
+      "'doctest.DocTestSuite(tearDown)'": 1,
+      "'doctest.DocTestSuite(optionflags)'": 1
+    }
+  },
+  "import doctest\ndoctest.DocTestSuite(extraglobs=None)": {
+    "2.3": {
+      "'doctest.DocTestSuite' member": 1
+    },
+    "2.4": {
+      "'doctest.DocTestSuite(globs)'": 1,
+      "'doctest.DocTestSuite(extraglobs)'": 1,
+      "'doctest.DocTestSuite(test_finder)'": 1,
+      "'doctest.DocTestSuite(setUp)'": 1,
+      "'doctest.DocTestSuite(tearDown)'": 1,
+      "'doctest.DocTestSuite(optionflags)'": 1
+    }
+  },
+  "import doctest\ndoctest.DocTestSuite(test_finder=None)": {
+    "2.3": {
+      "'doctest.DocTestSuite' member": 1
+    },
+    "2.4": {
+      "'doctest.DocTestSuite(globs)'": 1,
+      "'doctest.DocTestSuite(extraglobs)'": 1,
+      "'doctest.DocTestSuite(test_finder)'": 1,
+      "'doctest.DocTestSuite(setUp)'": 1,
+      "'doctest.DocTestSuite(tearDown)'": 1,
+      "'doctest.DocTestSuite(optionflags)'": 1
+    }
+  },
+  "import doctest\ndoctest.DocTestSuite(setUp=None)": {
+    "2.3": {
+      "'doctest.DocTestSuite' member": 1
+    },
+    "2.4": {
+      "'doctest.DocTestSuite(globs)'": 1,
+      "'doctest.DocTestSuite(extraglobs)'": 1,
+      "'doctest.DocTestSuite(test_finder)'": 1,
+      "'doctest.DocTestSuite(setUp)'": 1,
+      "'doctest.DocTestSuite(tearDown)'": 1,
+      "'doctest.DocTestSuite(optionflags)'": 1
+    }
+  },
+  "import doctest\ndoctest.DocTestSuite(tearDown=None)": {
+    "2.3": {
+      "'doctest.DocTestSuite' member": 1
+    },
+    "2.4": {
+      "'doctest.DocTestSuite(globs)'": 1,
+      "'doctest.DocTestSuite(extraglobs)'": 1,
+      "'doctest.DocTestSuite(test_finder)'": 1,
+      "'doctest.DocTestSuite(setUp)'": 1,
+      "'doctest.DocTestSuite(tearDown)'": 1,
+      "'doctest.DocTestSuite(optionflags)'": 1
+    }
+  },
+  "import doctest\ndoctest.DocTestSuite(optionflags=None)": {
     "2.3": {
       "'doctest.DocTestSuite' member": 1
     },
@@ -1291,7 +1385,13 @@
       "'exceptions.BytesWarning' member": 1
     }
   },
-  "import fileinput\nfileinput.input(mode=None, openhook=None)": {
+  "import fileinput\nfileinput.input(mode=None)": {
+    "2.5": {
+      "'fileinput.input(mode)'": 1,
+      "'fileinput.input(openhook)'": 1
+    }
+  },
+  "import fileinput\nfileinput.input(openhook=None)": {
     "2.5": {
       "'fileinput.input(mode)'": 1,
       "'fileinput.input(openhook)'": 1
@@ -1302,7 +1402,13 @@
       "'fileinput.fileno' member": 1
     }
   },
-  "import fileinput\nfileinput.FileInput(mode=None, openhook=None)": {
+  "import fileinput\nfileinput.FileInput(mode=None)": {
+    "2.5": {
+      "'fileinput.FileInput(mode)'": 1,
+      "'fileinput.FileInput(openhook)'": 1
+    }
+  },
+  "import fileinput\nfileinput.FileInput(openhook=None)": {
     "2.5": {
       "'fileinput.FileInput(mode)'": 1,
       "'fileinput.FileInput(openhook)'": 1
@@ -1402,7 +1508,13 @@
       "'classmethod' member": 1
     }
   },
-  "compile(flags=None, dont_inherit=None)": {
+  "compile(flags=None)": {
+    "2.3": {
+      "'compile(flags)'": 1,
+      "'compile(dont_inherit)'": 1
+    }
+  },
+  "compile(dont_inherit=None)": {
     "2.3": {
       "'compile(flags)'": 1,
       "'compile(dont_inherit)'": 1
@@ -1877,7 +1989,7 @@
       "'httplib.HTTPSConnection(source_address)'": 1
     }
   },
-  "import httplib\nhttplib.HTTPSConnection(context=None, context=None)": {
+  "import httplib\nhttplib.HTTPSConnection(context=None)": {
     "2.0": {
       "'httplib.HTTPSConnection' member": 1
     },
@@ -2321,7 +2433,16 @@
       "'logging.Logger.getChild' member": 1
     }
   },
-  "import logging\nlogging.Logger.makeRecord(func=None, extra=None)": {
+  "import logging\nlogging.Logger.makeRecord(func=None)": {
+    "2.3": {
+      "'logging' module": 1
+    },
+    "2.5": {
+      "'logging.Logger.makeRecord(func)'": 1,
+      "'logging.Logger.makeRecord(extra)'": 1
+    }
+  },
+  "import logging\nlogging.Logger.makeRecord(extra=None)": {
     "2.3": {
       "'logging' module": 1
     },
@@ -2359,7 +2480,13 @@
       "'logging.handlers.RotatingFileHandler(delay)'": 1
     }
   },
-  "import logging.handlers\nlogging.handlers.TimedRotatingFileHandler(delay=None, utc=None)": {
+  "import logging.handlers\nlogging.handlers.TimedRotatingFileHandler(delay=None)": {
+    "2.6": {
+      "'logging.handlers.TimedRotatingFileHandler(delay)'": 1,
+      "'logging.handlers.TimedRotatingFileHandler(utc)'": 1
+    }
+  },
+  "import logging.handlers\nlogging.handlers.TimedRotatingFileHandler(utc=None)": {
     "2.6": {
       "'logging.handlers.TimedRotatingFileHandler(delay)'": 1,
       "'logging.handlers.TimedRotatingFileHandler(utc)'": 1
@@ -3088,14 +3215,42 @@
       "'poplib.POP3_SSL' member": 1
     }
   },
-  "import pprint\npprint.pformat(indent=None, width=None, depth=None)": {
+  "import pprint\npprint.pformat(indent=None)": {
     "2.4": {
       "'pprint.pformat(indent)'": 1,
       "'pprint.pformat(width)'": 1,
       "'pprint.pformat(depth)'": 1
     }
   },
-  "import pprint\npprint.pprint(indent=None, width=None, depth=None)": {
+  "import pprint\npprint.pformat(width=None)": {
+    "2.4": {
+      "'pprint.pformat(indent)'": 1,
+      "'pprint.pformat(width)'": 1,
+      "'pprint.pformat(depth)'": 1
+    }
+  },
+  "import pprint\npprint.pformat(depth=None)": {
+    "2.4": {
+      "'pprint.pformat(indent)'": 1,
+      "'pprint.pformat(width)'": 1,
+      "'pprint.pformat(depth)'": 1
+    }
+  },
+  "import pprint\npprint.pprint(indent=None)": {
+    "2.4": {
+      "'pprint.pprint(indent)'": 1,
+      "'pprint.pprint(width)'": 1,
+      "'pprint.pprint(depth)'": 1
+    }
+  },
+  "import pprint\npprint.pprint(width=None)": {
+    "2.4": {
+      "'pprint.pprint(indent)'": 1,
+      "'pprint.pprint(width)'": 1,
+      "'pprint.pprint(depth)'": 1
+    }
+  },
+  "import pprint\npprint.pprint(depth=None)": {
     "2.4": {
       "'pprint.pprint(indent)'": 1,
       "'pprint.pprint(width)'": 1,
@@ -3488,7 +3643,16 @@
       "'signal.siginterrupt' member": 1
     }
   },
-  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCServer(allow_none=None, encoding=None)": {
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCServer(allow_none=None)": {
+    "2.2": {
+      "'SimpleXMLRPCServer' module": 1
+    },
+    "2.5": {
+      "'SimpleXMLRPCServer.SimpleXMLRPCServer(allow_none)'": 1,
+      "'SimpleXMLRPCServer.SimpleXMLRPCServer(encoding)'": 1
+    }
+  },
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCServer(encoding=None)": {
     "2.2": {
       "'SimpleXMLRPCServer' module": 1
     },
@@ -3513,7 +3677,19 @@
       "'SimpleXMLRPCServer.CGIXMLRPCRequestHandler' member": 1
     }
   },
-  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.CGIXMLRPCRequestHandler(allow_none=None, encoding=None)": {
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.CGIXMLRPCRequestHandler(allow_none=None)": {
+    "2.2": {
+      "'SimpleXMLRPCServer' module": 1
+    },
+    "2.3": {
+      "'SimpleXMLRPCServer.CGIXMLRPCRequestHandler' member": 1
+    },
+    "2.5": {
+      "'SimpleXMLRPCServer.CGIXMLRPCRequestHandler(allow_none)'": 1,
+      "'SimpleXMLRPCServer.CGIXMLRPCRequestHandler(encoding)'": 1
+    }
+  },
+  "import SimpleXMLRPCServer\nSimpleXMLRPCServer.CGIXMLRPCRequestHandler(encoding=None)": {
     "2.2": {
       "'SimpleXMLRPCServer' module": 1
     },
@@ -4333,17 +4509,17 @@
       "'string.rsplit' member": 1
     }
   },
-  "import string\nstring.lstrip(chars=None, chars=None)": {
+  "import string\nstring.lstrip(chars=None)": {
     "2.2": {
       "'string.lstrip(chars)'": 1
     }
   },
-  "import string\nstring.rstrip(chars=None, chars=None)": {
+  "import string\nstring.rstrip(chars=None)": {
     "2.2": {
       "'string.rstrip(chars)'": 1
     }
   },
-  "import string\nstring.strip(chars=None, chars=None)": {
+  "import string\nstring.strip(chars=None)": {
     "2.2": {
       "'string.strip(chars)'": 1
     }
@@ -5091,7 +5267,55 @@
       "'unittest.TestResult.stopTestRun' member": 1
     }
   },
-  "import unittest\nunittest.main(exit=None, verbosity=None, failfast=None, catchbreak=None, buffer=None)": {
+  "import unittest\nunittest.main(exit=None)": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.main(exit)'": 1,
+      "'unittest.main(verbosity)'": 1,
+      "'unittest.main(failfast)'": 1,
+      "'unittest.main(catchbreak)'": 1,
+      "'unittest.main(buffer)'": 1
+    }
+  },
+  "import unittest\nunittest.main(verbosity=None)": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.main(exit)'": 1,
+      "'unittest.main(verbosity)'": 1,
+      "'unittest.main(failfast)'": 1,
+      "'unittest.main(catchbreak)'": 1,
+      "'unittest.main(buffer)'": 1
+    }
+  },
+  "import unittest\nunittest.main(failfast=None)": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.main(exit)'": 1,
+      "'unittest.main(verbosity)'": 1,
+      "'unittest.main(failfast)'": 1,
+      "'unittest.main(catchbreak)'": 1,
+      "'unittest.main(buffer)'": 1
+    }
+  },
+  "import unittest\nunittest.main(catchbreak=None)": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.main(exit)'": 1,
+      "'unittest.main(verbosity)'": 1,
+      "'unittest.main(failfast)'": 1,
+      "'unittest.main(catchbreak)'": 1,
+      "'unittest.main(buffer)'": 1
+    }
+  },
+  "import unittest\nunittest.main(buffer=None)": {
     "2.1": {
       "'unittest' module": 1
     },

@@ -37,15 +37,16 @@ def generate_test_cases(outdir: str, doctree_file: Path) -> dict[str, Features]:
         # TODO handle version if it is a tuple
         if isinstance(version, str):
             try:
-                new_test_case = handle_versionmodified(version, node)
-                if not new_test_case:
+                new_test_cases = handle_versionmodified(version, node)
+                if not new_test_cases:
                     # TODO Handle cases it does not find anything
                     continue
 
-                code, expected = new_test_case
-                normalize_expected(expected)
-                # Only update, if test_code was not a test_case yet
-                test_cases.setdefault(code, dict(expected))
+                for new_test_case in new_test_cases:
+                    code, expected = new_test_case
+                    normalize_expected(expected)
+                    # Only update, if test_code was not a test_case yet
+                    test_cases.setdefault(code, dict(expected))
 
             except Exception as e:
                 # TODO fix all errors; and code that did not result in a testcase
@@ -77,7 +78,7 @@ def new_parameters_from_node(node: sphinx.addnodes.versionmodified):
         print()
 
 
-def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) -> tuple[str, Features] | None:
+def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) -> list[tuple[str, Features]] | None:
     # Vermin does not detect deprecation, so skip these nodes
     if node.get('type') == 'deprecated':
         return
@@ -107,7 +108,9 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
                 import_stmt = f"import {module}\n" if module else ''
                 prev_features = get_features_from_test_code(f"{import_stmt}{prev_ids}")
 
-                return f"{import_stmt}{ids}()", combine_features(prev_features, {version: {f"'{ids}' member": 1}})
+                return [(
+                    f"{import_stmt}{ids}()", combine_features(prev_features, {version: {f"'{ids}' member": 1}})
+                )]
 
         else:
             # Thing changed, check if new parameters were added
@@ -120,20 +123,18 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
             if not new_parameters:
                 return
 
-            # The value assigned to the named parameter does not matter
-            # (technically you good also grab the default parameter value from desc_signature)
-            parameters = ', '.join(f"{param}=None" for param in new_parameters)
-            # TODO Generate separate test cases for each parameter, else combine 2 and 3 test cases may clash
-
             module = desc_signature.get('module')
             ids = desc_signature.get('ids')[0]
             import_stmt = f"import {module}\n" if module else ''
             prev_features = get_features_from_test_code(f"{import_stmt}{ids}()")
 
-            return (
-                f"{import_stmt}{ids}({parameters})",
-                combine_features(prev_features, {version: {f"'{ids}({p})'": 1 for p in new_parameters}})
-            )
+            # The value assigned to the named parameter does not matter
+            # (technically you good also grab the default parameter value from desc_signature)
+            # Generate separate test cases for each parameter, else combine 2 and 3 test cases may clash
+            return [(
+                f"{import_stmt}{ids}({new_parameter}=None)",
+                combine_features(prev_features, {version: {f"'{ids}({new_parameter})'": 1}})
+            ) for new_parameter in new_parameters]
 
     if isinstance(document := node.parent.parent, sphinx.addnodes.document):
         section = document.next_node(docutils.nodes.section)
@@ -148,7 +149,9 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
 
                 # TODO Currently only AST module has two versionmodified nodes, take first one
 
-                return f"import {module_name}", Features(Features, {version: {f"'{module_name}' module": 1}})
+                return [(
+                    f"import {module_name}", Features(Features, {version: {f"'{module_name}' module": 1}})
+                )]
 
 
 def build_finished(app: Sphinx, _):
