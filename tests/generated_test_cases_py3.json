@@ -9577,19 +9577,19 @@
       "'zoneinfo' module": 1
     }
   },
-  "import _thread\nthread.get_native_id()": {
+  "import _thread\n_thread.get_native_id()": {
     "3.8": {
-      "'thread.get_native_id' member": 1
+      "'_thread.get_native_id' member": 1
     }
   },
-  "import _thread\nthread.TIMEOUT_MAX()": {
+  "import _thread\n_thread.TIMEOUT_MAX()": {
     "3.2": {
-      "'thread.TIMEOUT_MAX' member": 1
+      "'_thread.TIMEOUT_MAX' member": 1
     }
   },
-  "import _thread\nthread.lock.acquire(timeout=None)": {
+  "import _thread\n_thread.lock.acquire(timeout=None)": {
     "3.2": {
-      "'thread.lock.acquire(timeout)'": 1
+      "'_thread.lock.acquire(timeout)'": 1
     }
   }
 }

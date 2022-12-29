@@ -97,7 +97,7 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
             # These nodes should have only 1 (inline) element in their paragraph?
             if len(description.children) == 1:
                 module = desc_signature.get('module')
-                ids = desc_signature.get('ids')[0]
+                ids = desc_signature.get('ids')[-1]
                 prev_ids = ids.rsplit('.', maxsplit=1)[0]
 
                 import_stmt = f"import {module}\n" if module else ''
@@ -120,7 +120,7 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
                 return
 
             module = desc_signature.get('module')
-            ids = desc_signature.get('ids')[0]
+            ids = desc_signature.get('ids')[-1]
             import_stmt = f"import {module}\n" if module else ''
             prev_features = get_features_from_test_code(f"{import_stmt}{ids}()")
 
