@@ -11,6 +11,11 @@ from tests.test_utils import test_code, get_test_cases, TEST_CASES_FILE_PY2, TES
 # Changelogs itself don't always include all changes from the whole documentation, as it turns out
 
 
+OVERWRITTEN_TEST_CASES = {
+    # Not 'nicely' documented for python 2.7
+    'int.bit_length()': {'2.7': {"'int.bit_length' member": 1}, '3.1': {"'int.bit_length' member": 1}}
+}
+
 # https://docs.python.org/3/whatsnew/3.9.html
 PYTHON_3_9 = {
     # PEP 0584
@@ -90,10 +95,12 @@ class TestFeatures(unittest.TestCase):
         self.assertEqual(sub2.wait(), 0)
         self.assertEqual(sub3.wait(), 0)
 
-        # Now test the test-cases, in alphabetic order
+        test_cases = get_test_cases() | OVERWRITTEN_TEST_CASES
+
+        # Now test the test-cases (in alphabetic order)
+
         # TODO Run subTest for each module
-        for code, expected in sorted(get_test_cases().items()):
-            # TODO Normalize expected first: remove python 1.x.x and 2.0, and generalize x.y.z to x.y
+        for code, expected in sorted(test_cases.items()):
             test_code(self, code, expected)
 
         # TODO Make test to ensure all modules are covered (all non-submodules: sys.stdlib_module_names)
