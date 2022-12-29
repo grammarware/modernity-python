@@ -68,13 +68,11 @@
   },
   "import array\narray.array.index(start=None)": {
     "3.10": {
-      "'array.array.index(start)'": 1,
-      "'array.array.index(stop)'": 1
+      "'array.array.index(start)'": 1
     }
   },
   "import array\narray.array.index(stop=None)": {
     "3.10": {
-      "'array.array.index(start)'": 1,
       "'array.array.index(stop)'": 1
     }
   },
@@ -187,8 +185,7 @@
       "'asyncio' module": 1
     },
     "3.8": {
-      "'asyncio.loop.create_connection(happy_eyeballs_delay)'": 1,
-      "'asyncio.loop.create_connection(interleave)'": 1
+      "'asyncio.loop.create_connection(happy_eyeballs_delay)'": 1
     }
   },
   "import asyncio\nasyncio.loop.create_connection(interleave=None)": {
@@ -196,7 +193,6 @@
       "'asyncio' module": 1
     },
     "3.8": {
-      "'asyncio.loop.create_connection(happy_eyeballs_delay)'": 1,
       "'asyncio.loop.create_connection(interleave)'": 1
     }
   },
@@ -297,8 +293,7 @@
       "'asyncio' module": 1
     },
     "3.7": {
-      "'asyncio.loop.create_unix_connection(ssl_handshake_timeout)'": 1,
-      "'asyncio.loop.create_unix_connection(path)'": 1
+      "'asyncio.loop.create_unix_connection(ssl_handshake_timeout)'": 1
     }
   },
   "import asyncio\nasyncio.loop.create_unix_connection(path=None)": {
@@ -306,7 +301,6 @@
       "'asyncio' module": 1
     },
     "3.7": {
-      "'asyncio.loop.create_unix_connection(ssl_handshake_timeout)'": 1,
       "'asyncio.loop.create_unix_connection(path)'": 1
     }
   },
@@ -323,8 +317,7 @@
       "'asyncio' module": 1
     },
     "3.6": {
-      "'asyncio.loop.create_server(ssl_handshake_timeout)'": 1,
-      "'asyncio.loop.create_server(start_serving)'": 1
+      "'asyncio.loop.create_server(ssl_handshake_timeout)'": 1
     }
   },
   "import asyncio\nasyncio.loop.create_server(start_serving=None)": {
@@ -332,7 +325,6 @@
       "'asyncio' module": 1
     },
     "3.6": {
-      "'asyncio.loop.create_server(ssl_handshake_timeout)'": 1,
       "'asyncio.loop.create_server(start_serving)'": 1
     }
   },
@@ -349,9 +341,7 @@
       "'asyncio' module": 1
     },
     "3.7": {
-      "'asyncio.loop.create_unix_server(ssl_handshake_timeout)'": 1,
-      "'asyncio.loop.create_unix_server(start_serving)'": 1,
-      "'asyncio.loop.create_unix_server(path)'": 1
+      "'asyncio.loop.create_unix_server(ssl_handshake_timeout)'": 1
     }
   },
   "import asyncio\nasyncio.loop.create_unix_server(start_serving=None)": {
@@ -359,9 +349,7 @@
       "'asyncio' module": 1
     },
     "3.7": {
-      "'asyncio.loop.create_unix_server(ssl_handshake_timeout)'": 1,
-      "'asyncio.loop.create_unix_server(start_serving)'": 1,
-      "'asyncio.loop.create_unix_server(path)'": 1
+      "'asyncio.loop.create_unix_server(start_serving)'": 1
     }
   },
   "import asyncio\nasyncio.loop.create_unix_server(path=None)": {
@@ -369,8 +357,6 @@
       "'asyncio' module": 1
     },
     "3.7": {
-      "'asyncio.loop.create_unix_server(ssl_handshake_timeout)'": 1,
-      "'asyncio.loop.create_unix_server(start_serving)'": 1,
       "'asyncio.loop.create_unix_server(path)'": 1
     }
   },
@@ -642,8 +628,7 @@
       "'asyncio' module": 1
     },
     "3.7": {
-      "'asyncio.start_server(ssl_handshake_timeout)'": 1,
-      "'asyncio.start_server(start_serving)'": 1
+      "'asyncio.start_server(ssl_handshake_timeout)'": 1
     }
   },
   "import asyncio\nasyncio.start_server(start_serving=None)": {
@@ -651,7 +636,6 @@
       "'asyncio' module": 1
     },
     "3.7": {
-      "'asyncio.start_server(ssl_handshake_timeout)'": 1,
       "'asyncio.start_server(start_serving)'": 1
     }
   },
@@ -660,8 +644,7 @@
       "'asyncio' module": 1
     },
     "3.7": {
-      "'asyncio.open_unix_connection(ssl_handshake_timeout)'": 1,
-      "'asyncio.open_unix_connection(path)'": 1
+      "'asyncio.open_unix_connection(ssl_handshake_timeout)'": 1
     }
   },
   "import asyncio\nasyncio.open_unix_connection(path=None)": {
@@ -669,7 +652,6 @@
       "'asyncio' module": 1
     },
     "3.7": {
-      "'asyncio.open_unix_connection(ssl_handshake_timeout)'": 1,
       "'asyncio.open_unix_connection(path)'": 1
     }
   },
@@ -678,9 +660,7 @@
       "'asyncio' module": 1
     },
     "3.7": {
-      "'asyncio.start_unix_server(ssl_handshake_timeout)'": 1,
-      "'asyncio.start_unix_server(start_serving)'": 1,
-      "'asyncio.start_unix_server(path)'": 1
+      "'asyncio.start_unix_server(ssl_handshake_timeout)'": 1
     }
   },
   "import asyncio\nasyncio.start_unix_server(start_serving=None)": {
@@ -688,9 +668,7 @@
       "'asyncio' module": 1
     },
     "3.7": {
-      "'asyncio.start_unix_server(ssl_handshake_timeout)'": 1,
-      "'asyncio.start_unix_server(start_serving)'": 1,
-      "'asyncio.start_unix_server(path)'": 1
+      "'asyncio.start_unix_server(start_serving)'": 1
     }
   },
   "import asyncio\nasyncio.start_unix_server(path=None)": {
@@ -698,8 +676,6 @@
       "'asyncio' module": 1
     },
     "3.7": {
-      "'asyncio.start_unix_server(ssl_handshake_timeout)'": 1,
-      "'asyncio.start_unix_server(start_serving)'": 1,
       "'asyncio.start_unix_server(path)'": 1
     }
   },
@@ -962,13 +938,11 @@
   },
   "import binascii\nbinascii.b2a_hex(sep=None)": {
     "3.8": {
-      "'binascii.b2a_hex(sep)'": 1,
-      "'binascii.b2a_hex(bytes_per_sep)'": 1
+      "'binascii.b2a_hex(sep)'": 1
     }
   },
   "import binascii\nbinascii.b2a_hex(bytes_per_sep=None)": {
     "3.8": {
-      "'binascii.b2a_hex(sep)'": 1,
       "'binascii.b2a_hex(bytes_per_sep)'": 1
     }
   },
@@ -1110,13 +1084,11 @@
   },
   "import cgi\ncgi.parse_multipart(encoding=None)": {
     "3.7": {
-      "'cgi.parse_multipart(encoding)'": 1,
-      "'cgi.parse_multipart(errors)'": 1
+      "'cgi.parse_multipart(encoding)'": 1
     }
   },
   "import cgi\ncgi.parse_multipart(errors=None)": {
     "3.7": {
-      "'cgi.parse_multipart(encoding)'": 1,
       "'cgi.parse_multipart(errors)'": 1
     }
   },
@@ -1391,13 +1363,11 @@
   },
   "import compileall\ncompileall.compile_dir(legacy=None)": {
     "3.2": {
-      "'compileall.compile_dir(legacy)'": 1,
-      "'compileall.compile_dir(optimize)'": 1
+      "'compileall.compile_dir(legacy)'": 1
     }
   },
   "import compileall\ncompileall.compile_dir(optimize=None)": {
     "3.2": {
-      "'compileall.compile_dir(legacy)'": 1,
       "'compileall.compile_dir(optimize)'": 1
     }
   },
@@ -1413,46 +1383,26 @@
   },
   "import compileall\ncompileall.compile_dir(stripdir=None)": {
     "3.9": {
-      "'compileall.compile_dir(stripdir)'": 1,
-      "'compileall.compile_dir(prependdir)'": 1,
-      "'compileall.compile_dir(limit_sl_dest)'": 1,
-      "'compileall.compile_dir(hardlink_dupes)'": 1,
-      "'compileall.compile_dir(maxlevels)'": 1
+      "'compileall.compile_dir(stripdir)'": 1
     }
   },
   "import compileall\ncompileall.compile_dir(prependdir=None)": {
     "3.9": {
-      "'compileall.compile_dir(stripdir)'": 1,
-      "'compileall.compile_dir(prependdir)'": 1,
-      "'compileall.compile_dir(limit_sl_dest)'": 1,
-      "'compileall.compile_dir(hardlink_dupes)'": 1,
-      "'compileall.compile_dir(maxlevels)'": 1
+      "'compileall.compile_dir(prependdir)'": 1
     }
   },
   "import compileall\ncompileall.compile_dir(limit_sl_dest=None)": {
     "3.9": {
-      "'compileall.compile_dir(stripdir)'": 1,
-      "'compileall.compile_dir(prependdir)'": 1,
-      "'compileall.compile_dir(limit_sl_dest)'": 1,
-      "'compileall.compile_dir(hardlink_dupes)'": 1,
-      "'compileall.compile_dir(maxlevels)'": 1
+      "'compileall.compile_dir(limit_sl_dest)'": 1
     }
   },
   "import compileall\ncompileall.compile_dir(hardlink_dupes=None)": {
     "3.9": {
-      "'compileall.compile_dir(stripdir)'": 1,
-      "'compileall.compile_dir(prependdir)'": 1,
-      "'compileall.compile_dir(limit_sl_dest)'": 1,
-      "'compileall.compile_dir(hardlink_dupes)'": 1,
-      "'compileall.compile_dir(maxlevels)'": 1
+      "'compileall.compile_dir(hardlink_dupes)'": 1
     }
   },
   "import compileall\ncompileall.compile_dir(maxlevels=None)": {
     "3.9": {
-      "'compileall.compile_dir(stripdir)'": 1,
-      "'compileall.compile_dir(prependdir)'": 1,
-      "'compileall.compile_dir(limit_sl_dest)'": 1,
-      "'compileall.compile_dir(hardlink_dupes)'": 1,
       "'compileall.compile_dir(maxlevels)'": 1
     }
   },
@@ -1480,10 +1430,7 @@
       "'compileall.compile_file' member": 1
     },
     "3.9": {
-      "'compileall.compile_file(stripdir)'": 1,
-      "'compileall.compile_file(prependdir)'": 1,
-      "'compileall.compile_file(limit_sl_dest)'": 1,
-      "'compileall.compile_file(hardlink_dupes)'": 1
+      "'compileall.compile_file(stripdir)'": 1
     }
   },
   "import compileall\ncompileall.compile_file(prependdir=None)": {
@@ -1494,10 +1441,7 @@
       "'compileall.compile_file' member": 1
     },
     "3.9": {
-      "'compileall.compile_file(stripdir)'": 1,
-      "'compileall.compile_file(prependdir)'": 1,
-      "'compileall.compile_file(limit_sl_dest)'": 1,
-      "'compileall.compile_file(hardlink_dupes)'": 1
+      "'compileall.compile_file(prependdir)'": 1
     }
   },
   "import compileall\ncompileall.compile_file(limit_sl_dest=None)": {
@@ -1508,10 +1452,7 @@
       "'compileall.compile_file' member": 1
     },
     "3.9": {
-      "'compileall.compile_file(stripdir)'": 1,
-      "'compileall.compile_file(prependdir)'": 1,
-      "'compileall.compile_file(limit_sl_dest)'": 1,
-      "'compileall.compile_file(hardlink_dupes)'": 1
+      "'compileall.compile_file(limit_sl_dest)'": 1
     }
   },
   "import compileall\ncompileall.compile_file(hardlink_dupes=None)": {
@@ -1522,21 +1463,16 @@
       "'compileall.compile_file' member": 1
     },
     "3.9": {
-      "'compileall.compile_file(stripdir)'": 1,
-      "'compileall.compile_file(prependdir)'": 1,
-      "'compileall.compile_file(limit_sl_dest)'": 1,
       "'compileall.compile_file(hardlink_dupes)'": 1
     }
   },
   "import compileall\ncompileall.compile_path(legacy=None)": {
     "3.2": {
-      "'compileall.compile_path(legacy)'": 1,
-      "'compileall.compile_path(optimize)'": 1
+      "'compileall.compile_path(legacy)'": 1
     }
   },
   "import compileall\ncompileall.compile_path(optimize=None)": {
     "3.2": {
-      "'compileall.compile_path(legacy)'": 1,
       "'compileall.compile_path(optimize)'": 1
     }
   },
@@ -1563,8 +1499,7 @@
       "'concurrent.futures' module": 1
     },
     "3.7": {
-      "'concurrent.futures.ThreadPoolExecutor(initializer)'": 1,
-      "'concurrent.futures.ThreadPoolExecutor(initargs)'": 1
+      "'concurrent.futures.ThreadPoolExecutor(initializer)'": 1
     }
   },
   "import concurrent.futures\nconcurrent.futures.ThreadPoolExecutor(initargs=None)": {
@@ -1572,7 +1507,6 @@
       "'concurrent.futures' module": 1
     },
     "3.7": {
-      "'concurrent.futures.ThreadPoolExecutor(initializer)'": 1,
       "'concurrent.futures.ThreadPoolExecutor(initargs)'": 1
     }
   },
@@ -1581,9 +1515,7 @@
       "'concurrent.futures' module": 1
     },
     "3.7": {
-      "'concurrent.futures.ProcessPoolExecutor(mp_context)'": 1,
-      "'concurrent.futures.ProcessPoolExecutor(initializer)'": 1,
-      "'concurrent.futures.ProcessPoolExecutor(initargs)'": 1
+      "'concurrent.futures.ProcessPoolExecutor(mp_context)'": 1
     }
   },
   "import concurrent.futures\nconcurrent.futures.ProcessPoolExecutor(initializer=None)": {
@@ -1591,9 +1523,7 @@
       "'concurrent.futures' module": 1
     },
     "3.7": {
-      "'concurrent.futures.ProcessPoolExecutor(mp_context)'": 1,
-      "'concurrent.futures.ProcessPoolExecutor(initializer)'": 1,
-      "'concurrent.futures.ProcessPoolExecutor(initargs)'": 1
+      "'concurrent.futures.ProcessPoolExecutor(initializer)'": 1
     }
   },
   "import concurrent.futures\nconcurrent.futures.ProcessPoolExecutor(initargs=None)": {
@@ -1601,8 +1531,6 @@
       "'concurrent.futures' module": 1
     },
     "3.7": {
-      "'concurrent.futures.ProcessPoolExecutor(mp_context)'": 1,
-      "'concurrent.futures.ProcessPoolExecutor(initializer)'": 1,
       "'concurrent.futures.ProcessPoolExecutor(initargs)'": 1
     }
   },
@@ -2582,13 +2510,11 @@
   },
   "import glob\nglob.glob(root_dir=None)": {
     "3.10": {
-      "'glob.glob(root_dir)'": 1,
-      "'glob.glob(dir_fd)'": 1
+      "'glob.glob(root_dir)'": 1
     }
   },
   "import glob\nglob.glob(dir_fd=None)": {
     "3.10": {
-      "'glob.glob(root_dir)'": 1,
       "'glob.glob(dir_fd)'": 1
     }
   },
@@ -2602,8 +2528,7 @@
       "'glob.iglob' member": 1
     },
     "3.10": {
-      "'glob.iglob(root_dir)'": 1,
-      "'glob.iglob(dir_fd)'": 1
+      "'glob.iglob(root_dir)'": 1
     }
   },
   "import glob\nglob.iglob(dir_fd=None)": {
@@ -2611,7 +2536,6 @@
       "'glob.iglob' member": 1
     },
     "3.10": {
-      "'glob.iglob(root_dir)'": 1,
       "'glob.iglob(dir_fd)'": 1
     }
   },
@@ -2710,8 +2634,7 @@
       "'heapq.merge' member": 1
     },
     "3.5": {
-      "'heapq.merge(key)'": 1,
-      "'heapq.merge(reverse)'": 1
+      "'heapq.merge(key)'": 1
     }
   },
   "import heapq\nheapq.merge(reverse=None)": {
@@ -2722,7 +2645,6 @@
       "'heapq.merge' member": 1
     },
     "3.5": {
-      "'heapq.merge(key)'": 1,
       "'heapq.merge(reverse)'": 1
     }
   },
@@ -3101,8 +3023,7 @@
       "'importlib.util.cache_from_source' member": 1
     },
     "3.5": {
-      "'importlib.util.cache_from_source(optimization)'": 1,
-      "'importlib.util.cache_from_source(debug_override)'": 1
+      "'importlib.util.cache_from_source(optimization)'": 1
     }
   },
   "import importlib.util\nimportlib.util.cache_from_source(debug_override=None)": {
@@ -3110,7 +3031,6 @@
       "'importlib.util.cache_from_source' member": 1
     },
     "3.5": {
-      "'importlib.util.cache_from_source(optimization)'": 1,
       "'importlib.util.cache_from_source(debug_override)'": 1
     }
   },
@@ -3717,9 +3637,7 @@
       "'logging' module": 1
     },
     "3.3": {
-      "'logging.basicConfig(handlers)'": 1,
-      "'logging.basicConfig(stream)'": 1,
-      "'logging.basicConfig(filename)'": 1
+      "'logging.basicConfig(handlers)'": 1
     }
   },
   "import logging\nlogging.basicConfig(stream=None)": {
@@ -3727,9 +3645,7 @@
       "'logging' module": 1
     },
     "3.3": {
-      "'logging.basicConfig(handlers)'": 1,
-      "'logging.basicConfig(stream)'": 1,
-      "'logging.basicConfig(filename)'": 1
+      "'logging.basicConfig(stream)'": 1
     }
   },
   "import logging\nlogging.basicConfig(filename=None)": {
@@ -3737,8 +3653,6 @@
       "'logging' module": 1
     },
     "3.3": {
-      "'logging.basicConfig(handlers)'": 1,
-      "'logging.basicConfig(stream)'": 1,
       "'logging.basicConfig(filename)'": 1
     }
   },
@@ -3755,8 +3669,7 @@
       "'logging' module": 1
     },
     "3.9": {
-      "'logging.basicConfig(encoding)'": 1,
-      "'logging.basicConfig(errors)'": 1
+      "'logging.basicConfig(encoding)'": 1
     }
   },
   "import logging\nlogging.basicConfig(errors=None)": {
@@ -3764,7 +3677,6 @@
       "'logging' module": 1
     },
     "3.9": {
-      "'logging.basicConfig(encoding)'": 1,
       "'logging.basicConfig(errors)'": 1
     }
   },
@@ -4431,22 +4343,16 @@
   },
   "import os\nos.access(dir_fd=None)": {
     "3.3": {
-      "'os.access(dir_fd)'": 1,
-      "'os.access(effective_ids)'": 1,
-      "'os.access(follow_symlinks)'": 1
+      "'os.access(dir_fd)'": 1
     }
   },
   "import os\nos.access(effective_ids=None)": {
     "3.3": {
-      "'os.access(dir_fd)'": 1,
-      "'os.access(effective_ids)'": 1,
-      "'os.access(follow_symlinks)'": 1
+      "'os.access(effective_ids)'": 1
     }
   },
   "import os\nos.access(follow_symlinks=None)": {
     "3.3": {
-      "'os.access(dir_fd)'": 1,
-      "'os.access(effective_ids)'": 1,
       "'os.access(follow_symlinks)'": 1
     }
   },
@@ -4575,22 +4481,16 @@
   },
   "import os\nos.startfile(arguments=None)": {
     "3.10": {
-      "'os.startfile(arguments)'": 1,
-      "'os.startfile(cwd)'": 1,
-      "'os.startfile(show_cmd)'": 1
+      "'os.startfile(arguments)'": 1
     }
   },
   "import os\nos.startfile(cwd=None)": {
     "3.10": {
-      "'os.startfile(arguments)'": 1,
-      "'os.startfile(cwd)'": 1,
-      "'os.startfile(show_cmd)'": 1
+      "'os.startfile(cwd)'": 1
     }
   },
   "import os\nos.startfile(show_cmd=None)": {
     "3.10": {
-      "'os.startfile(arguments)'": 1,
-      "'os.startfile(cwd)'": 1,
       "'os.startfile(show_cmd)'": 1
     }
   },
@@ -5289,22 +5189,16 @@
   },
   "import shutil\nshutil.copytree(copy_function=None)": {
     "3.2": {
-      "'shutil.copytree(copy_function)'": 1,
-      "'shutil.copytree(ignore_dangling_symlinks)'": 1,
-      "'shutil.copytree(symlinks)'": 1
+      "'shutil.copytree(copy_function)'": 1
     }
   },
   "import shutil\nshutil.copytree(ignore_dangling_symlinks=None)": {
     "3.2": {
-      "'shutil.copytree(copy_function)'": 1,
-      "'shutil.copytree(ignore_dangling_symlinks)'": 1,
-      "'shutil.copytree(symlinks)'": 1
+      "'shutil.copytree(ignore_dangling_symlinks)'": 1
     }
   },
   "import shutil\nshutil.copytree(symlinks=None)": {
     "3.2": {
-      "'shutil.copytree(copy_function)'": 1,
-      "'shutil.copytree(ignore_dangling_symlinks)'": 1,
       "'shutil.copytree(symlinks)'": 1
     }
   },
@@ -5453,13 +5347,11 @@
   },
   "import smtpd\nsmtpd.SMTPChannel(decode_data=None)": {
     "3.5": {
-      "'smtpd.SMTPChannel(decode_data)'": 1,
-      "'smtpd.SMTPChannel(enable_SMTPUTF8)'": 1
+      "'smtpd.SMTPChannel(decode_data)'": 1
     }
   },
   "import smtpd\nsmtpd.SMTPChannel(enable_SMTPUTF8=None)": {
     "3.5": {
-      "'smtpd.SMTPChannel(decode_data)'": 1,
       "'smtpd.SMTPChannel(enable_SMTPUTF8)'": 1
     }
   },
@@ -7097,8 +6989,7 @@
       "'subprocess.run' member": 1
     },
     "3.6": {
-      "'subprocess.run(encoding)'": 1,
-      "'subprocess.run(errors)'": 1
+      "'subprocess.run(encoding)'": 1
     }
   },
   "import subprocess\nsubprocess.run(errors=None)": {
@@ -7109,7 +7000,6 @@
       "'subprocess.run' member": 1
     },
     "3.6": {
-      "'subprocess.run(encoding)'": 1,
       "'subprocess.run(errors)'": 1
     }
   },
@@ -7121,9 +7011,7 @@
       "'subprocess.run' member": 1
     },
     "3.7": {
-      "'subprocess.run(text)'": 1,
-      "'subprocess.run(universal_newlines)'": 1,
-      "'subprocess.run(capture_output)'": 1
+      "'subprocess.run(text)'": 1
     }
   },
   "import subprocess\nsubprocess.run(universal_newlines=None)": {
@@ -7134,9 +7022,7 @@
       "'subprocess.run' member": 1
     },
     "3.7": {
-      "'subprocess.run(text)'": 1,
-      "'subprocess.run(universal_newlines)'": 1,
-      "'subprocess.run(capture_output)'": 1
+      "'subprocess.run(universal_newlines)'": 1
     }
   },
   "import subprocess\nsubprocess.run(capture_output=None)": {
@@ -7147,8 +7033,6 @@
       "'subprocess.run' member": 1
     },
     "3.7": {
-      "'subprocess.run(text)'": 1,
-      "'subprocess.run(universal_newlines)'": 1,
       "'subprocess.run(capture_output)'": 1
     }
   },
@@ -7192,8 +7076,7 @@
       "'subprocess.TimeoutExpired' member": 1
     },
     "3.5": {
-      "'subprocess.TimeoutExpired(stdout)'": 1,
-      "'subprocess.TimeoutExpired(stderr)'": 1
+      "'subprocess.TimeoutExpired(stdout)'": 1
     }
   },
   "import subprocess\nsubprocess.TimeoutExpired(stderr=None)": {
@@ -7204,7 +7087,6 @@
       "'subprocess.TimeoutExpired' member": 1
     },
     "3.5": {
-      "'subprocess.TimeoutExpired(stdout)'": 1,
       "'subprocess.TimeoutExpired(stderr)'": 1
     }
   },
@@ -7213,8 +7095,7 @@
       "'subprocess' module": 1
     },
     "3.5": {
-      "'subprocess.CalledProcessError(stdout)'": 1,
-      "'subprocess.CalledProcessError(stderr)'": 1
+      "'subprocess.CalledProcessError(stdout)'": 1
     }
   },
   "import subprocess\nsubprocess.CalledProcessError(stderr=None)": {
@@ -7222,7 +7103,6 @@
       "'subprocess' module": 1
     },
     "3.5": {
-      "'subprocess.CalledProcessError(stdout)'": 1,
       "'subprocess.CalledProcessError(stderr)'": 1
     }
   },
@@ -8993,11 +8873,7 @@
       "'unittest' module": 1
     },
     "3.2": {
-      "'unittest.main(verbosity)'": 1,
-      "'unittest.main(failfast)'": 1,
-      "'unittest.main(catchbreak)'": 1,
-      "'unittest.main(buffer)'": 1,
-      "'unittest.main(warnings)'": 1
+      "'unittest.main(verbosity)'": 1
     }
   },
   "import unittest\nunittest.main(failfast=None)": {
@@ -9005,11 +8881,7 @@
       "'unittest' module": 1
     },
     "3.2": {
-      "'unittest.main(verbosity)'": 1,
-      "'unittest.main(failfast)'": 1,
-      "'unittest.main(catchbreak)'": 1,
-      "'unittest.main(buffer)'": 1,
-      "'unittest.main(warnings)'": 1
+      "'unittest.main(failfast)'": 1
     }
   },
   "import unittest\nunittest.main(catchbreak=None)": {
@@ -9017,11 +8889,7 @@
       "'unittest' module": 1
     },
     "3.2": {
-      "'unittest.main(verbosity)'": 1,
-      "'unittest.main(failfast)'": 1,
-      "'unittest.main(catchbreak)'": 1,
-      "'unittest.main(buffer)'": 1,
-      "'unittest.main(warnings)'": 1
+      "'unittest.main(catchbreak)'": 1
     }
   },
   "import unittest\nunittest.main(buffer=None)": {
@@ -9029,11 +8897,7 @@
       "'unittest' module": 1
     },
     "3.2": {
-      "'unittest.main(verbosity)'": 1,
-      "'unittest.main(failfast)'": 1,
-      "'unittest.main(catchbreak)'": 1,
-      "'unittest.main(buffer)'": 1,
-      "'unittest.main(warnings)'": 1
+      "'unittest.main(buffer)'": 1
     }
   },
   "import unittest\nunittest.main(warnings=None)": {
@@ -9041,10 +8905,6 @@
       "'unittest' module": 1
     },
     "3.2": {
-      "'unittest.main(verbosity)'": 1,
-      "'unittest.main(failfast)'": 1,
-      "'unittest.main(catchbreak)'": 1,
-      "'unittest.main(buffer)'": 1,
       "'unittest.main(warnings)'": 1
     }
   },
@@ -9188,13 +9048,11 @@
   },
   "import urllib.request\nurllib.request.urlopen(cafile=None)": {
     "3.2": {
-      "'urllib.request.urlopen(cafile)'": 1,
-      "'urllib.request.urlopen(capath)'": 1
+      "'urllib.request.urlopen(cafile)'": 1
     }
   },
   "import urllib.request\nurllib.request.urlopen(capath=None)": {
     "3.2": {
-      "'urllib.request.urlopen(cafile)'": 1,
       "'urllib.request.urlopen(capath)'": 1
     }
   },
@@ -9215,13 +9073,11 @@
   },
   "import urllib.request\nurllib.request.HTTPSHandler(context=None)": {
     "3.2": {
-      "'urllib.request.HTTPSHandler(context)'": 1,
-      "'urllib.request.HTTPSHandler(check_hostname)'": 1
+      "'urllib.request.HTTPSHandler(context)'": 1
     }
   },
   "import urllib.request\nurllib.request.HTTPSHandler(check_hostname=None)": {
     "3.2": {
-      "'urllib.request.HTTPSHandler(context)'": 1,
       "'urllib.request.HTTPSHandler(check_hostname)'": 1
     }
   },
@@ -9321,10 +9177,7 @@
       "'warnings.catch_warnings' member": 1
     },
     "3.11": {
-      "'warnings.catch_warnings(action)'": 1,
-      "'warnings.catch_warnings(category)'": 1,
-      "'warnings.catch_warnings(lineno)'": 1,
-      "'warnings.catch_warnings(append)'": 1
+      "'warnings.catch_warnings(action)'": 1
     }
   },
   "import warnings\nwarnings.catch_warnings(category=None)": {
@@ -9335,10 +9188,7 @@
       "'warnings.catch_warnings' member": 1
     },
     "3.11": {
-      "'warnings.catch_warnings(action)'": 1,
-      "'warnings.catch_warnings(category)'": 1,
-      "'warnings.catch_warnings(lineno)'": 1,
-      "'warnings.catch_warnings(append)'": 1
+      "'warnings.catch_warnings(category)'": 1
     }
   },
   "import warnings\nwarnings.catch_warnings(lineno=None)": {
@@ -9349,10 +9199,7 @@
       "'warnings.catch_warnings' member": 1
     },
     "3.11": {
-      "'warnings.catch_warnings(action)'": 1,
-      "'warnings.catch_warnings(category)'": 1,
-      "'warnings.catch_warnings(lineno)'": 1,
-      "'warnings.catch_warnings(append)'": 1
+      "'warnings.catch_warnings(lineno)'": 1
     }
   },
   "import warnings\nwarnings.catch_warnings(append=None)": {
@@ -9363,9 +9210,6 @@
       "'warnings.catch_warnings' member": 1
     },
     "3.11": {
-      "'warnings.catch_warnings(action)'": 1,
-      "'warnings.catch_warnings(category)'": 1,
-      "'warnings.catch_warnings(lineno)'": 1,
       "'warnings.catch_warnings(append)'": 1
     }
   },

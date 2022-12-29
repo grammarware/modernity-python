@@ -61,12 +61,13 @@ def get_test_cases() -> dict[str, Features]:
 
 
 def combine_features(features0: Features, features1: Features) -> Features:
+    new_features = Features(Features, features0)
     for version, version_features in features1.items():
         for name in version_features.keys():
             # Don't actually increase the count, since you will count 'double' then
-            features0[version][name] = 1
+            new_features[version][name] = 1
 
-    return features0
+    return new_features
 
 
 def normalize_expected(expected: Features) -> None:
