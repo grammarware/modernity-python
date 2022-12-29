@@ -61,7 +61,7 @@ def generate_test_cases(outdir: str, doctree_file: Path) -> dict[str, Features]:
     return test_cases
 
 
-def new_parameters_from_node(node: sphinx.addnodes.versionmodified):
+def new_parameters_from_node(node: sphinx.addnodes.versionmodified) -> list[str] | None:
     # Parameter names are stored in emphasis nodes
     emphasises = [param.astext() for param in node.traverse(docutils.nodes.emphasis)]
     if not emphasises:
@@ -72,10 +72,6 @@ def new_parameters_from_node(node: sphinx.addnodes.versionmodified):
 
     if HAS_NEW_PARAMETER.match(text):
         return emphasises
-    else:
-        print(repr(''.join(n.astext() for n in node[0][1:]).replace('\n', ' ')))
-        print(repr(text))
-        print()
 
 
 def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) -> list[tuple[str, Features]] | None:
@@ -104,10 +100,10 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
                 ids = desc_signature.get('ids')[0]
                 prev_ids = ids.rsplit('.', maxsplit=1)[0]
 
-                # TODO Maybe there are also constants?
                 import_stmt = f"import {module}\n" if module else ''
                 prev_features = get_features_from_test_code(f"{import_stmt}{prev_ids}")
 
+                # It does not matter for detection if we call something that cannot be called
                 return [(
                     f"{import_stmt}{ids}()", combine_features(prev_features, {version: {f"'{ids}' member": 1}})
                 )]
