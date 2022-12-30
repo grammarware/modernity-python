@@ -18,7 +18,7 @@ HAS_NEW_PARAMETER = re.compile(
     r"((the )?((optional|keyword-only|keyword) )?((parameter|flag|argument)s?) ((was|were) )?added)|"
     r"((added|introduced) (support for )?(the )?((optional|keyword-only|keyword) )?((parameter|flag|argument)s?))|"
     r"(^(was|were|attributes) added$)|"
-    r"(^added support for$)|"
+    r"(^added( support for)?$)|"
     r"(^the parameter is new$)",
     re.IGNORECASE
 )
