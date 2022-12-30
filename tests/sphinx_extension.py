@@ -15,13 +15,16 @@ from tests.test_utils import get_features_from_test_code, combine_features, save
 
 # Python documentation is not consistent in when a new parameter has been added...
 HAS_NEW_PARAMETER = re.compile(
-    r"((the )?((optional|keyword-only|keyword) )?((parameter|flag|argument)s?) ((was|were) )?added)|"
-    r"((added|introduced) (support for )?(the )?((optional|keyword-only|keyword) )?((parameter|flag|argument)s?))|"
+    r"((the )?((optional|keyword-only|keyword) )?((parameter|flag|argument|option)s?) ((was|were|is|are|has been) )?added)|"
+    r"((added|introduced) (support for )?(the )?((optional|keyword-only|keyword) )?((parameter|flag|argument|option)s?))|"
     r"(^(was|were|attributes) added$)|"
     r"(^added( the support| support for)?$)|"
+    r"(^add(ed)? the (keyword|parameter)$)|"
+    r"(^added parameters?$)|"
     r"(^(support for )?(the )?arguments?$)|"
-    r"(^new (optional )?arguments?$)|"
-    r"(^the parameter is new$)",
+    r"(^the keyword-only argument$)|"
+    r"(^new (optional |required |keyword )?(argument|parameter)s?$)|"
+    r"(^the parameter( is new)?$)",
     re.IGNORECASE
 )
 
