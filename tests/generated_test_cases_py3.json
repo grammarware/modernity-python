@@ -4535,6 +4535,11 @@
       "'os.copy_file_range' member": 1
     }
   },
+  "import os\nos.dup2(inheritable=None)": {
+    "3.4": {
+      "'os.dup2(inheritable)'": 1
+    }
+  },
   "import os\nos.get_blocking()": {
     "3.5": {
       "'os.get_blocking' member": 1
@@ -9819,6 +9824,22 @@
       "'urllib.error.HTTPError.headers' member": 1
     }
   },
+  "import urllib.parse\nurllib.parse.parse_qs(encoding=None)": {
+    "3.0": {
+      "'urllib.parse' module": 1
+    },
+    "3.2": {
+      "'urllib.parse.parse_qs(encoding)'": 1
+    }
+  },
+  "import urllib.parse\nurllib.parse.parse_qs(errors=None)": {
+    "3.0": {
+      "'urllib.parse' module": 1
+    },
+    "3.2": {
+      "'urllib.parse.parse_qs(errors)'": 1
+    }
+  },
   "import urllib.parse\nurllib.parse.parse_qs(max_num_fields=None)": {
     "3.0": {
       "'urllib.parse' module": 1
@@ -9833,6 +9854,22 @@
     },
     "3.10": {
       "'urllib.parse.parse_qs(separator)'": 1
+    }
+  },
+  "import urllib.parse\nurllib.parse.parse_qsl(encoding=None)": {
+    "3.0": {
+      "'urllib.parse' module": 1
+    },
+    "3.2": {
+      "'urllib.parse.parse_qsl(encoding)'": 1
+    }
+  },
+  "import urllib.parse\nurllib.parse.parse_qsl(errors=None)": {
+    "3.0": {
+      "'urllib.parse' module": 1
+    },
+    "3.2": {
+      "'urllib.parse.parse_qsl(errors)'": 1
     }
   },
   "import urllib.parse\nurllib.parse.parse_qsl(max_num_fields=None)": {
