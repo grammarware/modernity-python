@@ -94,6 +94,14 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
         )
 
         def handle_desc_signature(desc_signature: sphinx.addnodes.desc_signature) -> list[tuple[str, Features]] | None:
+            module = desc_signature.get('module')
+            import_stmt = f"import {module}\n" if module else ''
+
+            # When same function is listed twice (with different signature), only the first one has 'ids'
+            if not desc_signature.get('ids'):
+                return
+            ids = desc_signature.get('ids')[-1]
+
             if feature_added:
                 # New method/class/function/exception/attribute/constants(data)
                 # https://devguide.python.org/documentation/markup/#information-units
@@ -102,14 +110,7 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
 
                 # These nodes should have only 1 (inline) element in their paragraph?
                 if len(description.children) == 1:
-                    module = desc_signature.get('module')
-                    # When same function is listed twice, only the first one has 'ids'
-                    if not desc_signature.get('ids'):
-                        return
-                    ids = desc_signature.get('ids')[-1]
                     prev_ids = ids.rsplit('.', maxsplit=1)[0]
-
-                    import_stmt = f"import {module}\n" if module else ''
                     prev_features = get_features_from_test_code(f"{import_stmt}{prev_ids}")
 
                     # It does not matter for detection if we call something that cannot be called
@@ -124,16 +125,9 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
                 if desc.get('objtype') not in ('method', 'class', 'function', 'exception'):
                     return
 
-                new_parameters = new_parameters_from_node(node)
-                if not new_parameters:
+                if not (new_parameters := new_parameters_from_node(node)):
                     return
 
-                module = desc_signature.get('module')
-                # When same function is listed twice, only the first one has 'ids'
-                if not desc_signature.get('ids'):
-                    return
-                ids = desc_signature.get('ids')[-1]
-                import_stmt = f"import {module}\n" if module else ''
                 prev_features = get_features_from_test_code(f"{import_stmt}{ids}()")
 
                 # The value assigned to the named parameter does not matter
