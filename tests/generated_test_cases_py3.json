@@ -8034,6 +8034,20 @@
       "'subprocess.check_output(timeout)'": 1
     }
   },
+  "import subprocess\nsubprocess.check_output(input=None)": {
+    "2.4": {
+      "'subprocess' module": 1
+    },
+    "2.7": {
+      "'subprocess.check_output' member": 1
+    },
+    "3.1": {
+      "'subprocess.check_output' member": 1
+    },
+    "3.4": {
+      "'subprocess.check_output(input)'": 1
+    }
+  },
   "import symtable\nsymtable.Symbol.is_annotated()": {
     "3.6": {
       "'symtable.Symbol.is_annotated' member": 1

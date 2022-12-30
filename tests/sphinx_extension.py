@@ -14,9 +14,11 @@ from pyternity.utils import Features, logger
 from tests.test_utils import get_features_from_test_code, combine_features, save_test_cases, normalize_expected
 
 # Python documentation is not consistent in when a new parameter has been added...
+parameter = r"(support for )?(the )?((optional|keyword(-only)?) )?((parameter|flag|argument|option)s?)"
+
 HAS_NEW_PARAMETER = re.compile(
-    r"((the )?((optional|keyword-only|keyword) )?((parameter|flag|argument|option)s?) ((was|were|is|are|has been) )?added)|"
-    r"((added|introduced) (support for )?(the )?((optional|keyword-only|keyword) )?((parameter|flag|argument|option)s?))|"
+    fr"({parameter} ((was|were|is|are|has been) )?added)|"
+    fr"((added|introduced) {parameter})|"
     r"(^(was|were|attributes) added$)|"
     r"(^added( the support| support for)?$)|"
     r"(^add(ed)? the (keyword|parameter)$)|"
