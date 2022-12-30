@@ -57,7 +57,7 @@ def generate_test_cases(out_dir: str, doctree_file: Path) -> dict[str, Features]
                     f":: VERSIONMODIFIED ERROR ::\n"
                     f'File "{source}", line {node.line}\n'
                     f'File "{doc_tree_file}", line {node.line}\n'
-                    ''.join(TracebackException.from_exception(e).format())
+                    + ''.join(TracebackException.from_exception(e).format())
                 )
 
     return test_cases

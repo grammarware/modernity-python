@@ -8,7 +8,7 @@ from urllib import request
 from uuid import uuid4
 
 from pyternity import features
-from pyternity.utils import TMP_DIR, Features, ROOT_DIR, logger, Config
+from pyternity.utils import TMP_DIR, Features, ROOT_DIR, logger
 
 PYTHON_2_VERSION = '2.7.18'
 PYTHON_3_VERSION = f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}"
@@ -29,7 +29,12 @@ def test_code(test_case: unittest.TestCase, code: str, test_result: Features):
 
 
 def get_features_from_test_code(code: str) -> Features:
-    # Note: tempfile library cannot be used here, since Vermin reopens the file
+    """
+    Get all features detected in the given `code`. Can be called concurrently
+    :param code: String with the code
+    :return: The detected features
+    """
+    # Note: tempfile.NamedTemporaryFile cannot be used here, since Vermin reopens the file
     # Do make the file name random, such that this function can be called concurrently
     tmp_file = TMP_DIR / f"{uuid4()}.py"
 
@@ -43,7 +48,12 @@ def get_features_from_test_code(code: str) -> Features:
 
 
 def save_test_cases(output_file: Path, test_cases: dict[str, Features]) -> None:
-    # Save in separate files, such that they can run in parallel
+    """
+    Save the `test_cases` to the `output_file`.
+    Save these files separately such that Sphinx can run in parallel.
+    :param output_file:
+    :param test_cases:
+    """
     with output_file.open('w') as f:
         json.dump(test_cases, f, indent=2)
 
