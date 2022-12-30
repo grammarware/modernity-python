@@ -29,8 +29,6 @@ def test_code(test_case: unittest.TestCase, code: str, test_result: Features):
 
 
 def get_features_from_test_code(code: str) -> Features:
-    Config.vermin.set_processes(1)
-
     # Note: tempfile library cannot be used here, since Vermin reopens the file
     # Do make the file name random, such that this function can be called concurrently
     tmp_file = TMP_DIR / f"{uuid4()}.py"
@@ -38,7 +36,8 @@ def get_features_from_test_code(code: str) -> Features:
     with tmp_file.open('w') as f:
         f.write(code)
 
-    result = features.get_features(tmp_file)
+    # Only use 1 process for detecting features, since this function itself is already called in a subprocess
+    result = features.get_features(tmp_file, processes=1)
     tmp_file.unlink()
     return result
 
@@ -50,7 +49,9 @@ def save_test_cases(output_file: Path, test_cases: dict[str, Features]) -> None:
 
 
 def get_test_cases() -> dict[str, Features]:
-    # Combine test cases from python 2 and 3
+    """
+    :return: Combined test cases from Python 2 and 3 (read from files)
+    """
     with TEST_CASES_FILE_PY2.open() as f2, TEST_CASES_FILE_PY3.open() as f3:
         test_cases = json.load(f2)
 
@@ -60,7 +61,13 @@ def get_test_cases() -> dict[str, Features]:
         return test_cases
 
 
-def combine_features(features0: Features, features1: Features) -> Features:
+def combine_features(features0: Features, features1: dict[str, dict[str, int]]) -> Features:
+    """
+    Note: This function does and should *not* combine in-place
+    :param features0:
+    :param features1:
+    :return: The features combined
+    """
     new_features = Features(Features, features0)
     for version, version_features in features1.items():
         for name in version_features.keys():
@@ -71,7 +78,10 @@ def combine_features(features0: Features, features1: Features) -> Features:
 
 
 def normalize_expected(expected: Features) -> None:
-    # Normalize expected first: remove python 1.x.x, and generalize x.y.z to x.y
+    """
+    Remove Python versions 1.x.x and generalize version x.y.z to x.y
+    :param expected: The Features to normalize inplace
+    """
     for version, expected_per_version in list(expected.items()):
         if version.startswith('1'):
             del expected[version]
@@ -82,7 +92,13 @@ def normalize_expected(expected: Features) -> None:
             del expected[version]
 
 
-def download_latest_python_source(version: str, overwrite: bool = False):
+def download_latest_python_source(version: str, overwrite: bool = False) -> None:
+    """
+    Download the Python source code from the given `version`
+    :param version: The Python version, e.g. '2.7.1'
+    :param overwrite: If *False*, only download if it is not already downloaded
+    :return:
+    """
     source_dir = TMP_DIR / f"Python-{version}"
     # TODO Make this logic a decorator / function
     if source_dir.exists():

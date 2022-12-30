@@ -5,24 +5,18 @@ from pyternity.utils import *
 
 # TODO Check we if we need Backports, see --help
 @measure_time
-def get_features(project_folder: Path) -> Features:
+def get_features(project_folder: Path, processes: int = Config.vermin.processes()) -> Features:
     logger.debug(f"Calculating signature for project: {project_folder.parent.name} {project_folder.name}")
     assert project_folder.exists()
 
     # Get all Python files in this folder
-    py_paths = vermin.detect_paths(
-        str(project_folder.absolute()), config=Config.vermin, processes=Config.vermin.processes()
-    )
+    py_paths = vermin.detect_paths(str(project_folder.absolute()), config=Config.vermin, processes=processes)
     logger.debug(f"Found {len(py_paths)} python files.")
 
     # Per version, per feature
     detected_features = defaultdict(lambda: defaultdict(int))
-    with (
-        multiprocessing.Pool(processes=Config.vermin.processes())
-        if Config.vermin.processes() != 1
-        else contextlib.nullcontext() as pool
-    ):
-        mapping = map if Config.vermin.processes() == 1 else pool.imap_unordered
+    with multiprocessing.Pool(processes) if processes != 1 else contextlib.nullcontext() as pool:
+        mapping = map if processes == 1 else pool.imap_unordered
         results = mapping(vermin.process_individual, ((path, Config.vermin) for path in py_paths))
 
         for res in results:

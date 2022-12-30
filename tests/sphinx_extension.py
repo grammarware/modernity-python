@@ -24,7 +24,7 @@ HAS_NEW_PARAMETER = re.compile(
 )
 
 
-def generate_test_cases(outdir: str, doctree_file: Path) -> dict[str, Features]:
+def generate_test_cases(out_dir: str, doctree_file: Path) -> dict[str, Features]:
     with doctree_file.open('rb') as f:
         doctree: sphinx.addnodes.document = pickle.load(f)
 
@@ -52,7 +52,7 @@ def generate_test_cases(outdir: str, doctree_file: Path) -> dict[str, Features]:
 
             except Exception as e:
                 # TODO fix all errors; and code that did not result in a testcase
-                doc_tree_file = Path(outdir) / source.parent.name / (source.stem + '.xml')
+                doc_tree_file = Path(out_dir) / source.parent.name / (source.stem + '.xml')
                 logger.error(
                     f":: VERSIONMODIFIED ERROR ::\n"
                     f'File "{source}", line {node.line}\n'
@@ -89,9 +89,7 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
         if desc.get('objtype') in ('opcode', 'cmdoption', 'pdbcommand'):
             return
 
-        desc_signatures = desc[0].traverse(
-            sphinx.addnodes.desc_signature, include_self=True, siblings=True, descend=False
-        )
+        desc_signatures = desc[0].traverse(sphinx.addnodes.desc_signature, siblings=True, descend=False)
 
         def handle_desc_signature(desc_signature: sphinx.addnodes.desc_signature) -> list[tuple[str, Features]] | None:
             module = desc_signature.get('module')
