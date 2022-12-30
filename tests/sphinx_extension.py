@@ -2,6 +2,7 @@ import multiprocessing
 import pickle
 import re
 from functools import reduce
+from itertools import chain
 from pathlib import Path
 from traceback import TracebackException
 
@@ -30,6 +31,7 @@ def generate_test_cases(outdir: str, doctree_file: Path) -> dict[str, Features]:
     test_cases = {}
     source = Path(doctree.get('source'))
     logger.info(f"Processing {source}...")
+    print(source)
 
     # TODO This does not test features that are completely removed in the Python docs
     for node in doctree.findall(sphinx.addnodes.versionmodified):
@@ -83,56 +85,68 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
     feature_added = node.get('type') == 'versionadded'
 
     if isinstance(desc := node.parent.parent, sphinx.addnodes.desc):
-        desc_signature = desc.next_node(sphinx.addnodes.desc_signature)
-
+        # We don't care about newly added or changed opcodes/commands
         if desc.get('objtype') in ('opcode', 'cmdoption', 'pdbcommand'):
             return
 
-        if feature_added:
-            # New method/class/function/exception/attribute/constants(data)
-            # https://devguide.python.org/documentation/markup/#information-units
-            assert desc.get('objtype') in ('method', 'class', 'function', 'exception', 'attribute', 'data'), \
-                f"Other objtype={desc.get('objtype')} found"
+        desc_signatures = desc[0].traverse(
+            sphinx.addnodes.desc_signature, include_self=True, siblings=True, descend=False
+        )
 
-            # These nodes should have only 1 (inline) element in their paragraph?
-            if len(description.children) == 1:
+        def handle_desc_signature(desc_signature: sphinx.addnodes.desc_signature) -> list[tuple[str, Features]] | None:
+            if feature_added:
+                # New method/class/function/exception/attribute/constants(data)
+                # https://devguide.python.org/documentation/markup/#information-units
+                assert desc.get('objtype') in ('method', 'class', 'function', 'exception', 'attribute', 'data'), \
+                    f"Other objtype={desc.get('objtype')} found"
+
+                # These nodes should have only 1 (inline) element in their paragraph?
+                if len(description.children) == 1:
+                    module = desc_signature.get('module')
+                    # When same function is listed twice, only the first one has 'ids'
+                    if not desc_signature.get('ids'):
+                        return
+                    ids = desc_signature.get('ids')[-1]
+                    prev_ids = ids.rsplit('.', maxsplit=1)[0]
+
+                    import_stmt = f"import {module}\n" if module else ''
+                    prev_features = get_features_from_test_code(f"{import_stmt}{prev_ids}")
+
+                    # It does not matter for detection if we call something that cannot be called
+                    return [(
+                        f"{import_stmt}{ids}()", combine_features(prev_features, {version: {f"'{ids}' member": 1}})
+                    )]
+
+            else:
+                # Thing changed, check if new parameters were added
+
+                # Only callables can have parameters added
+                if desc.get('objtype') not in ('method', 'class', 'function', 'exception'):
+                    return
+
+                new_parameters = new_parameters_from_node(node)
+                if not new_parameters:
+                    return
+
                 module = desc_signature.get('module')
+                # When same function is listed twice, only the first one has 'ids'
+                if not desc_signature.get('ids'):
+                    return
                 ids = desc_signature.get('ids')[-1]
-                prev_ids = ids.rsplit('.', maxsplit=1)[0]
-
                 import_stmt = f"import {module}\n" if module else ''
-                prev_features = get_features_from_test_code(f"{import_stmt}{prev_ids}")
+                prev_features = get_features_from_test_code(f"{import_stmt}{ids}()")
 
-                # It does not matter for detection if we call something that cannot be called
+                # The value assigned to the named parameter does not matter
+                # (technically you good also grab the default parameter value from desc_signature)
+                # Generate separate test cases for each parameter, else combine 2 and 3 test cases may clash
                 return [(
-                    f"{import_stmt}{ids}()", combine_features(prev_features, {version: {f"'{ids}' member": 1}})
-                )]
+                    f"{import_stmt}{ids}({new_parameter}=None)",
+                    combine_features(prev_features, {version: {f"'{ids}({new_parameter})'": 1}})
+                ) for new_parameter in new_parameters]
 
-        else:
-            # Thing changed, check if new parameters were added
+        return list(chain.from_iterable(filter(None, map(handle_desc_signature, desc_signatures))))
 
-            # Only callables can have parameters added
-            if desc.get('objtype') not in ('method', 'class', 'function', 'exception'):
-                return
-
-            new_parameters = new_parameters_from_node(node)
-            if not new_parameters:
-                return
-
-            module = desc_signature.get('module')
-            ids = desc_signature.get('ids')[-1]
-            import_stmt = f"import {module}\n" if module else ''
-            prev_features = get_features_from_test_code(f"{import_stmt}{ids}()")
-
-            # The value assigned to the named parameter does not matter
-            # (technically you good also grab the default parameter value from desc_signature)
-            # Generate separate test cases for each parameter, else combine 2 and 3 test cases may clash
-            return [(
-                f"{import_stmt}{ids}({new_parameter}=None)",
-                combine_features(prev_features, {version: {f"'{ids}({new_parameter})'": 1}})
-            ) for new_parameter in new_parameters]
-
-    if isinstance(document := node.parent.parent, sphinx.addnodes.document):
+    elif isinstance(document := node.parent.parent, sphinx.addnodes.document):
         section = document.next_node(docutils.nodes.section)
 
         if feature_added:

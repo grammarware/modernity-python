@@ -946,6 +946,16 @@
       "'binascii.b2a_hex(bytes_per_sep)'": 1
     }
   },
+  "import binascii\nbinascii.hexlify(sep=None)": {
+    "3.8": {
+      "'binascii.hexlify(sep)'": 1
+    }
+  },
+  "import binascii\nbinascii.hexlify(bytes_per_sep=None)": {
+    "3.8": {
+      "'binascii.hexlify(bytes_per_sep)'": 1
+    }
+  },
   "import bisect\nbisect.bisect_left(key=None)": {
     "2.1": {
       "'bisect' module": 1
@@ -962,6 +972,14 @@
       "'bisect.bisect_right(key)'": 1
     }
   },
+  "import bisect\nbisect.bisect(key=None)": {
+    "2.1": {
+      "'bisect' module": 1
+    },
+    "3.10": {
+      "'bisect.bisect(key)'": 1
+    }
+  },
   "import bisect\nbisect.insort_left(key=None)": {
     "2.1": {
       "'bisect' module": 1
@@ -976,6 +994,14 @@
     },
     "3.10": {
       "'bisect.insort_right(key)'": 1
+    }
+  },
+  "import bisect\nbisect.insort(key=None)": {
+    "2.1": {
+      "'bisect' module": 1
+    },
+    "3.10": {
+      "'bisect.insort(key)'": 1
     }
   },
   "import bz2\nbz2.open()": {
@@ -1993,6 +2019,11 @@
   "import dis\ndis.disassemble(file=None)": {
     "3.4": {
       "'dis.disassemble(file)'": 1
+    }
+  },
+  "import dis\ndis.disco(file=None)": {
+    "3.4": {
+      "'dis.disco(file)'": 1
     }
   },
   "import dis\ndis.get_instructions()": {
@@ -3953,6 +3984,121 @@
       "'mmap.MADV_NORMAL' member": 1
     }
   },
+  "import mmap\nmmap.MADV_RANDOM()": {
+    "3.8": {
+      "'mmap.MADV_RANDOM' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_SEQUENTIAL()": {
+    "3.8": {
+      "'mmap.MADV_SEQUENTIAL' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_WILLNEED()": {
+    "3.8": {
+      "'mmap.MADV_WILLNEED' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_DONTNEED()": {
+    "3.8": {
+      "'mmap.MADV_DONTNEED' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_REMOVE()": {
+    "3.8": {
+      "'mmap.MADV_REMOVE' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_DONTFORK()": {
+    "3.8": {
+      "'mmap.MADV_DONTFORK' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_DOFORK()": {
+    "3.8": {
+      "'mmap.MADV_DOFORK' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_HWPOISON()": {
+    "3.8": {
+      "'mmap.MADV_HWPOISON' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_MERGEABLE()": {
+    "3.8": {
+      "'mmap.MADV_MERGEABLE' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_UNMERGEABLE()": {
+    "3.8": {
+      "'mmap.MADV_UNMERGEABLE' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_SOFT_OFFLINE()": {
+    "3.8": {
+      "'mmap.MADV_SOFT_OFFLINE' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_HUGEPAGE()": {
+    "3.8": {
+      "'mmap.MADV_HUGEPAGE' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_NOHUGEPAGE()": {
+    "3.8": {
+      "'mmap.MADV_NOHUGEPAGE' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_DONTDUMP()": {
+    "3.8": {
+      "'mmap.MADV_DONTDUMP' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_DODUMP()": {
+    "3.8": {
+      "'mmap.MADV_DODUMP' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_FREE()": {
+    "3.8": {
+      "'mmap.MADV_FREE' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_NOSYNC()": {
+    "3.8": {
+      "'mmap.MADV_NOSYNC' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_AUTOSYNC()": {
+    "3.8": {
+      "'mmap.MADV_AUTOSYNC' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_NOCORE()": {
+    "3.8": {
+      "'mmap.MADV_NOCORE' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_CORE()": {
+    "3.8": {
+      "'mmap.MADV_CORE' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_PROTECT()": {
+    "3.8": {
+      "'mmap.MADV_PROTECT' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_FREE_REUSABLE()": {
+    "3.8": {
+      "'mmap.MADV_FREE_REUSABLE' member": 1
+    }
+  },
+  "import mmap\nmmap.MADV_FREE_REUSE()": {
+    "3.8": {
+      "'mmap.MADV_FREE_REUSE' member": 1
+    }
+  },
   "import msilib\nmsilib.Database.Close()": {
     "2.5": {
       "'msilib' module": 1
@@ -4111,6 +4257,11 @@
       "'operator.matmul' member": 1
     }
   },
+  "import operator\noperator.__matmul__()": {
+    "3.5": {
+      "'operator.__matmul__' member": 1
+    }
+  },
   "import operator\noperator.length_hint()": {
     "3.4": {
       "'operator.length_hint' member": 1
@@ -4121,9 +4272,19 @@
       "'operator.call' member": 1
     }
   },
+  "import operator\noperator.__call__()": {
+    "3.11": {
+      "'operator.__call__' member": 1
+    }
+  },
   "import operator\noperator.imatmul()": {
     "3.5": {
       "'operator.imatmul' member": 1
+    }
+  },
+  "import operator\noperator.__imatmul__()": {
+    "3.5": {
+      "'operator.__imatmul__' member": 1
     }
   },
   "import os\nos.environb()": {
@@ -4174,6 +4335,16 @@
   "import os\nos.PRIO_PROCESS()": {
     "3.3": {
       "'os.PRIO_PROCESS' member": 1
+    }
+  },
+  "import os\nos.PRIO_PGRP()": {
+    "3.3": {
+      "'os.PRIO_PGRP' member": 1
+    }
+  },
+  "import os\nos.PRIO_USER()": {
+    "3.3": {
+      "'os.PRIO_USER' member": 1
     }
   },
   "import os\nos.getresuid()": {
@@ -4231,6 +4402,21 @@
       "'os.F_LOCK' member": 1
     }
   },
+  "import os\nos.F_TLOCK()": {
+    "3.3": {
+      "'os.F_TLOCK' member": 1
+    }
+  },
+  "import os\nos.F_ULOCK()": {
+    "3.3": {
+      "'os.F_ULOCK' member": 1
+    }
+  },
+  "import os\nos.F_TEST()": {
+    "3.3": {
+      "'os.F_TEST' member": 1
+    }
+  },
   "import os\nos.login_tty()": {
     "3.11": {
       "'os.login_tty' member": 1
@@ -4254,6 +4440,31 @@
   "import os\nos.POSIX_FADV_NORMAL()": {
     "3.3": {
       "'os.POSIX_FADV_NORMAL' member": 1
+    }
+  },
+  "import os\nos.POSIX_FADV_SEQUENTIAL()": {
+    "3.3": {
+      "'os.POSIX_FADV_SEQUENTIAL' member": 1
+    }
+  },
+  "import os\nos.POSIX_FADV_RANDOM()": {
+    "3.3": {
+      "'os.POSIX_FADV_RANDOM' member": 1
+    }
+  },
+  "import os\nos.POSIX_FADV_NOREUSE()": {
+    "3.3": {
+      "'os.POSIX_FADV_NOREUSE' member": 1
+    }
+  },
+  "import os\nos.POSIX_FADV_WILLNEED()": {
+    "3.3": {
+      "'os.POSIX_FADV_WILLNEED' member": 1
+    }
+  },
+  "import os\nos.POSIX_FADV_DONTNEED()": {
+    "3.3": {
+      "'os.POSIX_FADV_DONTNEED' member": 1
     }
   },
   "import os\nos.pread()": {
@@ -4316,6 +4527,16 @@
       "'os.SF_NODISKIO' member": 1
     }
   },
+  "import os\nos.SF_MNOWAIT()": {
+    "3.3": {
+      "'os.SF_MNOWAIT' member": 1
+    }
+  },
+  "import os\nos.SF_SYNC()": {
+    "3.3": {
+      "'os.SF_SYNC' member": 1
+    }
+  },
   "import os\nos.SF_NOCACHE()": {
     "3.11": {
       "'os.SF_NOCACHE' member": 1
@@ -4329,6 +4550,16 @@
   "import os\nos.SPLICE_F_MOVE()": {
     "3.10": {
       "'os.SPLICE_F_MOVE' member": 1
+    }
+  },
+  "import os\nos.SPLICE_F_NONBLOCK()": {
+    "3.10": {
+      "'os.SPLICE_F_NONBLOCK' member": 1
+    }
+  },
+  "import os\nos.SPLICE_F_MORE()": {
+    "3.10": {
+      "'os.SPLICE_F_MORE' member": 1
     }
   },
   "import os\nos.readv()": {
@@ -4429,6 +4660,86 @@
       "'os.MFD_CLOEXEC' member": 1
     }
   },
+  "import os\nos.MFD_ALLOW_SEALING()": {
+    "3.8": {
+      "'os.MFD_ALLOW_SEALING' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGETLB()": {
+    "3.8": {
+      "'os.MFD_HUGETLB' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGE_SHIFT()": {
+    "3.8": {
+      "'os.MFD_HUGE_SHIFT' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGE_MASK()": {
+    "3.8": {
+      "'os.MFD_HUGE_MASK' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGE_64KB()": {
+    "3.8": {
+      "'os.MFD_HUGE_64KB' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGE_512KB()": {
+    "3.8": {
+      "'os.MFD_HUGE_512KB' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGE_1MB()": {
+    "3.8": {
+      "'os.MFD_HUGE_1MB' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGE_2MB()": {
+    "3.8": {
+      "'os.MFD_HUGE_2MB' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGE_8MB()": {
+    "3.8": {
+      "'os.MFD_HUGE_8MB' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGE_16MB()": {
+    "3.8": {
+      "'os.MFD_HUGE_16MB' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGE_32MB()": {
+    "3.8": {
+      "'os.MFD_HUGE_32MB' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGE_256MB()": {
+    "3.8": {
+      "'os.MFD_HUGE_256MB' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGE_512MB()": {
+    "3.8": {
+      "'os.MFD_HUGE_512MB' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGE_1GB()": {
+    "3.8": {
+      "'os.MFD_HUGE_1GB' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGE_2GB()": {
+    "3.8": {
+      "'os.MFD_HUGE_2GB' member": 1
+    }
+  },
+  "import os\nos.MFD_HUGE_16GB()": {
+    "3.8": {
+      "'os.MFD_HUGE_16GB' member": 1
+    }
+  },
   "import os\nos.eventfd()": {
     "3.10": {
       "'os.eventfd' member": 1
@@ -4504,6 +4815,16 @@
       "'os.P_PID' member": 1
     }
   },
+  "import os\nos.P_PGID()": {
+    "3.3": {
+      "'os.P_PGID' member": 1
+    }
+  },
+  "import os\nos.P_ALL()": {
+    "3.3": {
+      "'os.P_ALL' member": 1
+    }
+  },
   "import os\nos.P_PIDFD()": {
     "3.9": {
       "'os.P_PIDFD' member": 1
@@ -4514,9 +4835,44 @@
       "'os.WEXITED' member": 1
     }
   },
+  "import os\nos.WSTOPPED()": {
+    "3.3": {
+      "'os.WSTOPPED' member": 1
+    }
+  },
+  "import os\nos.WNOWAIT()": {
+    "3.3": {
+      "'os.WNOWAIT' member": 1
+    }
+  },
   "import os\nos.CLD_EXITED()": {
     "3.3": {
       "'os.CLD_EXITED' member": 1
+    }
+  },
+  "import os\nos.CLD_KILLED()": {
+    "3.3": {
+      "'os.CLD_KILLED' member": 1
+    }
+  },
+  "import os\nos.CLD_DUMPED()": {
+    "3.3": {
+      "'os.CLD_DUMPED' member": 1
+    }
+  },
+  "import os\nos.CLD_TRAPPED()": {
+    "3.3": {
+      "'os.CLD_TRAPPED' member": 1
+    }
+  },
+  "import os\nos.CLD_STOPPED()": {
+    "3.3": {
+      "'os.CLD_STOPPED' member": 1
+    }
+  },
+  "import os\nos.CLD_CONTINUED()": {
+    "3.3": {
+      "'os.CLD_CONTINUED' member": 1
     }
   },
   "import os\nos.waitstatus_to_exitcode()": {
@@ -4532,6 +4888,36 @@
   "import os\nos.RTLD_LAZY()": {
     "3.3": {
       "'os.RTLD_LAZY' member": 1
+    }
+  },
+  "import os\nos.RTLD_NOW()": {
+    "3.3": {
+      "'os.RTLD_NOW' member": 1
+    }
+  },
+  "import os\nos.RTLD_GLOBAL()": {
+    "3.3": {
+      "'os.RTLD_GLOBAL' member": 1
+    }
+  },
+  "import os\nos.RTLD_LOCAL()": {
+    "3.3": {
+      "'os.RTLD_LOCAL' member": 1
+    }
+  },
+  "import os\nos.RTLD_NODELETE()": {
+    "3.3": {
+      "'os.RTLD_NODELETE' member": 1
+    }
+  },
+  "import os\nos.RTLD_NOLOAD()": {
+    "3.3": {
+      "'os.RTLD_NOLOAD' member": 1
+    }
+  },
+  "import os\nos.RTLD_DEEPBIND()": {
+    "3.3": {
+      "'os.RTLD_DEEPBIND' member": 1
     }
   },
   "import os\nos.getrandom()": {
@@ -5399,9 +5785,19 @@
       "'socket.SOCK_CLOEXEC' member": 1
     }
   },
+  "import socket\nsocket.SOCK_NONBLOCK()": {
+    "3.2": {
+      "'socket.SOCK_NONBLOCK' member": 1
+    }
+  },
   "import socket\nsocket.AF_CAN()": {
     "3.3": {
       "'socket.AF_CAN' member": 1
+    }
+  },
+  "import socket\nsocket.PF_CAN()": {
+    "3.3": {
+      "'socket.PF_CAN' member": 1
     }
   },
   "import socket\nsocket.CAN_BCM()": {
@@ -5434,14 +5830,34 @@
       "'socket.AF_RDS' member": 1
     }
   },
+  "import socket\nsocket.PF_RDS()": {
+    "3.3": {
+      "'socket.PF_RDS' member": 1
+    }
+  },
+  "import socket\nsocket.SOL_RDS()": {
+    "3.3": {
+      "'socket.SOL_RDS' member": 1
+    }
+  },
   "import socket\nsocket.AF_ALG()": {
     "3.6": {
       "'socket.AF_ALG' member": 1
     }
   },
+  "import socket\nsocket.SOL_ALG()": {
+    "3.6": {
+      "'socket.SOL_ALG' member": 1
+    }
+  },
   "import socket\nsocket.AF_VSOCK()": {
     "3.7": {
       "'socket.AF_VSOCK' member": 1
+    }
+  },
+  "import socket\nsocket.IOCTL_VM_SOCKETS_GET_LOCAL_CID()": {
+    "3.7": {
+      "'socket.IOCTL_VM_SOCKETS_GET_LOCAL_CID' member": 1
     }
   },
   "import socket\nsocket.AF_LINK()": {
@@ -5452,6 +5868,16 @@
   "import socket\nsocket.SCM_CREDS2()": {
     "3.11": {
       "'socket.SCM_CREDS2' member": 1
+    }
+  },
+  "import socket\nsocket.LOCAL_CREDS()": {
+    "3.11": {
+      "'socket.LOCAL_CREDS' member": 1
+    }
+  },
+  "import socket\nsocket.LOCAL_CREDS_PERSISTENT()": {
+    "3.11": {
+      "'socket.LOCAL_CREDS_PERSISTENT' member": 1
     }
   },
   "import socket\nsocket.SO_INCOMING_CPU()": {
@@ -6185,6 +6611,14 @@
       "'ssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE' member": 1
     }
   },
+  "import ssl\nssl.ALERT_DESCRIPTION_INTERNAL_ERROR()": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "3.4": {
+      "'ssl.ALERT_DESCRIPTION_INTERNAL_ERROR' member": 1
+    }
+  },
   "import ssl\nssl.AlertDescription()": {
     "2.6": {
       "'ssl' module": 1
@@ -6683,9 +7117,99 @@
       "'stat.FILE_ATTRIBUTE_ARCHIVE' member": 1
     }
   },
+  "import stat\nstat.FILE_ATTRIBUTE_COMPRESSED()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_COMPRESSED' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_DEVICE()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_DEVICE' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_DIRECTORY()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_DIRECTORY' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_ENCRYPTED()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_ENCRYPTED' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_HIDDEN()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_HIDDEN' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_INTEGRITY_STREAM()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_INTEGRITY_STREAM' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_NORMAL()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_NORMAL' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_NOT_CONTENT_INDEXED()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_NOT_CONTENT_INDEXED' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_NO_SCRUB_DATA()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_NO_SCRUB_DATA' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_OFFLINE()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_OFFLINE' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_READONLY()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_READONLY' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_REPARSE_POINT()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_REPARSE_POINT' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_SPARSE_FILE()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_SPARSE_FILE' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_SYSTEM()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_SYSTEM' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_TEMPORARY()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_TEMPORARY' member": 1
+    }
+  },
+  "import stat\nstat.FILE_ATTRIBUTE_VIRTUAL()": {
+    "3.5": {
+      "'stat.FILE_ATTRIBUTE_VIRTUAL' member": 1
+    }
+  },
   "import stat\nstat.IO_REPARSE_TAG_SYMLINK()": {
     "3.8": {
       "'stat.IO_REPARSE_TAG_SYMLINK' member": 1
+    }
+  },
+  "import stat\nstat.IO_REPARSE_TAG_MOUNT_POINT()": {
+    "3.8": {
+      "'stat.IO_REPARSE_TAG_MOUNT_POINT' member": 1
+    }
+  },
+  "import stat\nstat.IO_REPARSE_TAG_APPEXECLINK()": {
+    "3.8": {
+      "'stat.IO_REPARSE_TAG_APPEXECLINK' member": 1
     }
   },
   "import statistics": {
@@ -6874,9 +7398,19 @@
       "'bytes.removeprefix' member": 1
     }
   },
+  "bytearray.removeprefix()": {
+    "3.9": {
+      "'bytearray.removeprefix' member": 1
+    }
+  },
   "bytes.removesuffix()": {
     "3.9": {
       "'bytes.removesuffix' member": 1
+    }
+  },
+  "bytearray.removesuffix()": {
+    "3.9": {
+      "'bytearray.removesuffix' member": 1
     }
   },
   "bytes.maketrans()": {
@@ -6884,9 +7418,19 @@
       "'bytes.maketrans' member": 1
     }
   },
+  "bytearray.maketrans()": {
+    "3.1": {
+      "'bytearray.maketrans' member": 1
+    }
+  },
   "bytes.isascii()": {
     "3.7": {
       "'bytes.isascii' member": 1
+    }
+  },
+  "bytearray.isascii()": {
+    "3.7": {
+      "'bytearray.isascii' member": 1
     }
   },
   "memoryview.hex()": {
@@ -8536,12 +9080,28 @@
       "'unittest.TestCase.assertIs' member": 1
     }
   },
+  "import unittest\nunittest.TestCase.assertIsNot()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "3.1": {
+      "'unittest.TestCase.assertIsNot' member": 1
+    }
+  },
   "import unittest\nunittest.TestCase.assertIsNone()": {
     "2.1": {
       "'unittest' module": 1
     },
     "3.1": {
       "'unittest.TestCase.assertIsNone' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertIsNotNone()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "3.1": {
+      "'unittest.TestCase.assertIsNotNone' member": 1
     }
   },
   "import unittest\nunittest.TestCase.assertIn()": {
@@ -8552,12 +9112,28 @@
       "'unittest.TestCase.assertIn' member": 1
     }
   },
+  "import unittest\nunittest.TestCase.assertNotIn()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "3.1": {
+      "'unittest.TestCase.assertNotIn' member": 1
+    }
+  },
   "import unittest\nunittest.TestCase.assertIsInstance()": {
     "2.1": {
       "'unittest' module": 1
     },
     "3.2": {
       "'unittest.TestCase.assertIsInstance' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertNotIsInstance()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "3.2": {
+      "'unittest.TestCase.assertNotIsInstance' member": 1
     }
   },
   "import unittest\nunittest.TestCase.assertRaises(msg=None)": {
@@ -8641,6 +9217,30 @@
       "'unittest.TestCase.assertGreater' member": 1
     }
   },
+  "import unittest\nunittest.TestCase.assertGreaterEqual()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "3.1": {
+      "'unittest.TestCase.assertGreaterEqual' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertLess()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "3.1": {
+      "'unittest.TestCase.assertLess' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertLessEqual()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "3.1": {
+      "'unittest.TestCase.assertLessEqual' member": 1
+    }
+  },
   "import unittest\nunittest.TestCase.assertCountEqual()": {
     "2.1": {
       "'unittest' module": 1
@@ -8679,6 +9279,14 @@
     },
     "3.1": {
       "'unittest.TestCase.assertListEqual' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertTupleEqual()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "3.1": {
+      "'unittest.TestCase.assertTupleEqual' member": 1
     }
   },
   "import unittest\nunittest.TestCase.assertSetEqual()": {

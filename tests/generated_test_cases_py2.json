@@ -2613,6 +2613,61 @@
       "'operator.lt' member": 1
     }
   },
+  "import operator\noperator.le()": {
+    "2.2": {
+      "'operator.le' member": 1
+    }
+  },
+  "import operator\noperator.eq()": {
+    "2.2": {
+      "'operator.eq' member": 1
+    }
+  },
+  "import operator\noperator.ne()": {
+    "2.2": {
+      "'operator.ne' member": 1
+    }
+  },
+  "import operator\noperator.ge()": {
+    "2.2": {
+      "'operator.ge' member": 1
+    }
+  },
+  "import operator\noperator.gt()": {
+    "2.2": {
+      "'operator.gt' member": 1
+    }
+  },
+  "import operator\noperator.__lt__()": {
+    "2.2": {
+      "'operator.__lt__' member": 1
+    }
+  },
+  "import operator\noperator.__le__()": {
+    "2.2": {
+      "'operator.__le__' member": 1
+    }
+  },
+  "import operator\noperator.__eq__()": {
+    "2.2": {
+      "'operator.__eq__' member": 1
+    }
+  },
+  "import operator\noperator.__ne__()": {
+    "2.2": {
+      "'operator.__ne__' member": 1
+    }
+  },
+  "import operator\noperator.__ge__()": {
+    "2.2": {
+      "'operator.__ge__' member": 1
+    }
+  },
+  "import operator\noperator.__gt__()": {
+    "2.2": {
+      "'operator.__gt__' member": 1
+    }
+  },
   "import operator\noperator.is_()": {
     "2.3": {
       "'operator.is_' member": 1
@@ -2628,9 +2683,19 @@
       "'operator.floordiv' member": 1
     }
   },
+  "import operator\noperator.__floordiv__()": {
+    "2.2": {
+      "'operator.__floordiv__' member": 1
+    }
+  },
   "import operator\noperator.index()": {
     "2.5": {
       "'operator.index' member": 1
+    }
+  },
+  "import operator\noperator.__index__()": {
+    "2.5": {
+      "'operator.__index__' member": 1
     }
   },
   "import operator\noperator.pow()": {
@@ -2638,9 +2703,19 @@
       "'operator.pow' member": 1
     }
   },
+  "import operator\noperator.__pow__()": {
+    "2.3": {
+      "'operator.__pow__' member": 1
+    }
+  },
   "import operator\noperator.truediv()": {
     "2.2": {
       "'operator.truediv' member": 1
+    }
+  },
+  "import operator\noperator.__truediv__()": {
+    "2.2": {
+      "'operator.__truediv__' member": 1
     }
   },
   "import operator\noperator.iadd()": {
@@ -2648,9 +2723,19 @@
       "'operator.iadd' member": 1
     }
   },
+  "import operator\noperator.__iadd__()": {
+    "2.5": {
+      "'operator.__iadd__' member": 1
+    }
+  },
   "import operator\noperator.iand()": {
     "2.5": {
       "'operator.iand' member": 1
+    }
+  },
+  "import operator\noperator.__iand__()": {
+    "2.5": {
+      "'operator.__iand__' member": 1
     }
   },
   "import operator\noperator.iconcat()": {
@@ -2658,9 +2743,19 @@
       "'operator.iconcat' member": 1
     }
   },
+  "import operator\noperator.__iconcat__()": {
+    "2.5": {
+      "'operator.__iconcat__' member": 1
+    }
+  },
   "import operator\noperator.idiv()": {
     "2.5": {
       "'operator.idiv' member": 1
+    }
+  },
+  "import operator\noperator.__idiv__()": {
+    "2.5": {
+      "'operator.__idiv__' member": 1
     }
   },
   "import operator\noperator.ifloordiv()": {
@@ -2668,9 +2763,19 @@
       "'operator.ifloordiv' member": 1
     }
   },
+  "import operator\noperator.__ifloordiv__()": {
+    "2.5": {
+      "'operator.__ifloordiv__' member": 1
+    }
+  },
   "import operator\noperator.ilshift()": {
     "2.5": {
       "'operator.ilshift' member": 1
+    }
+  },
+  "import operator\noperator.__ilshift__()": {
+    "2.5": {
+      "'operator.__ilshift__' member": 1
     }
   },
   "import operator\noperator.imod()": {
@@ -2678,9 +2783,19 @@
       "'operator.imod' member": 1
     }
   },
+  "import operator\noperator.__imod__()": {
+    "2.5": {
+      "'operator.__imod__' member": 1
+    }
+  },
   "import operator\noperator.imul()": {
     "2.5": {
       "'operator.imul' member": 1
+    }
+  },
+  "import operator\noperator.__imul__()": {
+    "2.5": {
+      "'operator.__imul__' member": 1
     }
   },
   "import operator\noperator.ior()": {
@@ -2688,9 +2803,19 @@
       "'operator.ior' member": 1
     }
   },
+  "import operator\noperator.__ior__()": {
+    "2.5": {
+      "'operator.__ior__' member": 1
+    }
+  },
   "import operator\noperator.ipow()": {
     "2.5": {
       "'operator.ipow' member": 1
+    }
+  },
+  "import operator\noperator.__ipow__()": {
+    "2.5": {
+      "'operator.__ipow__' member": 1
     }
   },
   "import operator\noperator.irepeat()": {
@@ -2698,9 +2823,19 @@
       "'operator.irepeat' member": 1
     }
   },
+  "import operator\noperator.__irepeat__()": {
+    "2.5": {
+      "'operator.__irepeat__' member": 1
+    }
+  },
   "import operator\noperator.irshift()": {
     "2.5": {
       "'operator.irshift' member": 1
+    }
+  },
+  "import operator\noperator.__irshift__()": {
+    "2.5": {
+      "'operator.__irshift__' member": 1
     }
   },
   "import operator\noperator.isub()": {
@@ -2708,14 +2843,29 @@
       "'operator.isub' member": 1
     }
   },
+  "import operator\noperator.__isub__()": {
+    "2.5": {
+      "'operator.__isub__' member": 1
+    }
+  },
   "import operator\noperator.itruediv()": {
     "2.5": {
       "'operator.itruediv' member": 1
     }
   },
+  "import operator\noperator.__itruediv__()": {
+    "2.5": {
+      "'operator.__itruediv__' member": 1
+    }
+  },
   "import operator\noperator.ixor()": {
     "2.5": {
       "'operator.ixor' member": 1
+    }
+  },
+  "import operator\noperator.__ixor__()": {
+    "2.5": {
+      "'operator.__ixor__' member": 1
     }
   },
   "import operator\noperator.attrgetter()": {
@@ -2811,6 +2961,16 @@
   "import os\nos.SEEK_SET()": {
     "2.5": {
       "'os.SEEK_SET' member": 1
+    }
+  },
+  "import os\nos.SEEK_CUR()": {
+    "2.5": {
+      "'os.SEEK_CUR' member": 1
+    }
+  },
+  "import os\nos.SEEK_END()": {
+    "2.5": {
+      "'os.SEEK_END' member": 1
     }
   },
   "import os\nos.fchdir()": {
@@ -2967,9 +3127,18 @@
     }
   },
   "import os\nos.spawnl()": {},
+  "import os\nos.spawnle()": {},
+  "import os\nos.spawnlp()": {},
+  "import os\nos.spawnlpe()": {},
+  "import os\nos.spawnv()": {},
+  "import os\nos.spawnve()": {},
+  "import os\nos.spawnvp()": {},
+  "import os\nos.spawnvpe()": {},
   "import os\nos.P_NOWAIT()": {},
+  "import os\nos.P_NOWAITO()": {},
   "import os\nos.P_WAIT()": {},
   "import os\nos.P_DETACH()": {},
+  "import os\nos.P_OVERLAY()": {},
   "import os\nos.startfile()": {
     "2.0": {
       "'os.startfile' member": 1
@@ -3341,6 +3510,11 @@
   "import re\nre.U()": {
     "2.0": {
       "'re.U' member": 1
+    }
+  },
+  "import re\nre.UNICODE()": {
+    "2.0": {
+      "'re.UNICODE' member": 1
     }
   },
   "import re\nre.findall()": {},
@@ -4232,6 +4406,14 @@
       "'ssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE' member": 1
     }
   },
+  "import ssl\nssl.ALERT_DESCRIPTION_INTERNAL_ERROR()": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7": {
+      "'ssl.ALERT_DESCRIPTION_INTERNAL_ERROR' member": 1
+    }
+  },
   "import ssl\nssl.Purpose.SERVER_AUTH()": {
     "2.6": {
       "'ssl' module": 1
@@ -5001,12 +5183,28 @@
       "'unittest.TestCase.assertIs' member": 1
     }
   },
+  "import unittest\nunittest.TestCase.assertIsNot()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertIsNot' member": 1
+    }
+  },
   "import unittest\nunittest.TestCase.assertIsNone()": {
     "2.1": {
       "'unittest' module": 1
     },
     "2.7": {
       "'unittest.TestCase.assertIsNone' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertIsNotNone()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertIsNotNone' member": 1
     }
   },
   "import unittest\nunittest.TestCase.assertIn()": {
@@ -5017,12 +5215,28 @@
       "'unittest.TestCase.assertIn' member": 1
     }
   },
+  "import unittest\nunittest.TestCase.assertNotIn()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertNotIn' member": 1
+    }
+  },
   "import unittest\nunittest.TestCase.assertIsInstance()": {
     "2.1": {
       "'unittest' module": 1
     },
     "2.7": {
       "'unittest.TestCase.assertIsInstance' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertNotIsInstance()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertNotIsInstance' member": 1
     }
   },
   "import unittest\nunittest.TestCase.assertRaisesRegexp()": {
@@ -5039,6 +5253,30 @@
     },
     "2.7": {
       "'unittest.TestCase.assertGreater' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertGreaterEqual()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertGreaterEqual' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertLess()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertLess' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertLessEqual()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertLessEqual' member": 1
     }
   },
   "import unittest\nunittest.TestCase.assertRegexpMatches()": {
@@ -5103,6 +5341,14 @@
     },
     "2.7": {
       "'unittest.TestCase.assertListEqual' member": 1
+    }
+  },
+  "import unittest\nunittest.TestCase.assertTupleEqual()": {
+    "2.1": {
+      "'unittest' module": 1
+    },
+    "2.7": {
+      "'unittest.TestCase.assertTupleEqual' member": 1
     }
   },
   "import unittest\nunittest.TestCase.assertSetEqual()": {
@@ -5714,6 +5960,14 @@
     },
     "2.6": {
       "'_winreg.PyHKEY.__enter__' member": 1
+    }
+  },
+  "import _winreg\n_winreg.PyHKEY.__exit__()": {
+    "2.0": {
+      "'_winreg' module": 1
+    },
+    "2.6": {
+      "'_winreg.PyHKEY.__exit__' member": 1
     }
   }
 }
