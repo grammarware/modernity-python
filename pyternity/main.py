@@ -1,5 +1,4 @@
-from pyternity.features import most_popular_per_version
-from pyternity.plotting import plot_signature, plot_signatures
+from pyternity.plotting import plot_signatures
 from pyternity.pypi_crawler import PyPIProject, get_most_popular_projects
 from pyternity.utils import *
 

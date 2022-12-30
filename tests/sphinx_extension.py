@@ -6,9 +6,9 @@ from itertools import chain
 from pathlib import Path
 from traceback import TracebackException
 
-from sphinx.application import Sphinx
-import sphinx.addnodes
 import docutils.nodes
+import sphinx.addnodes
+from sphinx.application import Sphinx
 
 from pyternity.utils import Features, logger
 from tests.test_utils import get_features_from_test_code, combine_features, save_test_cases, normalize_expected
