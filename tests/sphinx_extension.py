@@ -25,6 +25,7 @@ HAS_NEW_PARAMETER = re.compile(
 
 
 def generate_test_cases(out_dir: str, doctree_file: Path) -> dict[str, Features]:
+    # Load the cached doctree
     with doctree_file.open('rb') as f:
         doctree: sphinx.addnodes.document = pickle.load(f)
 
@@ -157,12 +158,13 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
 
 
 def build_finished(app: Sphinx, _):
-    # Build finished event will always be triggered. Using this event we can also generate our test cases even when
-    # then input files have not changed, so we used the cached doctrees. We can do this, since our extension does not
-    # modify this doctree.
-    # Load doctree files here with pickle
-
-    # We are only interested in changes in the library
+    """
+    `build-finished` event will always be triggered (even when there are no changed in the rst files).
+    So we use this event to generate our test cases, which also allows us to use the cached doctrees.
+    :param app:
+    :param _:
+    """
+    # We are only interested in the library documentation
     library_doctrees_dir = Path(app.doctreedir) / 'library'
 
     with multiprocessing.Pool(processes=app.parallel) as pool:
@@ -171,6 +173,12 @@ def build_finished(app: Sphinx, _):
         save_test_cases(app.config['pyternity_test_cases_file'], test_cases)
 
 
-def setup(app: Sphinx):
+def setup(app: Sphinx) -> dict:
+    """
+    This method is called when Sphinx is setting up all the extensions.\n
+    See: https://www.sphinx-doc.org/en/master/extdev/index.html
+    :param app: The Sphinx app
+    :return: Extension metadata
+    """
     app.connect('build-finished', build_finished)
     return {'version': '1.0'}

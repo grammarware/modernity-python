@@ -4,6 +4,7 @@ import sys
 import tarfile
 import unittest
 from pathlib import Path
+from typing import Mapping
 from urllib import request
 from uuid import uuid4
 
@@ -47,7 +48,7 @@ def get_features_from_test_code(code: str) -> Features:
     return result
 
 
-def save_test_cases(output_file: Path, test_cases: dict[str, Features]) -> None:
+def save_test_cases(output_file: Path, test_cases: Mapping[str, Features]) -> None:
     """
     Save the `test_cases` to the `output_file`.
     Save these files separately such that Sphinx can run in parallel.

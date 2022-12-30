@@ -49,9 +49,7 @@ class NonErrorsFilter(logging.Filter):
         return logRecord.levelno < logging.ERROR
 
 
-def setup_project(vermin_processes: int = os.cpu_count()):
-    Config.vermin.set_processes(vermin_processes)
-
+def setup_project():
     # Create missing directories
     TMP_DIR.mkdir(exist_ok=True)
     EXAMPLES_DIR.mkdir(exist_ok=True)

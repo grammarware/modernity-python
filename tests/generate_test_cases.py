@@ -6,7 +6,7 @@ from pathlib import Path
 import sphinx.application
 import sphinx.domains.python
 
-from pyternity.utils import TMP_DIR, setup_project
+from pyternity.utils import TMP_DIR
 
 
 def get_variable_from_file(file: Path, variable_name: str):
@@ -54,9 +54,6 @@ def generate_test_cases(doc_dir: Path, output_file: Path):
 
 if __name__ == '__main__':
     _, python_version, test_cases_file = sys.argv
-
-    # Since this is a separate subprocess, also initiate config here
-    setup_project(1)
 
     status_code = generate_test_cases(TMP_DIR / f"Python-{python_version}" / 'Doc', Path(test_cases_file))
     exit(status_code)
