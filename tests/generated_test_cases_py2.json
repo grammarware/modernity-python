@@ -4118,6 +4118,14 @@
       "'ssl.SSLEOFError' member": 1
     }
   },
+  "import ssl\nssl.wrap_socket(ciphers=None)": {
+    "2.6": {
+      "'ssl' module": 1
+    },
+    "2.7": {
+      "'ssl.wrap_socket(ciphers)'": 1
+    }
+  },
   "import ssl\nssl.create_default_context()": {
     "2.6": {
       "'ssl' module": 1
@@ -4515,6 +4523,11 @@
       "'float.fromhex' member": 1
     }
   },
+  "str.center(fillchar=None)": {
+    "2.4": {
+      "'str.center(fillchar)'": 1
+    }
+  },
   "str.decode()": {
     "2.2": {
       "'str.decode' member": 1
@@ -4530,9 +4543,24 @@
       "'str.format' member": 1
     }
   },
+  "str.ljust(fillchar=None)": {
+    "2.4": {
+      "'str.ljust(fillchar)'": 1
+    }
+  },
+  "str.lstrip(chars=None)": {
+    "2.2": {
+      "'str.lstrip(chars)'": 1
+    }
+  },
   "str.partition()": {
     "2.5": {
       "'str.partition' member": 1
+    }
+  },
+  "str.rjust(fillchar=None)": {
+    "2.4": {
+      "'str.rjust(fillchar)'": 1
     }
   },
   "str.rpartition()": {
@@ -4543,6 +4571,16 @@
   "str.rsplit()": {
     "2.4": {
       "'str.rsplit' member": 1
+    }
+  },
+  "str.rstrip(chars=None)": {
+    "2.2": {
+      "'str.rstrip(chars)'": 1
+    }
+  },
+  "str.strip(chars=None)": {
+    "2.2": {
+      "'str.strip(chars)'": 1
     }
   },
   "str.zfill()": {
@@ -4944,6 +4982,22 @@
   "import test.support\ntest.support.check_warnings()": {
     "2.6": {
       "'test.support.check_warnings' member": 1
+    }
+  },
+  "import test.support\ntest.support.check_warnings(filters=None)": {
+    "2.6": {
+      "'test.support.check_warnings' member": 1
+    },
+    "2.7": {
+      "'test.support.check_warnings(filters)'": 1
+    }
+  },
+  "import test.support\ntest.support.check_warnings(quiet=None)": {
+    "2.6": {
+      "'test.support.check_warnings' member": 1
+    },
+    "2.7": {
+      "'test.support.check_warnings(quiet)'": 1
     }
   },
   "import test.support\ntest.support.check_py3k_warnings()": {
@@ -5519,6 +5573,11 @@
       "'unittest.removeHandler' member": 1
     }
   },
+  "import urllib\nurllib.urlopen(proxies=None)": {
+    "2.3": {
+      "'urllib.urlopen(proxies)'": 1
+    }
+  },
   "import urllib\nurllib.urlopen(context=None)": {
     "2.7": {
       "'urllib.urlopen(context)'": 1
@@ -5929,6 +5988,11 @@
   "import zipfile\nzipfile.ZipFile.setpassword()": {
     "2.6": {
       "'zipfile.ZipFile.setpassword' member": 1
+    }
+  },
+  "import zipfile\nzipfile.ZipFile.writestr(compress_type=None)": {
+    "2.7": {
+      "'zipfile.ZipFile.writestr(compress_type)'": 1
     }
   },
   "import zipimport": {
