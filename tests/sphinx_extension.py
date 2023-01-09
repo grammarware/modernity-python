@@ -14,15 +14,14 @@ from pyternity.utils import Features, logger
 from tests.test_utils import get_features_from_test_code, combine_features, save_test_cases, normalize_expected
 
 # Python documentation is not consistent in when a new parameter has been added...
-parameter = r"(support for )?(the )?((optional|required|keyword(-only)?) )?((parameter|flag|argument|option|attribute)s?)"
+parameter = (r"(support for )?(the )?((optional|required|keyword(-only)?) )?"
+             r"((parameter|flag|argument|option|attribute|keyword)s?)")
 HAS_NEW_PARAMETER = re.compile(
     fr"({parameter} ((was|were|is|are|has been) )?added)|"
     fr"((add(ed)?|introduced) {parameter})|"
     fr"(^(new )?{parameter}$)|"
     r"(^(was|were) added$)|"
     r"(^added( the support| support for)?$)|"
-    r"(^add(ed)? the (keyword|parameter)$)|"
-    r"(^added parameters?$)|"
     r"(^the keyword-only argument$)|"
     r"(^the parameter( is new)?$)",
     re.IGNORECASE
@@ -74,6 +73,12 @@ def new_parameters_from_node(node: sphinx.addnodes.versionmodified) -> list[str]
     emphasises = [param.astext() for param in node.traverse(docutils.nodes.emphasis)]
     if not emphasises:
         return
+
+    # TODO 'Changed in version 2.7.9: cafile, capath, cadefault, and context were added.'
+    #  'Changed in version 2.6: pwd was added, and name can now be a ZipInfo object.'
+    #  'Changed in version 2.3: the encoding argument was introduced; see writexml().'
+    #  'Changed in version 3.2: allow_no_value, delimiters, comment_prefixes, strict,\nempty_lines_in_values, default_section and interpolation were\nadded.'
+    #  'Changed in version 3.5: SMTPNotSupportedError may be raised, and the\ninitial_response_ok parameter was added.'
 
     nodes = node.next_node(docutils.nodes.paragraph)[0].traverse(docutils.nodes.Text, descend=False, siblings=True)
     text = ' '.join(str(n).strip() for n in nodes).replace('and ', '').replace(' ,', '').rstrip(' .')
@@ -148,11 +153,12 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
         section = document.next_node(docutils.nodes.section)
 
         if feature_added:
-            # New module
-            # This node should be before a <paragraph>, then it tells something about the whole module
-            # "When this applies to an entire module,
+            # New module if: "When this applies to an entire module,
             # it should be placed at the top of the module section before any prose."
-            if node.line < section.next_node(docutils.nodes.paragraph).line:
+            # So, this node should be before any new <section> (if any), then it tells something about the whole module
+            next_section = section.next_node(docutils.nodes.section)
+            if not next_section or node.line < next_section.line:
+                # FIXME Names attribute is always lowercase; so is wrong for e.g. 'DocXMLRPCServer'
                 module_name = section.get('names')[0].split(' ')[0]
 
                 # TODO Currently only AST module has two versionmodified nodes, take first one

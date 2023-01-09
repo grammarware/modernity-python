@@ -1749,6 +1749,11 @@
       "'contextlib.AsyncExitStack' member": 1
     }
   },
+  "import contextvars": {
+    "3.7": {
+      "'contextvars' module": 1
+    }
+  },
   "import contextvars\ncontextvars.ContextVar.name()": {
     "3.7": {
       "'contextvars' module": 1,
@@ -1861,6 +1866,11 @@
   "import curses\ncurses.ncurses_version()": {
     "3.8": {
       "'curses.ncurses_version' member": 1
+    }
+  },
+  "import dataclasses": {
+    "3.7": {
+      "'dataclasses' module": 1
     }
   },
   "import dataclasses\ndataclasses.KW_ONLY()": {
@@ -2119,6 +2129,11 @@
       "'email.message.Message.get_content_disposition' member": 1
     }
   },
+  "import email.contentmanager:": {
+    "3.6": {
+      "'email.contentmanager:' module": 1
+    }
+  },
   "import email.generator\nemail.generator.BytesGenerator()": {
     "3.2": {
       "'email.generator.BytesGenerator' member": 1
@@ -2143,6 +2158,16 @@
     },
     "3.2": {
       "'email.header.Header.encode(linesep)'": 1
+    }
+  },
+  "import email.headerregistry:": {
+    "3.6": {
+      "'email.headerregistry:' module": 1
+    }
+  },
+  "import email.message:": {
+    "3.6": {
+      "'email.message:' module": 1
     }
   },
   "import email.message\nemail.message.EmailMessage.get_content_disposition()": {
@@ -2943,6 +2968,11 @@
       "'http.server.BaseHTTPRequestHandler.flush_headers' member": 1
     }
   },
+  "import http.server": {
+    "3.4": {
+      "'http.server' module": 1
+    }
+  },
   "import imaplib\nimaplib.IMAP4(timeout=None)": {
     "3.9": {
       "'imaplib.IMAP4(timeout)'": 1
@@ -2976,6 +3006,16 @@
   "import imaplib\nimaplib.IMAP4.utf8_enabled()": {
     "3.5": {
       "'imaplib.IMAP4.utf8_enabled' member": 1
+    }
+  },
+  "import imghdr": {
+    "3.5": {
+      "'imghdr' module": 1
+    }
+  },
+  "import imp": {
+    "3.2": {
+      "'imp' module": 1
     }
   },
   "import importlib": {
@@ -3250,6 +3290,16 @@
       "'importlib.util.LazyLoader' member": 1
     }
   },
+  "import using": {
+    "3.8": {
+      "'using' module": 1
+    }
+  },
+  "import importlib.resources.abc": {
+    "3.11": {
+      "'importlib.resources.abc' module": 1
+    }
+  },
   "import importlib.resources.abc\nimportlib.resources.abc.ResourceReader()": {
     "3.7": {
       "'importlib.resources.abc.ResourceReader' member": 1
@@ -3263,6 +3313,11 @@
   "import importlib.resources.abc\nimportlib.resources.abc.TraversableResources()": {
     "3.9": {
       "'importlib.resources.abc.TraversableResources' member": 1
+    }
+  },
+  "import importlib.resources": {
+    "3.7": {
+      "'importlib.resources' module": 1
     }
   },
   "import importlib.resources\nimportlib.resources.files()": {
@@ -3552,6 +3607,11 @@
     },
     "3.7": {
       "'io.TextIOWrapper.reconfigure' member": 1
+    }
+  },
+  "import ipaddress": {
+    "3.3": {
+      "'ipaddress' module": 1
     }
   },
   "import ipaddress\nipaddress.IPv4Address.reverse_pointer()": {
@@ -4358,6 +4418,11 @@
   "import multiprocessing.connection\nmultiprocessing.connection.wait()": {
     "3.3": {
       "'multiprocessing.connection.wait' member": 1
+    }
+  },
+  "import multiprocessing.shared_memory": {
+    "3.8": {
+      "'multiprocessing.shared_memory' module": 1
     }
   },
   "import nntplib\nnntplib.NNTP_SSL()": {
@@ -5253,6 +5318,11 @@
       "'pathlib.Path.write_text(newline)'": 1
     }
   },
+  "import pdb": {
+    "3.2": {
+      "'pdb' module": 1
+    }
+  },
   "import pdb\npdb.set_trace(header=None)": {
     "3.7": {
       "'pdb.set_trace(header)'": 1
@@ -5424,6 +5494,11 @@
   "import pprint\npprint.pp()": {
     "3.8": {
       "'pprint.pp' member": 1
+    }
+  },
+  "import pyclbr": {
+    "3.7": {
+      "'pyclbr' module": 1
     }
   },
   "import pyclbr\npyclbr.Function.parent()": {
@@ -10114,6 +10189,11 @@
   "import webbrowser\nwebbrowser.register(preferred=None)": {
     "3.7": {
       "'webbrowser.register(preferred)'": 1
+    }
+  },
+  "import webbrowser": {
+    "3.3": {
+      "'webbrowser' module": 1
     }
   },
   "import winreg\nwinreg.CreateKeyEx()": {

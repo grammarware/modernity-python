@@ -69,7 +69,7 @@ class TestFeatures(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls) -> None:
-        setup_project(1)
+        setup_project()
         download_latest_python_source(PYTHON_2_VERSION)
         download_latest_python_source(PYTHON_3_VERSION)
 

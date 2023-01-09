@@ -423,6 +423,11 @@
       "'contextlib' module": 1
     }
   },
+  "import cookielib": {
+    "2.4": {
+      "'cookielib' module": 1
+    }
+  },
   "import cookielib\ncookielib.DefaultCookiePolicy.rfc2109_as_netscape()": {
     "2.4": {
       "'cookielib' module": 1
@@ -1125,14 +1130,29 @@
       "'doctest.debug_src' member": 1
     }
   },
+  "import docxmlrpcserver": {
+    "2.3": {
+      "'docxmlrpcserver' module": 1
+    }
+  },
   "import EasyDialogs\nEasyDialogs.GetArgv()": {
     "2.0": {
       "'EasyDialogs.GetArgv' member": 1
     }
   },
+  "import email.charset:": {
+    "2.2": {
+      "'email.charset:' module": 1
+    }
+  },
   "import email": {
     "2.2": {
       "'email' module": 1
+    }
+  },
+  "import email.errors:": {
+    "2.4": {
+      "'email.errors:' module": 1
     }
   },
   "import email.generator\nemail.generator.Generator.flatten()": {
@@ -1148,6 +1168,11 @@
   "import email.generator\nemail.generator.DecodedGenerator()": {
     "2.2": {
       "'email.generator.DecodedGenerator' member": 1
+    }
+  },
+  "import email.header:": {
+    "2.2": {
+      "'email.header:' module": 1
     }
   },
   "import email.message\nemail.message.Message.set_payload(charset=None)": {
@@ -1901,6 +1926,11 @@
       "'htmlentitydefs.codepoint2name' member": 1
     }
   },
+  "import htmlparser": {
+    "2.2": {
+      "'htmlparser' module": 1
+    }
+  },
   "import httplib\nhttplib.HTTPConnection()": {
     "2.0": {
       "'httplib.HTTPConnection' member": 1
@@ -2111,6 +2141,11 @@
   "import imaplib\nimaplib.IMAP4.thread()": {
     "2.4": {
       "'imaplib.IMAP4.thread' member": 1
+    }
+  },
+  "import imghdr": {
+    "2.5": {
+      "'imghdr' module": 1
     }
   },
   "import imp\nimp.acquire_lock()": {
@@ -2377,6 +2412,11 @@
   "import logging.config\nlogging.config.fileConfig(always=None)": {
     "2.6": {
       "'logging.config.fileConfig(always)'": 1
+    }
+  },
+  "import logging": {
+    "2.3": {
+      "'logging' module": 1
     }
   },
   "import logging\nlogging.Logger.getChild()": {
@@ -3229,6 +3269,11 @@
       "'ossaudiodev' module": 1
     }
   },
+  "import pdb": {
+    "2.4": {
+      "'pdb' module": 1
+    }
+  },
   "import pickle\npickle.HIGHEST_PROTOCOL()": {
     "2.3": {
       "'pickle.HIGHEST_PROTOCOL' member": 1
@@ -3379,6 +3424,11 @@
       "'pydoc' module": 1
     }
   },
+  "import xml.parsers.expat": {
+    "2.0": {
+      "'xml.parsers.expat' module": 1
+    }
+  },
   "import xml.parsers.expat\nxml.parsers.expat.xmlparser.GetInputContext()": {
     "2.1": {
       "'xml.parsers.expat.xmlparser.GetInputContext' member": 1
@@ -3469,6 +3519,11 @@
     },
     "2.5": {
       "'Queue.Queue.join' member": 1
+    }
+  },
+  "import random": {
+    "2.4": {
+      "'random' module": 1
     }
   },
   "import random\nrandom.getstate()": {
@@ -3755,6 +3810,11 @@
       "'signal.siginterrupt' member": 1
     }
   },
+  "import simplexmlrpcserver": {
+    "2.2": {
+      "'simplexmlrpcserver' module": 1
+    }
+  },
   "import SimpleXMLRPCServer\nSimpleXMLRPCServer.SimpleXMLRPCServer(allow_none=None)": {
     "2.2": {
       "'SimpleXMLRPCServer' module": 1
@@ -3886,6 +3946,11 @@
   "import smtplib\nsmtplib.SMTP.ehlo_or_helo_if_needed()": {
     "2.6": {
       "'smtplib.SMTP.ehlo_or_helo_if_needed' member": 1
+    }
+  },
+  "import socket": {
+    "2.5": {
+      "'socket' module": 1
     }
   },
   "import socket\nsocket.timeout()": {
@@ -5638,6 +5703,11 @@
       "'urllib2.OpenerDirector.open(timeout)'": 1
     }
   },
+  "import urlparse": {
+    "2.5": {
+      "'urlparse' module": 1
+    }
+  },
   "import urlparse\nurlparse.parse_qs(max_num_fields=None)": {
     "2.0": {
       "'urlparse' module": 1
@@ -5945,6 +6015,11 @@
       "'xml.sax.saxutils.quoteattr' member": 1
     }
   },
+  "import xmlrpclib": {
+    "2.2": {
+      "'xmlrpclib' module": 1
+    }
+  },
   "import xmlrpclib\nxmlrpclib.ServerProxy(use_datetime=None)": {
     "2.2": {
       "'xmlrpclib' module": 1
@@ -6016,6 +6091,11 @@
   "import zlib\nzlib.Decompress.copy()": {
     "2.5": {
       "'zlib.Decompress.copy' member": 1
+    }
+  },
+  "import _winreg": {
+    "2.0": {
+      "'_winreg' module": 1
     }
   },
   "import _winreg\n_winreg.ExpandEnvironmentStrings()": {
