@@ -106,12 +106,24 @@ class PyPIProject:
             self.releases = sorted(releases)
 
 
-def get_most_popular_projects() -> Iterable[str]:
+def get_100_biggest_projects() -> Iterable[str]:
     """
     See: https://pypi.org/stats, refreshes each 24 hours
-    :return: 100 most Popular PyPI projects
+    :return: 100 biggest PyPI projects
     """
-    req = request.Request(f"{PYPI_ENDPOINT}/stats", headers={"accept": "application/json"})
+    req = request.Request(f"{PYPI_ENDPOINT}/stats", headers={'accept': 'application/json'})
     with request.urlopen(req) as f:
         res = json.load(f)
-        return res["top_packages"].keys()
+        return res['top_packages'].keys()
+
+
+def get_most_popular_projects(n: int) -> Iterable[str]:
+    """
+    See: https://github.com/hugovk/top-pypi-packages, updates monthly
+    :param n: Amount of project to return.
+    :return: The n most popular projects (of previous) on PyPI.
+    """
+    url = 'https://hugovk.github.io/top-pypi-packages/top-pypi-packages-30-days.min.json'
+    with request.urlopen(request.Request(url)) as f:
+        res = json.load(f)
+        return (row['project'] for row in res['rows'][:n])

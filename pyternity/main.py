@@ -8,7 +8,7 @@ def main():
     setup_project()
 
     # TODO Add CLI (arguments) support
-    projects = get_most_popular_projects()
+    projects = get_most_popular_projects(50)
 
     for project_name in projects:
         logger.info(f"Calculating signature for {project_name}...")
