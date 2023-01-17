@@ -38,7 +38,7 @@ def get_features(project_folder: Path, processes: int = Config.vermin.processes(
 
                     if min_v2:
                         detected_features[min_v2][feature] += 1
-                    if min_v3 and (not min_v2 or min_v3 != "3.0"):
+                    if min_v3 and (not min_v2 or min_v3 != '3.0'):
                         detected_features[min_v3][feature] += 1
 
                 except ValueError:

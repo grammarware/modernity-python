@@ -11,12 +11,15 @@ def main():
     projects = get_most_popular_projects()
 
     for project_name in projects:
+        logger.info(f"Calculating signature for {project_name}...")
         project = PyPIProject(project_name)
 
         signatures = {}
 
         releases = [release for release in project.releases if release.is_minor]
         for release in releases:
+            logger.info(f"Getting features from {release.project_name} {release.version} ...")
+
             try:
                 features = release.get_features()
             except RecursionError:
@@ -24,7 +27,10 @@ def main():
                 logger.warning(f"Maximum recursion depth exceeded for {release.project_name} {release.version}")
                 continue
 
-            signature = {version: sum(features.values()) for version, features in features.items()}
+            features_per_version = {version: sum(features.values()) for version, features in features.items()}
+            total_features = sum(features_per_version.values())
+            signature = {version: features_per_version[version] / total_features for version, features in features.items()}
+
             # plot_signature(signature, release)
             signatures[release] = signature
 
