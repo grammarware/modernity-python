@@ -1,4 +1,11 @@
+from collections import defaultdict
 from datetime import date
+
+from vermin import MOD_REQS, MOD_MEM_REQS, KWARGS_REQS, STRFTIME_REQS, BYTES_REQS, ARRAY_TYPECODE_REQS, \
+    CODECS_ERROR_HANDLERS, CODECS_ENCODINGS, BUILTIN_GENERIC_ANNOTATION_TYPES, DICT_UNION_SUPPORTED_TYPES, \
+    DICT_UNION_MERGE_SUPPORTED_TYPES, DECORATOR_USER_FUNCTIONS
+
+from pyternity.utils import Config
 
 PYTHON_RELEASES = {version: date.fromisoformat(d) for version, d in {
     "2.0": "2000-10-16",
@@ -22,6 +29,28 @@ PYTHON_RELEASES = {version: date.fromisoformat(d) for version, d in {
     "3.10": "2021-10-04",
     "3.11": "2022-10-24"
 }.items()}
+
+
+def vermin_rules_per_python_version() -> dict[str, list[str]]:
+    config = Config.vermin
+    features_per_version = defaultdict(list)
+
+    detections = (
+        MOD_REQS(config), MOD_MEM_REQS(config), KWARGS_REQS(config),
+        STRFTIME_REQS, BYTES_REQS, ARRAY_TYPECODE_REQS, CODECS_ERROR_HANDLERS, CODECS_ENCODINGS,
+        {annotation: (None, (3, 9)) for annotation in
+         (*BUILTIN_GENERIC_ANNOTATION_TYPES, *DICT_UNION_SUPPORTED_TYPES, *DICT_UNION_MERGE_SUPPORTED_TYPES)},
+        DECORATOR_USER_FUNCTIONS
+    )
+
+    for detection_type in detections:
+        for feature, (py2, py3) in detection_type.items():
+            if py2:
+                features_per_version['.'.join(map(str, py2))].append(feature)
+            if py3:
+                features_per_version['.'.join(map(str, py3))].append(feature)
+
+    return features_per_version
 
 
 def possible_versions(commit_date: date) -> set[tuple[int, int]]:

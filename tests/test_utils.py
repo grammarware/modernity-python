@@ -3,6 +3,7 @@ import shutil
 import sys
 import tarfile
 import unittest
+from collections import defaultdict
 from pathlib import Path
 from typing import Mapping
 from urllib import request
@@ -25,8 +26,7 @@ def msg_features(code: str, actual: Features, expected: Features):
 
 def test_code(test_case: unittest.TestCase, code: str, test_result: Features):
     actual = get_features_from_test_code(code)
-    with test_case.subTest(code):
-        test_case.assertDictEqual(actual, test_result, msg_features(code, actual, test_result))
+    test_case.assertDictEqual(actual, test_result, msg_features(code, actual, test_result))
 
 
 def get_features_from_test_code(code: str) -> Features:
@@ -70,6 +70,15 @@ def get_test_cases() -> dict[str, Features]:
             test_cases[code] = test_cases.get(code, {}) | expected
 
         return test_cases
+
+
+def tested_features_per_python_version(test_cases: dict[str, Features]) -> dict[str, set[str]]:
+    unique_features = defaultdict(set)
+    for code, fts in test_cases.items():
+        for version, feature in fts.items():
+            unique_features[version].update(feature.keys())
+
+    return unique_features
 
 
 def combine_features(features0: Features, features1: dict[str, dict[str, int]]) -> Features:

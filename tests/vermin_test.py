@@ -4,7 +4,7 @@ import unittest
 
 from pyternity.utils import setup_project
 from tests.test_utils import test_code, get_test_cases, TEST_CASES_FILE_PY2, TEST_CASES_FILE_PY3, \
-    download_latest_python_source, PYTHON_2_VERSION, PYTHON_3_VERSION
+    download_latest_python_source, PYTHON_2_VERSION, PYTHON_3_VERSION, tested_features_per_python_version
 
 # Idea; read all doc files, and look for  .. versionchanged / .. versionadded
 # https://github.com/python/cpython/tree/main/Doc/library
@@ -75,7 +75,8 @@ class TestFeatures(unittest.TestCase):
 
     def test_version_3_9(self):
         for code, test_result in PYTHON_3_9.items():
-            test_code(self, code, test_result)
+            with self.subTest(code):
+                test_code(self, code, test_result)
 
     def test_from_changelog(self):
         # Clear previous run
@@ -97,11 +98,22 @@ class TestFeatures(unittest.TestCase):
 
         test_cases = get_test_cases() | OVERWRITTEN_TEST_CASES
 
-        # Now test the test-cases (in alphabetic order)
+        failed_per_version = defaultdict(int)
 
+        # Now test the test-cases (in alphabetic order)
         # TODO Run subTest for each module
         for code, expected in sorted(test_cases.items()):
-            test_code(self, code, expected)
+            with self.subTest(code):
+                try:
+                    test_code(self, code, expected)
+                except AssertionError:
+                    version = max(expected.keys(), key=lambda versions: tuple(map(int, versions.split('.'))))
+                    failed_per_version[version] += 1
+                    raise
+
+        logger.info("Plotting Vermin vs Test graph ...")
+        plot_vermin_vs_test_features(vermin_rules_per_python_version(),
+                                     tested_features_per_python_version(test_cases), failed_per_version)
 
         # TODO Make test to ensure all modules are covered (all non-submodules: sys.stdlib_module_names)
 
