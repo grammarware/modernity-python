@@ -17,19 +17,25 @@ def main():
         signatures = {}
 
         releases = [release for release in project.releases if release.is_minor]
+        logger.info(f"Found {len(releases)} minor releases: {', '.join(r.version for r in releases)}")
         for release in releases:
             logger.info(f"Getting features from {release.project_name} {release.version} ...")
 
             try:
                 features = release.get_features()
             except RecursionError:
-                # Python files of pybullet cause this error; skip it
+                # Python files of idna 0.2 - 2.0, pybullet cause this error; skip it
                 logger.warning(f"Maximum recursion depth exceeded for {release.project_name} {release.version}")
+                continue
+
+            except TypeError:
+                # Project pandas 1.5.0 causes this
+                logger.warning(f"TypeError for {release.project_name} {release.version}")
                 continue
 
             features_per_version = {version: sum(features.values()) for version, features in features.items()}
             total_features = sum(features_per_version.values())
-            signature = {version: features_per_version[version] / total_features for version, features in features.items()}
+            signature = {version: features_per_version[version] / total_features for version in features}
 
             # plot_signature(signature, release)
             signatures[release] = signature
@@ -37,7 +43,7 @@ def main():
         if releases:
             plot_signatures(project, signatures)
         else:
-            logger.warning(f"No major versions found for {project.name:30}: "
+            logger.warning(f"No minor versions found for {project.name:30}, all versions are: "
                            f"{[release.version for release in project.releases]}")
 
 
