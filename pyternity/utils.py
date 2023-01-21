@@ -11,9 +11,10 @@ Features: TypeAlias = defaultdict[str, defaultdict[str, int]]
 Signature: TypeAlias = dict[str, int]
 
 ROOT_DIR = Path(__file__).parent.parent
-TMP_DIR = ROOT_DIR / "tmp"
-EXAMPLES_DIR = ROOT_DIR / "examples"
-RESULTS_DIR = ROOT_DIR / "results"
+TMP_DIR = ROOT_DIR / 'tmp'
+EXAMPLES_DIR = ROOT_DIR / 'examples'
+RESULTS_DIR = ROOT_DIR / 'results'
+PLOTS_DIR = RESULTS_DIR / 'plots'
 
 logger = logging.getLogger('pyternity_logger')
 
@@ -53,6 +54,7 @@ def setup_project():
     TMP_DIR.mkdir(exist_ok=True)
     EXAMPLES_DIR.mkdir(exist_ok=True)
     RESULTS_DIR.mkdir(exist_ok=True)
+    PLOTS_DIR.mkdir(exist_ok=True)
 
     # Setup logger, log normal logs and errors separately
     logger.setLevel(logging.INFO)

@@ -1,5 +1,5 @@
 from collections import defaultdict
-from datetime import date
+from datetime import datetime
 
 from vermin import MOD_REQS, MOD_MEM_REQS, KWARGS_REQS, STRFTIME_REQS, BYTES_REQS, ARRAY_TYPECODE_REQS, \
     CODECS_ERROR_HANDLERS, CODECS_ENCODINGS, BUILTIN_GENERIC_ANNOTATION_TYPES, DICT_UNION_SUPPORTED_TYPES, \
@@ -7,7 +7,7 @@ from vermin import MOD_REQS, MOD_MEM_REQS, KWARGS_REQS, STRFTIME_REQS, BYTES_REQ
 
 from pyternity.utils import Config
 
-PYTHON_RELEASES = {version: date.fromisoformat(d) for version, d in {
+PYTHON_RELEASES = {version: datetime.fromisoformat(d) for version, d in {
     "2.0": "2000-10-16",
     "2.1": "2001-04-15",
     "2.2": "2001-12-21",
@@ -53,5 +53,5 @@ def vermin_rules_per_python_version() -> dict[str, list[str]]:
     return features_per_version
 
 
-def possible_versions(commit_date: date) -> set[tuple[int, int]]:
+def possible_versions(commit_date: datetime) -> set[tuple[int, int]]:
     return {version for version, v_date in PYTHON_RELEASES.items() if v_date <= commit_date}

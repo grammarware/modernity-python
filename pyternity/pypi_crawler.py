@@ -29,7 +29,7 @@ class Release:
         self.version = version
         self.filename: str = sdist_file['filename']
         self.requires_python: str = sdist_file['requires_python'] or ''
-        self.upload_date = datetime.fromisoformat(sdist_file['upload_time']).date()
+        self.upload_date = datetime.fromisoformat(sdist_file['upload_time'])
         self.url: str = sdist_file['url']
 
     @property
@@ -41,7 +41,6 @@ class Release:
         return bool(MINOR_VERSION.fullmatch(self.version))
 
     def __lt__(self, other: Self):
-        # TODO we need the time part here also
         return self.upload_date < other.upload_date
 
     def download_files(self):
