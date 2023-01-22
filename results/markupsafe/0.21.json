@@ -1,0 +1,1 @@
+{"2.0": {"'sys.version_info' member": 2, "'unichr' member": 7}, "2.2": {"'iter' member": 1, "'type' member": 2, "'gc.get_objects' member": 2, "'super' member": 2}, "2.1": {"'unittest' module": 1}, "2.4": {"'set' member": 2, "function decorators": 1}, "2.3": {"'enumerate' member": 2}, "2.6": {"'string.Formatter' member": 3}}

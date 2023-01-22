@@ -1,0 +1,1 @@
+{"2.2": {"'type' member": 10, "'dict' member": 18, "'super' member": 32, "'staticmethod' member": 4, "'property' member": 4}, "2.4": {"function decorators": 1, "'sorted' member": 2}, "2.3": {"'enumerate' member": 8, "'UnicodeDecodeError' member": 2}, "2.0": {"'unicode' member": 2, "'copy_reg' module": 1}}

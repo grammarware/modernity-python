@@ -1,0 +1,1 @@
+{"2.1": {"'__future__' module": 9}, "2.5": {"'__future__.with_statement' member": 1, "`with`": 2, "'contextlib' module": 1, "'any' member": 2, "'ctypes' module": 1}, "2.4": {"function decorators": 2}, "2.0": {"print(expr)": 8}, "2.6": {"'__future__.print_function' member": 8}, "2.2": {"'bool' member": 1, "'dict' member": 4}}

@@ -1,0 +1,1 @@
+{"2.6": {"byte string (b'..') or `str` synonym": 148, "'io' module": 1}, "2.5": {"`with`": 1, "'__future__.absolute_import' member": 2}, "2.3": {"'pkgutil' module": 2}, "2.1": {"'__future__' module": 2}, "2.4": {"function decorators": 5}}

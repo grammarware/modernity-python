@@ -1,0 +1,1 @@
+{"2.6": {"'io' module": 2, "byte string (b'..') or `str` synonym": 2}, "2.4": {"function decorators": 5, "'operator.attrgetter' member": 2}, "2.5": {"`with`": 6, "'functools' module": 1}, "2.2": {"'dict' member": 1, "'__future__.division' member": 2}, "2.1": {"'__future__' module": 2}, "3.4": {"'pathlib' module": 1}}

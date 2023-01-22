@@ -1,0 +1,1 @@
+{"2.2": {"'os.path.realpath' member": 1}, "2.6": {"'str.format' member": 1, "'collections.namedtuple' member": 1}, "3.0": {"annotations": 1}, "3.5": {"coroutines (async)": 1, "coroutines (await)": 3}, "2.4": {"'collections' module": 1}, "2.0": {"'sys.version_info' member": 2}, "2.7": {"dict comprehensions": 1}}
