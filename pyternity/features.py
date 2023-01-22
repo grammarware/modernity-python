@@ -27,24 +27,18 @@ def get_features(project_folder: Path, processes: int = Config.vermin.processes(
                 if line[0] == '|':
                     continue
 
-                try:
-                    # Grab the features that were detected which belong to a specific version
-                    # Format: file:line:column:py2:py3:feature
-                    _, py2, py3, feature = line.rsplit(':', maxsplit=3)
+                # Grab the features that were detected which belong to a specific version
+                # Format: file:line:column:py2:py3:feature
+                _, py2, py3, feature = line.rsplit(':', maxsplit=3)
 
-                    # Some features are both specified in 2.7 and 3.1 (like argparse module)
-                    # But don't include general 3.0, if features was already added by a python 2.x version
-                    min_v2, min_v3 = parse_vermin_version(py2), parse_vermin_version(py3)
+                # Some features are both specified in 2.7 and 3.1 (like argparse module)
+                # But don't include general 3.0, if features was already added by a python 2.x version
+                min_v2, min_v3 = parse_vermin_version(py2), parse_vermin_version(py3)
 
-                    if min_v2:
-                        detected_features[min_v2][feature] += 1
-                    if min_v3 and (not min_v2 or min_v3 != '3.0'):
-                        detected_features[min_v3][feature] += 1
-
-                except ValueError:
-                    # TODO Handle files with errors
-                    logger.error(f"ERROR for {res.path}:\n{line}")
-                    continue
+                if min_v2:
+                    detected_features[min_v2][feature] += 1
+                if min_v3 and (not min_v2 or min_v3 != '3.0'):
+                    detected_features[min_v3][feature] += 1
 
     return detected_features
 

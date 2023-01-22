@@ -1,3 +1,5 @@
+from traceback import TracebackException
+
 from pyternity.plotting import plot_signatures_3d
 from pyternity.pypi_crawler import PyPIProject, get_most_popular_projects
 from pyternity.utils import *
@@ -11,7 +13,7 @@ def main():
     projects = get_most_popular_projects(50)
 
     for project_name in projects:
-        logger.info(f"Calculating signature for {project_name}...")
+        logger.info(f"Calculating signatures for {project_name} ...")
         project = PyPIProject(project_name)
 
         signatures = {}
@@ -23,14 +25,10 @@ def main():
 
             try:
                 features = release.get_features()
-            except RecursionError:
-                # Python files of idna 0.2 - 2.0, pybullet cause this error; skip it
-                logger.error(f"Maximum recursion depth exceeded for {release.project_name} {release.version}")
-                continue
-
-            except TypeError:
-                # Project pandas 1.5.0 causes this
-                logger.error(f"TypeError for {release.project_name} {release.version}")
+            except (RecursionError, TypeError) as e:
+                # Skip releases that give errors
+                logger.error(f"Error occurred for {release.project_name} {release.version}:\n" +
+                             ''.join(TracebackException.from_exception(e).format()))
                 continue
 
             features_per_version = {version: sum(features.values()) for version, features in features.items()}
