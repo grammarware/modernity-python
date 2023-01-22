@@ -11,6 +11,7 @@ Features: TypeAlias = defaultdict[str, defaultdict[str, int]]
 Signature: TypeAlias = dict[str, int]
 
 ROOT_DIR = Path(__file__).parent.parent
+LOG_FILE = ROOT_DIR / 'pyternity-log.txt'
 TMP_DIR = ROOT_DIR / 'tmp'
 EXAMPLES_DIR = ROOT_DIR / 'examples'
 RESULTS_DIR = ROOT_DIR / 'results'
@@ -67,3 +68,8 @@ def setup_project():
     error_handler = logging.StreamHandler(sys.stderr)
     error_handler.setLevel(logging.ERROR)
     logger.addHandler(error_handler)
+
+    file_handler = logging.FileHandler(LOG_FILE)
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)

@@ -1,4 +1,4 @@
-from pyternity.plotting import plot_signatures
+from pyternity.plotting import plot_signatures_3d
 from pyternity.pypi_crawler import PyPIProject, get_most_popular_projects
 from pyternity.utils import *
 
@@ -25,12 +25,12 @@ def main():
                 features = release.get_features()
             except RecursionError:
                 # Python files of idna 0.2 - 2.0, pybullet cause this error; skip it
-                logger.warning(f"Maximum recursion depth exceeded for {release.project_name} {release.version}")
+                logger.error(f"Maximum recursion depth exceeded for {release.project_name} {release.version}")
                 continue
 
             except TypeError:
                 # Project pandas 1.5.0 causes this
-                logger.warning(f"TypeError for {release.project_name} {release.version}")
+                logger.error(f"TypeError for {release.project_name} {release.version}")
                 continue
 
             features_per_version = {version: sum(features.values()) for version, features in features.items()}
@@ -40,10 +40,10 @@ def main():
             # plot_signature(signature, release)
             signatures[release] = signature
 
-        if releases:
-            plot_signatures(project, signatures)
+        if len(signatures) >= 5:
+            plot_signatures_3d(project, signatures)
         else:
-            logger.warning(f"No minor versions found for {project.name:30}, all versions are: "
+            logger.warning(f"Not enough minor versions found for {project.name:30}, all versions are: "
                            f"{[release.version for release in project.releases]}")
 
 
