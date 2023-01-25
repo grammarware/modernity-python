@@ -26,6 +26,11 @@ def main():
             features = release.get_features()
             features_per_version = {version: sum(features.values()) for version, features in features.items()}
             total_features = sum(features_per_version.values())
+
+            if total_features == 0:
+                logger.info(f"Did not found any features for {release.project_name} {release.version}")
+                continue
+
             signature = {version: features_per_version[version] / total_features for version in features}
             signatures[release] = signature
 
