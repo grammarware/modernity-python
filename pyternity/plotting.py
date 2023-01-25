@@ -15,10 +15,11 @@ def plot_3d_graph(X, Y, Z, name: str):
     fig: FigureBase = plt.figure(figsize=(10, 10))
 
     ax: Axes3D = fig.add_subplot(projection='3d')
-    ax.set_xlabel("Python version")
-    ax.set_ylabel("Release date")
-    ax.set_zlabel("Amount of version-specific features")
+    ax.set_xlabel("Python version", fontsize=12, labelpad=10)
+    ax.set_ylabel("Release date", fontsize=12)
+    ax.set_zlabel("Amount of version-specific features", fontsize=12)
     ax.yaxis.set_major_formatter(mdates.DateFormatter('%Y'))
+    ax.set_box_aspect((8, 4, 3))
 
     # Matplotlib tries to convert the Python versions to floats, to fix that just use integers and custom labels
     ax.set_xticks(list(range(len(PYTHON_RELEASES))), labels=list(PYTHON_RELEASES))
@@ -34,9 +35,9 @@ def plot_3d_graph(X, Y, Z, name: str):
     }
     ax.plot(list(releases_after_2008), mdates.date2num(list(releases_after_2008.values())), color='red')
 
-    plt.savefig(PLOTS_DIR / f"{name}.svg", bbox_inches='tight', pad_inches=.2, metadata={'Date': ''})
+    plt.savefig(PLOTS_DIR / f"{name}.svg", bbox_inches='tight', pad_inches=.3, metadata={'Date': ''})
 
-    fig.suptitle(f"Modernity Signature for {name}", fontsize=18)
+    fig.suptitle(f"Modernity Signature for {name}")
     plt.show()
 
 
@@ -69,10 +70,10 @@ def plot_all_projects_signatures(projects: list[dict[Release, dict]]) -> None:
 
 def plot_vermin_vs_test_features(vermin_features: dict[str, list[str]], test_features: dict[str, set[str]],
                                  failed_per_version: dict[str, int]):
-    fig: FigureBase = plt.figure(figsize=(20, 14))
+    fig: FigureBase = plt.figure(figsize=(10, 7))
     ax: Axes = fig.add_subplot()
-    ax.set_xlabel("Python version", fontsize=18)
-    ax.set_ylabel("Amount of version-specific features", fontsize=18)
+    ax.set_xlabel("Python version", fontsize=14)
+    ax.set_ylabel("Amount of version-specific features", fontsize=14)
 
     ax.plot(
         list(PYTHON_RELEASES), [len(vermin_features.get(version, [])) for version in PYTHON_RELEASES],
@@ -89,10 +90,10 @@ def plot_vermin_vs_test_features(vermin_features: dict[str, list[str]], test_fea
         label='Failed tests', color='red'
     )
 
-    plt.tick_params(which='major', labelsize=18)
-    plt.legend(loc='upper right', fontsize=18)
+    plt.tick_params(which='major')
+    plt.legend(loc='upper right', fontsize=14)
 
     plt.savefig(PLOTS_DIR / "Vermin Validation.svg", bbox_inches='tight')
 
-    fig.suptitle(f"Detected features by Vermin vs Test", fontsize=24)
+    fig.suptitle(f"Detected features by Vermin vs Test")
     plt.show()
