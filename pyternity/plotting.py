@@ -9,7 +9,6 @@ from matplotlib.figure import FigureBase
 from mpl_toolkits.mplot3d import Axes3D
 
 from pyternity.pypi_crawler import Release, PyPIProject
-from pyternity.python_versions import PYTHON_RELEASES, possible_versions
 from pyternity.utils import *
 
 

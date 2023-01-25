@@ -23,13 +23,7 @@ def main():
         for release in releases:
             logger.info(f"Getting features from {release.project_name} {release.version} ...")
 
-            try:
-                features = release.get_features()
-            except (RecursionError, TypeError) as e:
-                # Skip releases that give errors
-                logger.error(f"Error occurred for {release.project_name} {release.version}:\n" +
-                             ''.join(TracebackException.from_exception(e).format()))
-                continue
+            features = release.get_features()
 
             features_per_version = {version: sum(features.values()) for version, features in features.items()}
             total_features = sum(features_per_version.values())

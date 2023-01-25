@@ -3,7 +3,7 @@ import re
 import shutil
 import tarfile
 import zipfile
-from datetime import datetime
+from traceback import TracebackException
 from typing import Any, Iterable, Self
 from urllib import request
 
@@ -67,7 +67,12 @@ class Release:
 
         return out_dir
 
-    def get_features(self) -> Features:
+    def get_features(self) -> dict[str, dict[str, int]]:
+        """
+        If features were already calculated before, return that.
+        Else download the source of this release, calculate the features and save this result to file.
+        :return: Detected Features belonging to this release
+        """
         result_path = RESULTS_DIR / self.project_name / (self.version + '.json')
         if result_path.exists() and not Config.recalculate_examples:
             with result_path.open() as result_file:
@@ -75,16 +80,27 @@ class Release:
                     return json.load(result_file)
                 except json.decoder.JSONDecodeError:
                     # Recalculate if there is an error in the file
+                    # Should only occur when you prematurely exit the program
                     pass
 
         download_path = self.download_files()
-        new_features = features.get_features(download_path)
+
+        try:
+            # Sort features such that it is easier to debug when viewing the files
+            new_sorted_features = sort_features(features.get_features(download_path))
+
+        except (RecursionError, TypeError) as e:
+            # Skip releases that give errors, but do save empty {} to file,
+            # such that we skip it next time we want to plot using the already calculated data
+            new_sorted_features = {}
+            logger.error(f"Error occurred for {self.project_name} {self.version}:\n" +
+                         ''.join(TracebackException.from_exception(e).format()))
 
         result_path.parent.mkdir(exist_ok=True)
         with result_path.open('w+') as result_file:
-            json.dump(new_features, result_file)
+            json.dump(new_sorted_features, result_file, indent=2)
 
-        return new_features
+        return new_sorted_features
 
 
 class PyPIProject:

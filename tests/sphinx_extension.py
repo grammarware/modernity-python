@@ -3,13 +3,12 @@ import pickle
 import re
 from functools import reduce
 from itertools import chain
-from pathlib import Path
 
 import docutils.nodes
 import sphinx.addnodes
 from sphinx.application import Sphinx
 
-from pyternity.utils import Features, logger
+from pyternity.utils import *
 from tests.test_utils import get_features_from_test_code, combine_features, save_test_cases, normalize_expected
 
 # Python documentation is not consistent in when a new parameter has been added...

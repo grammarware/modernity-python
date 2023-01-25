@@ -1,11 +1,8 @@
 import subprocess
-import sys
 import unittest
-from collections import defaultdict
 
 from pyternity.plotting import plot_vermin_vs_test_features
-from pyternity.python_versions import vermin_rules_per_python_version
-from pyternity.utils import setup_project, logger
+from pyternity.utils import *
 from tests.test_utils import test_code, get_test_cases, TEST_CASES_FILE_PY2, TEST_CASES_FILE_PY3, \
     download_latest_python_source, PYTHON_2_VERSION, PYTHON_3_VERSION, tested_features_per_python_version
 
