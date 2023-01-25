@@ -20,7 +20,7 @@ LOG_FILE = ROOT_DIR / 'pyternity-log.txt'
 TMP_DIR = ROOT_DIR / 'tmp'
 EXAMPLES_DIR = ROOT_DIR / 'examples'
 RESULTS_DIR = ROOT_DIR / 'results'
-PLOTS_DIR = RESULTS_DIR / 'plots'
+PLOTS_DIR = ROOT_DIR / 'plots'
 
 PYTHON_RELEASES = {version: datetime.fromisoformat(d) for version, d in {
     "2.0": "2000-10-16",

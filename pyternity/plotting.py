@@ -1,4 +1,3 @@
-import datetime
 from itertools import chain
 
 import matplotlib.dates as mdates
@@ -48,7 +47,7 @@ def plot_signatures_3d(project: PyPIProject, release_and_signatures: dict[Releas
     ax.yaxis.set_major_formatter(mdates.DateFormatter('%Y'))
 
     # Matplotlib tries to convert the Python versions to floats, to fix that just use integers and custom labels
-    ax.xaxis.set_ticks(list(range(len(PYTHON_RELEASES))), labels=list(PYTHON_RELEASES))
+    ax.set_xticks(list(range(len(PYTHON_RELEASES))), labels=list(PYTHON_RELEASES))
 
     dates = list(chain.from_iterable(
         [mdates.date2num(r.upload_date)] * len(PYTHON_RELEASES) for r in release_and_signatures
@@ -59,16 +58,16 @@ def plot_signatures_3d(project: PyPIProject, release_and_signatures: dict[Releas
     ))
     ax.plot_trisurf(versions, dates, data, cmap=cm.get_cmap('Blues'))
 
-    years = [datetime.datetime(y, 1, 1) for y in range(2008, datetime.datetime.now().year + 1, 3)]
+    years = [datetime(y, 1, 1) for y in range(2008, datetime.now().year + 1, 3)]
     ax.set_yticks(years)
 
     # Plot line with Python releases with dates (after 2008)
     releases_after_2008 = {
-        i: r_date for i, r_date in enumerate(PYTHON_RELEASES.values()) if r_date >= datetime.datetime(2008, 1, 1)
+        i: r_date for i, r_date in enumerate(PYTHON_RELEASES.values()) if r_date >= datetime(2008, 1, 1)
     }
     ax.plot(list(releases_after_2008), mdates.date2num(list(releases_after_2008.values())), color='red')
 
-    plt.savefig(PLOTS_DIR / f"{project.name}_3d.svg", bbox_inches='tight', pad_inches=.2)
+    plt.savefig(PLOTS_DIR / f"{project.name}_3d.svg", bbox_inches='tight', pad_inches=.2, metadata={'Date': ''})
 
     fig.suptitle(f"Modernity Signature for {project.name}", fontsize=18)
     plt.show()
@@ -129,7 +128,7 @@ def plot_vermin_vs_test_features(vermin_features: dict[str, list[str]], test_fea
     plt.tick_params(which='major', labelsize=18)
     plt.legend(loc='upper right', fontsize=18)
 
-    plt.savefig(PLOTS_DIR / "Vermin VS Test.svg", bbox_inches='tight')
+    plt.savefig(PLOTS_DIR / "Vermin Validation.svg", bbox_inches='tight')
 
     fig.suptitle(f"Detected features by Vermin vs Test", fontsize=24)
     plt.show()
