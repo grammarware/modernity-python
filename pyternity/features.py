@@ -12,7 +12,7 @@ def get_features(project_folder: Path, processes: int = Config.vermin.processes(
 
     # Get all Python files in this folder
     py_paths = vermin.detect_paths(str(project_folder.absolute()), config=Config.vermin, processes=processes)
-    logger.debug(f"Found {len(py_paths)} python files.")
+    logger.info(f"Found {len(py_paths)} python file(s).")
 
     # Per version, per feature
     detected_features = defaultdict(lambda: defaultdict(int))

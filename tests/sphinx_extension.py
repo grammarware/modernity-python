@@ -4,7 +4,6 @@ import re
 from functools import reduce
 from itertools import chain
 from pathlib import Path
-from traceback import TracebackException
 
 import docutils.nodes
 import sphinx.addnodes
@@ -29,41 +28,37 @@ HAS_NEW_PARAMETER = re.compile(
 
 
 def generate_test_cases(out_dir: str, doctree_file: Path) -> dict[str, Features]:
-    # Load the cached doctree
+    # Load the cached doctree (Sphinx caches this automatically after (the first) doctree build)
     with doctree_file.open('rb') as f:
         doctree: sphinx.addnodes.document = pickle.load(f)
 
     test_cases = {}
     source = Path(doctree.get('source'))
-    logger.info(f"Processing {source}...")
-    print(source)
+    # TODO Fix logging within this subprocess
+    logger.info(f"Processing {source} ...")
 
     # TODO This does not test features that are completely removed in the Python docs
     for node in doctree.findall(sphinx.addnodes.versionmodified):
         version = node.get('version')
         # TODO handle version if it is a tuple
         if isinstance(version, str):
-            try:
-                new_test_cases = handle_versionmodified(version, node)
-                if not new_test_cases:
-                    # TODO Handle cases it does not find anything
-                    continue
+            new_test_cases = handle_versionmodified(version, node)
 
-                for new_test_case in new_test_cases:
-                    code, expected = new_test_case
-                    normalize_expected(expected)
-                    # Only update, if test_code was not a test_case yet
-                    test_cases.setdefault(code, dict(expected))
-
-            except Exception as e:
-                # TODO fix all errors; and code that did not result in a testcase
+            if not new_test_cases:
+                # TODO Handle cases it does not find anything
                 doc_tree_file = Path(out_dir) / source.parent.name / (source.stem + '.xml')
-                logger.error(
-                    f":: VERSIONMODIFIED ERROR ::\n"
+                logger.debug(
+                    f"Did not generate any test cases for this versionmodified node:\n"
                     f'File "{source}", line {node.line}\n'
-                    f'File "{doc_tree_file}", line {node.line}\n'
-                    + ''.join(TracebackException.from_exception(e).format())
+                    f'File "{doc_tree_file}", line {node.line}'
                 )
+                continue
+
+            for new_test_case in new_test_cases:
+                code, expected = new_test_case
+                normalize_expected(expected)
+                # Only update, if test_code was not a test_case yet
+                test_cases.setdefault(code, dict(expected))
 
     return test_cases
 
