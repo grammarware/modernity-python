@@ -127,16 +127,14 @@ def download_latest_python_source(version: str, overwrite: bool = False) -> None
     :return:
     """
     source_dir = TMP_DIR / f"Python-{version}"
-    # TODO Make this logic a decorator / function
     if source_dir.exists():
-        if overwrite:
-            shutil.rmtree(source_dir)
-        else:
+        if not overwrite:
             return
+        shutil.rmtree(source_dir)
 
     tgz_url = f"https://www.python.org/ftp/python/{version}/Python-{version}.tgz"
-    logger.info(f"Downloading Python source from {tgz_url}...")
+    logger.info(f"Downloading Python source from {tgz_url} ...")
     temp_file, _ = request.urlretrieve(tgz_url)
-    logger.info("Extracting Python source...")
+    logger.info("Extracting Python source ...")
     with tarfile.open(temp_file) as tar:
         tar.extractall(TMP_DIR)

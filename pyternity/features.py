@@ -8,11 +8,14 @@ from pyternity.utils import *
 def get_features(project_folder: Path, processes: int = Config.vermin.processes()) -> Features:
     assert project_folder.exists()
 
+    # Select all Python paths in this folder (when it is a directory)
+    py_paths = project_folder.rglob('*') if project_folder.is_dir() else [project_folder]
+
     # Per version, per feature
     detected_features = defaultdict(lambda: defaultdict(int))
     with multiprocessing.Pool(processes) if processes != 1 else contextlib.nullcontext() as pool:
         mapping = map if processes == 1 else pool.imap_unordered
-        to_process = ((path, Config.vermin) for path in project_folder.rglob('*'))
+        to_process = ((path, Config.vermin) for path in py_paths)
 
         for file_results in mapping(vermin.process_individual, to_process):
             for line in file_results.text.splitlines():
