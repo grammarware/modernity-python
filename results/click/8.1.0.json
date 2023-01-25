@@ -1,1 +1,133 @@
-{"2.4": {"function decorators": 460, "'set' member": 5, "'subprocess' module": 3, "'sorted' member": 10, "'os.urandom' member": 1, "'reversed' member": 3, "'threading.local' member": 1, "'collections' module": 2, "'collections.deque' member": 1, "'sorted(key)'": 1}, "2.5": {"`with`": 131, "'contextlib' module": 6, "'functools' module": 4, "'str.partition' member": 1, "'datetime.datetime.strptime' member": 38, "'uuid' module": 1, "'any' member": 3, "'BaseException' member": 1, "'ctypes' module": 1}, "3.2": {"'tempfile.TemporaryDirectory' member": 1, "'os.fsdecode' member": 13, "'callable' member": 12, "'os.fsencode' member": 2, "'ctypes.c_ssize_t' member": 1}, "3.6": {"f-strings": 329, "variable annotations": 151, "'os.PathLike' member": 4, "'enum.auto' member": 10}, "2.3": {"'optparse' module": 1, "'itertools' module": 3, "'platform' module": 1, "'enumerate' member": 10, "'sum' member": 5, "'gettext.ngettext' member": 4, "'shlex.shlex.whitespace_split' member": 1, "'shlex.split' member": 2, "'tempfile.mkdtemp' member": 2, "'datetime' module": 1, "'sys.getfilesystemencoding' member": 1, "'locale.getpreferredencoding' member": 1, "'textwrap' module": 1, "'tempfile.mkstemp' member": 4}, "3.0": {"super() without arguments": 88, "`nonlocal`": 5, "'configparser' module": 1, "'urllib.parse' module": 2, "annotations": 522, "keyword-only parameters": 3, "ellipsis literal (`...`) out of slices": 35, "exception cause": 18, "'open(errors)'": 1, "'open(encoding)'": 1}, "2.2": {"'super' member": 88, "'dict' member": 12, "'type' member": 12, "'iter' member": 15, "'StopIteration' member": 3, "'os.stat.st_mode' member": 7, "'object' member": 1, "'bool' member": 7, "'os.path.realpath' member": 1}, "2.7": {"set literals": 20, "'importlib' module": 1, "dict comprehensions": 8, "'ctypes.c_ssize_t' member": 1}, "2.6": {"byte string (b'..') or `str` synonym": 37, "'json' module": 1, "'io' module": 6, "'next' member": 7, "'bytearray' member": 1, "'inspect.isgeneratorfunction' member": 1, "'msvcrt.getwche' member": 1, "'msvcrt.getwch' member": 1, "'inspect.cleandoc' member": 8}, "2.0": {"print(expr)": 2, "'callable' member": 12}, "3.4": {"'pathlib' module": 3, "'operator.length_hint' member": 2, "'enum' module": 1}, "3.3": {"`yield from`": 5, "raise ... from None": 13, "'shutil.get_terminal_size' member": 4, "'os.replace' member": 2, "'collections.abc' module": 1, "'contextlib.ExitStack' member": 1}, "2.1": {"'inspect' module": 3, "'difflib' module": 1, "'weakref' module": 1}, "3.5": {"'typing' module": 15, "'subprocess.run' member": 2, "generalized unpacking": 7, "'glob.glob(recursive)'": 1, "'typing.ContextManager' member": 2}, "3.1": {"'importlib' module": 1}, "3.8": {"'importlib.metadata' module": 1}}
+{
+  "2.0": {
+    "'callable' member": 12,
+    "print(expr)": 2
+  },
+  "2.1": {
+    "'inspect' module": 3,
+    "'difflib' module": 1,
+    "'weakref' module": 1
+  },
+  "2.2": {
+    "'super' member": 88,
+    "'iter' member": 15,
+    "'dict' member": 12,
+    "'type' member": 12,
+    "'os.stat.st_mode' member": 7,
+    "'bool' member": 7,
+    "'StopIteration' member": 3,
+    "'object' member": 1,
+    "'os.path.realpath' member": 1
+  },
+  "2.3": {
+    "'enumerate' member": 10,
+    "'sum' member": 5,
+    "'gettext.ngettext' member": 4,
+    "'tempfile.mkstemp' member": 4,
+    "'itertools' module": 3,
+    "'shlex.split' member": 2,
+    "'tempfile.mkdtemp' member": 2,
+    "'optparse' module": 1,
+    "'platform' module": 1,
+    "'shlex.shlex.whitespace_split' member": 1,
+    "'datetime' module": 1,
+    "'sys.getfilesystemencoding' member": 1,
+    "'locale.getpreferredencoding' member": 1,
+    "'textwrap' module": 1
+  },
+  "2.4": {
+    "function decorators": 460,
+    "'sorted' member": 10,
+    "'set' member": 5,
+    "'subprocess' module": 3,
+    "'reversed' member": 3,
+    "'collections' module": 2,
+    "'os.urandom' member": 1,
+    "'threading.local' member": 1,
+    "'collections.deque' member": 1,
+    "'sorted(key)'": 1
+  },
+  "2.5": {
+    "`with`": 131,
+    "'datetime.datetime.strptime' member": 38,
+    "'contextlib' module": 6,
+    "'functools' module": 4,
+    "'any' member": 3,
+    "'str.partition' member": 1,
+    "'uuid' module": 1,
+    "'BaseException' member": 1,
+    "'ctypes' module": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 37,
+    "'inspect.cleandoc' member": 8,
+    "'next' member": 7,
+    "'io' module": 6,
+    "'json' module": 1,
+    "'bytearray' member": 1,
+    "'inspect.isgeneratorfunction' member": 1,
+    "'msvcrt.getwche' member": 1,
+    "'msvcrt.getwch' member": 1
+  },
+  "2.7": {
+    "set literals": 20,
+    "dict comprehensions": 8,
+    "'importlib' module": 1,
+    "'ctypes.c_ssize_t' member": 1
+  },
+  "3.0": {
+    "annotations": 522,
+    "super() without arguments": 88,
+    "ellipsis literal (`...`) out of slices": 35,
+    "exception cause": 18,
+    "`nonlocal`": 5,
+    "keyword-only parameters": 3,
+    "'urllib.parse' module": 2,
+    "'configparser' module": 1,
+    "'open(errors)'": 1,
+    "'open(encoding)'": 1
+  },
+  "3.1": {
+    "'importlib' module": 1
+  },
+  "3.2": {
+    "'os.fsdecode' member": 13,
+    "'callable' member": 12,
+    "'os.fsencode' member": 2,
+    "'tempfile.TemporaryDirectory' member": 1,
+    "'ctypes.c_ssize_t' member": 1
+  },
+  "3.3": {
+    "raise ... from None": 13,
+    "`yield from`": 5,
+    "'shutil.get_terminal_size' member": 4,
+    "'os.replace' member": 2,
+    "'collections.abc' module": 1,
+    "'contextlib.ExitStack' member": 1
+  },
+  "3.4": {
+    "'pathlib' module": 3,
+    "'operator.length_hint' member": 2,
+    "'enum' module": 1
+  },
+  "3.5": {
+    "'typing' module": 15,
+    "generalized unpacking": 7,
+    "'subprocess.run' member": 2,
+    "'typing.ContextManager' member": 2,
+    "'glob.glob(recursive)'": 1
+  },
+  "3.6": {
+    "f-strings": 329,
+    "variable annotations": 151,
+    "'enum.auto' member": 10,
+    "'os.PathLike' member": 4
+  },
+  "3.7": {},
+  "3.8": {
+    "'importlib.metadata' module": 1
+  },
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

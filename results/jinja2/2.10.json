@@ -1,1 +1,119 @@
-{"2.4": {"'set' member": 73, "function decorators": 146, "'sorted' member": 19, "'sorted(key)'": 5, "'collections' module": 8, "'itertools.groupby' member": 1, "'sorted(reverse)'": 2, "'reversed' member": 12, "'frozenset' member": 19, "'collections.deque' member": 4, "'decimal' module": 1}, "2.2": {"'super' member": 10, "'dict' member": 39, "'bool' member": 17, "'iter' member": 41, "'StopIteration' member": 28, "'fnmatch.filter' member": 2, "'type' member": 25, "'property' member": 18, "'operator.truediv' member": 3, "'operator.floordiv' member": 3, "'operator.eq' member": 4, "'operator.ne' member": 3, "'operator.gt' member": 4, "'operator.ge' member": 3, "'operator.lt' member": 4, "'operator.le' member": 3, "'staticmethod' member": 1, "'types.GeneratorType' member": 1, "'object' member": 2}, "2.6": {"'next' member": 160, "class decorators": 52, "'collections.namedtuple' member": 1, "'functools.reduce' member": 1, "'os.walk(followlinks)'": 1, "'ast' module": 1, "'str.format' member": 9, "'string.Formatter' member": 1, "'logging.StreamHandler' member": 1, "'io' module": 1, "'json' module": 1, "byte string (b'..') or `str` synonym": 4}, "2.3": {"'timeit' module": 1, "'logging' module": 2, "'itertools' module": 6, "'tempfile.gettempdir' member": 2, "'dict.pop' member": 1, "'enumerate' member": 28, "'textwrap' module": 1, "'sum' member": 1, "'os.walk' member": 2, "'operator.pow' member": 3, "'sets' module": 1, "'tempfile.mkdtemp' member": 4, "'tempfile.mkstemp' member": 2}, "2.0": {"'unicode' member": 1, "'sys.version_info' member": 9, "'callable' member": 2, "print(expr)": 3}, "2.5": {"'functools' module": 4, "'hashlib' module": 2, "'ctypes' module": 1, "'operator.itemgetter' member": 1, "`with`": 27}, "3.5": {"coroutines (async)": 35, "async for-loops": 8, "coroutines (await)": 19, "'StopAsyncIteration' member": 9, "'inspect.isawaitable' member": 1, "'types.CoroutineType' member": 1}, "3.7": {"await in comprehensions": 1}, "2.1": {"'inspect' module": 2, "'warnings' module": 3, "'weakref' module": 3, "'random.getstate' member": 2, "'random.setstate' member": 2}, "3.4": {"'asyncio' module": 2}, "2.7": {"'ctypes.c_ssize_t' member": 1}, "3.2": {"'ctypes.c_ssize_t' member": 1, "'callable' member": 2}, "3.0": {"'str.isidentifier' member": 2, "'urllib.parse' module": 1}, "3.6": {"'types.AsyncGeneratorType' member": 1}}
+{
+  "2.0": {
+    "'sys.version_info' member": 9,
+    "print(expr)": 3,
+    "'callable' member": 2,
+    "'unicode' member": 1
+  },
+  "2.1": {
+    "'warnings' module": 3,
+    "'weakref' module": 3,
+    "'inspect' module": 2,
+    "'random.getstate' member": 2,
+    "'random.setstate' member": 2
+  },
+  "2.2": {
+    "'iter' member": 41,
+    "'dict' member": 39,
+    "'StopIteration' member": 28,
+    "'type' member": 25,
+    "'property' member": 18,
+    "'bool' member": 17,
+    "'super' member": 10,
+    "'operator.eq' member": 4,
+    "'operator.gt' member": 4,
+    "'operator.lt' member": 4,
+    "'operator.truediv' member": 3,
+    "'operator.floordiv' member": 3,
+    "'operator.ne' member": 3,
+    "'operator.ge' member": 3,
+    "'operator.le' member": 3,
+    "'fnmatch.filter' member": 2,
+    "'object' member": 2,
+    "'staticmethod' member": 1,
+    "'types.GeneratorType' member": 1
+  },
+  "2.3": {
+    "'enumerate' member": 28,
+    "'itertools' module": 6,
+    "'tempfile.mkdtemp' member": 4,
+    "'operator.pow' member": 3,
+    "'logging' module": 2,
+    "'tempfile.gettempdir' member": 2,
+    "'os.walk' member": 2,
+    "'tempfile.mkstemp' member": 2,
+    "'timeit' module": 1,
+    "'dict.pop' member": 1,
+    "'textwrap' module": 1,
+    "'sum' member": 1,
+    "'sets' module": 1
+  },
+  "2.4": {
+    "function decorators": 146,
+    "'set' member": 73,
+    "'sorted' member": 19,
+    "'frozenset' member": 19,
+    "'reversed' member": 12,
+    "'collections' module": 8,
+    "'sorted(key)'": 5,
+    "'collections.deque' member": 4,
+    "'sorted(reverse)'": 2,
+    "'itertools.groupby' member": 1,
+    "'decimal' module": 1
+  },
+  "2.5": {
+    "`with`": 27,
+    "'functools' module": 4,
+    "'hashlib' module": 2,
+    "'ctypes' module": 1,
+    "'operator.itemgetter' member": 1
+  },
+  "2.6": {
+    "'next' member": 160,
+    "class decorators": 52,
+    "'str.format' member": 9,
+    "byte string (b'..') or `str` synonym": 4,
+    "'collections.namedtuple' member": 1,
+    "'functools.reduce' member": 1,
+    "'os.walk(followlinks)'": 1,
+    "'ast' module": 1,
+    "'string.Formatter' member": 1,
+    "'logging.StreamHandler' member": 1,
+    "'io' module": 1,
+    "'json' module": 1
+  },
+  "2.7": {
+    "'ctypes.c_ssize_t' member": 1
+  },
+  "3.0": {
+    "'str.isidentifier' member": 2,
+    "'urllib.parse' module": 1
+  },
+  "3.1": {},
+  "3.2": {
+    "'callable' member": 2,
+    "'ctypes.c_ssize_t' member": 1
+  },
+  "3.3": {},
+  "3.4": {
+    "'asyncio' module": 2
+  },
+  "3.5": {
+    "coroutines (async)": 35,
+    "coroutines (await)": 19,
+    "'StopAsyncIteration' member": 9,
+    "async for-loops": 8,
+    "'inspect.isawaitable' member": 1,
+    "'types.CoroutineType' member": 1
+  },
+  "3.6": {
+    "'types.AsyncGeneratorType' member": 1
+  },
+  "3.7": {
+    "await in comprehensions": 1
+  },
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

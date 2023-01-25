@@ -1,1 +1,77 @@
-{"2.4": {"'subprocess' module": 4, "'collections' module": 1, "'sorted' member": 13, "'reversed' member": 5, "'set' member": 6, "function decorators": 80}, "2.0": {"'callable' member": 2, "'sys.version_info' member": 20, "print(expr)": 2, "'__builtin__' module": 1, "'long' member": 16, "'unicode' member": 6}, "3.2": {"'callable' member": 2}, "2.2": {"'property' member": 11, "'iter' member": 6, "'type' member": 105, "'dict' member": 8, "'bool' member": 34, "'super' member": 18}, "2.6": {"'io' module": 5, "'ctypes.c_bool' member": 2, "byte string (b'..') or `str` synonym": 455, "'ctypes.CFUNCTYPE(use_errno)'": 1, "'ctypes.get_errno' member": 2, "'ctypes.set_errno' member": 2, "'bytearray' member": 2, "'__future__.unicode_literals' member": 1}, "2.1": {"'weakref' module": 5, "'__future__' module": 1}, "2.3": {"'dict.pop' member": 2, "'enumerate' member": 20, "'shutil.move' member": 4, "'sum' member": 1, "'os.walk' member": 1, "'platform' module": 1, "'tempfile.mkdtemp' member": 1, "'tempfile.mkstemp' member": 2}, "2.5": {"'any' member": 2, "'ctypes' module": 2, "'subprocess.check_call' member": 6, "`with`": 24}, "3.10": {"union types as `X | Y`": 1}, "3.0": {"'builtins' module": 1}, "2.7": {"'memoryview' member": 1}}
+{
+  "2.0": {
+    "'sys.version_info' member": 20,
+    "'long' member": 16,
+    "'unicode' member": 6,
+    "'callable' member": 2,
+    "print(expr)": 2,
+    "'__builtin__' module": 1
+  },
+  "2.1": {
+    "'weakref' module": 5,
+    "'__future__' module": 1
+  },
+  "2.2": {
+    "'type' member": 105,
+    "'bool' member": 34,
+    "'super' member": 18,
+    "'property' member": 11,
+    "'dict' member": 8,
+    "'iter' member": 6
+  },
+  "2.3": {
+    "'enumerate' member": 20,
+    "'shutil.move' member": 4,
+    "'dict.pop' member": 2,
+    "'tempfile.mkstemp' member": 2,
+    "'sum' member": 1,
+    "'os.walk' member": 1,
+    "'platform' module": 1,
+    "'tempfile.mkdtemp' member": 1
+  },
+  "2.4": {
+    "function decorators": 80,
+    "'sorted' member": 13,
+    "'set' member": 6,
+    "'reversed' member": 5,
+    "'subprocess' module": 4,
+    "'collections' module": 1
+  },
+  "2.5": {
+    "`with`": 24,
+    "'subprocess.check_call' member": 6,
+    "'any' member": 2,
+    "'ctypes' module": 2
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 455,
+    "'io' module": 5,
+    "'ctypes.c_bool' member": 2,
+    "'ctypes.get_errno' member": 2,
+    "'ctypes.set_errno' member": 2,
+    "'bytearray' member": 2,
+    "'ctypes.CFUNCTYPE(use_errno)'": 1,
+    "'__future__.unicode_literals' member": 1
+  },
+  "2.7": {
+    "'memoryview' member": 1
+  },
+  "3.0": {
+    "'builtins' module": 1
+  },
+  "3.1": {},
+  "3.2": {
+    "'callable' member": 2
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {
+    "union types as `X | Y`": 1
+  },
+  "3.11": {}
+}

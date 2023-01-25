@@ -1,1 +1,84 @@
-{"2.1": {"'unittest' module": 1, "'__future__' module": 1, "'weakref' module": 1, "'warnings' module": 1}, "2.0": {"print(expr)": 74, "'string.lowercase' member": 1, "'string.uppercase' member": 1, "'file' member": 2, "'sys.version_info' member": 1, "'unicode' member": 1, "'__builtin__' module": 1}, "2.6": {"'next' member": 7, "'__future__.print_function' member": 1, "'str.format' member": 73, "'functools.reduce' member": 1}, "2.2": {"'StopIteration' member": 2, "'type' member": 44, "'super' member": 147, "'operator.truediv' member": 1, "'iter' member": 11, "'str.decode' member": 1, "'dict' member": 17, "'bool' member": 10, "'property' member": 2, "'object' member": 14, "'staticmethod' member": 4}, "2.4": {"'reversed' member": 1, "'set' member": 132, "function decorators": 24, "'sorted' member": 7, "'collections' module": 1, "'collections.deque' member": 4}, "2.3": {"'sum' member": 15, "'datetime' module": 5, "'enumerate' member": 28, "'operator.pow' member": 1, "'UnicodeEncodeError' member": 1, "'slice.indices' member": 2, "'dict.pop' member": 4}, "2.5": {"'datetime.datetime.strptime' member": 217, "'contextlib' module": 2, "`with`": 6, "'functools' module": 1, "'any' member": 6, "'all' member": 6}, "3.0": {"'urllib.parse' module": 8, "'list.copy' member": 2}, "3.10": {"union types as `X | Y`": 3}, "2.7": {"`\"..{}..\".format(..)`": 4, "'collections.OrderedDict' member": 1}, "3.1": {"'collections.OrderedDict' member": 1}}
+{
+  "2.0": {
+    "print(expr)": 74,
+    "'file' member": 2,
+    "'string.lowercase' member": 1,
+    "'string.uppercase' member": 1,
+    "'sys.version_info' member": 1,
+    "'unicode' member": 1,
+    "'__builtin__' module": 1
+  },
+  "2.1": {
+    "'unittest' module": 1,
+    "'__future__' module": 1,
+    "'weakref' module": 1,
+    "'warnings' module": 1
+  },
+  "2.2": {
+    "'super' member": 147,
+    "'type' member": 44,
+    "'dict' member": 17,
+    "'object' member": 14,
+    "'iter' member": 11,
+    "'bool' member": 10,
+    "'staticmethod' member": 4,
+    "'StopIteration' member": 2,
+    "'property' member": 2,
+    "'operator.truediv' member": 1,
+    "'str.decode' member": 1
+  },
+  "2.3": {
+    "'enumerate' member": 28,
+    "'sum' member": 15,
+    "'datetime' module": 5,
+    "'dict.pop' member": 4,
+    "'slice.indices' member": 2,
+    "'operator.pow' member": 1,
+    "'UnicodeEncodeError' member": 1
+  },
+  "2.4": {
+    "'set' member": 132,
+    "function decorators": 24,
+    "'sorted' member": 7,
+    "'collections.deque' member": 4,
+    "'reversed' member": 1,
+    "'collections' module": 1
+  },
+  "2.5": {
+    "'datetime.datetime.strptime' member": 217,
+    "`with`": 6,
+    "'any' member": 6,
+    "'all' member": 6,
+    "'contextlib' module": 2,
+    "'functools' module": 1
+  },
+  "2.6": {
+    "'str.format' member": 73,
+    "'next' member": 7,
+    "'__future__.print_function' member": 1,
+    "'functools.reduce' member": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 4,
+    "'collections.OrderedDict' member": 1
+  },
+  "3.0": {
+    "'urllib.parse' module": 8,
+    "'list.copy' member": 2
+  },
+  "3.1": {
+    "'collections.OrderedDict' member": 1
+  },
+  "3.2": {},
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {
+    "union types as `X | Y`": 3
+  },
+  "3.11": {}
+}

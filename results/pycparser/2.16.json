@@ -1,1 +1,53 @@
-{"2.4": {"'subprocess' module": 2, "function decorators": 18, "'set' member": 18, "'string.Template' member": 1, "'reversed' member": 2}, "2.0": {"print(expr)": 7, "'md5' module": 1, "'sys.version_info' member": 3}, "2.1": {"'__future__' module": 6, "'unittest' module": 6, "'weakref' module": 1, "'inspect' module": 2, "'warnings' module": 1}, "2.6": {"'__future__.print_function' member": 5, "'str.format' member": 2, "'next' member": 2}, "2.2": {"'type' member": 37, "'dict' member": 22, "'iter' member": 1, "'StopIteration' member": 4, "'__future__.generators' member": 1}, "2.3": {"'enumerate' member": 49}, "2.5": {"`with`": 13, "'hashlib' module": 1}}
+{
+  "2.0": {
+    "print(expr)": 7,
+    "'sys.version_info' member": 3,
+    "'md5' module": 1
+  },
+  "2.1": {
+    "'__future__' module": 6,
+    "'unittest' module": 6,
+    "'inspect' module": 2,
+    "'weakref' module": 1,
+    "'warnings' module": 1
+  },
+  "2.2": {
+    "'type' member": 37,
+    "'dict' member": 22,
+    "'StopIteration' member": 4,
+    "'iter' member": 1,
+    "'__future__.generators' member": 1
+  },
+  "2.3": {
+    "'enumerate' member": 49
+  },
+  "2.4": {
+    "function decorators": 18,
+    "'set' member": 18,
+    "'subprocess' module": 2,
+    "'reversed' member": 2,
+    "'string.Template' member": 1
+  },
+  "2.5": {
+    "`with`": 13,
+    "'hashlib' module": 1
+  },
+  "2.6": {
+    "'__future__.print_function' member": 5,
+    "'str.format' member": 2,
+    "'next' member": 2
+  },
+  "2.7": {},
+  "3.0": {},
+  "3.1": {},
+  "3.2": {},
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

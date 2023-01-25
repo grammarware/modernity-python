@@ -1,1 +1,59 @@
-{"2.5": {"`with`": 7, "'__future__.absolute_import' member": 1}, "2.2": {"'dict' member": 9, "'super' member": 12, "'bool' member": 10}, "2.0": {"'sys.version_info' member": 1, "'urlparse' module": 4, "print(expr)": 1}, "2.1": {"'__future__' module": 10, "'unittest' module": 5}, "2.6": {"'__future__.unicode_literals' member": 9, "'json' module": 7, "'str.format' member": 8, "'urlparse.parse_qs' member": 2, "'io' module": 2, "class decorators": 1, "'urlparse.parse_qsl' member": 1, "'__future__.print_function' member": 1, "byte string (b'..') or `str` synonym": 4}, "2.3": {"'logging' module": 4}, "2.7": {"'logging.NullHandler' member": 1, "'unittest.SkipTest' member": 5}, "3.1": {"'logging.NullHandler' member": 1, "'unittest.SkipTest' member": 5}, "3.0": {"'urllib.parse' module": 4}, "2.4": {"function decorators": 19, "'set' member": 6}}
+{
+  "2.0": {
+    "'urlparse' module": 4,
+    "'sys.version_info' member": 1,
+    "print(expr)": 1
+  },
+  "2.1": {
+    "'__future__' module": 10,
+    "'unittest' module": 5
+  },
+  "2.2": {
+    "'super' member": 12,
+    "'bool' member": 10,
+    "'dict' member": 9
+  },
+  "2.3": {
+    "'logging' module": 4
+  },
+  "2.4": {
+    "function decorators": 19,
+    "'set' member": 6
+  },
+  "2.5": {
+    "`with`": 7,
+    "'__future__.absolute_import' member": 1
+  },
+  "2.6": {
+    "'__future__.unicode_literals' member": 9,
+    "'str.format' member": 8,
+    "'json' module": 7,
+    "byte string (b'..') or `str` synonym": 4,
+    "'urlparse.parse_qs' member": 2,
+    "'io' module": 2,
+    "class decorators": 1,
+    "'urlparse.parse_qsl' member": 1,
+    "'__future__.print_function' member": 1
+  },
+  "2.7": {
+    "'unittest.SkipTest' member": 5,
+    "'logging.NullHandler' member": 1
+  },
+  "3.0": {
+    "'urllib.parse' module": 4
+  },
+  "3.1": {
+    "'unittest.SkipTest' member": 5,
+    "'logging.NullHandler' member": 1
+  },
+  "3.2": {},
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

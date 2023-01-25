@@ -1,1 +1,55 @@
-{"2.5": {"`with`": 106, "'__future__.absolute_import' member": 4}, "2.3": {"'pkgutil' module": 1, "'datetime' module": 16, "'sum' member": 1, "'logging' module": 6}, "2.4": {"function decorators": 119, "'set' member": 6, "'collections' module": 1, "'frozenset' member": 1}, "2.2": {"'super' member": 22, "'object' member": 2, "'type' member": 1}, "2.6": {"byte string (b'..') or `str` synonym": 51, "'json' module": 20, "'abc' module": 2, "class decorators": 5, "'str.format' member": 34, "'io' module": 4, "'bytearray' member": 1}, "2.7": {"`\"..{}..\".format(..)`": 24, "dict comprehensions": 3, "'logging.NullHandler' member": 1}, "3.1": {"'logging.NullHandler' member": 1}, "2.1": {"'__future__' module": 4}}
+{
+  "2.0": {},
+  "2.1": {
+    "'__future__' module": 4
+  },
+  "2.2": {
+    "'super' member": 22,
+    "'object' member": 2,
+    "'type' member": 1
+  },
+  "2.3": {
+    "'datetime' module": 16,
+    "'logging' module": 6,
+    "'pkgutil' module": 1,
+    "'sum' member": 1
+  },
+  "2.4": {
+    "function decorators": 119,
+    "'set' member": 6,
+    "'collections' module": 1,
+    "'frozenset' member": 1
+  },
+  "2.5": {
+    "`with`": 106,
+    "'__future__.absolute_import' member": 4
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 51,
+    "'str.format' member": 34,
+    "'json' module": 20,
+    "class decorators": 5,
+    "'io' module": 4,
+    "'abc' module": 2,
+    "'bytearray' member": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 24,
+    "dict comprehensions": 3,
+    "'logging.NullHandler' member": 1
+  },
+  "3.0": {},
+  "3.1": {
+    "'logging.NullHandler' member": 1
+  },
+  "3.2": {},
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

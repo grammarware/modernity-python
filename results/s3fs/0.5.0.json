@@ -1,1 +1,99 @@
-{"2.5": {"'contextlib' module": 2, "'functools' module": 1, "`with`": 145, "'uuid' module": 1, "'any' member": 1, "'all' member": 4}, "2.4": {"function decorators": 19, "'set' member": 14, "'subprocess' module": 2, "'sorted' member": 6}, "2.7": {"dict comprehensions": 18, "set literals": 10, "set comprehensions": 3, "multiple context expressions in a `with` statement": 1, "`\"..{}..\".format(..)`": 5}, "2.6": {"'json' module": 3, "byte string (b'..') or `str` synonym": 126, "'bytearray' member": 2, "'__future__.print_function' member": 1, "'os.path.relpath' member": 1, "'io' module": 1, "'subprocess.Popen.terminate' member": 1, "'next' member": 1, "'str.format' member": 6, "'logging.StreamHandler' member": 1}, "2.0": {"print(expr)": 2, "'ConfigParser' module": 1, "'sys.version_info' member": 3}, "2.2": {"'bool' member": 5, "'os.path.realpath' member": 3, "'dict' member": 2, "'super' member": 14}, "2.1": {"'__future__' module": 1, "'unittest' module": 1, "'weakref' module": 1}, "3.0": {"'configparser' module": 1, "'urllib.parse' module": 2, "super() without arguments": 12, "annotations": 1, "exception cause": 14}, "2.3": {"'ConfigParser.SafeConfigParser' member": 1, "'datetime' module": 1, "'itertools' module": 1, "'shlex.split' member": 1, "'sum' member": 1, "'logging' module": 1, "'socket.timeout' member": 1, "'dict.pop' member": 1, "'enumerate' member": 14}, "3.4": {"'asyncio' module": 2, "'weakref.finalize' member": 2}, "3.2": {"'concurrent.futures' module": 1}, "3.3": {"'unittest.mock' module": 1, "'FileNotFoundError' member": 12, "'IsADirectoryError' member": 2}, "3.1": {"multiple context expressions in a `with` statement": 1}, "3.5": {"coroutines (async)": 22, "coroutines (await)": 83, "'typing' module": 1, "generalized unpacking": 7, "async for-loops": 4}, "3.7": {"'asyncio.run' member": 1}}
+{
+  "2.0": {
+    "'sys.version_info' member": 3,
+    "print(expr)": 2,
+    "'ConfigParser' module": 1
+  },
+  "2.1": {
+    "'__future__' module": 1,
+    "'unittest' module": 1,
+    "'weakref' module": 1
+  },
+  "2.2": {
+    "'super' member": 14,
+    "'bool' member": 5,
+    "'os.path.realpath' member": 3,
+    "'dict' member": 2
+  },
+  "2.3": {
+    "'enumerate' member": 14,
+    "'ConfigParser.SafeConfigParser' member": 1,
+    "'datetime' module": 1,
+    "'itertools' module": 1,
+    "'shlex.split' member": 1,
+    "'sum' member": 1,
+    "'logging' module": 1,
+    "'socket.timeout' member": 1,
+    "'dict.pop' member": 1
+  },
+  "2.4": {
+    "function decorators": 19,
+    "'set' member": 14,
+    "'sorted' member": 6,
+    "'subprocess' module": 2
+  },
+  "2.5": {
+    "`with`": 145,
+    "'all' member": 4,
+    "'contextlib' module": 2,
+    "'functools' module": 1,
+    "'uuid' module": 1,
+    "'any' member": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 126,
+    "'str.format' member": 6,
+    "'json' module": 3,
+    "'bytearray' member": 2,
+    "'__future__.print_function' member": 1,
+    "'os.path.relpath' member": 1,
+    "'io' module": 1,
+    "'subprocess.Popen.terminate' member": 1,
+    "'next' member": 1,
+    "'logging.StreamHandler' member": 1
+  },
+  "2.7": {
+    "dict comprehensions": 18,
+    "set literals": 10,
+    "`\"..{}..\".format(..)`": 5,
+    "set comprehensions": 3,
+    "multiple context expressions in a `with` statement": 1
+  },
+  "3.0": {
+    "exception cause": 14,
+    "super() without arguments": 12,
+    "'urllib.parse' module": 2,
+    "'configparser' module": 1,
+    "annotations": 1
+  },
+  "3.1": {
+    "multiple context expressions in a `with` statement": 1
+  },
+  "3.2": {
+    "'concurrent.futures' module": 1
+  },
+  "3.3": {
+    "'FileNotFoundError' member": 12,
+    "'IsADirectoryError' member": 2,
+    "'unittest.mock' module": 1
+  },
+  "3.4": {
+    "'asyncio' module": 2,
+    "'weakref.finalize' member": 2
+  },
+  "3.5": {
+    "coroutines (await)": 83,
+    "coroutines (async)": 22,
+    "generalized unpacking": 7,
+    "async for-loops": 4,
+    "'typing' module": 1
+  },
+  "3.6": {},
+  "3.7": {
+    "'asyncio.run' member": 1
+  },
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

@@ -1,1 +1,53 @@
-{"2.2": {"'dict' member": 1, "'super' member": 6, "'type' member": 2}, "2.6": {"'io' module": 2, "byte string (b'..') or `str` synonym": 10}, "2.3": {"'itertools' module": 1, "'dict.fromkeys' member": 1, "'tempfile.mkdtemp' member": 1, "'compile(dont_inherit)'": 1}, "2.5": {"'contextlib' module": 2, "`with`": 36, "'functools' module": 1, "'any' member": 2}, "3.4": {"'pathlib' module": 2, "'contextlib.suppress' member": 4}, "2.4": {"function decorators": 38, "'set' member": 3}, "3.0": {"keyword-only parameters": 2}, "3.3": {"'IsADirectoryError' member": 4, "'FileNotFoundError' member": 4, "'contextlib.ExitStack' member": 2}, "2.1": {"'unittest' module": 1}}
+{
+  "2.0": {},
+  "2.1": {
+    "'unittest' module": 1
+  },
+  "2.2": {
+    "'super' member": 6,
+    "'type' member": 2,
+    "'dict' member": 1
+  },
+  "2.3": {
+    "'itertools' module": 1,
+    "'dict.fromkeys' member": 1,
+    "'tempfile.mkdtemp' member": 1,
+    "'compile(dont_inherit)'": 1
+  },
+  "2.4": {
+    "function decorators": 38,
+    "'set' member": 3
+  },
+  "2.5": {
+    "`with`": 36,
+    "'contextlib' module": 2,
+    "'any' member": 2,
+    "'functools' module": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 10,
+    "'io' module": 2
+  },
+  "2.7": {},
+  "3.0": {
+    "keyword-only parameters": 2
+  },
+  "3.1": {},
+  "3.2": {},
+  "3.3": {
+    "'IsADirectoryError' member": 4,
+    "'FileNotFoundError' member": 4,
+    "'contextlib.ExitStack' member": 2
+  },
+  "3.4": {
+    "'contextlib.suppress' member": 4,
+    "'pathlib' module": 2
+  },
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

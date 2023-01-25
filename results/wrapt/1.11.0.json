@@ -1,1 +1,68 @@
-{"2.0": {"print(expr)": 1, "'sys.version_info' member": 6, "'callable' member": 7, "'long' member": 2}, "2.1": {"'__future__' module": 1, "'inspect' module": 3, "'weakref' module": 1}, "2.6": {"'__future__.print_function' member": 1, "'collections.namedtuple' member": 1, "'str.format' member": 3}, "2.2": {"'dict' member": 5, "'super' member": 22, "'type' member": 15, "'bool' member": 4, "'operator.truediv' member": 4, "'iter' member": 2}, "2.7": {"'inspect.getcallargs' member": 1, "'importlib' module": 1, "`\"..{}..\".format(..)`": 3}, "3.2": {"'inspect.getcallargs' member": 1, "'callable' member": 7}, "3.1": {"'importlib' module": 1}, "2.4": {"function decorators": 30, "'collections' module": 1, "'reversed' member": 2}, "3.4": {"'importlib.util.find_spec' member": 2}, "3.3": {"'importlib.find_loader' member": 2, "'inspect.signature' member": 1}, "3.0": {"'builtins' module": 1}, "2.5": {"'functools' module": 2, "`with`": 3, "'operator.idiv' member": 2, "'operator.itruediv' member": 2, "'operator.index' member": 2}}
+{
+  "2.0": {
+    "'callable' member": 7,
+    "'sys.version_info' member": 6,
+    "'long' member": 2,
+    "print(expr)": 1
+  },
+  "2.1": {
+    "'inspect' module": 3,
+    "'__future__' module": 1,
+    "'weakref' module": 1
+  },
+  "2.2": {
+    "'super' member": 22,
+    "'type' member": 15,
+    "'dict' member": 5,
+    "'bool' member": 4,
+    "'operator.truediv' member": 4,
+    "'iter' member": 2
+  },
+  "2.3": {},
+  "2.4": {
+    "function decorators": 30,
+    "'reversed' member": 2,
+    "'collections' module": 1
+  },
+  "2.5": {
+    "`with`": 3,
+    "'functools' module": 2,
+    "'operator.idiv' member": 2,
+    "'operator.itruediv' member": 2,
+    "'operator.index' member": 2
+  },
+  "2.6": {
+    "'str.format' member": 3,
+    "'__future__.print_function' member": 1,
+    "'collections.namedtuple' member": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 3,
+    "'inspect.getcallargs' member": 1,
+    "'importlib' module": 1
+  },
+  "3.0": {
+    "'builtins' module": 1
+  },
+  "3.1": {
+    "'importlib' module": 1
+  },
+  "3.2": {
+    "'callable' member": 7,
+    "'inspect.getcallargs' member": 1
+  },
+  "3.3": {
+    "'importlib.find_loader' member": 2,
+    "'inspect.signature' member": 1
+  },
+  "3.4": {
+    "'importlib.util.find_spec' member": 2
+  },
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

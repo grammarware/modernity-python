@@ -1,1 +1,87 @@
-{"2.6": {"'multiprocessing' module": 1, "'__future__.unicode_literals' member": 105, "'str.format' member": 114, "byte string (b'..') or `str` synonym": 21, "'json' module": 24, "class decorators": 5, "'warnings.catch_warnings' member": 2}, "2.5": {"`with`": 43, "'__future__.absolute_import' member": 102, "'collections.defaultdict' member": 2, "'hashlib' module": 5, "'all' member": 16, "'functools' module": 2}, "2.3": {"'logging' module": 30, "'datetime' module": 5, "'dict.pop' member": 1, "'itertools' module": 1}, "2.7": {"'logging.NullHandler' member": 1, "'unittest.TestCase.assertItemsEqual' member": 7, "`\"..{}..\".format(..)`": 24, "bytes directive 'r'": 2, "multiple context expressions in a `with` statement": 4, "set literals": 2}, "3.1": {"'logging.NullHandler' member": 1, "multiple context expressions in a `with` statement": 4}, "2.1": {"'__future__' module": 106, "'unittest' module": 1, "'inspect' module": 2, "'warnings' module": 4}, "2.4": {"'collections' module": 2, "function decorators": 115, "'random.getrandbits' member": 1, "'random.SystemRandom' member": 1, "'set' member": 39, "'sorted' member": 32, "'sorted(reverse)'": 1}, "2.0": {"'urlparse' module": 11, "'sys.version_info' member": 2, "'urllib2' module": 1, "'callable' member": 4}, "3.0": {"'urllib.parse' module": 14}, "3.2": {"'unittest.TestCase.assertCountEqual' member": 7, "'callable' member": 4}, "2.2": {"'super' member": 56, "'dict' member": 56, "'hmac' module": 2, "'type' member": 4, "'object' member": 4}, "3.6": {"'secrets' module": 1}, "3.5": {"bytes directive 'a'": 4, "bytes directive 'b'": 4, "bytes directive 'r'": 2}}
+{
+  "2.0": {
+    "'urlparse' module": 11,
+    "'callable' member": 4,
+    "'sys.version_info' member": 2,
+    "'urllib2' module": 1
+  },
+  "2.1": {
+    "'__future__' module": 106,
+    "'warnings' module": 4,
+    "'inspect' module": 2,
+    "'unittest' module": 1
+  },
+  "2.2": {
+    "'super' member": 56,
+    "'dict' member": 56,
+    "'type' member": 4,
+    "'object' member": 4,
+    "'hmac' module": 2
+  },
+  "2.3": {
+    "'logging' module": 30,
+    "'datetime' module": 5,
+    "'dict.pop' member": 1,
+    "'itertools' module": 1
+  },
+  "2.4": {
+    "function decorators": 115,
+    "'set' member": 39,
+    "'sorted' member": 32,
+    "'collections' module": 2,
+    "'random.getrandbits' member": 1,
+    "'random.SystemRandom' member": 1,
+    "'sorted(reverse)'": 1
+  },
+  "2.5": {
+    "'__future__.absolute_import' member": 102,
+    "`with`": 43,
+    "'all' member": 16,
+    "'hashlib' module": 5,
+    "'collections.defaultdict' member": 2,
+    "'functools' module": 2
+  },
+  "2.6": {
+    "'str.format' member": 114,
+    "'__future__.unicode_literals' member": 105,
+    "'json' module": 24,
+    "byte string (b'..') or `str` synonym": 21,
+    "class decorators": 5,
+    "'warnings.catch_warnings' member": 2,
+    "'multiprocessing' module": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 24,
+    "'unittest.TestCase.assertItemsEqual' member": 7,
+    "multiple context expressions in a `with` statement": 4,
+    "bytes directive 'r'": 2,
+    "set literals": 2,
+    "'logging.NullHandler' member": 1
+  },
+  "3.0": {
+    "'urllib.parse' module": 14
+  },
+  "3.1": {
+    "multiple context expressions in a `with` statement": 4,
+    "'logging.NullHandler' member": 1
+  },
+  "3.2": {
+    "'unittest.TestCase.assertCountEqual' member": 7,
+    "'callable' member": 4
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {
+    "bytes directive 'a'": 4,
+    "bytes directive 'b'": 4,
+    "bytes directive 'r'": 2
+  },
+  "3.6": {
+    "'secrets' module": 1
+  },
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

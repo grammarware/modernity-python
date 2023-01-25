@@ -1,1 +1,79 @@
-{"2.3": {"'optparse' module": 1, "'platform' module": 1, "'UnicodeDecodeError' member": 7, "'datetime' module": 3, "'UnicodeEncodeError' member": 4, "'tempfile.mkstemp' member": 1, "'enumerate' member": 1}, "2.0": {"'file' member": 6, "'unicode' member": 6, "'sys.version_info' member": 4, "print(expr)": 16}, "3.4": {"'pathlib' module": 1}, "2.1": {"'warnings' module": 2}, "2.6": {"'platform.python_implementation' member": 2, "'str.format' member": 4, "'next' member": 2, "'io' module": 3, "'math.isnan' member": 1}, "3.2": {"'tempfile.TemporaryDirectory' member": 2, "'datetime.timezone' member": 4}, "2.2": {"'super' member": 20, "'types.GeneratorType' member": 2, "'type' member": 50, "'dict' member": 6, "'classmethod' member": 8}, "3.3": {"'collections.abc' module": 1}, "2.4": {"function decorators": 8, "'set' member": 2, "'collections' module": 1, "'sorted' member": 10}, "3.0": {"super() without arguments": 6, "'copyreg' module": 1, "'open(errors)'": 1, "'open(encoding)'": 2}, "3.1": {"'base64.decodebytes' member": 4, "'base64.encodebytes' member": 2, "'collections.OrderedDict' member": 1, "multiple context expressions in a `with` statement": 8}, "2.7": {"'collections.OrderedDict' member": 1, "`\"..{}..\".format(..)`": 2, "multiple context expressions in a `with` statement": 8}, "2.5": {"`with`": 68}, "3.5": {"'math.inf' member": 2}}
+{
+  "2.0": {
+    "print(expr)": 16,
+    "'file' member": 6,
+    "'unicode' member": 6,
+    "'sys.version_info' member": 4
+  },
+  "2.1": {
+    "'warnings' module": 2
+  },
+  "2.2": {
+    "'type' member": 50,
+    "'super' member": 20,
+    "'classmethod' member": 8,
+    "'dict' member": 6,
+    "'types.GeneratorType' member": 2
+  },
+  "2.3": {
+    "'UnicodeDecodeError' member": 7,
+    "'UnicodeEncodeError' member": 4,
+    "'datetime' module": 3,
+    "'optparse' module": 1,
+    "'platform' module": 1,
+    "'tempfile.mkstemp' member": 1,
+    "'enumerate' member": 1
+  },
+  "2.4": {
+    "'sorted' member": 10,
+    "function decorators": 8,
+    "'set' member": 2,
+    "'collections' module": 1
+  },
+  "2.5": {
+    "`with`": 68
+  },
+  "2.6": {
+    "'str.format' member": 4,
+    "'io' module": 3,
+    "'platform.python_implementation' member": 2,
+    "'next' member": 2,
+    "'math.isnan' member": 1
+  },
+  "2.7": {
+    "multiple context expressions in a `with` statement": 8,
+    "`\"..{}..\".format(..)`": 2,
+    "'collections.OrderedDict' member": 1
+  },
+  "3.0": {
+    "super() without arguments": 6,
+    "'open(encoding)'": 2,
+    "'copyreg' module": 1,
+    "'open(errors)'": 1
+  },
+  "3.1": {
+    "multiple context expressions in a `with` statement": 8,
+    "'base64.decodebytes' member": 4,
+    "'base64.encodebytes' member": 2,
+    "'collections.OrderedDict' member": 1
+  },
+  "3.2": {
+    "'datetime.timezone' member": 4,
+    "'tempfile.TemporaryDirectory' member": 2
+  },
+  "3.3": {
+    "'collections.abc' module": 1
+  },
+  "3.4": {
+    "'pathlib' module": 1
+  },
+  "3.5": {
+    "'math.inf' member": 2
+  },
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

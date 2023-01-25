@@ -1,1 +1,119 @@
-{"2.0": {"print(expr)": 21, "'EasyDialogs.GetArgv' member": 1, "'sys.version_info' member": 3}, "2.1": {"'warnings' module": 15, "'unittest' module": 140, "'difflib' module": 4, "'inspect' module": 1, "'weakref' module": 1}, "2.5": {"`with`": 144, "'xml.etree.ElementTree' module": 2}, "2.6": {"'warnings.catch_warnings' member": 15, "byte string (b'..') or `str` synonym": 102, "'collections.namedtuple' member": 1, "'io' module": 8, "class decorators": 4, "'next' member": 14, "'itertools.combinations' member": 2, "'str.format' member": 1, "'platform.python_implementation' member": 1, "'tempfile.NamedTemporaryFile(delete)'": 1}, "3.6": {"f-strings": 85}, "2.3": {"'UnicodeEncodeError' member": 23, "'optparse' module": 1, "'UnicodeDecodeError' member": 4, "'platform' module": 5, "'difflib.unified_diff' member": 3, "'sys.getfilesystemencoding' member": 11, "'unicodedata.normalize' member": 4, "'os.walk' member": 4, "'enumerate' member": 32, "'tempfile.mkstemp' member": 1, "'shutil.move' member": 1, "'itertools' module": 3, "'sum' member": 13, "'unicodedata.unidata_version' member": 2, "'tempfile.mkdtemp' member": 2, "'dict.pop' member": 6, "'csv' module": 2, "'tempfile.NamedTemporaryFile' member": 4}, "3.0": {"'open(errors)'": 2, "'open(encoding)'": 20, "super() without arguments": 48, "'configparser' module": 2, "keyword-only parameters": 8}, "2.4": {"'collections' module": 2, "function decorators": 10, "'set' member": 6, "'sorted' member": 44, "'unicodedata.east_asian_width' member": 2, "'string.Template' member": 3, "'pprint.pformat(indent)'": 1, "'subprocess' module": 3, "'reversed' member": 8}, "2.2": {"'super' member": 56, "'dict' member": 26, "'type' member": 38, "'StopIteration' member": 2, "'iter' member": 4, "'xml.sax.saxutils.quoteattr' member": 2, "'bool' member": 2, "'classmethod' member": 14, "'property' member": 4}, "2.7": {"'argparse' module": 3, "'re.sub(flags)'": 1, "'unittest.skipUnless' member": 5, "'collections.Counter' member": 1, "'unittest.skipIf' member": 3, "'importlib' module": 5, "set literals": 6, "`\"..{}..\".format(..)`": 1, "dict comprehensions": 4, "'subprocess.check_output' member": 2}, "3.2": {"'argparse' module": 3}, "3.5": {"'argparse.ArgumentParser(allow_abbrev)'": 1, "generalized unpacking": 15}, "3.1": {"'re.sub(flags)'": 1, "'unittest.skipUnless' member": 5, "'collections.Counter' member": 1, "'unittest.skipIf' member": 3, "'importlib' module": 5, "'subprocess.check_output' member": 2}, "3.3": {"`yield from`": 14, "'FileNotFoundError' member": 3}}
+{
+  "2.0": {
+    "print(expr)": 21,
+    "'sys.version_info' member": 3,
+    "'EasyDialogs.GetArgv' member": 1
+  },
+  "2.1": {
+    "'unittest' module": 140,
+    "'warnings' module": 15,
+    "'difflib' module": 4,
+    "'inspect' module": 1,
+    "'weakref' module": 1
+  },
+  "2.2": {
+    "'super' member": 56,
+    "'type' member": 38,
+    "'dict' member": 26,
+    "'classmethod' member": 14,
+    "'iter' member": 4,
+    "'property' member": 4,
+    "'StopIteration' member": 2,
+    "'xml.sax.saxutils.quoteattr' member": 2,
+    "'bool' member": 2
+  },
+  "2.3": {
+    "'enumerate' member": 32,
+    "'UnicodeEncodeError' member": 23,
+    "'sum' member": 13,
+    "'sys.getfilesystemencoding' member": 11,
+    "'dict.pop' member": 6,
+    "'platform' module": 5,
+    "'UnicodeDecodeError' member": 4,
+    "'unicodedata.normalize' member": 4,
+    "'os.walk' member": 4,
+    "'tempfile.NamedTemporaryFile' member": 4,
+    "'difflib.unified_diff' member": 3,
+    "'itertools' module": 3,
+    "'unicodedata.unidata_version' member": 2,
+    "'tempfile.mkdtemp' member": 2,
+    "'csv' module": 2,
+    "'optparse' module": 1,
+    "'tempfile.mkstemp' member": 1,
+    "'shutil.move' member": 1
+  },
+  "2.4": {
+    "'sorted' member": 44,
+    "function decorators": 10,
+    "'reversed' member": 8,
+    "'set' member": 6,
+    "'string.Template' member": 3,
+    "'subprocess' module": 3,
+    "'collections' module": 2,
+    "'unicodedata.east_asian_width' member": 2,
+    "'pprint.pformat(indent)'": 1
+  },
+  "2.5": {
+    "`with`": 144,
+    "'xml.etree.ElementTree' module": 2
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 102,
+    "'warnings.catch_warnings' member": 15,
+    "'next' member": 14,
+    "'io' module": 8,
+    "class decorators": 4,
+    "'itertools.combinations' member": 2,
+    "'collections.namedtuple' member": 1,
+    "'str.format' member": 1,
+    "'platform.python_implementation' member": 1,
+    "'tempfile.NamedTemporaryFile(delete)'": 1
+  },
+  "2.7": {
+    "set literals": 6,
+    "'unittest.skipUnless' member": 5,
+    "'importlib' module": 5,
+    "dict comprehensions": 4,
+    "'argparse' module": 3,
+    "'unittest.skipIf' member": 3,
+    "'subprocess.check_output' member": 2,
+    "'re.sub(flags)'": 1,
+    "'collections.Counter' member": 1,
+    "`\"..{}..\".format(..)`": 1
+  },
+  "3.0": {
+    "super() without arguments": 48,
+    "'open(encoding)'": 20,
+    "keyword-only parameters": 8,
+    "'open(errors)'": 2,
+    "'configparser' module": 2
+  },
+  "3.1": {
+    "'unittest.skipUnless' member": 5,
+    "'importlib' module": 5,
+    "'unittest.skipIf' member": 3,
+    "'subprocess.check_output' member": 2,
+    "'re.sub(flags)'": 1,
+    "'collections.Counter' member": 1
+  },
+  "3.2": {
+    "'argparse' module": 3
+  },
+  "3.3": {
+    "`yield from`": 14,
+    "'FileNotFoundError' member": 3
+  },
+  "3.4": {},
+  "3.5": {
+    "generalized unpacking": 15,
+    "'argparse.ArgumentParser(allow_abbrev)'": 1
+  },
+  "3.6": {
+    "f-strings": 85
+  },
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

@@ -1,1 +1,100 @@
-{"2.1": {"'__future__' module": 210, "'warnings' module": 9, "'inspect' module": 1}, "2.2": {"'__future__.division' member": 208, "'super' member": 12, "'object' member": 205, "'property' member": 2, "'dict' member": 5, "'type' member": 26, "'iter' member": 56, "'str.decode' member": 2, "'hmac' module": 1}, "2.6": {"'__future__.print_function' member": 210, "'str.format' member": 248, "'platform.python_implementation' member": 1, "class decorators": 402, "'abc' module": 24, "byte string (b'..') or `str` synonym": 2443, "'bytearray' member": 122, "'warnings.catch_warnings' member": 4, "'json' module": 3, "'collections.namedtuple' member": 4, "'itertools.product' member": 41, "'format' member": 10, "'bin' member": 1, "'fractions' module": 1}, "2.5": {"'__future__.absolute_import' member": 210, "`with`": 1830, "'all' member": 45, "'contextlib' module": 2, "'collections.defaultdict' member": 4, "'hashlib' module": 2, "'any' member": 6, "'subprocess.check_call' member": 2, "'datetime.datetime.strptime' member": 1, "'functools' module": 1, "'operator.index' member": 2}, "2.7": {"`\"..{}..\".format(..)`": 163, "'memoryview' member": 1, "multiple context expressions in a `with` statement": 22, "'hmac.compare_digest' member": 1}, "2.4": {"function decorators": 737, "'os.urandom' member": 55, "'collections' module": 4, "'frozenset' member": 95, "'subprocess' module": 2, "'set' member": 7, "'reversed' member": 2, "'sorted' member": 5, "'sorted(reverse)'": 1}, "2.3": {"'platform' module": 1, "'datetime' module": 11, "'textwrap' module": 4, "'UnicodeEncodeError' member": 6, "'sum' member": 2, "'itertools' module": 9, "'enumerate' member": 4}, "3.4": {"'enum' module": 8}, "3.2": {"'int.from_bytes' member": 3}, "3.3": {"'inspect.signature' member": 1, "'ipaddress' module": 6, "'hmac.compare_digest' member": 1}, "3.1": {"multiple context expressions in a `with` statement": 22}, "2.0": {"print(expr)": 1}, "3.5": {"'math.gcd' member": 1}}
+{
+  "2.0": {
+    "print(expr)": 1
+  },
+  "2.1": {
+    "'__future__' module": 210,
+    "'warnings' module": 9,
+    "'inspect' module": 1
+  },
+  "2.2": {
+    "'__future__.division' member": 208,
+    "'object' member": 205,
+    "'iter' member": 56,
+    "'type' member": 26,
+    "'super' member": 12,
+    "'dict' member": 5,
+    "'property' member": 2,
+    "'str.decode' member": 2,
+    "'hmac' module": 1
+  },
+  "2.3": {
+    "'datetime' module": 11,
+    "'itertools' module": 9,
+    "'UnicodeEncodeError' member": 6,
+    "'textwrap' module": 4,
+    "'enumerate' member": 4,
+    "'sum' member": 2,
+    "'platform' module": 1
+  },
+  "2.4": {
+    "function decorators": 737,
+    "'frozenset' member": 95,
+    "'os.urandom' member": 55,
+    "'set' member": 7,
+    "'sorted' member": 5,
+    "'collections' module": 4,
+    "'subprocess' module": 2,
+    "'reversed' member": 2,
+    "'sorted(reverse)'": 1
+  },
+  "2.5": {
+    "`with`": 1830,
+    "'__future__.absolute_import' member": 210,
+    "'all' member": 45,
+    "'any' member": 6,
+    "'collections.defaultdict' member": 4,
+    "'contextlib' module": 2,
+    "'hashlib' module": 2,
+    "'subprocess.check_call' member": 2,
+    "'operator.index' member": 2,
+    "'datetime.datetime.strptime' member": 1,
+    "'functools' module": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 2443,
+    "class decorators": 402,
+    "'str.format' member": 248,
+    "'__future__.print_function' member": 210,
+    "'bytearray' member": 122,
+    "'itertools.product' member": 41,
+    "'abc' module": 24,
+    "'format' member": 10,
+    "'warnings.catch_warnings' member": 4,
+    "'collections.namedtuple' member": 4,
+    "'json' module": 3,
+    "'platform.python_implementation' member": 1,
+    "'bin' member": 1,
+    "'fractions' module": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 163,
+    "multiple context expressions in a `with` statement": 22,
+    "'memoryview' member": 1,
+    "'hmac.compare_digest' member": 1
+  },
+  "3.0": {},
+  "3.1": {
+    "multiple context expressions in a `with` statement": 22
+  },
+  "3.2": {
+    "'int.from_bytes' member": 3
+  },
+  "3.3": {
+    "'ipaddress' module": 6,
+    "'inspect.signature' member": 1,
+    "'hmac.compare_digest' member": 1
+  },
+  "3.4": {
+    "'enum' module": 8
+  },
+  "3.5": {
+    "'math.gcd' member": 1
+  },
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

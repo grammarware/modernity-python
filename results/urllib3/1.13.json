@@ -1,1 +1,128 @@
-{"2.3": {"'datetime' module": 3, "'logging' module": 12, "'socket.has_ipv6' member": 3, "'itertools' module": 1, "'socket.timeout' member": 4, "'UnicodeEncodeError' member": 1, "'enumerate' member": 11, "'socket.getdefaulttimeout' member": 4, "'socket.socket.settimeout' member": 1, "'dummy_thread' module": 1, "'dict.pop' member": 2, "'socket.setdefaulttimeout' member": 6}, "2.6": {"'str.format' member": 30, "byte string (b'..') or `str` synonym": 457, "'__future__.print_function' member": 3, "'socket.create_connection' member": 1, "'threading.Event.is_set' member": 2, "'warnings.catch_warnings' member": 6, "'json' module": 3, "'io' module": 5, "'next' member": 29, "'ssl' module": 9, "'bytearray' member": 4, "'logging.StreamHandler' member": 3, "'Queue.LifoQueue' member": 1, "'operator.methodcaller' member": 1, "'collections.namedtuple' member": 1}, "2.0": {"print(expr)": 4, "'urlparse' module": 2, "'Queue' module": 2, "'httplib.HTTPException' member": 2, "'sys.version_info' member": 21, "'httplib.HTTPConnection' member": 1, "'httplib.IncompleteRead' member": 2, "'httplib.HTTPSConnection' member": 1, "'unicode' member": 3}, "2.4": {"function decorators": 56, "'set' member": 10, "'collections' module": 3, "'sorted' member": 6, "'operator.attrgetter' member": 4, "'frozenset' member": 2, "'str.rsplit' member": 1}, "2.1": {"'__future__' module": 25, "'warnings' module": 10, "'unittest' module": 19}, "2.2": {"'socket.getaddrinfo' member": 2, "'super' member": 34, "'urlparse.urlsplit' member": 1, "'iter' member": 8, "'dict' member": 36, "'object' member": 19, "'type' member": 42, "'hmac' module": 1, "'bool' member": 2}, "2.5": {"`with`": 58, "'collections.defaultdict' member": 1, "'urlparse.urlsplit.path' member": 46, "'functools' module": 1, "'hashlib' module": 2, "'__future__.absolute_import' member": 22, "'uuid' module": 1, "'any' member": 2, "'contextlib' module": 1}, "3.0": {"'urllib.parse' module": 4, "'queue' module": 2, "'builtins' module": 1}, "2.7": {"'logging.NullHandler' member": 1, "'collections.OrderedDict' member": 1, "'ssl.PROTOCOL_TLSv1_1' member": 1, "'ssl.PROTOCOL_TLSv1_2' member": 1, "'ssl.HAS_SNI' member": 1, "'ssl.OP_NO_SSLv2' member": 1, "'ssl.OP_NO_SSLv3' member": 1, "'ssl.OP_NO_COMPRESSION' member": 1, "'ssl.SSLContext' member": 1, "'ssl.wrap_socket(ciphers)'": 1, "'ssl.match_hostname' member": 1}, "3.1": {"'logging.NullHandler' member": 1, "'collections.OrderedDict' member": 1}, "3.3": {"'TimeoutError' member": 7, "'ssl.OP_NO_COMPRESSION' member": 1}, "3.4": {"'ssl.PROTOCOL_TLSv1_1' member": 1, "'ssl.PROTOCOL_TLSv1_2' member": 1, "'ssl.SSLContext.check_hostname' member": 1}, "3.2": {"'ssl.HAS_SNI' member": 1, "'ssl.OP_NO_SSLv2' member": 1, "'ssl.OP_NO_SSLv3' member": 1, "'ssl.SSLContext' member": 1, "'ssl.wrap_socket(ciphers)'": 1, "'ssl.match_hostname' member": 1}, "3.10": {"union types as `a = X; a |= Y`": 1}}
+{
+  "2.0": {
+    "'sys.version_info' member": 21,
+    "print(expr)": 4,
+    "'unicode' member": 3,
+    "'urlparse' module": 2,
+    "'Queue' module": 2,
+    "'httplib.HTTPException' member": 2,
+    "'httplib.IncompleteRead' member": 2,
+    "'httplib.HTTPConnection' member": 1,
+    "'httplib.HTTPSConnection' member": 1
+  },
+  "2.1": {
+    "'__future__' module": 25,
+    "'unittest' module": 19,
+    "'warnings' module": 10
+  },
+  "2.2": {
+    "'type' member": 42,
+    "'dict' member": 36,
+    "'super' member": 34,
+    "'object' member": 19,
+    "'iter' member": 8,
+    "'socket.getaddrinfo' member": 2,
+    "'bool' member": 2,
+    "'urlparse.urlsplit' member": 1,
+    "'hmac' module": 1
+  },
+  "2.3": {
+    "'logging' module": 12,
+    "'enumerate' member": 11,
+    "'socket.setdefaulttimeout' member": 6,
+    "'socket.timeout' member": 4,
+    "'socket.getdefaulttimeout' member": 4,
+    "'datetime' module": 3,
+    "'socket.has_ipv6' member": 3,
+    "'dict.pop' member": 2,
+    "'itertools' module": 1,
+    "'UnicodeEncodeError' member": 1,
+    "'socket.socket.settimeout' member": 1,
+    "'dummy_thread' module": 1
+  },
+  "2.4": {
+    "function decorators": 56,
+    "'set' member": 10,
+    "'sorted' member": 6,
+    "'operator.attrgetter' member": 4,
+    "'collections' module": 3,
+    "'frozenset' member": 2,
+    "'str.rsplit' member": 1
+  },
+  "2.5": {
+    "`with`": 58,
+    "'urlparse.urlsplit.path' member": 46,
+    "'__future__.absolute_import' member": 22,
+    "'hashlib' module": 2,
+    "'any' member": 2,
+    "'collections.defaultdict' member": 1,
+    "'functools' module": 1,
+    "'uuid' module": 1,
+    "'contextlib' module": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 457,
+    "'str.format' member": 30,
+    "'next' member": 29,
+    "'ssl' module": 9,
+    "'warnings.catch_warnings' member": 6,
+    "'io' module": 5,
+    "'bytearray' member": 4,
+    "'__future__.print_function' member": 3,
+    "'json' module": 3,
+    "'logging.StreamHandler' member": 3,
+    "'threading.Event.is_set' member": 2,
+    "'socket.create_connection' member": 1,
+    "'Queue.LifoQueue' member": 1,
+    "'operator.methodcaller' member": 1,
+    "'collections.namedtuple' member": 1
+  },
+  "2.7": {
+    "'logging.NullHandler' member": 1,
+    "'collections.OrderedDict' member": 1,
+    "'ssl.PROTOCOL_TLSv1_1' member": 1,
+    "'ssl.PROTOCOL_TLSv1_2' member": 1,
+    "'ssl.HAS_SNI' member": 1,
+    "'ssl.OP_NO_SSLv2' member": 1,
+    "'ssl.OP_NO_SSLv3' member": 1,
+    "'ssl.OP_NO_COMPRESSION' member": 1,
+    "'ssl.SSLContext' member": 1,
+    "'ssl.wrap_socket(ciphers)'": 1,
+    "'ssl.match_hostname' member": 1
+  },
+  "3.0": {
+    "'urllib.parse' module": 4,
+    "'queue' module": 2,
+    "'builtins' module": 1
+  },
+  "3.1": {
+    "'logging.NullHandler' member": 1,
+    "'collections.OrderedDict' member": 1
+  },
+  "3.2": {
+    "'ssl.HAS_SNI' member": 1,
+    "'ssl.OP_NO_SSLv2' member": 1,
+    "'ssl.OP_NO_SSLv3' member": 1,
+    "'ssl.SSLContext' member": 1,
+    "'ssl.wrap_socket(ciphers)'": 1,
+    "'ssl.match_hostname' member": 1
+  },
+  "3.3": {
+    "'TimeoutError' member": 7,
+    "'ssl.OP_NO_COMPRESSION' member": 1
+  },
+  "3.4": {
+    "'ssl.PROTOCOL_TLSv1_1' member": 1,
+    "'ssl.PROTOCOL_TLSv1_2' member": 1,
+    "'ssl.SSLContext.check_hostname' member": 1
+  },
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {
+    "union types as `a = X; a |= Y`": 1
+  },
+  "3.11": {}
+}

@@ -1,1 +1,51 @@
-{"2.3": {"'os.walk' member": 1, "'datetime' module": 5, "'sets' module": 1, "'UnicodeEncodeError' member": 1, "'doctest.DocTestSuite' member": 2}, "2.6": {"'io' module": 1}, "2.2": {"'bool' member": 15, "'type' member": 2, "'dict' member": 3, "'iter' member": 14, "'super' member": 2}, "2.4": {"'doctest.DocFileSuite' member": 1, "'collections' module": 1, "'set' member": 24, "'reversed' member": 4, "'sorted' member": 4}, "2.1": {"'unittest' module": 3, "'bisect' module": 1, "'warnings' module": 2}, "2.0": {"'callable' member": 4, "'unicode' member": 4}, "3.2": {"'callable' member": 4}}
+{
+  "2.0": {
+    "'callable' member": 4,
+    "'unicode' member": 4
+  },
+  "2.1": {
+    "'unittest' module": 3,
+    "'warnings' module": 2,
+    "'bisect' module": 1
+  },
+  "2.2": {
+    "'bool' member": 15,
+    "'iter' member": 14,
+    "'dict' member": 3,
+    "'type' member": 2,
+    "'super' member": 2
+  },
+  "2.3": {
+    "'datetime' module": 5,
+    "'doctest.DocTestSuite' member": 2,
+    "'os.walk' member": 1,
+    "'sets' module": 1,
+    "'UnicodeEncodeError' member": 1
+  },
+  "2.4": {
+    "'set' member": 24,
+    "'reversed' member": 4,
+    "'sorted' member": 4,
+    "'doctest.DocFileSuite' member": 1,
+    "'collections' module": 1
+  },
+  "2.5": {},
+  "2.6": {
+    "'io' module": 1
+  },
+  "2.7": {},
+  "3.0": {},
+  "3.1": {},
+  "3.2": {
+    "'callable' member": 4
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

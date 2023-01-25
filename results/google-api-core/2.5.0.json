@@ -1,1 +1,121 @@
-{"2.3": {"'pkgutil' module": 1, "'platform' module": 1, "'datetime' module": 13, "'logging' module": 6, "'sum' member": 4, "'enumerate' member": 4, "'itertools' module": 2}, "2.6": {"'io' module": 1, "'str.format' member": 89, "'collections.namedtuple' member": 3, "'next' member": 32, "'__future__.unicode_literals' member": 5, "'collections.deque(maxlen)'": 1, "'threading.Thread.daemon' member": 3, "'threading.Thread.name' member": 2, "'abc' module": 5, "'functools.reduce' member": 2, "byte string (b'..') or `str` synonym": 13, "'json' module": 1, "'enumerate(start)'": 1, "'warnings.catch_warnings' member": 8}, "2.5": {"`with`": 259, "'functools' module": 14, "'datetime.datetime.strptime' member": 5, "'__future__.absolute_import' member": 1, "'operator.itemgetter' member": 4, "'all' member": 4}, "3.5": {"'typing' module": 9, "coroutines (async)": 104, "coroutines (await)": 163, "async for-loops": 13, "'typing.Deque' member": 1, "'typing.Awaitable' member": 1, "generalized unpacking": 4}, "3.6": {"variable annotations": 7, "async generators (await and yield in same func)": 1, "'inspect.isasyncgen' member": 4, "f-strings": 3}, "3.2": {"'datetime.timezone' member": 15, "'callable' member": 5, "'datetime.timedelta.total_seconds' member": 8, "'concurrent.futures' module": 2}, "2.4": {"function decorators": 257, "'collections' module": 9, "'frozenset' member": 26, "'set' member": 54, "'sorted(key)'": 2, "'sorted' member": 12, "'collections.deque' member": 4, "'reversed' member": 1}, "2.7": {"`\"..{}..\".format(..)`": 35, "dict comprehensions": 3, "'collections.OrderedDict' member": 3, "'datetime.timedelta.total_seconds' member": 8, "set literals": 2, "'sys.version_info.major' member": 2, "multiple context expressions in a `with` statement": 2}, "3.0": {"exception cause": 18, "super() without arguments": 14, "annotations": 50, "'queue' module": 1, "'urllib.parse' module": 1, "keyword-only parameters": 26}, "2.2": {"'StopIteration' member": 9, "'super' member": 46, "'type' member": 19, "'object' member": 10, "'iter' member": 37, "'bool' member": 6, "'dict' member": 36, "'types.GeneratorType' member": 4}, "2.0": {"'callable' member": 5, "'sys.version_info' member": 2}, "2.1": {"'__future__' module": 5, "'warnings' module": 2, "'inspect' module": 2}, "3.4": {"'asyncio' module": 4, "'abc.ABC' member": 2, "'enum' module": 1}, "3.3": {"`yield from`": 8, "'collections.abc' module": 2, "'unittest.mock' module": 1}, "3.1": {"'collections.OrderedDict' member": 3, "multiple context expressions in a `with` statement": 2}}
+{
+  "2.0": {
+    "'callable' member": 5,
+    "'sys.version_info' member": 2
+  },
+  "2.1": {
+    "'__future__' module": 5,
+    "'warnings' module": 2,
+    "'inspect' module": 2
+  },
+  "2.2": {
+    "'super' member": 46,
+    "'iter' member": 37,
+    "'dict' member": 36,
+    "'type' member": 19,
+    "'object' member": 10,
+    "'StopIteration' member": 9,
+    "'bool' member": 6,
+    "'types.GeneratorType' member": 4
+  },
+  "2.3": {
+    "'datetime' module": 13,
+    "'logging' module": 6,
+    "'sum' member": 4,
+    "'enumerate' member": 4,
+    "'itertools' module": 2,
+    "'pkgutil' module": 1,
+    "'platform' module": 1
+  },
+  "2.4": {
+    "function decorators": 257,
+    "'set' member": 54,
+    "'frozenset' member": 26,
+    "'sorted' member": 12,
+    "'collections' module": 9,
+    "'collections.deque' member": 4,
+    "'sorted(key)'": 2,
+    "'reversed' member": 1
+  },
+  "2.5": {
+    "`with`": 259,
+    "'functools' module": 14,
+    "'datetime.datetime.strptime' member": 5,
+    "'operator.itemgetter' member": 4,
+    "'all' member": 4,
+    "'__future__.absolute_import' member": 1
+  },
+  "2.6": {
+    "'str.format' member": 89,
+    "'next' member": 32,
+    "byte string (b'..') or `str` synonym": 13,
+    "'warnings.catch_warnings' member": 8,
+    "'__future__.unicode_literals' member": 5,
+    "'abc' module": 5,
+    "'collections.namedtuple' member": 3,
+    "'threading.Thread.daemon' member": 3,
+    "'threading.Thread.name' member": 2,
+    "'functools.reduce' member": 2,
+    "'io' module": 1,
+    "'collections.deque(maxlen)'": 1,
+    "'json' module": 1,
+    "'enumerate(start)'": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 35,
+    "'datetime.timedelta.total_seconds' member": 8,
+    "dict comprehensions": 3,
+    "'collections.OrderedDict' member": 3,
+    "set literals": 2,
+    "'sys.version_info.major' member": 2,
+    "multiple context expressions in a `with` statement": 2
+  },
+  "3.0": {
+    "annotations": 50,
+    "keyword-only parameters": 26,
+    "exception cause": 18,
+    "super() without arguments": 14,
+    "'queue' module": 1,
+    "'urllib.parse' module": 1
+  },
+  "3.1": {
+    "'collections.OrderedDict' member": 3,
+    "multiple context expressions in a `with` statement": 2
+  },
+  "3.2": {
+    "'datetime.timezone' member": 15,
+    "'datetime.timedelta.total_seconds' member": 8,
+    "'callable' member": 5,
+    "'concurrent.futures' module": 2
+  },
+  "3.3": {
+    "`yield from`": 8,
+    "'collections.abc' module": 2,
+    "'unittest.mock' module": 1
+  },
+  "3.4": {
+    "'asyncio' module": 4,
+    "'abc.ABC' member": 2,
+    "'enum' module": 1
+  },
+  "3.5": {
+    "coroutines (await)": 163,
+    "coroutines (async)": 104,
+    "async for-loops": 13,
+    "'typing' module": 9,
+    "generalized unpacking": 4,
+    "'typing.Deque' member": 1,
+    "'typing.Awaitable' member": 1
+  },
+  "3.6": {
+    "variable annotations": 7,
+    "'inspect.isasyncgen' member": 4,
+    "f-strings": 3,
+    "async generators (await and yield in same func)": 1
+  },
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

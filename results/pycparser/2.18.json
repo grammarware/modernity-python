@@ -1,1 +1,64 @@
-{"2.4": {"'subprocess' module": 2, "function decorators": 30, "'set' member": 20, "'string.Template' member": 1, "'reversed' member": 2}, "2.0": {"print(expr)": 8, "'sys.version_info' member": 2}, "2.1": {"'__future__' module": 9, "'unittest' module": 6, "'weakref' module": 1, "'inspect' module": 2, "'warnings' module": 1}, "2.6": {"'__future__.print_function' member": 8, "'json' module": 1, "'str.format' member": 3, "class decorators": 1, "'next' member": 2}, "2.7": {"'argparse' module": 1, "`\"..{}..\".format(..)`": 1, "'unittest.skipUnless' member": 6, "'sys.version_info.major' member": 1}, "3.2": {"'argparse' module": 1}, "2.5": {"`with`": 15}, "2.3": {"'pickle.dump(protocol)'": 1, "'enumerate' member": 50, "'platform' module": 1}, "2.2": {"'type' member": 42, "'dict' member": 22, "'iter' member": 1, "'__future__.generators' member": 1, "'StopIteration' member": 4}, "3.1": {"'unittest.skipUnless' member": 6}}
+{
+  "2.0": {
+    "print(expr)": 8,
+    "'sys.version_info' member": 2
+  },
+  "2.1": {
+    "'__future__' module": 9,
+    "'unittest' module": 6,
+    "'inspect' module": 2,
+    "'weakref' module": 1,
+    "'warnings' module": 1
+  },
+  "2.2": {
+    "'type' member": 42,
+    "'dict' member": 22,
+    "'StopIteration' member": 4,
+    "'iter' member": 1,
+    "'__future__.generators' member": 1
+  },
+  "2.3": {
+    "'enumerate' member": 50,
+    "'pickle.dump(protocol)'": 1,
+    "'platform' module": 1
+  },
+  "2.4": {
+    "function decorators": 30,
+    "'set' member": 20,
+    "'subprocess' module": 2,
+    "'reversed' member": 2,
+    "'string.Template' member": 1
+  },
+  "2.5": {
+    "`with`": 15
+  },
+  "2.6": {
+    "'__future__.print_function' member": 8,
+    "'str.format' member": 3,
+    "'next' member": 2,
+    "'json' module": 1,
+    "class decorators": 1
+  },
+  "2.7": {
+    "'unittest.skipUnless' member": 6,
+    "'argparse' module": 1,
+    "`\"..{}..\".format(..)`": 1,
+    "'sys.version_info.major' member": 1
+  },
+  "3.0": {},
+  "3.1": {
+    "'unittest.skipUnless' member": 6
+  },
+  "3.2": {
+    "'argparse' module": 1
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

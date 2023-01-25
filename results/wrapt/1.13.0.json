@@ -1,1 +1,87 @@
-{"2.3": {"'platform' module": 1, "'dict.fromkeys' member": 10}, "2.6": {"'platform.python_implementation' member": 1, "'__future__.print_function' member": 28, "class decorators": 30, "'abc' module": 1, "'collections.namedtuple' member": 1, "'str.format' member": 3, "byte string (b'..') or `str` synonym": 4, "'format' member": 4, "'fractions' module": 1}, "2.0": {"'sys.version_info' member": 7, "print(expr)": 1, "'callable' member": 11, "'long' member": 4}, "3.0": {"'builtins' module": 2, "keyword-only parameters": 4, "annotations": 22}, "2.1": {"'__future__' module": 28, "'unittest' module": 28, "'inspect' module": 16, "'weakref' module": 1}, "2.4": {"function decorators": 467, "'collections' module": 2, "'frozenset' member": 1, "'reversed' member": 8, "'decimal' module": 1}, "3.3": {"'inspect.signature' member": 13, "'importlib.find_loader' member": 2}, "2.2": {"'object' member": 36, "'type' member": 147, "'super' member": 52, "'bool' member": 10, "'operator.truediv' member": 4, "'iter' member": 2, "'dict' member": 6}, "3.5": {"'typing' module": 1}, "2.5": {"`with`": 11, "'functools' module": 2, "'operator.idiv' member": 2, "'operator.itruediv' member": 2, "'operator.index' member": 2}, "3.2": {"'callable' member": 11, "'inspect.getcallargs' member": 1}, "2.7": {"`\"..{}..\".format(..)`": 3, "'importlib' module": 1, "'inspect.getcallargs' member": 1}, "3.1": {"'importlib' module": 1}, "3.4": {"'importlib.util.find_spec' member": 2}, "3.10": {"union types as `a = X; a |= Y`": 2}}
+{
+  "2.0": {
+    "'callable' member": 11,
+    "'sys.version_info' member": 7,
+    "'long' member": 4,
+    "print(expr)": 1
+  },
+  "2.1": {
+    "'__future__' module": 28,
+    "'unittest' module": 28,
+    "'inspect' module": 16,
+    "'weakref' module": 1
+  },
+  "2.2": {
+    "'type' member": 147,
+    "'super' member": 52,
+    "'object' member": 36,
+    "'bool' member": 10,
+    "'dict' member": 6,
+    "'operator.truediv' member": 4,
+    "'iter' member": 2
+  },
+  "2.3": {
+    "'dict.fromkeys' member": 10,
+    "'platform' module": 1
+  },
+  "2.4": {
+    "function decorators": 467,
+    "'reversed' member": 8,
+    "'collections' module": 2,
+    "'frozenset' member": 1,
+    "'decimal' module": 1
+  },
+  "2.5": {
+    "`with`": 11,
+    "'functools' module": 2,
+    "'operator.idiv' member": 2,
+    "'operator.itruediv' member": 2,
+    "'operator.index' member": 2
+  },
+  "2.6": {
+    "class decorators": 30,
+    "'__future__.print_function' member": 28,
+    "byte string (b'..') or `str` synonym": 4,
+    "'format' member": 4,
+    "'str.format' member": 3,
+    "'platform.python_implementation' member": 1,
+    "'abc' module": 1,
+    "'collections.namedtuple' member": 1,
+    "'fractions' module": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 3,
+    "'importlib' module": 1,
+    "'inspect.getcallargs' member": 1
+  },
+  "3.0": {
+    "annotations": 22,
+    "keyword-only parameters": 4,
+    "'builtins' module": 2
+  },
+  "3.1": {
+    "'importlib' module": 1
+  },
+  "3.2": {
+    "'callable' member": 11,
+    "'inspect.getcallargs' member": 1
+  },
+  "3.3": {
+    "'inspect.signature' member": 13,
+    "'importlib.find_loader' member": 2
+  },
+  "3.4": {
+    "'importlib.util.find_spec' member": 2
+  },
+  "3.5": {
+    "'typing' module": 1
+  },
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {
+    "union types as `a = X; a |= Y`": 2
+  },
+  "3.11": {}
+}

@@ -1,1 +1,116 @@
-{"2.0": {"print(expr)": 2, "'sys.version_info' member": 2, "'callable' member": 2}, "2.3": {"'platform' module": 1, "'pkgutil' module": 1, "'textwrap' module": 5, "'datetime' module": 11, "'UnicodeEncodeError' member": 6, "'sum' member": 4, "'itertools' module": 8, "'enumerate' member": 2}, "3.6": {"f-strings": 49, "variable annotations": 118}, "2.5": {"`with`": 2301, "'subprocess.check_call' member": 3, "'contextlib' module": 2, "'collections.defaultdict' member": 4, "'all' member": 55, "'hashlib' module": 2, "'any' member": 8}, "2.4": {"'frozenset' member": 102, "function decorators": 753, "'subprocess' module": 3, "'sorted' member": 6, "'os.urandom' member": 67, "'set' member": 5, "'collections' module": 3, "'reversed' member": 8, "'sorted(reverse)'": 1}, "3.0": {"annotations": 1506, "keyword-only parameters": 8, "ellipsis literal (`...`) out of slices": 89, "super() without arguments": 2, "exception cause": 2, "'urllib.parse' module": 1}, "2.7": {"`\"..{}..\".format(..)`": 171, "'importlib' module": 1, "'memoryview' member": 22, "set literals": 4, "dict comprehensions": 3, "'int.bit_length' member": 2, "'hmac.compare_digest' member": 1}, "2.6": {"'str.format' member": 265, "'abc' module": 24, "'warnings.catch_warnings' member": 4, "'os.path.relpath' member": 1, "'json' module": 3, "class decorators": 124, "byte string (b'..') or `str` synonym": 3151, "'collections.namedtuple' member": 3, "'itertools.product' member": 40, "'bytearray' member": 160, "'next' member": 2, "'format' member": 10}, "3.5": {"'typing' module": 70, "'typing.NamedTuple' member": 1, "'math.gcd' member": 1, "'typing.NoReturn' member": 1}, "3.4": {"'enum' module": 2, "'inspect.unwrap' member": 1}, "2.1": {"'warnings' module": 8, "'inspect' module": 3}, "3.1": {"'importlib' module": 1, "'int.bit_length' member": 2, "'base64.encodebytes' member": 1}, "2.2": {"'super' member": 14, "'object' member": 217, "'property' member": 1, "'type' member": 30, "'iter' member": 39, "'str.decode' member": 3, "'hmac' module": 1, "'bool' member": 2}, "3.3": {"'inspect.Signature' member": 2, "'inspect.signature' member": 2, "'ipaddress' module": 4, "'hmac.compare_digest' member": 1}, "3.2": {"'int.from_bytes' member": 30, "'callable' member": 2}}
+{
+  "2.0": {
+    "print(expr)": 2,
+    "'sys.version_info' member": 2,
+    "'callable' member": 2
+  },
+  "2.1": {
+    "'warnings' module": 8,
+    "'inspect' module": 3
+  },
+  "2.2": {
+    "'object' member": 217,
+    "'iter' member": 39,
+    "'type' member": 30,
+    "'super' member": 14,
+    "'str.decode' member": 3,
+    "'bool' member": 2,
+    "'property' member": 1,
+    "'hmac' module": 1
+  },
+  "2.3": {
+    "'datetime' module": 11,
+    "'itertools' module": 8,
+    "'UnicodeEncodeError' member": 6,
+    "'textwrap' module": 5,
+    "'sum' member": 4,
+    "'enumerate' member": 2,
+    "'platform' module": 1,
+    "'pkgutil' module": 1
+  },
+  "2.4": {
+    "function decorators": 753,
+    "'frozenset' member": 102,
+    "'os.urandom' member": 67,
+    "'reversed' member": 8,
+    "'sorted' member": 6,
+    "'set' member": 5,
+    "'subprocess' module": 3,
+    "'collections' module": 3,
+    "'sorted(reverse)'": 1
+  },
+  "2.5": {
+    "`with`": 2301,
+    "'all' member": 55,
+    "'any' member": 8,
+    "'collections.defaultdict' member": 4,
+    "'subprocess.check_call' member": 3,
+    "'contextlib' module": 2,
+    "'hashlib' module": 2
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 3151,
+    "'str.format' member": 265,
+    "'bytearray' member": 160,
+    "class decorators": 124,
+    "'itertools.product' member": 40,
+    "'abc' module": 24,
+    "'format' member": 10,
+    "'warnings.catch_warnings' member": 4,
+    "'json' module": 3,
+    "'collections.namedtuple' member": 3,
+    "'next' member": 2,
+    "'os.path.relpath' member": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 171,
+    "'memoryview' member": 22,
+    "set literals": 4,
+    "dict comprehensions": 3,
+    "'int.bit_length' member": 2,
+    "'importlib' module": 1,
+    "'hmac.compare_digest' member": 1
+  },
+  "3.0": {
+    "annotations": 1506,
+    "ellipsis literal (`...`) out of slices": 89,
+    "keyword-only parameters": 8,
+    "super() without arguments": 2,
+    "exception cause": 2,
+    "'urllib.parse' module": 1
+  },
+  "3.1": {
+    "'int.bit_length' member": 2,
+    "'importlib' module": 1,
+    "'base64.encodebytes' member": 1
+  },
+  "3.2": {
+    "'int.from_bytes' member": 30,
+    "'callable' member": 2
+  },
+  "3.3": {
+    "'ipaddress' module": 4,
+    "'inspect.Signature' member": 2,
+    "'inspect.signature' member": 2,
+    "'hmac.compare_digest' member": 1
+  },
+  "3.4": {
+    "'enum' module": 2,
+    "'inspect.unwrap' member": 1
+  },
+  "3.5": {
+    "'typing' module": 70,
+    "'typing.NamedTuple' member": 1,
+    "'math.gcd' member": 1,
+    "'typing.NoReturn' member": 1
+  },
+  "3.6": {
+    "variable annotations": 118,
+    "f-strings": 49
+  },
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

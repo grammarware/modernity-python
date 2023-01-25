@@ -1,1 +1,109 @@
-{"2.5": {"`with`": 35, "'any' member": 5, "'hashlib' module": 2, "'__future__.absolute_import' member": 2, "'codecs.getincrementaldecoder' member": 1, "'all' member": 2, "'uuid' module": 1}, "2.0": {"print(expr)": 2, "'sys.version_info' member": 6, "'urlparse' module": 2, "'urllib2' module": 1, "'httplib.IncompleteRead' member": 1, "'unicode' member": 5, "'httplib.HTTPException' member": 1, "'httplib.HTTPConnection' member": 1, "'httplib.HTTPSConnection' member": 2, "'Queue' module": 1}, "2.2": {"'urlparse.urlsplit' member": 1, "'super' member": 32, "'dict' member": 22, "'iter' member": 28, "'bool' member": 3, "'type' member": 11, "'__future__.division' member": 1, "'object' member": 5}, "3.0": {"'urllib.parse' module": 3, "'http' module": 1, "'http.cookiejar' module": 1, "'queue' module": 1, "'builtins' module": 1}, "2.6": {"'io' module": 6, "byte string (b'..') or `str` synonym": 38, "'str.format' member": 8, "'platform.python_implementation' member": 1, "'json' module": 1, "'next' member": 2, "'socket.create_connection' member": 2, "'logging.StreamHandler' member": 1, "'Queue.LifoQueue' member": 1, "'collections.namedtuple' member": 1, "'ssl' module": 3, "'operator.methodcaller' member": 1}, "2.4": {"'collections' module": 8, "'os.urandom' member": 2, "function decorators": 23, "'frozenset' member": 25, "'set' member": 5, "'operator.attrgetter' member": 4}, "2.7": {"'collections.OrderedDict' member": 2, "'logging.NullHandler' member": 2, "'ssl.SSLContext' member": 1, "'ssl.HAS_SNI' member": 1, "'ssl.match_hostname' member": 1}, "3.1": {"'collections.OrderedDict' member": 2, "'logging.NullHandler' member": 2}, "2.3": {"'logging' module": 8, "'dummy_threading' module": 1, "'itertools' module": 1, "'datetime' module": 2, "'platform' module": 1, "'UnicodeDecodeError' member": 2, "'sum' member": 2, "'socket.timeout' member": 2, "'UnicodeEncodeError' member": 1, "'socket.getdefaulttimeout' member": 2, "'enumerate' member": 1, "'dummy_thread' module": 1, "'dict.pop' member": 2}, "3.3": {"'ConnectionError' member": 8, "'TimeoutError' member": 2}, "2.1": {"'__future__' module": 3, "'unittest' module": 1}, "3.2": {"'ssl.SSLContext' member": 1, "'ssl.HAS_SNI' member": 1, "'ssl.match_hostname' member": 1}}
+{
+  "2.0": {
+    "'sys.version_info' member": 6,
+    "'unicode' member": 5,
+    "print(expr)": 2,
+    "'urlparse' module": 2,
+    "'httplib.HTTPSConnection' member": 2,
+    "'urllib2' module": 1,
+    "'httplib.IncompleteRead' member": 1,
+    "'httplib.HTTPException' member": 1,
+    "'httplib.HTTPConnection' member": 1,
+    "'Queue' module": 1
+  },
+  "2.1": {
+    "'__future__' module": 3,
+    "'unittest' module": 1
+  },
+  "2.2": {
+    "'super' member": 32,
+    "'iter' member": 28,
+    "'dict' member": 22,
+    "'type' member": 11,
+    "'object' member": 5,
+    "'bool' member": 3,
+    "'urlparse.urlsplit' member": 1,
+    "'__future__.division' member": 1
+  },
+  "2.3": {
+    "'logging' module": 8,
+    "'datetime' module": 2,
+    "'UnicodeDecodeError' member": 2,
+    "'sum' member": 2,
+    "'socket.timeout' member": 2,
+    "'socket.getdefaulttimeout' member": 2,
+    "'dict.pop' member": 2,
+    "'dummy_threading' module": 1,
+    "'itertools' module": 1,
+    "'platform' module": 1,
+    "'UnicodeEncodeError' member": 1,
+    "'enumerate' member": 1,
+    "'dummy_thread' module": 1
+  },
+  "2.4": {
+    "'frozenset' member": 25,
+    "function decorators": 23,
+    "'collections' module": 8,
+    "'set' member": 5,
+    "'operator.attrgetter' member": 4,
+    "'os.urandom' member": 2
+  },
+  "2.5": {
+    "`with`": 35,
+    "'any' member": 5,
+    "'hashlib' module": 2,
+    "'__future__.absolute_import' member": 2,
+    "'all' member": 2,
+    "'codecs.getincrementaldecoder' member": 1,
+    "'uuid' module": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 38,
+    "'str.format' member": 8,
+    "'io' module": 6,
+    "'ssl' module": 3,
+    "'next' member": 2,
+    "'socket.create_connection' member": 2,
+    "'platform.python_implementation' member": 1,
+    "'json' module": 1,
+    "'logging.StreamHandler' member": 1,
+    "'Queue.LifoQueue' member": 1,
+    "'collections.namedtuple' member": 1,
+    "'operator.methodcaller' member": 1
+  },
+  "2.7": {
+    "'collections.OrderedDict' member": 2,
+    "'logging.NullHandler' member": 2,
+    "'ssl.SSLContext' member": 1,
+    "'ssl.HAS_SNI' member": 1,
+    "'ssl.match_hostname' member": 1
+  },
+  "3.0": {
+    "'urllib.parse' module": 3,
+    "'http' module": 1,
+    "'http.cookiejar' module": 1,
+    "'queue' module": 1,
+    "'builtins' module": 1
+  },
+  "3.1": {
+    "'collections.OrderedDict' member": 2,
+    "'logging.NullHandler' member": 2
+  },
+  "3.2": {
+    "'ssl.SSLContext' member": 1,
+    "'ssl.HAS_SNI' member": 1,
+    "'ssl.match_hostname' member": 1
+  },
+  "3.3": {
+    "'ConnectionError' member": 8,
+    "'TimeoutError' member": 2
+  },
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

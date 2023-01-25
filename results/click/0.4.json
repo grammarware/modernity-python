@@ -1,1 +1,59 @@
-{"2.1": {"'inspect' module": 1, "'pydoc' module": 1}, "2.5": {"'functools' module": 1, "'contextlib' module": 1, "`with`": 13, "'uuid' module": 1}, "2.4": {"function decorators": 7, "'sorted' member": 5, "'set' member": 6, "'collections' module": 1, "'collections.deque' member": 1}, "2.0": {"'sys.version_info' member": 2, "'unicode' member": 2, "'callable' member": 4}, "2.3": {"'textwrap' module": 1, "'enumerate' member": 5, "'sys.getfilesystemencoding' member": 5, "'itertools' module": 1, "'locale.getpreferredencoding' member": 2, "'dict.pop' member": 4}, "2.6": {"'io' module": 1}, "3.0": {"'open(errors)'": 1, "'open(encoding)'": 1}, "2.2": {"'str.decode' member": 2, "'bool' member": 6, "'type' member": 1, "'object' member": 1}, "3.2": {"'callable' member": 4}}
+{
+  "2.0": {
+    "'callable' member": 4,
+    "'sys.version_info' member": 2,
+    "'unicode' member": 2
+  },
+  "2.1": {
+    "'inspect' module": 1,
+    "'pydoc' module": 1
+  },
+  "2.2": {
+    "'bool' member": 6,
+    "'str.decode' member": 2,
+    "'type' member": 1,
+    "'object' member": 1
+  },
+  "2.3": {
+    "'enumerate' member": 5,
+    "'sys.getfilesystemencoding' member": 5,
+    "'dict.pop' member": 4,
+    "'locale.getpreferredencoding' member": 2,
+    "'textwrap' module": 1,
+    "'itertools' module": 1
+  },
+  "2.4": {
+    "function decorators": 7,
+    "'set' member": 6,
+    "'sorted' member": 5,
+    "'collections' module": 1,
+    "'collections.deque' member": 1
+  },
+  "2.5": {
+    "`with`": 13,
+    "'functools' module": 1,
+    "'contextlib' module": 1,
+    "'uuid' module": 1
+  },
+  "2.6": {
+    "'io' module": 1
+  },
+  "2.7": {},
+  "3.0": {
+    "'open(errors)'": 1,
+    "'open(encoding)'": 1
+  },
+  "3.1": {},
+  "3.2": {
+    "'callable' member": 4
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

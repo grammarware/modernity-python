@@ -1,1 +1,61 @@
-{"2.0": {"print(expr)": 2, "'sys.version_info' member": 2}, "2.5": {"`with`": 293, "'any' member": 6, "'__future__.absolute_import' member": 1, "'hashlib' module": 2, "'all' member": 2}, "2.6": {"'str.format' member": 4, "byte string (b'..') or `str` synonym": 61, "'json' module": 8, "'__future__.print_function' member": 1, "class decorators": 2}, "2.4": {"'set' member": 8, "'collections' module": 2, "function decorators": 53, "'decimal' module": 2}, "2.2": {"'hmac' module": 2, "'super' member": 12, "'type' member": 4, "'os.path.realpath' member": 1, "'object' member": 2}, "2.7": {"'hmac.compare_digest' member": 1, "`\"..{}..\".format(..)`": 1}, "3.3": {"'hmac.compare_digest' member": 1}, "2.1": {"'warnings' module": 2, "'__future__' module": 1}, "2.3": {"'datetime' module": 3, "'optparse' module": 1}, "3.2": {"'int.from_bytes' member": 1}}
+{
+  "2.0": {
+    "print(expr)": 2,
+    "'sys.version_info' member": 2
+  },
+  "2.1": {
+    "'warnings' module": 2,
+    "'__future__' module": 1
+  },
+  "2.2": {
+    "'super' member": 12,
+    "'type' member": 4,
+    "'hmac' module": 2,
+    "'object' member": 2,
+    "'os.path.realpath' member": 1
+  },
+  "2.3": {
+    "'datetime' module": 3,
+    "'optparse' module": 1
+  },
+  "2.4": {
+    "function decorators": 53,
+    "'set' member": 8,
+    "'collections' module": 2,
+    "'decimal' module": 2
+  },
+  "2.5": {
+    "`with`": 293,
+    "'any' member": 6,
+    "'hashlib' module": 2,
+    "'all' member": 2,
+    "'__future__.absolute_import' member": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 61,
+    "'json' module": 8,
+    "'str.format' member": 4,
+    "class decorators": 2,
+    "'__future__.print_function' member": 1
+  },
+  "2.7": {
+    "'hmac.compare_digest' member": 1,
+    "`\"..{}..\".format(..)`": 1
+  },
+  "3.0": {},
+  "3.1": {},
+  "3.2": {
+    "'int.from_bytes' member": 1
+  },
+  "3.3": {
+    "'hmac.compare_digest' member": 1
+  },
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

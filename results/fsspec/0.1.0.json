@@ -1,1 +1,73 @@
-{"2.1": {"'__future__' module": 3}, "2.2": {"'__future__.division' member": 2, "'str.zfill' member": 1, "'os.path.realpath' member": 3}, "2.6": {"'__future__.print_function' member": 3, "'io' module": 2, "'json' module": 2, "byte string (b'..') or `str` synonym": 3, "'os.path.relpath' member": 1}, "2.5": {"'__future__.absolute_import' member": 2, "`with`": 33, "'all' member": 1, "'hashlib' module": 2}, "2.3": {"'bz2' module": 1, "'sum' member": 5, "'logging' module": 1, "'ConfigParser.SafeConfigParser' member": 1}, "3.3": {"'lzma' module": 1, "'FileNotFoundError' member": 8}, "2.7": {"'importlib' module": 1, "set comprehensions": 2, "set literals": 8}, "3.1": {"'importlib' module": 1}, "2.4": {"'str.rsplit' member": 1, "'collections' module": 1, "'reversed' member": 4, "'sorted' member": 6, "'set' member": 7, "'subprocess' module": 1, "function decorators": 9}, "3.6": {"f-strings": 2}, "3.0": {"'urllib.parse' module": 1, "'configparser' module": 1}, "2.0": {"print(expr)": 1, "'ConfigParser' module": 1, "'sys.version_info' member": 1, "'callable' member": 2}, "3.2": {"'callable' member": 2}}
+{
+  "2.0": {
+    "'callable' member": 2,
+    "print(expr)": 1,
+    "'ConfigParser' module": 1,
+    "'sys.version_info' member": 1
+  },
+  "2.1": {
+    "'__future__' module": 3
+  },
+  "2.2": {
+    "'os.path.realpath' member": 3,
+    "'__future__.division' member": 2,
+    "'str.zfill' member": 1
+  },
+  "2.3": {
+    "'sum' member": 5,
+    "'bz2' module": 1,
+    "'logging' module": 1,
+    "'ConfigParser.SafeConfigParser' member": 1
+  },
+  "2.4": {
+    "function decorators": 9,
+    "'set' member": 7,
+    "'sorted' member": 6,
+    "'reversed' member": 4,
+    "'str.rsplit' member": 1,
+    "'collections' module": 1,
+    "'subprocess' module": 1
+  },
+  "2.5": {
+    "`with`": 33,
+    "'__future__.absolute_import' member": 2,
+    "'hashlib' module": 2,
+    "'all' member": 1
+  },
+  "2.6": {
+    "'__future__.print_function' member": 3,
+    "byte string (b'..') or `str` synonym": 3,
+    "'io' module": 2,
+    "'json' module": 2,
+    "'os.path.relpath' member": 1
+  },
+  "2.7": {
+    "set literals": 8,
+    "set comprehensions": 2,
+    "'importlib' module": 1
+  },
+  "3.0": {
+    "'urllib.parse' module": 1,
+    "'configparser' module": 1
+  },
+  "3.1": {
+    "'importlib' module": 1
+  },
+  "3.2": {
+    "'callable' member": 2
+  },
+  "3.3": {
+    "'FileNotFoundError' member": 8,
+    "'lzma' module": 1
+  },
+  "3.4": {},
+  "3.5": {},
+  "3.6": {
+    "f-strings": 2
+  },
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

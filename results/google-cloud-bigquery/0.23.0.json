@@ -1,1 +1,54 @@
-{"2.5": {"`with`": 149, "'all' member": 10, "'datetime.datetime.strptime' member": 1, "'os.SEEK_SET' member": 2}, "2.3": {"'pkgutil' module": 2, "'datetime' module": 6, "'enumerate' member": 4, "'csv' module": 1}, "2.1": {"'unittest' module": 8}, "2.4": {"function decorators": 118, "'sorted' member": 2, "'frozenset' member": 2, "'collections' module": 1}, "2.2": {"'object' member": 89, "'dict' member": 10, "'super' member": 26, "'type' member": 2}, "2.6": {"byte string (b'..') or `str` synonym": 20, "'json' module": 2}, "2.7": {"'collections.OrderedDict' member": 1, "dict comprehensions": 2}, "3.1": {"'collections.OrderedDict' member": 1}, "3.2": {"'email.parser.BytesParser' member": 1}}
+{
+  "2.0": {},
+  "2.1": {
+    "'unittest' module": 8
+  },
+  "2.2": {
+    "'object' member": 89,
+    "'super' member": 26,
+    "'dict' member": 10,
+    "'type' member": 2
+  },
+  "2.3": {
+    "'datetime' module": 6,
+    "'enumerate' member": 4,
+    "'pkgutil' module": 2,
+    "'csv' module": 1
+  },
+  "2.4": {
+    "function decorators": 118,
+    "'sorted' member": 2,
+    "'frozenset' member": 2,
+    "'collections' module": 1
+  },
+  "2.5": {
+    "`with`": 149,
+    "'all' member": 10,
+    "'os.SEEK_SET' member": 2,
+    "'datetime.datetime.strptime' member": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 20,
+    "'json' module": 2
+  },
+  "2.7": {
+    "dict comprehensions": 2,
+    "'collections.OrderedDict' member": 1
+  },
+  "3.0": {},
+  "3.1": {
+    "'collections.OrderedDict' member": 1
+  },
+  "3.2": {
+    "'email.parser.BytesParser' member": 1
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

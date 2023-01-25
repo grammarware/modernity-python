@@ -1,1 +1,183 @@
-{"2.1": {"'__future__' module": 1, "'warnings' module": 12, "'inspect' module": 3, "'weakref' module": 15, "'unittest' module": 3, "'random.getstate' member": 1, "'random.setstate' member": 2, "'pydoc' module": 1}, "2.5": {"'__future__.absolute_import' member": 1, "'all' member": 30, "'any' member": 7, "`with`": 1393, "'contextlib' module": 7, "'subprocess.check_call' member": 7, "'functools' module": 5, "'uuid' module": 1, "'collections.defaultdict' member": 4, "'os.SEEK_CUR' member": 1, "'os.SEEK_END' member": 1, "'xml.etree.ElementTree' module": 1}, "2.7": {"`\"..{}..\".format(..)`": 165, "set literals": 39, "'subprocess.check_output' member": 4, "dict comprehensions": 16, "'sysconfig' module": 2, "'memoryview' member": 20, "'collections.OrderedDict' member": 13, "'collections.Counter' member": 3, "'importlib' module": 1, "set comprehensions": 9, "multiple context expressions in a `with` statement": 56, "'datetime.timedelta.total_seconds' member": 2}, "2.3": {"'enumerate' member": 65, "'textwrap' module": 4, "'os.walk' member": 2, "'shlex.split' member": 2, "'shutil.move' member": 12, "'tempfile.mkdtemp' member": 3, "'platform' module": 1, "'datetime' module": 18, "'itertools' module": 9, "'pickle.HIGHEST_PROTOCOL' member": 6, "'bz2' module": 2, "'pickle.dumps(protocol)'": 5, "'os.path.supports_unicode_filenames' member": 1, "'tempfile.NamedTemporaryFile' member": 2, "'sum' member": 4, "'inspect.isdatadescriptor' member": 2}, "2.2": {"'type' member": 78, "'dict' member": 30, "'super' member": 48, "'bool' member": 3, "'os.path.realpath' member": 2, "'iter' member": 13, "'gc.get_referrers' member": 2, "'property' member": 4, "'object' member": 9, "'StopIteration' member": 3, "'os.stat.st_mode' member": 2}, "2.6": {"'str.format' member": 260, "'collections.namedtuple' member": 5, "'warnings.catch_warnings' member": 3, "'numbers' module": 1, "'subprocess.Popen.kill' member": 2, "'functools.reduce' member": 2, "byte string (b'..') or `str` synonym": 1282, "'ast' module": 2, "'json' module": 7, "'operator.methodcaller' member": 1, "'next' member": 19, "'bytearray' member": 40, "strftime directive 'f'": 1, "'multiprocessing' module": 4, "'sys.getsizeof' member": 11, "'itertools.product' member": 1, "'abc' module": 1, "'io' module": 13, "'threading.current_thread' member": 3, "class decorators": 3, "'threading.Event.is_set' member": 1, "'tempfile.NamedTemporaryFile(delete)'": 1, "'signal.set_wakeup_fd' member": 3}, "2.4": {"'sorted' member": 23, "'set' member": 68, "'collections' module": 17, "function decorators": 868, "'subprocess' module": 11, "'collections.deque' member": 4, "'operator.attrgetter' member": 4, "'decimal' module": 9, "'os.urandom' member": 1, "'traceback.format_exc' member": 1, "'socket.socketpair' member": 1, "'reversed' member": 2}, "3.6": {"f-strings": 96, "'collections.abc.Collection' member": 1, "'subprocess.Popen(encoding)'": 1}, "3.0": {"keyword-only parameters": 30, "super() without arguments": 48, "'urllib.parse' module": 2, "'collections.UserList' member": 1, "`nonlocal`": 3, "'list.copy' member": 2}, "3.3": {"'inspect.Parameter' member": 1, "'inspect.signature' member": 9, "'inspect.Signature' member": 1, "'IsADirectoryError' member": 2, "'FileNotFoundError' member": 51, "'NotADirectoryError' member": 4, "'FileExistsError' member": 2, "`yield from`": 10, "'PermissionError' member": 1, "'faulthandler' module": 1, "'collections.abc' module": 6, "'shutil.which' member": 1, "'threading.Thread(daemon)'": 1, "'memoryview.nbytes' member": 1, "'ChildProcessError' member": 3}, "3.1": {"'subprocess.check_output' member": 4, "'collections.OrderedDict' member": 13, "'collections.Counter' member": 3, "'importlib' module": 1, "multiple context expressions in a `with` statement": 56}, "2.0": {"print(expr)": 9, "'sys.version_info' member": 3}, "3.2": {"'sysconfig' module": 2, "'tempfile.TemporaryDirectory' member": 3, "'concurrent.futures' module": 3, "'datetime.timezone' member": 12, "'functools.lru_cache' member": 2, "'gzip.compress' member": 9, "'gzip.decompress' member": 12, "'datetime.timedelta.total_seconds' member": 2}, "3.4": {"'pathlib' module": 7, "'multiprocessing.get_context' member": 1, "'abc.ABC' member": 1, "'threading.main_thread' member": 3}, "3.9": {"'zoneinfo' module": 2}, "3.7": {"'time.thread_time' member": 2, "'subprocess.run(capture_output)'": 1, "'signal.set_wakeup_fd(warn_on_full_buffer)'": 1}, "3.5": {"'subprocess.run' member": 4}, "3.8": {"'signal.raise_signal' member": 1}}
+{
+  "2.0": {
+    "print(expr)": 9,
+    "'sys.version_info' member": 3
+  },
+  "2.1": {
+    "'weakref' module": 15,
+    "'warnings' module": 12,
+    "'inspect' module": 3,
+    "'unittest' module": 3,
+    "'random.setstate' member": 2,
+    "'__future__' module": 1,
+    "'random.getstate' member": 1,
+    "'pydoc' module": 1
+  },
+  "2.2": {
+    "'type' member": 78,
+    "'super' member": 48,
+    "'dict' member": 30,
+    "'iter' member": 13,
+    "'object' member": 9,
+    "'property' member": 4,
+    "'bool' member": 3,
+    "'StopIteration' member": 3,
+    "'os.path.realpath' member": 2,
+    "'gc.get_referrers' member": 2,
+    "'os.stat.st_mode' member": 2
+  },
+  "2.3": {
+    "'enumerate' member": 65,
+    "'datetime' module": 18,
+    "'shutil.move' member": 12,
+    "'itertools' module": 9,
+    "'pickle.HIGHEST_PROTOCOL' member": 6,
+    "'pickle.dumps(protocol)'": 5,
+    "'textwrap' module": 4,
+    "'sum' member": 4,
+    "'tempfile.mkdtemp' member": 3,
+    "'os.walk' member": 2,
+    "'shlex.split' member": 2,
+    "'bz2' module": 2,
+    "'tempfile.NamedTemporaryFile' member": 2,
+    "'inspect.isdatadescriptor' member": 2,
+    "'platform' module": 1,
+    "'os.path.supports_unicode_filenames' member": 1
+  },
+  "2.4": {
+    "function decorators": 868,
+    "'set' member": 68,
+    "'sorted' member": 23,
+    "'collections' module": 17,
+    "'subprocess' module": 11,
+    "'decimal' module": 9,
+    "'collections.deque' member": 4,
+    "'operator.attrgetter' member": 4,
+    "'reversed' member": 2,
+    "'os.urandom' member": 1,
+    "'traceback.format_exc' member": 1,
+    "'socket.socketpair' member": 1
+  },
+  "2.5": {
+    "`with`": 1393,
+    "'all' member": 30,
+    "'any' member": 7,
+    "'contextlib' module": 7,
+    "'subprocess.check_call' member": 7,
+    "'functools' module": 5,
+    "'collections.defaultdict' member": 4,
+    "'__future__.absolute_import' member": 1,
+    "'uuid' module": 1,
+    "'os.SEEK_CUR' member": 1,
+    "'os.SEEK_END' member": 1,
+    "'xml.etree.ElementTree' module": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 1282,
+    "'str.format' member": 260,
+    "'bytearray' member": 40,
+    "'next' member": 19,
+    "'io' module": 13,
+    "'sys.getsizeof' member": 11,
+    "'json' module": 7,
+    "'collections.namedtuple' member": 5,
+    "'multiprocessing' module": 4,
+    "'warnings.catch_warnings' member": 3,
+    "'threading.current_thread' member": 3,
+    "class decorators": 3,
+    "'signal.set_wakeup_fd' member": 3,
+    "'subprocess.Popen.kill' member": 2,
+    "'functools.reduce' member": 2,
+    "'ast' module": 2,
+    "'numbers' module": 1,
+    "'operator.methodcaller' member": 1,
+    "strftime directive 'f'": 1,
+    "'itertools.product' member": 1,
+    "'abc' module": 1,
+    "'threading.Event.is_set' member": 1,
+    "'tempfile.NamedTemporaryFile(delete)'": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 165,
+    "multiple context expressions in a `with` statement": 56,
+    "set literals": 39,
+    "'memoryview' member": 20,
+    "dict comprehensions": 16,
+    "'collections.OrderedDict' member": 13,
+    "set comprehensions": 9,
+    "'subprocess.check_output' member": 4,
+    "'collections.Counter' member": 3,
+    "'sysconfig' module": 2,
+    "'datetime.timedelta.total_seconds' member": 2,
+    "'importlib' module": 1
+  },
+  "3.0": {
+    "super() without arguments": 48,
+    "keyword-only parameters": 30,
+    "`nonlocal`": 3,
+    "'urllib.parse' module": 2,
+    "'list.copy' member": 2,
+    "'collections.UserList' member": 1
+  },
+  "3.1": {
+    "multiple context expressions in a `with` statement": 56,
+    "'collections.OrderedDict' member": 13,
+    "'subprocess.check_output' member": 4,
+    "'collections.Counter' member": 3,
+    "'importlib' module": 1
+  },
+  "3.2": {
+    "'datetime.timezone' member": 12,
+    "'gzip.decompress' member": 12,
+    "'gzip.compress' member": 9,
+    "'tempfile.TemporaryDirectory' member": 3,
+    "'concurrent.futures' module": 3,
+    "'sysconfig' module": 2,
+    "'functools.lru_cache' member": 2,
+    "'datetime.timedelta.total_seconds' member": 2
+  },
+  "3.3": {
+    "'FileNotFoundError' member": 51,
+    "`yield from`": 10,
+    "'inspect.signature' member": 9,
+    "'collections.abc' module": 6,
+    "'NotADirectoryError' member": 4,
+    "'ChildProcessError' member": 3,
+    "'IsADirectoryError' member": 2,
+    "'FileExistsError' member": 2,
+    "'inspect.Parameter' member": 1,
+    "'inspect.Signature' member": 1,
+    "'PermissionError' member": 1,
+    "'faulthandler' module": 1,
+    "'shutil.which' member": 1,
+    "'threading.Thread(daemon)'": 1,
+    "'memoryview.nbytes' member": 1
+  },
+  "3.4": {
+    "'pathlib' module": 7,
+    "'threading.main_thread' member": 3,
+    "'multiprocessing.get_context' member": 1,
+    "'abc.ABC' member": 1
+  },
+  "3.5": {
+    "'subprocess.run' member": 4
+  },
+  "3.6": {
+    "f-strings": 96,
+    "'collections.abc.Collection' member": 1,
+    "'subprocess.Popen(encoding)'": 1
+  },
+  "3.7": {
+    "'time.thread_time' member": 2,
+    "'subprocess.run(capture_output)'": 1,
+    "'signal.set_wakeup_fd(warn_on_full_buffer)'": 1
+  },
+  "3.8": {
+    "'signal.raise_signal' member": 1
+  },
+  "3.9": {
+    "'zoneinfo' module": 2
+  },
+  "3.10": {},
+  "3.11": {}
+}

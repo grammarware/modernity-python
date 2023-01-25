@@ -1,1 +1,107 @@
-{"2.1": {"'__future__' module": 220, "'warnings' module": 7, "'inspect' module": 1}, "2.2": {"'__future__.division' member": 218, "'super' member": 14, "'object' member": 222, "'property' member": 2, "'type' member": 26, "'iter' member": 35, "'str.decode' member": 2, "'hmac' module": 1, "'bool' member": 2}, "2.6": {"'__future__.print_function' member": 220, "'platform.python_implementation' member": 1, "class decorators": 409, "'str.format' member": 269, "byte string (b'..') or `str` synonym": 2757, "'bytearray' member": 151, "'abc' module": 24, "'warnings.catch_warnings' member": 4, "'json' module": 3, "'collections.namedtuple' member": 5, "'itertools.product' member": 41, "'format' member": 10, "'bin' member": 1, "'fractions' module": 1}, "2.5": {"'__future__.absolute_import' member": 220, "`with`": 2072, "'all' member": 50, "'contextlib' module": 2, "'collections.defaultdict' member": 4, "'hashlib' module": 2, "'any' member": 6, "'subprocess.check_call' member": 2, "'datetime.datetime.strptime' member": 1, "'functools' module": 1, "'operator.index' member": 2, "'struct.Struct' member": 2}, "2.3": {"'platform' module": 1, "'textwrap' module": 4, "'datetime' module": 10, "'UnicodeEncodeError' member": 6, "'sum' member": 4, "'itertools' module": 9, "'enumerate' member": 4}, "2.7": {"`\"..{}..\".format(..)`": 184, "'memoryview' member": 24, "set literals": 5, "dict comprehensions": 4, "multiple context expressions in a `with` statement": 22, "'hmac.compare_digest' member": 1}, "2.4": {"function decorators": 794, "'os.urandom' member": 57, "'set' member": 8, "'collections' module": 5, "'frozenset' member": 95, "'reversed' member": 6, "'subprocess' module": 2, "'sorted' member": 5, "'sorted(reverse)'": 1}, "3.4": {"'enum' module": 9}, "2.0": {"'sys.version_info' member": 2, "print(expr)": 1}, "3.2": {"'int.from_bytes' member": 3}, "3.3": {"'inspect.signature' member": 1, "'ipaddress' module": 6, "'hmac.compare_digest' member": 1}, "3.1": {"multiple context expressions in a `with` statement": 22, "'base64.encodebytes' member": 1}, "3.10": {"union types as `X | Y`": 4}, "3.5": {"'math.gcd' member": 1}}
+{
+  "2.0": {
+    "'sys.version_info' member": 2,
+    "print(expr)": 1
+  },
+  "2.1": {
+    "'__future__' module": 220,
+    "'warnings' module": 7,
+    "'inspect' module": 1
+  },
+  "2.2": {
+    "'object' member": 222,
+    "'__future__.division' member": 218,
+    "'iter' member": 35,
+    "'type' member": 26,
+    "'super' member": 14,
+    "'property' member": 2,
+    "'str.decode' member": 2,
+    "'bool' member": 2,
+    "'hmac' module": 1
+  },
+  "2.3": {
+    "'datetime' module": 10,
+    "'itertools' module": 9,
+    "'UnicodeEncodeError' member": 6,
+    "'textwrap' module": 4,
+    "'sum' member": 4,
+    "'enumerate' member": 4,
+    "'platform' module": 1
+  },
+  "2.4": {
+    "function decorators": 794,
+    "'frozenset' member": 95,
+    "'os.urandom' member": 57,
+    "'set' member": 8,
+    "'reversed' member": 6,
+    "'collections' module": 5,
+    "'sorted' member": 5,
+    "'subprocess' module": 2,
+    "'sorted(reverse)'": 1
+  },
+  "2.5": {
+    "`with`": 2072,
+    "'__future__.absolute_import' member": 220,
+    "'all' member": 50,
+    "'any' member": 6,
+    "'collections.defaultdict' member": 4,
+    "'contextlib' module": 2,
+    "'hashlib' module": 2,
+    "'subprocess.check_call' member": 2,
+    "'operator.index' member": 2,
+    "'struct.Struct' member": 2,
+    "'datetime.datetime.strptime' member": 1,
+    "'functools' module": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 2757,
+    "class decorators": 409,
+    "'str.format' member": 269,
+    "'__future__.print_function' member": 220,
+    "'bytearray' member": 151,
+    "'itertools.product' member": 41,
+    "'abc' module": 24,
+    "'format' member": 10,
+    "'collections.namedtuple' member": 5,
+    "'warnings.catch_warnings' member": 4,
+    "'json' module": 3,
+    "'platform.python_implementation' member": 1,
+    "'bin' member": 1,
+    "'fractions' module": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 184,
+    "'memoryview' member": 24,
+    "multiple context expressions in a `with` statement": 22,
+    "set literals": 5,
+    "dict comprehensions": 4,
+    "'hmac.compare_digest' member": 1
+  },
+  "3.0": {},
+  "3.1": {
+    "multiple context expressions in a `with` statement": 22,
+    "'base64.encodebytes' member": 1
+  },
+  "3.2": {
+    "'int.from_bytes' member": 3
+  },
+  "3.3": {
+    "'ipaddress' module": 6,
+    "'inspect.signature' member": 1,
+    "'hmac.compare_digest' member": 1
+  },
+  "3.4": {
+    "'enum' module": 9
+  },
+  "3.5": {
+    "'math.gcd' member": 1
+  },
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {
+    "union types as `X | Y`": 4
+  },
+  "3.11": {}
+}

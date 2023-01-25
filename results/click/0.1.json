@@ -1,1 +1,53 @@
-{"2.3": {"'textwrap' module": 1, "'sys.getfilesystemencoding' member": 4, "'optparse' module": 1, "'itertools' module": 1, "'dict.pop' member": 6}, "2.1": {"'inspect' module": 1}, "2.5": {"'functools' module": 1, "`with`": 4}, "2.4": {"function decorators": 3, "'sorted(key)'": 1, "'sorted' member": 4}, "2.0": {"'sys.version_info' member": 2, "'unicode' member": 2, "'callable' member": 2}, "2.2": {"'str.decode' member": 2, "'bool' member": 6, "'type' member": 1, "'object' member": 1}, "2.6": {"'io' module": 1}, "3.0": {"'open(errors)'": 1, "'open(encoding)'": 1}, "3.2": {"'callable' member": 2}}
+{
+  "2.0": {
+    "'sys.version_info' member": 2,
+    "'unicode' member": 2,
+    "'callable' member": 2
+  },
+  "2.1": {
+    "'inspect' module": 1
+  },
+  "2.2": {
+    "'bool' member": 6,
+    "'str.decode' member": 2,
+    "'type' member": 1,
+    "'object' member": 1
+  },
+  "2.3": {
+    "'dict.pop' member": 6,
+    "'sys.getfilesystemencoding' member": 4,
+    "'textwrap' module": 1,
+    "'optparse' module": 1,
+    "'itertools' module": 1
+  },
+  "2.4": {
+    "'sorted' member": 4,
+    "function decorators": 3,
+    "'sorted(key)'": 1
+  },
+  "2.5": {
+    "`with`": 4,
+    "'functools' module": 1
+  },
+  "2.6": {
+    "'io' module": 1
+  },
+  "2.7": {},
+  "3.0": {
+    "'open(errors)'": 1,
+    "'open(encoding)'": 1
+  },
+  "3.1": {},
+  "3.2": {
+    "'callable' member": 2
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

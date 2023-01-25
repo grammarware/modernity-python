@@ -1,1 +1,70 @@
-{"2.1": {"'unittest' module": 1, "'weakref' module": 1, "'warnings' module": 1, "'inspect' module": 1}, "2.0": {"print(expr)": 80, "'string.lowercase' member": 1, "'string.uppercase' member": 1, "'file' member": 2}, "2.6": {"'next' member": 3, "'functools.reduce' member": 1, "'str.format' member": 69}, "2.2": {"'StopIteration' member": 2, "'type' member": 36, "'super' member": 155, "'iter' member": 5, "'operator.truediv' member": 1, "'str.decode' member": 1, "'dict' member": 14, "'bool' member": 7, "'property' member": 2, "'staticmethod' member": 10, "'object' member": 3}, "2.4": {"'reversed' member": 1, "function decorators": 15, "'set' member": 37, "'sorted' member": 5, "'collections' module": 1}, "2.3": {"'sum' member": 10, "'datetime' module": 4, "'sets' module": 2, "'enumerate' member": 24, "'operator.pow' member": 1, "'slice.indices' member": 2}, "2.5": {"'datetime.datetime.strptime' member": 1, "'functools' module": 1}, "3.0": {"'urllib.parse' module": 10, "'list.copy' member": 2, "`nonlocal`": 1}, "3.10": {"union types as `X | Y`": 3}}
+{
+  "2.0": {
+    "print(expr)": 80,
+    "'file' member": 2,
+    "'string.lowercase' member": 1,
+    "'string.uppercase' member": 1
+  },
+  "2.1": {
+    "'unittest' module": 1,
+    "'weakref' module": 1,
+    "'warnings' module": 1,
+    "'inspect' module": 1
+  },
+  "2.2": {
+    "'super' member": 155,
+    "'type' member": 36,
+    "'dict' member": 14,
+    "'staticmethod' member": 10,
+    "'bool' member": 7,
+    "'iter' member": 5,
+    "'object' member": 3,
+    "'StopIteration' member": 2,
+    "'property' member": 2,
+    "'operator.truediv' member": 1,
+    "'str.decode' member": 1
+  },
+  "2.3": {
+    "'enumerate' member": 24,
+    "'sum' member": 10,
+    "'datetime' module": 4,
+    "'sets' module": 2,
+    "'slice.indices' member": 2,
+    "'operator.pow' member": 1
+  },
+  "2.4": {
+    "'set' member": 37,
+    "function decorators": 15,
+    "'sorted' member": 5,
+    "'reversed' member": 1,
+    "'collections' module": 1
+  },
+  "2.5": {
+    "'datetime.datetime.strptime' member": 1,
+    "'functools' module": 1
+  },
+  "2.6": {
+    "'str.format' member": 69,
+    "'next' member": 3,
+    "'functools.reduce' member": 1
+  },
+  "2.7": {},
+  "3.0": {
+    "'urllib.parse' module": 10,
+    "'list.copy' member": 2,
+    "`nonlocal`": 1
+  },
+  "3.1": {},
+  "3.2": {},
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {
+    "union types as `X | Y`": 3
+  },
+  "3.11": {}
+}

@@ -1,1 +1,78 @@
-{"2.3": {"'datetime' module": 18, "'textwrap' module": 2, "'file.next' member": 2, "'enumerate' member": 119, "'itertools' module": 7, "'sum' member": 7, "'csv' module": 1, "'operator.pow' member": 12}, "2.0": {"print(expr)": 1, "'callable' member": 2, "'string.letters' member": 2, "'unicode' member": 10, "'sys.version_info' member": 4}, "2.1": {"'inspect' module": 3, "'warnings' module": 4, "'pydoc' module": 2, "'__future__' module": 4, "'unittest' module": 19}, "2.2": {"'tokenize.generate_tokens' member": 2, "'super' member": 4, "'iter' member": 10, "'dict.iteritems' member": 32, "'dict' member": 70, "'type' member": 33, "'operator.lt' member": 8, "'operator.le' member": 8, "'operator.gt' member": 8, "'operator.ge' member": 8, "'operator.eq' member": 8, "'property' member": 18, "'__future__.division' member": 4, "'operator.truediv' member": 4, "'operator.ne' member": 4}, "3.2": {"'callable' member": 2}, "2.4": {"function decorators": 201, "'sorted' member": 45, "'set' member": 56, "'sorted(key)'": 3, "'itertools.groupby' member": 3, "'reversed' member": 2, "'collections' module": 1, "'frozenset' member": 4}, "2.5": {"'datetime.datetime.strptime' member": 23, "'functools' module": 1, "'all' member": 4, "'any' member": 2, "'collections.defaultdict' member": 1}, "2.6": {"'format' member": 2}}
+{
+  "2.0": {
+    "'unicode' member": 10,
+    "'sys.version_info' member": 4,
+    "'callable' member": 2,
+    "'string.letters' member": 2,
+    "print(expr)": 1
+  },
+  "2.1": {
+    "'unittest' module": 19,
+    "'warnings' module": 4,
+    "'__future__' module": 4,
+    "'inspect' module": 3,
+    "'pydoc' module": 2
+  },
+  "2.2": {
+    "'dict' member": 70,
+    "'type' member": 33,
+    "'dict.iteritems' member": 32,
+    "'property' member": 18,
+    "'iter' member": 10,
+    "'operator.lt' member": 8,
+    "'operator.le' member": 8,
+    "'operator.gt' member": 8,
+    "'operator.ge' member": 8,
+    "'operator.eq' member": 8,
+    "'super' member": 4,
+    "'__future__.division' member": 4,
+    "'operator.truediv' member": 4,
+    "'operator.ne' member": 4,
+    "'tokenize.generate_tokens' member": 2
+  },
+  "2.3": {
+    "'enumerate' member": 119,
+    "'datetime' module": 18,
+    "'operator.pow' member": 12,
+    "'itertools' module": 7,
+    "'sum' member": 7,
+    "'textwrap' module": 2,
+    "'file.next' member": 2,
+    "'csv' module": 1
+  },
+  "2.4": {
+    "function decorators": 201,
+    "'set' member": 56,
+    "'sorted' member": 45,
+    "'frozenset' member": 4,
+    "'sorted(key)'": 3,
+    "'itertools.groupby' member": 3,
+    "'reversed' member": 2,
+    "'collections' module": 1
+  },
+  "2.5": {
+    "'datetime.datetime.strptime' member": 23,
+    "'all' member": 4,
+    "'any' member": 2,
+    "'functools' module": 1,
+    "'collections.defaultdict' member": 1
+  },
+  "2.6": {
+    "'format' member": 2
+  },
+  "2.7": {},
+  "3.0": {},
+  "3.1": {},
+  "3.2": {
+    "'callable' member": 2
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

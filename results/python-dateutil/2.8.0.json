@@ -1,1 +1,110 @@
-{"2.1": {"'warnings' module": 8, "'__future__' module": 9, "'unittest' module": 7, "'weakref' module": 3, "'bisect' module": 1}, "2.6": {"'io' module": 6, "'str.format' member": 36, "'json' module": 3, "'__future__.unicode_literals' member": 9, "byte string (b'..') or `str` synonym": 38, "class decorators": 14, "'math.copysign' member": 1, "'itertools.product' member": 9, "'itertools.permutations' member": 2, "'bytearray' member": 2, "'fractions' module": 1, "'decimal.Decimal.is_finite' member": 2, "'warnings.catch_warnings' member": 2, "'pkgutil.get_data' member": 1, "'next' member": 2}, "2.5": {"`with`": 238, "'subprocess.check_call' member": 5, "'hashlib' module": 2, "'ctypes' module": 2, "'functools' module": 4, "'any' member": 9, "'all' member": 2, "'os.SEEK_CUR' member": 2}, "2.4": {"'subprocess' module": 3, "function decorators": 138, "'sorted' member": 28, "'set' member": 24, "'decimal' module": 1, "'collections' module": 2, "'reversed' member": 3}, "2.7": {"`\"..{}..\".format(..)`": 14, "'argparse' module": 2, "set literals": 12, "'unittest.skipUnless' member": 7, "dict comprehensions": 9, "set comprehensions": 2, "'collections.OrderedDict' member": 2, "'unittest.skipIf' member": 3, "'unittest.skip' member": 4}, "3.5": {"'subprocess.run' member": 1, "'math.gcd' member": 1}, "3.2": {"'argparse' module": 2, "'callable' member": 6}, "2.0": {"print(expr)": 3, "'sys.version_info' member": 3, "'callable' member": 6}, "2.3": {"'enumerate' member": 9, "'datetime' module": 18, "'UnicodeEncodeError' member": 3, "'itertools' module": 3, "'heapq' module": 1, "'sum' member": 2, "'time.tzset' member": 2, "'logging' module": 1, "'tarfile' module": 2, "'tempfile.mkdtemp' member": 1, "'pkgutil' module": 1}, "3.6": {"'datetime.datetime.combine(tzinfo)'": 1}, "2.2": {"'super' member": 35, "'operator.gt' member": 2, "'operator.lt' member": 2, "'type' member": 21, "'StopIteration' member": 12, "'iter' member": 18, "'dict' member": 4, "'bool' member": 8, "'staticmethod' member": 2}, "3.1": {"'unittest.skipUnless' member": 7, "'collections.OrderedDict' member": 2, "'unittest.skipIf' member": 3, "'unittest.skip' member": 4}}
+{
+  "2.0": {
+    "'callable' member": 6,
+    "print(expr)": 3,
+    "'sys.version_info' member": 3
+  },
+  "2.1": {
+    "'__future__' module": 9,
+    "'warnings' module": 8,
+    "'unittest' module": 7,
+    "'weakref' module": 3,
+    "'bisect' module": 1
+  },
+  "2.2": {
+    "'super' member": 35,
+    "'type' member": 21,
+    "'iter' member": 18,
+    "'StopIteration' member": 12,
+    "'bool' member": 8,
+    "'dict' member": 4,
+    "'operator.gt' member": 2,
+    "'operator.lt' member": 2,
+    "'staticmethod' member": 2
+  },
+  "2.3": {
+    "'datetime' module": 18,
+    "'enumerate' member": 9,
+    "'UnicodeEncodeError' member": 3,
+    "'itertools' module": 3,
+    "'sum' member": 2,
+    "'time.tzset' member": 2,
+    "'tarfile' module": 2,
+    "'heapq' module": 1,
+    "'logging' module": 1,
+    "'tempfile.mkdtemp' member": 1,
+    "'pkgutil' module": 1
+  },
+  "2.4": {
+    "function decorators": 138,
+    "'sorted' member": 28,
+    "'set' member": 24,
+    "'subprocess' module": 3,
+    "'reversed' member": 3,
+    "'collections' module": 2,
+    "'decimal' module": 1
+  },
+  "2.5": {
+    "`with`": 238,
+    "'any' member": 9,
+    "'subprocess.check_call' member": 5,
+    "'functools' module": 4,
+    "'hashlib' module": 2,
+    "'ctypes' module": 2,
+    "'all' member": 2,
+    "'os.SEEK_CUR' member": 2
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 38,
+    "'str.format' member": 36,
+    "class decorators": 14,
+    "'__future__.unicode_literals' member": 9,
+    "'itertools.product' member": 9,
+    "'io' module": 6,
+    "'json' module": 3,
+    "'itertools.permutations' member": 2,
+    "'bytearray' member": 2,
+    "'decimal.Decimal.is_finite' member": 2,
+    "'warnings.catch_warnings' member": 2,
+    "'next' member": 2,
+    "'math.copysign' member": 1,
+    "'fractions' module": 1,
+    "'pkgutil.get_data' member": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 14,
+    "set literals": 12,
+    "dict comprehensions": 9,
+    "'unittest.skipUnless' member": 7,
+    "'unittest.skip' member": 4,
+    "'unittest.skipIf' member": 3,
+    "'argparse' module": 2,
+    "set comprehensions": 2,
+    "'collections.OrderedDict' member": 2
+  },
+  "3.0": {},
+  "3.1": {
+    "'unittest.skipUnless' member": 7,
+    "'unittest.skip' member": 4,
+    "'unittest.skipIf' member": 3,
+    "'collections.OrderedDict' member": 2
+  },
+  "3.2": {
+    "'callable' member": 6,
+    "'argparse' module": 2
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {
+    "'subprocess.run' member": 1,
+    "'math.gcd' member": 1
+  },
+  "3.6": {
+    "'datetime.datetime.combine(tzinfo)'": 1
+  },
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

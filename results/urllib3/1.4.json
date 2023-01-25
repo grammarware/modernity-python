@@ -1,1 +1,79 @@
-{"2.1": {"'unittest' module": 7, "'__future__' module": 3}, "2.4": {"function decorators": 7, "'reversed' member": 2, "'set' member": 6, "'sorted' member": 2, "'collections' module": 1, "'collections.deque' member": 1, "'operator.attrgetter' member": 4}, "2.0": {"print(expr)": 2, "'urlparse' module": 1, "'httplib.HTTPException' member": 1, "'httplib.HTTPConnection' member": 1, "'Queue' module": 1, "'httplib.HTTPSConnection' member": 1, "'sys.version_info' member": 2, "'unicode' member": 3}, "2.6": {"'__future__.print_function' member": 2, "'logging.StreamHandler' member": 1, "'io' module": 5, "'next' member": 2, "byte string (b'..') or `str` synonym": 48, "'Queue.LifoQueue' member": 1, "'socket.create_connection' member": 2, "'operator.methodcaller' member": 1}, "2.3": {"'logging' module": 6, "'dict.pop' member": 2, "'socket.timeout' member": 1, "'enumerate' member": 1}, "3.0": {"'urllib.parse' module": 2, "'queue' module": 1, "'builtins' module": 1}, "2.2": {"'urlparse.urlsplit' member": 1, "'iter' member": 2, "'dict' member": 8, "'super' member": 10, "'dict.iteritems' member": 2, "'object' member": 1, "'type' member": 3}, "2.5": {"'urlparse.urlsplit.path' member": 37, "'uuid' module": 1, "'__future__.absolute_import' member": 1, "'any' member": 1}, "2.7": {"'logging.NullHandler' member": 1}, "3.1": {"'logging.NullHandler' member": 1}, "3.3": {"'TimeoutError' member": 8}}
+{
+  "2.0": {
+    "'unicode' member": 3,
+    "print(expr)": 2,
+    "'sys.version_info' member": 2,
+    "'urlparse' module": 1,
+    "'httplib.HTTPException' member": 1,
+    "'httplib.HTTPConnection' member": 1,
+    "'Queue' module": 1,
+    "'httplib.HTTPSConnection' member": 1
+  },
+  "2.1": {
+    "'unittest' module": 7,
+    "'__future__' module": 3
+  },
+  "2.2": {
+    "'super' member": 10,
+    "'dict' member": 8,
+    "'type' member": 3,
+    "'iter' member": 2,
+    "'dict.iteritems' member": 2,
+    "'urlparse.urlsplit' member": 1,
+    "'object' member": 1
+  },
+  "2.3": {
+    "'logging' module": 6,
+    "'dict.pop' member": 2,
+    "'socket.timeout' member": 1,
+    "'enumerate' member": 1
+  },
+  "2.4": {
+    "function decorators": 7,
+    "'set' member": 6,
+    "'operator.attrgetter' member": 4,
+    "'reversed' member": 2,
+    "'sorted' member": 2,
+    "'collections' module": 1,
+    "'collections.deque' member": 1
+  },
+  "2.5": {
+    "'urlparse.urlsplit.path' member": 37,
+    "'uuid' module": 1,
+    "'__future__.absolute_import' member": 1,
+    "'any' member": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 48,
+    "'io' module": 5,
+    "'__future__.print_function' member": 2,
+    "'next' member": 2,
+    "'socket.create_connection' member": 2,
+    "'logging.StreamHandler' member": 1,
+    "'Queue.LifoQueue' member": 1,
+    "'operator.methodcaller' member": 1
+  },
+  "2.7": {
+    "'logging.NullHandler' member": 1
+  },
+  "3.0": {
+    "'urllib.parse' module": 2,
+    "'queue' module": 1,
+    "'builtins' module": 1
+  },
+  "3.1": {
+    "'logging.NullHandler' member": 1
+  },
+  "3.2": {},
+  "3.3": {
+    "'TimeoutError' member": 8
+  },
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

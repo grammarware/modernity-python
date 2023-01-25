@@ -1,1 +1,117 @@
-{"2.0": {"print(expr)": 22, "'sys.version_info' member": 171, "'EasyDialogs.GetArgv' member": 1, "'urllib2' module": 3, "'ConfigParser' module": 1}, "2.1": {"'__future__' module": 141, "'warnings' module": 7, "'unittest' module": 139, "'inspect' module": 1, "'difflib' module": 3, "'weakref' module": 1}, "2.6": {"'__future__.print_function' member": 21, "byte string (b'..') or `str` synonym": 102, "'collections.namedtuple' member": 1, "'io' module": 7, "'next' member": 10, "'warnings.catch_warnings' member": 2, "bytes `%` formatting or `str` synonym": 4, "'itertools.combinations' member": 2, "'str.format' member": 1, "'tempfile.NamedTemporaryFile(delete)'": 1, "'platform.python_implementation' member": 2}, "2.4": {"'collections' module": 3, "'set' member": 14, "'sorted' member": 46, "'unicodedata.east_asian_width' member": 4, "function decorators": 11, "'string.Template' member": 3, "'pprint.pformat(indent)'": 1, "'subprocess' module": 2, "'reversed' member": 6}, "2.2": {"'super' member": 20, "'type' member": 38, "'dict' member": 38, "'StopIteration' member": 2, "'iter' member": 4, "'xml.sax.saxutils.quoteattr' member": 2, "'classmethod' member": 14, "'__future__.division' member": 1, "'property' member": 4, "'staticmethod' member": 4}, "2.3": {"'platform' module": 4, "'UnicodeEncodeError' member": 21, "'optparse' module": 2, "'ConfigParser.RawConfigParser' member": 1, "'os.getcwdu' member": 1, "'UnicodeDecodeError' member": 10, "'csv' module": 3, "'sys.getfilesystemencoding' member": 15, "'os.walk' member": 4, "'difflib.unified_diff' member": 2, "'unicodedata.normalize' member": 4, "'enumerate' member": 32, "'tempfile.mkstemp' member": 1, "'shutil.move' member": 1, "'itertools' module": 3, "'sum' member": 13, "'unicodedata.unidata_version' member": 2, "'tempfile.mkdtemp' member": 2, "'dict.pop' member": 6, "'ConfigParser.ConfigParser' member": 1, "'tempfile.NamedTemporaryFile' member": 4}, "3.0": {"'open(errors)'": 1, "'configparser' module": 2, "'open(encoding)'": 1, "'urllib.parse' module": 1}, "2.5": {"`with`": 28, "'__future__.absolute_import' member": 119, "'xml.etree.ElementTree' module": 2}, "2.7": {"'collections.Counter' member": 1, "'argparse' module": 3, "'importlib' module": 5, "`\"..{}..\".format(..)`": 1, "'collections.OrderedDict' member": 2, "'unittest.skipUnless' member": 10, "'unittest.skipIf' member": 2}, "3.1": {"'collections.Counter' member": 1, "'importlib' module": 5, "'collections.OrderedDict' member": 2, "'unittest.skipUnless' member": 10, "'unittest.skipIf' member": 2}, "3.2": {"'argparse' module": 3}, "3.5": {"bytes `%` formatting or `str` synonym": 4}}
+{
+  "2.0": {
+    "'sys.version_info' member": 171,
+    "print(expr)": 22,
+    "'urllib2' module": 3,
+    "'EasyDialogs.GetArgv' member": 1,
+    "'ConfigParser' module": 1
+  },
+  "2.1": {
+    "'__future__' module": 141,
+    "'unittest' module": 139,
+    "'warnings' module": 7,
+    "'difflib' module": 3,
+    "'inspect' module": 1,
+    "'weakref' module": 1
+  },
+  "2.2": {
+    "'type' member": 38,
+    "'dict' member": 38,
+    "'super' member": 20,
+    "'classmethod' member": 14,
+    "'iter' member": 4,
+    "'property' member": 4,
+    "'staticmethod' member": 4,
+    "'StopIteration' member": 2,
+    "'xml.sax.saxutils.quoteattr' member": 2,
+    "'__future__.division' member": 1
+  },
+  "2.3": {
+    "'enumerate' member": 32,
+    "'UnicodeEncodeError' member": 21,
+    "'sys.getfilesystemencoding' member": 15,
+    "'sum' member": 13,
+    "'UnicodeDecodeError' member": 10,
+    "'dict.pop' member": 6,
+    "'platform' module": 4,
+    "'os.walk' member": 4,
+    "'unicodedata.normalize' member": 4,
+    "'tempfile.NamedTemporaryFile' member": 4,
+    "'csv' module": 3,
+    "'itertools' module": 3,
+    "'optparse' module": 2,
+    "'difflib.unified_diff' member": 2,
+    "'unicodedata.unidata_version' member": 2,
+    "'tempfile.mkdtemp' member": 2,
+    "'ConfigParser.RawConfigParser' member": 1,
+    "'os.getcwdu' member": 1,
+    "'tempfile.mkstemp' member": 1,
+    "'shutil.move' member": 1,
+    "'ConfigParser.ConfigParser' member": 1
+  },
+  "2.4": {
+    "'sorted' member": 46,
+    "'set' member": 14,
+    "function decorators": 11,
+    "'reversed' member": 6,
+    "'unicodedata.east_asian_width' member": 4,
+    "'collections' module": 3,
+    "'string.Template' member": 3,
+    "'subprocess' module": 2,
+    "'pprint.pformat(indent)'": 1
+  },
+  "2.5": {
+    "'__future__.absolute_import' member": 119,
+    "`with`": 28,
+    "'xml.etree.ElementTree' module": 2
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 102,
+    "'__future__.print_function' member": 21,
+    "'next' member": 10,
+    "'io' module": 7,
+    "bytes `%` formatting or `str` synonym": 4,
+    "'warnings.catch_warnings' member": 2,
+    "'itertools.combinations' member": 2,
+    "'platform.python_implementation' member": 2,
+    "'collections.namedtuple' member": 1,
+    "'str.format' member": 1,
+    "'tempfile.NamedTemporaryFile(delete)'": 1
+  },
+  "2.7": {
+    "'unittest.skipUnless' member": 10,
+    "'importlib' module": 5,
+    "'argparse' module": 3,
+    "'collections.OrderedDict' member": 2,
+    "'unittest.skipIf' member": 2,
+    "'collections.Counter' member": 1,
+    "`\"..{}..\".format(..)`": 1
+  },
+  "3.0": {
+    "'configparser' module": 2,
+    "'open(errors)'": 1,
+    "'open(encoding)'": 1,
+    "'urllib.parse' module": 1
+  },
+  "3.1": {
+    "'unittest.skipUnless' member": 10,
+    "'importlib' module": 5,
+    "'collections.OrderedDict' member": 2,
+    "'unittest.skipIf' member": 2,
+    "'collections.Counter' member": 1
+  },
+  "3.2": {
+    "'argparse' module": 3
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {
+    "bytes `%` formatting or `str` synonym": 4
+  },
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

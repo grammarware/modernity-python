@@ -1,1 +1,47 @@
-{"2.2": {"'dict' member": 1, "'iter' member": 2, "'super' member": 10, "'type' member": 2}, "2.1": {"'unittest' module": 4}, "2.4": {"'collections' module": 2, "function decorators": 8, "'sorted' member": 2}, "2.6": {"class decorators": 2, "'collections.namedtuple' member": 1}, "2.7": {"'collections.OrderedDict' member": 4, "'collections.Counter' member": 2}, "3.1": {"'collections.OrderedDict' member": 4, "'collections.Counter' member": 2}, "2.5": {"'functools' module": 1, "`with`": 2}, "2.3": {"'dummy_threading' module": 1}}
+{
+  "2.0": {},
+  "2.1": {
+    "'unittest' module": 4
+  },
+  "2.2": {
+    "'super' member": 10,
+    "'iter' member": 2,
+    "'type' member": 2,
+    "'dict' member": 1
+  },
+  "2.3": {
+    "'dummy_threading' module": 1
+  },
+  "2.4": {
+    "function decorators": 8,
+    "'collections' module": 2,
+    "'sorted' member": 2
+  },
+  "2.5": {
+    "`with`": 2,
+    "'functools' module": 1
+  },
+  "2.6": {
+    "class decorators": 2,
+    "'collections.namedtuple' member": 1
+  },
+  "2.7": {
+    "'collections.OrderedDict' member": 4,
+    "'collections.Counter' member": 2
+  },
+  "3.0": {},
+  "3.1": {
+    "'collections.OrderedDict' member": 4,
+    "'collections.Counter' member": 2
+  },
+  "3.2": {},
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

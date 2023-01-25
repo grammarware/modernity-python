@@ -1,1 +1,63 @@
-{"2.1": {"'__future__' module": 14}, "2.2": {"'__future__.division' member": 14, "'operator.lt' member": 5, "'operator.le' member": 5, "'operator.eq' member": 17, "'operator.ne' member": 17, "'operator.ge' member": 5, "'operator.gt' member": 5, "'object' member": 1, "'bool' member": 4, "'iter' member": 2}, "2.6": {"'__future__.print_function' member": 14, "'platform.python_implementation' member": 9, "'str.format' member": 62, "'collections.namedtuple' member": 2, "'itertools.product' member": 4, "'abc' module": 1}, "2.5": {"'__future__.absolute_import' member": 14, "`with`": 20, "'any' member": 3, "'all' member": 3, "'functools' module": 1}, "2.0": {"'sys.version_info' member": 2}, "2.3": {"'platform' module": 2, "'itertools' module": 5, "'enumerate' member": 48}, "3.3": {"'sys.implementation' member": 12}, "2.4": {"'collections' module": 2, "function decorators": 97, "'reversed' member": 2, "'set' member": 6, "'sorted' member": 4, "'frozenset' member": 4}}
+{
+  "2.0": {
+    "'sys.version_info' member": 2
+  },
+  "2.1": {
+    "'__future__' module": 14
+  },
+  "2.2": {
+    "'operator.eq' member": 17,
+    "'operator.ne' member": 17,
+    "'__future__.division' member": 14,
+    "'operator.lt' member": 5,
+    "'operator.le' member": 5,
+    "'operator.ge' member": 5,
+    "'operator.gt' member": 5,
+    "'bool' member": 4,
+    "'iter' member": 2,
+    "'object' member": 1
+  },
+  "2.3": {
+    "'enumerate' member": 48,
+    "'itertools' module": 5,
+    "'platform' module": 2
+  },
+  "2.4": {
+    "function decorators": 97,
+    "'set' member": 6,
+    "'sorted' member": 4,
+    "'frozenset' member": 4,
+    "'collections' module": 2,
+    "'reversed' member": 2
+  },
+  "2.5": {
+    "`with`": 20,
+    "'__future__.absolute_import' member": 14,
+    "'any' member": 3,
+    "'all' member": 3,
+    "'functools' module": 1
+  },
+  "2.6": {
+    "'str.format' member": 62,
+    "'__future__.print_function' member": 14,
+    "'platform.python_implementation' member": 9,
+    "'itertools.product' member": 4,
+    "'collections.namedtuple' member": 2,
+    "'abc' module": 1
+  },
+  "2.7": {},
+  "3.0": {},
+  "3.1": {},
+  "3.2": {},
+  "3.3": {
+    "'sys.implementation' member": 12
+  },
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

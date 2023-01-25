@@ -1,1 +1,58 @@
-{"2.5": {"`with`": 65, "'functools' module": 4, "'min(key)'": 1}, "2.2": {"'dict' member": 5, "'type' member": 14, "'object' member": 3, "'iter' member": 2, "'super' member": 2}, "2.4": {"'sorted' member": 6, "'collections' module": 3, "function decorators": 11, "'operator.attrgetter' member": 6, "'set' member": 28}, "2.1": {"'warnings' module": 3, "'unittest' module": 9, "'weakref' module": 1}, "2.3": {"'dummy_threading' module": 1}, "2.6": {"'collections.namedtuple' member": 1, "'warnings.catch_warnings' member": 4, "'fractions' module": 1}, "2.7": {"'collections.Counter' member": 2, "set literals": 20}, "3.1": {"'collections.Counter' member": 2}, "2.0": {"'callable' member": 1, "'sys.version_info' member": 2}, "3.2": {"'callable' member": 1}}
+{
+  "2.0": {
+    "'sys.version_info' member": 2,
+    "'callable' member": 1
+  },
+  "2.1": {
+    "'unittest' module": 9,
+    "'warnings' module": 3,
+    "'weakref' module": 1
+  },
+  "2.2": {
+    "'type' member": 14,
+    "'dict' member": 5,
+    "'object' member": 3,
+    "'iter' member": 2,
+    "'super' member": 2
+  },
+  "2.3": {
+    "'dummy_threading' module": 1
+  },
+  "2.4": {
+    "'set' member": 28,
+    "function decorators": 11,
+    "'sorted' member": 6,
+    "'operator.attrgetter' member": 6,
+    "'collections' module": 3
+  },
+  "2.5": {
+    "`with`": 65,
+    "'functools' module": 4,
+    "'min(key)'": 1
+  },
+  "2.6": {
+    "'warnings.catch_warnings' member": 4,
+    "'collections.namedtuple' member": 1,
+    "'fractions' module": 1
+  },
+  "2.7": {
+    "set literals": 20,
+    "'collections.Counter' member": 2
+  },
+  "3.0": {},
+  "3.1": {
+    "'collections.Counter' member": 2
+  },
+  "3.2": {
+    "'callable' member": 1
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

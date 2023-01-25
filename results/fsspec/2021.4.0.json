@@ -1,1 +1,140 @@
-{"2.5": {"`with`": 69, "'functools' module": 3, "'__future__.absolute_import' member": 5, "'all' member": 13, "'hashlib' module": 3, "'contextlib' module": 2, "'any' member": 6, "'uuid' module": 4, "'ctypes' module": 1}, "3.0": {"'open(encoding)'": 1, "super() without arguments": 96, "'configparser' module": 2, "keyword-only parameters": 5, "exception cause": 7, "'urllib.parse' module": 4, "annotations": 2}, "2.3": {"'bz2' module": 1, "'logging' module": 11, "'sum' member": 5, "'enumerate' member": 2, "'ConfigParser.SafeConfigParser' member": 1, "'shutil.move' member": 5, "'tempfile.mkdtemp' member": 2, "'inspect.isdatadescriptor' member": 2, "'datetime' module": 4, "'tempfile.mkstemp' member": 2, "'itertools' module": 1}, "2.6": {"'zipfile.ZipFile.open' member": 2, "'json' module": 5, "byte string (b'..') or `str` synonym": 49, "'subprocess.Popen.terminate' member": 2, "'io' module": 7, "'bytearray' member": 3, "'str.format' member": 27, "'__future__.print_function' member": 7, "'threading.Thread.daemon' member": 2, "'next' member": 4, "'os.path.relpath' member": 1, "'logging.StreamHandler' member": 1, "'ast' module": 1, "'ftplib.FTP(timeout)'": 1, "'itertools.product' member": 2}, "3.3": {"'lzma' module": 1, "'collections.abc' module": 2, "'FileNotFoundError' member": 120, "`yield from`": 4, "'FileExistsError' member": 24, "'PermissionError' member": 8, "'threading.get_ident' member": 2, "'memoryview.cast' member": 2, "'os.stat(follow_symlinks)'": 1, "'NotADirectoryError' member": 4}, "2.2": {"'super' member": 104, "'dict' member": 19, "'__future__.division' member": 5, "'os.path.realpath' member": 3, "'str.zfill' member": 1, "'type' member": 21, "'StopIteration' member": 2, "'os.stat.st_ctime' member": 2, "'os.stat.st_size' member": 4, "'bool' member": 2}, "2.4": {"'sorted' member": 39, "'subprocess' module": 2, "function decorators": 55, "'set' member": 45, "'reversed' member": 9, "'sorted(key)'": 2, "'str.rsplit' member": 6}, "3.6": {"f-strings": 32, "async generators (await and yield in same func)": 1}, "2.7": {"`\"..{}..\".format(..)`": 19, "set comprehensions": 5, "set literals": 13, "dict comprehensions": 50, "'importlib' module": 2, "'memoryview' member": 3, "multiple context expressions in a `with` statement": 4}, "3.2": {"'functools.lru_cache' member": 5, "'os.makedirs(exist_ok)'": 4, "'callable' member": 2}, "2.1": {"'__future__' module": 7, "'inspect' module": 2, "'weakref' module": 2, "'warnings' module": 1}, "3.5": {"generalized unpacking": 23, "coroutines (async)": 42, "coroutines (await)": 112, "'asyncio.run_coroutine_threadsafe' member": 3, "async for-loops": 4, "'inspect.iscoroutinefunction' member": 1, "`async with`": 14}, "3.4": {"'asyncio' module": 2, "'pathlib' module": 1, "'weakref.finalize' member": 4}, "2.0": {"print(expr)": 2, "'ConfigParser' module": 1, "'sys.version_info' member": 3, "'callable' member": 2}, "3.1": {"'importlib' module": 2, "multiple context expressions in a `with` statement": 4}, "3.8": {"'importlib.metadata' module": 2}}
+{
+  "2.0": {
+    "'sys.version_info' member": 3,
+    "print(expr)": 2,
+    "'callable' member": 2,
+    "'ConfigParser' module": 1
+  },
+  "2.1": {
+    "'__future__' module": 7,
+    "'inspect' module": 2,
+    "'weakref' module": 2,
+    "'warnings' module": 1
+  },
+  "2.2": {
+    "'super' member": 104,
+    "'type' member": 21,
+    "'dict' member": 19,
+    "'__future__.division' member": 5,
+    "'os.stat.st_size' member": 4,
+    "'os.path.realpath' member": 3,
+    "'StopIteration' member": 2,
+    "'os.stat.st_ctime' member": 2,
+    "'bool' member": 2,
+    "'str.zfill' member": 1
+  },
+  "2.3": {
+    "'logging' module": 11,
+    "'sum' member": 5,
+    "'shutil.move' member": 5,
+    "'datetime' module": 4,
+    "'enumerate' member": 2,
+    "'tempfile.mkdtemp' member": 2,
+    "'inspect.isdatadescriptor' member": 2,
+    "'tempfile.mkstemp' member": 2,
+    "'bz2' module": 1,
+    "'ConfigParser.SafeConfigParser' member": 1,
+    "'itertools' module": 1
+  },
+  "2.4": {
+    "function decorators": 55,
+    "'set' member": 45,
+    "'sorted' member": 39,
+    "'reversed' member": 9,
+    "'str.rsplit' member": 6,
+    "'subprocess' module": 2,
+    "'sorted(key)'": 2
+  },
+  "2.5": {
+    "`with`": 69,
+    "'all' member": 13,
+    "'any' member": 6,
+    "'__future__.absolute_import' member": 5,
+    "'uuid' module": 4,
+    "'functools' module": 3,
+    "'hashlib' module": 3,
+    "'contextlib' module": 2,
+    "'ctypes' module": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 49,
+    "'str.format' member": 27,
+    "'io' module": 7,
+    "'__future__.print_function' member": 7,
+    "'json' module": 5,
+    "'next' member": 4,
+    "'bytearray' member": 3,
+    "'zipfile.ZipFile.open' member": 2,
+    "'subprocess.Popen.terminate' member": 2,
+    "'threading.Thread.daemon' member": 2,
+    "'itertools.product' member": 2,
+    "'os.path.relpath' member": 1,
+    "'logging.StreamHandler' member": 1,
+    "'ast' module": 1,
+    "'ftplib.FTP(timeout)'": 1
+  },
+  "2.7": {
+    "dict comprehensions": 50,
+    "`\"..{}..\".format(..)`": 19,
+    "set literals": 13,
+    "set comprehensions": 5,
+    "multiple context expressions in a `with` statement": 4,
+    "'memoryview' member": 3,
+    "'importlib' module": 2
+  },
+  "3.0": {
+    "super() without arguments": 96,
+    "exception cause": 7,
+    "keyword-only parameters": 5,
+    "'urllib.parse' module": 4,
+    "'configparser' module": 2,
+    "annotations": 2,
+    "'open(encoding)'": 1
+  },
+  "3.1": {
+    "multiple context expressions in a `with` statement": 4,
+    "'importlib' module": 2
+  },
+  "3.2": {
+    "'functools.lru_cache' member": 5,
+    "'os.makedirs(exist_ok)'": 4,
+    "'callable' member": 2
+  },
+  "3.3": {
+    "'FileNotFoundError' member": 120,
+    "'FileExistsError' member": 24,
+    "'PermissionError' member": 8,
+    "`yield from`": 4,
+    "'NotADirectoryError' member": 4,
+    "'collections.abc' module": 2,
+    "'threading.get_ident' member": 2,
+    "'memoryview.cast' member": 2,
+    "'lzma' module": 1,
+    "'os.stat(follow_symlinks)'": 1
+  },
+  "3.4": {
+    "'weakref.finalize' member": 4,
+    "'asyncio' module": 2,
+    "'pathlib' module": 1
+  },
+  "3.5": {
+    "coroutines (await)": 112,
+    "coroutines (async)": 42,
+    "generalized unpacking": 23,
+    "`async with`": 14,
+    "async for-loops": 4,
+    "'asyncio.run_coroutine_threadsafe' member": 3,
+    "'inspect.iscoroutinefunction' member": 1
+  },
+  "3.6": {
+    "f-strings": 32,
+    "async generators (await and yield in same func)": 1
+  },
+  "3.7": {},
+  "3.8": {
+    "'importlib.metadata' module": 2
+  },
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

@@ -1,1 +1,66 @@
-{"2.1": {"'inspect' module": 1, "'unittest' module": 2, "'__future__' module": 1}, "3.3": {"'os.posix_fallocate' member": 1}, "2.2": {"'super' member": 148, "'type' member": 14, "'StopIteration' member": 4, "'iter' member": 12, "'os.stat.st_mode' member": 2, "'os.extsep' member": 8, "'object' member": 15, "'__future__.division' member": 1}, "2.5": {"`with`": 588, "'BaseException' member": 2, "'contextlib' module": 2, "'functools' module": 3, "'collections.defaultdict' member": 1, "'hashlib' module": 2}, "2.4": {"function decorators": 73, "'set' member": 24, "'collections' module": 3, "'os.urandom' member": 10, "'traceback.format_exc' member": 2}, "3.2": {"'concurrent.futures' module": 10}, "2.3": {"'logging' module": 8, "'heapq' module": 1, "'socket.timeout' member": 5, "'platform' module": 1, "'tempfile.mkdtemp' member": 28, "'enumerate' member": 10}, "2.6": {"'io' module": 5, "byte string (b'..') or `str` synonym": 232, "'collections.namedtuple' member": 3, "'multiprocessing' module": 1, "'bytearray' member": 2, "class decorators": 5}}
+{
+  "2.0": {},
+  "2.1": {
+    "'unittest' module": 2,
+    "'inspect' module": 1,
+    "'__future__' module": 1
+  },
+  "2.2": {
+    "'super' member": 148,
+    "'object' member": 15,
+    "'type' member": 14,
+    "'iter' member": 12,
+    "'os.extsep' member": 8,
+    "'StopIteration' member": 4,
+    "'os.stat.st_mode' member": 2,
+    "'__future__.division' member": 1
+  },
+  "2.3": {
+    "'tempfile.mkdtemp' member": 28,
+    "'enumerate' member": 10,
+    "'logging' module": 8,
+    "'socket.timeout' member": 5,
+    "'heapq' module": 1,
+    "'platform' module": 1
+  },
+  "2.4": {
+    "function decorators": 73,
+    "'set' member": 24,
+    "'os.urandom' member": 10,
+    "'collections' module": 3,
+    "'traceback.format_exc' member": 2
+  },
+  "2.5": {
+    "`with`": 588,
+    "'functools' module": 3,
+    "'BaseException' member": 2,
+    "'contextlib' module": 2,
+    "'hashlib' module": 2,
+    "'collections.defaultdict' member": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 232,
+    "'io' module": 5,
+    "class decorators": 5,
+    "'collections.namedtuple' member": 3,
+    "'bytearray' member": 2,
+    "'multiprocessing' module": 1
+  },
+  "2.7": {},
+  "3.0": {},
+  "3.1": {},
+  "3.2": {
+    "'concurrent.futures' module": 10
+  },
+  "3.3": {
+    "'os.posix_fallocate' member": 1
+  },
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

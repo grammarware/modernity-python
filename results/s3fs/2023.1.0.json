@@ -1,1 +1,106 @@
-{"2.5": {"`with`": 178, "'functools' module": 1, "'contextlib' module": 2, "'uuid' module": 1, "'any' member": 1, "'all' member": 4}, "2.6": {"'json' module": 3, "byte string (b'..') or `str` synonym": 151, "'bytearray' member": 2, "'os.path.relpath' member": 1, "'str.format' member": 7, "'io' module": 1, "'subprocess.Popen.terminate' member": 1, "'next' member": 1, "'multiprocessing' module": 1}, "2.3": {"'logging' module": 2, "'datetime' module": 1, "'itertools' module": 1, "'shlex.split' member": 1, "'sum' member": 1, "'socket.timeout' member": 1, "'dict.pop' member": 2, "'enumerate' member": 16}, "3.7": {"'contextlib.AsyncExitStack' member": 1, "'concurrent.futures.ProcessPoolExecutor(mp_context)'": 1, "'asyncio.run' member": 4}, "2.4": {"function decorators": 21, "'set' member": 16, "'subprocess' module": 2, "'sorted' member": 8, "'sorted(key)'": 1}, "3.5": {"coroutines (async)": 59, "coroutines (await)": 217, "'typing' module": 1, "generalized unpacking": 15, "`async with`": 2, "async for-loops": 8}, "3.0": {"annotations": 6, "super() without arguments": 12, "'configparser' module": 1, "'urllib.parse' module": 2, "keyword-only parameters": 1, "exception cause": 8}, "2.2": {"'super' member": 12, "'bool' member": 5, "'os.path.realpath' member": 3, "'os.stat.st_size' member": 2, "'type' member": 2, "'dict' member": 3}, "2.7": {"dict comprehensions": 23, "set literals": 14, "set comprehensions": 9, "multiple context expressions in a `with` statement": 1, "`\"..{}..\".format(..)`": 5}, "2.0": {"print(expr)": 2}, "3.2": {"'configparser.ConfigParser.read_file' member": 1, "'concurrent.futures' module": 1, "'gzip.compress' member": 1}, "3.6": {"f-strings": 10, "async generators (await and yield in same func)": 1}, "3.4": {"'asyncio' module": 2, "'multiprocessing.get_context' member": 1, "'weakref.finalize' member": 2}, "3.1": {"multiple context expressions in a `with` statement": 1}, "2.1": {"'weakref' module": 1}, "3.3": {"'FileExistsError' member": 4, "'FileNotFoundError' member": 22, "'IsADirectoryError' member": 2}}
+{
+  "2.0": {
+    "print(expr)": 2
+  },
+  "2.1": {
+    "'weakref' module": 1
+  },
+  "2.2": {
+    "'super' member": 12,
+    "'bool' member": 5,
+    "'os.path.realpath' member": 3,
+    "'dict' member": 3,
+    "'os.stat.st_size' member": 2,
+    "'type' member": 2
+  },
+  "2.3": {
+    "'enumerate' member": 16,
+    "'logging' module": 2,
+    "'dict.pop' member": 2,
+    "'datetime' module": 1,
+    "'itertools' module": 1,
+    "'shlex.split' member": 1,
+    "'sum' member": 1,
+    "'socket.timeout' member": 1
+  },
+  "2.4": {
+    "function decorators": 21,
+    "'set' member": 16,
+    "'sorted' member": 8,
+    "'subprocess' module": 2,
+    "'sorted(key)'": 1
+  },
+  "2.5": {
+    "`with`": 178,
+    "'all' member": 4,
+    "'contextlib' module": 2,
+    "'functools' module": 1,
+    "'uuid' module": 1,
+    "'any' member": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 151,
+    "'str.format' member": 7,
+    "'json' module": 3,
+    "'bytearray' member": 2,
+    "'os.path.relpath' member": 1,
+    "'io' module": 1,
+    "'subprocess.Popen.terminate' member": 1,
+    "'next' member": 1,
+    "'multiprocessing' module": 1
+  },
+  "2.7": {
+    "dict comprehensions": 23,
+    "set literals": 14,
+    "set comprehensions": 9,
+    "`\"..{}..\".format(..)`": 5,
+    "multiple context expressions in a `with` statement": 1
+  },
+  "3.0": {
+    "super() without arguments": 12,
+    "exception cause": 8,
+    "annotations": 6,
+    "'urllib.parse' module": 2,
+    "'configparser' module": 1,
+    "keyword-only parameters": 1
+  },
+  "3.1": {
+    "multiple context expressions in a `with` statement": 1
+  },
+  "3.2": {
+    "'configparser.ConfigParser.read_file' member": 1,
+    "'concurrent.futures' module": 1,
+    "'gzip.compress' member": 1
+  },
+  "3.3": {
+    "'FileNotFoundError' member": 22,
+    "'FileExistsError' member": 4,
+    "'IsADirectoryError' member": 2
+  },
+  "3.4": {
+    "'asyncio' module": 2,
+    "'weakref.finalize' member": 2,
+    "'multiprocessing.get_context' member": 1
+  },
+  "3.5": {
+    "coroutines (await)": 217,
+    "coroutines (async)": 59,
+    "generalized unpacking": 15,
+    "async for-loops": 8,
+    "`async with`": 2,
+    "'typing' module": 1
+  },
+  "3.6": {
+    "f-strings": 10,
+    "async generators (await and yield in same func)": 1
+  },
+  "3.7": {
+    "'asyncio.run' member": 4,
+    "'contextlib.AsyncExitStack' member": 1,
+    "'concurrent.futures.ProcessPoolExecutor(mp_context)'": 1
+  },
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

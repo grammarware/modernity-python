@@ -1,1 +1,67 @@
-{"2.4": {"'set' member": 14, "'sorted(key)'": 1, "'sorted' member": 3, "'collections' module": 3, "'collections.deque' member": 2, "'frozenset' member": 6, "function decorators": 8}, "2.2": {"'super' member": 12, "'dict' member": 15, "'bool' member": 1, "'dict.iteritems' member": 1, "'iter' member": 14, "'StopIteration' member": 1, "'types.GeneratorType' member": 1, "'type' member": 6, "'property' member": 10, "'operator.truediv' member": 1, "'operator.floordiv' member": 1, "'operator.eq' member": 1, "'operator.ne' member": 1, "'operator.gt' member": 1, "'operator.ge' member": 1, "'operator.lt' member": 1, "'operator.le' member": 1, "'staticmethod' member": 1, "'gc.get_objects' member": 1}, "2.3": {"'timeit' module": 2, "'itertools' module": 3, "'sets' module": 1, "'enumerate' member": 2, "'operator.pow' member": 1, "'datetime' module": 1}, "2.0": {"'unicode' member": 9, "'file' member": 3, "'callable' member": 1}, "2.1": {"'inspect' module": 1}, "3.2": {"'callable' member": 1}, "2.5": {"'hashlib' module": 1}}
+{
+  "2.0": {
+    "'unicode' member": 9,
+    "'file' member": 3,
+    "'callable' member": 1
+  },
+  "2.1": {
+    "'inspect' module": 1
+  },
+  "2.2": {
+    "'dict' member": 15,
+    "'iter' member": 14,
+    "'super' member": 12,
+    "'property' member": 10,
+    "'type' member": 6,
+    "'bool' member": 1,
+    "'dict.iteritems' member": 1,
+    "'StopIteration' member": 1,
+    "'types.GeneratorType' member": 1,
+    "'operator.truediv' member": 1,
+    "'operator.floordiv' member": 1,
+    "'operator.eq' member": 1,
+    "'operator.ne' member": 1,
+    "'operator.gt' member": 1,
+    "'operator.ge' member": 1,
+    "'operator.lt' member": 1,
+    "'operator.le' member": 1,
+    "'staticmethod' member": 1,
+    "'gc.get_objects' member": 1
+  },
+  "2.3": {
+    "'itertools' module": 3,
+    "'timeit' module": 2,
+    "'enumerate' member": 2,
+    "'sets' module": 1,
+    "'operator.pow' member": 1,
+    "'datetime' module": 1
+  },
+  "2.4": {
+    "'set' member": 14,
+    "function decorators": 8,
+    "'frozenset' member": 6,
+    "'sorted' member": 3,
+    "'collections' module": 3,
+    "'collections.deque' member": 2,
+    "'sorted(key)'": 1
+  },
+  "2.5": {
+    "'hashlib' module": 1
+  },
+  "2.6": {},
+  "2.7": {},
+  "3.0": {},
+  "3.1": {},
+  "3.2": {
+    "'callable' member": 1
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

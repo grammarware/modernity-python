@@ -1,1 +1,59 @@
-{"2.6": {"'io' module": 1, "'str.format' member": 2, "'json' module": 3, "'itertools.izip_longest' member": 1, "class decorators": 7, "'numbers' module": 1}, "2.1": {"'warnings' module": 3, "'inspect' module": 1}, "2.0": {"'sys.version_info' member": 7}, "2.7": {"'argparse' module": 1}, "3.2": {"'argparse' module": 1}, "2.5": {"`with`": 1, "'min(key)'": 1, "'max(key)'": 1}, "2.3": {"'itertools' module": 1, "'sum' member": 4, "'random.sample' member": 2}, "2.2": {"'super' member": 12, "'type' member": 16, "'operator.lt' member": 2, "'operator.gt' member": 2, "'operator.le' member": 2, "'operator.ge' member": 2}, "2.4": {"function decorators": 27, "'reversed' member": 2, "'sorted(key)'": 1, "'sorted' member": 4, "'set' member": 8}}
+{
+  "2.0": {
+    "'sys.version_info' member": 7
+  },
+  "2.1": {
+    "'warnings' module": 3,
+    "'inspect' module": 1
+  },
+  "2.2": {
+    "'type' member": 16,
+    "'super' member": 12,
+    "'operator.lt' member": 2,
+    "'operator.gt' member": 2,
+    "'operator.le' member": 2,
+    "'operator.ge' member": 2
+  },
+  "2.3": {
+    "'sum' member": 4,
+    "'random.sample' member": 2,
+    "'itertools' module": 1
+  },
+  "2.4": {
+    "function decorators": 27,
+    "'set' member": 8,
+    "'sorted' member": 4,
+    "'reversed' member": 2,
+    "'sorted(key)'": 1
+  },
+  "2.5": {
+    "`with`": 1,
+    "'min(key)'": 1,
+    "'max(key)'": 1
+  },
+  "2.6": {
+    "class decorators": 7,
+    "'json' module": 3,
+    "'str.format' member": 2,
+    "'io' module": 1,
+    "'itertools.izip_longest' member": 1,
+    "'numbers' module": 1
+  },
+  "2.7": {
+    "'argparse' module": 1
+  },
+  "3.0": {},
+  "3.1": {},
+  "3.2": {
+    "'argparse' module": 1
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

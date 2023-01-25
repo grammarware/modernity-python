@@ -1,1 +1,171 @@
-{"2.5": {"`with`": 101, "'all' member": 7, "'functools' module": 6, "'__future__.absolute_import' member": 5, "'contextlib' module": 6, "'any' member": 10, "'hashlib' module": 3, "'BaseException' member": 4, "'uuid' module": 4, "'ctypes' module": 1}, "3.0": {"'open(encoding)'": 1, "super() without arguments": 120, "exception cause": 15, "'configparser' module": 2, "ellipsis literal (`...`) out of slices": 4, "keyword-only parameters": 5, "'list.copy' member": 1, "'urllib.parse' module": 4, "unpacking assignment": 1, "annotations": 6}, "2.2": {"'type' member": 23, "'super' member": 134, "'dict' member": 21, "'os.path.realpath' member": 3, "'__future__.division' member": 5, "'iter' member": 1, "'str.zfill' member": 1, "'property' member": 1, "'StopIteration' member": 2, "'os.stat.st_mode' member": 6, "'os.stat.st_ctime' member": 2, "'os.stat.st_size' member": 4, "'bool' member": 2}, "2.4": {"'set' member": 49, "'sorted' member": 44, "function decorators": 80, "'subprocess' module": 2, "'reversed' member": 14, "'logging.basicConfig(level)'": 1, "'logging.basicConfig(format)'": 1, "'logging.basicConfig(filename)'": 1, "'sorted(key)'": 2, "'str.rsplit' member": 6, "'os.path.lexists' member": 2}, "2.7": {"set literals": 17, "set comprehensions": 6, "`\"..{}..\".format(..)`": 16, "dict comprehensions": 71, "'argparse' module": 1, "'memoryview' member": 3, "'importlib' module": 2, "multiple context expressions in a `with` statement": 4}, "3.3": {"'FileNotFoundError' member": 140, "'lzma' module": 1, "'collections.abc' module": 2, "`yield from`": 4, "'FileExistsError' member": 48, "'PermissionError' member": 10, "'threading.get_ident' member": 2, "'memoryview.cast' member": 2, "'os.stat(follow_symlinks)'": 1, "'os.truncate' member": 2, "'NotADirectoryError' member": 4, "'IsADirectoryError' member": 4, "'TimeoutError' member": 2}, "2.0": {"print(expr)": 3, "'sys.version_info' member": 2, "'callable' member": 6}, "2.3": {"'bz2' module": 1, "'logging' module": 14, "'sum' member": 5, "'enumerate' member": 11, "'shutil.move' member": 5, "'tempfile.mkdtemp' member": 2, "'inspect.isdatadescriptor' member": 2, "'tempfile.mkstemp' member": 6, "'datetime' module": 5, "'tarfile' module": 1, "'tempfile.gettempdir' member": 2, "'itertools' module": 1, "'UnicodeDecodeError' member": 2}, "2.6": {"'zipfile.ZipFile.open' member": 2, "'json' module": 5, "byte string (b'..') or `str` synonym": 72, "'subprocess.Popen.terminate' member": 2, "'io' module": 12, "'bytearray' member": 3, "'str.format' member": 27, "'os.path.relpath' member": 1, "'__future__.print_function' member": 5, "'threading.Thread.daemon' member": 2, "'next' member": 3, "'ast' module": 1, "'logging.StreamHandler' member": 1, "class decorators": 1, "'ftplib.FTP(timeout)'": 1, "'itertools.product' member": 2}, "2.1": {"'warnings' module": 4, "'__future__' module": 5, "'inspect' module": 3, "'weakref' module": 2}, "3.6": {"f-strings": 67, "async generators (await and yield in same func)": 1, "'secrets' module": 2, "'os.fspath' member": 2}, "3.2": {"'functools.lru_cache' member": 6, "'configparser.ConfigParser.read_file' member": 1, "'os.makedirs(exist_ok)'": 5, "'argparse' module": 1, "'int.from_bytes' member": 1, "'callable' member": 6}, "3.4": {"'asyncio' module": 3, "'pathlib' module": 1, "'contextlib.suppress' member": 2, "'weakref.finalize' member": 2}, "3.5": {"generalized unpacking": 26, "coroutines (async)": 105, "coroutines (await)": 227, "'inspect.iscoroutine' member": 1, "'asyncio.run_coroutine_threadsafe' member": 3, "async for-loops": 6, "'inspect.iscoroutinefunction' member": 1, "'typing' module": 1, "'os.scandir' member": 2, "'os.DirEntry' member": 2, "`async with`": 16}, "3.7": {"'asyncio.get_running_loop' member": 1}, "3.1": {"'importlib' module": 2, "multiple context expressions in a `with` statement": 4}, "3.8": {"'importlib.metadata' module": 2}, "3.9": {"'hashlib.md5(usedforsecurity)'": 1}}
+{
+  "2.0": {
+    "'callable' member": 6,
+    "print(expr)": 3,
+    "'sys.version_info' member": 2
+  },
+  "2.1": {
+    "'__future__' module": 5,
+    "'warnings' module": 4,
+    "'inspect' module": 3,
+    "'weakref' module": 2
+  },
+  "2.2": {
+    "'super' member": 134,
+    "'type' member": 23,
+    "'dict' member": 21,
+    "'os.stat.st_mode' member": 6,
+    "'__future__.division' member": 5,
+    "'os.stat.st_size' member": 4,
+    "'os.path.realpath' member": 3,
+    "'StopIteration' member": 2,
+    "'os.stat.st_ctime' member": 2,
+    "'bool' member": 2,
+    "'iter' member": 1,
+    "'str.zfill' member": 1,
+    "'property' member": 1
+  },
+  "2.3": {
+    "'logging' module": 14,
+    "'enumerate' member": 11,
+    "'tempfile.mkstemp' member": 6,
+    "'sum' member": 5,
+    "'shutil.move' member": 5,
+    "'datetime' module": 5,
+    "'tempfile.mkdtemp' member": 2,
+    "'inspect.isdatadescriptor' member": 2,
+    "'tempfile.gettempdir' member": 2,
+    "'UnicodeDecodeError' member": 2,
+    "'bz2' module": 1,
+    "'tarfile' module": 1,
+    "'itertools' module": 1
+  },
+  "2.4": {
+    "function decorators": 80,
+    "'set' member": 49,
+    "'sorted' member": 44,
+    "'reversed' member": 14,
+    "'str.rsplit' member": 6,
+    "'subprocess' module": 2,
+    "'sorted(key)'": 2,
+    "'os.path.lexists' member": 2,
+    "'logging.basicConfig(level)'": 1,
+    "'logging.basicConfig(format)'": 1,
+    "'logging.basicConfig(filename)'": 1
+  },
+  "2.5": {
+    "`with`": 101,
+    "'any' member": 10,
+    "'all' member": 7,
+    "'functools' module": 6,
+    "'contextlib' module": 6,
+    "'__future__.absolute_import' member": 5,
+    "'BaseException' member": 4,
+    "'uuid' module": 4,
+    "'hashlib' module": 3,
+    "'ctypes' module": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 72,
+    "'str.format' member": 27,
+    "'io' module": 12,
+    "'json' module": 5,
+    "'__future__.print_function' member": 5,
+    "'bytearray' member": 3,
+    "'next' member": 3,
+    "'zipfile.ZipFile.open' member": 2,
+    "'subprocess.Popen.terminate' member": 2,
+    "'threading.Thread.daemon' member": 2,
+    "'itertools.product' member": 2,
+    "'os.path.relpath' member": 1,
+    "'ast' module": 1,
+    "'logging.StreamHandler' member": 1,
+    "class decorators": 1,
+    "'ftplib.FTP(timeout)'": 1
+  },
+  "2.7": {
+    "dict comprehensions": 71,
+    "set literals": 17,
+    "`\"..{}..\".format(..)`": 16,
+    "set comprehensions": 6,
+    "multiple context expressions in a `with` statement": 4,
+    "'memoryview' member": 3,
+    "'importlib' module": 2,
+    "'argparse' module": 1
+  },
+  "3.0": {
+    "super() without arguments": 120,
+    "exception cause": 15,
+    "annotations": 6,
+    "keyword-only parameters": 5,
+    "ellipsis literal (`...`) out of slices": 4,
+    "'urllib.parse' module": 4,
+    "'configparser' module": 2,
+    "'open(encoding)'": 1,
+    "'list.copy' member": 1,
+    "unpacking assignment": 1
+  },
+  "3.1": {
+    "multiple context expressions in a `with` statement": 4,
+    "'importlib' module": 2
+  },
+  "3.2": {
+    "'functools.lru_cache' member": 6,
+    "'callable' member": 6,
+    "'os.makedirs(exist_ok)'": 5,
+    "'configparser.ConfigParser.read_file' member": 1,
+    "'argparse' module": 1,
+    "'int.from_bytes' member": 1
+  },
+  "3.3": {
+    "'FileNotFoundError' member": 140,
+    "'FileExistsError' member": 48,
+    "'PermissionError' member": 10,
+    "`yield from`": 4,
+    "'NotADirectoryError' member": 4,
+    "'IsADirectoryError' member": 4,
+    "'collections.abc' module": 2,
+    "'threading.get_ident' member": 2,
+    "'memoryview.cast' member": 2,
+    "'os.truncate' member": 2,
+    "'TimeoutError' member": 2,
+    "'lzma' module": 1,
+    "'os.stat(follow_symlinks)'": 1
+  },
+  "3.4": {
+    "'asyncio' module": 3,
+    "'contextlib.suppress' member": 2,
+    "'weakref.finalize' member": 2,
+    "'pathlib' module": 1
+  },
+  "3.5": {
+    "coroutines (await)": 227,
+    "coroutines (async)": 105,
+    "generalized unpacking": 26,
+    "`async with`": 16,
+    "async for-loops": 6,
+    "'asyncio.run_coroutine_threadsafe' member": 3,
+    "'os.scandir' member": 2,
+    "'os.DirEntry' member": 2,
+    "'inspect.iscoroutine' member": 1,
+    "'inspect.iscoroutinefunction' member": 1,
+    "'typing' module": 1
+  },
+  "3.6": {
+    "f-strings": 67,
+    "'secrets' module": 2,
+    "'os.fspath' member": 2,
+    "async generators (await and yield in same func)": 1
+  },
+  "3.7": {
+    "'asyncio.get_running_loop' member": 1
+  },
+  "3.8": {
+    "'importlib.metadata' module": 2
+  },
+  "3.9": {
+    "'hashlib.md5(usedforsecurity)'": 1
+  },
+  "3.10": {},
+  "3.11": {}
+}

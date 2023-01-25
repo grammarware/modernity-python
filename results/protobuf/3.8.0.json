@@ -1,1 +1,89 @@
-{"2.0": {"'sys.version_info' member": 21, "print(expr)": 2, "'copy_reg' module": 1, "'callable' member": 1}, "2.1": {"'warnings' module": 3, "'weakref' module": 1}, "2.4": {"'subprocess' module": 1, "function decorators": 9, "'reversed' member": 2, "'os.urandom' member": 1, "'collections' module": 6, "'frozenset' member": 4, "'sorted' member": 7, "'set' member": 1}, "2.7": {"'sysconfig' module": 1, "'collections.OrderedDict' member": 2, "dict comprehensions": 1, "`\"..{}..\".format(..)`": 2, "'memoryview' member": 3}, "3.2": {"'sysconfig' module": 1, "'callable' member": 1}, "2.3": {"'platform' module": 1, "'os.walk' member": 2, "'enumerate' member": 19, "'UnicodeDecodeError' member": 5, "'UnicodeEncodeError' member": 2, "'datetime' module": 1}, "2.5": {"`with`": 3, "'subprocess.check_call' member": 2, "'collections.defaultdict' member": 4, "'hashlib' module": 1, "'functools' module": 1, "'uuid' module": 1, "'datetime.datetime.strptime' member": 22}, "2.2": {"'dict' member": 31, "'super' member": 52, "'bool' member": 8, "'type' member": 17, "'staticmethod' member": 4, "'object' member": 4, "'StopIteration' member": 4, "'iter' member": 16, "'ReferenceError' member": 6, "'property' member": 1}, "2.6": {"byte string (b'..') or `str` synonym": 24, "'json' module": 1, "'operator.methodcaller' member": 1, "'math.isinf' member": 2, "'math.isnan' member": 2, "'str.format' member": 68, "'next' member": 4, "'io' module": 2, "'numbers' module": 1, "'float.fromhex' member": 1}, "3.1": {"'collections.OrderedDict' member": 2}, "3.3": {"'collections.abc' module": 3}}
+{
+  "2.0": {
+    "'sys.version_info' member": 21,
+    "print(expr)": 2,
+    "'copy_reg' module": 1,
+    "'callable' member": 1
+  },
+  "2.1": {
+    "'warnings' module": 3,
+    "'weakref' module": 1
+  },
+  "2.2": {
+    "'super' member": 52,
+    "'dict' member": 31,
+    "'type' member": 17,
+    "'iter' member": 16,
+    "'bool' member": 8,
+    "'ReferenceError' member": 6,
+    "'staticmethod' member": 4,
+    "'object' member": 4,
+    "'StopIteration' member": 4,
+    "'property' member": 1
+  },
+  "2.3": {
+    "'enumerate' member": 19,
+    "'UnicodeDecodeError' member": 5,
+    "'os.walk' member": 2,
+    "'UnicodeEncodeError' member": 2,
+    "'platform' module": 1,
+    "'datetime' module": 1
+  },
+  "2.4": {
+    "function decorators": 9,
+    "'sorted' member": 7,
+    "'collections' module": 6,
+    "'frozenset' member": 4,
+    "'reversed' member": 2,
+    "'subprocess' module": 1,
+    "'os.urandom' member": 1,
+    "'set' member": 1
+  },
+  "2.5": {
+    "'datetime.datetime.strptime' member": 22,
+    "'collections.defaultdict' member": 4,
+    "`with`": 3,
+    "'subprocess.check_call' member": 2,
+    "'hashlib' module": 1,
+    "'functools' module": 1,
+    "'uuid' module": 1
+  },
+  "2.6": {
+    "'str.format' member": 68,
+    "byte string (b'..') or `str` synonym": 24,
+    "'next' member": 4,
+    "'math.isinf' member": 2,
+    "'math.isnan' member": 2,
+    "'io' module": 2,
+    "'json' module": 1,
+    "'operator.methodcaller' member": 1,
+    "'numbers' module": 1,
+    "'float.fromhex' member": 1
+  },
+  "2.7": {
+    "'memoryview' member": 3,
+    "'collections.OrderedDict' member": 2,
+    "`\"..{}..\".format(..)`": 2,
+    "'sysconfig' module": 1,
+    "dict comprehensions": 1
+  },
+  "3.0": {},
+  "3.1": {
+    "'collections.OrderedDict' member": 2
+  },
+  "3.2": {
+    "'sysconfig' module": 1,
+    "'callable' member": 1
+  },
+  "3.3": {
+    "'collections.abc' module": 3
+  },
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

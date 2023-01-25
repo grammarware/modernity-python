@@ -1,1 +1,84 @@
-{"2.3": {"'pkgutil' module": 2, "'datetime' module": 13, "'csv' module": 1, "'enumerate' member": 21}, "2.5": {"`with`": 268, "'uuid' module": 2, "'any' member": 3, "'operator.itemgetter' member": 14, "'__future__.absolute_import' member": 4, "'all' member": 8, "'functools' module": 1, "'os.SEEK_SET' member": 2, "'datetime.datetime.strptime' member": 4}, "2.1": {"'unittest' module": 14, "'__future__' module": 4, "'warnings' module": 1}, "2.4": {"function decorators": 248, "'sorted' member": 46, "'sorted(key)'": 2, "'set' member": 8, "'frozenset' member": 2, "'collections' module": 4}, "2.6": {"byte string (b'..') or `str` synonym": 48, "'str.format' member": 79, "'math.isnan' member": 2, "'math.isinf' member": 2, "'json' module": 2, "'io' module": 1, "'numbers' module": 1, "'collections.namedtuple' member": 1, "'property.setter' member": 2}, "2.7": {"set literals": 24, "`\"..{}..\".format(..)`": 67, "'unittest.skipIf' member": 14, "multiple context expressions in a `with` statement": 2, "dict comprehensions": 3, "'collections.OrderedDict' member": 1}, "2.2": {"'object' member": 151, "'types.GeneratorType' member": 4, "'iter' member": 14, "'dict' member": 3, "'email' module": 1, "'str.decode' member": 4, "'super' member": 36, "'StopIteration' member": 2, "'type' member": 2, "'property' member": 8}, "3.2": {"'concurrent.futures' module": 1}, "3.1": {"'unittest.skipIf' member": 14, "multiple context expressions in a `with` statement": 2, "'collections.OrderedDict' member": 1}, "2.0": {"print(expr)": 1}}
+{
+  "2.0": {
+    "print(expr)": 1
+  },
+  "2.1": {
+    "'unittest' module": 14,
+    "'__future__' module": 4,
+    "'warnings' module": 1
+  },
+  "2.2": {
+    "'object' member": 151,
+    "'super' member": 36,
+    "'iter' member": 14,
+    "'property' member": 8,
+    "'types.GeneratorType' member": 4,
+    "'str.decode' member": 4,
+    "'dict' member": 3,
+    "'StopIteration' member": 2,
+    "'type' member": 2,
+    "'email' module": 1
+  },
+  "2.3": {
+    "'enumerate' member": 21,
+    "'datetime' module": 13,
+    "'pkgutil' module": 2,
+    "'csv' module": 1
+  },
+  "2.4": {
+    "function decorators": 248,
+    "'sorted' member": 46,
+    "'set' member": 8,
+    "'collections' module": 4,
+    "'sorted(key)'": 2,
+    "'frozenset' member": 2
+  },
+  "2.5": {
+    "`with`": 268,
+    "'operator.itemgetter' member": 14,
+    "'all' member": 8,
+    "'__future__.absolute_import' member": 4,
+    "'datetime.datetime.strptime' member": 4,
+    "'any' member": 3,
+    "'uuid' module": 2,
+    "'os.SEEK_SET' member": 2,
+    "'functools' module": 1
+  },
+  "2.6": {
+    "'str.format' member": 79,
+    "byte string (b'..') or `str` synonym": 48,
+    "'math.isnan' member": 2,
+    "'math.isinf' member": 2,
+    "'json' module": 2,
+    "'property.setter' member": 2,
+    "'io' module": 1,
+    "'numbers' module": 1,
+    "'collections.namedtuple' member": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 67,
+    "set literals": 24,
+    "'unittest.skipIf' member": 14,
+    "dict comprehensions": 3,
+    "multiple context expressions in a `with` statement": 2,
+    "'collections.OrderedDict' member": 1
+  },
+  "3.0": {},
+  "3.1": {
+    "'unittest.skipIf' member": 14,
+    "multiple context expressions in a `with` statement": 2,
+    "'collections.OrderedDict' member": 1
+  },
+  "3.2": {
+    "'concurrent.futures' module": 1
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

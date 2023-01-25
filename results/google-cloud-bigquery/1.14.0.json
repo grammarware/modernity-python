@@ -1,1 +1,99 @@
-{"2.6": {"'io' module": 3, "'str.format' member": 230, "byte string (b'..') or `str` synonym": 62, "'math.isnan' member": 2, "'math.isinf' member": 2, "'json' module": 6, "'next' member": 4, "'warnings.catch_warnings' member": 18, "'itertools.product' member": 1, "'__future__.print_function' member": 1, "'ast' module": 1, "'numbers' module": 1, "'collections.namedtuple' member": 1, "'property.setter' member": 2}, "2.5": {"`with`": 432, "'uuid' module": 2, "'any' member": 3, "'operator.itemgetter' member": 6, "'all' member": 8, "'functools' module": 2, "'__future__.absolute_import' member": 6, "'os.SEEK_SET' member": 2, "'datetime.datetime.strptime' member": 5, "'collections.defaultdict' member": 2}, "2.3": {"'pkgutil' module": 2, "'datetime' module": 15, "'csv' module": 1, "'tempfile.mkstemp' member": 2, "'enumerate' member": 20, "'itertools' module": 1, "'sum' member": 2}, "2.0": {"print(expr)": 2, "'sys.version_info' member": 4}, "2.7": {"`\"..{}..\".format(..)`": 214, "set literals": 40, "multiple context expressions in a `with` statement": 20, "'unittest.skipIf' member": 117, "dict comprehensions": 5, "'collections.OrderedDict' member": 1}, "2.1": {"'unittest' module": 15, "'__future__' module": 7, "'warnings' module": 4}, "2.4": {"function decorators": 603, "'decimal' module": 7, "'sorted' member": 35, "'frozenset' member": 5, "'sorted(key)'": 2, "'collections' module": 5, "'set' member": 8}, "2.2": {"'object' member": 238, "'bool' member": 4, "'types.GeneratorType' member": 4, "'iter' member": 16, "'dict' member": 14, "'super' member": 40, "'str.decode' member": 4, "'type' member": 18, "'StopIteration' member": 2, "'property' member": 8}, "3.2": {"'concurrent.futures' module": 5}, "3.1": {"multiple context expressions in a `with` statement": 20, "'unittest.skipIf' member": 117, "'collections.OrderedDict' member": 1}, "3.3": {"'collections.abc' module": 3}, "3.4": {"'enum' module": 1}}
+{
+  "2.0": {
+    "'sys.version_info' member": 4,
+    "print(expr)": 2
+  },
+  "2.1": {
+    "'unittest' module": 15,
+    "'__future__' module": 7,
+    "'warnings' module": 4
+  },
+  "2.2": {
+    "'object' member": 238,
+    "'super' member": 40,
+    "'type' member": 18,
+    "'iter' member": 16,
+    "'dict' member": 14,
+    "'property' member": 8,
+    "'bool' member": 4,
+    "'types.GeneratorType' member": 4,
+    "'str.decode' member": 4,
+    "'StopIteration' member": 2
+  },
+  "2.3": {
+    "'enumerate' member": 20,
+    "'datetime' module": 15,
+    "'pkgutil' module": 2,
+    "'tempfile.mkstemp' member": 2,
+    "'sum' member": 2,
+    "'csv' module": 1,
+    "'itertools' module": 1
+  },
+  "2.4": {
+    "function decorators": 603,
+    "'sorted' member": 35,
+    "'set' member": 8,
+    "'decimal' module": 7,
+    "'frozenset' member": 5,
+    "'collections' module": 5,
+    "'sorted(key)'": 2
+  },
+  "2.5": {
+    "`with`": 432,
+    "'all' member": 8,
+    "'operator.itemgetter' member": 6,
+    "'__future__.absolute_import' member": 6,
+    "'datetime.datetime.strptime' member": 5,
+    "'any' member": 3,
+    "'uuid' module": 2,
+    "'functools' module": 2,
+    "'os.SEEK_SET' member": 2,
+    "'collections.defaultdict' member": 2
+  },
+  "2.6": {
+    "'str.format' member": 230,
+    "byte string (b'..') or `str` synonym": 62,
+    "'warnings.catch_warnings' member": 18,
+    "'json' module": 6,
+    "'next' member": 4,
+    "'io' module": 3,
+    "'math.isnan' member": 2,
+    "'math.isinf' member": 2,
+    "'property.setter' member": 2,
+    "'itertools.product' member": 1,
+    "'__future__.print_function' member": 1,
+    "'ast' module": 1,
+    "'numbers' module": 1,
+    "'collections.namedtuple' member": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 214,
+    "'unittest.skipIf' member": 117,
+    "set literals": 40,
+    "multiple context expressions in a `with` statement": 20,
+    "dict comprehensions": 5,
+    "'collections.OrderedDict' member": 1
+  },
+  "3.0": {},
+  "3.1": {
+    "'unittest.skipIf' member": 117,
+    "multiple context expressions in a `with` statement": 20,
+    "'collections.OrderedDict' member": 1
+  },
+  "3.2": {
+    "'concurrent.futures' module": 5
+  },
+  "3.3": {
+    "'collections.abc' module": 3
+  },
+  "3.4": {
+    "'enum' module": 1
+  },
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

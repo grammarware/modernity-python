@@ -1,1 +1,90 @@
-{"2.3": {"'pkgutil' module": 1, "'datetime' module": 32, "'dict.pop' member": 6, "'logging' module": 9, "'sum' member": 1}, "2.6": {"'io' module": 9, "byte string (b'..') or `str` synonym": 260, "'json' module": 41, "'str.format' member": 233, "'abc' module": 7, "class decorators": 16, "'bytearray' member": 5, "'numbers' module": 1}, "2.5": {"`with`": 561, "'datetime.datetime.strptime' member": 85, "'hashlib' module": 1, "'any' member": 4, "'__future__.absolute_import' member": 6, "'ctypes' module": 2, "'functools' module": 3}, "2.4": {"function decorators": 454, "'subprocess' module": 3, "'set' member": 7, "'sorted' member": 2, "'collections' module": 2, "'os.devnull' member": 1, "'frozenset' member": 9}, "2.2": {"'object' member": 4, "'super' member": 96, "'str.decode' member": 6, "'hmac' module": 1, "'dict' member": 10, "'type' member": 3}, "2.7": {"`\"..{}..\".format(..)`": 216, "'subprocess.check_output' member": 3, "dict comprehensions": 10, "'logging.NullHandler' member": 1}, "3.1": {"'subprocess.check_output' member": 3, "'logging.NullHandler' member": 1}, "3.3": {"'collections.abc' module": 2}, "2.1": {"'inspect' module": 1, "'__future__' module": 6, "'warnings' module": 2}, "3.5": {"coroutines (async)": 24, "'inspect.iscoroutinefunction' member": 2, "coroutines (await)": 44, "`async with`": 4}, "2.0": {"'sys.version_info' member": 5, "'callable' member": 3}, "3.2": {"'callable' member": 3, "'int.from_bytes' member": 4}, "3.4": {"'enum' module": 1, "'asyncio' module": 1}, "3.8": {"'ctypes.CDLL(winmode)'": 1}}
+{
+  "2.0": {
+    "'sys.version_info' member": 5,
+    "'callable' member": 3
+  },
+  "2.1": {
+    "'__future__' module": 6,
+    "'warnings' module": 2,
+    "'inspect' module": 1
+  },
+  "2.2": {
+    "'super' member": 96,
+    "'dict' member": 10,
+    "'str.decode' member": 6,
+    "'object' member": 4,
+    "'type' member": 3,
+    "'hmac' module": 1
+  },
+  "2.3": {
+    "'datetime' module": 32,
+    "'logging' module": 9,
+    "'dict.pop' member": 6,
+    "'pkgutil' module": 1,
+    "'sum' member": 1
+  },
+  "2.4": {
+    "function decorators": 454,
+    "'frozenset' member": 9,
+    "'set' member": 7,
+    "'subprocess' module": 3,
+    "'sorted' member": 2,
+    "'collections' module": 2,
+    "'os.devnull' member": 1
+  },
+  "2.5": {
+    "`with`": 561,
+    "'datetime.datetime.strptime' member": 85,
+    "'__future__.absolute_import' member": 6,
+    "'any' member": 4,
+    "'functools' module": 3,
+    "'ctypes' module": 2,
+    "'hashlib' module": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 260,
+    "'str.format' member": 233,
+    "'json' module": 41,
+    "class decorators": 16,
+    "'io' module": 9,
+    "'abc' module": 7,
+    "'bytearray' member": 5,
+    "'numbers' module": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 216,
+    "dict comprehensions": 10,
+    "'subprocess.check_output' member": 3,
+    "'logging.NullHandler' member": 1
+  },
+  "3.0": {},
+  "3.1": {
+    "'subprocess.check_output' member": 3,
+    "'logging.NullHandler' member": 1
+  },
+  "3.2": {
+    "'int.from_bytes' member": 4,
+    "'callable' member": 3
+  },
+  "3.3": {
+    "'collections.abc' module": 2
+  },
+  "3.4": {
+    "'enum' module": 1,
+    "'asyncio' module": 1
+  },
+  "3.5": {
+    "coroutines (await)": 44,
+    "coroutines (async)": 24,
+    "`async with`": 4,
+    "'inspect.iscoroutinefunction' member": 2
+  },
+  "3.6": {},
+  "3.7": {},
+  "3.8": {
+    "'ctypes.CDLL(winmode)'": 1
+  },
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

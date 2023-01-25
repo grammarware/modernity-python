@@ -1,1 +1,43 @@
-{"2.1": {"'__future__' module": 4, "'unittest' module": 6}, "2.6": {"'__future__.print_function' member": 4}, "2.0": {"print(expr)": 4}, "2.2": {"'type' member": 11, "'iter' member": 1, "'dict' member": 4}, "2.4": {"function decorators": 14, "'string.Template' member": 1, "'subprocess' module": 1, "'set' member": 6}, "2.3": {"'enumerate' member": 5}, "2.5": {"`with`": 2, "'any' member": 2}}
+{
+  "2.0": {
+    "print(expr)": 4
+  },
+  "2.1": {
+    "'unittest' module": 6,
+    "'__future__' module": 4
+  },
+  "2.2": {
+    "'type' member": 11,
+    "'dict' member": 4,
+    "'iter' member": 1
+  },
+  "2.3": {
+    "'enumerate' member": 5
+  },
+  "2.4": {
+    "function decorators": 14,
+    "'set' member": 6,
+    "'string.Template' member": 1,
+    "'subprocess' module": 1
+  },
+  "2.5": {
+    "`with`": 2,
+    "'any' member": 2
+  },
+  "2.6": {
+    "'__future__.print_function' member": 4
+  },
+  "2.7": {},
+  "3.0": {},
+  "3.1": {},
+  "3.2": {},
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

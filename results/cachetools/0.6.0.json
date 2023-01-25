@@ -1,1 +1,45 @@
-{"2.2": {"'dict' member": 3, "'iter' member": 2, "'type' member": 2, "'object' member": 1}, "2.3": {"'dummy_threading' module": 1}, "2.5": {"'min(key)'": 1, "'contextlib' module": 1, "'functools' module": 1, "`with`": 24}, "2.4": {"'collections' module": 2, "function decorators": 15, "'sorted' member": 2, "'operator.attrgetter' member": 4}, "3.3": {"'contextlib.ExitStack' member": 1}, "2.6": {"'collections.namedtuple' member": 1}, "2.1": {"'unittest' module": 6}}
+{
+  "2.0": {},
+  "2.1": {
+    "'unittest' module": 6
+  },
+  "2.2": {
+    "'dict' member": 3,
+    "'iter' member": 2,
+    "'type' member": 2,
+    "'object' member": 1
+  },
+  "2.3": {
+    "'dummy_threading' module": 1
+  },
+  "2.4": {
+    "function decorators": 15,
+    "'operator.attrgetter' member": 4,
+    "'collections' module": 2,
+    "'sorted' member": 2
+  },
+  "2.5": {
+    "`with`": 24,
+    "'min(key)'": 1,
+    "'contextlib' module": 1,
+    "'functools' module": 1
+  },
+  "2.6": {
+    "'collections.namedtuple' member": 1
+  },
+  "2.7": {},
+  "3.0": {},
+  "3.1": {},
+  "3.2": {},
+  "3.3": {
+    "'contextlib.ExitStack' member": 1
+  },
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

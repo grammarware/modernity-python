@@ -1,1 +1,112 @@
-{"2.3": {"'datetime' module": 36, "'textwrap' module": 3, "'file.next' member": 2, "'os.walk' member": 2, "'enumerate' member": 119, "'sum' member": 10, "'itertools' module": 5, "'operator.pow' member": 10, "'dummy_thread' module": 1, "'dict.pop' member": 2, "'heapq' module": 2, "'platform' module": 1, "'tempfile.mkstemp' member": 1, "'csv' module": 3, "'UnicodeEncodeError' member": 2}, "2.1": {"'inspect' module": 4, "'warnings' module": 12, "'pydoc' module": 2, "'__future__' module": 7, "'unittest' module": 43}, "2.2": {"'tokenize.generate_tokens' member": 2, "'dict' member": 127, "'super' member": 28, "'dict.iteritems' member": 17, "'property' member": 19, "'type' member": 121, "'operator.gt' member": 13, "'operator.ge' member": 13, "'operator.lt' member": 19, "'operator.le' member": 19, "'operator.eq' member": 11, "'operator.ne' member": 12, "'bool' member": 4, "'operator.truediv' member": 16, "'operator.floordiv' member": 14, "'iter' member": 10, "'__future__.division' member": 5, "'object' member": 2}, "2.4": {"'subprocess' module": 2, "function decorators": 393, "'collections' module": 6, "'itertools.groupby' member": 1, "'set' member": 77, "'reversed' member": 2, "'sorted' member": 47, "'sorted(key)'": 5, "'heapq.nlargest' member": 3, "'sorted(reverse)'": 2, "'frozenset' member": 4}, "2.0": {"'sys.version_info' member": 9, "'callable' member": 5, "'__builtin__' module": 1, "'unicode' member": 6, "'Tkinter' module": 1, "print(expr)": 3}, "3.2": {"'callable' member": 5}, "2.5": {"`with`": 138, "'collections.defaultdict' member": 4, "'any' member": 8, "'all' member": 20, "'functools' module": 2, "'__future__.with_statement' member": 2, "'operator.itemgetter' member": 2, "'heapq.nlargest(key)'": 2, "'contextlib' module": 1}, "2.6": {"'warnings.catch_warnings' member": 12, "'io' module": 2, "'collections.namedtuple' member": 2, "byte string (b'..') or `str` synonym": 6, "'str.format' member": 1, "'itertools.product' member": 1, "strftime directive 'f'": 4, "'format' member": 2}, "2.7": {"`\"..{}..\".format(..)`": 1, "'collections.Counter' member": 1, "'collections.OrderedDict' member": 1}, "3.1": {"'collections.Counter' member": 1, "'collections.OrderedDict' member": 1}, "3.0": {"'pickle.load(encoding)'": 1}}
+{
+  "2.0": {
+    "'sys.version_info' member": 9,
+    "'unicode' member": 6,
+    "'callable' member": 5,
+    "print(expr)": 3,
+    "'__builtin__' module": 1,
+    "'Tkinter' module": 1
+  },
+  "2.1": {
+    "'unittest' module": 43,
+    "'warnings' module": 12,
+    "'__future__' module": 7,
+    "'inspect' module": 4,
+    "'pydoc' module": 2
+  },
+  "2.2": {
+    "'dict' member": 127,
+    "'type' member": 121,
+    "'super' member": 28,
+    "'property' member": 19,
+    "'operator.lt' member": 19,
+    "'operator.le' member": 19,
+    "'dict.iteritems' member": 17,
+    "'operator.truediv' member": 16,
+    "'operator.floordiv' member": 14,
+    "'operator.gt' member": 13,
+    "'operator.ge' member": 13,
+    "'operator.ne' member": 12,
+    "'operator.eq' member": 11,
+    "'iter' member": 10,
+    "'__future__.division' member": 5,
+    "'bool' member": 4,
+    "'tokenize.generate_tokens' member": 2,
+    "'object' member": 2
+  },
+  "2.3": {
+    "'enumerate' member": 119,
+    "'datetime' module": 36,
+    "'sum' member": 10,
+    "'operator.pow' member": 10,
+    "'itertools' module": 5,
+    "'textwrap' module": 3,
+    "'csv' module": 3,
+    "'file.next' member": 2,
+    "'os.walk' member": 2,
+    "'dict.pop' member": 2,
+    "'heapq' module": 2,
+    "'UnicodeEncodeError' member": 2,
+    "'dummy_thread' module": 1,
+    "'platform' module": 1,
+    "'tempfile.mkstemp' member": 1
+  },
+  "2.4": {
+    "function decorators": 393,
+    "'set' member": 77,
+    "'sorted' member": 47,
+    "'collections' module": 6,
+    "'sorted(key)'": 5,
+    "'frozenset' member": 4,
+    "'heapq.nlargest' member": 3,
+    "'subprocess' module": 2,
+    "'reversed' member": 2,
+    "'sorted(reverse)'": 2,
+    "'itertools.groupby' member": 1
+  },
+  "2.5": {
+    "`with`": 138,
+    "'all' member": 20,
+    "'any' member": 8,
+    "'collections.defaultdict' member": 4,
+    "'functools' module": 2,
+    "'__future__.with_statement' member": 2,
+    "'operator.itemgetter' member": 2,
+    "'heapq.nlargest(key)'": 2,
+    "'contextlib' module": 1
+  },
+  "2.6": {
+    "'warnings.catch_warnings' member": 12,
+    "byte string (b'..') or `str` synonym": 6,
+    "strftime directive 'f'": 4,
+    "'io' module": 2,
+    "'collections.namedtuple' member": 2,
+    "'format' member": 2,
+    "'str.format' member": 1,
+    "'itertools.product' member": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 1,
+    "'collections.Counter' member": 1,
+    "'collections.OrderedDict' member": 1
+  },
+  "3.0": {
+    "'pickle.load(encoding)'": 1
+  },
+  "3.1": {
+    "'collections.Counter' member": 1,
+    "'collections.OrderedDict' member": 1
+  },
+  "3.2": {
+    "'callable' member": 5
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

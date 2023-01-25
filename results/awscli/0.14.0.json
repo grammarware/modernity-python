@@ -1,1 +1,55 @@
-{"2.3": {"'os.walk' member": 1, "'logging' module": 10, "'platform' module": 1, "'csv' module": 1, "'sum' member": 4, "'enumerate' member": 3}, "2.7": {"'argparse' module": 1}, "3.2": {"'argparse' module": 1}, "2.1": {"'difflib' module": 1}, "2.4": {"'sorted' member": 7, "'subprocess' module": 1, "function decorators": 45, "'set' member": 7, "'reversed' member": 2}, "2.2": {"'super' member": 28, "'dict' member": 4, "'iter' member": 2, "'StopIteration' member": 2, "'bool' member": 1}, "2.0": {"print(expr)": 1}, "2.5": {"`with`": 5, "'all' member": 2, "'functools' module": 1}, "2.6": {"'json' module": 2}}
+{
+  "2.0": {
+    "print(expr)": 1
+  },
+  "2.1": {
+    "'difflib' module": 1
+  },
+  "2.2": {
+    "'super' member": 28,
+    "'dict' member": 4,
+    "'iter' member": 2,
+    "'StopIteration' member": 2,
+    "'bool' member": 1
+  },
+  "2.3": {
+    "'logging' module": 10,
+    "'sum' member": 4,
+    "'enumerate' member": 3,
+    "'os.walk' member": 1,
+    "'platform' module": 1,
+    "'csv' module": 1
+  },
+  "2.4": {
+    "function decorators": 45,
+    "'sorted' member": 7,
+    "'set' member": 7,
+    "'reversed' member": 2,
+    "'subprocess' module": 1
+  },
+  "2.5": {
+    "`with`": 5,
+    "'all' member": 2,
+    "'functools' module": 1
+  },
+  "2.6": {
+    "'json' module": 2
+  },
+  "2.7": {
+    "'argparse' module": 1
+  },
+  "3.0": {},
+  "3.1": {},
+  "3.2": {
+    "'argparse' module": 1
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

@@ -1,1 +1,78 @@
-{"2.1": {"'unittest' module": 1, "'__future__' module": 1, "'weakref' module": 1, "'warnings' module": 1, "'inspect' module": 1}, "2.0": {"print(expr)": 78, "'string.lowercase' member": 1, "'string.uppercase' member": 1, "'file' member": 2, "'unicode' member": 1, "'__builtin__' module": 1}, "2.6": {"'next' member": 3, "'__future__.print_function' member": 1, "'str.format' member": 71, "'functools.reduce' member": 1}, "2.2": {"'StopIteration' member": 2, "'type' member": 43, "'super' member": 151, "'operator.truediv' member": 1, "'str.decode' member": 1, "'iter' member": 7, "'dict' member": 17, "'bool' member": 10, "'property' member": 2, "'object' member": 3}, "2.4": {"'reversed' member": 1, "function decorators": 20, "'set' member": 143, "'sorted' member": 7, "'collections' module": 1}, "2.3": {"'sum' member": 11, "'datetime' module": 4, "'sets' module": 1, "'enumerate' member": 26, "'operator.pow' member": 1, "'itertools' module": 1, "'UnicodeEncodeError' member": 1, "'slice.indices' member": 2}, "2.5": {"'datetime.datetime.strptime' member": 1, "'functools' module": 2, "'any' member": 6, "'all' member": 6}, "3.0": {"'urllib.parse' module": 10, "'list.copy' member": 2}, "3.10": {"union types as `X | Y`": 3}, "2.7": {"`\"..{}..\".format(..)`": 2}}
+{
+  "2.0": {
+    "print(expr)": 78,
+    "'file' member": 2,
+    "'string.lowercase' member": 1,
+    "'string.uppercase' member": 1,
+    "'unicode' member": 1,
+    "'__builtin__' module": 1
+  },
+  "2.1": {
+    "'unittest' module": 1,
+    "'__future__' module": 1,
+    "'weakref' module": 1,
+    "'warnings' module": 1,
+    "'inspect' module": 1
+  },
+  "2.2": {
+    "'super' member": 151,
+    "'type' member": 43,
+    "'dict' member": 17,
+    "'bool' member": 10,
+    "'iter' member": 7,
+    "'object' member": 3,
+    "'StopIteration' member": 2,
+    "'property' member": 2,
+    "'operator.truediv' member": 1,
+    "'str.decode' member": 1
+  },
+  "2.3": {
+    "'enumerate' member": 26,
+    "'sum' member": 11,
+    "'datetime' module": 4,
+    "'slice.indices' member": 2,
+    "'sets' module": 1,
+    "'operator.pow' member": 1,
+    "'itertools' module": 1,
+    "'UnicodeEncodeError' member": 1
+  },
+  "2.4": {
+    "'set' member": 143,
+    "function decorators": 20,
+    "'sorted' member": 7,
+    "'reversed' member": 1,
+    "'collections' module": 1
+  },
+  "2.5": {
+    "'any' member": 6,
+    "'all' member": 6,
+    "'functools' module": 2,
+    "'datetime.datetime.strptime' member": 1
+  },
+  "2.6": {
+    "'str.format' member": 71,
+    "'next' member": 3,
+    "'__future__.print_function' member": 1,
+    "'functools.reduce' member": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 2
+  },
+  "3.0": {
+    "'urllib.parse' module": 10,
+    "'list.copy' member": 2
+  },
+  "3.1": {},
+  "3.2": {},
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {
+    "union types as `X | Y`": 3
+  },
+  "3.11": {}
+}

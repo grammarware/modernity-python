@@ -1,1 +1,77 @@
-{"2.5": {"`with`": 438, "'functools' module": 1, "'any' member": 5, "'all' member": 4, "'hashlib' module": 1, "'contextlib' module": 1}, "3.0": {"'open(encoding)'": 1, "annotations": 27, "exception cause": 18, "super() without arguments": 8, "unpacking assignment": 2}, "2.6": {"'json' module": 12, "'platform.python_implementation' member": 1, "byte string (b'..') or `str` synonym": 202, "class decorators": 2}, "3.6": {"f-strings": 40, "'ModuleNotFoundError' member": 5}, "2.4": {"function decorators": 81, "'set' member": 6, "'decimal' module": 2}, "2.0": {"print(expr)": 1}, "2.3": {"'platform' module": 1, "'datetime' module": 3}, "3.3": {"'collections.abc' module": 2, "'hmac.compare_digest' member": 2, "'unittest.mock' module": 1}, "3.5": {"'typing' module": 4, "generalized unpacking": 8}, "3.2": {"'functools.lru_cache' member": 1, "'datetime.timezone' member": 3, "'int.from_bytes' member": 4}, "2.1": {"'warnings' module": 1, "'unittest' module": 1}, "2.2": {"'dict' member": 2, "'type' member": 8, "'bool' member": 1, "'hmac' module": 1, "'os.path.realpath' member": 1, "'super' member": 8, "'object' member": 2}, "2.7": {"set literals": 2, "'hmac.compare_digest' member": 2}}
+{
+  "2.0": {
+    "print(expr)": 1
+  },
+  "2.1": {
+    "'warnings' module": 1,
+    "'unittest' module": 1
+  },
+  "2.2": {
+    "'type' member": 8,
+    "'super' member": 8,
+    "'dict' member": 2,
+    "'object' member": 2,
+    "'bool' member": 1,
+    "'hmac' module": 1,
+    "'os.path.realpath' member": 1
+  },
+  "2.3": {
+    "'datetime' module": 3,
+    "'platform' module": 1
+  },
+  "2.4": {
+    "function decorators": 81,
+    "'set' member": 6,
+    "'decimal' module": 2
+  },
+  "2.5": {
+    "`with`": 438,
+    "'any' member": 5,
+    "'all' member": 4,
+    "'functools' module": 1,
+    "'hashlib' module": 1,
+    "'contextlib' module": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 202,
+    "'json' module": 12,
+    "class decorators": 2,
+    "'platform.python_implementation' member": 1
+  },
+  "2.7": {
+    "set literals": 2,
+    "'hmac.compare_digest' member": 2
+  },
+  "3.0": {
+    "annotations": 27,
+    "exception cause": 18,
+    "super() without arguments": 8,
+    "unpacking assignment": 2,
+    "'open(encoding)'": 1
+  },
+  "3.1": {},
+  "3.2": {
+    "'int.from_bytes' member": 4,
+    "'datetime.timezone' member": 3,
+    "'functools.lru_cache' member": 1
+  },
+  "3.3": {
+    "'collections.abc' module": 2,
+    "'hmac.compare_digest' member": 2,
+    "'unittest.mock' module": 1
+  },
+  "3.4": {},
+  "3.5": {
+    "generalized unpacking": 8,
+    "'typing' module": 4
+  },
+  "3.6": {
+    "f-strings": 40,
+    "'ModuleNotFoundError' member": 5
+  },
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

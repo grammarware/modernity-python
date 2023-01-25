@@ -1,1 +1,79 @@
-{"2.6": {"'io' module": 1, "'str.format' member": 48, "'bytearray' member": 3, "byte string (b'..') or `str` synonym": 14, "class decorators": 3, "'json' module": 1}, "2.5": {"`with`": 69, "'locale.format_string' member": 3, "'functools' module": 4, "'all' member": 2, "'any' member": 6, "'hashlib' module": 1}, "3.3": {"'FileNotFoundError' member": 1, "'unittest.mock' module": 1}, "2.0": {"print(expr)": 5}, "3.4": {"'statistics' module": 3}, "3.7": {"'time.perf_counter_ns' member": 1}, "2.2": {"'dict' member": 35, "'type' member": 10, "'os.path.realpath' member": 1}, "3.0": {"'list.clear' member": 2, "'open(encoding)'": 4}, "2.7": {"'importlib' module": 1, "`\"..{}..\".format(..)`": 46, "'collections.Counter' member": 3, "'collections.OrderedDict' member": 2, "'argparse' module": 1}, "3.1": {"'importlib' module": 1, "'collections.Counter' member": 3, "'collections.OrderedDict' member": 2}, "3.2": {"'functools.lru_cache' member": 4, "'argparse' module": 1}, "2.4": {"function decorators": 52, "'collections' module": 2, "'set' member": 6, "'sorted(key)'": 2, "'sorted(reverse)'": 1, "'sorted' member": 12}, "2.3": {"'sum' member": 2, "'platform' module": 1, "'UnicodeDecodeError' member": 2}, "2.1": {"'unittest' module": 9, "'warnings' module": 1}}
+{
+  "2.0": {
+    "print(expr)": 5
+  },
+  "2.1": {
+    "'unittest' module": 9,
+    "'warnings' module": 1
+  },
+  "2.2": {
+    "'dict' member": 35,
+    "'type' member": 10,
+    "'os.path.realpath' member": 1
+  },
+  "2.3": {
+    "'sum' member": 2,
+    "'UnicodeDecodeError' member": 2,
+    "'platform' module": 1
+  },
+  "2.4": {
+    "function decorators": 52,
+    "'sorted' member": 12,
+    "'set' member": 6,
+    "'collections' module": 2,
+    "'sorted(key)'": 2,
+    "'sorted(reverse)'": 1
+  },
+  "2.5": {
+    "`with`": 69,
+    "'any' member": 6,
+    "'functools' module": 4,
+    "'locale.format_string' member": 3,
+    "'all' member": 2,
+    "'hashlib' module": 1
+  },
+  "2.6": {
+    "'str.format' member": 48,
+    "byte string (b'..') or `str` synonym": 14,
+    "'bytearray' member": 3,
+    "class decorators": 3,
+    "'io' module": 1,
+    "'json' module": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 46,
+    "'collections.Counter' member": 3,
+    "'collections.OrderedDict' member": 2,
+    "'importlib' module": 1,
+    "'argparse' module": 1
+  },
+  "3.0": {
+    "'open(encoding)'": 4,
+    "'list.clear' member": 2
+  },
+  "3.1": {
+    "'collections.Counter' member": 3,
+    "'collections.OrderedDict' member": 2,
+    "'importlib' module": 1
+  },
+  "3.2": {
+    "'functools.lru_cache' member": 4,
+    "'argparse' module": 1
+  },
+  "3.3": {
+    "'FileNotFoundError' member": 1,
+    "'unittest.mock' module": 1
+  },
+  "3.4": {
+    "'statistics' module": 3
+  },
+  "3.5": {},
+  "3.6": {},
+  "3.7": {
+    "'time.perf_counter_ns' member": 1
+  },
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

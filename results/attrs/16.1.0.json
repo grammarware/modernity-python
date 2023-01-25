@@ -1,1 +1,55 @@
-{"2.1": {"'__future__' module": 17}, "2.2": {"'__future__.division' member": 17, "'object' member": 14, "'dict' member": 4, "'type' member": 2}, "2.6": {"'__future__.print_function' member": 17, "class decorators": 58, "'str.format' member": 52}, "2.5": {"'__future__.absolute_import' member": 17, "`with`": 52, "'all' member": 4, "'hashlib' module": 1}, "2.4": {"function decorators": 61, "'frozenset' member": 6, "'set' member": 8, "'collections' module": 1, "'reversed' member": 1, "'sorted(key)'": 1, "'sorted' member": 1}, "2.7": {"'collections.OrderedDict' member": 1, "`\"..{}..\".format(..)`": 3}, "3.1": {"'collections.OrderedDict' member": 1}, "2.0": {"'sys.version_info' member": 1}, "2.3": {"'dict.pop' member": 2}}
+{
+  "2.0": {
+    "'sys.version_info' member": 1
+  },
+  "2.1": {
+    "'__future__' module": 17
+  },
+  "2.2": {
+    "'__future__.division' member": 17,
+    "'object' member": 14,
+    "'dict' member": 4,
+    "'type' member": 2
+  },
+  "2.3": {
+    "'dict.pop' member": 2
+  },
+  "2.4": {
+    "function decorators": 61,
+    "'set' member": 8,
+    "'frozenset' member": 6,
+    "'collections' module": 1,
+    "'reversed' member": 1,
+    "'sorted(key)'": 1,
+    "'sorted' member": 1
+  },
+  "2.5": {
+    "`with`": 52,
+    "'__future__.absolute_import' member": 17,
+    "'all' member": 4,
+    "'hashlib' module": 1
+  },
+  "2.6": {
+    "class decorators": 58,
+    "'str.format' member": 52,
+    "'__future__.print_function' member": 17
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 3,
+    "'collections.OrderedDict' member": 1
+  },
+  "3.0": {},
+  "3.1": {
+    "'collections.OrderedDict' member": 1
+  },
+  "3.2": {},
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

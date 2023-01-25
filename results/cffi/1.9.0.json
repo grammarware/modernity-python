@@ -1,1 +1,98 @@
-{"2.4": {"'subprocess' module": 7, "'collections' module": 1, "'sorted' member": 31, "'reversed' member": 6, "'set' member": 20, "function decorators": 161, "'sorted(key)'": 1}, "2.5": {"`with`": 86, "'ctypes' module": 3, "'any' member": 3, "'functools' module": 2, "'subprocess.check_call' member": 10}, "2.2": {"'dict' member": 13, "'object' member": 3, "'bool' member": 77, "'property' member": 11, "'iter' member": 8, "'type' member": 158, "'super' member": 22, "'sys.getdlopenflags' member": 3, "'sys.setdlopenflags' member": 9}, "2.0": {"'callable' member": 2, "'sys.version_info' member": 32, "print(expr)": 16, "'__builtin__' module": 1, "'long' member": 37, "'unicode' member": 14}, "3.2": {"'callable' member": 2, "'sysconfig' module": 1, "'sys.abiflags' member": 2}, "2.7": {"'sysconfig' module": 1, "'memoryview' member": 4, "'importlib' module": 1}, "2.3": {"'enumerate' member": 45, "'dummy_thread' module": 1, "'imp.acquire_lock' member": 2, "'imp.release_lock' member": 4, "'shutil.move' member": 4, "'sum' member": 1, "'platform' module": 5, "'os.walk' member": 1, "'tempfile.mkdtemp' member": 4, "'tempfile.mkstemp' member": 4}, "2.6": {"'sys.flags' member": 2, "'io' module": 9, "'ctypes.c_bool' member": 2, "byte string (b'..') or `str` synonym": 831, "'ctypes.CFUNCTYPE(use_errno)'": 1, "'ctypes.get_errno' member": 2, "'ctypes.set_errno' member": 2, "'bytearray' member": 20, "'warnings.catch_warnings' member": 3, "'__future__.unicode_literals' member": 2, "'ctypes.util.find_msvcrt' member": 1}, "3.0": {"'_dummy_thread' module": 1, "'builtins' module": 1}, "2.1": {"'weakref' module": 7, "'warnings' module": 4, "'__future__' module": 2}, "3.3": {"'importlib.machinery.EXTENSION_SUFFIXES' member": 1, "'importlib.invalidate_caches' member": 1}, "3.10": {"union types as `X | Y`": 1}, "3.1": {"'importlib' module": 1}}
+{
+  "2.0": {
+    "'long' member": 37,
+    "'sys.version_info' member": 32,
+    "print(expr)": 16,
+    "'unicode' member": 14,
+    "'callable' member": 2,
+    "'__builtin__' module": 1
+  },
+  "2.1": {
+    "'weakref' module": 7,
+    "'warnings' module": 4,
+    "'__future__' module": 2
+  },
+  "2.2": {
+    "'type' member": 158,
+    "'bool' member": 77,
+    "'super' member": 22,
+    "'dict' member": 13,
+    "'property' member": 11,
+    "'sys.setdlopenflags' member": 9,
+    "'iter' member": 8,
+    "'object' member": 3,
+    "'sys.getdlopenflags' member": 3
+  },
+  "2.3": {
+    "'enumerate' member": 45,
+    "'platform' module": 5,
+    "'imp.release_lock' member": 4,
+    "'shutil.move' member": 4,
+    "'tempfile.mkdtemp' member": 4,
+    "'tempfile.mkstemp' member": 4,
+    "'imp.acquire_lock' member": 2,
+    "'dummy_thread' module": 1,
+    "'sum' member": 1,
+    "'os.walk' member": 1
+  },
+  "2.4": {
+    "function decorators": 161,
+    "'sorted' member": 31,
+    "'set' member": 20,
+    "'subprocess' module": 7,
+    "'reversed' member": 6,
+    "'collections' module": 1,
+    "'sorted(key)'": 1
+  },
+  "2.5": {
+    "`with`": 86,
+    "'subprocess.check_call' member": 10,
+    "'ctypes' module": 3,
+    "'any' member": 3,
+    "'functools' module": 2
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 831,
+    "'bytearray' member": 20,
+    "'io' module": 9,
+    "'warnings.catch_warnings' member": 3,
+    "'sys.flags' member": 2,
+    "'ctypes.c_bool' member": 2,
+    "'ctypes.get_errno' member": 2,
+    "'ctypes.set_errno' member": 2,
+    "'__future__.unicode_literals' member": 2,
+    "'ctypes.CFUNCTYPE(use_errno)'": 1,
+    "'ctypes.util.find_msvcrt' member": 1
+  },
+  "2.7": {
+    "'memoryview' member": 4,
+    "'sysconfig' module": 1,
+    "'importlib' module": 1
+  },
+  "3.0": {
+    "'_dummy_thread' module": 1,
+    "'builtins' module": 1
+  },
+  "3.1": {
+    "'importlib' module": 1
+  },
+  "3.2": {
+    "'callable' member": 2,
+    "'sys.abiflags' member": 2,
+    "'sysconfig' module": 1
+  },
+  "3.3": {
+    "'importlib.machinery.EXTENSION_SUFFIXES' member": 1,
+    "'importlib.invalidate_caches' member": 1
+  },
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {
+    "union types as `X | Y`": 1
+  },
+  "3.11": {}
+}

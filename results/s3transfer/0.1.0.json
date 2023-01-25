@@ -1,1 +1,59 @@
-{"2.0": {"'sys.version_info' member": 1}, "2.1": {"'inspect' module": 1, "'__future__' module": 1}, "2.2": {"'super' member": 112, "'type' member": 12, "'os.extsep' member": 6, "'iter' member": 12, "'object' member": 17, "'__future__.division' member": 1}, "2.4": {"function decorators": 33, "'collections' module": 2, "'set' member": 28, "'os.urandom' member": 6}, "3.2": {"'concurrent.futures' module": 9}, "2.6": {"'collections.namedtuple' member": 1, "byte string (b'..') or `str` synonym": 164, "'str.format' member": 1, "'io' module": 1, "'bytearray' member": 2}, "2.3": {"'logging' module": 6, "'heapq' module": 1, "'socket.timeout' member": 5, "'tempfile.mkdtemp' member": 24, "'enumerate' member": 8}, "2.5": {"`with`": 334, "'functools' module": 3, "'collections.defaultdict' member": 1, "'hashlib' module": 2, "'contextlib' module": 1}}
+{
+  "2.0": {
+    "'sys.version_info' member": 1
+  },
+  "2.1": {
+    "'inspect' module": 1,
+    "'__future__' module": 1
+  },
+  "2.2": {
+    "'super' member": 112,
+    "'object' member": 17,
+    "'type' member": 12,
+    "'iter' member": 12,
+    "'os.extsep' member": 6,
+    "'__future__.division' member": 1
+  },
+  "2.3": {
+    "'tempfile.mkdtemp' member": 24,
+    "'enumerate' member": 8,
+    "'logging' module": 6,
+    "'socket.timeout' member": 5,
+    "'heapq' module": 1
+  },
+  "2.4": {
+    "function decorators": 33,
+    "'set' member": 28,
+    "'os.urandom' member": 6,
+    "'collections' module": 2
+  },
+  "2.5": {
+    "`with`": 334,
+    "'functools' module": 3,
+    "'hashlib' module": 2,
+    "'collections.defaultdict' member": 1,
+    "'contextlib' module": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 164,
+    "'bytearray' member": 2,
+    "'collections.namedtuple' member": 1,
+    "'str.format' member": 1,
+    "'io' module": 1
+  },
+  "2.7": {},
+  "3.0": {},
+  "3.1": {},
+  "3.2": {
+    "'concurrent.futures' module": 9
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

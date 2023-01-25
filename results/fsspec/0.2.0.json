@@ -1,1 +1,88 @@
-{"2.1": {"'__future__' module": 6}, "2.2": {"'__future__.division' member": 5, "'str.zfill' member": 1, "'super' member": 10, "'os.stat.st_size' member": 2, "'os.stat.st_ctime' member": 2, "'os.path.realpath' member": 3, "'type' member": 2}, "2.6": {"'__future__.print_function' member": 6, "'io' module": 3, "'json' module": 2, "byte string (b'..') or `str` synonym": 11, "'os.path.relpath' member": 1, "'str.format' member": 2}, "2.5": {"'__future__.absolute_import' member": 5, "`with`": 33, "'all' member": 9, "'hashlib' module": 2, "'uuid' module": 3}, "2.3": {"'bz2' module": 1, "'sum' member": 5, "'logging' module": 2, "'tempfile.mkstemp' member": 2, "'ConfigParser.SafeConfigParser' member": 1}, "3.3": {"'lzma' module": 1, "'FileNotFoundError' member": 26, "'os.stat(follow_symlinks)'": 1, "'PermissionError' member": 6, "'FileExistsError' member": 4}, "2.7": {"'importlib' module": 1, "`\"..{}..\".format(..)`": 2, "set comprehensions": 2, "set literals": 8, "dict comprehensions": 2}, "3.1": {"'importlib' module": 1}, "2.4": {"'str.rsplit' member": 1, "'collections' module": 1, "'reversed' member": 4, "'sorted' member": 22, "'set' member": 11, "function decorators": 15, "'subprocess' module": 1, "'sorted(key)'": 1}, "3.6": {"f-strings": 6}, "3.0": {"'urllib.parse' module": 3, "super() without arguments": 6, "'configparser' module": 1}, "3.2": {"'os.makedirs(exist_ok)'": 1, "'callable' member": 4}, "2.0": {"print(expr)": 1, "'ConfigParser' module": 1, "'sys.version_info' member": 1, "'callable' member": 4}}
+{
+  "2.0": {
+    "'callable' member": 4,
+    "print(expr)": 1,
+    "'ConfigParser' module": 1,
+    "'sys.version_info' member": 1
+  },
+  "2.1": {
+    "'__future__' module": 6
+  },
+  "2.2": {
+    "'super' member": 10,
+    "'__future__.division' member": 5,
+    "'os.path.realpath' member": 3,
+    "'os.stat.st_size' member": 2,
+    "'os.stat.st_ctime' member": 2,
+    "'type' member": 2,
+    "'str.zfill' member": 1
+  },
+  "2.3": {
+    "'sum' member": 5,
+    "'logging' module": 2,
+    "'tempfile.mkstemp' member": 2,
+    "'bz2' module": 1,
+    "'ConfigParser.SafeConfigParser' member": 1
+  },
+  "2.4": {
+    "'sorted' member": 22,
+    "function decorators": 15,
+    "'set' member": 11,
+    "'reversed' member": 4,
+    "'str.rsplit' member": 1,
+    "'collections' module": 1,
+    "'subprocess' module": 1,
+    "'sorted(key)'": 1
+  },
+  "2.5": {
+    "`with`": 33,
+    "'all' member": 9,
+    "'__future__.absolute_import' member": 5,
+    "'uuid' module": 3,
+    "'hashlib' module": 2
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 11,
+    "'__future__.print_function' member": 6,
+    "'io' module": 3,
+    "'json' module": 2,
+    "'str.format' member": 2,
+    "'os.path.relpath' member": 1
+  },
+  "2.7": {
+    "set literals": 8,
+    "`\"..{}..\".format(..)`": 2,
+    "set comprehensions": 2,
+    "dict comprehensions": 2,
+    "'importlib' module": 1
+  },
+  "3.0": {
+    "super() without arguments": 6,
+    "'urllib.parse' module": 3,
+    "'configparser' module": 1
+  },
+  "3.1": {
+    "'importlib' module": 1
+  },
+  "3.2": {
+    "'callable' member": 4,
+    "'os.makedirs(exist_ok)'": 1
+  },
+  "3.3": {
+    "'FileNotFoundError' member": 26,
+    "'PermissionError' member": 6,
+    "'FileExistsError' member": 4,
+    "'lzma' module": 1,
+    "'os.stat(follow_symlinks)'": 1
+  },
+  "3.4": {},
+  "3.5": {},
+  "3.6": {
+    "f-strings": 6
+  },
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

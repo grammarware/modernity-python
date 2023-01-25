@@ -1,1 +1,76 @@
-{"2.0": {"'sys.version_info' member": 22, "print(expr)": 1, "'callable' member": 1, "'copy_reg' module": 1}, "2.2": {"'dict' member": 96, "'super' member": 46, "'type' member": 15, "'bool' member": 3, "'staticmethod' member": 4, "'object' member": 4, "'StopIteration' member": 4, "'iter' member": 14, "'property' member": 4, "'ReferenceError' member": 6}, "2.4": {"'subprocess' module": 1, "function decorators": 5, "'collections' module": 4, "'sorted' member": 4, "'frozenset' member": 5, "'set' member": 1}, "2.5": {"`with`": 1, "'subprocess.check_call' member": 2, "'uuid' module": 2, "'hashlib' module": 1, "'functools' module": 1, "'datetime.datetime.strptime' member": 14}, "2.3": {"'os.walk' member": 2, "'enumerate' member": 19, "'UnicodeDecodeError' member": 5, "'datetime' module": 1}, "2.7": {"'collections.OrderedDict' member": 2, "`\"..{}..\".format(..)`": 2}, "3.1": {"'collections.OrderedDict' member": 2}, "2.6": {"byte string (b'..') or `str` synonym": 22, "'json' module": 1, "'operator.methodcaller' member": 1, "'math.isinf' member": 2, "'math.isnan' member": 2, "'str.format' member": 57, "'next' member": 4, "'io' module": 2}, "2.1": {"'warnings' module": 1, "'weakref' module": 1}, "3.2": {"'callable' member": 1}}
+{
+  "2.0": {
+    "'sys.version_info' member": 22,
+    "print(expr)": 1,
+    "'callable' member": 1,
+    "'copy_reg' module": 1
+  },
+  "2.1": {
+    "'warnings' module": 1,
+    "'weakref' module": 1
+  },
+  "2.2": {
+    "'dict' member": 96,
+    "'super' member": 46,
+    "'type' member": 15,
+    "'iter' member": 14,
+    "'ReferenceError' member": 6,
+    "'staticmethod' member": 4,
+    "'object' member": 4,
+    "'StopIteration' member": 4,
+    "'property' member": 4,
+    "'bool' member": 3
+  },
+  "2.3": {
+    "'enumerate' member": 19,
+    "'UnicodeDecodeError' member": 5,
+    "'os.walk' member": 2,
+    "'datetime' module": 1
+  },
+  "2.4": {
+    "function decorators": 5,
+    "'frozenset' member": 5,
+    "'collections' module": 4,
+    "'sorted' member": 4,
+    "'subprocess' module": 1,
+    "'set' member": 1
+  },
+  "2.5": {
+    "'datetime.datetime.strptime' member": 14,
+    "'subprocess.check_call' member": 2,
+    "'uuid' module": 2,
+    "`with`": 1,
+    "'hashlib' module": 1,
+    "'functools' module": 1
+  },
+  "2.6": {
+    "'str.format' member": 57,
+    "byte string (b'..') or `str` synonym": 22,
+    "'next' member": 4,
+    "'math.isinf' member": 2,
+    "'math.isnan' member": 2,
+    "'io' module": 2,
+    "'json' module": 1,
+    "'operator.methodcaller' member": 1
+  },
+  "2.7": {
+    "'collections.OrderedDict' member": 2,
+    "`\"..{}..\".format(..)`": 2
+  },
+  "3.0": {},
+  "3.1": {
+    "'collections.OrderedDict' member": 2
+  },
+  "3.2": {
+    "'callable' member": 1
+  },
+  "3.3": {},
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

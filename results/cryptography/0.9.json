@@ -1,1 +1,84 @@
-{"2.1": {"'__future__' module": 155, "'warnings' module": 3, "'inspect' module": 1}, "2.2": {"'__future__.division' member": 153, "'dict' member": 5, "'object' member": 80, "'super' member": 12, "'property' member": 1, "'type' member": 40, "'iter' member": 14, "'hmac' module": 1}, "2.6": {"'__future__.print_function' member": 155, "'str.format' member": 176, "'abc' module": 17, "class decorators": 295, "'platform.python_implementation' member": 1, "'warnings.catch_warnings' member": 2, "'json' module": 1, "byte string (b'..') or `str` synonym": 1108, "'collections.namedtuple' member": 5, "'bin' member": 1, "'itertools.product' member": 25, "'fractions' module": 1}, "2.5": {"'__future__.absolute_import' member": 155, "`with`": 905, "'subprocess.check_call' member": 4, "'all' member": 24, "'contextlib' module": 2, "'collections.defaultdict' member": 4, "'any' member": 20, "'hashlib' module": 1, "'datetime.datetime.strptime' member": 2}, "2.4": {"function decorators": 299, "'subprocess' module": 2, "'collections' module": 4, "'os.urandom' member": 11, "'frozenset' member": 52, "'sorted' member": 4, "'set' member": 2}, "2.3": {"'platform' module": 1, "'datetime' module": 2, "'textwrap' module": 3, "'itertools' module": 6}, "2.0": {"'sys.version_info' member": 4, "print(expr)": 1}, "2.7": {"`\"..{}..\".format(..)`": 7, "'hmac.compare_digest' member": 1}, "3.4": {"'enum' module": 3}, "3.3": {"'ipaddress' module": 3, "'hmac.compare_digest' member": 1}, "3.2": {"'int.from_bytes' member": 3}}
+{
+  "2.0": {
+    "'sys.version_info' member": 4,
+    "print(expr)": 1
+  },
+  "2.1": {
+    "'__future__' module": 155,
+    "'warnings' module": 3,
+    "'inspect' module": 1
+  },
+  "2.2": {
+    "'__future__.division' member": 153,
+    "'object' member": 80,
+    "'type' member": 40,
+    "'iter' member": 14,
+    "'super' member": 12,
+    "'dict' member": 5,
+    "'property' member": 1,
+    "'hmac' module": 1
+  },
+  "2.3": {
+    "'itertools' module": 6,
+    "'textwrap' module": 3,
+    "'datetime' module": 2,
+    "'platform' module": 1
+  },
+  "2.4": {
+    "function decorators": 299,
+    "'frozenset' member": 52,
+    "'os.urandom' member": 11,
+    "'collections' module": 4,
+    "'sorted' member": 4,
+    "'subprocess' module": 2,
+    "'set' member": 2
+  },
+  "2.5": {
+    "`with`": 905,
+    "'__future__.absolute_import' member": 155,
+    "'all' member": 24,
+    "'any' member": 20,
+    "'subprocess.check_call' member": 4,
+    "'collections.defaultdict' member": 4,
+    "'contextlib' module": 2,
+    "'datetime.datetime.strptime' member": 2,
+    "'hashlib' module": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 1108,
+    "class decorators": 295,
+    "'str.format' member": 176,
+    "'__future__.print_function' member": 155,
+    "'itertools.product' member": 25,
+    "'abc' module": 17,
+    "'collections.namedtuple' member": 5,
+    "'warnings.catch_warnings' member": 2,
+    "'platform.python_implementation' member": 1,
+    "'json' module": 1,
+    "'bin' member": 1,
+    "'fractions' module": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 7,
+    "'hmac.compare_digest' member": 1
+  },
+  "3.0": {},
+  "3.1": {},
+  "3.2": {
+    "'int.from_bytes' member": 3
+  },
+  "3.3": {
+    "'ipaddress' module": 3,
+    "'hmac.compare_digest' member": 1
+  },
+  "3.4": {
+    "'enum' module": 3
+  },
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

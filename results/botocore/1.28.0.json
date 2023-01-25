@@ -1,1 +1,175 @@
-{"2.3": {"'logging' module": 41, "'datetime' module": 30, "'itertools' module": 6, "'shlex.split' member": 3, "'enumerate' member": 29, "'UnicodeDecodeError' member": 7, "'sys.getfilesystemencoding' member": 1, "'sum' member": 2, "'UnicodeEncodeError' member": 5, "'dict.pop' member": 2, "'platform' module": 2, "'tempfile.mkdtemp' member": 23, "'os.walk' member": 3, "'tarfile' module": 1}, "2.2": {"'dict' member": 142, "'super' member": 406, "'type' member": 51, "'hmac' module": 1, "'iter' member": 21, "'StopIteration' member": 18, "'object' member": 51, "'bool' member": 1, "'help' member": 6, "'os.stat.st_mode' member": 2, "'str.decode' member": 2, "'time.struct_time' member": 2}, "2.5": {"'functools' module": 8, "'hashlib' module": 5, "'xml.etree.ElementTree' module": 2, "'operator.itemgetter' member": 2, "'datetime.datetime.strptime' member": 6, "'uuid' module": 6, "'any' member": 21, "'all' member": 24, "`with`": 1460, "'collections.defaultdict' member": 3, "'contextlib' module": 8, "'__future__.absolute_import' member": 2, "'struct.Struct' member": 1}, "3.3": {"'collections.abc' module": 3, "raise ... from None": 2, "'ConnectionError' member": 26, "`yield from`": 10, "'FileNotFoundError' member": 4, "'unittest.mock' module": 1, "'inspect.signature' member": 1, "'inspect.Parameter' member": 1}, "3.0": {"super() without arguments": 396, "'urllib.parse' module": 1, "exception cause": 4, "'open(encoding)'": 1}, "2.6": {"byte string (b'..') or `str` synonym": 1096, "'io' module": 14, "'json' module": 26, "'str.format' member": 98, "'string.Formatter' member": 1, "bytes `%` formatting or `str` synonym": 4, "'ssl' module": 2, "'collections.namedtuple' member": 4, "'warnings.catch_warnings' member": 4, "'sys.flags' member": 1, "'next' member": 17, "'logging.StreamHandler' member": 2, "class decorators": 5, "'numbers' module": 1, "'operator.methodcaller' member": 6, "'ast' module": 1, "'threading.Thread.daemon' member": 3, "'threading.Thread.is_alive' member": 2, "'bytearray' member": 6, "'itertools.product' member": 1, "'threading.current_thread' member": 2, "'threading.Thread.name' member": 2, "'os.path.relpath' member": 1}, "2.4": {"function decorators": 375, "'collections' module": 9, "'email.utils.formatdate' member": 2, "'frozenset' member": 1, "'set' member": 33, "'sorted' member": 71, "'subprocess' module": 3, "'collections.deque' member": 2, "'reversed' member": 2, "'itertools.tee' member": 1, "'decimal' module": 2, "'os.urandom' member": 7, "'operator.attrgetter' member": 6, "'pprint.pformat(width)'": 1}, "2.1": {"'inspect' module": 2, "'warnings' module": 8, "'weakref' module": 3, "'unittest' module": 3, "'__future__' module": 2, "'difflib' module": 1}, "2.7": {"'collections.OrderedDict' member": 1, "dict comprehensions": 30, "`\"..{}..\".format(..)`": 81, "set comprehensions": 2, "'ssl.OPENSSL_VERSION_INFO' member": 1, "'ssl.OPENSSL_VERSION' member": 1, "'unittest.skip' member": 7, "'unittest.skipIf' member": 2, "set literals": 8, "'importlib' module": 1, "'unittest.SkipTest' member": 4, "'argparse' module": 1}, "3.1": {"'collections.OrderedDict' member": 1, "'base64.encodebytes' member": 1, "'unittest.skip' member": 7, "'unittest.skipIf' member": 2, "'importlib' module": 1, "'unittest.SkipTest' member": 4}, "3.6": {"f-strings": 334, "variable annotations": 12, "'ssl.OP_NO_TICKET' member": 1, "'ssl.PROTOCOL_TLS_CLIENT' member": 1}, "3.4": {"'enum' module": 3, "'pathlib' module": 3, "'importlib.util.spec_from_loader' member": 1, "'importlib.reload' member": 1}, "3.2": {"'functools.lru_cache' member": 2, "'ssl.OPENSSL_VERSION_INFO' member": 1, "'ssl.OPENSSL_VERSION' member": 1, "'callable' member": 4, "'contextlib.ContextDecorator' member": 1, "'argparse' module": 1}, "3.5": {"'typing' module": 3, "'typing.NamedTuple' member": 3, "generalized unpacking": 11, "bytes `%` formatting or `str` synonym": 4}, "2.0": {"'callable' member": 4, "'sys.version_info' member": 12, "'unicode' member": 3, "print(expr)": 3}, "3.10": {"union types as `a = X; a |= Y`": 3}, "3.7": {"'types.resolve_bases' member": 2}}
+{
+  "2.0": {
+    "'sys.version_info' member": 12,
+    "'callable' member": 4,
+    "'unicode' member": 3,
+    "print(expr)": 3
+  },
+  "2.1": {
+    "'warnings' module": 8,
+    "'weakref' module": 3,
+    "'unittest' module": 3,
+    "'inspect' module": 2,
+    "'__future__' module": 2,
+    "'difflib' module": 1
+  },
+  "2.2": {
+    "'super' member": 406,
+    "'dict' member": 142,
+    "'type' member": 51,
+    "'object' member": 51,
+    "'iter' member": 21,
+    "'StopIteration' member": 18,
+    "'help' member": 6,
+    "'os.stat.st_mode' member": 2,
+    "'str.decode' member": 2,
+    "'time.struct_time' member": 2,
+    "'hmac' module": 1,
+    "'bool' member": 1
+  },
+  "2.3": {
+    "'logging' module": 41,
+    "'datetime' module": 30,
+    "'enumerate' member": 29,
+    "'tempfile.mkdtemp' member": 23,
+    "'UnicodeDecodeError' member": 7,
+    "'itertools' module": 6,
+    "'UnicodeEncodeError' member": 5,
+    "'shlex.split' member": 3,
+    "'os.walk' member": 3,
+    "'sum' member": 2,
+    "'dict.pop' member": 2,
+    "'platform' module": 2,
+    "'sys.getfilesystemencoding' member": 1,
+    "'tarfile' module": 1
+  },
+  "2.4": {
+    "function decorators": 375,
+    "'sorted' member": 71,
+    "'set' member": 33,
+    "'collections' module": 9,
+    "'os.urandom' member": 7,
+    "'operator.attrgetter' member": 6,
+    "'subprocess' module": 3,
+    "'email.utils.formatdate' member": 2,
+    "'collections.deque' member": 2,
+    "'reversed' member": 2,
+    "'decimal' module": 2,
+    "'frozenset' member": 1,
+    "'itertools.tee' member": 1,
+    "'pprint.pformat(width)'": 1
+  },
+  "2.5": {
+    "`with`": 1460,
+    "'all' member": 24,
+    "'any' member": 21,
+    "'functools' module": 8,
+    "'contextlib' module": 8,
+    "'datetime.datetime.strptime' member": 6,
+    "'uuid' module": 6,
+    "'hashlib' module": 5,
+    "'collections.defaultdict' member": 3,
+    "'xml.etree.ElementTree' module": 2,
+    "'operator.itemgetter' member": 2,
+    "'__future__.absolute_import' member": 2,
+    "'struct.Struct' member": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 1096,
+    "'str.format' member": 98,
+    "'json' module": 26,
+    "'next' member": 17,
+    "'io' module": 14,
+    "'operator.methodcaller' member": 6,
+    "'bytearray' member": 6,
+    "class decorators": 5,
+    "bytes `%` formatting or `str` synonym": 4,
+    "'collections.namedtuple' member": 4,
+    "'warnings.catch_warnings' member": 4,
+    "'threading.Thread.daemon' member": 3,
+    "'ssl' module": 2,
+    "'logging.StreamHandler' member": 2,
+    "'threading.Thread.is_alive' member": 2,
+    "'threading.current_thread' member": 2,
+    "'threading.Thread.name' member": 2,
+    "'string.Formatter' member": 1,
+    "'sys.flags' member": 1,
+    "'numbers' module": 1,
+    "'ast' module": 1,
+    "'itertools.product' member": 1,
+    "'os.path.relpath' member": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 81,
+    "dict comprehensions": 30,
+    "set literals": 8,
+    "'unittest.skip' member": 7,
+    "'unittest.SkipTest' member": 4,
+    "set comprehensions": 2,
+    "'unittest.skipIf' member": 2,
+    "'collections.OrderedDict' member": 1,
+    "'ssl.OPENSSL_VERSION_INFO' member": 1,
+    "'ssl.OPENSSL_VERSION' member": 1,
+    "'importlib' module": 1,
+    "'argparse' module": 1
+  },
+  "3.0": {
+    "super() without arguments": 396,
+    "exception cause": 4,
+    "'urllib.parse' module": 1,
+    "'open(encoding)'": 1
+  },
+  "3.1": {
+    "'unittest.skip' member": 7,
+    "'unittest.SkipTest' member": 4,
+    "'unittest.skipIf' member": 2,
+    "'collections.OrderedDict' member": 1,
+    "'base64.encodebytes' member": 1,
+    "'importlib' module": 1
+  },
+  "3.2": {
+    "'callable' member": 4,
+    "'functools.lru_cache' member": 2,
+    "'ssl.OPENSSL_VERSION_INFO' member": 1,
+    "'ssl.OPENSSL_VERSION' member": 1,
+    "'contextlib.ContextDecorator' member": 1,
+    "'argparse' module": 1
+  },
+  "3.3": {
+    "'ConnectionError' member": 26,
+    "`yield from`": 10,
+    "'FileNotFoundError' member": 4,
+    "'collections.abc' module": 3,
+    "raise ... from None": 2,
+    "'unittest.mock' module": 1,
+    "'inspect.signature' member": 1,
+    "'inspect.Parameter' member": 1
+  },
+  "3.4": {
+    "'enum' module": 3,
+    "'pathlib' module": 3,
+    "'importlib.util.spec_from_loader' member": 1,
+    "'importlib.reload' member": 1
+  },
+  "3.5": {
+    "generalized unpacking": 11,
+    "bytes `%` formatting or `str` synonym": 4,
+    "'typing' module": 3,
+    "'typing.NamedTuple' member": 3
+  },
+  "3.6": {
+    "f-strings": 334,
+    "variable annotations": 12,
+    "'ssl.OP_NO_TICKET' member": 1,
+    "'ssl.PROTOCOL_TLS_CLIENT' member": 1
+  },
+  "3.7": {
+    "'types.resolve_bases' member": 2
+  },
+  "3.8": {},
+  "3.9": {},
+  "3.10": {
+    "union types as `a = X; a |= Y`": 3
+  },
+  "3.11": {}
+}

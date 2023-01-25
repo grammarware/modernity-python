@@ -1,1 +1,144 @@
-{"2.0": {"print(expr)": 6, "'callable' member": 2, "'sys.version_info' member": 41, "'urllib2' module": 1}, "2.1": {"'__future__' module": 14, "'inspect' module": 2, "'warnings' module": 5, "'unittest' module": 6}, "2.6": {"'__future__.unicode_literals' member": 9, "'io' module": 15, "'str.format' member": 25, "'next' member": 10, "byte string (b'..') or `str` synonym": 36, "'numbers' module": 1, "'collections.namedtuple' member": 3, "'functools.reduce' member": 3, "'os.walk(followlinks)'": 1, "'os.path.relpath' member": 5, "'ssl' module": 1, "'socket.create_connection' member": 2, "'tempfile.NamedTemporaryFile(delete)'": 1, "'itertools.product' member": 3, "'platform.python_implementation' member": 2, "'site.ENABLE_USER_SITE' member": 12, "'site.USER_SITE' member": 17, "class decorators": 4, "'site.USER_BASE' member": 2, "'sys.dont_write_bytecode' member": 2}, "2.5": {"'contextlib' module": 14, "`with`": 435, "'subprocess.check_call' member": 27, "'any' member": 10, "'functools' module": 9, "'__future__.absolute_import' member": 9, "'collections.defaultdict' member": 3, "'str.rpartition' member": 2, "'hashlib' module": 1, "'ctypes' module": 1, "'__import__(level)'": 1}, "2.3": {"'textwrap' module": 9, "'tempfile.mkdtemp' member": 21, "'tarfile' module": 4, "'os.walk' member": 15, "'platform' module": 7, "'itertools' module": 11, "'shlex.split' member": 6, "'socket.getdefaulttimeout' member": 1, "'socket.setdefaulttimeout' member": 3, "'dict.fromkeys' member": 16, "'unicodedata.normalize' member": 5, "'sys.getfilesystemencoding' member": 13, "'UnicodeDecodeError' member": 5, "'UnicodeEncodeError' member": 3, "'datetime' module": 1, "'tempfile.NamedTemporaryFile' member": 2, "'enumerate' member": 9, "'zipimport' module": 2, "'pkgutil' module": 1, "'imp.acquire_lock' member": 2, "'imp.release_lock' member": 4, "'tempfile.mkstemp' member": 1, "'logging' module": 1, "'sum' member": 2, "'shutil.move' member": 6}, "2.4": {"'subprocess' module": 9, "function decorators": 237, "'set' member": 59, "'os.path.lexists' member": 2, "'collections' module": 4, "'sorted' member": 23, "'frozenset' member": 11, "'os.devnull' member": 3, "'string.Template' member": 1, "'sorted(key)'": 1, "'sorted(reverse)'": 1, "'operator.attrgetter' member": 2, "'logging.basicConfig(level)'": 1, "'logging.basicConfig(stream)'": 1}, "2.2": {"'dict' member": 66, "'fnmatch.filter' member": 3, "'bool' member": 20, "'iter' member": 3, "'os.path.realpath' member": 19, "'super' member": 36, "'os.stat.st_mtime' member": 8, "'type' member": 4, "'os.stat.st_mode' member": 4, "'os.stat.st_size' member": 2, "'object' member": 2, "'email' module": 1}, "3.2": {"'callable' member": 2, "'sysconfig' module": 3, "'tempfile.TemporaryDirectory' member": 1, "'configparser.ConfigParser(interpolation)'": 1, "'ssl.match_hostname' member": 1, "'imp.get_tag' member": 2, "'site.getsitepackages' member": 1}, "3.0": {"'open(encoding)'": 1, "'urllib.parse' module": 2, "'configparser' module": 1, "super() without arguments": 2}, "2.7": {"'importlib' module": 1, "'sysconfig' module": 3, "'ssl.match_hostname' member": 1, "'zipimport.zipimporter' member": 8, "'site.getsitepackages' member": 1}, "3.1": {"'importlib' module": 1}, "3.3": {"'sys.base_prefix' member": 4, "'unittest.mock' module": 4, "'importlib.machinery.FileFinder' member": 2}}
+{
+  "2.0": {
+    "'sys.version_info' member": 41,
+    "print(expr)": 6,
+    "'callable' member": 2,
+    "'urllib2' module": 1
+  },
+  "2.1": {
+    "'__future__' module": 14,
+    "'unittest' module": 6,
+    "'warnings' module": 5,
+    "'inspect' module": 2
+  },
+  "2.2": {
+    "'dict' member": 66,
+    "'super' member": 36,
+    "'bool' member": 20,
+    "'os.path.realpath' member": 19,
+    "'os.stat.st_mtime' member": 8,
+    "'type' member": 4,
+    "'os.stat.st_mode' member": 4,
+    "'fnmatch.filter' member": 3,
+    "'iter' member": 3,
+    "'os.stat.st_size' member": 2,
+    "'object' member": 2,
+    "'email' module": 1
+  },
+  "2.3": {
+    "'tempfile.mkdtemp' member": 21,
+    "'dict.fromkeys' member": 16,
+    "'os.walk' member": 15,
+    "'sys.getfilesystemencoding' member": 13,
+    "'itertools' module": 11,
+    "'textwrap' module": 9,
+    "'enumerate' member": 9,
+    "'platform' module": 7,
+    "'shlex.split' member": 6,
+    "'shutil.move' member": 6,
+    "'unicodedata.normalize' member": 5,
+    "'UnicodeDecodeError' member": 5,
+    "'tarfile' module": 4,
+    "'imp.release_lock' member": 4,
+    "'socket.setdefaulttimeout' member": 3,
+    "'UnicodeEncodeError' member": 3,
+    "'tempfile.NamedTemporaryFile' member": 2,
+    "'zipimport' module": 2,
+    "'imp.acquire_lock' member": 2,
+    "'sum' member": 2,
+    "'socket.getdefaulttimeout' member": 1,
+    "'datetime' module": 1,
+    "'pkgutil' module": 1,
+    "'tempfile.mkstemp' member": 1,
+    "'logging' module": 1
+  },
+  "2.4": {
+    "function decorators": 237,
+    "'set' member": 59,
+    "'sorted' member": 23,
+    "'frozenset' member": 11,
+    "'subprocess' module": 9,
+    "'collections' module": 4,
+    "'os.devnull' member": 3,
+    "'os.path.lexists' member": 2,
+    "'operator.attrgetter' member": 2,
+    "'string.Template' member": 1,
+    "'sorted(key)'": 1,
+    "'sorted(reverse)'": 1,
+    "'logging.basicConfig(level)'": 1,
+    "'logging.basicConfig(stream)'": 1
+  },
+  "2.5": {
+    "`with`": 435,
+    "'subprocess.check_call' member": 27,
+    "'contextlib' module": 14,
+    "'any' member": 10,
+    "'functools' module": 9,
+    "'__future__.absolute_import' member": 9,
+    "'collections.defaultdict' member": 3,
+    "'str.rpartition' member": 2,
+    "'hashlib' module": 1,
+    "'ctypes' module": 1,
+    "'__import__(level)'": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 36,
+    "'str.format' member": 25,
+    "'site.USER_SITE' member": 17,
+    "'io' module": 15,
+    "'site.ENABLE_USER_SITE' member": 12,
+    "'next' member": 10,
+    "'__future__.unicode_literals' member": 9,
+    "'os.path.relpath' member": 5,
+    "class decorators": 4,
+    "'collections.namedtuple' member": 3,
+    "'functools.reduce' member": 3,
+    "'itertools.product' member": 3,
+    "'socket.create_connection' member": 2,
+    "'platform.python_implementation' member": 2,
+    "'site.USER_BASE' member": 2,
+    "'sys.dont_write_bytecode' member": 2,
+    "'numbers' module": 1,
+    "'os.walk(followlinks)'": 1,
+    "'ssl' module": 1,
+    "'tempfile.NamedTemporaryFile(delete)'": 1
+  },
+  "2.7": {
+    "'zipimport.zipimporter' member": 8,
+    "'sysconfig' module": 3,
+    "'importlib' module": 1,
+    "'ssl.match_hostname' member": 1,
+    "'site.getsitepackages' member": 1
+  },
+  "3.0": {
+    "'urllib.parse' module": 2,
+    "super() without arguments": 2,
+    "'open(encoding)'": 1,
+    "'configparser' module": 1
+  },
+  "3.1": {
+    "'importlib' module": 1
+  },
+  "3.2": {
+    "'sysconfig' module": 3,
+    "'callable' member": 2,
+    "'imp.get_tag' member": 2,
+    "'tempfile.TemporaryDirectory' member": 1,
+    "'configparser.ConfigParser(interpolation)'": 1,
+    "'ssl.match_hostname' member": 1,
+    "'site.getsitepackages' member": 1
+  },
+  "3.3": {
+    "'sys.base_prefix' member": 4,
+    "'unittest.mock' module": 4,
+    "'importlib.machinery.FileFinder' member": 2
+  },
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

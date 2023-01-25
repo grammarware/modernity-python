@@ -1,1 +1,147 @@
-{"2.6": {"'io' module": 5, "'str.format' member": 389, "byte string (b'..') or `str` synonym": 100, "'next' member": 71, "'json' module": 5, "'warnings.catch_warnings' member": 78, "'bytearray' member": 3, "'math.isnan' member": 3, "'math.isinf' member": 3, "bytes `%` formatting or `str` synonym": 2, "'property.setter' member": 2, "class decorators": 2, "'numbers' module": 1, "'collections.namedtuple' member": 3, "'__future__.print_function' member": 2, "'ast' module": 1, "'enumerate(start)'": 2}, "2.5": {"`with`": 1041, "'uuid' module": 4, "'any' member": 3, "'contextlib' module": 2, "'all' member": 9, "'operator.itemgetter' member": 14, "'functools' module": 6, "'__future__.absolute_import' member": 4, "'os.SEEK_SET' member": 2, "'datetime.datetime.strptime' member": 5}, "2.3": {"'pkgutil' module": 2, "'datetime' module": 31, "'csv' module": 1, "'dict.pop' member": 4, "'logging' module": 4, "'itertools' module": 4, "'tempfile.mkstemp' member": 2, "'enumerate' member": 40, "'sum' member": 2, "'textwrap' module": 1}, "2.0": {"print(expr)": 2, "'callable' member": 1}, "2.7": {"`\"..{}..\".format(..)`": 344, "set literals": 73, "dict comprehensions": 15, "'collections.OrderedDict' member": 28, "'collections.Counter' member": 2, "multiple context expressions in a `with` statement": 103, "'memoryview' member": 1, "'importlib' module": 1, "'unittest.skipIf' member": 144, "'weakref.WeakSet' member": 2}, "2.4": {"'decimal' module": 14, "function decorators": 1045, "'sorted(key)'": 8, "'sorted' member": 85, "'collections' module": 11, "'frozenset' member": 14, "'set' member": 24, "'operator.attrgetter' member": 3, "'reversed' member": 1}, "3.6": {"f-strings": 158, "variable annotations": 70, "'enum.auto' member": 47, "'os.PathLike' member": 2}, "3.4": {"'pathlib' module": 2, "'importlib.reload' member": 3, "'enum' module": 3}, "3.5": {"'typing' module": 23, "bytes `%` formatting or `str` synonym": 2, "generalized unpacking": 2, "'typing.NamedTuple' member": 4}, "3.0": {"annotations": 386, "exception cause": 8, "'urllib.parse' module": 1, "'queue' module": 2, "`nonlocal`": 4, "keyword-only parameters": 6, "super() without arguments": 2, "'http' module": 3}, "3.3": {"'threading.Thread(daemon)'": 1, "'ConnectionError' member": 2, "'inspect.signature' member": 4, "'unittest.mock' module": 3, "'collections.abc' module": 4, "'TimeoutError' member": 6, "`yield from`": 2}, "2.2": {"'dict' member": 134, "'bool' member": 6, "'gc.get_objects' member": 2, "'ReferenceError' member": 2, "'object' member": 392, "'iter' member": 41, "'types.GeneratorType' member": 10, "'type' member": 53, "'__future__.division' member": 1, "'super' member": 48, "'StopIteration' member": 6, "'str.decode' member": 4, "'property' member": 8}, "3.2": {"'concurrent.futures' module": 9, "'datetime.timezone' member": 7, "'callable' member": 1}, "2.1": {"'warnings' module": 13, "'unittest' module": 20, "'inspect' module": 1, "'__future__' module": 6, "'weakref' module": 1}, "3.1": {"'collections.OrderedDict' member": 28, "'collections.Counter' member": 2, "multiple context expressions in a `with` statement": 103, "'importlib' module": 1, "'unittest.skipIf' member": 144}}
+{
+  "2.0": {
+    "print(expr)": 2,
+    "'callable' member": 1
+  },
+  "2.1": {
+    "'unittest' module": 20,
+    "'warnings' module": 13,
+    "'__future__' module": 6,
+    "'inspect' module": 1,
+    "'weakref' module": 1
+  },
+  "2.2": {
+    "'object' member": 392,
+    "'dict' member": 134,
+    "'type' member": 53,
+    "'super' member": 48,
+    "'iter' member": 41,
+    "'types.GeneratorType' member": 10,
+    "'property' member": 8,
+    "'bool' member": 6,
+    "'StopIteration' member": 6,
+    "'str.decode' member": 4,
+    "'gc.get_objects' member": 2,
+    "'ReferenceError' member": 2,
+    "'__future__.division' member": 1
+  },
+  "2.3": {
+    "'enumerate' member": 40,
+    "'datetime' module": 31,
+    "'dict.pop' member": 4,
+    "'logging' module": 4,
+    "'itertools' module": 4,
+    "'pkgutil' module": 2,
+    "'tempfile.mkstemp' member": 2,
+    "'sum' member": 2,
+    "'csv' module": 1,
+    "'textwrap' module": 1
+  },
+  "2.4": {
+    "function decorators": 1045,
+    "'sorted' member": 85,
+    "'set' member": 24,
+    "'decimal' module": 14,
+    "'frozenset' member": 14,
+    "'collections' module": 11,
+    "'sorted(key)'": 8,
+    "'operator.attrgetter' member": 3,
+    "'reversed' member": 1
+  },
+  "2.5": {
+    "`with`": 1041,
+    "'operator.itemgetter' member": 14,
+    "'all' member": 9,
+    "'functools' module": 6,
+    "'datetime.datetime.strptime' member": 5,
+    "'uuid' module": 4,
+    "'__future__.absolute_import' member": 4,
+    "'any' member": 3,
+    "'contextlib' module": 2,
+    "'os.SEEK_SET' member": 2
+  },
+  "2.6": {
+    "'str.format' member": 389,
+    "byte string (b'..') or `str` synonym": 100,
+    "'warnings.catch_warnings' member": 78,
+    "'next' member": 71,
+    "'io' module": 5,
+    "'json' module": 5,
+    "'bytearray' member": 3,
+    "'math.isnan' member": 3,
+    "'math.isinf' member": 3,
+    "'collections.namedtuple' member": 3,
+    "bytes `%` formatting or `str` synonym": 2,
+    "'property.setter' member": 2,
+    "class decorators": 2,
+    "'__future__.print_function' member": 2,
+    "'enumerate(start)'": 2,
+    "'numbers' module": 1,
+    "'ast' module": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 344,
+    "'unittest.skipIf' member": 144,
+    "multiple context expressions in a `with` statement": 103,
+    "set literals": 73,
+    "'collections.OrderedDict' member": 28,
+    "dict comprehensions": 15,
+    "'collections.Counter' member": 2,
+    "'weakref.WeakSet' member": 2,
+    "'memoryview' member": 1,
+    "'importlib' module": 1
+  },
+  "3.0": {
+    "annotations": 386,
+    "exception cause": 8,
+    "keyword-only parameters": 6,
+    "`nonlocal`": 4,
+    "'http' module": 3,
+    "'queue' module": 2,
+    "super() without arguments": 2,
+    "'urllib.parse' module": 1
+  },
+  "3.1": {
+    "'unittest.skipIf' member": 144,
+    "multiple context expressions in a `with` statement": 103,
+    "'collections.OrderedDict' member": 28,
+    "'collections.Counter' member": 2,
+    "'importlib' module": 1
+  },
+  "3.2": {
+    "'concurrent.futures' module": 9,
+    "'datetime.timezone' member": 7,
+    "'callable' member": 1
+  },
+  "3.3": {
+    "'TimeoutError' member": 6,
+    "'inspect.signature' member": 4,
+    "'collections.abc' module": 4,
+    "'unittest.mock' module": 3,
+    "'ConnectionError' member": 2,
+    "`yield from`": 2,
+    "'threading.Thread(daemon)'": 1
+  },
+  "3.4": {
+    "'importlib.reload' member": 3,
+    "'enum' module": 3,
+    "'pathlib' module": 2
+  },
+  "3.5": {
+    "'typing' module": 23,
+    "'typing.NamedTuple' member": 4,
+    "bytes `%` formatting or `str` synonym": 2,
+    "generalized unpacking": 2
+  },
+  "3.6": {
+    "f-strings": 158,
+    "variable annotations": 70,
+    "'enum.auto' member": 47,
+    "'os.PathLike' member": 2
+  },
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

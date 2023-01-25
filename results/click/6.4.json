@@ -1,1 +1,91 @@
-{"2.6": {"'ast' module": 1, "'inspect.cleandoc' member": 2, "'next' member": 4, "'io' module": 6, "byte string (b'..') or `str` synonym": 28, "'__future__.unicode_literals' member": 1, "'json' module": 1, "'str.format' member": 1, "'bytearray' member": 1}, "2.5": {"`with`": 76, "'functools' module": 3, "'contextlib' module": 5, "'uuid' module": 2, "'ctypes' module": 1, "'all' member": 4}, "2.1": {"'inspect' module": 1, "'__future__' module": 1, "'warnings' module": 2, "'weakref' module": 1}, "2.4": {"'threading.local' member": 1, "'sorted' member": 13, "function decorators": 260, "'collections' module": 1, "'collections.deque' member": 1, "'reversed' member": 1, "'set' member": 10, "'subprocess' module": 4, "'sorted(key)'": 1}, "2.3": {"'enumerate' member": 7, "'tempfile.mkdtemp' member": 3, "'sum' member": 5, "'textwrap' module": 1, "'locale.getpreferredencoding' member": 2, "'sys.getfilesystemencoding' member": 1, "'tempfile.mkstemp' member": 4, "'datetime' module": 1, "'itertools' module": 1, "'dict.pop' member": 2, "'optparse' module": 1, "'ConfigParser.RawConfigParser' member": 2}, "2.2": {"'iter' member": 15, "'dict' member": 29, "'re.finditer' member": 1, "'type' member": 8, "'str.decode' member": 2, "'bool' member": 8, "'os.path.realpath' member": 2, "'os.stat.st_mode' member": 4, "'StopIteration' member": 6, "'dict.iteritems' member": 2, "'object' member": 1}, "2.0": {"'sys.version_info' member": 7, "'callable' member": 4, "print(expr)": 1, "'ConfigParser' module": 1}, "3.3": {"'os.replace' member": 1}, "2.7": {"'ctypes.c_ssize_t' member": 1}, "3.2": {"'ctypes.c_ssize_t' member": 1, "'callable' member": 4}}
+{
+  "2.0": {
+    "'sys.version_info' member": 7,
+    "'callable' member": 4,
+    "print(expr)": 1,
+    "'ConfigParser' module": 1
+  },
+  "2.1": {
+    "'warnings' module": 2,
+    "'inspect' module": 1,
+    "'__future__' module": 1,
+    "'weakref' module": 1
+  },
+  "2.2": {
+    "'dict' member": 29,
+    "'iter' member": 15,
+    "'type' member": 8,
+    "'bool' member": 8,
+    "'StopIteration' member": 6,
+    "'os.stat.st_mode' member": 4,
+    "'str.decode' member": 2,
+    "'os.path.realpath' member": 2,
+    "'dict.iteritems' member": 2,
+    "'re.finditer' member": 1,
+    "'object' member": 1
+  },
+  "2.3": {
+    "'enumerate' member": 7,
+    "'sum' member": 5,
+    "'tempfile.mkstemp' member": 4,
+    "'tempfile.mkdtemp' member": 3,
+    "'locale.getpreferredencoding' member": 2,
+    "'dict.pop' member": 2,
+    "'ConfigParser.RawConfigParser' member": 2,
+    "'textwrap' module": 1,
+    "'sys.getfilesystemencoding' member": 1,
+    "'datetime' module": 1,
+    "'itertools' module": 1,
+    "'optparse' module": 1
+  },
+  "2.4": {
+    "function decorators": 260,
+    "'sorted' member": 13,
+    "'set' member": 10,
+    "'subprocess' module": 4,
+    "'threading.local' member": 1,
+    "'collections' module": 1,
+    "'collections.deque' member": 1,
+    "'reversed' member": 1,
+    "'sorted(key)'": 1
+  },
+  "2.5": {
+    "`with`": 76,
+    "'contextlib' module": 5,
+    "'all' member": 4,
+    "'functools' module": 3,
+    "'uuid' module": 2,
+    "'ctypes' module": 1
+  },
+  "2.6": {
+    "byte string (b'..') or `str` synonym": 28,
+    "'io' module": 6,
+    "'next' member": 4,
+    "'inspect.cleandoc' member": 2,
+    "'ast' module": 1,
+    "'__future__.unicode_literals' member": 1,
+    "'json' module": 1,
+    "'str.format' member": 1,
+    "'bytearray' member": 1
+  },
+  "2.7": {
+    "'ctypes.c_ssize_t' member": 1
+  },
+  "3.0": {},
+  "3.1": {},
+  "3.2": {
+    "'callable' member": 4,
+    "'ctypes.c_ssize_t' member": 1
+  },
+  "3.3": {
+    "'os.replace' member": 1
+  },
+  "3.4": {},
+  "3.5": {},
+  "3.6": {},
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}

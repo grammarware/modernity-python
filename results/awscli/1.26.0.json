@@ -1,1 +1,131 @@
-{"2.2": {"'dict' member": 18, "'super' member": 214, "'bool' member": 1, "'object' member": 4, "'iter' member": 5, "'StopIteration' member": 7, "'type' member": 31, "'urlparse.urlsplit' member": 4, "'hmac' module": 1, "'os.stat.st_mode' member": 1, "'__future__.division' member": 1, "'os.stat.st_mtime' member": 1, "'os.stat.st_size' member": 1}, "2.7": {"'argparse' module": 2, "'unittest.TestCase.assertItemsEqual' member": 1, "'unittest.skipIf' member": 1, "`\"..{}..\".format(..)`": 17}, "3.2": {"'argparse' module": 2, "'unittest.TestCase.assertCountEqual' member": 1}, "2.1": {"'difflib' module": 1, "'unittest' module": 1, "'warnings' module": 1, "'__future__' module": 1}, "2.4": {"function decorators": 169, "'sorted' member": 22, "'subprocess' module": 10, "'set' member": 28, "'collections' module": 5, "'unicodedata.east_asian_width' member": 1, "'reversed' member": 2, "'os.urandom' member": 1, "'decimal' module": 1, "'threading.local' member": 2, "'collections.deque' member": 1}, "2.3": {"'logging' module": 63, "'shlex.split' member": 7, "'platform' module": 6, "'locale.getpreferredencoding' member": 3, "'enumerate' member": 30, "'UnicodeDecodeError' member": 8, "'sum' member": 9, "'csv' module": 1, "'datetime' module": 14, "'tempfile.mkdtemp' member": 4, "'textwrap' module": 3, "'UnicodeEncodeError' member": 1, "'tempfile.NamedTemporaryFile' member": 6, "'dict.pop' member": 6, "'os.walk' member": 5, "'tempfile.gettempdir' member": 2, "'socket.timeout' member": 1, "'tempfile.mkstemp' member": 2, "'sys.getfilesystemencoding' member": 4}, "2.5": {"'all' member": 10, "'contextlib' module": 7, "'sqlite3' module": 1, "`with`": 115, "'collections.defaultdict' member": 2, "'any' member": 16, "'urlparse.urlparse.scheme' member": 1, "'functools' module": 4, "'subprocess.check_call' member": 26, "'hashlib' module": 4, "'uuid' module": 2, "'urlparse.urlparse.query' member": 1, "'urlparse.urlparse.netloc' member": 2, "'urlparse.urlparse.path' member": 2, "'urlparse.urlsplit.path' member": 4, "'urlparse.urlsplit.netloc' member": 4, "'ctypes' module": 1, "'os.SEEK_END' member": 4}, "2.0": {"print(expr)": 3, "'urllib2' module": 1}, "3.3": {"'collections.abc' module": 1, "'unittest.mock' module": 1}, "3.0": {"'urllib.parse' module": 1, "'open(encoding)'": 1, "'open(errors)'": 1, "super() without arguments": 2}, "2.6": {"'io' module": 1, "'platform.linux_distribution' member": 1, "'str.format' member": 193, "'json' module": 23, "byte string (b'..') or `str` synonym": 9, "'tempfile.NamedTemporaryFile(delete)'": 2, "'collections.namedtuple' member": 3, "'urlparse.parse_qs' member": 1, "'os.walk(followlinks)'": 1, "'os.path.relpath' member": 3, "strftime directive 'f'": 3, "'next' member": 2}, "3.6": {"f-strings": 11}, "3.1": {"'unittest.skipIf' member": 1, "'base64.encodebytes' member": 1}, "3.5": {"'json.JSONDecodeError' member": 2}}
+{
+  "2.0": {
+    "print(expr)": 3,
+    "'urllib2' module": 1
+  },
+  "2.1": {
+    "'difflib' module": 1,
+    "'unittest' module": 1,
+    "'warnings' module": 1,
+    "'__future__' module": 1
+  },
+  "2.2": {
+    "'super' member": 214,
+    "'type' member": 31,
+    "'dict' member": 18,
+    "'StopIteration' member": 7,
+    "'iter' member": 5,
+    "'object' member": 4,
+    "'urlparse.urlsplit' member": 4,
+    "'bool' member": 1,
+    "'hmac' module": 1,
+    "'os.stat.st_mode' member": 1,
+    "'__future__.division' member": 1,
+    "'os.stat.st_mtime' member": 1,
+    "'os.stat.st_size' member": 1
+  },
+  "2.3": {
+    "'logging' module": 63,
+    "'enumerate' member": 30,
+    "'datetime' module": 14,
+    "'sum' member": 9,
+    "'UnicodeDecodeError' member": 8,
+    "'shlex.split' member": 7,
+    "'platform' module": 6,
+    "'tempfile.NamedTemporaryFile' member": 6,
+    "'dict.pop' member": 6,
+    "'os.walk' member": 5,
+    "'tempfile.mkdtemp' member": 4,
+    "'sys.getfilesystemencoding' member": 4,
+    "'locale.getpreferredencoding' member": 3,
+    "'textwrap' module": 3,
+    "'tempfile.gettempdir' member": 2,
+    "'tempfile.mkstemp' member": 2,
+    "'csv' module": 1,
+    "'UnicodeEncodeError' member": 1,
+    "'socket.timeout' member": 1
+  },
+  "2.4": {
+    "function decorators": 169,
+    "'set' member": 28,
+    "'sorted' member": 22,
+    "'subprocess' module": 10,
+    "'collections' module": 5,
+    "'reversed' member": 2,
+    "'threading.local' member": 2,
+    "'unicodedata.east_asian_width' member": 1,
+    "'os.urandom' member": 1,
+    "'decimal' module": 1,
+    "'collections.deque' member": 1
+  },
+  "2.5": {
+    "`with`": 115,
+    "'subprocess.check_call' member": 26,
+    "'any' member": 16,
+    "'all' member": 10,
+    "'contextlib' module": 7,
+    "'functools' module": 4,
+    "'hashlib' module": 4,
+    "'urlparse.urlsplit.path' member": 4,
+    "'urlparse.urlsplit.netloc' member": 4,
+    "'os.SEEK_END' member": 4,
+    "'collections.defaultdict' member": 2,
+    "'uuid' module": 2,
+    "'urlparse.urlparse.netloc' member": 2,
+    "'urlparse.urlparse.path' member": 2,
+    "'sqlite3' module": 1,
+    "'urlparse.urlparse.scheme' member": 1,
+    "'urlparse.urlparse.query' member": 1,
+    "'ctypes' module": 1
+  },
+  "2.6": {
+    "'str.format' member": 193,
+    "'json' module": 23,
+    "byte string (b'..') or `str` synonym": 9,
+    "'collections.namedtuple' member": 3,
+    "'os.path.relpath' member": 3,
+    "strftime directive 'f'": 3,
+    "'tempfile.NamedTemporaryFile(delete)'": 2,
+    "'next' member": 2,
+    "'io' module": 1,
+    "'platform.linux_distribution' member": 1,
+    "'urlparse.parse_qs' member": 1,
+    "'os.walk(followlinks)'": 1
+  },
+  "2.7": {
+    "`\"..{}..\".format(..)`": 17,
+    "'argparse' module": 2,
+    "'unittest.TestCase.assertItemsEqual' member": 1,
+    "'unittest.skipIf' member": 1
+  },
+  "3.0": {
+    "super() without arguments": 2,
+    "'urllib.parse' module": 1,
+    "'open(encoding)'": 1,
+    "'open(errors)'": 1
+  },
+  "3.1": {
+    "'unittest.skipIf' member": 1,
+    "'base64.encodebytes' member": 1
+  },
+  "3.2": {
+    "'argparse' module": 2,
+    "'unittest.TestCase.assertCountEqual' member": 1
+  },
+  "3.3": {
+    "'collections.abc' module": 1,
+    "'unittest.mock' module": 1
+  },
+  "3.4": {},
+  "3.5": {
+    "'json.JSONDecodeError' member": 2
+  },
+  "3.6": {
+    "f-strings": 11
+  },
+  "3.7": {},
+  "3.8": {},
+  "3.9": {},
+  "3.10": {},
+  "3.11": {}
+}
