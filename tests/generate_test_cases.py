@@ -19,13 +19,13 @@ def get_variable_from_file(file: Path, variable_name: str):
 
 
 def generate_test_cases(doc_dir: Path, output_file: Path):
-    # Monkey patch the following two classes, which are replacements in newer version of sphinx
-    # Only need for Python-2.7.18\Doc\tools\extensions\pyspecific.py
+    # Monkey patch the following two classes, which are replacements in newer version of Sphinx
+    # Only needed for Python-2.7.18\Doc\tools\extensions\pyspecific.py
     sphinx.domains.python.PyModulelevel = sphinx.domains.python.PyFunction
     sphinx.domains.python.PyClassmember = sphinx.domains.python.PyMethod
 
     # Load 'extensions' dynamically from the conf.py file (https://github.com/python/cpython/blob/main/Doc/conf.py)
-    # And add our extension to it
+    # and add our extension to it
     extensions = get_variable_from_file(doc_dir / 'conf.py', "extensions") + ['sphinx_extension']
 
     # Options can be found here:
@@ -36,14 +36,14 @@ def generate_test_cases(doc_dir: Path, output_file: Path):
         confdir=doc_dir,
         outdir=doc_dir / 'build',
         doctreedir=doc_dir / 'build' / '.doctrees',
-        buildername="xml",  # Can also be dummy; trees are now only generated for debugging purposes
+        buildername="xml",  # Can also be "dummy"; trees are now only saved for debugging purposes
         keep_going=True,
         parallel=os.cpu_count() // 2,
-        confoverrides={'extensions': ','.join(extensions)}
+        confoverrides={'extensions': extensions}
     )
 
-    # Add this custom config value so extension knows where to save the test cases (different for version 2/3)
-    # Doing this in 'confoverrides' will give a warning
+    # Add this custom config value so extension knows where to save the test cases (different for each Python version)
+    # Note: Doing this in 'confoverrides' above will give a warning
     app.add_config_value('pyternity_test_cases_file', output_file, False, str)
 
     # Generate test cases
