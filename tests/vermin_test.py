@@ -1,20 +1,13 @@
 import subprocess
 import sys
 import unittest
+from collections import defaultdict
 
-from pyternity.utils import setup_project
+from pyternity.plotting import plot_vermin_vs_test_features
+from pyternity.python_versions import vermin_rules_per_python_version
+from pyternity.utils import setup_project, logger
 from tests.test_utils import test_code, get_test_cases, TEST_CASES_FILE_PY2, TEST_CASES_FILE_PY3, \
     download_latest_python_source, PYTHON_2_VERSION, PYTHON_3_VERSION, tested_features_per_python_version
-
-# Idea; read all doc files, and look for  .. versionchanged / .. versionadded
-# https://github.com/python/cpython/tree/main/Doc/library
-# Changelogs itself don't always include all changes from the whole documentation, as it turns out
-
-
-OVERWRITTEN_TEST_CASES = {
-    # Not 'nicely' documented for python 2.7
-    'int.bit_length()': {'2.7': {"'int.bit_length' member": 1}, '3.1': {"'int.bit_length' member": 1}}
-}
 
 # https://docs.python.org/3/whatsnew/3.9.html
 PYTHON_3_9 = {
@@ -66,7 +59,6 @@ PYTHON_3_9 = {
 
 
 class TestFeatures(unittest.TestCase):
-
     @classmethod
     def setUpClass(cls) -> None:
         setup_project()
@@ -79,6 +71,13 @@ class TestFeatures(unittest.TestCase):
                 test_code(self, code, test_result)
 
     def test_from_changelog(self):
+        """
+        Generate test cases by looking through the Python 2 & 3 documentation for versionchanged/versionadded nodes.
+        Then based on the node's context, generate a test case.
+        Python library documentation: https://github.com/python/cpython/tree/main/Doc/library
+        Note: As it turns out, the changelog pages itself don't always include all changes from the whole documentation
+        """
+
         # Clear previous run
         TEST_CASES_FILE_PY2.unlink(missing_ok=True)
         TEST_CASES_FILE_PY3.unlink(missing_ok=True)
@@ -96,12 +95,11 @@ class TestFeatures(unittest.TestCase):
         self.assertEqual(sub2.wait(), 0)
         self.assertEqual(sub3.wait(), 0)
 
-        test_cases = get_test_cases() | OVERWRITTEN_TEST_CASES
+        test_cases = get_test_cases()
 
         failed_per_version = defaultdict(int)
 
-        # Now test the test-cases (in alphabetic order)
-        # TODO Run subTest for each module
+        # Now test the generated test cases (in alphabetic order)
         for code, expected in sorted(test_cases.items()):
             with self.subTest(code):
                 try:

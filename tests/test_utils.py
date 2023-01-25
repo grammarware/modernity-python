@@ -17,6 +17,7 @@ PYTHON_3_VERSION = f"{sys.version_info.major}.{sys.version_info.minor}.{sys.vers
 
 TEST_CASES_FILE_PY2 = ROOT_DIR / 'tests' / 'generated_test_cases_py2.json'
 TEST_CASES_FILE_PY3 = ROOT_DIR / 'tests' / 'generated_test_cases_py3.json'
+TEST_CASES_FILE_OVERWRITES = ROOT_DIR / 'tests' / 'generated_test_cases_overwrites.json'
 
 
 def msg_features(code: str, actual: Features, expected: Features):
@@ -61,15 +62,21 @@ def save_test_cases(output_file: Path, test_cases: Mapping[str, Features]) -> No
 
 def get_test_cases() -> dict[str, Features]:
     """
+    Reads generated test cases from file and combines it with the manual (overwritten) test cases
     :return: Combined test cases from Python 2 and 3 (read from files)
     """
-    with TEST_CASES_FILE_PY2.open() as f2, TEST_CASES_FILE_PY3.open() as f3:
-        test_cases = json.load(f2)
-
-        for code, expected in json.load(f3).items():
+    with (
+        TEST_CASES_FILE_PY2.open() as py_2_file,
+        TEST_CASES_FILE_PY3.open() as py_3_file,
+        TEST_CASES_FILE_OVERWRITES.open() as overwrites_file
+    ):
+        test_cases = json.load(py_2_file)
+        for code, expected in json.load(py_3_file).items():
             test_cases[code] = test_cases.get(code, {}) | expected
 
-        return test_cases
+        overwrites = json.load(overwrites_file)
+
+        return test_cases | overwrites
 
 
 def tested_features_per_python_version(test_cases: dict[str, Features]) -> dict[str, set[str]]:
