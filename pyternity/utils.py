@@ -1,5 +1,6 @@
 import logging
 import sys
+import warnings
 from collections import defaultdict
 from datetime import datetime
 from operator import itemgetter
@@ -73,6 +74,10 @@ class NonErrorsFilter(logging.Filter):
 
 
 def setup_project():
+    # Check if PYTHON_RELEASES is outdated
+    if f"{sys.version_info.major}.{sys.version_info.minor}" not in PYTHON_RELEASES:
+        warnings.warn("You are using a Python version that the tool currently may not support")
+
     # Create missing directories
     TMP_DIR.mkdir(exist_ok=True)
     EXAMPLES_DIR.mkdir(exist_ok=True)
@@ -95,9 +100,6 @@ def setup_project():
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
-
-
-# TODO Make warning when current python version is bigger then listed above
 
 
 def vermin_rules_per_python_version() -> dict[str, list[str]]:
