@@ -3,7 +3,6 @@ from pyternity.pypi_crawler import PyPIProject, get_most_popular_projects
 from pyternity.utils import *
 
 
-@measure_time
 def main():
     setup_project()
 

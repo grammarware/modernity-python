@@ -1,6 +1,5 @@
 import logging
 import sys
-import time
 from collections import defaultdict
 from datetime import datetime
 from operator import itemgetter
@@ -61,20 +60,6 @@ def sort_features(features: Features) -> dict[str, dict[str, int]]:
     and within each version it is sorted on how often it occurs (descending)
     """
     return {py_v: dict(sorted(features[py_v].items(), key=itemgetter(1), reverse=True)) for py_v in PYTHON_RELEASES}
-
-
-def measure_time(func):
-    if not logger.isEnabledFor(logging.DEBUG):
-        return func
-
-    def func_timer(*args, **kwargs):
-        start = time.perf_counter()
-        res = func(*args, **kwargs)
-        end = time.perf_counter()
-        logger.debug(f"TIMER {func.__name__} took {end - start:.3f}s")
-        return res
-
-    return func_timer
 
 
 def parse_vermin_version(version: str) -> str | None:

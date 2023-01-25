@@ -5,7 +5,6 @@ from pyternity.utils import *
 
 
 # TODO Check we if we need Backports, see --help
-@measure_time
 def get_features(project_folder: Path, processes: int = Config.vermin.processes()) -> Features:
     logger.debug(f"Calculating signature for project: {project_folder.parent.name} {project_folder.name}")
     assert project_folder.exists()
