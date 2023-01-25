@@ -6,21 +6,16 @@ from pyternity.utils import *
 
 # TODO Check we if we need Backports, see --help
 def get_features(project_folder: Path, processes: int = Config.vermin.processes()) -> Features:
-    logger.debug(f"Calculating signature for project: {project_folder.parent.name} {project_folder.name}")
     assert project_folder.exists()
-
-    # Get all Python files in this folder
-    py_paths = vermin.detect_paths(str(project_folder.absolute()), config=Config.vermin, processes=processes)
-    logger.info(f"Found {len(py_paths)} python file(s).")
 
     # Per version, per feature
     detected_features = defaultdict(lambda: defaultdict(int))
     with multiprocessing.Pool(processes) if processes != 1 else contextlib.nullcontext() as pool:
         mapping = map if processes == 1 else pool.imap_unordered
-        results = mapping(vermin.process_individual, ((path, Config.vermin) for path in py_paths))
+        to_process = ((path, Config.vermin) for path in project_folder.rglob('*'))
 
-        for res in results:
-            for line in res.text.splitlines():
+        for file_results in mapping(vermin.process_individual, to_process):
+            for line in file_results.text.splitlines():
                 # It also dumps the whole AST, skip that
                 # But we need print_visits=yes, else it will only output unique missing features
                 if line[0] == '|':

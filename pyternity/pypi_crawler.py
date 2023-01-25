@@ -51,17 +51,17 @@ class Release:
 
             shutil.rmtree(out_dir)
 
-        # TODO use tempfile https://docs.python.org/3/library/tempfile.html
+        logger.info(f"Downloading {self.project_name} {self.version} ...")
         tmp_file = TMP_DIR / self.filename
         request.urlretrieve(self.url, tmp_file)
 
-        # TODO optimize: We only have to keep python files
+        # Optimisation: Only keep the Python files
         if tarfile.is_tarfile(tmp_file):
             with tarfile.open(tmp_file) as tar:
-                tar.extractall(out_dir)
+                tar.extractall(out_dir, (m for m in tar.getmembers() if is_python_file(m.name)))
         else:
             with zipfile.ZipFile(tmp_file) as tmp_zip:
-                tmp_zip.extractall(out_dir)
+                tmp_zip.extractall(out_dir, filter(is_python_file, tmp_zip.namelist()))
 
         tmp_file.unlink()
 
@@ -87,6 +87,7 @@ class Release:
 
         try:
             # Sort features such that it is easier to debug when viewing the files
+            logger.info(f"Getting features from {self.project_name} {self.version} ...")
             new_sorted_features = sort_features(features.get_features(download_path))
 
         except (RecursionError, TypeError) as e:

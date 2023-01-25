@@ -21,7 +21,7 @@ def main():
         releases = [release for release in project.releases if release.is_minor]
         logger.info(f"Found {len(releases)} minor releases: {', '.join(r.version for r in releases)}")
         for release in releases:
-            logger.info(f"Getting features from {release.project_name} {release.version} ...")
+            logger.info(f"Calculating signature for {release.project_name} {release.version} ...")
 
             features = release.get_features()
             features_per_version = {version: sum(features.values()) for version, features in features.items()}

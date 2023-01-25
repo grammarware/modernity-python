@@ -124,3 +124,7 @@ def vermin_rules_per_python_version() -> dict[str, list[str]]:
 
 def possible_versions(commit_date: datetime) -> set[tuple[int, int]]:
     return {version for version, v_date in PYTHON_RELEASES.items() if v_date <= commit_date}
+
+
+def is_python_file(path: str) -> bool:
+    return Path(path).suffix in {".py", ".py3", ".pyw", ".pyj", ".pyi"}
