@@ -226,84 +226,42 @@
   "import asyncio\nasyncio.loop.create_datagram_endpoint(family=None)": {
     "3.4": {
       "'asyncio' module": 1,
-      "'asyncio.loop.create_datagram_endpoint(family)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(proto)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(flags)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(reuse_address)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(reuse_port)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(allow_broadcast)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(sock)'": 1
+      "'asyncio.loop.create_datagram_endpoint(family)'": 1
     }
   },
   "import asyncio\nasyncio.loop.create_datagram_endpoint(proto=None)": {
     "3.4": {
       "'asyncio' module": 1,
-      "'asyncio.loop.create_datagram_endpoint(family)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(proto)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(flags)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(reuse_address)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(reuse_port)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(allow_broadcast)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(sock)'": 1
+      "'asyncio.loop.create_datagram_endpoint(proto)'": 1
     }
   },
   "import asyncio\nasyncio.loop.create_datagram_endpoint(flags=None)": {
     "3.4": {
       "'asyncio' module": 1,
-      "'asyncio.loop.create_datagram_endpoint(family)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(proto)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(flags)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(reuse_address)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(reuse_port)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(allow_broadcast)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(sock)'": 1
+      "'asyncio.loop.create_datagram_endpoint(flags)'": 1
     }
   },
   "import asyncio\nasyncio.loop.create_datagram_endpoint(reuse_address=None)": {
     "3.4": {
       "'asyncio' module": 1,
-      "'asyncio.loop.create_datagram_endpoint(family)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(proto)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(flags)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(reuse_address)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(reuse_port)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(allow_broadcast)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(sock)'": 1
+      "'asyncio.loop.create_datagram_endpoint(reuse_address)'": 1
     }
   },
   "import asyncio\nasyncio.loop.create_datagram_endpoint(reuse_port=None)": {
     "3.4": {
       "'asyncio' module": 1,
-      "'asyncio.loop.create_datagram_endpoint(family)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(proto)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(flags)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(reuse_address)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(reuse_port)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(allow_broadcast)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(sock)'": 1
+      "'asyncio.loop.create_datagram_endpoint(reuse_port)'": 1
     }
   },
   "import asyncio\nasyncio.loop.create_datagram_endpoint(allow_broadcast=None)": {
     "3.4": {
       "'asyncio' module": 1,
-      "'asyncio.loop.create_datagram_endpoint(family)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(proto)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(flags)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(reuse_address)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(reuse_port)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(allow_broadcast)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(sock)'": 1
+      "'asyncio.loop.create_datagram_endpoint(allow_broadcast)'": 1
     }
   },
   "import asyncio\nasyncio.loop.create_datagram_endpoint(sock=None)": {
     "3.4": {
       "'asyncio' module": 1,
-      "'asyncio.loop.create_datagram_endpoint(family)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(proto)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(flags)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(reuse_address)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(reuse_port)'": 1,
-      "'asyncio.loop.create_datagram_endpoint(allow_broadcast)'": 1,
       "'asyncio.loop.create_datagram_endpoint(sock)'": 1
     }
   },

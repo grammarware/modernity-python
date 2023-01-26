@@ -96,7 +96,7 @@ def combine_features(features0: Features, features1: dict[str, dict[str, int]]) 
     :param features1:
     :return: The features combined
     """
-    new_features = Features(Features, features0)
+    new_features = Features(Features, {v: dict(values) for v, values in features0.items()})
     for version, version_features in features1.items():
         for name in version_features.keys():
             # Don't actually increase the count, since you will count 'double' then
