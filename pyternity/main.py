@@ -1,14 +1,62 @@
+import argparse
+import math
+
 from pyternity.plotting import plot_project_signatures, plot_all_projects_signatures
-from pyternity.pypi_crawler import PyPIProject, get_most_popular_projects
+from pyternity.pypi_crawler import PyPIProject, get_most_popular_projects, get_biggest_projects, Release
 from pyternity.utils import *
 
 
+def range_int(minimum: int = -math.inf, maximum: int = math.inf):
+    def max_int_check(n: str) -> int:
+        n_int = int(n)
+        if n_int < minimum:
+            raise argparse.ArgumentTypeError(f"Should at least be {minimum}")
+        if n_int > maximum:
+            raise argparse.ArgumentTypeError(f"Should at most be {maximum}")
+        return n_int
+
+    return max_int_check
+
+
+def parse_arguments():
+    parser = argparse.ArgumentParser(description="Calculate modernity signatures for PyPI projects")
+    parser.add_argument('--max_release_date', type=datetime.fromisoformat, default=datetime.today(),
+                        help="Maximum date (in ISO 8601 format) any release of any project can have, e.g. 31-01-2023")
+
+    type_group = parser.add_mutually_exclusive_group(required=True)
+    type_group.add_argument('--most-popular-projects', type=range_int(minimum=1, maximum=5000),
+                            help="Calculate the signature for the given amount of most popular PyPI projects")
+    type_group.add_argument('--biggest-projects', type=range_int(minimum=1, maximum=100),
+                            help="Calculate the signature for the given amount of biggest (in size) PyPI projects")
+
+    parser.add_argument('--most-popular-projects-hash', default='main',
+                        help="Hash of the top-pypi-packages to use (default: 'main')")
+
+    parser.add_argument('--release-type', choices=['major', 'minor'], default='',
+                        help="Calculate the signature for given type of releases of the projects "
+                             "(leave out to calculate for all releases)")
+
+    return parser.parse_args()
+
+
 def main():
+    args = parse_arguments()
     setup_project()
 
-    # TODO Add CLI (arguments) support
-    # TODO Add option to set maximum upload date
-    projects = get_most_popular_projects(50)
+    # Either get nth biggest or nth most popular projects from PyPI
+    if args.most_popular_projects:
+        projects = get_most_popular_projects(args.most_popular_projects, args.most_popular_projects_hash)
+    else:
+        projects = get_biggest_projects(args.biggest_projects)
+
+    # Determine what versions of the releases the user wants
+    match args.release_type:
+        case 'minor':
+            version_check = Release.is_minor
+        case 'major':
+            version_check = Release.is_major
+        case _:
+            version_check = lambda *_: True
 
     all_signatures_per_project = []
 
@@ -18,8 +66,8 @@ def main():
 
         signatures = {}
 
-        releases = [release for release in project.releases if release.is_minor]
-        logger.info(f"Found {len(releases)} minor releases: {', '.join(r.version for r in releases)}")
+        releases = [r for r in project.releases if version_check(r) and r.upload_date <= args.max_release_date]
+        logger.info(f"Found {len(releases)} {args.release_type} releases: {', '.join(r.version for r in releases)}")
         for release in releases:
             logger.info(f"Calculating signature for {release.project_name} {release.version} ...")
 
@@ -36,10 +84,11 @@ def main():
 
         all_signatures_per_project.append(signatures)
 
+        # Don't render the plot if we (statistically) do not have enough
         if len(signatures) >= 5:
             plot_project_signatures(project, signatures)
         else:
-            logger.warning(f"Not enough minor versions found for {project.name:30}, all versions are: "
+            logger.warning(f"Not enough {args.release_type} releases found for {project.name:30}, all releases are: "
                            f"{[release.version for release in project.releases]}")
 
     plot_all_projects_signatures(all_signatures_per_project)
