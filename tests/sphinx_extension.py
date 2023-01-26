@@ -166,7 +166,7 @@ def build_finished(app: Sphinx, _):
     """
     `build-finished` event will always be triggered (even when there are no changed in the rst files).
     So we use this event to generate our test cases, which also allows us to use the cached doctrees.
-    :param app:
+    :param app: The Sphinx app
     :param _:
     """
     # We are only interested in the library documentation

@@ -44,7 +44,7 @@ def generate_test_cases(doc_dir: Path, output_file: Path):
 
     # Add this custom config value so extension knows where to save the test cases (different for each Python version)
     # Note: Doing this in 'confoverrides' above will give a warning
-    app.add_config_value('pyternity_test_cases_file', output_file, False, str)
+    app.add_config_value('pyternity_test_cases_file', output_file, False, Path)
 
     # Generate test cases
     app.build()
