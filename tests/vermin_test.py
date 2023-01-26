@@ -4,7 +4,7 @@ import unittest
 from pyternity.plotting import plot_vermin_vs_test_features
 from pyternity.utils import *
 from tests.test_utils import test_code, get_test_cases, TEST_CASES_FILE_PY2, TEST_CASES_FILE_PY3, \
-    download_latest_python_source, PYTHON_2_VERSION, PYTHON_3_VERSION, tested_features_per_python_version
+    download_latest_python_source, PYTHON_2_VERSION, PYTHON_3_VERSION, tested_features_per_python_version, TESTS_DIR
 
 # https://docs.python.org/3/whatsnew/3.9.html
 PYTHON_3_9 = {
@@ -84,10 +84,10 @@ class TestFeatures(unittest.TestCase):
 
         # Using Sphinx app twice in same Python process does cause some errors, so run them in a subprocess (parallel)
         sub2 = subprocess.Popen([
-            sys.executable, "generate_test_cases.py", PYTHON_2_VERSION, TEST_CASES_FILE_PY2.absolute()
+            sys.executable, TESTS_DIR / "generate_test_cases.py", PYTHON_2_VERSION, TEST_CASES_FILE_PY2.absolute()
         ])
         sub3 = subprocess.Popen([
-            sys.executable, "generate_test_cases.py", PYTHON_3_VERSION, TEST_CASES_FILE_PY3.absolute()
+            sys.executable, TESTS_DIR / "generate_test_cases.py", PYTHON_3_VERSION, TEST_CASES_FILE_PY3.absolute()
         ])
         self.assertEqual(sub2.wait(), 0)
         self.assertEqual(sub3.wait(), 0)

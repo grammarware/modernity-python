@@ -13,11 +13,12 @@ from pyternity import features
 from pyternity.utils import TMP_DIR, Features, ROOT_DIR, logger
 
 PYTHON_2_VERSION = '2.7.18'
-PYTHON_3_VERSION = f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}"
+PYTHON_3_VERSION = f"3.{sys.version_info.minor}.{sys.version_info.micro}"
 
-TEST_CASES_FILE_PY2 = ROOT_DIR / 'tests' / 'generated_test_cases_py2.json'
-TEST_CASES_FILE_PY3 = ROOT_DIR / 'tests' / 'generated_test_cases_py3.json'
-TEST_CASES_FILE_OVERWRITES = ROOT_DIR / 'tests' / 'generated_test_cases_overwrites.json'
+TESTS_DIR = ROOT_DIR / 'tests'
+TEST_CASES_FILE_PY2 = TESTS_DIR / 'generated_test_cases_py2.json'
+TEST_CASES_FILE_PY3 = TESTS_DIR / 'generated_test_cases_py3.json'
+TEST_CASES_FILE_OVERWRITES = TESTS_DIR / 'generated_test_cases_overwrites.json'
 
 
 def msg_features(code: str, actual: Features, expected: Features):
