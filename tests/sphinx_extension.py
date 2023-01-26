@@ -62,6 +62,8 @@ def generate_test_cases(out_dir: str, doctree_file: Path) -> dict[str, Features]
                     code = 'True'
                 elif code == 'False()':
                     code = 'False'
+                elif code.endswith('\nid0()'):
+                    continue
 
                 # Only update, if test_code was not a test_case yet
                 test_cases.setdefault(code, dict(expected))

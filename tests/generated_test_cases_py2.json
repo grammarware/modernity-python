@@ -4947,14 +4947,6 @@
       "'tarfile.HeaderError' member": 1
     }
   },
-  "import tarfile\nid0()": {
-    "2.3": {
-      "'tarfile' module": 1
-    },
-    "2.6": {
-      "'id0' member": 1
-    }
-  },
   "import tarfile\ntarfile.TarFile.extractall()": {
     "2.3": {
       "'tarfile' module": 1
