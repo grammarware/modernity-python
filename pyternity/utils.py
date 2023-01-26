@@ -69,8 +69,8 @@ def parse_vermin_version(version: str) -> str | None:
 
 
 class NonErrorsFilter(logging.Filter):
-    def filter(self, logRecord: logging.LogRecord):
-        return logRecord.levelno < logging.ERROR
+    def filter(self, record: logging.LogRecord):
+        return record.levelno < logging.ERROR
 
 
 def setup_project():
