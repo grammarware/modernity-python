@@ -408,12 +408,12 @@
       "'ConfigParser.SafeConfigParser.set' member": 1
     }
   },
-  "False()": {
+  "False": {
     "2.3": {
       "'False' member": 1
     }
   },
-  "True()": {
+  "True": {
     "2.3": {
       "'True' member": 1
     }

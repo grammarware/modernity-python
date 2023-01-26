@@ -28,5 +28,13 @@
     "2.6": {
       "'ast' module": 1
     }
+  },
+  "import ConfigParser\nConfigParser.ConfigParser.items()": {
+    "2.0": {
+      "'ConfigParser' module": 1
+    },
+    "2.3": {
+      "'ConfigParser.ConfigParser' member": 1
+    }
   }
 }

@@ -56,6 +56,13 @@ def generate_test_cases(out_dir: str, doctree_file: Path) -> dict[str, Features]
             for new_test_case in new_test_cases:
                 code, expected = new_test_case
                 normalize_expected(expected)
+
+                # TODO Fix these constants, they shouldn't be called
+                if code == 'True()':
+                    code = 'True'
+                elif code == 'False()':
+                    code = 'False'
+
                 # Only update, if test_code was not a test_case yet
                 test_cases.setdefault(code, dict(expected))
 
