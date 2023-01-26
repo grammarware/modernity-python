@@ -2087,9 +2087,9 @@
       "'email.message.Message.get_content_disposition' member": 1
     }
   },
-  "import email.contentmanager:": {
+  "import email.contentmanager": {
     "3.6": {
-      "'email.contentmanager:' module": 1
+      "'email.contentmanager' module": 1
     }
   },
   "import email.generator\nemail.generator.BytesGenerator()": {
@@ -2118,14 +2118,14 @@
       "'email.header.Header.encode(linesep)'": 1
     }
   },
-  "import email.headerregistry:": {
+  "import email.headerregistry": {
     "3.6": {
-      "'email.headerregistry:' module": 1
+      "'email.headerregistry' module": 1
     }
   },
-  "import email.message:": {
+  "import email.message": {
     "3.6": {
-      "'email.message:' module": 1
+      "'email.message' module": 1
     }
   },
   "import email.message\nemail.message.EmailMessage.get_content_disposition()": {
@@ -2221,9 +2221,9 @@
       "'email.message_from_binary_file' member": 1
     }
   },
-  "import email.policy:": {
+  "import email.policy": {
     "3.3": {
-      "'email.policy:' module": 1
+      "'email.policy' module": 1
     }
   },
   "import email.policy\nemail.policy.Policy.message_factory()": {

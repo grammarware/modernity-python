@@ -1140,9 +1140,9 @@
       "'EasyDialogs.GetArgv' member": 1
     }
   },
-  "import email.charset:": {
+  "import email.charset": {
     "2.2": {
-      "'email.charset:' module": 1
+      "'email.charset' module": 1
     }
   },
   "import email": {
@@ -1150,9 +1150,9 @@
       "'email' module": 1
     }
   },
-  "import email.errors:": {
+  "import email.errors": {
     "2.4": {
-      "'email.errors:' module": 1
+      "'email.errors' module": 1
     }
   },
   "import email.generator\nemail.generator.Generator.flatten()": {
@@ -1170,9 +1170,9 @@
       "'email.generator.DecodedGenerator' member": 1
     }
   },
-  "import email.header:": {
+  "import email.header": {
     "2.2": {
-      "'email.header:' module": 1
+      "'email.header' module": 1
     }
   },
   "import email.message\nemail.message.Message.set_payload(charset=None)": {
