@@ -125,6 +125,10 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
                     prev_ids = ids.rsplit('.', maxsplit=1)[0]
                     prev_features = get_features_from_test_code(f"{import_stmt}{prev_ids}")
 
+                    # Don't generate test case if previous feature was also introduced in this version
+                    if version in prev_features:
+                        return
+
                     # It does not matter for detection if we call something that cannot be called
                     return [(
                         f"{import_stmt}{ids}()", combine_features(prev_features, {version: {f"'{ids}' member": 1}})

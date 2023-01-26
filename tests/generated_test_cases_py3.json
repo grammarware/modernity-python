@@ -2706,12 +2706,6 @@
       "'glob.escape' member": 1
     }
   },
-  "import graphlib\ngraphlib.TopologicalSorter()": {
-    "3.9": {
-      "'graphlib' module": 1,
-      "'graphlib.TopologicalSorter' member": 1
-    }
-  },
   "import gzip\ngzip.BadGzipFile()": {
     "3.8": {
       "'gzip.BadGzipFile' member": 1
@@ -10060,12 +10054,6 @@
     },
     "3.9": {
       "'venv.EnvBuilder.upgrade_dependencies' member": 1
-    }
-  },
-  "import venv\nvenv.create()": {
-    "3.3": {
-      "'venv' module": 1,
-      "'venv.create' member": 1
     }
   },
   "import warnings\nwarnings.warn(source=None)": {

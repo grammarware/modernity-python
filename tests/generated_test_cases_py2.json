@@ -192,12 +192,6 @@
       "'collections.Counter' member": 1
     }
   },
-  "import collections\ncollections.deque()": {
-    "2.4": {
-      "'collections' module": 1,
-      "'collections.deque' member": 1
-    }
-  },
   "import collections\ncollections.deque(maxlen=None)": {
     "2.4": {
       "'collections' module": 1,
@@ -386,15 +380,6 @@
     },
     "2.3": {
       "'ConfigParser.RawConfigParser' member": 1
-    }
-  },
-  "import ConfigParser\nConfigParser.ConfigParser.items()": {
-    "2.0": {
-      "'ConfigParser' module": 1
-    },
-    "2.3": {
-      "'ConfigParser.ConfigParser' member": 1,
-      "'ConfigParser.ConfigParser.items' member": 1
     }
   },
   "import ConfigParser\nConfigParser.SafeConfigParser.set()": {
@@ -3355,18 +3340,6 @@
     },
     "2.6": {
       "'platform.linux_distribution' member": 1
-    }
-  },
-  "import popen2\npopen2.popen4()": {
-    "2.0": {
-      "'popen2' module": 1,
-      "'popen2.popen4' member": 1
-    }
-  },
-  "import popen2\npopen2.Popen4()": {
-    "2.0": {
-      "'popen2' module": 1,
-      "'popen2.Popen4' member": 1
     }
   },
   "import poplib\npoplib.POP3(timeout=None)": {
