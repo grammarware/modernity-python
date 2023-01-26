@@ -350,38 +350,6 @@
       "'ConfigParser.InterpolationSyntaxError' member": 1
     }
   },
-  "import ConfigParser\nConfigParser.RawConfigParser.has_option()": {
-    "2.0": {
-      "'ConfigParser' module": 1
-    },
-    "2.3": {
-      "'ConfigParser.RawConfigParser' member": 1
-    }
-  },
-  "import ConfigParser\nConfigParser.RawConfigParser.set()": {
-    "2.0": {
-      "'ConfigParser' module": 1
-    },
-    "2.3": {
-      "'ConfigParser.RawConfigParser' member": 1
-    }
-  },
-  "import ConfigParser\nConfigParser.RawConfigParser.write()": {
-    "2.0": {
-      "'ConfigParser' module": 1
-    },
-    "2.3": {
-      "'ConfigParser.RawConfigParser' member": 1
-    }
-  },
-  "import ConfigParser\nConfigParser.RawConfigParser.remove_option()": {
-    "2.0": {
-      "'ConfigParser' module": 1
-    },
-    "2.3": {
-      "'ConfigParser.RawConfigParser' member": 1
-    }
-  },
   "import ConfigParser\nConfigParser.SafeConfigParser.set()": {
     "2.0": {
       "'ConfigParser' module": 1
@@ -556,7 +524,6 @@
       "'ctypes.c_bool' member": 1
     }
   },
-  "import curses.ascii": {},
   "import datetime": {
     "2.3": {
       "'datetime' module": 1
@@ -1297,14 +1264,11 @@
       "'exceptions.BaseException' member": 1
     }
   },
-  "import exceptions\nexceptions.EnvironmentError()": {},
   "import exceptions\nexceptions.GeneratorExit()": {
     "2.5": {
       "'exceptions.GeneratorExit' member": 1
     }
   },
-  "import exceptions\nexceptions.NotImplementedError()": {},
-  "import exceptions\nexceptions.OSError()": {},
   "import exceptions\nexceptions.StopIteration()": {
     "2.2": {
       "'exceptions.StopIteration' member": 1
@@ -2607,7 +2571,6 @@
       "'multiprocessing' module": 1
     }
   },
-  "import netrc": {},
   "import nis\nnis.get_default_domain()": {
     "2.5": {
       "'nis.get_default_domain' member": 1
@@ -3053,9 +3016,6 @@
       "'os.makedev' member": 1
     }
   },
-  "import os\nos.makedirs()": {},
-  "import os\nos.removedirs()": {},
-  "import os\nos.renames()": {},
   "import os\nos.walk()": {
     "2.3": {
       "'os.walk' member": 1
@@ -3151,19 +3111,6 @@
       "'os.killpg' member": 1
     }
   },
-  "import os\nos.spawnl()": {},
-  "import os\nos.spawnle()": {},
-  "import os\nos.spawnlp()": {},
-  "import os\nos.spawnlpe()": {},
-  "import os\nos.spawnv()": {},
-  "import os\nos.spawnve()": {},
-  "import os\nos.spawnvp()": {},
-  "import os\nos.spawnvpe()": {},
-  "import os\nos.P_NOWAIT()": {},
-  "import os\nos.P_NOWAITO()": {},
-  "import os\nos.P_WAIT()": {},
-  "import os\nos.P_DETACH()": {},
-  "import os\nos.P_OVERLAY()": {},
   "import os\nos.startfile()": {
     "2.0": {
       "'os.startfile' member": 1
@@ -3219,20 +3166,16 @@
       "'os.urandom' member": 1
     }
   },
-  "import os.path\nos.path.abspath()": {},
   "import os.path\nos.path.lexists()": {
     "2.4": {
       "'os.path.lexists' member": 1
     }
   },
-  "import os.path\nos.path.getatime()": {},
-  "import os.path\nos.path.getmtime()": {},
   "import os.path\nos.path.getctime()": {
     "2.3": {
       "'os.path.getctime' member": 1
     }
   },
-  "import os.path\nos.path.getsize()": {},
   "import os.path\nos.path.realpath()": {
     "2.2": {
       "'os.path.realpath' member": 1
@@ -3243,7 +3186,6 @@
       "'os.path.relpath' member": 1
     }
   },
-  "import os.path\nos.path.splitdrive()": {},
   "import os.path\nos.path.supports_unicode_filenames()": {
     "2.3": {
       "'os.path.supports_unicode_filenames' member": 1
@@ -3519,7 +3461,6 @@
       "'random.getrandbits' member": 1
     }
   },
-  "import random\nrandom.randrange()": {},
   "import random\nrandom.sample()": {
     "2.3": {
       "'random.sample' member": 1
@@ -3545,7 +3486,6 @@
       "'re.UNICODE' member": 1
     }
   },
-  "import re\nre.findall()": {},
   "import re\nre.finditer()": {
     "2.2": {
       "'re.finditer' member": 1
@@ -3669,7 +3609,6 @@
       "'shelve.Shelf(protocol)'": 1
     }
   },
-  "import shlex": {},
   "import shlex\nshlex.split()": {
     "2.3": {
       "'shlex.split' member": 1
@@ -4524,18 +4463,6 @@
       "'ssl.SSLSocket.context' member": 1
     }
   },
-  "import ssl\nssl.SSLContext.set_alpn_protocols()": {
-    "2.6": {
-      "'ssl' module": 1
-    },
-    "2.7": {
-      "'ssl.SSLContext' member": 1,
-      "'ssl.SSLContext.set_alpn_protocols' member": 1
-    },
-    "3.2": {
-      "'ssl.SSLContext' member": 1
-    }
-  },
   "long.bit_length()": {
     "2.7": {
       "'long.bit_length' member": 1
@@ -4861,7 +4788,6 @@
       "'sys.getwindowsversion' member": 1
     }
   },
-  "import sys\nsys.hexversion()": {},
   "import sys\nsys.long_info()": {
     "2.7": {
       "'sys.long_info' member": 1
@@ -5008,7 +4934,6 @@
       "'tempfile.gettempdir' member": 1
     }
   },
-  "import tempfile\ntempfile.gettempprefix()": {},
   "import test.support\ntest.support.check_warnings()": {
     "2.6": {
       "'test.support.check_warnings' member": 1
@@ -5816,8 +5741,6 @@
       "'webbrowser.controller.open_new_tab' member": 1
     }
   },
-  "import winsound": {},
-  "import winsound\nwinsound.Beep()": {},
   "import winsound\nwinsound.MessageBeep()": {
     "2.3": {
       "'winsound.MessageBeep' member": 1
@@ -6009,7 +5932,6 @@
       "'xmlrpclib.loads(use_datetime)'": 1
     }
   },
-  "import zipfile": {},
   "import zipfile\nzipfile.ZipFile.open()": {
     "2.6": {
       "'zipfile.ZipFile.open' member": 1

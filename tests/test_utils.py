@@ -105,21 +105,6 @@ def combine_features(features0: Features, features1: dict[str, dict[str, int]]) 
     return new_features
 
 
-def normalize_expected(expected: Features) -> None:
-    """
-    Remove Python versions 1.x.x and generalize version x.y.z to x.y
-    :param expected: The Features to normalize inplace
-    """
-    for version, expected_per_version in list(expected.items()):
-        if version.startswith('1'):
-            del expected[version]
-
-        elif version.count('.') == 2:
-            new_version = version.rsplit('.', 1)[0]
-            expected[new_version] |= expected_per_version
-            del expected[version]
-
-
 def download_latest_python_source(version: str, overwrite: bool = False) -> None:
     """
     Download the Python source code from the given `version`

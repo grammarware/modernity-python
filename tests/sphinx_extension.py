@@ -9,7 +9,7 @@ import sphinx.addnodes
 from sphinx.application import Sphinx
 
 from pyternity.utils import *
-from tests.test_utils import get_features_from_test_code, combine_features, save_test_cases, normalize_expected
+from tests.test_utils import get_features_from_test_code, combine_features, save_test_cases
 
 # Python documentation is not consistent in when a new parameter has been added...
 parameter = (r"(support for )?(the )?((optional|required|keyword(-only)?) )?"
@@ -41,6 +41,15 @@ def generate_test_cases(out_dir: str, doctree_file: Path) -> dict[str, Features]
         version = node.get('version')
         # TODO handle version if it is a tuple
         if isinstance(version, str):
+
+            # Skip Python version 1 features
+            if version.startswith('1'):
+                continue
+
+            # Normalize version
+            if version.count('.') == 2:
+                version = version.rsplit('.', 1)[0]
+
             new_test_cases = handle_versionmodified(version, node)
 
             if not new_test_cases:
@@ -55,7 +64,6 @@ def generate_test_cases(out_dir: str, doctree_file: Path) -> dict[str, Features]
 
             for new_test_case in new_test_cases:
                 code, expected = new_test_case
-                normalize_expected(expected)
 
                 # TODO Fix these constants, they shouldn't be called
                 if code == 'True()':
