@@ -110,7 +110,40 @@ class TestFeatures(unittest.TestCase):
         plot_vermin_vs_test_features(vermin_rules_per_python_version(),
                                      tested_features_per_python_version(test_cases), failed_per_version)
 
-        # TODO Make test to ensure all modules are covered (all non-submodules: sys.stdlib_module_names)
+
+class TestGenerator(unittest.TestCase):
+    # See: https://github.com/python/typeshed/blob/main/stdlib/VERSIONS and
+    # https://docs.python.org/3/whatsnew/index.html
+    PYTHON_3_MODULES = {
+        3.0: {'reprlib', 'winreg', 'html', 'http', '_socket', 'queue', 'configparser', 'tkinter', 'socketserver',
+              'builtins', '_imp', 'xmlrpc'},
+        3.1: {'_compat_pickle', 'tkinter.ttk', 'importlib'},
+        3.2: {'_posixsubprocess', 'concurrent', 'concurrent.futures' 'sysconfig'},
+        3.3: {'ipaddress', 'collections.abc', '_winapi', '_decimal', 'venv', 'faulthandler', 'lzma'},
+        3.4: {'selectors', 'pathlib', 'statistics', '_stat', 'asyncio', '_tracemalloc', 'enum', 'tracemalloc',
+              '_sitebuiltins', '_operator',
+              # 'ensurepip' Both in 2.7 and >3.4
+              },
+        3.5: {'_compression', 'typing', '_pydecimal', 'zipapp'},
+        3.6: {'secrets'},
+        3.7: {'asyncio.format_helpers', 'asyncio.runners', 'dataclasses', 'contextvars', '_py_abc',
+              'importlib.resources'},
+        3.8: {'asyncio.exceptions', 'asyncio.staggered', 'asyncio.trsock', 'importlib.metadata',
+              'multiprocessing.resource_tracker', 'multiprocessing.shared_memory', 'unittest.async_case'},
+        3.9: {'asyncio.threads', 'graphlib', 'zoneinfo', 'unittest._log'},
+        3.10: {'asyncio.mixins', 'importlib.metadata._meta'},
+        3.11: {'tomllib', 'asyncio.taskgroups', 'wsgiref.types'}
+    }
+
+    def test_python3_modules(self):
+        test_cases = get_test_cases()
+        for version, modules in TestGenerator.PYTHON_3_MODULES.items():
+            for module in modules:
+                with self.subTest(version=version, module=module):
+                    self.assertEqual(test_cases[f"import {module}"], {str(version): {f"'{module}' module": 1}})
+
+        self.assertEqual(test_cases['import ensurepip'],
+                         {'2.7': {"'ensurepip' module": 1}, '3.4': {"'ensurepip' module": 1}})
 
 
 if __name__ == '__main__':
