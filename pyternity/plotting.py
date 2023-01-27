@@ -40,7 +40,9 @@ def plot_3d_graph(X, Y, Z, name: str, show_plot: bool) -> None:
     if show_plot:
         fig.suptitle(f"Modernity Signature for {name}")
         plt.show()
-    plt.close()
+
+    fig.clear()
+    plt.close(fig)
 
 
 def get_x_y_z(signatures: dict[Release, Signature]):
