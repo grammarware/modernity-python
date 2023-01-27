@@ -32,11 +32,9 @@ class Release:
         self.upload_date = datetime.fromisoformat(sdist_file['upload_time'])
         self.url: str = sdist_file['url']
 
-    @property
     def is_major(self) -> bool:
         return bool(MAJOR_VERSION.fullmatch(self.version))
 
-    @property
     def is_minor(self) -> bool:
         return bool(MINOR_VERSION.fullmatch(self.version))
 
@@ -140,7 +138,7 @@ def get_most_popular_projects(n: int, commit_hash: str) -> Iterable[str]:
     :param n: Amount of project to return.
     :return: The n most popular projects (of previous) on PyPI.
     """
-    url = f"https://github.com/hugovk/top-pypi-packages/blob/{commit_hash}/top-pypi-packages-30-days.min.json"
+    url = f"https://raw.githubusercontent.com/hugovk/top-pypi-packages/{commit_hash}/top-pypi-packages-30-days.min.json"
     with request.urlopen(request.Request(url)) as f:
         res = json.load(f)
         return (row['project'] for row in res['rows'][:n])

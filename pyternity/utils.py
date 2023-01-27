@@ -49,6 +49,7 @@ logger = logging.getLogger('pyternity_logger')
 
 
 class Config:
+    # TODO Move this to CLI arguments
     redownload_examples = False
     recalculate_examples = False
     vermin = vermin.Config.parse_file(vermin.Config.detect_config_file())

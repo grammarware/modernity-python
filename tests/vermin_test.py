@@ -1,10 +1,8 @@
 import subprocess
-import unittest
 
 from pyternity.plotting import plot_vermin_vs_test_features
 from pyternity.utils import *
-from tests.test_utils import test_code, get_test_cases, TEST_CASES_FILE_PY2, TEST_CASES_FILE_PY3, \
-    download_latest_python_source, PYTHON_2_VERSION, PYTHON_3_VERSION, tested_features_per_python_version, TESTS_DIR
+from tests.test_utils import *
 
 # https://docs.python.org/3/whatsnew/3.9.html
 PYTHON_3_9 = {
