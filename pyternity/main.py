@@ -20,14 +20,16 @@ def range_int(minimum: int = -math.inf, maximum: int = math.inf):
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Calculate modernity signatures for PyPI projects")
-    parser.add_argument('--max_release_date', type=datetime.fromisoformat, default=datetime.today(),
-                        help="Maximum date (in ISO 8601 format) any release of any project can have, e.g. 31-01-2023")
+    parser.add_argument('--max-release-date', type=datetime.fromisoformat, default=datetime.today(),
+                        help="Maximum date (in ISO 8601 format) any release of any project can have, e.g. 2023-01-31")
 
     type_group = parser.add_mutually_exclusive_group(required=True)
     type_group.add_argument('--most-popular-projects', type=range_int(minimum=1, maximum=5000),
                             help="Calculate the signature for the given amount of most popular PyPI projects")
     type_group.add_argument('--biggest-projects', type=range_int(minimum=1, maximum=100),
                             help="Calculate the signature for the given amount of biggest (in size) PyPI projects")
+    type_group.add_argument('--projects', action='extend', nargs='+', type=str,
+                            help="Calculate signature for specific PyPI projects")
 
     parser.add_argument('--most-popular-projects-hash', default='main',
                         help="Hash of the top-pypi-packages to use (default: 'main')")
@@ -52,8 +54,10 @@ def main():
     # Either get nth biggest or nth most popular projects from PyPI
     if args.most_popular_projects:
         projects = get_most_popular_projects(args.most_popular_projects, args.most_popular_projects_hash)
-    else:
+    elif args.biggest_projects:
         projects = get_biggest_projects(args.biggest_projects)
+    else:
+        projects = args.projects
 
     # Determine what versions of the releases the user wants
     match args.release_type:
