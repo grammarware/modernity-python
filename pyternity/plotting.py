@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 from matplotlib.axes import Axes
 from matplotlib.figure import FigureBase
+from matplotlib.transforms import Bbox
 from mpl_toolkits.mplot3d import Axes3D
 
 from pyternity.pypi_crawler import Release, PyPIProject
@@ -35,7 +36,7 @@ def plot_3d_graph(X, Y, Z, name: str, show_plot: bool) -> None:
     }
     ax.plot(list(releases_after_2008), mdates.date2num(list(releases_after_2008.values())), color='red')
 
-    plt.savefig(PLOTS_DIR / f"{name}.svg", bbox_inches='tight', pad_inches=.3, metadata={'Date': ''})
+    plt.savefig(PLOTS_DIR / f"{name}.svg", bbox_inches=Bbox.from_extents(1.3, 2, 9.9, 7.7), metadata={'Date': ''})
 
     if show_plot:
         fig.suptitle(f"Modernity Signature for {name}")
