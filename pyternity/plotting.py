@@ -11,7 +11,7 @@ from pyternity.pypi_crawler import Release, PyPIProject
 from pyternity.utils import *
 
 
-def plot_3d_graph(X, Y, Z, name: str):
+def plot_3d_graph(X, Y, Z, name: str, show_plot: bool) -> None:
     fig: FigureBase = plt.figure(figsize=(10, 10))
 
     ax: Axes3D = fig.add_subplot(projection='3d')
@@ -37,8 +37,10 @@ def plot_3d_graph(X, Y, Z, name: str):
 
     plt.savefig(PLOTS_DIR / f"{name}.svg", bbox_inches='tight', pad_inches=.3, metadata={'Date': ''})
 
-    fig.suptitle(f"Modernity Signature for {name}")
-    plt.show()
+    if show_plot:
+        fig.suptitle(f"Modernity Signature for {name}")
+        plt.show()
+    plt.close()
 
 
 def get_x_y_z(signatures: dict[Release, Signature]):
@@ -53,11 +55,11 @@ def get_x_y_z(signatures: dict[Release, Signature]):
     return versions, dates, data
 
 
-def plot_project_signatures(project: PyPIProject, signatures: dict[Release, Signature]):
-    plot_3d_graph(*get_x_y_z(signatures), project.name)
+def plot_project_signatures(project: PyPIProject, signatures: dict[Release, Signature], show_plot: bool) -> None:
+    plot_3d_graph(*get_x_y_z(signatures), project.name, show_plot)
 
 
-def plot_all_projects_signatures(projects: list[dict[Release, dict]]) -> None:
+def plot_all_projects_signatures(projects: list[dict[Release, dict]], show_plot: bool) -> None:
     all_versions, all_dates, all_data = [], [], []
     for project in projects:
         versions, dates, data = get_x_y_z(project)
@@ -65,7 +67,7 @@ def plot_all_projects_signatures(projects: list[dict[Release, dict]]) -> None:
         all_dates += dates
         all_data += data
 
-    plot_3d_graph(all_versions, all_dates, all_data, "All Projects")
+    plot_3d_graph(all_versions, all_dates, all_data, "All Projects", show_plot)
 
 
 def plot_vermin_vs_test_features(vermin_features: dict[str, list[str]], test_features: dict[str, set[str]],
