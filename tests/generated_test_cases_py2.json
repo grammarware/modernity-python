@@ -2946,17 +2946,17 @@
       "'os.fchown' member": 1
     }
   },
-  "import os\nos.SEEK_SET()": {
+  "import os\nos.SEEK_SET": {
     "2.5": {
       "'os.SEEK_SET' member": 1
     }
   },
-  "import os\nos.SEEK_CUR()": {
+  "import os\nos.SEEK_CUR": {
     "2.5": {
       "'os.SEEK_CUR' member": 1
     }
   },
-  "import os\nos.SEEK_END()": {
+  "import os\nos.SEEK_END": {
     "2.5": {
       "'os.SEEK_END' member": 1
     }
@@ -3021,87 +3021,87 @@
       "'os.walk' member": 1
     }
   },
-  "import os\nos.EX_OK()": {
+  "import os\nos.EX_OK": {
     "2.3": {
       "'os.EX_OK' member": 1
     }
   },
-  "import os\nos.EX_USAGE()": {
+  "import os\nos.EX_USAGE": {
     "2.3": {
       "'os.EX_USAGE' member": 1
     }
   },
-  "import os\nos.EX_DATAERR()": {
+  "import os\nos.EX_DATAERR": {
     "2.3": {
       "'os.EX_DATAERR' member": 1
     }
   },
-  "import os\nos.EX_NOINPUT()": {
+  "import os\nos.EX_NOINPUT": {
     "2.3": {
       "'os.EX_NOINPUT' member": 1
     }
   },
-  "import os\nos.EX_NOUSER()": {
+  "import os\nos.EX_NOUSER": {
     "2.3": {
       "'os.EX_NOUSER' member": 1
     }
   },
-  "import os\nos.EX_NOHOST()": {
+  "import os\nos.EX_NOHOST": {
     "2.3": {
       "'os.EX_NOHOST' member": 1
     }
   },
-  "import os\nos.EX_UNAVAILABLE()": {
+  "import os\nos.EX_UNAVAILABLE": {
     "2.3": {
       "'os.EX_UNAVAILABLE' member": 1
     }
   },
-  "import os\nos.EX_SOFTWARE()": {
+  "import os\nos.EX_SOFTWARE": {
     "2.3": {
       "'os.EX_SOFTWARE' member": 1
     }
   },
-  "import os\nos.EX_OSERR()": {
+  "import os\nos.EX_OSERR": {
     "2.3": {
       "'os.EX_OSERR' member": 1
     }
   },
-  "import os\nos.EX_OSFILE()": {
+  "import os\nos.EX_OSFILE": {
     "2.3": {
       "'os.EX_OSFILE' member": 1
     }
   },
-  "import os\nos.EX_CANTCREAT()": {
+  "import os\nos.EX_CANTCREAT": {
     "2.3": {
       "'os.EX_CANTCREAT' member": 1
     }
   },
-  "import os\nos.EX_IOERR()": {
+  "import os\nos.EX_IOERR": {
     "2.3": {
       "'os.EX_IOERR' member": 1
     }
   },
-  "import os\nos.EX_TEMPFAIL()": {
+  "import os\nos.EX_TEMPFAIL": {
     "2.3": {
       "'os.EX_TEMPFAIL' member": 1
     }
   },
-  "import os\nos.EX_PROTOCOL()": {
+  "import os\nos.EX_PROTOCOL": {
     "2.3": {
       "'os.EX_PROTOCOL' member": 1
     }
   },
-  "import os\nos.EX_NOPERM()": {
+  "import os\nos.EX_NOPERM": {
     "2.3": {
       "'os.EX_NOPERM' member": 1
     }
   },
-  "import os\nos.EX_CONFIG()": {
+  "import os\nos.EX_CONFIG": {
     "2.3": {
       "'os.EX_CONFIG' member": 1
     }
   },
-  "import os\nos.EX_NOTFOUND()": {
+  "import os\nos.EX_NOTFOUND": {
     "2.3": {
       "'os.EX_NOTFOUND' member": 1
     }
@@ -3126,12 +3126,12 @@
       "'os.wait4' member": 1
     }
   },
-  "import os\nos.WCONTINUED()": {
+  "import os\nos.WCONTINUED": {
     "2.3": {
       "'os.WCONTINUED' member": 1
     }
   },
-  "import os\nos.WUNTRACED()": {
+  "import os\nos.WUNTRACED": {
     "2.3": {
       "'os.WUNTRACED' member": 1
     }
@@ -3201,7 +3201,7 @@
       "'pdb' module": 1
     }
   },
-  "import pickle\npickle.HIGHEST_PROTOCOL()": {
+  "import pickle\npickle.HIGHEST_PROTOCOL": {
     "2.3": {
       "'pickle.HIGHEST_PROTOCOL' member": 1
     }
@@ -3476,12 +3476,12 @@
       "'random.SystemRandom' member": 1
     }
   },
-  "import re\nre.U()": {
+  "import re\nre.U": {
     "2.0": {
       "'re.U' member": 1
     }
   },
-  "import re\nre.UNICODE()": {
+  "import re\nre.UNICODE": {
     "2.0": {
       "'re.UNICODE' member": 1
     }
@@ -3564,7 +3564,7 @@
       "'select.kevent' member": 1
     }
   },
-  "import select\nselect.select.PIPE_BUF()": {
+  "import select\nselect.select.PIPE_BUF": {
     "2.7": {
       "'select.select.PIPE_BUF' member": 1
     }
@@ -3692,12 +3692,12 @@
       "'shutil.unregister_archive_format' member": 1
     }
   },
-  "import signal\nsignal.CTRL_C_EVENT()": {
+  "import signal\nsignal.CTRL_C_EVENT": {
     "2.7": {
       "'signal.CTRL_C_EVENT' member": 1
     }
   },
-  "import signal\nsignal.CTRL_BREAK_EVENT()": {
+  "import signal\nsignal.CTRL_BREAK_EVENT": {
     "2.7": {
       "'signal.CTRL_BREAK_EVENT' member": 1
     }
@@ -3805,22 +3805,22 @@
       "'SimpleXMLRPCServer.SimpleXMLRPCRequestHandler.encode_threshold' member": 1
     }
   },
-  "import site\nsite.PREFIXES()": {
+  "import site\nsite.PREFIXES": {
     "2.6": {
       "'site.PREFIXES' member": 1
     }
   },
-  "import site\nsite.ENABLE_USER_SITE()": {
+  "import site\nsite.ENABLE_USER_SITE": {
     "2.6": {
       "'site.ENABLE_USER_SITE' member": 1
     }
   },
-  "import site\nsite.USER_SITE()": {
+  "import site\nsite.USER_SITE": {
     "2.6": {
       "'site.USER_SITE' member": 1
     }
   },
-  "import site\nsite.USER_BASE()": {
+  "import site\nsite.USER_BASE": {
     "2.6": {
       "'site.USER_BASE' member": 1
     }
@@ -4151,7 +4151,7 @@
       "'ssl.enum_crls' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_DEFAULT()": {
+  "import ssl\nssl.VERIFY_DEFAULT": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4159,7 +4159,7 @@
       "'ssl.VERIFY_DEFAULT' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_CRL_CHECK_LEAF()": {
+  "import ssl\nssl.VERIFY_CRL_CHECK_LEAF": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4167,7 +4167,7 @@
       "'ssl.VERIFY_CRL_CHECK_LEAF' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_CRL_CHECK_CHAIN()": {
+  "import ssl\nssl.VERIFY_CRL_CHECK_CHAIN": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4175,7 +4175,7 @@
       "'ssl.VERIFY_CRL_CHECK_CHAIN' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_X509_STRICT()": {
+  "import ssl\nssl.VERIFY_X509_STRICT": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4183,7 +4183,7 @@
       "'ssl.VERIFY_X509_STRICT' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_X509_TRUSTED_FIRST()": {
+  "import ssl\nssl.VERIFY_X509_TRUSTED_FIRST": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4191,7 +4191,7 @@
       "'ssl.VERIFY_X509_TRUSTED_FIRST' member": 1
     }
   },
-  "import ssl\nssl.PROTOCOL_TLS()": {
+  "import ssl\nssl.PROTOCOL_TLS": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4215,7 +4215,7 @@
       "'ssl.PROTOCOL_TLSv1_2' member": 1
     }
   },
-  "import ssl\nssl.OP_ALL()": {
+  "import ssl\nssl.OP_ALL": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4271,7 +4271,7 @@
       "'ssl.OP_NO_TLSv1_3' member": 1
     }
   },
-  "import ssl\nssl.OP_CIPHER_SERVER_PREFERENCE()": {
+  "import ssl\nssl.OP_CIPHER_SERVER_PREFERENCE": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4279,7 +4279,7 @@
       "'ssl.OP_CIPHER_SERVER_PREFERENCE' member": 1
     }
   },
-  "import ssl\nssl.OP_SINGLE_DH_USE()": {
+  "import ssl\nssl.OP_SINGLE_DH_USE": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4287,7 +4287,7 @@
       "'ssl.OP_SINGLE_DH_USE' member": 1
     }
   },
-  "import ssl\nssl.OP_SINGLE_ECDH_USE()": {
+  "import ssl\nssl.OP_SINGLE_ECDH_USE": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4295,7 +4295,7 @@
       "'ssl.OP_SINGLE_ECDH_USE' member": 1
     }
   },
-  "import ssl\nssl.OP_ENABLE_MIDDLEBOX_COMPAT()": {
+  "import ssl\nssl.OP_ENABLE_MIDDLEBOX_COMPAT": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4303,7 +4303,7 @@
       "'ssl.OP_ENABLE_MIDDLEBOX_COMPAT' member": 1
     }
   },
-  "import ssl\nssl.OP_NO_COMPRESSION()": {
+  "import ssl\nssl.OP_NO_COMPRESSION": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4311,7 +4311,7 @@
       "'ssl.OP_NO_COMPRESSION' member": 1
     }
   },
-  "import ssl\nssl.HAS_ALPN()": {
+  "import ssl\nssl.HAS_ALPN": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4319,7 +4319,7 @@
       "'ssl.HAS_ALPN' member": 1
     }
   },
-  "import ssl\nssl.HAS_ECDH()": {
+  "import ssl\nssl.HAS_ECDH": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4327,7 +4327,7 @@
       "'ssl.HAS_ECDH' member": 1
     }
   },
-  "import ssl\nssl.HAS_SNI()": {
+  "import ssl\nssl.HAS_SNI": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4335,7 +4335,7 @@
       "'ssl.HAS_SNI' member": 1
     }
   },
-  "import ssl\nssl.HAS_NPN()": {
+  "import ssl\nssl.HAS_NPN": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4351,7 +4351,7 @@
       "'ssl.HAS_TLSv1_3' member": 1
     }
   },
-  "import ssl\nssl.CHANNEL_BINDING_TYPES()": {
+  "import ssl\nssl.CHANNEL_BINDING_TYPES": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4359,7 +4359,7 @@
       "'ssl.CHANNEL_BINDING_TYPES' member": 1
     }
   },
-  "import ssl\nssl.OPENSSL_VERSION()": {
+  "import ssl\nssl.OPENSSL_VERSION": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4367,7 +4367,7 @@
       "'ssl.OPENSSL_VERSION' member": 1
     }
   },
-  "import ssl\nssl.OPENSSL_VERSION_INFO()": {
+  "import ssl\nssl.OPENSSL_VERSION_INFO": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4375,7 +4375,7 @@
       "'ssl.OPENSSL_VERSION_INFO' member": 1
     }
   },
-  "import ssl\nssl.OPENSSL_VERSION_NUMBER()": {
+  "import ssl\nssl.OPENSSL_VERSION_NUMBER": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4383,7 +4383,7 @@
       "'ssl.OPENSSL_VERSION_NUMBER' member": 1
     }
   },
-  "import ssl\nssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE()": {
+  "import ssl\nssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4391,7 +4391,7 @@
       "'ssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE' member": 1
     }
   },
-  "import ssl\nssl.ALERT_DESCRIPTION_INTERNAL_ERROR()": {
+  "import ssl\nssl.ALERT_DESCRIPTION_INTERNAL_ERROR": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4399,7 +4399,7 @@
       "'ssl.ALERT_DESCRIPTION_INTERNAL_ERROR' member": 1
     }
   },
-  "import ssl\nssl.Purpose.SERVER_AUTH()": {
+  "import ssl\nssl.Purpose.SERVER_AUTH": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -4407,7 +4407,7 @@
       "'ssl.Purpose.SERVER_AUTH' member": 1
     }
   },
-  "import ssl\nssl.Purpose.CLIENT_AUTH()": {
+  "import ssl\nssl.Purpose.CLIENT_AUTH": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -5756,22 +5756,22 @@
       "'xml.dom' module": 1
     }
   },
-  "import xml.dom\nxml.dom.EMPTY_NAMESPACE()": {
+  "import xml.dom\nxml.dom.EMPTY_NAMESPACE": {
     "2.2": {
       "'xml.dom.EMPTY_NAMESPACE' member": 1
     }
   },
-  "import xml.dom\nxml.dom.XML_NAMESPACE()": {
+  "import xml.dom\nxml.dom.XML_NAMESPACE": {
     "2.2": {
       "'xml.dom.XML_NAMESPACE' member": 1
     }
   },
-  "import xml.dom\nxml.dom.XMLNS_NAMESPACE()": {
+  "import xml.dom\nxml.dom.XMLNS_NAMESPACE": {
     "2.2": {
       "'xml.dom.XMLNS_NAMESPACE' member": 1
     }
   },
-  "import xml.dom\nxml.dom.XHTML_NAMESPACE()": {
+  "import xml.dom\nxml.dom.XHTML_NAMESPACE": {
     "2.2": {
       "'xml.dom.XHTML_NAMESPACE' member": 1
     }

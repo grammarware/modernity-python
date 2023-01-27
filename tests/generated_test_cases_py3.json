@@ -1706,7 +1706,7 @@
       "'contextvars' module": 1
     }
   },
-  "import crypt\ncrypt.METHOD_BLOWFISH()": {
+  "import crypt\ncrypt.METHOD_BLOWFISH": {
     "3.7": {
       "'crypt.METHOD_BLOWFISH' member": 1
     }
@@ -1819,7 +1819,7 @@
       "'dataclasses' module": 1
     }
   },
-  "import dataclasses\ndataclasses.KW_ONLY()": {
+  "import dataclasses\ndataclasses.KW_ONLY": {
     "3.7": {
       "'dataclasses' module": 1
     },
@@ -1827,7 +1827,7 @@
       "'dataclasses.KW_ONLY' member": 1
     }
   },
-  "import datetime\ndatetime.UTC()": {
+  "import datetime\ndatetime.UTC": {
     "2.3": {
       "'datetime' module": 1
     },
@@ -2045,7 +2045,7 @@
       "'dis.Positions' member": 1
     }
   },
-  "import doctest\ndoctest.FAIL_FAST()": {
+  "import doctest\ndoctest.FAIL_FAST": {
     "3.4": {
       "'doctest.FAIL_FAST' member": 1
     }
@@ -2314,7 +2314,7 @@
       "'enum.nonmember' member": 1
     }
   },
-  "import errno\nerrno.EQFULL()": {
+  "import errno\nerrno.EQFULL": {
     "3.11": {
       "'errno.EQFULL' member": 1
     }
@@ -2364,7 +2364,7 @@
       "'filecmp.clear_cache' member": 1
     }
   },
-  "import filecmp\nfilecmp.DEFAULT_IGNORES()": {
+  "import filecmp\nfilecmp.DEFAULT_IGNORES": {
     "3.4": {
       "'filecmp.DEFAULT_IGNORES' member": 1
     }
@@ -3062,27 +3062,27 @@
       "'importlib.abc.SourceLoader.exec_module' member": 1
     }
   },
-  "import importlib.machinery\nimportlib.machinery.SOURCE_SUFFIXES()": {
+  "import importlib.machinery\nimportlib.machinery.SOURCE_SUFFIXES": {
     "3.3": {
       "'importlib.machinery.SOURCE_SUFFIXES' member": 1
     }
   },
-  "import importlib.machinery\nimportlib.machinery.DEBUG_BYTECODE_SUFFIXES()": {
+  "import importlib.machinery\nimportlib.machinery.DEBUG_BYTECODE_SUFFIXES": {
     "3.3": {
       "'importlib.machinery.DEBUG_BYTECODE_SUFFIXES' member": 1
     }
   },
-  "import importlib.machinery\nimportlib.machinery.OPTIMIZED_BYTECODE_SUFFIXES()": {
+  "import importlib.machinery\nimportlib.machinery.OPTIMIZED_BYTECODE_SUFFIXES": {
     "3.3": {
       "'importlib.machinery.OPTIMIZED_BYTECODE_SUFFIXES' member": 1
     }
   },
-  "import importlib.machinery\nimportlib.machinery.BYTECODE_SUFFIXES()": {
+  "import importlib.machinery\nimportlib.machinery.BYTECODE_SUFFIXES": {
     "3.3": {
       "'importlib.machinery.BYTECODE_SUFFIXES' member": 1
     }
   },
-  "import importlib.machinery\nimportlib.machinery.EXTENSION_SUFFIXES()": {
+  "import importlib.machinery\nimportlib.machinery.EXTENSION_SUFFIXES": {
     "3.3": {
       "'importlib.machinery.EXTENSION_SUFFIXES' member": 1
     }
@@ -3159,7 +3159,7 @@
       "'importlib.machinery.ModuleSpec' member": 1
     }
   },
-  "import importlib.util\nimportlib.util.MAGIC_NUMBER()": {
+  "import importlib.util\nimportlib.util.MAGIC_NUMBER": {
     "3.4": {
       "'importlib.util.MAGIC_NUMBER' member": 1
     }
@@ -3437,7 +3437,7 @@
       "'inspect.getcoroutinelocals' member": 1
     }
   },
-  "import inspect\ninspect.CO_COROUTINE()": {
+  "import inspect\ninspect.CO_COROUTINE": {
     "2.1": {
       "'inspect' module": 1
     },
@@ -3445,7 +3445,7 @@
       "'inspect.CO_COROUTINE' member": 1
     }
   },
-  "import inspect\ninspect.CO_ITERABLE_COROUTINE()": {
+  "import inspect\ninspect.CO_ITERABLE_COROUTINE": {
     "2.1": {
       "'inspect' module": 1
     },
@@ -3453,7 +3453,7 @@
       "'inspect.CO_ITERABLE_COROUTINE' member": 1
     }
   },
-  "import inspect\ninspect.CO_ASYNC_GENERATOR()": {
+  "import inspect\ninspect.CO_ASYNC_GENERATOR": {
     "2.1": {
       "'inspect' module": 1
     },
@@ -4127,122 +4127,122 @@
       "'mmap.mmap.madvise' member": 1
     }
   },
-  "import mmap\nmmap.MADV_NORMAL()": {
+  "import mmap\nmmap.MADV_NORMAL": {
     "3.8": {
       "'mmap.MADV_NORMAL' member": 1
     }
   },
-  "import mmap\nmmap.MADV_RANDOM()": {
+  "import mmap\nmmap.MADV_RANDOM": {
     "3.8": {
       "'mmap.MADV_RANDOM' member": 1
     }
   },
-  "import mmap\nmmap.MADV_SEQUENTIAL()": {
+  "import mmap\nmmap.MADV_SEQUENTIAL": {
     "3.8": {
       "'mmap.MADV_SEQUENTIAL' member": 1
     }
   },
-  "import mmap\nmmap.MADV_WILLNEED()": {
+  "import mmap\nmmap.MADV_WILLNEED": {
     "3.8": {
       "'mmap.MADV_WILLNEED' member": 1
     }
   },
-  "import mmap\nmmap.MADV_DONTNEED()": {
+  "import mmap\nmmap.MADV_DONTNEED": {
     "3.8": {
       "'mmap.MADV_DONTNEED' member": 1
     }
   },
-  "import mmap\nmmap.MADV_REMOVE()": {
+  "import mmap\nmmap.MADV_REMOVE": {
     "3.8": {
       "'mmap.MADV_REMOVE' member": 1
     }
   },
-  "import mmap\nmmap.MADV_DONTFORK()": {
+  "import mmap\nmmap.MADV_DONTFORK": {
     "3.8": {
       "'mmap.MADV_DONTFORK' member": 1
     }
   },
-  "import mmap\nmmap.MADV_DOFORK()": {
+  "import mmap\nmmap.MADV_DOFORK": {
     "3.8": {
       "'mmap.MADV_DOFORK' member": 1
     }
   },
-  "import mmap\nmmap.MADV_HWPOISON()": {
+  "import mmap\nmmap.MADV_HWPOISON": {
     "3.8": {
       "'mmap.MADV_HWPOISON' member": 1
     }
   },
-  "import mmap\nmmap.MADV_MERGEABLE()": {
+  "import mmap\nmmap.MADV_MERGEABLE": {
     "3.8": {
       "'mmap.MADV_MERGEABLE' member": 1
     }
   },
-  "import mmap\nmmap.MADV_UNMERGEABLE()": {
+  "import mmap\nmmap.MADV_UNMERGEABLE": {
     "3.8": {
       "'mmap.MADV_UNMERGEABLE' member": 1
     }
   },
-  "import mmap\nmmap.MADV_SOFT_OFFLINE()": {
+  "import mmap\nmmap.MADV_SOFT_OFFLINE": {
     "3.8": {
       "'mmap.MADV_SOFT_OFFLINE' member": 1
     }
   },
-  "import mmap\nmmap.MADV_HUGEPAGE()": {
+  "import mmap\nmmap.MADV_HUGEPAGE": {
     "3.8": {
       "'mmap.MADV_HUGEPAGE' member": 1
     }
   },
-  "import mmap\nmmap.MADV_NOHUGEPAGE()": {
+  "import mmap\nmmap.MADV_NOHUGEPAGE": {
     "3.8": {
       "'mmap.MADV_NOHUGEPAGE' member": 1
     }
   },
-  "import mmap\nmmap.MADV_DONTDUMP()": {
+  "import mmap\nmmap.MADV_DONTDUMP": {
     "3.8": {
       "'mmap.MADV_DONTDUMP' member": 1
     }
   },
-  "import mmap\nmmap.MADV_DODUMP()": {
+  "import mmap\nmmap.MADV_DODUMP": {
     "3.8": {
       "'mmap.MADV_DODUMP' member": 1
     }
   },
-  "import mmap\nmmap.MADV_FREE()": {
+  "import mmap\nmmap.MADV_FREE": {
     "3.8": {
       "'mmap.MADV_FREE' member": 1
     }
   },
-  "import mmap\nmmap.MADV_NOSYNC()": {
+  "import mmap\nmmap.MADV_NOSYNC": {
     "3.8": {
       "'mmap.MADV_NOSYNC' member": 1
     }
   },
-  "import mmap\nmmap.MADV_AUTOSYNC()": {
+  "import mmap\nmmap.MADV_AUTOSYNC": {
     "3.8": {
       "'mmap.MADV_AUTOSYNC' member": 1
     }
   },
-  "import mmap\nmmap.MADV_NOCORE()": {
+  "import mmap\nmmap.MADV_NOCORE": {
     "3.8": {
       "'mmap.MADV_NOCORE' member": 1
     }
   },
-  "import mmap\nmmap.MADV_CORE()": {
+  "import mmap\nmmap.MADV_CORE": {
     "3.8": {
       "'mmap.MADV_CORE' member": 1
     }
   },
-  "import mmap\nmmap.MADV_PROTECT()": {
+  "import mmap\nmmap.MADV_PROTECT": {
     "3.8": {
       "'mmap.MADV_PROTECT' member": 1
     }
   },
-  "import mmap\nmmap.MADV_FREE_REUSABLE()": {
+  "import mmap\nmmap.MADV_FREE_REUSABLE": {
     "3.8": {
       "'mmap.MADV_FREE_REUSABLE' member": 1
     }
   },
-  "import mmap\nmmap.MADV_FREE_REUSE()": {
+  "import mmap\nmmap.MADV_FREE_REUSE": {
     "3.8": {
       "'mmap.MADV_FREE_REUSE' member": 1
     }
@@ -4485,17 +4485,17 @@
       "'os.getpriority' member": 1
     }
   },
-  "import os\nos.PRIO_PROCESS()": {
+  "import os\nos.PRIO_PROCESS": {
     "3.3": {
       "'os.PRIO_PROCESS' member": 1
     }
   },
-  "import os\nos.PRIO_PGRP()": {
+  "import os\nos.PRIO_PGRP": {
     "3.3": {
       "'os.PRIO_PGRP' member": 1
     }
   },
-  "import os\nos.PRIO_USER()": {
+  "import os\nos.PRIO_USER": {
     "3.3": {
       "'os.PRIO_USER' member": 1
     }
@@ -4555,22 +4555,22 @@
       "'os.lockf' member": 1
     }
   },
-  "import os\nos.F_LOCK()": {
+  "import os\nos.F_LOCK": {
     "3.3": {
       "'os.F_LOCK' member": 1
     }
   },
-  "import os\nos.F_TLOCK()": {
+  "import os\nos.F_TLOCK": {
     "3.3": {
       "'os.F_TLOCK' member": 1
     }
   },
-  "import os\nos.F_ULOCK()": {
+  "import os\nos.F_ULOCK": {
     "3.3": {
       "'os.F_ULOCK' member": 1
     }
   },
-  "import os\nos.F_TEST()": {
+  "import os\nos.F_TEST": {
     "3.3": {
       "'os.F_TEST' member": 1
     }
@@ -4595,32 +4595,32 @@
       "'os.posix_fadvise' member": 1
     }
   },
-  "import os\nos.POSIX_FADV_NORMAL()": {
+  "import os\nos.POSIX_FADV_NORMAL": {
     "3.3": {
       "'os.POSIX_FADV_NORMAL' member": 1
     }
   },
-  "import os\nos.POSIX_FADV_SEQUENTIAL()": {
+  "import os\nos.POSIX_FADV_SEQUENTIAL": {
     "3.3": {
       "'os.POSIX_FADV_SEQUENTIAL' member": 1
     }
   },
-  "import os\nos.POSIX_FADV_RANDOM()": {
+  "import os\nos.POSIX_FADV_RANDOM": {
     "3.3": {
       "'os.POSIX_FADV_RANDOM' member": 1
     }
   },
-  "import os\nos.POSIX_FADV_NOREUSE()": {
+  "import os\nos.POSIX_FADV_NOREUSE": {
     "3.3": {
       "'os.POSIX_FADV_NOREUSE' member": 1
     }
   },
-  "import os\nos.POSIX_FADV_WILLNEED()": {
+  "import os\nos.POSIX_FADV_WILLNEED": {
     "3.3": {
       "'os.POSIX_FADV_WILLNEED' member": 1
     }
   },
-  "import os\nos.POSIX_FADV_DONTNEED()": {
+  "import os\nos.POSIX_FADV_DONTNEED": {
     "3.3": {
       "'os.POSIX_FADV_DONTNEED' member": 1
     }
@@ -4635,12 +4635,12 @@
       "'os.preadv' member": 1
     }
   },
-  "import os\nos.RWF_NOWAIT()": {
+  "import os\nos.RWF_NOWAIT": {
     "3.7": {
       "'os.RWF_NOWAIT' member": 1
     }
   },
-  "import os\nos.RWF_HIPRI()": {
+  "import os\nos.RWF_HIPRI": {
     "3.7": {
       "'os.RWF_HIPRI' member": 1
     }
@@ -4655,17 +4655,17 @@
       "'os.pwritev' member": 1
     }
   },
-  "import os\nos.RWF_DSYNC()": {
+  "import os\nos.RWF_DSYNC": {
     "3.7": {
       "'os.RWF_DSYNC' member": 1
     }
   },
-  "import os\nos.RWF_SYNC()": {
+  "import os\nos.RWF_SYNC": {
     "3.7": {
       "'os.RWF_SYNC' member": 1
     }
   },
-  "import os\nos.RWF_APPEND()": {
+  "import os\nos.RWF_APPEND": {
     "3.10": {
       "'os.RWF_APPEND' member": 1
     }
@@ -4680,22 +4680,22 @@
       "'os.set_blocking' member": 1
     }
   },
-  "import os\nos.SF_NODISKIO()": {
+  "import os\nos.SF_NODISKIO": {
     "3.3": {
       "'os.SF_NODISKIO' member": 1
     }
   },
-  "import os\nos.SF_MNOWAIT()": {
+  "import os\nos.SF_MNOWAIT": {
     "3.3": {
       "'os.SF_MNOWAIT' member": 1
     }
   },
-  "import os\nos.SF_SYNC()": {
+  "import os\nos.SF_SYNC": {
     "3.3": {
       "'os.SF_SYNC' member": 1
     }
   },
-  "import os\nos.SF_NOCACHE()": {
+  "import os\nos.SF_NOCACHE": {
     "3.11": {
       "'os.SF_NOCACHE' member": 1
     }
@@ -4705,17 +4705,17 @@
       "'os.splice' member": 1
     }
   },
-  "import os\nos.SPLICE_F_MOVE()": {
+  "import os\nos.SPLICE_F_MOVE": {
     "3.10": {
       "'os.SPLICE_F_MOVE' member": 1
     }
   },
-  "import os\nos.SPLICE_F_NONBLOCK()": {
+  "import os\nos.SPLICE_F_NONBLOCK": {
     "3.10": {
       "'os.SPLICE_F_NONBLOCK' member": 1
     }
   },
-  "import os\nos.SPLICE_F_MORE()": {
+  "import os\nos.SPLICE_F_MORE": {
     "3.10": {
       "'os.SPLICE_F_MORE' member": 1
     }
@@ -4813,87 +4813,87 @@
       "'os.memfd_create' member": 1
     }
   },
-  "import os\nos.MFD_CLOEXEC()": {
+  "import os\nos.MFD_CLOEXEC": {
     "3.8": {
       "'os.MFD_CLOEXEC' member": 1
     }
   },
-  "import os\nos.MFD_ALLOW_SEALING()": {
+  "import os\nos.MFD_ALLOW_SEALING": {
     "3.8": {
       "'os.MFD_ALLOW_SEALING' member": 1
     }
   },
-  "import os\nos.MFD_HUGETLB()": {
+  "import os\nos.MFD_HUGETLB": {
     "3.8": {
       "'os.MFD_HUGETLB' member": 1
     }
   },
-  "import os\nos.MFD_HUGE_SHIFT()": {
+  "import os\nos.MFD_HUGE_SHIFT": {
     "3.8": {
       "'os.MFD_HUGE_SHIFT' member": 1
     }
   },
-  "import os\nos.MFD_HUGE_MASK()": {
+  "import os\nos.MFD_HUGE_MASK": {
     "3.8": {
       "'os.MFD_HUGE_MASK' member": 1
     }
   },
-  "import os\nos.MFD_HUGE_64KB()": {
+  "import os\nos.MFD_HUGE_64KB": {
     "3.8": {
       "'os.MFD_HUGE_64KB' member": 1
     }
   },
-  "import os\nos.MFD_HUGE_512KB()": {
+  "import os\nos.MFD_HUGE_512KB": {
     "3.8": {
       "'os.MFD_HUGE_512KB' member": 1
     }
   },
-  "import os\nos.MFD_HUGE_1MB()": {
+  "import os\nos.MFD_HUGE_1MB": {
     "3.8": {
       "'os.MFD_HUGE_1MB' member": 1
     }
   },
-  "import os\nos.MFD_HUGE_2MB()": {
+  "import os\nos.MFD_HUGE_2MB": {
     "3.8": {
       "'os.MFD_HUGE_2MB' member": 1
     }
   },
-  "import os\nos.MFD_HUGE_8MB()": {
+  "import os\nos.MFD_HUGE_8MB": {
     "3.8": {
       "'os.MFD_HUGE_8MB' member": 1
     }
   },
-  "import os\nos.MFD_HUGE_16MB()": {
+  "import os\nos.MFD_HUGE_16MB": {
     "3.8": {
       "'os.MFD_HUGE_16MB' member": 1
     }
   },
-  "import os\nos.MFD_HUGE_32MB()": {
+  "import os\nos.MFD_HUGE_32MB": {
     "3.8": {
       "'os.MFD_HUGE_32MB' member": 1
     }
   },
-  "import os\nos.MFD_HUGE_256MB()": {
+  "import os\nos.MFD_HUGE_256MB": {
     "3.8": {
       "'os.MFD_HUGE_256MB' member": 1
     }
   },
-  "import os\nos.MFD_HUGE_512MB()": {
+  "import os\nos.MFD_HUGE_512MB": {
     "3.8": {
       "'os.MFD_HUGE_512MB' member": 1
     }
   },
-  "import os\nos.MFD_HUGE_1GB()": {
+  "import os\nos.MFD_HUGE_1GB": {
     "3.8": {
       "'os.MFD_HUGE_1GB' member": 1
     }
   },
-  "import os\nos.MFD_HUGE_2GB()": {
+  "import os\nos.MFD_HUGE_2GB": {
     "3.8": {
       "'os.MFD_HUGE_2GB' member": 1
     }
   },
-  "import os\nos.MFD_HUGE_16GB()": {
+  "import os\nos.MFD_HUGE_16GB": {
     "3.8": {
       "'os.MFD_HUGE_16GB' member": 1
     }
@@ -4913,17 +4913,17 @@
       "'os.eventfd_write' member": 1
     }
   },
-  "import os\nos.EFD_CLOEXEC()": {
+  "import os\nos.EFD_CLOEXEC": {
     "3.10": {
       "'os.EFD_CLOEXEC' member": 1
     }
   },
-  "import os\nos.EFD_NONBLOCK()": {
+  "import os\nos.EFD_NONBLOCK": {
     "3.10": {
       "'os.EFD_NONBLOCK' member": 1
     }
   },
-  "import os\nos.EFD_SEMAPHORE()": {
+  "import os\nos.EFD_SEMAPHORE": {
     "3.10": {
       "'os.EFD_SEMAPHORE' member": 1
     }
@@ -4968,67 +4968,67 @@
       "'os.waitid' member": 1
     }
   },
-  "import os\nos.P_PID()": {
+  "import os\nos.P_PID": {
     "3.3": {
       "'os.P_PID' member": 1
     }
   },
-  "import os\nos.P_PGID()": {
+  "import os\nos.P_PGID": {
     "3.3": {
       "'os.P_PGID' member": 1
     }
   },
-  "import os\nos.P_ALL()": {
+  "import os\nos.P_ALL": {
     "3.3": {
       "'os.P_ALL' member": 1
     }
   },
-  "import os\nos.P_PIDFD()": {
+  "import os\nos.P_PIDFD": {
     "3.9": {
       "'os.P_PIDFD' member": 1
     }
   },
-  "import os\nos.WEXITED()": {
+  "import os\nos.WEXITED": {
     "3.3": {
       "'os.WEXITED' member": 1
     }
   },
-  "import os\nos.WSTOPPED()": {
+  "import os\nos.WSTOPPED": {
     "3.3": {
       "'os.WSTOPPED' member": 1
     }
   },
-  "import os\nos.WNOWAIT()": {
+  "import os\nos.WNOWAIT": {
     "3.3": {
       "'os.WNOWAIT' member": 1
     }
   },
-  "import os\nos.CLD_EXITED()": {
+  "import os\nos.CLD_EXITED": {
     "3.3": {
       "'os.CLD_EXITED' member": 1
     }
   },
-  "import os\nos.CLD_KILLED()": {
+  "import os\nos.CLD_KILLED": {
     "3.3": {
       "'os.CLD_KILLED' member": 1
     }
   },
-  "import os\nos.CLD_DUMPED()": {
+  "import os\nos.CLD_DUMPED": {
     "3.3": {
       "'os.CLD_DUMPED' member": 1
     }
   },
-  "import os\nos.CLD_TRAPPED()": {
+  "import os\nos.CLD_TRAPPED": {
     "3.3": {
       "'os.CLD_TRAPPED' member": 1
     }
   },
-  "import os\nos.CLD_STOPPED()": {
+  "import os\nos.CLD_STOPPED": {
     "3.3": {
       "'os.CLD_STOPPED' member": 1
     }
   },
-  "import os\nos.CLD_CONTINUED()": {
+  "import os\nos.CLD_CONTINUED": {
     "3.3": {
       "'os.CLD_CONTINUED' member": 1
     }
@@ -5043,37 +5043,37 @@
       "'os.cpu_count' member": 1
     }
   },
-  "import os\nos.RTLD_LAZY()": {
+  "import os\nos.RTLD_LAZY": {
     "3.3": {
       "'os.RTLD_LAZY' member": 1
     }
   },
-  "import os\nos.RTLD_NOW()": {
+  "import os\nos.RTLD_NOW": {
     "3.3": {
       "'os.RTLD_NOW' member": 1
     }
   },
-  "import os\nos.RTLD_GLOBAL()": {
+  "import os\nos.RTLD_GLOBAL": {
     "3.3": {
       "'os.RTLD_GLOBAL' member": 1
     }
   },
-  "import os\nos.RTLD_LOCAL()": {
+  "import os\nos.RTLD_LOCAL": {
     "3.3": {
       "'os.RTLD_LOCAL' member": 1
     }
   },
-  "import os\nos.RTLD_NODELETE()": {
+  "import os\nos.RTLD_NODELETE": {
     "3.3": {
       "'os.RTLD_NODELETE' member": 1
     }
   },
-  "import os\nos.RTLD_NOLOAD()": {
+  "import os\nos.RTLD_NOLOAD": {
     "3.3": {
       "'os.RTLD_NOLOAD' member": 1
     }
   },
-  "import os\nos.RTLD_DEEPBIND()": {
+  "import os\nos.RTLD_DEEPBIND": {
     "3.3": {
       "'os.RTLD_DEEPBIND' member": 1
     }
@@ -5083,12 +5083,12 @@
       "'os.getrandom' member": 1
     }
   },
-  "import os\nos.GRND_NONBLOCK()": {
+  "import os\nos.GRND_NONBLOCK": {
     "3.6": {
       "'os.GRND_NONBLOCK' member": 1
     }
   },
-  "import os\nos.GRND_RANDOM()": {
+  "import os\nos.GRND_RANDOM": {
     "3.6": {
       "'os.GRND_RANDOM' member": 1
     }
@@ -5383,12 +5383,12 @@
       "'plistlib.UID' member": 1
     }
   },
-  "import plistlib\nplistlib.FMT_XML()": {
+  "import plistlib\nplistlib.FMT_XML": {
     "3.4": {
       "'plistlib.FMT_XML' member": 1
     }
   },
-  "import plistlib\nplistlib.FMT_BINARY()": {
+  "import plistlib\nplistlib.FMT_BINARY": {
     "3.4": {
       "'plistlib.FMT_BINARY' member": 1
     }
@@ -5517,7 +5517,7 @@
       "'random.sample(counts)'": 1
     }
   },
-  "import re\nre.NOFLAG()": {
+  "import re\nre.NOFLAG": {
     "3.11": {
       "'re.NOFLAG' member": 1
     }
@@ -5568,52 +5568,52 @@
       "'resource.prlimit' member": 1
     }
   },
-  "import resource\nresource.RLIMIT_MSGQUEUE()": {
+  "import resource\nresource.RLIMIT_MSGQUEUE": {
     "3.4": {
       "'resource.RLIMIT_MSGQUEUE' member": 1
     }
   },
-  "import resource\nresource.RLIMIT_NICE()": {
+  "import resource\nresource.RLIMIT_NICE": {
     "3.4": {
       "'resource.RLIMIT_NICE' member": 1
     }
   },
-  "import resource\nresource.RLIMIT_RTPRIO()": {
+  "import resource\nresource.RLIMIT_RTPRIO": {
     "3.4": {
       "'resource.RLIMIT_RTPRIO' member": 1
     }
   },
-  "import resource\nresource.RLIMIT_RTTIME()": {
+  "import resource\nresource.RLIMIT_RTTIME": {
     "3.4": {
       "'resource.RLIMIT_RTTIME' member": 1
     }
   },
-  "import resource\nresource.RLIMIT_SIGPENDING()": {
+  "import resource\nresource.RLIMIT_SIGPENDING": {
     "3.4": {
       "'resource.RLIMIT_SIGPENDING' member": 1
     }
   },
-  "import resource\nresource.RLIMIT_SBSIZE()": {
+  "import resource\nresource.RLIMIT_SBSIZE": {
     "3.4": {
       "'resource.RLIMIT_SBSIZE' member": 1
     }
   },
-  "import resource\nresource.RLIMIT_SWAP()": {
+  "import resource\nresource.RLIMIT_SWAP": {
     "3.4": {
       "'resource.RLIMIT_SWAP' member": 1
     }
   },
-  "import resource\nresource.RLIMIT_NPTS()": {
+  "import resource\nresource.RLIMIT_NPTS": {
     "3.4": {
       "'resource.RLIMIT_NPTS' member": 1
     }
   },
-  "import resource\nresource.RLIMIT_KQUEUES()": {
+  "import resource\nresource.RLIMIT_KQUEUES": {
     "3.10": {
       "'resource.RLIMIT_KQUEUES' member": 1
     }
   },
-  "import resource\nresource.RUSAGE_THREAD()": {
+  "import resource\nresource.RUSAGE_THREAD": {
     "3.2": {
       "'resource.RUSAGE_THREAD' member": 1
     }
@@ -5659,7 +5659,7 @@
       "'select.epoll(flags)'": 1
     }
   },
-  "import select\nselect.PIPE_BUF()": {
+  "import select\nselect.PIPE_BUF": {
     "3.2": {
       "'select.PIPE_BUF' member": 1
     }
@@ -5819,32 +5819,32 @@
       "'signal.Sigmasks' member": 1
     }
   },
-  "import signal\nsignal.SIGSTKFLT()": {
+  "import signal\nsignal.SIGSTKFLT": {
     "3.11": {
       "'signal.SIGSTKFLT' member": 1
     }
   },
-  "import signal\nsignal.CTRL_C_EVENT()": {
+  "import signal\nsignal.CTRL_C_EVENT": {
     "3.2": {
       "'signal.CTRL_C_EVENT' member": 1
     }
   },
-  "import signal\nsignal.CTRL_BREAK_EVENT()": {
+  "import signal\nsignal.CTRL_BREAK_EVENT": {
     "3.2": {
       "'signal.CTRL_BREAK_EVENT' member": 1
     }
   },
-  "import signal\nsignal.SIG_BLOCK()": {
+  "import signal\nsignal.SIG_BLOCK": {
     "3.3": {
       "'signal.SIG_BLOCK' member": 1
     }
   },
-  "import signal\nsignal.SIG_UNBLOCK()": {
+  "import signal\nsignal.SIG_UNBLOCK": {
     "3.3": {
       "'signal.SIG_UNBLOCK' member": 1
     }
   },
-  "import signal\nsignal.SIG_SETMASK()": {
+  "import signal\nsignal.SIG_SETMASK": {
     "3.3": {
       "'signal.SIG_SETMASK' member": 1
     }
@@ -5963,107 +5963,107 @@
       "'smtplib.SMTP.send_message' member": 1
     }
   },
-  "import socket\nsocket.SOCK_CLOEXEC()": {
+  "import socket\nsocket.SOCK_CLOEXEC": {
     "3.2": {
       "'socket.SOCK_CLOEXEC' member": 1
     }
   },
-  "import socket\nsocket.SOCK_NONBLOCK()": {
+  "import socket\nsocket.SOCK_NONBLOCK": {
     "3.2": {
       "'socket.SOCK_NONBLOCK' member": 1
     }
   },
-  "import socket\nsocket.AF_CAN()": {
+  "import socket\nsocket.AF_CAN": {
     "3.3": {
       "'socket.AF_CAN' member": 1
     }
   },
-  "import socket\nsocket.PF_CAN()": {
+  "import socket\nsocket.PF_CAN": {
     "3.3": {
       "'socket.PF_CAN' member": 1
     }
   },
-  "import socket\nsocket.CAN_BCM()": {
+  "import socket\nsocket.CAN_BCM": {
     "3.4": {
       "'socket.CAN_BCM' member": 1
     }
   },
-  "import socket\nsocket.CAN_RAW_FD_FRAMES()": {
+  "import socket\nsocket.CAN_RAW_FD_FRAMES": {
     "3.5": {
       "'socket.CAN_RAW_FD_FRAMES' member": 1
     }
   },
-  "import socket\nsocket.CAN_RAW_JOIN_FILTERS()": {
+  "import socket\nsocket.CAN_RAW_JOIN_FILTERS": {
     "3.9": {
       "'socket.CAN_RAW_JOIN_FILTERS' member": 1
     }
   },
-  "import socket\nsocket.CAN_ISOTP()": {
+  "import socket\nsocket.CAN_ISOTP": {
     "3.7": {
       "'socket.CAN_ISOTP' member": 1
     }
   },
-  "import socket\nsocket.CAN_J1939()": {
+  "import socket\nsocket.CAN_J1939": {
     "3.9": {
       "'socket.CAN_J1939' member": 1
     }
   },
-  "import socket\nsocket.AF_RDS()": {
+  "import socket\nsocket.AF_RDS": {
     "3.3": {
       "'socket.AF_RDS' member": 1
     }
   },
-  "import socket\nsocket.PF_RDS()": {
+  "import socket\nsocket.PF_RDS": {
     "3.3": {
       "'socket.PF_RDS' member": 1
     }
   },
-  "import socket\nsocket.SOL_RDS()": {
+  "import socket\nsocket.SOL_RDS": {
     "3.3": {
       "'socket.SOL_RDS' member": 1
     }
   },
-  "import socket\nsocket.AF_ALG()": {
+  "import socket\nsocket.AF_ALG": {
     "3.6": {
       "'socket.AF_ALG' member": 1
     }
   },
-  "import socket\nsocket.SOL_ALG()": {
+  "import socket\nsocket.SOL_ALG": {
     "3.6": {
       "'socket.SOL_ALG' member": 1
     }
   },
-  "import socket\nsocket.AF_VSOCK()": {
+  "import socket\nsocket.AF_VSOCK": {
     "3.7": {
       "'socket.AF_VSOCK' member": 1
     }
   },
-  "import socket\nsocket.IOCTL_VM_SOCKETS_GET_LOCAL_CID()": {
+  "import socket\nsocket.IOCTL_VM_SOCKETS_GET_LOCAL_CID": {
     "3.7": {
       "'socket.IOCTL_VM_SOCKETS_GET_LOCAL_CID' member": 1
     }
   },
-  "import socket\nsocket.AF_LINK()": {
+  "import socket\nsocket.AF_LINK": {
     "3.4": {
       "'socket.AF_LINK' member": 1
     }
   },
-  "import socket\nsocket.SCM_CREDS2()": {
+  "import socket\nsocket.SCM_CREDS2": {
     "3.11": {
       "'socket.SCM_CREDS2' member": 1
     }
   },
-  "import socket\nsocket.LOCAL_CREDS()": {
+  "import socket\nsocket.LOCAL_CREDS": {
     "3.11": {
       "'socket.LOCAL_CREDS' member": 1
     }
   },
-  "import socket\nsocket.LOCAL_CREDS_PERSISTENT()": {
+  "import socket\nsocket.LOCAL_CREDS_PERSISTENT": {
     "3.11": {
       "'socket.LOCAL_CREDS_PERSISTENT' member": 1
     }
   },
-  "import socket\nsocket.SO_INCOMING_CPU()": {
+  "import socket\nsocket.SO_INCOMING_CPU": {
     "3.11": {
       "'socket.SO_INCOMING_CPU' member": 1
     }
@@ -6442,7 +6442,7 @@
       "'ssl.VerifyMode' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_DEFAULT()": {
+  "import ssl\nssl.VERIFY_DEFAULT": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6450,7 +6450,7 @@
       "'ssl.VERIFY_DEFAULT' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_CRL_CHECK_LEAF()": {
+  "import ssl\nssl.VERIFY_CRL_CHECK_LEAF": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6458,7 +6458,7 @@
       "'ssl.VERIFY_CRL_CHECK_LEAF' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_CRL_CHECK_CHAIN()": {
+  "import ssl\nssl.VERIFY_CRL_CHECK_CHAIN": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6466,7 +6466,7 @@
       "'ssl.VERIFY_CRL_CHECK_CHAIN' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_X509_STRICT()": {
+  "import ssl\nssl.VERIFY_X509_STRICT": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6474,7 +6474,7 @@
       "'ssl.VERIFY_X509_STRICT' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_ALLOW_PROXY_CERTS()": {
+  "import ssl\nssl.VERIFY_ALLOW_PROXY_CERTS": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6482,7 +6482,7 @@
       "'ssl.VERIFY_ALLOW_PROXY_CERTS' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_X509_TRUSTED_FIRST()": {
+  "import ssl\nssl.VERIFY_X509_TRUSTED_FIRST": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6490,7 +6490,7 @@
       "'ssl.VERIFY_X509_TRUSTED_FIRST' member": 1
     }
   },
-  "import ssl\nssl.VERIFY_X509_PARTIAL_CHAIN()": {
+  "import ssl\nssl.VERIFY_X509_PARTIAL_CHAIN": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6506,7 +6506,7 @@
       "'ssl.VerifyFlags' member": 1
     }
   },
-  "import ssl\nssl.PROTOCOL_TLS()": {
+  "import ssl\nssl.PROTOCOL_TLS": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6514,7 +6514,7 @@
       "'ssl.PROTOCOL_TLS' member": 1
     }
   },
-  "import ssl\nssl.PROTOCOL_TLS_CLIENT()": {
+  "import ssl\nssl.PROTOCOL_TLS_CLIENT": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6522,7 +6522,7 @@
       "'ssl.PROTOCOL_TLS_CLIENT' member": 1
     }
   },
-  "import ssl\nssl.PROTOCOL_TLS_SERVER()": {
+  "import ssl\nssl.PROTOCOL_TLS_SERVER": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6546,7 +6546,7 @@
       "'ssl.PROTOCOL_TLSv1_2' member": 1
     }
   },
-  "import ssl\nssl.OP_ALL()": {
+  "import ssl\nssl.OP_ALL": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6602,7 +6602,7 @@
       "'ssl.OP_NO_TLSv1_3' member": 1
     }
   },
-  "import ssl\nssl.OP_NO_RENEGOTIATION()": {
+  "import ssl\nssl.OP_NO_RENEGOTIATION": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6610,7 +6610,7 @@
       "'ssl.OP_NO_RENEGOTIATION' member": 1
     }
   },
-  "import ssl\nssl.OP_CIPHER_SERVER_PREFERENCE()": {
+  "import ssl\nssl.OP_CIPHER_SERVER_PREFERENCE": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6618,7 +6618,7 @@
       "'ssl.OP_CIPHER_SERVER_PREFERENCE' member": 1
     }
   },
-  "import ssl\nssl.OP_SINGLE_DH_USE()": {
+  "import ssl\nssl.OP_SINGLE_DH_USE": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6626,7 +6626,7 @@
       "'ssl.OP_SINGLE_DH_USE' member": 1
     }
   },
-  "import ssl\nssl.OP_SINGLE_ECDH_USE()": {
+  "import ssl\nssl.OP_SINGLE_ECDH_USE": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6634,7 +6634,7 @@
       "'ssl.OP_SINGLE_ECDH_USE' member": 1
     }
   },
-  "import ssl\nssl.OP_ENABLE_MIDDLEBOX_COMPAT()": {
+  "import ssl\nssl.OP_ENABLE_MIDDLEBOX_COMPAT": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6642,7 +6642,7 @@
       "'ssl.OP_ENABLE_MIDDLEBOX_COMPAT' member": 1
     }
   },
-  "import ssl\nssl.OP_NO_COMPRESSION()": {
+  "import ssl\nssl.OP_NO_COMPRESSION": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6650,7 +6650,7 @@
       "'ssl.OP_NO_COMPRESSION' member": 1
     }
   },
-  "import ssl\nssl.OP_NO_TICKET()": {
+  "import ssl\nssl.OP_NO_TICKET": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6658,7 +6658,7 @@
       "'ssl.OP_NO_TICKET' member": 1
     }
   },
-  "import ssl\nssl.OP_IGNORE_UNEXPECTED_EOF()": {
+  "import ssl\nssl.OP_IGNORE_UNEXPECTED_EOF": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6666,7 +6666,7 @@
       "'ssl.OP_IGNORE_UNEXPECTED_EOF' member": 1
     }
   },
-  "import ssl\nssl.HAS_ALPN()": {
+  "import ssl\nssl.HAS_ALPN": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6674,7 +6674,7 @@
       "'ssl.HAS_ALPN' member": 1
     }
   },
-  "import ssl\nssl.HAS_NEVER_CHECK_COMMON_NAME()": {
+  "import ssl\nssl.HAS_NEVER_CHECK_COMMON_NAME": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6682,7 +6682,7 @@
       "'ssl.HAS_NEVER_CHECK_COMMON_NAME' member": 1
     }
   },
-  "import ssl\nssl.HAS_ECDH()": {
+  "import ssl\nssl.HAS_ECDH": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6690,7 +6690,7 @@
       "'ssl.HAS_ECDH' member": 1
     }
   },
-  "import ssl\nssl.HAS_SNI()": {
+  "import ssl\nssl.HAS_SNI": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6698,7 +6698,7 @@
       "'ssl.HAS_SNI' member": 1
     }
   },
-  "import ssl\nssl.HAS_NPN()": {
+  "import ssl\nssl.HAS_NPN": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6754,7 +6754,7 @@
       "'ssl.HAS_TLSv1_3' member": 1
     }
   },
-  "import ssl\nssl.CHANNEL_BINDING_TYPES()": {
+  "import ssl\nssl.CHANNEL_BINDING_TYPES": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6762,7 +6762,7 @@
       "'ssl.CHANNEL_BINDING_TYPES' member": 1
     }
   },
-  "import ssl\nssl.OPENSSL_VERSION()": {
+  "import ssl\nssl.OPENSSL_VERSION": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6770,7 +6770,7 @@
       "'ssl.OPENSSL_VERSION' member": 1
     }
   },
-  "import ssl\nssl.OPENSSL_VERSION_INFO()": {
+  "import ssl\nssl.OPENSSL_VERSION_INFO": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6778,7 +6778,7 @@
       "'ssl.OPENSSL_VERSION_INFO' member": 1
     }
   },
-  "import ssl\nssl.OPENSSL_VERSION_NUMBER()": {
+  "import ssl\nssl.OPENSSL_VERSION_NUMBER": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6786,7 +6786,7 @@
       "'ssl.OPENSSL_VERSION_NUMBER' member": 1
     }
   },
-  "import ssl\nssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE()": {
+  "import ssl\nssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6794,7 +6794,7 @@
       "'ssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE' member": 1
     }
   },
-  "import ssl\nssl.ALERT_DESCRIPTION_INTERNAL_ERROR()": {
+  "import ssl\nssl.ALERT_DESCRIPTION_INTERNAL_ERROR": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6810,7 +6810,7 @@
       "'ssl.AlertDescription' member": 1
     }
   },
-  "import ssl\nssl.Purpose.SERVER_AUTH()": {
+  "import ssl\nssl.Purpose.SERVER_AUTH": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -6818,7 +6818,7 @@
       "'ssl.Purpose.SERVER_AUTH' member": 1
     }
   },
-  "import ssl\nssl.Purpose.CLIENT_AUTH()": {
+  "import ssl\nssl.Purpose.CLIENT_AUTH": {
     "2.6": {
       "'ssl' module": 1
     },
@@ -7308,117 +7308,117 @@
       "'stat.filemode' member": 1
     }
   },
-  "import stat\nstat.S_IFDOOR()": {
+  "import stat\nstat.S_IFDOOR": {
     "3.4": {
       "'stat.S_IFDOOR' member": 1
     }
   },
-  "import stat\nstat.S_IFPORT()": {
+  "import stat\nstat.S_IFPORT": {
     "3.4": {
       "'stat.S_IFPORT' member": 1
     }
   },
-  "import stat\nstat.S_IFWHT()": {
+  "import stat\nstat.S_IFWHT": {
     "3.4": {
       "'stat.S_IFWHT' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_ARCHIVE()": {
+  "import stat\nstat.FILE_ATTRIBUTE_ARCHIVE": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_ARCHIVE' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_COMPRESSED()": {
+  "import stat\nstat.FILE_ATTRIBUTE_COMPRESSED": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_COMPRESSED' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_DEVICE()": {
+  "import stat\nstat.FILE_ATTRIBUTE_DEVICE": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_DEVICE' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_DIRECTORY()": {
+  "import stat\nstat.FILE_ATTRIBUTE_DIRECTORY": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_DIRECTORY' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_ENCRYPTED()": {
+  "import stat\nstat.FILE_ATTRIBUTE_ENCRYPTED": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_ENCRYPTED' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_HIDDEN()": {
+  "import stat\nstat.FILE_ATTRIBUTE_HIDDEN": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_HIDDEN' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_INTEGRITY_STREAM()": {
+  "import stat\nstat.FILE_ATTRIBUTE_INTEGRITY_STREAM": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_INTEGRITY_STREAM' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_NORMAL()": {
+  "import stat\nstat.FILE_ATTRIBUTE_NORMAL": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_NORMAL' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_NOT_CONTENT_INDEXED()": {
+  "import stat\nstat.FILE_ATTRIBUTE_NOT_CONTENT_INDEXED": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_NOT_CONTENT_INDEXED' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_NO_SCRUB_DATA()": {
+  "import stat\nstat.FILE_ATTRIBUTE_NO_SCRUB_DATA": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_NO_SCRUB_DATA' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_OFFLINE()": {
+  "import stat\nstat.FILE_ATTRIBUTE_OFFLINE": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_OFFLINE' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_READONLY()": {
+  "import stat\nstat.FILE_ATTRIBUTE_READONLY": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_READONLY' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_REPARSE_POINT()": {
+  "import stat\nstat.FILE_ATTRIBUTE_REPARSE_POINT": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_REPARSE_POINT' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_SPARSE_FILE()": {
+  "import stat\nstat.FILE_ATTRIBUTE_SPARSE_FILE": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_SPARSE_FILE' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_SYSTEM()": {
+  "import stat\nstat.FILE_ATTRIBUTE_SYSTEM": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_SYSTEM' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_TEMPORARY()": {
+  "import stat\nstat.FILE_ATTRIBUTE_TEMPORARY": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_TEMPORARY' member": 1
     }
   },
-  "import stat\nstat.FILE_ATTRIBUTE_VIRTUAL()": {
+  "import stat\nstat.FILE_ATTRIBUTE_VIRTUAL": {
     "3.5": {
       "'stat.FILE_ATTRIBUTE_VIRTUAL' member": 1
     }
   },
-  "import stat\nstat.IO_REPARSE_TAG_SYMLINK()": {
+  "import stat\nstat.IO_REPARSE_TAG_SYMLINK": {
     "3.8": {
       "'stat.IO_REPARSE_TAG_SYMLINK' member": 1
     }
   },
-  "import stat\nstat.IO_REPARSE_TAG_MOUNT_POINT()": {
+  "import stat\nstat.IO_REPARSE_TAG_MOUNT_POINT": {
     "3.8": {
       "'stat.IO_REPARSE_TAG_MOUNT_POINT' member": 1
     }
   },
-  "import stat\nstat.IO_REPARSE_TAG_APPEXECLINK()": {
+  "import stat\nstat.IO_REPARSE_TAG_APPEXECLINK": {
     "3.8": {
       "'stat.IO_REPARSE_TAG_APPEXECLINK' member": 1
     }
@@ -7799,7 +7799,7 @@
       "'subprocess.CompletedProcess' member": 1
     }
   },
-  "import subprocess\nsubprocess.DEVNULL()": {
+  "import subprocess\nsubprocess.DEVNULL": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -7933,7 +7933,7 @@
       "'subprocess.STARTUPINFO.lpAttributeList' member": 1
     }
   },
-  "import subprocess\nsubprocess.ABOVE_NORMAL_PRIORITY_CLASS()": {
+  "import subprocess\nsubprocess.ABOVE_NORMAL_PRIORITY_CLASS": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -7941,7 +7941,7 @@
       "'subprocess.ABOVE_NORMAL_PRIORITY_CLASS' member": 1
     }
   },
-  "import subprocess\nsubprocess.BELOW_NORMAL_PRIORITY_CLASS()": {
+  "import subprocess\nsubprocess.BELOW_NORMAL_PRIORITY_CLASS": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -7949,7 +7949,7 @@
       "'subprocess.BELOW_NORMAL_PRIORITY_CLASS' member": 1
     }
   },
-  "import subprocess\nsubprocess.HIGH_PRIORITY_CLASS()": {
+  "import subprocess\nsubprocess.HIGH_PRIORITY_CLASS": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -7957,7 +7957,7 @@
       "'subprocess.HIGH_PRIORITY_CLASS' member": 1
     }
   },
-  "import subprocess\nsubprocess.IDLE_PRIORITY_CLASS()": {
+  "import subprocess\nsubprocess.IDLE_PRIORITY_CLASS": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -7965,7 +7965,7 @@
       "'subprocess.IDLE_PRIORITY_CLASS' member": 1
     }
   },
-  "import subprocess\nsubprocess.NORMAL_PRIORITY_CLASS()": {
+  "import subprocess\nsubprocess.NORMAL_PRIORITY_CLASS": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -7973,7 +7973,7 @@
       "'subprocess.NORMAL_PRIORITY_CLASS' member": 1
     }
   },
-  "import subprocess\nsubprocess.REALTIME_PRIORITY_CLASS()": {
+  "import subprocess\nsubprocess.REALTIME_PRIORITY_CLASS": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -7981,7 +7981,7 @@
       "'subprocess.REALTIME_PRIORITY_CLASS' member": 1
     }
   },
-  "import subprocess\nsubprocess.CREATE_NO_WINDOW()": {
+  "import subprocess\nsubprocess.CREATE_NO_WINDOW": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -7989,7 +7989,7 @@
       "'subprocess.CREATE_NO_WINDOW' member": 1
     }
   },
-  "import subprocess\nsubprocess.DETACHED_PROCESS()": {
+  "import subprocess\nsubprocess.DETACHED_PROCESS": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -7997,7 +7997,7 @@
       "'subprocess.DETACHED_PROCESS' member": 1
     }
   },
-  "import subprocess\nsubprocess.CREATE_DEFAULT_ERROR_MODE()": {
+  "import subprocess\nsubprocess.CREATE_DEFAULT_ERROR_MODE": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -8005,7 +8005,7 @@
       "'subprocess.CREATE_DEFAULT_ERROR_MODE' member": 1
     }
   },
-  "import subprocess\nsubprocess.CREATE_BREAKAWAY_FROM_JOB()": {
+  "import subprocess\nsubprocess.CREATE_BREAKAWAY_FROM_JOB": {
     "2.4": {
       "'subprocess' module": 1
     },
@@ -8528,7 +8528,7 @@
       "'threading.getprofile' member": 1
     }
   },
-  "import threading\nthreading.TIMEOUT_MAX()": {
+  "import threading\nthreading.TIMEOUT_MAX": {
     "3.2": {
       "'threading.TIMEOUT_MAX' member": 1
     }
@@ -8648,57 +8648,57 @@
       "'time.thread_time_ns' member": 1
     }
   },
-  "import time\ntime.CLOCK_BOOTTIME()": {
+  "import time\ntime.CLOCK_BOOTTIME": {
     "3.7": {
       "'time.CLOCK_BOOTTIME' member": 1
     }
   },
-  "import time\ntime.CLOCK_HIGHRES()": {
+  "import time\ntime.CLOCK_HIGHRES": {
     "3.3": {
       "'time.CLOCK_HIGHRES' member": 1
     }
   },
-  "import time\ntime.CLOCK_MONOTONIC()": {
+  "import time\ntime.CLOCK_MONOTONIC": {
     "3.3": {
       "'time.CLOCK_MONOTONIC' member": 1
     }
   },
-  "import time\ntime.CLOCK_MONOTONIC_RAW()": {
+  "import time\ntime.CLOCK_MONOTONIC_RAW": {
     "3.3": {
       "'time.CLOCK_MONOTONIC_RAW' member": 1
     }
   },
-  "import time\ntime.CLOCK_PROCESS_CPUTIME_ID()": {
+  "import time\ntime.CLOCK_PROCESS_CPUTIME_ID": {
     "3.3": {
       "'time.CLOCK_PROCESS_CPUTIME_ID' member": 1
     }
   },
-  "import time\ntime.CLOCK_PROF()": {
+  "import time\ntime.CLOCK_PROF": {
     "3.7": {
       "'time.CLOCK_PROF' member": 1
     }
   },
-  "import time\ntime.CLOCK_TAI()": {
+  "import time\ntime.CLOCK_TAI": {
     "3.9": {
       "'time.CLOCK_TAI' member": 1
     }
   },
-  "import time\ntime.CLOCK_THREAD_CPUTIME_ID()": {
+  "import time\ntime.CLOCK_THREAD_CPUTIME_ID": {
     "3.3": {
       "'time.CLOCK_THREAD_CPUTIME_ID' member": 1
     }
   },
-  "import time\ntime.CLOCK_UPTIME()": {
+  "import time\ntime.CLOCK_UPTIME": {
     "3.7": {
       "'time.CLOCK_UPTIME' member": 1
     }
   },
-  "import time\ntime.CLOCK_UPTIME_RAW()": {
+  "import time\ntime.CLOCK_UPTIME_RAW": {
     "3.8": {
       "'time.CLOCK_UPTIME_RAW' member": 1
     }
   },
-  "import time\ntime.CLOCK_REALTIME()": {
+  "import time\ntime.CLOCK_REALTIME": {
     "3.3": {
       "'time.CLOCK_REALTIME' member": 1
     }
@@ -10098,7 +10098,7 @@
       "'winreg.DeleteKeyEx' member": 1
     }
   },
-  "import winreg\nwinreg.REG_QWORD()": {
+  "import winreg\nwinreg.REG_QWORD": {
     "3.0": {
       "'winreg' module": 1
     },
@@ -10106,7 +10106,7 @@
       "'winreg.REG_QWORD' member": 1
     }
   },
-  "import winreg\nwinreg.REG_QWORD_LITTLE_ENDIAN()": {
+  "import winreg\nwinreg.REG_QWORD_LITTLE_ENDIAN": {
     "3.0": {
       "'winreg' module": 1
     },
@@ -10320,12 +10320,12 @@
       "'zipfile.BadZipFile' member": 1
     }
   },
-  "import zipfile\nzipfile.ZIP_BZIP2()": {
+  "import zipfile\nzipfile.ZIP_BZIP2": {
     "3.3": {
       "'zipfile.ZIP_BZIP2' member": 1
     }
   },
-  "import zipfile\nzipfile.ZIP_LZMA()": {
+  "import zipfile\nzipfile.ZIP_LZMA": {
     "3.3": {
       "'zipfile.ZIP_LZMA' member": 1
     }
@@ -10425,7 +10425,7 @@
       "'zlib.Decompress.eof' member": 1
     }
   },
-  "import zlib\nzlib.ZLIB_RUNTIME_VERSION()": {
+  "import zlib\nzlib.ZLIB_RUNTIME_VERSION": {
     "3.3": {
       "'zlib.ZLIB_RUNTIME_VERSION' member": 1
     }
@@ -10445,7 +10445,7 @@
       "'_thread.get_native_id' member": 1
     }
   },
-  "import _thread\n_thread.TIMEOUT_MAX()": {
+  "import _thread\n_thread.TIMEOUT_MAX": {
     "3.2": {
       "'_thread.TIMEOUT_MAX' member": 1
     }

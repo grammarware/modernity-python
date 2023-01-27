@@ -137,9 +137,13 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
                     if version in prev_features:
                         return
 
+                    new_id = ids.rsplit('.', maxsplit=1)[-1]
+                    is_constant = desc.get('objtype') in ('data', 'attribute') and new_id.isupper()
+
                     # It does not matter for detection if we call something that cannot be called
                     return [(
-                        f"{import_stmt}{ids}()", combine_features(prev_features, {version: {f"'{ids}' member": 1}})
+                        f"{import_stmt}{ids}{'' if is_constant else '()'}",
+                        combine_features(prev_features, {version: {f"'{ids}' member": 1}})
                     )]
 
             else:

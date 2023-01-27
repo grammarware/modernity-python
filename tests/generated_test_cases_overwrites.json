@@ -39,17 +39,17 @@
       "'ftplib.FTP_TLS(context)'": 1
     }
   },
-  "import os\nos.CLD_KILLED()": {
+  "import os\nos.CLD_KILLED": {
     "3.9": {
       "'os.CLD_KILLED' member": 1
     }
   },
-  "import os\nos.CLD_STOPPED()": {
+  "import os\nos.CLD_STOPPED": {
     "3.9": {
       "'os.CLD_STOPPED' member": 1
     }
   },
-  "import select\nselect.PIPE_BUF()": {
+  "import select\nselect.PIPE_BUF": {
     "2.7": {
       "'select.PIPE_BUF' member": 1
     },
@@ -57,7 +57,7 @@
       "'select.PIPE_BUF' member": 1
     }
   },
-  "import select\nselect.select.PIPE_BUF()": {},
+  "import select\nselect.select.PIPE_BUF": {},
   "import shutil\nshutil.get_archive_formats()": {
     "2.7": {
       "'shutil.get_archive_formats' member": 1
