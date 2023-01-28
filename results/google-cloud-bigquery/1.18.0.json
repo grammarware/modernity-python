@@ -16,10 +16,10 @@
     "'type' member": 20,
     "'dict' member": 14,
     "'property' member": 8,
+    "'StopIteration' member": 4,
     "'bool' member": 4,
     "'types.GeneratorType' member": 4,
-    "'str.decode' member": 4,
-    "'StopIteration' member": 4
+    "'str.decode' member": 4
   },
   "2.3": {
     "'enumerate' member": 27,
@@ -36,16 +36,16 @@
     "function decorators": 680,
     "'sorted' member": 37,
     "'set' member": 11,
-    "'decimal' module": 7,
     "'frozenset' member": 7,
+    "'decimal' module": 7,
     "'collections' module": 4,
     "'sorted(key)'": 2
   },
   "2.5": {
     "`with`": 461,
     "'all' member": 9,
-    "'operator.itemgetter' member": 6,
     "'__future__.absolute_import' member": 6,
+    "'operator.itemgetter' member": 6,
     "'datetime.datetime.strptime' member": 5,
     "'functools' module": 4,
     "'any' member": 3,
@@ -61,13 +61,13 @@
     "'io' module": 3,
     "'math.isnan' member": 2,
     "'math.isinf' member": 2,
-    "'enumerate(start)'": 2,
     "'property.setter' member": 2,
-    "'itertools.product' member": 1,
+    "'enumerate(start)'": 2,
     "'__future__.print_function' member": 1,
     "'ast' module": 1,
     "'numbers' module": 1,
-    "'collections.namedtuple' member": 1
+    "'collections.namedtuple' member": 1,
+    "'itertools.product' member": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 244,

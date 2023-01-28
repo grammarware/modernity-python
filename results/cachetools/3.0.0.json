@@ -14,8 +14,8 @@
     "'super' member": 2
   },
   "2.3": {
-    "'dummy_threading' module": 1,
-    "'sum' member": 1
+    "'sum' member": 1,
+    "'dummy_threading' module": 1
   },
   "2.4": {
     "'set' member": 28,

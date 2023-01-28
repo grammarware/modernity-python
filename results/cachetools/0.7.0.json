@@ -21,8 +21,8 @@
   },
   "2.5": {
     "`with`": 22,
-    "'functools' module": 1,
-    "'min(key)'": 1
+    "'min(key)'": 1,
+    "'functools' module": 1
   },
   "2.6": {
     "'collections.namedtuple' member": 1

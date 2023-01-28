@@ -8,8 +8,8 @@
     "'unittest' module": 16,
     "'warnings' module": 11,
     "'__future__' module": 9,
-    "'inspect' module": 1,
-    "'weakref' module": 1
+    "'weakref' module": 1,
+    "'inspect' module": 1
   },
   "2.2": {
     "'object' member": 341,
@@ -20,8 +20,8 @@
     "'property' member": 8,
     "'bool' member": 6,
     "'types.GeneratorType' member": 6,
-    "'str.decode' member": 4,
     "'StopIteration' member": 4,
+    "'str.decode' member": 4,
     "'gc.get_objects' member": 2,
     "'__future__.division' member": 2
   },
@@ -49,8 +49,8 @@
   "2.5": {
     "`with`": 990,
     "'operator.itemgetter' member": 16,
-    "'functools' module": 6,
     "'__future__.absolute_import' member": 6,
+    "'functools' module": 6,
     "'all' member": 5,
     "'datetime.datetime.strptime' member": 5,
     "'any' member": 3,
@@ -65,17 +65,17 @@
     "'next' member": 18,
     "'json' module": 4,
     "'io' module": 3,
-    "'math.isnan' member": 2,
-    "'math.isinf' member": 2,
-    "'bytearray' member": 2,
-    "'enumerate(start)'": 2,
     "class decorators": 2,
     "'collections.namedtuple' member": 2,
     "'__future__.print_function' member": 2,
     "'property.setter' member": 2,
-    "'itertools.product' member": 1,
+    "'math.isnan' member": 2,
+    "'math.isinf' member": 2,
+    "'bytearray' member": 2,
+    "'enumerate(start)'": 2,
     "'numbers' module": 1,
-    "'ast' module": 1
+    "'ast' module": 1,
+    "'itertools.product' member": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 385,

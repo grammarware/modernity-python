@@ -24,8 +24,8 @@
   "2.5": {
     "`with`": 17,
     "'all' member": 2,
-    "'any' member": 2,
     "'functools' module": 2,
+    "'any' member": 2,
     "'contextlib' module": 1
   },
   "2.6": {

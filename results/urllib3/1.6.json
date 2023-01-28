@@ -15,8 +15,8 @@
   },
   "2.2": {
     "'dict' member": 8,
-    "'iter' member": 7,
     "'type' member": 7,
+    "'iter' member": 7,
     "'super' member": 6,
     "'object' member": 4,
     "'urlparse.urlsplit' member": 1
@@ -39,8 +39,8 @@
     "'urlparse.urlsplit.path' member": 39,
     "`with`": 12,
     "'uuid' module": 1,
-    "'hashlib' module": 1,
     "'__future__.absolute_import' member": 1,
+    "'hashlib' module": 1,
     "'any' member": 1
   },
   "2.6": {
@@ -53,24 +53,24 @@
     "'next' member": 2,
     "'socket.create_connection' member": 2,
     "'json' module": 1,
-    "'Queue.LifoQueue' member": 1,
     "'collections.namedtuple' member": 1,
+    "'Queue.LifoQueue' member": 1,
     "'operator.methodcaller' member": 1
   },
   "2.7": {
-    "'ssl.SSLContext' member": 1,
-    "'ssl.HAS_SNI' member": 1,
+    "'logging.NullHandler' member": 1,
     "'collections.OrderedDict' member": 1,
-    "'logging.NullHandler' member": 1
+    "'ssl.SSLContext' member": 1,
+    "'ssl.HAS_SNI' member": 1
   },
   "3.0": {
-    "'urllib.parse' module": 2,
     "'queue' module": 2,
+    "'urllib.parse' module": 2,
     "'builtins' module": 1
   },
   "3.1": {
-    "'collections.OrderedDict' member": 1,
-    "'logging.NullHandler' member": 1
+    "'logging.NullHandler' member": 1,
+    "'collections.OrderedDict' member": 1
   },
   "3.2": {
     "'ssl.SSLContext' member": 1,

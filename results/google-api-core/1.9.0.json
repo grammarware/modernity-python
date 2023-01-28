@@ -30,8 +30,8 @@
     "'frozenset' member": 26,
     "'sorted' member": 12,
     "'collections' module": 4,
-    "'sorted(key)'": 1,
-    "'reversed' member": 1
+    "'reversed' member": 1,
+    "'sorted(key)'": 1
   },
   "2.5": {
     "`with`": 112,
@@ -48,8 +48,8 @@
     "class decorators": 7,
     "'__future__.unicode_literals' member": 5,
     "'collections.namedtuple' member": 3,
-    "'threading.Thread.daemon' member": 3,
     "'abc' module": 3,
+    "'threading.Thread.daemon' member": 3,
     "'threading.Thread.name' member": 2,
     "'io' module": 1,
     "'json' module": 1,

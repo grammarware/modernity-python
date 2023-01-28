@@ -54,8 +54,8 @@
     "'abc' module": 5,
     "'collections.namedtuple' member": 3,
     "'threading.Thread.daemon' member": 3,
-    "'threading.Thread.name' member": 2,
     "'functools.reduce' member": 2,
+    "'threading.Thread.name' member": 2,
     "'io' module": 1,
     "'collections.deque(maxlen)'": 1,
     "class decorators": 1,
@@ -65,8 +65,8 @@
   "2.7": {
     "`\"..{}..\".format(..)`": 36,
     "'datetime.timedelta.total_seconds' member": 8,
-    "'collections.OrderedDict' member": 3,
     "dict comprehensions": 3,
+    "'collections.OrderedDict' member": 3,
     "set literals": 2,
     "'sys.version_info.major' member": 2,
     "multiple context expressions in a `with` statement": 2
@@ -76,8 +76,8 @@
     "keyword-only parameters": 26,
     "exception cause": 18,
     "super() without arguments": 16,
-    "'queue' module": 1,
-    "'urllib.parse' module": 1
+    "'urllib.parse' module": 1,
+    "'queue' module": 1
   },
   "3.1": {
     "'collections.OrderedDict' member": 3,

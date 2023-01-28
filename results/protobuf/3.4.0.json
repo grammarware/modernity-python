@@ -15,10 +15,10 @@
     "'type' member": 14,
     "'iter' member": 14,
     "'ReferenceError' member": 6,
-    "'bool' member": 4,
     "'staticmethod' member": 4,
-    "'StopIteration' member": 4,
+    "'bool' member": 4,
     "'object' member": 4,
+    "'StopIteration' member": 4,
     "'property' member": 4
   },
   "2.3": {

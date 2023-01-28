@@ -33,11 +33,11 @@
     "'unicodedata.normalize' member": 4,
     "'os.walk' member": 4,
     "'tempfile.NamedTemporaryFile' member": 4,
-    "'difflib.unified_diff' member": 3,
     "'itertools' module": 3,
-    "'unicodedata.unidata_version' member": 2,
-    "'tempfile.mkdtemp' member": 2,
+    "'difflib.unified_diff' member": 3,
     "'csv' module": 2,
+    "'tempfile.mkdtemp' member": 2,
+    "'unicodedata.unidata_version' member": 2,
     "'optparse' module": 1,
     "'tempfile.mkstemp' member": 1,
     "'shutil.move' member": 1
@@ -47,8 +47,8 @@
     "function decorators": 10,
     "'reversed' member": 8,
     "'set' member": 6,
-    "'string.Template' member": 3,
     "'subprocess' module": 3,
+    "'string.Template' member": 3,
     "'collections' module": 2,
     "'unicodedata.east_asian_width' member": 2,
     "'pprint.pformat(indent)'": 1
@@ -65,20 +65,20 @@
     "class decorators": 4,
     "'itertools.combinations' member": 2,
     "'collections.namedtuple' member": 1,
-    "'str.format' member": 1,
     "'platform.python_implementation' member": 1,
+    "'str.format' member": 1,
     "'tempfile.NamedTemporaryFile(delete)'": 1
   },
   "2.7": {
     "set literals": 6,
-    "'unittest.skipUnless' member": 5,
     "'importlib' module": 5,
+    "'unittest.skipUnless' member": 5,
     "dict comprehensions": 4,
     "'argparse' module": 3,
     "'unittest.skipIf' member": 3,
     "'subprocess.check_output' member": 2,
-    "'re.sub(flags)'": 1,
     "'collections.Counter' member": 1,
+    "'re.sub(flags)'": 1,
     "`\"..{}..\".format(..)`": 1
   },
   "3.0": {
@@ -89,12 +89,12 @@
     "'configparser' module": 2
   },
   "3.1": {
-    "'unittest.skipUnless' member": 5,
     "'importlib' module": 5,
+    "'unittest.skipUnless' member": 5,
     "'unittest.skipIf' member": 3,
     "'subprocess.check_output' member": 2,
-    "'re.sub(flags)'": 1,
-    "'collections.Counter' member": 1
+    "'collections.Counter' member": 1,
+    "'re.sub(flags)'": 1
   },
   "3.2": {
     "'argparse' module": 3

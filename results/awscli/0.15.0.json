@@ -11,8 +11,8 @@
     "'StopIteration' member": 6,
     "'dict' member": 4,
     "'iter' member": 2,
-    "'bool' member": 1,
     "'hmac' module": 1,
+    "'bool' member": 1,
     "'os.stat.st_mtime' member": 1,
     "'os.stat.st_size' member": 1
   },
@@ -22,9 +22,9 @@
     "'enumerate' member": 3,
     "'datetime' module": 2,
     "'sys.getfilesystemencoding' member": 2,
-    "'csv' module": 1,
     "'platform' module": 1,
-    "'textwrap' module": 1
+    "'textwrap' module": 1,
+    "'csv' module": 1
   },
   "2.4": {
     "function decorators": 45,
@@ -35,8 +35,8 @@
   },
   "2.5": {
     "`with`": 25,
-    "'all' member": 2,
     "'hashlib' module": 2,
+    "'all' member": 2,
     "'functools' module": 1
   },
   "2.6": {

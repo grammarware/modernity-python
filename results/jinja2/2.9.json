@@ -22,6 +22,7 @@
     "'operator.floordiv' member": 3,
     "'super' member": 2,
     "'fnmatch.filter' member": 2,
+    "'types.GeneratorType' member": 1,
     "'operator.eq' member": 1,
     "'operator.ne' member": 1,
     "'operator.gt' member": 1,
@@ -29,8 +30,7 @@
     "'operator.lt' member": 1,
     "'operator.le' member": 1,
     "'staticmethod' member": 1,
-    "'object' member": 1,
-    "'types.GeneratorType' member": 1
+    "'object' member": 1
   },
   "2.3": {
     "'enumerate' member": 24,
@@ -42,8 +42,8 @@
     "'dict.pop' member": 1,
     "'textwrap' module": 1,
     "'sum' member": 1,
-    "'logging' module": 1,
     "'sets' module": 1,
+    "'logging' module": 1,
     "'UnicodeDecodeError' member": 1
   },
   "2.4": {
@@ -70,11 +70,11 @@
     "class decorators": 11,
     "byte string (b'..') or `str` synonym": 2,
     "'collections.namedtuple' member": 1,
-    "'functools.reduce' member": 1,
     "'os.walk(followlinks)'": 1,
-    "'logging.StreamHandler' member": 1,
     "'string.Formatter' member": 1,
+    "'functools.reduce' member": 1,
     "'io' module": 1,
+    "'logging.StreamHandler' member": 1,
     "'json' module": 1
   },
   "2.7": {

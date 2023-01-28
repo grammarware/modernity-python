@@ -9,17 +9,17 @@
     "'__future__' module": 14,
     "'unittest' module": 5,
     "'warnings' module": 5,
-    "'weakref' module": 1,
-    "'inspect' module": 1
+    "'inspect' module": 1,
+    "'weakref' module": 1
   },
   "2.2": {
     "'dict' member": 55,
     "'super' member": 32,
     "'os.path.realpath' member": 20,
     "'iter' member": 9,
-    "'bool' member": 8,
     "'os.stat.st_mtime' member": 8,
     "'type' member": 8,
+    "'bool' member": 8,
     "'__future__.division' member": 6,
     "'os.stat.st_mode' member": 4,
     "'fnmatch.filter' member": 2,
@@ -31,8 +31,8 @@
     "'operator.ge' member": 2,
     "'os.stat.st_size' member": 2,
     "'object' member": 1,
-    "'StopIteration' member": 1,
-    "'email' module": 1
+    "'email' module": 1,
+    "'StopIteration' member": 1
   },
   "2.3": {
     "'tempfile.mkdtemp' member": 27,
@@ -57,19 +57,19 @@
     "'optparse' module": 1,
     "'datetime' module": 1,
     "'socket.getdefaulttimeout' member": 1,
+    "'logging' module": 1,
     "'pkgutil' module": 1,
-    "'tempfile.mkstemp' member": 1,
-    "'logging' module": 1
+    "'tempfile.mkstemp' member": 1
   },
   "2.4": {
     "function decorators": 194,
     "'set' member": 22,
-    "'frozenset' member": 12,
     "'sorted' member": 12,
+    "'frozenset' member": 12,
     "'subprocess' module": 7,
     "'operator.attrgetter' member": 6,
-    "'os.devnull' member": 3,
     "'collections' module": 3,
+    "'os.devnull' member": 3,
     "'reversed' member": 2,
     "'string.Template' member": 1,
     "'logging.basicConfig(level)'": 1,
@@ -83,12 +83,12 @@
     "'subprocess.check_call' member": 8,
     "'functools' module": 7,
     "'collections.defaultdict' member": 4,
-    "'str.rpartition' member": 2,
     "'all' member": 2,
-    "'ctypes' module": 1,
-    "'hashlib' module": 1,
+    "'str.rpartition' member": 2,
     "'struct.Struct' member": 1,
     "'operator.itemgetter' member": 1,
+    "'ctypes' module": 1,
+    "'hashlib' module": 1,
     "'__import__(level)'": 1
   },
   "2.6": {
@@ -100,23 +100,23 @@
     "byte string (b'..') or `str` synonym": 10,
     "'functools.reduce' member": 7,
     "'platform.python_implementation' member": 7,
-    "'operator.methodcaller' member": 6,
     "'__future__.print_function' member": 6,
+    "'operator.methodcaller' member": 6,
     "'os.path.relpath' member": 5,
-    "'itertools.product' member": 3,
     "'collections.namedtuple' member": 3,
+    "'itertools.product' member": 3,
     "class decorators": 3,
+    "'__future__.unicode_literals' member": 2,
     "'socket.create_connection' member": 2,
     "'ast' module": 2,
-    "'__future__.unicode_literals' member": 2,
     "'site.USER_BASE' member": 2,
     "'sys.dont_write_bytecode' member": 2,
     "'json' module": 1,
-    "'ssl' module": 1,
-    "'numbers' module": 1,
-    "'os.walk(followlinks)'": 1,
     "'tempfile.NamedTemporaryFile(delete)'": 1,
-    "'abc' module": 1
+    "'abc' module": 1,
+    "'ssl' module": 1,
+    "'os.walk(followlinks)'": 1,
+    "'numbers' module": 1
   },
   "2.7": {
     "'zipimport.zipimporter' member": 7,
@@ -136,8 +136,8 @@
   },
   "3.3": {
     "'unittest.mock' module": 4,
-    "'importlib.machinery.FileFinder' member": 2,
     "'sys.base_prefix' member": 2,
+    "'importlib.machinery.FileFinder' member": 2,
     "'importlib.machinery.SourceFileLoader' member": 1
   },
   "3.4": {},

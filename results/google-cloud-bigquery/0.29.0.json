@@ -15,8 +15,8 @@
     "'types.GeneratorType' member": 4,
     "'str.decode' member": 4,
     "'dict' member": 3,
-    "'type' member": 2,
     "'StopIteration' member": 2,
+    "'type' member": 2,
     "'email' module": 1
   },
   "2.3": {
@@ -30,8 +30,8 @@
     "'sorted' member": 42,
     "'set' member": 8,
     "'collections' module": 4,
-    "'sorted(key)'": 2,
-    "'frozenset' member": 2
+    "'frozenset' member": 2,
+    "'sorted(key)'": 2
   },
   "2.5": {
     "`with`": 264,
@@ -49,11 +49,11 @@
     "byte string (b'..') or `str` synonym": 48,
     "'math.isnan' member": 2,
     "'math.isinf' member": 2,
-    "'json' module": 2,
     "'property.setter' member": 2,
-    "'io' module": 1,
+    "'json' module": 2,
     "'numbers' module": 1,
-    "'collections.namedtuple' member": 1
+    "'collections.namedtuple' member": 1,
+    "'io' module": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 65,

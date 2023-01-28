@@ -22,8 +22,8 @@
     "'enumerate' member": 49
   },
   "2.4": {
-    "function decorators": 18,
     "'set' member": 18,
+    "function decorators": 18,
     "'subprocess' module": 2,
     "'reversed' member": 2,
     "'string.Template' member": 1

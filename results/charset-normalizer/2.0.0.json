@@ -38,9 +38,9 @@
   "2.7": {
     "`\"..{}..\".format(..)`": 24,
     "set literals": 11,
+    "'collections.OrderedDict' member": 2,
     "'importlib' module": 2,
     "'collections.Counter' member": 2,
-    "'collections.OrderedDict' member": 2,
     "'json.load(object_pairs_hook)'": 1,
     "'argparse' module": 1
   },
@@ -49,9 +49,9 @@
     "'open(encoding)'": 2
   },
   "3.1": {
+    "'collections.OrderedDict' member": 2,
     "'importlib' module": 2,
     "'collections.Counter' member": 2,
-    "'collections.OrderedDict' member": 2,
     "'json.load(object_pairs_hook)'": 1
   },
   "3.2": {

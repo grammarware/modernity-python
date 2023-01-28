@@ -59,10 +59,10 @@
     "'ctypes.c_bool' member": 2,
     "'ctypes.get_errno' member": 2,
     "'ctypes.set_errno' member": 2,
-    "'ctypes.CFUNCTYPE(use_errno)'": 1,
     "'fractions' module": 1,
     "'next' member": 1,
-    "'__future__.unicode_literals' member": 1
+    "'__future__.unicode_literals' member": 1,
+    "'ctypes.CFUNCTYPE(use_errno)'": 1
   },
   "2.7": {
     "dict comprehensions": 2,

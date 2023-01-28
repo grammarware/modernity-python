@@ -46,8 +46,8 @@
     "`\"..{}..\".format(..)`": 27,
     "set comprehensions": 5,
     "set literals": 2,
-    "'sysconfig' module": 1,
     "'argparse' module": 1,
+    "'sysconfig' module": 1,
     "'collections.OrderedDict' member": 1
   },
   "3.0": {
@@ -59,8 +59,8 @@
   },
   "3.2": {
     "'email.generator.BytesGenerator' member": 1,
-    "'sysconfig' module": 1,
-    "'argparse' module": 1
+    "'argparse' module": 1,
+    "'sysconfig' module": 1
   },
   "3.3": {},
   "3.4": {},

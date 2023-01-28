@@ -5,8 +5,8 @@
     "'callable' member": 2,
     "print(expr)": 1,
     "'__builtin__' module": 1,
-    "'Tkinter' module": 1,
-    "'urllib2' module": 1
+    "'urllib2' module": 1,
+    "'Tkinter' module": 1
   },
   "2.1": {
     "'unittest' module": 44,
@@ -47,9 +47,9 @@
     "'file.next' member": 2,
     "'os.walk' member": 2,
     "'UnicodeDecodeError' member": 2,
-    "'heapq' module": 2,
-    "'dict.pop' member": 2,
     "'UnicodeEncodeError' member": 2,
+    "'dict.pop' member": 2,
+    "'heapq' module": 2,
     "'bz2' module": 1,
     "'random.sample' member": 1,
     "'dummy_thread' module": 1
@@ -74,12 +74,12 @@
     "'collections.defaultdict' member": 5,
     "'codecs.getincrementalencoder' member": 2,
     "'functools' module": 2,
+    "'contextlib' module": 2,
     "'operator.itemgetter' member": 2,
     "'heapq.nlargest(key)'": 2,
-    "'contextlib' module": 2,
     "'hashlib' module": 1,
-    "'__future__.with_statement' member": 1,
-    "'sqlite3' module": 1
+    "'sqlite3' module": 1,
+    "'__future__.with_statement' member": 1
   },
   "2.6": {
     "'warnings.catch_warnings' member": 12,

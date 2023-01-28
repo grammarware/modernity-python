@@ -27,9 +27,9 @@
     "'platform' module": 2,
     "'datetime' module": 2,
     "'dict.pop' member": 2,
-    "'dummy_threading' module": 1,
     "'UnicodeEncodeError' member": 1,
     "'logging' module": 1,
+    "'dummy_threading' module": 1,
     "'encodings.idna' module": 1
   },
   "2.4": {

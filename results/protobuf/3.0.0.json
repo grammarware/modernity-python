@@ -39,8 +39,8 @@
     "'datetime.datetime.strptime' member": 14,
     "'subprocess.check_call' member": 2,
     "'uuid' module": 2,
-    "`with`": 1,
     "'hashlib' module": 1,
+    "`with`": 1,
     "'functools' module": 1
   },
   "2.6": {

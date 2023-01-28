@@ -33,8 +33,8 @@
     "'frozenset' member": 26,
     "'sorted' member": 10,
     "'collections' module": 5,
-    "'collections.deque' member": 2,
     "'sorted(key)'": 2,
+    "'collections.deque' member": 2,
     "'reversed' member": 1
   },
   "2.5": {
@@ -64,8 +64,8 @@
   "2.7": {
     "`\"..{}..\".format(..)`": 33,
     "'datetime.timedelta.total_seconds' member": 8,
-    "set literals": 2,
     "dict comprehensions": 2,
+    "set literals": 2,
     "'collections.OrderedDict' member": 1
   },
   "3.0": {

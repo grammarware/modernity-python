@@ -16,9 +16,9 @@
     "'super' member": 2
   },
   "2.3": {
-    "'datetime' module": 1,
-    "'dummy_threading' module": 1,
     "'sum' member": 1,
+    "'dummy_threading' module": 1,
+    "'datetime' module": 1,
     "'heapq' module": 1
   },
   "2.4": {
@@ -34,8 +34,8 @@
     "'functools' module": 2
   },
   "2.6": {
-    "'fractions' module": 1,
     "'collections.namedtuple' member": 1,
+    "'fractions' module": 1,
     "class decorators": 1
   },
   "2.7": {

@@ -45,8 +45,8 @@
     "'set' member": 56,
     "'sorted' member": 45,
     "'frozenset' member": 4,
-    "'sorted(key)'": 3,
     "'itertools.groupby' member": 3,
+    "'sorted(key)'": 3,
     "'reversed' member": 2,
     "'collections' module": 1
   },

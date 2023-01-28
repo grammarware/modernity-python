@@ -34,8 +34,8 @@
     "'set' member": 7,
     "'sorted' member": 5,
     "'collections' module": 4,
-    "'subprocess' module": 2,
     "'reversed' member": 2,
+    "'subprocess' module": 2,
     "'sorted(reverse)'": 1
   },
   "2.5": {
@@ -44,10 +44,10 @@
     "'all' member": 45,
     "'any' member": 6,
     "'collections.defaultdict' member": 4,
-    "'contextlib' module": 2,
     "'hashlib' module": 2,
-    "'subprocess.check_call' member": 2,
     "'operator.index' member": 2,
+    "'subprocess.check_call' member": 2,
+    "'contextlib' module": 2,
     "'datetime.datetime.strptime' member": 1,
     "'functools' module": 1
   },
@@ -60,8 +60,8 @@
     "'itertools.product' member": 41,
     "'abc' module": 24,
     "'format' member": 10,
-    "'warnings.catch_warnings' member": 4,
     "'collections.namedtuple' member": 4,
+    "'warnings.catch_warnings' member": 4,
     "'json' module": 3,
     "'platform.python_implementation' member": 1,
     "'bin' member": 1,

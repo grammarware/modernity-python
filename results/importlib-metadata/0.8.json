@@ -30,8 +30,8 @@
   },
   "2.5": {
     "`with`": 22,
-    "'any' member": 6,
     "'all' member": 6,
+    "'any' member": 6,
     "'operator.itemgetter' member": 4,
     "'contextlib' module": 3,
     "'__future__.absolute_import' member": 1,

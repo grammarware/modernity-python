@@ -13,8 +13,8 @@
     "'iter' member": 15,
     "'dict' member": 12,
     "'type' member": 12,
-    "'os.stat.st_mode' member": 7,
     "'bool' member": 7,
+    "'os.stat.st_mode' member": 7,
     "'StopIteration' member": 3,
     "'object' member": 1,
     "'os.path.realpath' member": 1
@@ -27,24 +27,24 @@
     "'itertools' module": 3,
     "'shlex.split' member": 2,
     "'tempfile.mkdtemp' member": 2,
-    "'optparse' module": 1,
-    "'platform' module": 1,
+    "'textwrap' module": 1,
     "'shlex.shlex.whitespace_split' member": 1,
-    "'datetime' module": 1,
     "'sys.getfilesystemencoding' member": 1,
     "'locale.getpreferredencoding' member": 1,
-    "'textwrap' module": 1
+    "'optparse' module": 1,
+    "'datetime' module": 1,
+    "'platform' module": 1
   },
   "2.4": {
     "function decorators": 460,
     "'sorted' member": 10,
     "'set' member": 5,
-    "'subprocess' module": 3,
     "'reversed' member": 3,
+    "'subprocess' module": 3,
     "'collections' module": 2,
-    "'os.urandom' member": 1,
     "'threading.local' member": 1,
     "'collections.deque' member": 1,
+    "'os.urandom' member": 1,
     "'sorted(key)'": 1
   },
   "2.5": {
@@ -54,20 +54,20 @@
     "'functools' module": 4,
     "'any' member": 3,
     "'str.partition' member": 1,
-    "'uuid' module": 1,
+    "'ctypes' module": 1,
     "'BaseException' member": 1,
-    "'ctypes' module": 1
+    "'uuid' module": 1
   },
   "2.6": {
     "byte string (b'..') or `str` synonym": 37,
     "'inspect.cleandoc' member": 8,
     "'next' member": 7,
     "'io' module": 6,
-    "'json' module": 1,
-    "'bytearray' member": 1,
     "'inspect.isgeneratorfunction' member": 1,
+    "'json' module": 1,
     "'msvcrt.getwche' member": 1,
-    "'msvcrt.getwch' member": 1
+    "'msvcrt.getwch' member": 1,
+    "'bytearray' member": 1
   },
   "2.7": {
     "set literals": 20,

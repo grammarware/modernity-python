@@ -5,8 +5,8 @@
     "'unicode' member": 2
   },
   "2.1": {
-    "'inspect' module": 1,
-    "'pydoc' module": 1
+    "'pydoc' module": 1,
+    "'inspect' module": 1
   },
   "2.2": {
     "'bool' member": 6,
@@ -19,8 +19,8 @@
     "'object' member": 1
   },
   "2.3": {
-    "'enumerate' member": 5,
     "'sys.getfilesystemencoding' member": 5,
+    "'enumerate' member": 5,
     "'tempfile.mkdtemp' member": 2,
     "'locale.getpreferredencoding' member": 2,
     "'dict.pop' member": 2,

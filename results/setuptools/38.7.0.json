@@ -4,8 +4,8 @@
     "print(expr)": 8,
     "'unicode' member": 4,
     "'callable' member": 2,
-    "'urllib2' module": 1,
     "'_winreg' module": 1,
+    "'urllib2' module": 1,
     "'__builtin__' module": 1
   },
   "2.1": {
@@ -29,14 +29,14 @@
     "'staticmethod' member": 4,
     "'fnmatch.filter' member": 3,
     "'os.stat.st_size' member": 2,
-    "'email' module": 1,
-    "'StopIteration' member": 1,
     "'operator.lt' member": 1,
     "'operator.le' member": 1,
     "'operator.eq' member": 1,
     "'operator.ne' member": 1,
     "'operator.ge' member": 1,
-    "'operator.gt' member": 1
+    "'operator.gt' member": 1,
+    "'email' module": 1,
+    "'StopIteration' member": 1
   },
   "2.3": {
     "'enumerate' member": 27,
@@ -80,11 +80,11 @@
     "'collections.deque' member": 4,
     "'os.devnull' member": 3,
     "'os.path.lexists' member": 2,
-    "'string.Template' member": 1,
     "'sorted(key)'": 1,
     "'sorted(reverse)'": 1,
     "'logging.basicConfig(level)'": 1,
-    "'logging.basicConfig(stream)'": 1
+    "'logging.basicConfig(stream)'": 1,
+    "'string.Template' member": 1
   },
   "2.5": {
     "`with`": 501,
@@ -98,10 +98,10 @@
     "'collections.defaultdict' member": 4,
     "'ctypes' module": 3,
     "'str.rpartition' member": 2,
-    "'hashlib' module": 1,
-    "'__import__(level)'": 1,
     "'struct.Struct' member": 1,
-    "'operator.itemgetter' member": 1
+    "'operator.itemgetter' member": 1,
+    "'hashlib' module": 1,
+    "'__import__(level)'": 1
   },
   "2.6": {
     "'str.format' member": 100,
@@ -113,8 +113,8 @@
     "'__future__.unicode_literals' member": 10,
     "'__future__.print_function' member": 9,
     "'platform.python_implementation' member": 6,
-    "'os.path.relpath' member": 6,
     "'operator.methodcaller' member": 6,
+    "'os.path.relpath' member": 6,
     "'itertools.product' member": 5,
     "'collections.namedtuple' member": 4,
     "'functools.reduce' member": 3,
@@ -122,13 +122,13 @@
     "'socket.create_connection' member": 2,
     "'site.USER_BASE' member": 2,
     "'sys.dont_write_bytecode' member": 2,
-    "'numbers' module": 1,
+    "'tempfile.NamedTemporaryFile(delete)'": 1,
+    "'abc' module": 1,
     "'ssl' module": 1,
     "'os.walk(followlinks)'": 1,
-    "'tempfile.NamedTemporaryFile(delete)'": 1,
+    "'numbers' module": 1,
     "'ast' module": 1,
-    "'json' module": 1,
-    "'abc' module": 1
+    "'json' module": 1
   },
   "2.7": {
     "'zipimport.zipimporter' member": 8,
@@ -142,14 +142,14 @@
     "'subprocess.check_output' member": 2,
     "'ssl.match_hostname' member": 1,
     "'unittest.main(exit)'": 1,
-    "'site.getsitepackages' member": 1,
-    "multiple context expressions in a `with` statement": 1
+    "multiple context expressions in a `with` statement": 1,
+    "'site.getsitepackages' member": 1
   },
   "3.0": {
     "super() without arguments": 2,
     "'list.copy' member": 2,
-    "'open(encoding)'": 1,
     "'configparser' module": 1,
+    "'open(encoding)'": 1,
     "'urllib.parse' module": 1
   },
   "3.1": {
@@ -170,8 +170,8 @@
   },
   "3.3": {
     "'sys.base_prefix' member": 4,
-    "'importlib.machinery.FileFinder' member": 2,
-    "'sys.implementation' member": 2
+    "'sys.implementation' member": 2,
+    "'importlib.machinery.FileFinder' member": 2
   },
   "3.4": {
     "'ssl.create_default_context' member": 2

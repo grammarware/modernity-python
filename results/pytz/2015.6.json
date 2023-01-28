@@ -26,8 +26,8 @@
     "'set' member": 24,
     "'reversed' member": 4,
     "'sorted' member": 4,
-    "'collections' module": 1,
-    "'doctest.DocFileSuite' member": 1
+    "'doctest.DocFileSuite' member": 1,
+    "'collections' module": 1
   },
   "2.5": {},
   "2.6": {

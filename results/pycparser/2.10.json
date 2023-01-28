@@ -21,8 +21,8 @@
   "2.4": {
     "function decorators": 19,
     "'reversed' member": 2,
-    "'string.Template' member": 1,
-    "'subprocess' module": 1
+    "'subprocess' module": 1,
+    "'string.Template' member": 1
   },
   "2.5": {
     "`with`": 7,

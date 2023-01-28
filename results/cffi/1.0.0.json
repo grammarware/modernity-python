@@ -26,15 +26,15 @@
   "2.3": {
     "'enumerate' member": 36,
     "'platform' module": 5,
-    "'imp.release_lock' member": 4,
     "'shutil.move' member": 4,
+    "'imp.release_lock' member": 4,
     "'tempfile.mkdtemp' member": 4,
     "'tempfile.mkstemp' member": 4,
     "'dict.pop' member": 2,
     "'imp.acquire_lock' member": 2,
     "'dummy_thread' module": 1,
-    "'sum' member": 1,
-    "'os.walk' member": 1
+    "'os.walk' member": 1,
+    "'sum' member": 1
   },
   "2.4": {
     "function decorators": 109,
@@ -48,18 +48,18 @@
   "2.5": {
     "`with`": 59,
     "'subprocess.check_call' member": 8,
-    "'ctypes' module": 3,
     "'any' member": 3,
+    "'ctypes' module": 3,
     "'functools' module": 2
   },
   "2.6": {
     "byte string (b'..') or `str` synonym": 770,
     "'io' module": 8,
     "'bytearray' member": 5,
+    "'__future__.unicode_literals' member": 2,
     "'ctypes.c_bool' member": 2,
     "'ctypes.get_errno' member": 2,
     "'ctypes.set_errno' member": 2,
-    "'__future__.unicode_literals' member": 2,
     "'ctypes.CFUNCTYPE(use_errno)'": 1
   },
   "2.7": {

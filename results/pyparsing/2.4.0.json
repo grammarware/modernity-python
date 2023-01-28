@@ -9,9 +9,9 @@
     "'sys.version_info' member": 1
   },
   "2.1": {
+    "'unittest' module": 3,
     "'__future__' module": 3,
     "'inspect' module": 3,
-    "'unittest' module": 3,
     "'weakref' module": 1,
     "'warnings' module": 1
   },
@@ -25,8 +25,8 @@
     "'classmethod' member": 16,
     "'object' member": 14,
     "'operator.truediv' member": 5,
-    "'__future__.division' member": 2,
     "'StopIteration' member": 2,
+    "'__future__.division' member": 2,
     "'property' member": 2
   },
   "2.3": {

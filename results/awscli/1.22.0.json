@@ -19,9 +19,9 @@
     "'bool' member": 1,
     "'hmac' module": 1,
     "'os.stat.st_mode' member": 1,
-    "'__future__.division' member": 1,
     "'os.stat.st_mtime' member": 1,
-    "'os.stat.st_size' member": 1
+    "'os.stat.st_size' member": 1,
+    "'__future__.division' member": 1
   },
   "2.3": {
     "'logging' module": 63,
@@ -31,8 +31,8 @@
     "'UnicodeDecodeError' member": 8,
     "'shlex.split' member": 7,
     "'platform' module": 6,
-    "'tempfile.NamedTemporaryFile' member": 6,
     "'dict.pop' member": 6,
+    "'tempfile.NamedTemporaryFile' member": 6,
     "'os.walk' member": 5,
     "'tempfile.mkdtemp' member": 4,
     "'sys.getfilesystemencoding' member": 4,
@@ -53,8 +53,8 @@
     "'reversed' member": 2,
     "'threading.local' member": 2,
     "'unicodedata.east_asian_width' member": 1,
-    "'os.urandom' member": 1,
     "'decimal' module": 1,
+    "'os.urandom' member": 1,
     "'collections.deque' member": 1
   },
   "2.5": {

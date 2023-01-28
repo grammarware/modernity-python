@@ -16,8 +16,8 @@
     "'str.decode' member": 4,
     "'type' member": 4,
     "'dict' member": 3,
-    "'bool' member": 2,
-    "'StopIteration' member": 2
+    "'StopIteration' member": 2,
+    "'bool' member": 2
   },
   "2.3": {
     "'enumerate' member": 23,
@@ -38,8 +38,8 @@
     "`with`": 346,
     "'all' member": 8,
     "'operator.itemgetter' member": 6,
-    "'__future__.absolute_import' member": 4,
     "'datetime.datetime.strptime' member": 4,
+    "'__future__.absolute_import' member": 4,
     "'any' member": 3,
     "'uuid' module": 2,
     "'os.SEEK_SET' member": 2,
@@ -52,11 +52,11 @@
     "'io' module": 2,
     "'math.isnan' member": 2,
     "'math.isinf' member": 2,
-    "'json' module": 2,
     "'property.setter' member": 2,
+    "'json' module": 2,
     "'__future__.print_function' member": 1,
-    "'collections.namedtuple' member": 1,
-    "'numbers' module": 1
+    "'numbers' module": 1,
+    "'collections.namedtuple' member": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 91,

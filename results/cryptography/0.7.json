@@ -35,8 +35,8 @@
     "'subprocess.check_call' member": 4,
     "'collections.defaultdict' member": 3,
     "'all' member": 2,
-    "'contextlib' module": 2,
-    "'datetime.datetime.strptime' member": 2
+    "'datetime.datetime.strptime' member": 2,
+    "'contextlib' module": 2
   },
   "2.6": {
     "byte string (b'..') or `str` synonym": 952,
@@ -46,8 +46,8 @@
     "'itertools.product' member": 15,
     "'abc' module": 5,
     "'collections.namedtuple' member": 5,
-    "'json' module": 1,
-    "'bin' member": 1
+    "'bin' member": 1,
+    "'json' module": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 7,

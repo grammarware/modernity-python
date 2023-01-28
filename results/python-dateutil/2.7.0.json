@@ -25,14 +25,14 @@
     "'datetime' module": 17,
     "'enumerate' member": 9,
     "'itertools' module": 3,
-    "'sum' member": 2,
     "'time.tzset' member": 2,
     "'tarfile' module": 2,
+    "'sum' member": 2,
     "'UnicodeEncodeError' member": 1,
-    "'heapq' module": 1,
     "'logging' module": 1,
     "'tempfile.mkdtemp' member": 1,
-    "'pkgutil' module": 1
+    "'pkgutil' module": 1,
+    "'heapq' module": 1
   },
   "2.4": {
     "function decorators": 113,
@@ -47,8 +47,8 @@
     "'any' member": 9,
     "'subprocess.check_call' member": 5,
     "'functools' module": 4,
-    "'all' member": 2,
     "'os.SEEK_CUR' member": 2,
+    "'all' member": 2,
     "'hashlib' module": 1,
     "'ctypes' module": 1
   },
@@ -60,13 +60,13 @@
     "'itertools.product' member": 9,
     "'json' module": 3,
     "'io' module": 3,
+    "'warnings.catch_warnings' member": 2,
     "'itertools.permutations' member": 2,
     "'bytearray' member": 2,
-    "'warnings.catch_warnings' member": 2,
     "'next' member": 2,
     "'math.copysign' member": 1,
-    "'fractions' module": 1,
-    "'pkgutil.get_data' member": 1
+    "'pkgutil.get_data' member": 1,
+    "'fractions' module": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 12,

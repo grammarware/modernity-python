@@ -27,15 +27,15 @@
     "'staticmethod' member": 8,
     "'os.stat.st_mode' member": 4,
     "'fnmatch.filter' member": 3,
-    "'email' module": 2,
-    "'os.stat.st_size' member": 2,
-    "'property' member": 2,
     "'operator.lt' member": 2,
     "'operator.le' member": 2,
     "'operator.eq' member": 2,
     "'operator.ne' member": 2,
     "'operator.ge' member": 2,
     "'operator.gt' member": 2,
+    "'email' module": 2,
+    "'os.stat.st_size' member": 2,
+    "'property' member": 2,
     "'StopIteration' member": 1
   },
   "2.3": {
@@ -44,8 +44,8 @@
     "'tempfile.mkdtemp' member": 20,
     "'dict.fromkeys' member": 16,
     "'sys.getfilesystemencoding' member": 14,
-    "'os.walk' member": 12,
     "'platform' module": 12,
+    "'os.walk' member": 12,
     "'textwrap' module": 11,
     "'sum' member": 10,
     "'shutil.move' member": 9,
@@ -57,8 +57,8 @@
     "'UnicodeDecodeError' member": 5,
     "'imp.release_lock' member": 4,
     "'slice.indices' member": 4,
-    "'socket.setdefaulttimeout' member": 3,
     "'datetime' module": 3,
+    "'socket.setdefaulttimeout' member": 3,
     "'tempfile.NamedTemporaryFile' member": 2,
     "'zipimport' module": 2,
     "'imp.acquire_lock' member": 2,
@@ -80,12 +80,12 @@
     "'collections.deque' member": 8,
     "'os.devnull' member": 3,
     "'os.path.lexists' member": 2,
-    "'string.Template' member": 1,
+    "'itertools.tee' member": 1,
     "'sorted(key)'": 1,
     "'sorted(reverse)'": 1,
-    "'itertools.tee' member": 1,
     "'logging.basicConfig(level)'": 1,
-    "'logging.basicConfig(stream)'": 1
+    "'logging.basicConfig(stream)'": 1,
+    "'string.Template' member": 1
   },
   "2.5": {
     "`with`": 644,
@@ -98,10 +98,10 @@
     "'contextlib' module": 14,
     "'collections.defaultdict' member": 4,
     "'ctypes' module": 3,
-    "'str.rpartition' member": 2,
-    "'hashlib' module": 2,
     "'struct.Struct' member": 2,
     "'operator.itemgetter' member": 2,
+    "'str.rpartition' member": 2,
+    "'hashlib' module": 2,
     "'__import__(level)'": 1
   },
   "2.6": {
@@ -121,14 +121,14 @@
     "class decorators": 5,
     "'functools.reduce' member": 3,
     "'warnings.catch_warnings' member": 3,
+    "'abc' module": 2,
     "'socket.create_connection' member": 2,
     "'site.USER_BASE' member": 2,
     "'sys.dont_write_bytecode' member": 2,
-    "'abc' module": 2,
-    "'numbers' module": 1,
+    "'tempfile.NamedTemporaryFile(delete)'": 1,
     "'ssl' module": 1,
     "'os.walk(followlinks)'": 1,
-    "'tempfile.NamedTemporaryFile(delete)'": 1,
+    "'numbers' module": 1,
     "'ast' module": 1,
     "'urllib2.urlopen(timeout)'": 1,
     "'json' module": 1
@@ -152,8 +152,8 @@
   "3.0": {
     "'list.copy' member": 4,
     "super() without arguments": 2,
-    "'html' module": 1,
-    "'winreg' module": 1
+    "'winreg' module": 1,
+    "'html' module": 1
   },
   "3.1": {
     "'collections.OrderedDict' member": 5,
@@ -172,8 +172,8 @@
     "'site.getsitepackages' member": 1
   },
   "3.3": {
-    "'sys.base_prefix' member": 4,
     "'sys.implementation' member": 4,
+    "'sys.base_prefix' member": 4,
     "'importlib.machinery.FileFinder' member": 2,
     "'collections.abc' module": 2,
     "'unittest.mock' module": 1,

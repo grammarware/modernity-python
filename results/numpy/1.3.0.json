@@ -3,8 +3,8 @@
     "'file' member": 7,
     "'callable' member": 6,
     "'long' member": 3,
-    "'copy_reg' module": 2,
     "'sys.version_info' member": 2,
+    "'copy_reg' module": 2,
     "'types.NoneType' member": 1,
     "'unicode' member": 1,
     "'__builtin__' module": 1
@@ -22,15 +22,15 @@
     "'dict' member": 14,
     "'bool' member": 5,
     "'StopIteration' member": 4,
-    "'gc.get_objects' member": 4,
     "'property' member": 4,
-    "'super' member": 2,
+    "'gc.get_objects' member": 4,
     "'tokenize.generate_tokens' member": 2,
+    "'super' member": 2,
     "'types.GeneratorType' member": 1,
     "'__future__.division' member": 1,
+    "'dict.iteritems' member": 1,
     "'operator.__eq__' member": 1,
-    "'operator.__lt__' member": 1,
-    "'dict.iteritems' member": 1
+    "'operator.__lt__' member": 1
   },
   "2.3": {
     "'sum' member": 41,
@@ -40,10 +40,10 @@
     "'file.next' member": 2,
     "'tempfile.mkstemp' member": 2,
     "'optparse' module": 1,
-    "'itertools' module": 1,
-    "'bz2' module": 1,
     "'tempfile.NamedTemporaryFile' member": 1,
-    "'tempfile.mkdtemp' member": 1
+    "'tempfile.mkdtemp' member": 1,
+    "'itertools' module": 1,
+    "'bz2' module": 1
   },
   "2.4": {
     "function decorators": 20,

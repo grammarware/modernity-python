@@ -5,8 +5,8 @@
   },
   "2.2": {
     "'dict' member": 3,
-    "'iter' member": 2,
     "'type' member": 2,
+    "'iter' member": 2,
     "'object' member": 1
   },
   "2.3": {

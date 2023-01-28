@@ -23,15 +23,15 @@
     "'operator.eq' member": 4,
     "'operator.gt' member": 4,
     "'operator.lt' member": 4,
-    "'operator.truediv' member": 3,
-    "'operator.floordiv' member": 3,
     "'operator.ne' member": 3,
     "'operator.ge' member": 3,
     "'operator.le' member": 3,
+    "'operator.truediv' member": 3,
+    "'operator.floordiv' member": 3,
     "'fnmatch.filter' member": 2,
     "'object' member": 2,
-    "'staticmethod' member": 1,
-    "'types.GeneratorType' member": 1
+    "'types.GeneratorType' member": 1,
+    "'staticmethod' member": 1
   },
   "2.3": {
     "'enumerate' member": 28,
@@ -74,13 +74,13 @@
     "'str.format' member": 9,
     "byte string (b'..') or `str` synonym": 4,
     "'collections.namedtuple' member": 1,
-    "'functools.reduce' member": 1,
-    "'os.walk(followlinks)'": 1,
     "'ast' module": 1,
+    "'os.walk(followlinks)'": 1,
     "'string.Formatter' member": 1,
-    "'logging.StreamHandler' member": 1,
     "'io' module": 1,
-    "'json' module": 1
+    "'functools.reduce' member": 1,
+    "'json' module": 1,
+    "'logging.StreamHandler' member": 1
   },
   "2.7": {
     "'ctypes.c_ssize_t' member": 1

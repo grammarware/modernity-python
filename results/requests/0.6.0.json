@@ -1,7 +1,7 @@
 {
   "2.0": {
-    "'urllib2' module": 1,
     "'sys.version_info' member": 1,
+    "'urllib2' module": 1,
     "'urlparse' module": 1
   },
   "2.1": {

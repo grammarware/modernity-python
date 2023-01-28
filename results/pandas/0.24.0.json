@@ -9,8 +9,8 @@
     "'unichr' member": 4,
     "'urlparse' module": 2,
     "'httplib.HTTPException' member": 2,
-    "'ConfigParser' module": 1,
     "'__builtin__' module": 1,
+    "'ConfigParser' module": 1,
     "'urllib2' module": 1
   },
   "2.1": {
@@ -67,15 +67,15 @@
     "'gc.get_referents' member": 2,
     "'sys.getfilesystemencoding' member": 2,
     "'ConfigParser.SafeConfigParser' member": 1,
-    "'random.sample' member": 1,
-    "'tempfile.mkdtemp' member": 1,
-    "'time.tzset' member": 1,
-    "'optparse' module": 1,
     "'locale.getpreferredencoding' member": 1,
+    "'random.sample' member": 1,
     "'operator.is_' member": 1,
     "'pickle.dump(protocol)'": 1,
+    "'tarfile' module": 1,
     "'tempfile.gettempdir' member": 1,
-    "'tarfile' module": 1
+    "'optparse' module": 1,
+    "'tempfile.mkdtemp' member": 1,
+    "'time.tzset' member": 1
   },
   "2.4": {
     "function decorators": 4314,
@@ -93,8 +93,8 @@
     "'operator.attrgetter' member": 2,
     "'collections.deque' member": 2,
     "'unicodedata.east_asian_width' member": 1,
-    "'traceback.format_exc' member": 1,
-    "'pprint.pformat(width)'": 1
+    "'pprint.pformat(width)'": 1,
+    "'traceback.format_exc' member": 1
   },
   "2.5": {
     "`with`": 9586,
@@ -110,8 +110,8 @@
     "'codecs.getincrementalencoder' member": 2,
     "'sqlite3' module": 2,
     "'tokenize.untokenize' member": 1,
-    "'uuid' module": 1,
-    "'__future__.absolute_import' member": 1
+    "'__future__.absolute_import' member": 1,
+    "'uuid' module": 1
   },
   "2.6": {
     "'str.format' member": 2385,
@@ -124,8 +124,8 @@
     "'collections.namedtuple' member": 17,
     "'itertools.permutations' member": 15,
     "'io' module": 14,
-    "strftime directive 'f'": 14,
     "'sys.getsizeof' member": 14,
+    "strftime directive 'f'": 14,
     "'format' member": 11,
     "'operator.methodcaller' member": 8,
     "'json' module": 7,
@@ -142,10 +142,10 @@
     "'bin' member": 2,
     "'platform.python_implementation' member": 1,
     "'functools.reduce' member": 1,
-    "'zipfile.ZipFile.open' member": 1,
     "'ctypes.get_errno' member": 1,
     "'fractions' module": 1,
-    "'__future__.unicode_literals' member": 1
+    "'__future__.unicode_literals' member": 1,
+    "'zipfile.ZipFile.open' member": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 331,
@@ -181,8 +181,8 @@
   "3.2": {
     "'datetime.timedelta.total_seconds' member": 217,
     "'callable' member": 54,
-    "'datetime.timezone' member": 2,
     "'argparse' module": 2,
+    "'datetime.timezone' member": 2,
     "'ResourceWarning' member": 2,
     "'mmap.mmap.closed' member": 1
   },
@@ -193,13 +193,13 @@
     "'collections.abc' module": 2,
     "'collections.ChainMap' member": 1,
     "'lzma' module": 1,
-    "'inspect.Signature' member": 1,
-    "'shutil.get_terminal_size' member": 1
+    "'shutil.get_terminal_size' member": 1,
+    "'inspect.Signature' member": 1
   },
   "3.4": {
     "'pathlib' module": 5,
-    "'inspect.unwrap' member": 1,
-    "'importlib.reload' member": 1
+    "'importlib.reload' member": 1,
+    "'inspect.unwrap' member": 1
   },
   "3.5": {
     "'operator.matmul' member": 32,

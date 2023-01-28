@@ -42,9 +42,9 @@
     "'any' member": 22,
     "'subprocess.check_call' member": 4,
     "'collections.defaultdict' member": 4,
-    "'contextlib' module": 2,
     "'hashlib' module": 2,
     "'operator.index' member": 2,
+    "'contextlib' module": 2,
     "'datetime.datetime.strptime' member": 2
   },
   "2.6": {
@@ -55,11 +55,11 @@
     "'itertools.product' member": 25,
     "'abc' module": 19,
     "'collections.namedtuple' member": 5,
-    "'warnings.catch_warnings' member": 2,
     "'bin' member": 2,
+    "'warnings.catch_warnings' member": 2,
     "'platform.python_implementation' member": 1,
-    "'json' module": 1,
-    "'fractions' module": 1
+    "'fractions' module": 1,
+    "'json' module": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 13,

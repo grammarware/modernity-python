@@ -35,8 +35,8 @@
     "'gc.get_referrers' member": 4,
     "'os.path.realpath' member": 3,
     "'tokenize.generate_tokens' member": 1,
-    "'time.struct_time' member": 1,
-    "'email' module": 1
+    "'email' module": 1,
+    "'time.struct_time' member": 1
   },
   "2.3": {
     "'enumerate' member": 549,
@@ -56,21 +56,21 @@
     "'bz2' module": 4,
     "'os.walk' member": 3,
     "'logging' module": 2,
-    "'pickle.dump(protocol)'": 2,
     "'gc.get_referents' member": 2,
-    "'tempfile.gettempdir' member": 2,
+    "'pickle.dump(protocol)'": 2,
     "'sys.getfilesystemencoding' member": 2,
+    "'tempfile.gettempdir' member": 2,
     "'pickle.dumps(protocol)'": 1,
-    "'optparse' module": 1,
-    "'locale.getpreferredencoding' member": 1,
-    "'time.tzset' member": 1,
-    "'tempfile.mkdtemp' member": 1,
     "'random.sample' member": 1,
     "'operator.is_' member": 1,
     "'shlex.split' member": 1,
-    "'tarfile' module": 1,
     "'tempfile.NamedTemporaryFile' member": 1,
-    "'tempfile.mkstemp' member": 1
+    "'tarfile' module": 1,
+    "'tempfile.mkstemp' member": 1,
+    "'optparse' module": 1,
+    "'locale.getpreferredencoding' member": 1,
+    "'time.tzset' member": 1,
+    "'tempfile.mkdtemp' member": 1
   },
   "2.4": {
     "function decorators": 7712,
@@ -101,9 +101,9 @@
     "'operator.itemgetter' member": 16,
     "'subprocess.check_call' member": 6,
     "'xml.etree.ElementTree' module": 3,
+    "'hashlib' module": 2,
     "'codecs.getincrementaldecoder' member": 2,
     "'sqlite3' module": 2,
-    "'hashlib' module": 2,
     "'decimal.localcontext' member": 2,
     "'tokenize.untokenize' member": 1,
     "'ctypes' module": 1
@@ -197,8 +197,8 @@
     "'zipfile.BadZipFile' member": 2,
     "'sysconfig' module": 1,
     "'configparser.ConfigParser.read_file' member": 1,
-    "'contextlib.ContextDecorator' member": 1,
-    "'mmap.mmap.closed' member": 1
+    "'mmap.mmap.closed' member": 1,
+    "'contextlib.ContextDecorator' member": 1
   },
   "3.3": {
     "`yield from`": 31,
@@ -208,15 +208,15 @@
     "'inspect.Parameter' member": 7,
     "'shutil.get_terminal_size' member": 5,
     "'lzma' module": 2,
-    "raise ... from None": 2,
     "'str.casefold' member": 2,
-    "'inspect.Signature' member": 1,
+    "raise ... from None": 2,
     "'shutil.which' member": 1,
-    "'bz2.open' member": 1,
-    "'types.SimpleNamespace' member": 1,
     "'collections.ChainMap' member": 1,
+    "'bz2.open' member": 1,
     "'contextlib.ExitStack' member": 1,
-    "'PermissionError' member": 1
+    "'PermissionError' member": 1,
+    "'types.SimpleNamespace' member": 1,
+    "'inspect.Signature' member": 1
   },
   "3.4": {
     "'pathlib' module": 22,
@@ -252,9 +252,9 @@
     "'os.fspath' member": 5,
     "'typing.Collection' member": 4,
     "'ModuleNotFoundError' member": 2,
-    "'random.choices' member": 1,
+    "'datetime.datetime(fold)'": 1,
     "'tracemalloc.DomainFilter' member": 1,
-    "'datetime.datetime(fold)'": 1
+    "'random.choices' member": 1
   },
   "3.7": {
     "'__future__.annotations' member": 218,
@@ -270,8 +270,8 @@
     "literal variable annotations": 4,
     "'typing.Protocol' member": 1,
     "'functools.lru_cache' user function decorator": 1,
-    "'importlib.metadata' module": 1,
-    "'typing.TypedDict' member": 1
+    "'typing.TypedDict' member": 1,
+    "'importlib.metadata' module": 1
   },
   "3.9": {},
   "3.10": {

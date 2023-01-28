@@ -56,19 +56,19 @@
     "'os.walk' member": 3,
     "'logging' module": 3,
     "'tempfile.mkstemp' member": 3,
-    "'pickle.dump(protocol)'": 2,
     "'gc.get_referents' member": 2,
+    "'pickle.dump(protocol)'": 2,
     "'sys.getfilesystemencoding' member": 2,
     "'tempfile.mkdtemp' member": 1,
     "'time.tzset' member": 1,
-    "'optparse' module": 1,
-    "'locale.getpreferredencoding' member": 1,
     "'random.sample' member": 1,
     "'operator.is_' member": 1,
     "'shlex.split' member": 1,
-    "'tarfile' module": 1,
     "'tempfile.NamedTemporaryFile' member": 1,
-    "'tempfile.gettempdir' member": 1
+    "'tarfile' module": 1,
+    "'tempfile.gettempdir' member": 1,
+    "'optparse' module": 1,
+    "'locale.getpreferredencoding' member": 1
   },
   "2.4": {
     "function decorators": 6077,
@@ -98,8 +98,8 @@
     "'contextlib' module": 24,
     "'operator.itemgetter' member": 16,
     "'subprocess.check_call' member": 5,
-    "'sqlite3' module": 2,
     "'hashlib' module": 2,
+    "'sqlite3' module": 2,
     "'tokenize.untokenize' member": 1,
     "'ctypes' module": 1
   },
@@ -125,13 +125,13 @@
     "'itertools.combinations' member": 4,
     "'bin' member": 4,
     "'os.path.relpath' member": 3,
-    "'frozenset.isdisjoint' member": 2,
     "'ast' module": 2,
+    "'frozenset.isdisjoint' member": 2,
     "'decimal.Decimal.is_nan' member": 2,
     "'decimal.Decimal.is_infinite' member": 2,
     "'decimal.Decimal.log10' member": 2,
-    "'multiprocessing' module": 1,
     "'platform.python_implementation' member": 1,
+    "'multiprocessing' module": 1,
     "'zipfile.ZipFile.open' member": 1,
     "'ctypes.get_errno' member": 1,
     "'set.isdisjoint' member": 1,
@@ -185,8 +185,8 @@
     "'datetime.timezone' member": 4,
     "'argparse' module": 3,
     "'configparser.ConfigParser.read_file' member": 1,
-    "'contextlib.ContextDecorator' member": 1,
-    "'mmap.mmap.closed' member": 1
+    "'mmap.mmap.closed' member": 1,
+    "'contextlib.ContextDecorator' member": 1
   },
   "3.3": {
     "`yield from`": 23,
@@ -199,10 +199,10 @@
     "'lzma' module": 2,
     "'str.casefold' member": 2,
     "'contextlib.ExitStack' member": 2,
-    "'inspect.Signature' member": 1,
-    "'bz2.open' member": 1,
     "'collections.ChainMap' member": 1,
-    "'PermissionError' member": 1
+    "'bz2.open' member": 1,
+    "'PermissionError' member": 1,
+    "'inspect.Signature' member": 1
   },
   "3.4": {
     "'pathlib' module": 15,
@@ -234,9 +234,9 @@
     "'typing.Collection' member": 3,
     "'os.PathLike' member": 2,
     "'ModuleNotFoundError' member": 2,
+    "'datetime.datetime(fold)'": 1,
     "'random.choices' member": 1,
-    "'tracemalloc.DomainFilter' member": 1,
-    "'datetime.datetime(fold)'": 1
+    "'tracemalloc.DomainFilter' member": 1
   },
   "3.7": {
     "'__future__.annotations' member": 11,

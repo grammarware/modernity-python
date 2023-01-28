@@ -27,13 +27,13 @@
     "'enumerate' member": 9,
     "'UnicodeEncodeError' member": 3,
     "'itertools' module": 3,
-    "'sum' member": 2,
     "'time.tzset' member": 2,
     "'tarfile' module": 2,
-    "'heapq' module": 1,
+    "'sum' member": 2,
     "'logging' module": 1,
     "'tempfile.mkdtemp' member": 1,
-    "'pkgutil' module": 1
+    "'pkgutil' module": 1,
+    "'heapq' module": 1
   },
   "2.4": {
     "function decorators": 138,
@@ -51,8 +51,8 @@
     "'functools' module": 4,
     "'hashlib' module": 2,
     "'ctypes' module": 2,
-    "'all' member": 2,
-    "'os.SEEK_CUR' member": 2
+    "'os.SEEK_CUR' member": 2,
+    "'all' member": 2
   },
   "2.6": {
     "byte string (b'..') or `str` synonym": 38,
@@ -62,14 +62,14 @@
     "'itertools.product' member": 9,
     "'io' module": 6,
     "'json' module": 3,
+    "'warnings.catch_warnings' member": 2,
     "'itertools.permutations' member": 2,
     "'bytearray' member": 2,
-    "'decimal.Decimal.is_finite' member": 2,
-    "'warnings.catch_warnings' member": 2,
     "'next' member": 2,
+    "'decimal.Decimal.is_finite' member": 2,
     "'math.copysign' member": 1,
-    "'fractions' module": 1,
-    "'pkgutil.get_data' member": 1
+    "'pkgutil.get_data' member": 1,
+    "'fractions' module": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 14,
@@ -79,8 +79,8 @@
     "'unittest.skip' member": 4,
     "'unittest.skipIf' member": 3,
     "'argparse' module": 2,
-    "set comprehensions": 2,
-    "'collections.OrderedDict' member": 2
+    "'collections.OrderedDict' member": 2,
+    "set comprehensions": 2
   },
   "3.0": {},
   "3.1": {

@@ -9,8 +9,8 @@
     "'type' member": 8,
     "'super' member": 8,
     "'object' member": 2,
-    "'hmac' module": 1,
-    "'os.path.realpath' member": 1
+    "'os.path.realpath' member": 1,
+    "'hmac' module": 1
   },
   "2.3": {
     "'datetime' module": 3,
@@ -26,8 +26,8 @@
     "'any' member": 6,
     "'all' member": 4,
     "'functools' module": 1,
-    "'hashlib' module": 1,
-    "'contextlib' module": 1
+    "'contextlib' module": 1,
+    "'hashlib' module": 1
   },
   "2.6": {
     "byte string (b'..') or `str` synonym": 175,

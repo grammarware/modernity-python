@@ -4,8 +4,8 @@
   },
   "2.1": {
     "'__future__' module": 19,
-    "'inspect' module": 1,
-    "'warnings' module": 1
+    "'warnings' module": 1,
+    "'inspect' module": 1
   },
   "2.2": {
     "'__future__.division' member": 18,
@@ -28,17 +28,17 @@
     "'sorted' member": 5,
     "'collections' module": 2,
     "'sorted(key)'": 2,
-    "'operator.attrgetter' member": 1,
-    "'reversed' member": 1
+    "'reversed' member": 1,
+    "'operator.attrgetter' member": 1
   },
   "2.5": {
     "`with`": 114,
     "'__future__.absolute_import' member": 19,
     "'all' member": 6,
     "'types.MemberDescriptorType' member": 2,
-    "'BaseException' member": 1,
-    "'ctypes' module": 1,
     "'functools' module": 1,
+    "'ctypes' module": 1,
+    "'BaseException' member": 1,
     "'hashlib' module": 1,
     "'operator.itemgetter' member": 1
   },

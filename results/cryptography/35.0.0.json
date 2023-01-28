@@ -22,8 +22,8 @@
     "'datetime' module": 12,
     "'itertools' module": 8,
     "'UnicodeEncodeError' member": 6,
-    "'textwrap' module": 4,
     "'sum' member": 4,
+    "'textwrap' module": 4,
     "'enumerate' member": 4,
     "'platform' module": 1,
     "'pkgutil' module": 1
@@ -32,8 +32,8 @@
     "function decorators": 735,
     "'frozenset' member": 98,
     "'os.urandom' member": 59,
-    "'sorted' member": 6,
     "'reversed' member": 6,
+    "'sorted' member": 6,
     "'set' member": 5,
     "'collections' module": 4,
     "'subprocess' module": 3,
@@ -45,9 +45,9 @@
     "'any' member": 6,
     "'collections.defaultdict' member": 4,
     "'subprocess.check_call' member": 3,
-    "'contextlib' module": 2,
     "'hashlib' module": 2,
-    "'struct.Struct' member": 2
+    "'struct.Struct' member": 2,
+    "'contextlib' module": 2
   },
   "2.6": {
     "byte string (b'..') or `str` synonym": 2835,
@@ -57,8 +57,8 @@
     "'itertools.product' member": 40,
     "'abc' module": 25,
     "'format' member": 10,
-    "'warnings.catch_warnings' member": 4,
     "'collections.namedtuple' member": 4,
+    "'warnings.catch_warnings' member": 4,
     "'json' module": 3,
     "'next' member": 2
   },

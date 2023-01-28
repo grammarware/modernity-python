@@ -18,11 +18,10 @@
     "function decorators": 1
   },
   "2.5": {
-    "`with`": 5
+    "`with`": 4
   },
   "2.6": {
-    "class decorators": 2,
-    "'json' module": 1
+    "class decorators": 2
   },
   "2.7": {
     "'collections.OrderedDict' member": 1

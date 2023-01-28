@@ -4,14 +4,14 @@
   },
   "2.1": {
     "'__future__' module": 19,
-    "'inspect' module": 1,
-    "'warnings' module": 1
+    "'warnings' module": 1,
+    "'inspect' module": 1
   },
   "2.2": {
     "'__future__.division' member": 18,
     "'object' member": 14,
-    "'type' member": 12,
-    "'dict' member": 12
+    "'dict' member": 12,
+    "'type' member": 12
   },
   "2.3": {
     "'enumerate' member": 5,
@@ -25,8 +25,8 @@
     "'sorted' member": 3,
     "'collections' module": 2,
     "'sorted(key)'": 2,
-    "'operator.attrgetter' member": 1,
-    "'reversed' member": 1
+    "'reversed' member": 1,
+    "'operator.attrgetter' member": 1
   },
   "2.5": {
     "`with`": 96,

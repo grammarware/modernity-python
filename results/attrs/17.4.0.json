@@ -19,8 +19,8 @@
     "'enumerate' member": 5,
     "'pickle.HIGHEST_PROTOCOL' member": 4,
     "'platform' module": 1,
-    "'itertools' module": 1,
-    "'dict.pop' member": 1
+    "'dict.pop' member": 1,
+    "'itertools' module": 1
   },
   "2.4": {
     "function decorators": 124,
@@ -36,9 +36,9 @@
     "'__future__.absolute_import' member": 19,
     "'all' member": 6,
     "'types.MemberDescriptorType' member": 2,
-    "'BaseException' member": 1,
     "'ctypes' module": 1,
     "'functools' module": 1,
+    "'BaseException' member": 1,
     "'hashlib' module": 1,
     "'operator.itemgetter' member": 1
   },

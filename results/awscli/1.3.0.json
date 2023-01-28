@@ -20,8 +20,8 @@
   "2.3": {
     "'logging' module": 26,
     "'enumerate' member": 11,
-    "'sum' member": 4,
     "'datetime' module": 4,
+    "'sum' member": 4,
     "'sys.getfilesystemencoding' member": 4,
     "'shlex.split' member": 2,
     "'socket.timeout' member": 2,

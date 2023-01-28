@@ -31,9 +31,9 @@
   "2.5": {
     "`with`": 53,
     "'subprocess.check_call' member": 22,
-    "'all' member": 2,
     "'ctypes' module": 2,
     "'glob.iglob' member": 2,
+    "'all' member": 2,
     "'hashlib' module": 1,
     "'__future__.absolute_import' member": 1,
     "'collections.defaultdict' member": 1
@@ -42,15 +42,15 @@
     "'str.format' member": 66,
     "'zipfile.ZipFile.open' member": 66,
     "byte string (b'..') or `str` synonym": 16,
-    "'next' member": 4,
     "'__future__.print_function' member": 4,
+    "'next' member": 4,
     "'io' module": 3,
     "'os.path.relpath' member": 2,
     "'format' member": 2,
     "'__future__.unicode_literals' member": 1,
-    "'shutil.copytree(ignore)'": 1,
     "'collections.namedtuple' member": 1,
-    "'platform.python_implementation' member": 1
+    "'platform.python_implementation' member": 1,
+    "'shutil.copytree(ignore)'": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 46,

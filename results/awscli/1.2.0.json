@@ -11,8 +11,8 @@
     "'dict' member": 5,
     "'iter' member": 5,
     "'StopIteration' member": 5,
-    "'bool' member": 1,
     "'hmac' module": 1,
+    "'bool' member": 1,
     "'os.stat.st_mtime' member": 1,
     "'os.stat.st_size' member": 1
   },
@@ -22,8 +22,8 @@
     "'enumerate' member": 3,
     "'datetime' module": 2,
     "'sys.getfilesystemencoding' member": 2,
-    "'platform' module": 1,
     "'csv' module": 1,
+    "'platform' module": 1,
     "'textwrap' module": 1,
     "'UnicodeEncodeError' member": 1
   },

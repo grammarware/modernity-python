@@ -17,14 +17,14 @@
   },
   "2.2": {
     "'super' member": 380,
-    "'dict' member": 161,
+    "'dict' member": 159,
     "'object' member": 51,
     "'type' member": 47,
-    "'iter' member": 18,
+    "'iter' member": 16,
     "'StopIteration' member": 14,
     "'help' member": 6,
-    "'os.stat.st_mode' member": 2,
     "'str.decode' member": 2,
+    "'os.stat.st_mode' member": 2,
     "'time.struct_time' member": 2,
     "'urlparse.urlsplit' member": 1,
     "'urlparse.urlunsplit' member": 1,
@@ -63,7 +63,7 @@
     "'pprint.pformat(width)'": 1
   },
   "2.5": {
-    "`with`": 1343,
+    "`with`": 1339,
     "'any' member": 16,
     "'all' member": 13,
     "'contextlib' module": 7,
@@ -78,7 +78,7 @@
     "'struct.Struct' member": 1
   },
   "2.6": {
-    "byte string (b'..') or `str` synonym": 809,
+    "byte string (b'..') or `str` synonym": 807,
     "'str.format' member": 38,
     "'json' module": 20,
     "'next' member": 12,
@@ -90,9 +90,9 @@
     "'threading.Thread.daemon' member": 3,
     "'ssl' module": 2,
     "'logging.StreamHandler' member": 2,
-    "'threading.Thread.is_alive' member": 2,
     "'threading.current_thread' member": 2,
     "'threading.Thread.name' member": 2,
+    "'threading.Thread.is_alive' member": 2,
     "'urlparse.parse_qsl' member": 1,
     "'urlparse.parse_qs' member": 1,
     "'itertools.izip_longest' member": 1,

@@ -2,8 +2,8 @@
   "2.0": {
     "'sys.version_info' member": 7,
     "'callable' member": 4,
-    "print(expr)": 1,
-    "'ConfigParser' module": 1
+    "'ConfigParser' module": 1,
+    "print(expr)": 1
   },
   "2.1": {
     "'warnings' module": 2,
@@ -30,13 +30,13 @@
     "'tempfile.mkstemp' member": 4,
     "'tempfile.mkdtemp' member": 3,
     "'locale.getpreferredencoding' member": 2,
-    "'dict.pop' member": 2,
     "'ConfigParser.RawConfigParser' member": 2,
+    "'dict.pop' member": 2,
     "'textwrap' module": 1,
-    "'sys.getfilesystemencoding' member": 1,
     "'datetime' module": 1,
-    "'itertools' module": 1,
-    "'optparse' module": 1
+    "'sys.getfilesystemencoding' member": 1,
+    "'optparse' module": 1,
+    "'itertools' module": 1
   },
   "2.4": {
     "function decorators": 260,

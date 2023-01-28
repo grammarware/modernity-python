@@ -36,8 +36,8 @@
     "'any' member": 10,
     "'all' member": 6,
     "'contextlib' module": 3,
-    "'collections.defaultdict' member": 2,
-    "'functools' module": 2
+    "'functools' module": 2,
+    "'collections.defaultdict' member": 2
   },
   "2.6": {
     "'next' member": 12,

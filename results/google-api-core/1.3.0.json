@@ -24,8 +24,8 @@
   "2.4": {
     "function decorators": 54,
     "'collections' module": 3,
-    "'frozenset' member": 2,
     "'sorted' member": 2,
+    "'frozenset' member": 2,
     "'reversed' member": 1
   },
   "2.5": {
@@ -38,13 +38,13 @@
     "'str.format' member": 40,
     "class decorators": 7,
     "'__future__.unicode_literals' member": 5,
-    "'collections.namedtuple' member": 3,
     "'abc' module": 3,
+    "'collections.namedtuple' member": 3,
     "'next' member": 2,
     "'io' module": 1,
+    "'threading.Thread.daemon' member": 1,
     "'json' module": 1,
-    "byte string (b'..') or `str` synonym": 1,
-    "'threading.Thread.daemon' member": 1
+    "byte string (b'..') or `str` synonym": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 22,

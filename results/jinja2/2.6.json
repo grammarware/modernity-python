@@ -8,8 +8,8 @@
   "2.1": {
     "'unittest' module": 10,
     "'inspect' module": 1,
-    "'weakref' module": 1,
-    "'warnings' module": 1
+    "'warnings' module": 1,
+    "'weakref' module": 1
   },
   "2.2": {
     "'dict' member": 20,

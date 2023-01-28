@@ -9,8 +9,8 @@
   "2.1": {
     "'unittest' module": 3,
     "'warnings' module": 2,
-    "'__future__' module": 2,
     "'random.setstate' member": 2,
+    "'__future__' module": 2,
     "'inspect' module": 1,
     "'weakref' module": 1,
     "'random.getstate' member": 1
@@ -31,16 +31,16 @@
     "'datetime' module": 9,
     "'tempfile.mkdtemp' member": 5,
     "'itertools' module": 5,
-    "'shlex.split' member": 2,
     "'os.walk' member": 2,
+    "'shlex.split' member": 2,
     "'bz2' module": 2,
-    "'pickle.HIGHEST_PROTOCOL' member": 2,
     "'os.path.supports_unicode_filenames' member": 2,
+    "'pickle.HIGHEST_PROTOCOL' member": 2,
     "'tempfile.mkstemp' member": 2,
     "'timeit' module": 1,
     "'textwrap' module": 1,
-    "'sum' member": 1,
-    "'tempfile.NamedTemporaryFile' member": 1
+    "'tempfile.NamedTemporaryFile' member": 1,
+    "'sum' member": 1
   },
   "2.4": {
     "function decorators": 171,
@@ -73,17 +73,17 @@
     "'bytearray' member": 39,
     "'next' member": 13,
     "'io' module": 7,
-    "'json' module": 5,
     "'multiprocessing' module": 5,
+    "'json' module": 5,
     "'subprocess.Popen.kill' member": 2,
     "class decorators": 2,
     "'itertools.izip_longest' member": 1,
     "'numbers' module": 1,
     "'ast' module": 1,
     "'operator.methodcaller' member": 1,
-    "'__future__.print_function' member": 1,
     "'collections.namedtuple' member": 1,
-    "'tempfile.NamedTemporaryFile(delete)'": 1
+    "'tempfile.NamedTemporaryFile(delete)'": 1,
+    "'__future__.print_function' member": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 46,

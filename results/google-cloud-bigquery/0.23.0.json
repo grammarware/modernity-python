@@ -17,8 +17,8 @@
   },
   "2.4": {
     "function decorators": 118,
-    "'sorted' member": 2,
     "'frozenset' member": 2,
+    "'sorted' member": 2,
     "'collections' module": 1
   },
   "2.5": {

@@ -61,10 +61,10 @@
     "'bytearray' member": 3,
     "'zipfile.ZipFile.open' member": 2,
     "'threading.Thread.daemon' member": 2,
-    "'os.path.relpath' member": 1,
     "'ftplib.FTP(timeout)'": 1,
-    "'multiprocessing' module": 1,
-    "bytes `%` formatting or `str` synonym": 1
+    "'os.path.relpath' member": 1,
+    "bytes `%` formatting or `str` synonym": 1,
+    "'multiprocessing' module": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 24,
@@ -107,8 +107,8 @@
   },
   "3.5": {
     "generalized unpacking": 4,
-    "'pathlib.Path.mkdir(exist_ok)'": 1,
-    "bytes `%` formatting or `str` synonym": 1
+    "bytes `%` formatting or `str` synonym": 1,
+    "'pathlib.Path.mkdir(exist_ok)'": 1
   },
   "3.6": {
     "f-strings": 13

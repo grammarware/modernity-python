@@ -73,8 +73,8 @@
     "'next' member": 172,
     "class decorators": 13,
     "byte string (b'..') or `str` synonym": 2,
-    "'functools.reduce' member": 1,
-    "'io' module": 1
+    "'io' module": 1,
+    "'functools.reduce' member": 1
   },
   "2.7": {},
   "3.0": {

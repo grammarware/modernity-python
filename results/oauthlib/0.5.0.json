@@ -6,15 +6,15 @@
   },
   "2.1": {
     "'__future__' module": 60,
-    "'unittest' module": 1,
-    "'inspect' module": 1
+    "'inspect' module": 1,
+    "'unittest' module": 1
   },
   "2.2": {
     "'dict' member": 27,
     "'super' member": 10,
-    "'object' member": 2,
+    "'type' member": 2,
     "'hmac' module": 2,
-    "'type' member": 2
+    "'object' member": 2
   },
   "2.3": {
     "'logging' module": 3,
@@ -31,8 +31,8 @@
   "2.5": {
     "'__future__.absolute_import' member": 57,
     "'all' member": 12,
-    "'collections.defaultdict' member": 2,
     "'hashlib' module": 2,
+    "'collections.defaultdict' member": 2,
     "'functools' module": 2,
     "`with`": 1
   },
@@ -44,8 +44,8 @@
     "'multiprocessing' module": 1
   },
   "2.7": {
-    "'collections.Counter' member": 2,
     "bytes directive 'r'": 2,
+    "'collections.Counter' member": 2,
     "'logging.NullHandler' member": 1
   },
   "3.0": {

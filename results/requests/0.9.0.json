@@ -17,8 +17,8 @@
     "'super' member": 2
   },
   "2.3": {
-    "'dict.pop' member": 2,
     "'logging' module": 2,
+    "'dict.pop' member": 2,
     "'enumerate' member": 1
   },
   "2.4": {
@@ -29,9 +29,9 @@
     "'collections.deque' member": 1
   },
   "2.5": {
+    "'__future__.absolute_import' member": 2,
     "'urlparse.urlparse.path' member": 2,
     "'urlparse.urlparse.query' member": 2,
-    "'__future__.absolute_import' member": 2,
     "`with`": 2,
     "'hashlib' module": 1,
     "'codecs.getincrementaldecoder' member": 1,

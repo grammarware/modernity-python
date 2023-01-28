@@ -23,8 +23,8 @@
     "'all' member": 2,
     "'BaseException' member": 2,
     "`with`": 1,
-    "'hashlib' module": 1,
-    "'contextlib' module": 1
+    "'contextlib' module": 1,
+    "'hashlib' module": 1
   },
   "2.6": {
     "'str.format' member": 16,

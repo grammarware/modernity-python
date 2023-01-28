@@ -15,8 +15,8 @@
     "'type' member": 22,
     "'super' member": 12,
     "'property' member": 1,
-    "'dict' member": 1,
-    "'hmac' module": 1
+    "'hmac' module": 1,
+    "'dict' member": 1
   },
   "2.3": {
     "'itertools' module": 8,
@@ -44,9 +44,9 @@
     "'subprocess.check_call' member": 4,
     "'collections.defaultdict' member": 4,
     "'any' member": 4,
-    "'contextlib' module": 2,
     "'hashlib' module": 2,
     "'operator.index' member": 2,
+    "'contextlib' module": 2,
     "'datetime.datetime.strptime' member": 1
   },
   "2.6": {
@@ -58,10 +58,10 @@
     "'abc' module": 20,
     "'bytearray' member": 15,
     "'format' member": 10,
-    "'warnings.catch_warnings' member": 4,
     "'collections.namedtuple' member": 4,
-    "'json' module": 2,
+    "'warnings.catch_warnings' member": 4,
     "'bin' member": 2,
+    "'json' module": 2,
     "'platform.python_implementation' member": 1,
     "'fractions' module": 1
   },

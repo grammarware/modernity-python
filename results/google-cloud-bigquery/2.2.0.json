@@ -7,8 +7,8 @@
     "'unittest' module": 16,
     "'warnings' module": 9,
     "'__future__' module": 7,
-    "'inspect' module": 1,
-    "'weakref' module": 1
+    "'weakref' module": 1,
+    "'inspect' module": 1
   },
   "2.2": {
     "'object' member": 343,
@@ -16,13 +16,13 @@
     "'type' member": 42,
     "'iter' member": 30,
     "'dict' member": 17,
-    "'types.GeneratorType' member": 8,
     "'property' member": 8,
+    "'types.GeneratorType' member": 8,
     "'bool' member": 6,
-    "'str.decode' member": 4,
     "'StopIteration' member": 4,
-    "'gc.get_objects' member": 2,
-    "'__future__.division' member": 2
+    "'str.decode' member": 4,
+    "'__future__.division' member": 2,
+    "'gc.get_objects' member": 2
   },
   "2.3": {
     "'enumerate' member": 38,
@@ -65,14 +65,14 @@
     "'next' member": 23,
     "'json' module": 4,
     "'io' module": 3,
+    "class decorators": 2,
+    "'collections.namedtuple' member": 2,
+    "'__future__.print_function' member": 2,
+    "'property.setter' member": 2,
+    "'enumerate(start)'": 2,
     "'math.isnan' member": 2,
     "'math.isinf' member": 2,
     "'bytearray' member": 2,
-    "'enumerate(start)'": 2,
-    "class decorators": 2,
-    "'collections.namedtuple' member": 2,
-    "'property.setter' member": 2,
-    "'__future__.print_function' member": 2,
     "'numbers' module": 1,
     "'ast' module": 1
   },

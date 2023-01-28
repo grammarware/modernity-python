@@ -66,8 +66,8 @@
   "2.6": {
     "'str.format' member": 104,
     "'json' module": 10,
-    "'tempfile.NamedTemporaryFile(delete)'": 2,
     "'platform.linux_distribution' member": 2,
+    "'tempfile.NamedTemporaryFile(delete)'": 2,
     "byte string (b'..') or `str` synonym": 2,
     "'collections.namedtuple' member": 2,
     "'io' module": 1,

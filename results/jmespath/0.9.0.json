@@ -27,8 +27,8 @@
     "'sorted' member": 16,
     "'set' member": 10,
     "'reversed' member": 2,
-    "'sorted(key)'": 1,
-    "'collections' module": 1
+    "'collections' module": 1,
+    "'sorted(key)'": 1
   },
   "2.5": {
     "`with`": 9,

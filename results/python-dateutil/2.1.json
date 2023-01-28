@@ -18,16 +18,16 @@
   "2.3": {
     "'datetime' module": 9,
     "'enumerate' member": 2,
-    "'itertools' module": 1,
     "'tarfile' module": 1,
-    "'tempfile.mkdtemp' member": 1
+    "'tempfile.mkdtemp' member": 1,
+    "'itertools' module": 1
   },
   "2.4": {
     "function decorators": 6,
     "'sorted' member": 2,
     "'subprocess' module": 1,
-    "'collections' module": 1,
-    "'sorted(key)'": 1
+    "'sorted(key)'": 1,
+    "'collections' module": 1
   },
   "2.5": {},
   "2.6": {

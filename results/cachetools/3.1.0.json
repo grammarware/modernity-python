@@ -33,8 +33,8 @@
   "2.6": {
     "'next' member": 2,
     "'abc' module": 1,
-    "'collections.namedtuple' member": 1,
     "byte string (b'..') or `str` synonym": 1,
+    "'collections.namedtuple' member": 1,
     "'fractions' module": 1
   },
   "2.7": {

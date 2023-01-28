@@ -18,9 +18,9 @@
     "'__future__.division' member": 5,
     "'os.stat.st_size' member": 4,
     "'os.path.realpath' member": 3,
-    "'StopIteration' member": 2,
     "'os.stat.st_ctime' member": 2,
     "'bool' member": 2,
+    "'StopIteration' member": 2,
     "'str.zfill' member": 1
   },
   "2.3": {
@@ -29,9 +29,9 @@
     "'shutil.move' member": 5,
     "'datetime' module": 4,
     "'enumerate' member": 2,
+    "'tempfile.mkstemp' member": 2,
     "'tempfile.mkdtemp' member": 2,
     "'inspect.isdatadescriptor' member": 2,
-    "'tempfile.mkstemp' member": 2,
     "'bz2' module": 1,
     "'ConfigParser.SafeConfigParser' member": 1,
     "'itertools' module": 1
@@ -59,18 +59,18 @@
   "2.6": {
     "byte string (b'..') or `str` synonym": 49,
     "'str.format' member": 27,
-    "'io' module": 7,
     "'__future__.print_function' member": 7,
+    "'io' module": 7,
     "'json' module": 5,
     "'next' member": 4,
     "'bytearray' member": 3,
-    "'zipfile.ZipFile.open' member": 2,
     "'subprocess.Popen.terminate' member": 2,
+    "'zipfile.ZipFile.open' member": 2,
     "'threading.Thread.daemon' member": 2,
     "'itertools.product' member": 2,
-    "'os.path.relpath' member": 1,
     "'logging.StreamHandler' member": 1,
     "'ast' module": 1,
+    "'os.path.relpath' member": 1,
     "'ftplib.FTP(timeout)'": 1
   },
   "2.7": {

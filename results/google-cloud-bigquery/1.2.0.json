@@ -14,8 +14,8 @@
     "'property' member": 8,
     "'types.GeneratorType' member": 4,
     "'str.decode' member": 4,
-    "'bool' member": 3,
     "'dict' member": 3,
+    "'bool' member": 3,
     "'StopIteration' member": 2
   },
   "2.3": {
@@ -36,8 +36,8 @@
     "`with`": 315,
     "'operator.itemgetter' member": 12,
     "'all' member": 9,
-    "'__future__.absolute_import' member": 4,
     "'datetime.datetime.strptime' member": 4,
+    "'__future__.absolute_import' member": 4,
     "'any' member": 3,
     "'uuid' module": 2,
     "'os.SEEK_SET' member": 2,
@@ -50,8 +50,8 @@
     "'io' module": 2,
     "'math.isnan' member": 2,
     "'math.isinf' member": 2,
-    "'json' module": 2,
     "'property.setter' member": 2,
+    "'json' module": 2,
     "'__future__.print_function' member": 1,
     "'numbers' module": 1,
     "'collections.namedtuple' member": 1

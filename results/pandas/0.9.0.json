@@ -5,8 +5,8 @@
     "'callable' member": 2,
     "print(expr)": 1,
     "'__builtin__' module": 1,
-    "'Tkinter' module": 1,
-    "'urllib2' module": 1
+    "'urllib2' module": 1,
+    "'Tkinter' module": 1
   },
   "2.1": {
     "'unittest' module": 38,
@@ -42,8 +42,8 @@
     "'itertools' module": 8,
     "'textwrap' module": 3,
     "'csv' module": 3,
-    "'os.walk' member": 2,
     "'file.next' member": 2,
+    "'os.walk' member": 2,
     "'UnicodeDecodeError' member": 1,
     "'random.sample' member": 1,
     "'heapq' module": 1
@@ -69,10 +69,10 @@
     "'functools' module": 3,
     "'__future__.with_statement' member": 3,
     "'codecs.getincrementalencoder' member": 2,
+    "'sqlite3' module": 1,
     "'operator.itemgetter' member": 1,
     "'heapq.nlargest(key)'": 1,
-    "'contextlib' module": 1,
-    "'sqlite3' module": 1
+    "'contextlib' module": 1
   },
   "2.6": {
     "strftime directive 'f'": 4,

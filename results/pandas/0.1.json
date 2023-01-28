@@ -48,8 +48,8 @@
     "'__future__.with_statement' member": 2,
     "'any' member": 2,
     "'collections.defaultdict' member": 1,
-    "'hashlib' module": 1,
-    "'functools' module": 1
+    "'functools' module": 1,
+    "'hashlib' module": 1
   },
   "2.6": {},
   "2.7": {},

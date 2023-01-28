@@ -46,8 +46,8 @@
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 41,
-    "set literals": 7,
     "set comprehensions": 7,
+    "set literals": 7,
     "'collections.OrderedDict' member": 2,
     "'argparse' module": 1,
     "'sysconfig' module": 1

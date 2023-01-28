@@ -27,8 +27,8 @@
     "'tempfile.mkstemp' member": 2,
     "'os.walk' member": 2,
     "'bz2' module": 1,
-    "'ConfigParser.SafeConfigParser' member": 1,
-    "'socket.timeout' member": 1
+    "'socket.timeout' member": 1,
+    "'ConfigParser.SafeConfigParser' member": 1
   },
   "2.4": {
     "function decorators": 27,
@@ -54,11 +54,11 @@
     "'io' module": 6,
     "'subprocess.Popen.terminate' member": 2,
     "'zipfile.ZipFile.open' member": 2,
-    "'bytearray' member": 2,
     "'json' module": 2,
+    "'bytearray' member": 2,
     "'threading.Thread.daemon' member": 1,
-    "'os.path.relpath' member": 1,
-    "'ftplib.FTP(timeout)'": 1
+    "'ftplib.FTP(timeout)'": 1,
+    "'os.path.relpath' member": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 21,

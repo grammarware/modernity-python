@@ -41,8 +41,8 @@
     "`with`": 263,
     "'functools' module": 14,
     "'datetime.datetime.strptime' member": 5,
-    "'all' member": 4,
     "'operator.itemgetter' member": 4,
+    "'all' member": 4,
     "'__future__.absolute_import' member": 1
   },
   "2.6": {
@@ -54,8 +54,8 @@
     "'abc' module": 5,
     "'collections.namedtuple' member": 3,
     "'threading.Thread.daemon' member": 3,
-    "'threading.Thread.name' member": 2,
     "'functools.reduce' member": 2,
+    "'threading.Thread.name' member": 2,
     "'io' module": 1,
     "'collections.deque(maxlen)'": 1,
     "class decorators": 1,
@@ -76,8 +76,8 @@
     "keyword-only parameters": 26,
     "exception cause": 18,
     "super() without arguments": 16,
-    "'queue' module": 1,
-    "'urllib.parse' module": 1
+    "'urllib.parse' module": 1,
+    "'queue' module": 1
   },
   "3.1": {
     "'collections.OrderedDict' member": 3,

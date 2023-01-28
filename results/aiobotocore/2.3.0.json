@@ -58,8 +58,8 @@
     "`async with`": 29,
     "async for-loops": 14,
     "'inspect.isawaitable' member": 5,
-    "'typing' module": 2,
     "'StopAsyncIteration' member": 2,
+    "'typing' module": 2,
     "generalized unpacking": 2
   },
   "3.6": {

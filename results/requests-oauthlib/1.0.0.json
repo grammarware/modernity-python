@@ -27,10 +27,10 @@
     "'__future__.unicode_literals' member": 9,
     "'json' module": 9,
     "'str.format' member": 8,
-    "'io' module": 2,
     "'urlparse.parse_qs' member": 2,
-    "class decorators": 1,
+    "'io' module": 2,
     "'urlparse.parse_qsl' member": 1,
+    "class decorators": 1,
     "'__future__.print_function' member": 1
   },
   "2.7": {

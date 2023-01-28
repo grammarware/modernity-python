@@ -17,8 +17,8 @@
   "2.4": {
     "function decorators": 119,
     "'set' member": 6,
-    "'collections' module": 1,
-    "'frozenset' member": 1
+    "'frozenset' member": 1,
+    "'collections' module": 1
   },
   "2.5": {
     "`with`": 106,

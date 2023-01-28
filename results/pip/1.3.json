@@ -2,8 +2,8 @@
   "2.0": {
     "print(expr)": 5,
     "'sys.version_info' member": 3,
-    "'httplib.HTTPSConnection' member": 1,
-    "'Queue' module": 1
+    "'Queue' module": 1,
+    "'httplib.HTTPSConnection' member": 1
   },
   "2.1": {
     "'difflib' module": 1
@@ -18,8 +18,8 @@
     "'StopIteration' member": 2,
     "'object' member": 1,
     "'socket.getaddrinfo' member": 1,
-    "'os.stat.st_mode' member": 1,
-    "'email' module": 1
+    "'email' module": 1,
+    "'os.stat.st_mode' member": 1
   },
   "2.3": {
     "'tempfile.mkdtemp' member": 15,
@@ -33,12 +33,12 @@
     "'tempfile.NamedTemporaryFile' member": 2,
     "'ConfigParser.RawConfigParser' member": 2,
     "'tempfile.gettempdir' member": 1,
-    "'logging' module": 1,
     "'socket.socket.settimeout' member": 1,
-    "'tarfile' module": 1,
     "'UnicodeDecodeError' member": 1,
-    "'dummy_threading' module": 1,
+    "'logging' module": 1,
     "'UnicodeEncodeError' member": 1,
+    "'tarfile' module": 1,
+    "'dummy_threading' module": 1,
     "'enumerate' member": 1
   },
   "2.4": {
@@ -53,8 +53,8 @@
   },
   "2.5": {
     "'any' member": 10,
-    "'hashlib' module": 1,
     "'functools' module": 1,
+    "'hashlib' module": 1,
     "'urlparse.urlsplit.username' member": 1,
     "'urlparse.urlsplit.password' member": 1
   },

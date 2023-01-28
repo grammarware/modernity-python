@@ -40,11 +40,11 @@
     "'__future__.absolute_import' member": 174,
     "'all' member": 29,
     "'any' member": 22,
-    "'subprocess.check_call' member": 4,
     "'collections.defaultdict' member": 4,
+    "'subprocess.check_call' member": 4,
     "'datetime.datetime.strptime' member": 3,
-    "'contextlib' module": 2,
-    "'hashlib' module": 2
+    "'hashlib' module": 2,
+    "'contextlib' module": 2
   },
   "2.6": {
     "byte string (b'..') or `str` synonym": 1356,
@@ -54,11 +54,11 @@
     "'itertools.product' member": 25,
     "'abc' module": 19,
     "'collections.namedtuple' member": 5,
-    "'warnings.catch_warnings' member": 2,
     "'bin' member": 2,
+    "'warnings.catch_warnings' member": 2,
     "'platform.python_implementation' member": 1,
-    "'json' module": 1,
-    "'fractions' module": 1
+    "'fractions' module": 1,
+    "'json' module": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 7,

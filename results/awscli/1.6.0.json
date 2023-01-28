@@ -53,8 +53,8 @@
     "'all' member": 4,
     "'hashlib' module": 3,
     "'collections.defaultdict' member": 1,
-    "'contextlib' module": 1,
-    "'urlparse.urlparse.scheme' member": 1
+    "'urlparse.urlparse.scheme' member": 1,
+    "'contextlib' module": 1
   },
   "2.6": {
     "'str.format' member": 33,

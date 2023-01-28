@@ -2,9 +2,9 @@
   "2.0": {
     "print(expr)": 4,
     "'unicode' member": 3,
-    "'urlparse' module": 2,
     "'Queue' module": 2,
     "'httplib.HTTPException' member": 2,
+    "'urlparse' module": 2,
     "'httplib.HTTPResponse' member": 2,
     "'httplib.HTTPSConnection' member": 2,
     "'sys.version_info' member": 2,
@@ -55,8 +55,8 @@
     "'logging.StreamHandler' member": 2,
     "'socket.create_connection' member": 2,
     "'json' module": 1,
-    "'Queue.LifoQueue' member": 1,
     "'collections.namedtuple' member": 1,
+    "'Queue.LifoQueue' member": 1,
     "'operator.methodcaller' member": 1
   },
   "2.7": {

@@ -7,8 +7,8 @@
   },
   "2.1": {
     "'__future__' module": 14,
-    "'warnings' module": 5,
     "'unittest' module": 5,
+    "'warnings' module": 5,
     "'inspect' module": 2
   },
   "2.2": {
@@ -21,8 +21,8 @@
     "'os.stat.st_mode' member": 4,
     "'fnmatch.filter' member": 3,
     "'iter' member": 3,
-    "'os.stat.st_size' member": 2,
     "'object' member": 2,
+    "'os.stat.st_size' member": 2,
     "'email' module": 1
   },
   "2.3": {
@@ -45,11 +45,11 @@
     "'tempfile.NamedTemporaryFile' member": 2,
     "'zipimport' module": 2,
     "'imp.acquire_lock' member": 2,
-    "'socket.getdefaulttimeout' member": 1,
     "'datetime' module": 1,
+    "'socket.getdefaulttimeout' member": 1,
+    "'logging' module": 1,
     "'pkgutil' module": 1,
-    "'tempfile.mkstemp' member": 1,
-    "'logging' module": 1
+    "'tempfile.mkstemp' member": 1
   },
   "2.4": {
     "function decorators": 237,
@@ -61,11 +61,11 @@
     "'os.devnull' member": 3,
     "'os.path.lexists' member": 2,
     "'operator.attrgetter' member": 2,
+    "'logging.basicConfig(level)'": 1,
+    "'logging.basicConfig(stream)'": 1,
     "'string.Template' member": 1,
     "'sorted(key)'": 1,
-    "'sorted(reverse)'": 1,
-    "'logging.basicConfig(level)'": 1,
-    "'logging.basicConfig(stream)'": 1
+    "'sorted(reverse)'": 1
   },
   "2.5": {
     "`with`": 435,
@@ -76,8 +76,8 @@
     "'__future__.absolute_import' member": 9,
     "'collections.defaultdict' member": 3,
     "'str.rpartition' member": 2,
-    "'hashlib' module": 1,
     "'ctypes' module": 1,
+    "'hashlib' module": 1,
     "'__import__(level)'": 1
   },
   "2.6": {
@@ -97,10 +97,10 @@
     "'platform.python_implementation' member": 2,
     "'site.USER_BASE' member": 2,
     "'sys.dont_write_bytecode' member": 2,
-    "'numbers' module": 1,
+    "'tempfile.NamedTemporaryFile(delete)'": 1,
     "'ssl' module": 1,
     "'os.walk(followlinks)'": 1,
-    "'tempfile.NamedTemporaryFile(delete)'": 1
+    "'numbers' module": 1
   },
   "2.7": {
     "'zipimport.zipimporter' member": 7,
@@ -112,8 +112,8 @@
   "3.0": {
     "'urllib.parse' module": 2,
     "super() without arguments": 2,
-    "'open(encoding)'": 1,
-    "'configparser' module": 1
+    "'configparser' module": 1,
+    "'open(encoding)'": 1
   },
   "3.1": {
     "'importlib' module": 1
@@ -128,8 +128,8 @@
     "'site.getsitepackages' member": 1
   },
   "3.3": {
-    "'sys.base_prefix' member": 4,
     "'unittest.mock' module": 4,
+    "'sys.base_prefix' member": 4,
     "'importlib.machinery.FileFinder' member": 2
   },
   "3.4": {},

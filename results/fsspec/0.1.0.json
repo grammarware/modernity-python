@@ -37,8 +37,8 @@
   "2.6": {
     "'__future__.print_function' member": 3,
     "byte string (b'..') or `str` synonym": 3,
-    "'io' module": 2,
     "'json' module": 2,
+    "'io' module": 2,
     "'os.path.relpath' member": 1
   },
   "2.7": {

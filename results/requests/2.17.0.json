@@ -26,9 +26,9 @@
     "'UnicodeDecodeError' member": 4,
     "'platform' module": 3,
     "'datetime' module": 2,
-    "'dummy_threading' module": 1,
     "'UnicodeEncodeError' member": 1,
     "'logging' module": 1,
+    "'dummy_threading' module": 1,
     "'encodings.idna' module": 1
   },
   "2.4": {

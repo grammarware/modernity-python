@@ -30,8 +30,8 @@
     "'frozenset' member": 26,
     "'sorted' member": 12,
     "'collections' module": 4,
-    "'sorted(key)'": 1,
-    "'reversed' member": 1
+    "'reversed' member": 1,
+    "'sorted(key)'": 1
   },
   "2.5": {
     "`with`": 112,

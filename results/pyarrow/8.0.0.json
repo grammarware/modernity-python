@@ -68,9 +68,9 @@
     "'collections.defaultdict' member": 4,
     "'__future__.absolute_import' member": 1,
     "'uuid' module": 1,
+    "'xml.etree.ElementTree' module": 1,
     "'os.SEEK_CUR' member": 1,
-    "'os.SEEK_END' member": 1,
-    "'xml.etree.ElementTree' module": 1
+    "'os.SEEK_END' member": 1
   },
   "2.6": {
     "byte string (b'..') or `str` synonym": 1282,
@@ -91,9 +91,9 @@
     "'ast' module": 2,
     "'numbers' module": 1,
     "'operator.methodcaller' member": 1,
+    "'abc' module": 1,
     "strftime directive 'f'": 1,
     "'itertools.product' member": 1,
-    "'abc' module": 1,
     "'threading.Event.is_set' member": 1,
     "'tempfile.NamedTemporaryFile(delete)'": 1
   },
@@ -130,8 +130,8 @@
     "'datetime.timezone' member": 12,
     "'gzip.decompress' member": 12,
     "'gzip.compress' member": 9,
-    "'tempfile.TemporaryDirectory' member": 3,
     "'concurrent.futures' module": 3,
+    "'tempfile.TemporaryDirectory' member": 3,
     "'sysconfig' module": 2,
     "'functools.lru_cache' member": 2,
     "'datetime.timedelta.total_seconds' member": 2
@@ -143,12 +143,12 @@
     "'collections.abc' module": 6,
     "'NotADirectoryError' member": 4,
     "'ChildProcessError' member": 3,
-    "'IsADirectoryError' member": 2,
     "'FileExistsError' member": 2,
+    "'IsADirectoryError' member": 2,
     "'inspect.Parameter' member": 1,
     "'inspect.Signature' member": 1,
-    "'PermissionError' member": 1,
     "'faulthandler' module": 1,
+    "'PermissionError' member": 1,
     "'shutil.which' member": 1,
     "'threading.Thread(daemon)'": 1,
     "'memoryview.nbytes' member": 1

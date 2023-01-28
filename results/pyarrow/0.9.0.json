@@ -8,8 +8,8 @@
   },
   "2.1": {
     "'unittest' module": 2,
-    "'__future__' module": 2,
     "'random.setstate' member": 2,
+    "'__future__' module": 2,
     "'warnings' module": 1,
     "'inspect' module": 1,
     "'weakref' module": 1,
@@ -31,8 +31,8 @@
     "'os.walk' member": 2,
     "'shlex.split' member": 2,
     "'os.path.supports_unicode_filenames' member": 2,
-    "'tempfile.mkdtemp' member": 1,
     "'tempfile.NamedTemporaryFile' member": 1,
+    "'tempfile.mkdtemp' member": 1,
     "'sum' member": 1
   },
   "2.4": {
@@ -69,11 +69,11 @@
     "'numbers' module": 1,
     "'ast' module": 1,
     "'operator.methodcaller' member": 1,
-    "'__future__.print_function' member": 1,
-    "'subprocess.Popen.kill' member": 1,
     "'collections.namedtuple' member": 1,
     "'multiprocessing' module": 1,
-    "'tempfile.NamedTemporaryFile(delete)'": 1
+    "'tempfile.NamedTemporaryFile(delete)'": 1,
+    "'__future__.print_function' member": 1,
+    "'subprocess.Popen.kill' member": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 26,

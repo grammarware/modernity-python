@@ -9,8 +9,8 @@
   "2.2": {
     "'dict' member": 23,
     "'type' member": 18,
-    "'os.path.realpath' member": 1,
-    "'object' member": 1
+    "'object' member": 1,
+    "'os.path.realpath' member": 1
   },
   "2.3": {
     "'sum' member": 4,

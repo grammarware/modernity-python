@@ -32,8 +32,8 @@
     "'sorted' member": 12,
     "'collections' module": 5,
     "'collections.deque' member": 2,
-    "'sorted(key)'": 1,
-    "'reversed' member": 1
+    "'reversed' member": 1,
+    "'sorted(key)'": 1
   },
   "2.5": {
     "`with`": 126,

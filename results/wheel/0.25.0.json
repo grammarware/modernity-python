@@ -17,9 +17,9 @@
     "'os.walk' member": 5,
     "'tempfile.mkdtemp' member": 4,
     "'enumerate' member": 2,
+    "'tempfile.NamedTemporaryFile' member": 2,
     "'csv' module": 2,
     "'sys.getfilesystemencoding' member": 2,
-    "'tempfile.NamedTemporaryFile' member": 2,
     "'logging' module": 1,
     "'textwrap' module": 1
   },
@@ -47,8 +47,8 @@
     "'zipfile.ZipFile.extractall' member": 2,
     "'collections.namedtuple' member": 2,
     "'zipfile.ZipFile.open' member": 2,
-    "'shutil.copytree(ignore)'": 1,
-    "'io' module": 1
+    "'io' module": 1,
+    "'shutil.copytree(ignore)'": 1
   },
   "2.7": {
     "'argparse' module": 3,

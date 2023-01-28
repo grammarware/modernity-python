@@ -8,9 +8,9 @@
   },
   "2.1": {
     "'unittest' module": 6,
+    "'difflib' module": 1,
     "'warnings' module": 1,
-    "'weakref' module": 1,
-    "'difflib' module": 1
+    "'weakref' module": 1
   },
   "2.2": {
     "'dict' member": 103,
@@ -32,10 +32,10 @@
     "'datetime' module": 1
   },
   "2.4": {
-    "function decorators": 5,
-    "'collections' module": 5,
-    "'frozenset' member": 5,
     "'set' member": 5,
+    "'collections' module": 5,
+    "function decorators": 5,
+    "'frozenset' member": 5,
     "'sorted' member": 4,
     "'subprocess' module": 2,
     "'operator.attrgetter' member": 2

@@ -17,10 +17,10 @@
   "2.3": {
     "'enumerate' member": 4,
     "'ConfigParser.SafeConfigParser' member": 1,
-    "'logging' module": 1,
-    "'socket.timeout' member": 1,
     "'itertools' module": 1,
-    "'sum' member": 1
+    "'sum' member": 1,
+    "'logging' module": 1,
+    "'socket.timeout' member": 1
   },
   "2.4": {
     "'set' member": 12,
@@ -33,14 +33,14 @@
     "'all' member": 3,
     "'contextlib' module": 2,
     "'functools' module": 1,
-    "'hashlib' module": 1,
-    "'any' member": 1
+    "'any' member": 1,
+    "'hashlib' module": 1
   },
   "2.6": {
     "byte string (b'..') or `str` synonym": 146,
     "'json' module": 3,
-    "'bytearray' member": 2,
     "'io' module": 2,
+    "'bytearray' member": 2,
     "'__future__.print_function' member": 1,
     "'os.path.relpath' member": 1,
     "'str.format' member": 1,
@@ -64,8 +64,8 @@
   },
   "3.3": {
     "'FileNotFoundError' member": 14,
-    "'ConnectionError' member": 1,
-    "'unittest.mock' module": 1
+    "'unittest.mock' module": 1,
+    "'ConnectionError' member": 1
   },
   "3.4": {},
   "3.5": {},

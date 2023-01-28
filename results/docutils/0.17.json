@@ -20,8 +20,8 @@
     "'classmethod' member": 16,
     "'super' member": 12,
     "'iter' member": 4,
-    "'property' member": 4,
     "'staticmethod' member": 4,
+    "'property' member": 4,
     "'StopIteration' member": 2,
     "'xml.sax.saxutils.quoteattr' member": 2
   },
@@ -38,16 +38,16 @@
     "'itertools' module": 3,
     "'optparse' module": 2,
     "'difflib.unified_diff' member": 2,
-    "'unicodedata.unidata_version' member": 2,
-    "'tempfile.mkdtemp' member": 2,
     "'dict.pop' member": 2,
+    "'tempfile.mkdtemp' member": 2,
+    "'unicodedata.unidata_version' member": 2,
     "'ConfigParser.RawConfigParser' member": 1,
     "'os.getcwdu' member": 1,
     "'unicodedata.normalize' member": 1,
     "'tempfile.mkstemp' member": 1,
     "'shutil.move' member": 1,
-    "'datetime' module": 1,
-    "'ConfigParser.ConfigParser' member": 1
+    "'ConfigParser.ConfigParser' member": 1,
+    "'datetime' module": 1
   },
   "2.4": {
     "'sorted' member": 44,

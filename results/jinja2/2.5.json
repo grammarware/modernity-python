@@ -8,8 +8,8 @@
   "2.1": {
     "'unittest' module": 10,
     "'inspect' module": 1,
-    "'weakref' module": 1,
-    "'warnings' module": 1
+    "'warnings' module": 1,
+    "'weakref' module": 1
   },
   "2.2": {
     "'dict' member": 19,
@@ -41,10 +41,10 @@
     "'enumerate' member": 2,
     "'tempfile.mkstemp' member": 2,
     "'tempfile.mkdtemp' member": 2,
-    "'sets' module": 1,
-    "'operator.pow' member": 1,
     "'datetime' module": 1,
-    "'UnicodeDecodeError' member": 1
+    "'sets' module": 1,
+    "'UnicodeDecodeError' member": 1,
+    "'operator.pow' member": 1
   },
   "2.4": {
     "'set' member": 21,

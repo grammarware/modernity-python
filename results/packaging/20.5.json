@@ -35,18 +35,18 @@
     "'__future__.absolute_import' member": 8,
     "'any' member": 4,
     "'all' member": 3,
+    "'functools' module": 1,
     "'collections.defaultdict' member": 1,
     "'ctypes' module": 1,
-    "`with`": 1,
-    "'functools' module": 1
+    "`with`": 1
   },
   "2.6": {
     "'str.format' member": 73,
     "'__future__.print_function' member": 7,
     "'platform.python_implementation' member": 2,
     "'collections.namedtuple' member": 2,
-    "'next' member": 1,
-    "'abc' module": 1
+    "'abc' module": 1,
+    "'next' member": 1
   },
   "2.7": {
     "set literals": 8,

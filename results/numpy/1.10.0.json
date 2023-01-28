@@ -6,8 +6,8 @@
     "'unicode' member": 13,
     "'__builtin__' module": 7,
     "'callable' member": 4,
-    "'file' member": 3,
     "'md5' module": 3,
+    "'file' member": 3,
     "'ConfigParser' module": 2,
     "'urlparse' module": 2,
     "'urllib2' module": 2,
@@ -44,10 +44,10 @@
     "'operator.lt' member": 4,
     "'operator.floordiv' member": 4,
     "'tokenize.generate_tokens' member": 3,
+    "'os.stat.st_mtime' member": 2,
     "'StopIteration' member": 2,
     "'operator.__eq__' member": 2,
     "'operator.__lt__' member": 2,
-    "'os.stat.st_mtime' member": 2,
     "'str.decode' member": 1,
     "'types.GeneratorType' member": 1,
     "'os.path.realpath' member": 1
@@ -56,9 +56,9 @@
     "'enumerate' member": 144,
     "'sum' member": 62,
     "'tempfile.mkdtemp' member": 16,
+    "'textwrap' module": 11,
     "'basestring' member": 11,
     "'platform' module": 11,
-    "'textwrap' module": 11,
     "'tempfile.mkstemp' member": 11,
     "'tempfile.NamedTemporaryFile' member": 8,
     "'itertools' module": 8,
@@ -68,18 +68,18 @@
     "'optparse' module": 3,
     "'os.walk' member": 3,
     "'sets' module": 3,
+    "'file.next' member": 2,
     "'sys.getfilesystemencoding' member": 2,
     "'timeit' module": 2,
-    "'file.next' member": 2,
     "'os.EX_CONFIG' member": 2,
     "'operator.pow' member": 2,
     "'types.BooleanType' member": 1,
     "'UnicodeEncodeError' member": 1,
     "'ConfigParser.SafeConfigParser' member": 1,
-    "'tempfile.gettempdir' member": 1,
-    "'dummy_threading' module": 1,
-    "'ConfigParser.ConfigParser' member": 1,
     "'pickle.dumps(protocol)'": 1,
+    "'dummy_threading' module": 1,
+    "'tempfile.gettempdir' member": 1,
+    "'ConfigParser.ConfigParser' member": 1,
     "'Queue.Queue.get(timeout)'": 1
   },
   "2.4": {
@@ -90,18 +90,18 @@
     "'collections' module": 11,
     "'os.devnull' member": 5,
     "'doctest.OutputChecker' member": 5,
-    "'doctest.DocTestFinder' member": 4,
     "'traceback.format_exc' member": 4,
     "'decimal' module": 4,
+    "'doctest.DocTestFinder' member": 4,
     "'doctest.ELLIPSIS' member": 2,
     "'doctest.NORMALIZE_WHITESPACE' member": 2,
     "'doctest.DocTestParser' member": 2,
     "'reversed' member": 1,
+    "'sorted(key)'": 1,
     "'threading.local' member": 1,
     "'frozenset' member": 1,
     "'itertools.groupby' member": 1,
-    "'doctest.DocTestRunner' member": 1,
-    "'sorted(key)'": 1
+    "'doctest.DocTestRunner' member": 1
   },
   "2.5": {
     "`with`": 458,
@@ -115,8 +115,8 @@
     "'ctypes' module": 2,
     "'tokenize.untokenize' member": 1,
     "'operator.itemgetter' member": 1,
-    "'contextlib' module": 1,
-    "'subprocess.check_call' member": 1
+    "'subprocess.check_call' member": 1,
+    "'contextlib' module": 1
   },
   "2.6": {
     "'__future__.print_function' member": 351,
@@ -137,14 +137,14 @@
     "'itertools.permutations' member": 2,
     "'float.fromhex' member": 1,
     "'ast' module": 1,
-    "'abc' module": 1,
-    "'subprocess.Popen.terminate' member": 1,
     "'format' member": 1,
-    "'tempfile.NamedTemporaryFile(delete)'": 1
+    "'tempfile.NamedTemporaryFile(delete)'": 1,
+    "'abc' module": 1,
+    "'subprocess.Popen.terminate' member": 1
   },
   "2.7": {
-    "`\"..{}..\".format(..)`": 2,
-    "'memoryview' member": 2
+    "'memoryview' member": 2,
+    "`\"..{}..\".format(..)`": 2
   },
   "3.0": {
     "'builtins' module": 4,

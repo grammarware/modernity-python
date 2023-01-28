@@ -51,21 +51,21 @@
     "'socket.create_connection' member": 2,
     "'ssl' module": 1,
     "'collections.namedtuple' member": 1,
-    "'Queue.LifoQueue' member": 1,
-    "'operator.methodcaller' member": 1
+    "'operator.methodcaller' member": 1,
+    "'Queue.LifoQueue' member": 1
   },
   "2.7": {
-    "'collections.OrderedDict' member": 1,
-    "'logging.NullHandler' member": 1
+    "'logging.NullHandler' member": 1,
+    "'collections.OrderedDict' member": 1
   },
   "3.0": {
-    "'urllib.parse' module": 2,
     "'queue' module": 2,
+    "'urllib.parse' module": 2,
     "'builtins' module": 1
   },
   "3.1": {
-    "'collections.OrderedDict' member": 1,
-    "'logging.NullHandler' member": 1
+    "'logging.NullHandler' member": 1,
+    "'collections.OrderedDict' member": 1
   },
   "3.2": {},
   "3.3": {

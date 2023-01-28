@@ -15,16 +15,16 @@
     "'type' member": 26,
     "'super' member": 14,
     "'property' member": 2,
-    "'str.decode' member": 2,
     "'bool' member": 2,
+    "'str.decode' member": 2,
     "'hmac' module": 1
   },
   "2.3": {
     "'datetime' module": 10,
     "'itertools' module": 9,
     "'UnicodeEncodeError' member": 6,
-    "'textwrap' module": 4,
     "'sum' member": 4,
+    "'textwrap' module": 4,
     "'enumerate' member": 4,
     "'platform' module": 1
   },
@@ -45,11 +45,11 @@
     "'all' member": 50,
     "'any' member": 6,
     "'collections.defaultdict' member": 4,
-    "'contextlib' module": 2,
     "'hashlib' module": 2,
-    "'subprocess.check_call' member": 2,
     "'operator.index' member": 2,
     "'struct.Struct' member": 2,
+    "'contextlib' module": 2,
+    "'subprocess.check_call' member": 2,
     "'datetime.datetime.strptime' member": 1,
     "'functools' module": 1
   },

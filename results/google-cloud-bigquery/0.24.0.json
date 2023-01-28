@@ -20,8 +20,8 @@
     "function decorators": 118,
     "'sorted' member": 18,
     "'frozenset' member": 2,
-    "'sorted(key)'": 1,
-    "'collections' module": 1
+    "'collections' module": 1,
+    "'sorted(key)'": 1
   },
   "2.5": {
     "`with`": 158,

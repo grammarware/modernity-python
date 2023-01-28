@@ -24,10 +24,10 @@
     "'shutil.move' member": 4,
     "'dict.pop' member": 2,
     "'tempfile.mkstemp' member": 2,
-    "'sum' member": 1,
     "'os.walk' member": 1,
     "'platform' module": 1,
-    "'tempfile.mkdtemp' member": 1
+    "'tempfile.mkdtemp' member": 1,
+    "'sum' member": 1
   },
   "2.4": {
     "function decorators": 80,
@@ -50,8 +50,8 @@
     "'ctypes.get_errno' member": 2,
     "'ctypes.set_errno' member": 2,
     "'bytearray' member": 2,
-    "'ctypes.CFUNCTYPE(use_errno)'": 1,
-    "'__future__.unicode_literals' member": 1
+    "'__future__.unicode_literals' member": 1,
+    "'ctypes.CFUNCTYPE(use_errno)'": 1
   },
   "2.7": {
     "'memoryview' member": 1

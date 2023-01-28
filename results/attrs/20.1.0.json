@@ -21,8 +21,8 @@
     "'pickle.HIGHEST_PROTOCOL' member": 6,
     "'enumerate' member": 5,
     "'platform' module": 1,
-    "'itertools' module": 1,
-    "'dict.pop' member": 1
+    "'dict.pop' member": 1,
+    "'itertools' module": 1
   },
   "2.4": {
     "function decorators": 210,
@@ -30,10 +30,10 @@
     "'frozenset' member": 6,
     "'sorted' member": 6,
     "'collections' module": 3,
-    "'sorted(key)'": 2,
     "'reversed' member": 2,
-    "'operator.attrgetter' member": 1,
-    "'threading.local' member": 1
+    "'sorted(key)'": 2,
+    "'threading.local' member": 1,
+    "'operator.attrgetter' member": 1
   },
   "2.5": {
     "`with`": 252,
@@ -56,8 +56,8 @@
   },
   "2.7": {
     "dict comprehensions": 8,
-    "`\"..{}..\".format(..)`": 5,
     "'functools.total_ordering' member": 5,
+    "`\"..{}..\".format(..)`": 5,
     "'collections.OrderedDict' member": 3,
     "set comprehensions": 3,
     "multiple context expressions in a `with` statement": 2

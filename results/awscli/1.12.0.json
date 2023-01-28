@@ -51,8 +51,8 @@
     "'collections' module": 4,
     "'reversed' member": 2,
     "'unicodedata.east_asian_width' member": 1,
-    "'os.urandom' member": 1,
     "'decimal' module": 1,
+    "'os.urandom' member": 1,
     "'collections.deque' member": 1
   },
   "2.5": {
@@ -75,8 +75,8 @@
     "'str.format' member": 144,
     "'json' module": 14,
     "byte string (b'..') or `str` synonym": 7,
-    "'os.path.relpath' member": 3,
     "'collections.namedtuple' member": 3,
+    "'os.path.relpath' member": 3,
     "'tempfile.NamedTemporaryFile(delete)'": 2,
     "'platform.linux_distribution' member": 2,
     "'io' module": 1,

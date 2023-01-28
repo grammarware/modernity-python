@@ -28,15 +28,15 @@
     "'sys.getfilesystemencoding' member": 5,
     "'platform' module": 5,
     "'tempfile.mkdtemp' member": 5,
-    "'imp.release_lock' member": 4,
     "'shutil.move' member": 4,
+    "'imp.release_lock' member": 4,
     "'tempfile.mkstemp' member": 4,
     "'UnicodeEncodeError' member": 3,
     "'imp.acquire_lock' member": 2,
     "'dummy_thread' module": 1,
     "'UnicodeDecodeError' member": 1,
-    "'sum' member": 1,
-    "'os.walk' member": 1
+    "'os.walk' member": 1,
+    "'sum' member": 1
   },
   "2.4": {
     "function decorators": 163,

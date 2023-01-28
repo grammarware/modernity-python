@@ -22,6 +22,7 @@
     "'operator.floordiv' member": 3,
     "'super' member": 2,
     "'fnmatch.filter' member": 2,
+    "'types.GeneratorType' member": 1,
     "'operator.eq' member": 1,
     "'operator.ne' member": 1,
     "'operator.gt' member": 1,
@@ -29,7 +30,6 @@
     "'operator.lt' member": 1,
     "'operator.le' member": 1,
     "'staticmethod' member": 1,
-    "'types.GeneratorType' member": 1,
     "'object' member": 1
   },
   "2.3": {
@@ -69,10 +69,10 @@
     "'next' member": 131,
     "class decorators": 11,
     "byte string (b'..') or `str` synonym": 2,
-    "'functools.reduce' member": 1,
     "'os.walk(followlinks)'": 1,
-    "'logging.StreamHandler' member": 1,
-    "'io' module": 1
+    "'io' module": 1,
+    "'functools.reduce' member": 1,
+    "'logging.StreamHandler' member": 1
   },
   "2.7": {
     "'ctypes.c_ssize_t' member": 1

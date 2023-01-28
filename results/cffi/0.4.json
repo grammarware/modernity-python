@@ -24,10 +24,10 @@
     "'shutil.move' member": 4,
     "'dict.pop' member": 2,
     "'tempfile.mkstemp' member": 2,
-    "'sum' member": 1,
     "'os.walk' member": 1,
     "'platform' module": 1,
-    "'tempfile.mkdtemp' member": 1
+    "'tempfile.mkdtemp' member": 1,
+    "'sum' member": 1
   },
   "2.4": {
     "function decorators": 85,

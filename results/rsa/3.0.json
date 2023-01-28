@@ -20,16 +20,16 @@
   },
   "2.4": {
     "'os.urandom' member": 4,
+    "'subprocess' module": 1,
     "'sorted' member": 1,
-    "function decorators": 1,
-    "'subprocess' module": 1
+    "function decorators": 1
   },
   "2.5": {
     "`with`": 12
   },
   "2.6": {
-    "'abc' module": 1,
-    "'site.USER_SITE' member": 1
+    "'site.USER_SITE' member": 1,
+    "'abc' module": 1
   },
   "2.7": {},
   "3.0": {},

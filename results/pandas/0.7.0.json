@@ -23,10 +23,10 @@
     "'operator.floordiv' member": 20,
     "'super' member": 16,
     "'property' member": 14,
-    "'operator.lt' member": 7,
-    "'operator.le' member": 7,
     "'operator.gt' member": 7,
     "'operator.ge' member": 7,
+    "'operator.lt' member": 7,
+    "'operator.le' member": 7,
     "'operator.eq' member": 7,
     "'__future__.division' member": 5,
     "'operator.ne' member": 3,
@@ -39,9 +39,9 @@
     "'operator.pow' member": 16,
     "'sum' member": 12,
     "'itertools' module": 7,
-    "'os.walk' member": 2,
     "'textwrap' module": 2,
     "'file.next' member": 2,
+    "'os.walk' member": 2,
     "'csv' module": 1,
     "'heapq' module": 1
   },
@@ -54,8 +54,8 @@
     "'sorted(key)'": 3,
     "'subprocess' module": 2,
     "'itertools.groupby' member": 2,
-    "'decimal' module": 2,
     "'heapq.nlargest' member": 2,
+    "'decimal' module": 2,
     "'sorted(reverse)'": 1
   },
   "2.5": {
@@ -65,14 +65,14 @@
     "'any' member": 4,
     "'codecs.getincrementalencoder' member": 2,
     "'functools' module": 2,
+    "'sqlite3' module": 1,
     "`with`": 1,
     "'operator.itemgetter' member": 1,
-    "'heapq.nlargest(key)'": 1,
-    "'sqlite3' module": 1
+    "'heapq.nlargest(key)'": 1
   },
   "2.6": {
-    "'format' member": 2,
     "'collections.namedtuple' member": 2,
+    "'format' member": 2,
     "'io' module": 1,
     "'itertools.product' member": 1
   },

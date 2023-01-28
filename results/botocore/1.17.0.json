@@ -19,13 +19,13 @@
     "'super' member": 352,
     "'object' member": 47,
     "'type' member": 37,
-    "'dict' member": 26,
-    "'iter' member": 18,
+    "'dict' member": 24,
+    "'iter' member": 16,
     "'StopIteration' member": 14,
     "'help' member": 6,
     "'urlparse.urlsplit' member": 2,
-    "'os.stat.st_mode' member": 2,
     "'str.decode' member": 2,
+    "'os.stat.st_mode' member": 2,
     "'time.struct_time' member": 2,
     "'urlparse.urlunsplit' member": 1,
     "'hmac' module": 1,
@@ -45,8 +45,8 @@
     "'platform' module": 2,
     "'os.walk' member": 2,
     "'sys.getfilesystemencoding' member": 1,
-    "'tarfile' module": 1,
-    "'textwrap' module": 1
+    "'textwrap' module": 1,
+    "'tarfile' module": 1
   },
   "2.4": {
     "function decorators": 213,
@@ -64,7 +64,7 @@
     "'pprint.pformat(width)'": 1
   },
   "2.5": {
-    "`with`": 1106,
+    "`with`": 1102,
     "'any' member": 19,
     "'all' member": 13,
     "'contextlib' module": 10,
@@ -81,7 +81,7 @@
     "'urlparse.urlsplit.path' member": 1
   },
   "2.6": {
-    "byte string (b'..') or `str` synonym": 709,
+    "byte string (b'..') or `str` synonym": 707,
     "'str.format' member": 35,
     "'json' module": 22,
     "'next' member": 12,
@@ -93,9 +93,9 @@
     "'urlparse.parse_qsl' member": 2,
     "'logging.StreamHandler' member": 2,
     "class decorators": 2,
-    "'threading.Thread.is_alive' member": 2,
     "'threading.current_thread' member": 2,
     "'threading.Thread.name' member": 2,
+    "'threading.Thread.is_alive' member": 2,
     "'urlparse.parse_qs' member": 1,
     "'itertools.izip_longest' member": 1,
     "'__future__.unicode_literals' member": 1,

@@ -16,8 +16,8 @@
   "2.3": {
     "'logging' module": 14,
     "'enumerate' member": 5,
-    "'datetime' module": 2,
     "'shlex.split' member": 2,
+    "'datetime' module": 2,
     "'itertools' module": 1,
     "'platform' module": 1
   },
@@ -28,8 +28,8 @@
     "'collections' module": 2,
     "'reversed' member": 2,
     "'collections.deque' member": 1,
-    "'email.utils.formatdate' member": 1,
     "'itertools.tee' member": 1,
+    "'email.utils.formatdate' member": 1,
     "'decimal' module": 1
   },
   "2.5": {
@@ -37,8 +37,8 @@
     "'all' member": 2,
     "'any' member": 2,
     "'collections.defaultdict' member": 1,
-    "'operator.itemgetter' member": 1,
-    "'functools' module": 1
+    "'functools' module": 1,
+    "'operator.itemgetter' member": 1
   },
   "2.6": {
     "'logging.StreamHandler' member": 2,

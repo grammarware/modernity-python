@@ -11,8 +11,8 @@
   },
   "2.2": {
     "'super' member": 36,
-    "'__future__.division' member": 4,
     "'type' member": 4,
+    "'__future__.division' member": 4,
     "'os.path.realpath' member": 3,
     "'os.stat.st_size' member": 2,
     "'os.stat.st_ctime' member": 2,

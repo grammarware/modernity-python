@@ -27,10 +27,10 @@
     "'collections.deque' member": 1
   },
   "2.5": {
+    "'__future__.absolute_import' member": 1,
     "'hashlib' module": 1,
     "'urlparse.urlparse.path' member": 1,
     "'urlparse.urlparse.query' member": 1,
-    "'__future__.absolute_import' member": 1,
     "'codecs.getincrementaldecoder' member": 1,
     "'__future__.with_statement' member": 1
   },

@@ -17,8 +17,8 @@
     "'bool' member": 8,
     "'ReferenceError' member": 6,
     "'staticmethod' member": 4,
-    "'StopIteration' member": 4,
     "'object' member": 4,
+    "'StopIteration' member": 4,
     "'property' member": 1
   },
   "2.3": {

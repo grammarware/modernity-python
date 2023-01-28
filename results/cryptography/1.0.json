@@ -20,8 +20,8 @@
   },
   "2.3": {
     "'itertools' module": 6,
-    "'textwrap' module": 3,
     "'datetime' module": 3,
+    "'textwrap' module": 3,
     "'enumerate' member": 2,
     "'platform' module": 1
   },
@@ -30,8 +30,8 @@
     "'frozenset' member": 51,
     "'os.urandom' member": 11,
     "'collections' module": 4,
-    "'sorted' member": 4,
     "'set' member": 4,
+    "'sorted' member": 4,
     "'subprocess' module": 2
   },
   "2.5": {
@@ -39,11 +39,11 @@
     "'__future__.absolute_import' member": 168,
     "'all' member": 29,
     "'any' member": 22,
-    "'subprocess.check_call' member": 4,
     "'collections.defaultdict' member": 4,
-    "'contextlib' module": 2,
+    "'subprocess.check_call' member": 4,
     "'hashlib' module": 2,
-    "'datetime.datetime.strptime' member": 2
+    "'datetime.datetime.strptime' member": 2,
+    "'contextlib' module": 2
   },
   "2.6": {
     "byte string (b'..') or `str` synonym": 1271,
@@ -53,11 +53,11 @@
     "'itertools.product' member": 25,
     "'abc' module": 19,
     "'collections.namedtuple' member": 5,
-    "'warnings.catch_warnings' member": 2,
     "'bin' member": 2,
+    "'warnings.catch_warnings' member": 2,
     "'platform.python_implementation' member": 1,
-    "'json' module": 1,
-    "'fractions' module": 1
+    "'fractions' module": 1,
+    "'json' module": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 7,

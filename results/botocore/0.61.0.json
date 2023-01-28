@@ -51,10 +51,10 @@
     "'reversed' member": 5,
     "'operator.attrgetter' member": 4,
     "'os.urandom' member": 2,
-    "'email.utils.formatdate' member": 1,
     "'sorted(reverse)'": 1,
     "'collections.deque' member": 1,
     "'itertools.tee' member": 1,
+    "'email.utils.formatdate' member": 1,
     "'decimal' module": 1,
     "'frozenset' member": 1
   },
@@ -62,12 +62,12 @@
     "`with`": 19,
     "'any' member": 7,
     "'all' member": 6,
-    "'functools' module": 4,
     "'hashlib' module": 4,
+    "'functools' module": 4,
     "'datetime.datetime.strptime' member": 4,
     "'__future__.absolute_import' member": 2,
-    "'operator.itemgetter' member": 1,
     "'collections.defaultdict' member": 1,
+    "'operator.itemgetter' member": 1,
     "'codecs.getincrementaldecoder' member": 1,
     "'uuid' module": 1
   },
@@ -81,8 +81,8 @@
     "'urlparse.parse_qsl' member": 1,
     "'urlparse.parse_qs' member": 1,
     "'platform.python_implementation' member": 1,
-    "'Queue.LifoQueue' member": 1,
     "'collections.namedtuple' member": 1,
+    "'Queue.LifoQueue' member": 1,
     "'operator.methodcaller' member": 1
   },
   "2.7": {

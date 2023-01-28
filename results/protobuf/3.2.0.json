@@ -29,8 +29,8 @@
     "'datetime' module": 1
   },
   "2.4": {
-    "function decorators": 5,
     "'collections' module": 5,
+    "function decorators": 5,
     "'frozenset' member": 5,
     "'sorted' member": 4,
     "'subprocess' module": 1,

@@ -19,8 +19,8 @@
     "'hmac' module": 1
   },
   "2.3": {
-    "'datetime' module": 8,
     "'itertools' module": 8,
+    "'datetime' module": 8,
     "'enumerate' member": 4,
     "'textwrap' module": 3,
     "'sum' member": 2,
@@ -42,11 +42,11 @@
     "'__future__.absolute_import' member": 195,
     "'all' member": 35,
     "'any' member": 22,
-    "'subprocess.check_call' member": 4,
     "'collections.defaultdict' member": 4,
-    "'contextlib' module": 2,
+    "'subprocess.check_call' member": 4,
     "'hashlib' module": 2,
     "'operator.index' member": 2,
+    "'contextlib' module": 2,
     "'datetime.datetime.strptime' member": 1
   },
   "2.6": {
@@ -61,8 +61,8 @@
     "'collections.namedtuple' member": 6,
     "'bin' member": 2,
     "'platform.python_implementation' member": 1,
-    "'json' module": 1,
-    "'fractions' module": 1
+    "'fractions' module": 1,
+    "'json' module": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 13,

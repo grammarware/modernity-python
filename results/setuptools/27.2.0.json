@@ -3,8 +3,8 @@
     "'sys.version_info' member": 48,
     "print(expr)": 7,
     "'unicode' member": 4,
-    "'urllib2' module": 1,
     "'_winreg' module": 1,
+    "'urllib2' module": 1,
     "'__builtin__' module": 1
   },
   "2.1": {
@@ -19,14 +19,14 @@
     "'dict' member": 71,
     "'type' member": 49,
     "'os.path.realpath' member": 19,
-    "'iter' member": 15,
     "'object' member": 15,
+    "'iter' member": 15,
     "'bool' member": 12,
     "'__future__.division' member": 9,
     "'os.stat.st_mtime' member": 8,
     "'os.stat.st_mode' member": 4,
-    "'os.stat.st_size' member": 2,
     "'fnmatch.filter' member": 2,
+    "'os.stat.st_size' member": 2,
     "'operator.lt' member": 1,
     "'operator.le' member": 1,
     "'operator.eq' member": 1,
@@ -75,9 +75,9 @@
     "'collections.deque' member": 4,
     "'os.devnull' member": 3,
     "'reversed' member": 2,
-    "'string.Template' member": 1,
     "'logging.basicConfig(level)'": 1,
-    "'logging.basicConfig(stream)'": 1
+    "'logging.basicConfig(stream)'": 1,
+    "'string.Template' member": 1
   },
   "2.5": {
     "`with`": 345,
@@ -89,11 +89,11 @@
     "'functools' module": 8,
     "'subprocess.check_call' member": 4,
     "'ctypes' module": 2,
-    "'collections.defaultdict' member": 2,
     "'str.rpartition' member": 2,
-    "'hashlib' module": 1,
+    "'collections.defaultdict' member": 2,
     "'struct.Struct' member": 1,
     "'operator.itemgetter' member": 1,
+    "'hashlib' module": 1,
     "'__import__(level)'": 1
   },
   "2.6": {
@@ -108,18 +108,18 @@
     "'os.path.relpath' member": 5,
     "'__future__.unicode_literals' member": 4,
     "class decorators": 4,
-    "'functools.reduce' member": 3,
-    "'collections.namedtuple' member": 3,
-    "'itertools.product' member": 3,
     "'platform.python_implementation' member": 3,
+    "'collections.namedtuple' member": 3,
+    "'functools.reduce' member": 3,
+    "'itertools.product' member": 3,
     "'socket.create_connection' member": 2,
     "'site.USER_BASE' member": 2,
     "'sys.dont_write_bytecode' member": 2,
-    "'numbers' module": 1,
+    "'tempfile.NamedTemporaryFile(delete)'": 1,
+    "'abc' module": 1,
     "'ssl' module": 1,
     "'os.walk(followlinks)'": 1,
-    "'tempfile.NamedTemporaryFile(delete)'": 1,
-    "'abc' module": 1
+    "'numbers' module": 1
   },
   "2.7": {
     "'zipimport.zipimporter' member": 7,
@@ -147,9 +147,9 @@
   },
   "3.3": {
     "'unittest.mock' module": 3,
-    "'importlib.machinery.FileFinder' member": 2,
+    "'sys.implementation' member": 2,
     "'sys.base_prefix' member": 2,
-    "'sys.implementation' member": 2
+    "'importlib.machinery.FileFinder' member": 2
   },
   "3.4": {},
   "3.5": {},

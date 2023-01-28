@@ -33,8 +33,8 @@
     "'tempfile.mkdtemp' member": 3,
     "'os.walk' member": 2,
     "'shlex.split' member": 2,
-    "'bz2' module": 2,
     "'pickle.dumps(protocol)'": 2,
+    "'bz2' module": 2,
     "'os.path.supports_unicode_filenames' member": 2,
     "'tempfile.NamedTemporaryFile' member": 2,
     "'tempfile.mkstemp' member": 2,
@@ -81,10 +81,10 @@
     "'functools.reduce' member": 1,
     "'ast' module": 1,
     "'operator.methodcaller' member": 1,
-    "'itertools.product' member": 1,
     "'threading.Event.is_set' member": 1,
-    "'__future__.print_function' member": 1,
-    "'tempfile.NamedTemporaryFile(delete)'": 1
+    "'itertools.product' member": 1,
+    "'tempfile.NamedTemporaryFile(delete)'": 1,
+    "'__future__.print_function' member": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 49,

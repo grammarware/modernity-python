@@ -7,11 +7,11 @@
   "2.2": {
     "'object' member": 161,
     "'super' member": 32,
-    "'str.decode' member": 4,
     "'iter' member": 4,
+    "'str.decode' member": 4,
     "'dict' member": 3,
-    "'type' member": 2,
     "'StopIteration' member": 2,
+    "'type' member": 2,
     "'email' module": 1
   },
   "2.3": {
@@ -44,9 +44,9 @@
     "'math.isnan' member": 2,
     "'math.isinf' member": 2,
     "'json' module": 2,
-    "'io' module": 1,
     "'numbers' module": 1,
-    "'collections.namedtuple' member": 1
+    "'collections.namedtuple' member": 1,
+    "'io' module": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 51,

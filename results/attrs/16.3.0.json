@@ -7,8 +7,8 @@
   },
   "2.2": {
     "'__future__.division' member": 17,
-    "'object' member": 14,
     "'dict' member": 14,
+    "'object' member": 14,
     "'type' member": 10
   },
   "2.3": {
@@ -23,8 +23,8 @@
     "'sorted' member": 3,
     "'collections' module": 2,
     "'sorted(key)'": 2,
-    "'operator.attrgetter' member": 1,
-    "'reversed' member": 1
+    "'reversed' member": 1,
+    "'operator.attrgetter' member": 1
   },
   "2.5": {
     "`with`": 68,

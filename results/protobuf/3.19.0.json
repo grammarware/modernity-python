@@ -62,8 +62,8 @@
     "`\"..{}..\".format(..)`": 10,
     "'memoryview' member": 3,
     "'collections.OrderedDict' member": 2,
-    "'sysconfig' module": 1,
-    "dict comprehensions": 1
+    "dict comprehensions": 1,
+    "'sysconfig' module": 1
   },
   "3.0": {},
   "3.1": {

@@ -34,8 +34,8 @@
     "'set' member": 7,
     "'collections' module": 5,
     "'sorted' member": 5,
-    "'subprocess' module": 2,
     "'reversed' member": 2,
+    "'subprocess' module": 2,
     "'sorted(reverse)'": 1
   },
   "2.5": {
@@ -44,10 +44,10 @@
     "'all' member": 45,
     "'any' member": 6,
     "'collections.defaultdict' member": 4,
-    "'contextlib' module": 2,
     "'hashlib' module": 2,
-    "'subprocess.check_call' member": 2,
     "'operator.index' member": 2,
+    "'contextlib' module": 2,
+    "'subprocess.check_call' member": 2,
     "'datetime.datetime.strptime' member": 1,
     "'functools' module": 1
   },

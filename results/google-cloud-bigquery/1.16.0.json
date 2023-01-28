@@ -24,8 +24,8 @@
     "'enumerate' member": 20,
     "'datetime' module": 16,
     "'pkgutil' module": 2,
-    "'sum' member": 2,
     "'tempfile.mkstemp' member": 2,
+    "'sum' member": 2,
     "'csv' module": 1,
     "'itertools' module": 1
   },
@@ -41,12 +41,12 @@
   "2.5": {
     "`with`": 442,
     "'all' member": 9,
-    "'operator.itemgetter' member": 6,
     "'__future__.absolute_import' member": 6,
+    "'operator.itemgetter' member": 6,
     "'datetime.datetime.strptime' member": 5,
     "'any' member": 3,
-    "'uuid' module": 2,
     "'functools' module": 2,
+    "'uuid' module": 2,
     "'os.SEEK_SET' member": 2,
     "'collections.defaultdict' member": 1
   },
@@ -57,14 +57,14 @@
     "'next' member": 6,
     "'json' module": 5,
     "'io' module": 3,
+    "'property.setter' member": 2,
     "'math.isnan' member": 2,
     "'math.isinf' member": 2,
-    "'property.setter' member": 2,
-    "'itertools.product' member": 1,
     "'__future__.print_function' member": 1,
     "'ast' module": 1,
     "'numbers' module": 1,
-    "'collections.namedtuple' member": 1
+    "'collections.namedtuple' member": 1,
+    "'itertools.product' member": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 232,

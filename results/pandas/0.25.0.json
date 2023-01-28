@@ -27,8 +27,8 @@
     "'operator.gt' member": 36,
     "'operator.truediv' member": 36,
     "'property' member": 30,
-    "'staticmethod' member": 28,
     "'operator.floordiv' member": 28,
+    "'staticmethod' member": 28,
     "'object' member": 24,
     "'classmethod' member": 6,
     "'str.decode' member": 6,
@@ -59,15 +59,15 @@
     "'sys.getfilesystemencoding' member": 2,
     "'ConfigParser.SafeConfigParser' member": 1,
     "'pickle.dumps(protocol)'": 1,
-    "'tempfile.mkdtemp' member": 1,
-    "'time.tzset' member": 1,
-    "'optparse' module": 1,
-    "'locale.getpreferredencoding' member": 1,
     "'random.sample' member": 1,
     "'operator.is_' member": 1,
     "'pickle.dump(protocol)'": 1,
     "'tarfile' module": 1,
-    "'tempfile.gettempdir' member": 1
+    "'tempfile.gettempdir' member": 1,
+    "'optparse' module": 1,
+    "'locale.getpreferredencoding' member": 1,
+    "'tempfile.mkdtemp' member": 1,
+    "'time.tzset' member": 1
   },
   "2.4": {
     "function decorators": 4691,
@@ -84,9 +84,9 @@
     "'os.devnull' member": 2,
     "'sorted(reverse)'": 2,
     "'operator.attrgetter' member": 2,
-    "'traceback.format_exc' member": 1,
     "'unicodedata.east_asian_width' member": 1,
-    "'pprint.pformat(width)'": 1
+    "'pprint.pformat(width)'": 1,
+    "'traceback.format_exc' member": 1
   },
   "2.5": {
     "`with`": 10783,
@@ -98,8 +98,8 @@
     "'BaseException' member": 14,
     "'contextlib' module": 13,
     "'subprocess.check_call' member": 5,
-    "'sqlite3' module": 2,
     "'ctypes' module": 2,
+    "'sqlite3' module": 2,
     "'operator.itemgetter' member": 1,
     "'tokenize.untokenize' member": 1
   },
@@ -113,9 +113,9 @@
     "'itertools.product' member": 41,
     "'collections.namedtuple' member": 17,
     "'itertools.permutations' member": 15,
-    "strftime directive 'f'": 14,
-    "'sys.getsizeof' member": 14,
     "'operator.methodcaller' member": 14,
+    "'sys.getsizeof' member": 14,
+    "strftime directive 'f'": 14,
     "'format' member": 11,
     "'numbers' module": 8,
     "'json' module": 7,
@@ -131,9 +131,9 @@
     "'decimal.Decimal.is_infinite' member": 2,
     "'decimal.Decimal.log10' member": 2,
     "'platform.python_implementation' member": 1,
-    "'zipfile.ZipFile.open' member": 1,
     "'ctypes.get_errno' member": 1,
-    "'fractions' module": 1
+    "'fractions' module": 1,
+    "'zipfile.ZipFile.open' member": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 433,

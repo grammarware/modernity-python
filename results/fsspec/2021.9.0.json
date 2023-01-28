@@ -19,9 +19,9 @@
     "'os.stat.st_size' member": 4,
     "'os.path.realpath' member": 3,
     "'property' member": 2,
-    "'StopIteration' member": 2,
     "'os.stat.st_ctime' member": 2,
     "'bool' member": 2,
+    "'StopIteration' member": 2,
     "'str.zfill' member": 1
   },
   "2.3": {
@@ -30,9 +30,9 @@
     "'shutil.move' member": 5,
     "'datetime' module": 4,
     "'enumerate' member": 2,
+    "'tempfile.mkstemp' member": 2,
     "'tempfile.mkdtemp' member": 2,
     "'inspect.isdatadescriptor' member": 2,
-    "'tempfile.mkstemp' member": 2,
     "'bz2' module": 1,
     "'tarfile' module": 1,
     "'itertools' module": 1
@@ -67,14 +67,14 @@
     "'json' module": 4,
     "'next' member": 4,
     "'bytearray' member": 3,
-    "'zipfile.ZipFile.open' member": 2,
     "'subprocess.Popen.terminate' member": 2,
+    "'zipfile.ZipFile.open' member": 2,
     "'threading.Thread.daemon' member": 2,
     "class decorators": 2,
     "'itertools.product' member": 2,
-    "'os.path.relpath' member": 1,
-    "'ast' module": 1,
     "'logging.StreamHandler' member": 1,
+    "'ast' module": 1,
+    "'os.path.relpath' member": 1,
     "'ftplib.FTP(timeout)'": 1
   },
   "2.7": {
@@ -92,8 +92,8 @@
     "keyword-only parameters": 5,
     "'urllib.parse' module": 4,
     "annotations": 4,
-    "'configparser' module": 2,
     "ellipsis literal (`...`) out of slices": 2,
+    "'configparser' module": 2,
     "unpacking assignment": 2,
     "'open(encoding)'": 1
   },
@@ -114,10 +114,10 @@
     "`yield from`": 4,
     "'NotADirectoryError' member": 4,
     "'collections.abc' module": 2,
-    "'threading.get_ident' member": 2,
-    "'memoryview.cast' member": 2,
     "'IsADirectoryError' member": 2,
     "'TimeoutError' member": 2,
+    "'threading.get_ident' member": 2,
+    "'memoryview.cast' member": 2,
     "'lzma' module": 1,
     "'os.stat(follow_symlinks)'": 1
   },

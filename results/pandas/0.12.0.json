@@ -50,9 +50,9 @@
     "'file.next' member": 2,
     "'os.walk' member": 2,
     "'UnicodeDecodeError' member": 2,
-    "'heapq' module": 2,
-    "'dict.pop' member": 2,
     "'UnicodeEncodeError' member": 2,
+    "'dict.pop' member": 2,
+    "'heapq' module": 2,
     "'locale.getpreferredencoding' member": 1,
     "'random.sample' member": 1,
     "'dummy_thread' module": 1,
@@ -97,23 +97,23 @@
     "'decimal.Decimal.log10' member": 2,
     "'format' member": 2,
     "'enumerate(start)'": 1,
-    "'json' module": 1,
     "'numbers' module": 1,
+    "'json' module": 1,
     "'itertools.product' member": 1
   },
   "2.7": {
+    "'importlib' module": 1,
     "`\"..{}..\".format(..)`": 1,
     "'collections.Counter' member": 1,
-    "'collections.OrderedDict' member": 1,
-    "'importlib' module": 1
+    "'collections.OrderedDict' member": 1
   },
   "3.0": {
     "'pickle.load(encoding)'": 1
   },
   "3.1": {
+    "'importlib' module": 1,
     "'collections.Counter' member": 1,
-    "'collections.OrderedDict' member": 1,
-    "'importlib' module": 1
+    "'collections.OrderedDict' member": 1
   },
   "3.2": {
     "'callable' member": 6

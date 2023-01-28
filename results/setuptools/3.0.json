@@ -6,13 +6,13 @@
     "print(expr)": 6,
     "'httplib.BadStatusLine' member": 4,
     "'urlparse' module": 3,
-    "'httplib.HTTPException' member": 2,
     "'httplib.HTTPConnection' member": 2,
     "'httplib.HTTPSConnection' member": 2,
-    "'urllib2' module": 1,
+    "'httplib.HTTPException' member": 2,
     "'__builtin__' module": 1,
     "'htmlentitydefs' module": 1,
-    "'BaseHTTPServer' module": 1
+    "'BaseHTTPServer' module": 1,
+    "'urllib2' module": 1
   },
   "2.1": {
     "'unittest' module": 21,
@@ -28,20 +28,20 @@
     "'type' member": 18,
     "'super' member": 14,
     "'bool' member": 7,
+    "'property' member": 4,
     "'os.stat.st_mtime' member": 4,
     "'os.stat.st_mode' member": 4,
-    "'property' member": 4,
     "'iter' member": 3,
     "'fnmatch.filter' member": 2,
+    "'staticmethod' member": 2,
     "'operator.eq' member": 2,
     "'operator.ne' member": 2,
     "'os.stat.st_size' member": 2,
-    "'staticmethod' member": 2,
     "'urlparse.urlsplit' member": 1,
     "'urlparse.urlunsplit' member": 1,
     "'__future__.generators' member": 1,
-    "'StopIteration' member": 1,
-    "'email' module": 1
+    "'email' module": 1,
+    "'StopIteration' member": 1
   },
   "2.3": {
     "'tempfile.mkdtemp' member": 69,
@@ -64,20 +64,20 @@
     "'httplib.InvalidURL' member": 3,
     "'itertools' module": 2,
     "'tarfile' module": 2,
-    "'tempfile.NamedTemporaryFile' member": 2,
     "'ConfigParser.RawConfigParser' member": 2,
-    "'zipimport' module": 2,
+    "'tempfile.NamedTemporaryFile' member": 2,
     "'sets' module": 2,
+    "'zipimport' module": 2,
     "'imp.acquire_lock' member": 2,
     "'difflib.unified_diff' member": 2,
     "'difflib.context_diff' member": 2,
-    "'optparse' module": 1,
     "'htmlentitydefs.name2codepoint' member": 1,
+    "'optparse' module": 1,
     "'xml.sax.saxutils.unescape' member": 1,
     "'socket.getdefaulttimeout' member": 1,
+    "'logging' module": 1,
     "'pkgutil' module": 1,
-    "'tempfile.mkstemp' member": 1,
-    "'logging' module": 1
+    "'tempfile.mkstemp' member": 1
   },
   "2.4": {
     "function decorators": 76,
@@ -87,9 +87,9 @@
     "'os.devnull' member": 3,
     "'sorted' member": 2,
     "'doctest.DocFileSuite' member": 2,
-    "'string.Template' member": 1,
     "'logging.basicConfig(level)'": 1,
-    "'logging.basicConfig(stream)'": 1
+    "'logging.basicConfig(stream)'": 1,
+    "'string.Template' member": 1
   },
   "2.5": {
     "`with`": 47,

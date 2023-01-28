@@ -8,9 +8,9 @@
     "'dict' member": 1
   },
   "2.3": {
+    "'itertools' module": 1,
     "'tempfile.mkdtemp' member": 1,
-    "'compile(dont_inherit)'": 1,
-    "'itertools' module": 1
+    "'compile(dont_inherit)'": 1
   },
   "2.4": {
     "function decorators": 6,

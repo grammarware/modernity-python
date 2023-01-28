@@ -20,8 +20,8 @@
   "2.3": {
     "'pickle.HIGHEST_PROTOCOL' member": 6,
     "'enumerate' member": 5,
-    "'datetime' module": 1,
     "'platform' module": 1,
+    "'datetime' module": 1,
     "'dict.pop' member": 1,
     "'itertools' module": 1
   },
@@ -57,8 +57,8 @@
   },
   "2.7": {
     "dict comprehensions": 8,
-    "`\"..{}..\".format(..)`": 5,
     "'functools.total_ordering' member": 5,
+    "`\"..{}..\".format(..)`": 5,
     "'collections.OrderedDict' member": 3,
     "set comprehensions": 3,
     "multiple context expressions in a `with` statement": 2

@@ -21,8 +21,8 @@
     "'object' member": 3,
     "'StopIteration' member": 2,
     "'property' member": 2,
-    "'operator.truediv' member": 1,
-    "'str.decode' member": 1
+    "'str.decode' member": 1,
+    "'operator.truediv' member": 1
   },
   "2.3": {
     "'enumerate' member": 24,

@@ -16,8 +16,8 @@
     "'iter' member": 16,
     "'type' member": 14,
     "'ReferenceError' member": 6,
-    "'bool' member": 4,
     "'staticmethod' member": 4,
+    "'bool' member": 4,
     "'object' member": 4,
     "'StopIteration' member": 4,
     "'property' member": 4
@@ -30,8 +30,8 @@
     "'datetime' module": 1
   },
   "2.4": {
-    "function decorators": 6,
     "'collections' module": 6,
+    "function decorators": 6,
     "'sorted' member": 5,
     "'frozenset' member": 5,
     "'subprocess' module": 1,

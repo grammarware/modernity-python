@@ -17,8 +17,8 @@
   "2.4": {
     "function decorators": 17,
     "'set' member": 6,
-    "'string.Template' member": 1,
-    "'subprocess' module": 1
+    "'subprocess' module": 1,
+    "'string.Template' member": 1
   },
   "2.5": {
     "`with`": 7,

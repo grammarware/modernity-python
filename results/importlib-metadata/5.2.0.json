@@ -42,8 +42,8 @@
     "'next' member": 8,
     "'functools.reduce' member": 2,
     "'str.format' member": 2,
-    "'collections.namedtuple' member": 1,
     "'platform.python_implementation' member": 1,
+    "'collections.namedtuple' member": 1,
     "'warnings.catch_warnings' member": 1,
     "'abc' module": 1,
     "class decorators": 1

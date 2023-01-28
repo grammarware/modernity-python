@@ -13,8 +13,8 @@
     "'type' member": 20,
     "'iter' member": 18,
     "'StopIteration' member": 12,
-    "'dict' member": 8,
     "'bool' member": 8,
+    "'dict' member": 8,
     "'operator.gt' member": 2,
     "'operator.lt' member": 2,
     "'staticmethod' member": 2
@@ -22,14 +22,14 @@
   "2.3": {
     "'datetime' module": 13,
     "'enumerate' member": 9,
-    "'sum' member": 2,
-    "'itertools' module": 2,
     "'time.tzset' member": 2,
     "'logging' module": 2,
-    "'heapq' module": 1,
+    "'itertools' module": 2,
+    "'sum' member": 2,
     "'tempfile.mkdtemp' member": 1,
     "'tarfile' module": 1,
-    "'pkgutil' module": 1
+    "'pkgutil' module": 1,
+    "'heapq' module": 1
   },
   "2.4": {
     "function decorators": 28,
@@ -59,8 +59,8 @@
     "'warnings.catch_warnings' member": 2,
     "'next' member": 2,
     "'math.copysign' member": 1,
-    "'fractions' module": 1,
-    "'pkgutil.get_data' member": 1
+    "'pkgutil.get_data' member": 1,
+    "'fractions' module": 1
   },
   "2.7": {
     "'unittest.skipUnless' member": 6,

@@ -1,21 +1,18 @@
 {
   "2.0": {
     "'sys.version_info' member": 4,
-    "print(expr)": 2
+    "print(expr)": 1
   },
-  "2.1": {
-    "'__future__' module": 1
-  },
+  "2.1": {},
   "2.2": {
     "'super' member": 4,
     "'hmac' module": 2,
-    "'type' member": 2,
     "'object' member": 2,
+    "'type' member": 2,
     "'os.path.realpath' member": 1
   },
   "2.3": {
-    "'datetime' module": 3,
-    "'optparse' module": 1
+    "'datetime' module": 3
   },
   "2.4": {
     "function decorators": 21,
@@ -30,14 +27,12 @@
   },
   "2.6": {
     "byte string (b'..') or `str` synonym": 31,
-    "'json' module": 3,
-    "'str.format' member": 2,
     "class decorators": 2,
-    "'__future__.print_function' member": 1
+    "'json' module": 2,
+    "'str.format' member": 1
   },
   "2.7": {
     "'unittest.skipIf' member": 44,
-    "`\"..{}..\".format(..)`": 1,
     "'hmac.compare_digest' member": 1
   },
   "3.0": {},

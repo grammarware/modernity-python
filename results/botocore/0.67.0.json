@@ -53,8 +53,8 @@
     "'reversed' member": 3,
     "'email.utils.formatdate' member": 2,
     "'os.urandom' member": 2,
-    "'collections.deque' member": 1,
     "'sorted(reverse)'": 1,
+    "'collections.deque' member": 1,
     "'itertools.tee' member": 1,
     "'decimal' module": 1,
     "'frozenset' member": 1
@@ -84,8 +84,8 @@
     "'urlparse.parse_qs' member": 1,
     "'json' module": 1,
     "'platform.python_implementation' member": 1,
-    "'Queue.LifoQueue' member": 1,
     "'collections.namedtuple' member": 1,
+    "'Queue.LifoQueue' member": 1,
     "'operator.methodcaller' member": 1
   },
   "2.7": {

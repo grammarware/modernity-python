@@ -5,8 +5,8 @@
     "'sys.version_info' member": 2
   },
   "2.1": {
-    "'inspect' module": 1,
-    "'pydoc' module": 1
+    "'pydoc' module": 1,
+    "'inspect' module": 1
   },
   "2.2": {
     "'bool' member": 8,

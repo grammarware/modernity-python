@@ -11,8 +11,8 @@
   "2.3": {
     "'enumerate' member": 9,
     "'logging' module": 8,
-    "'datetime' module": 1,
-    "'platform' module": 1
+    "'platform' module": 1,
+    "'datetime' module": 1
   },
   "2.4": {
     "'sorted' member": 12,

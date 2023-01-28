@@ -9,10 +9,10 @@
     "'sys.setdefaultencoding' member": 4,
     "'urllib2' module": 2,
     "'httplib.HTTPException' member": 2,
-    "'__builtin__' module": 1,
     "'ConfigParser' module": 1,
-    "'urlparse' module": 1,
-    "'md5' module": 1
+    "'__builtin__' module": 1,
+    "'md5' module": 1,
+    "'urlparse' module": 1
   },
   "2.1": {
     "'__future__' module": 79,
@@ -45,8 +45,8 @@
     "'os.path.realpath' member": 4,
     "'tokenize.generate_tokens' member": 3,
     "'str.decode' member": 3,
-    "'dict.iteritems' member": 2,
     "'os.stat.st_mtime' member": 2,
+    "'dict.iteritems' member": 2,
     "'email' module": 1
   },
   "2.3": {
@@ -61,22 +61,22 @@
     "'csv' module": 5,
     "'UnicodeDecodeError' member": 4,
     "'bz2' module": 4,
-    "'tempfile.mkstemp' member": 3,
     "'UnicodeEncodeError' member": 3,
+    "'tempfile.mkstemp' member": 3,
     "'os.walk' member": 2,
+    "'file.next' member": 2,
     "'dict.fromkeys' member": 2,
+    "'tempfile.mkdtemp' member": 2,
     "'gc.get_referents' member": 2,
     "'unicodedata.normalize' member": 2,
     "'logging' module": 2,
-    "'file.next' member": 2,
-    "'tempfile.mkdtemp' member": 2,
     "'time.tzset' member": 2,
     "'ConfigParser.SafeConfigParser' member": 1,
     "'locale.getpreferredencoding' member": 1,
-    "'random.sample' member": 1,
-    "'optparse' module": 1,
     "'pickle.dump(protocol)'": 1,
-    "'tempfile.gettempdir' member": 1
+    "'tempfile.gettempdir' member": 1,
+    "'random.sample' member": 1,
+    "'optparse' module": 1
   },
   "2.4": {
     "function decorators": 1452,
@@ -92,8 +92,8 @@
     "'traceback.format_exc' member": 3,
     "'collections.deque' member": 2,
     "'unicodedata.east_asian_width' member": 1,
-    "'sorted(reverse)'": 1,
-    "'operator.attrgetter' member": 1
+    "'operator.attrgetter' member": 1,
+    "'sorted(reverse)'": 1
   },
   "2.5": {
     "`with`": 3667,
@@ -109,9 +109,9 @@
     "'codecs.getincrementalencoder' member": 2,
     "'sqlite3' module": 2,
     "'ctypes' module": 2,
+    "'hashlib' module": 1,
     "'tokenize.untokenize' member": 1,
-    "'uuid' module": 1,
-    "'hashlib' module": 1
+    "'uuid' module": 1
   },
   "2.6": {
     "'str.format' member": 750,
@@ -121,8 +121,8 @@
     "'__future__.print_function' member": 63,
     "'itertools.product' member": 32,
     "class decorators": 25,
-    "'collections.namedtuple' member": 14,
     "'io' module": 14,
+    "'collections.namedtuple' member": 14,
     "strftime directive 'f'": 12,
     "'sys.getsizeof' member": 8,
     "'itertools.permutations' member": 8,
@@ -133,9 +133,9 @@
     "'operator.methodcaller' member": 3,
     "'itertools.combinations' member": 3,
     "'abc' module": 2,
+    "'__future__.unicode_literals' member": 2,
     "'numbers' module": 2,
     "'decimal.Decimal.log10' member": 2,
-    "'__future__.unicode_literals' member": 2,
     "'bytearray' member": 2,
     "'bin' member": 2,
     "'smtplib.SMTP.starttls' member": 1,

@@ -35,8 +35,8 @@
     "'any' member": 4,
     "'subprocess.check_call' member": 2,
     "'hashlib' module": 1,
-    "'ctypes' module": 1,
-    "'contextlib' module": 1
+    "'contextlib' module": 1,
+    "'ctypes' module": 1
   },
   "2.6": {
     "'str.format' member": 12,

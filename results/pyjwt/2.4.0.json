@@ -3,8 +3,8 @@
     "print(expr)": 1
   },
   "2.1": {
-    "'warnings' module": 1,
-    "'unittest' module": 1
+    "'unittest' module": 1,
+    "'warnings' module": 1
   },
   "2.2": {
     "'type' member": 8,
@@ -12,8 +12,8 @@
     "'dict' member": 2,
     "'object' member": 2,
     "'bool' member": 1,
-    "'hmac' module": 1,
-    "'os.path.realpath' member": 1
+    "'os.path.realpath' member": 1,
+    "'hmac' module": 1
   },
   "2.3": {
     "'datetime' module": 3,
@@ -29,8 +29,8 @@
     "'any' member": 5,
     "'all' member": 4,
     "'functools' module": 1,
-    "'hashlib' module": 1,
-    "'contextlib' module": 1
+    "'contextlib' module": 1,
+    "'hashlib' module": 1
   },
   "2.6": {
     "byte string (b'..') or `str` synonym": 202,

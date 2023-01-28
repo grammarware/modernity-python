@@ -51,8 +51,8 @@
     "'reversed' member": 3,
     "'os.urandom' member": 2,
     "'collections.deque' member": 1,
-    "'email.utils.formatdate' member": 1,
     "'itertools.tee' member": 1,
+    "'email.utils.formatdate' member": 1,
     "'decimal' module": 1,
     "'frozenset' member": 1
   },

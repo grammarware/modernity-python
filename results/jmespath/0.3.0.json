@@ -26,11 +26,11 @@
     "'collections' module": 1
   },
   "2.5": {
-    "`with`": 5
+    "`with`": 4
   },
   "2.6": {
     "class decorators": 8,
-    "'json' module": 3,
+    "'json' module": 2,
     "'itertools.izip_longest' member": 1
   },
   "2.7": {

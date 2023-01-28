@@ -31,8 +31,8 @@
     "'enumerate' member": 2,
     "'tempfile.NamedTemporaryFile' member": 2,
     "'dummy_threading' module": 1,
-    "'datetime' module": 1,
-    "'socket.timeout' member": 1
+    "'socket.timeout' member": 1,
+    "'datetime' module": 1
   },
   "2.4": {
     "function decorators": 9,

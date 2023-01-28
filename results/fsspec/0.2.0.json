@@ -31,8 +31,8 @@
     "'reversed' member": 4,
     "'str.rsplit' member": 1,
     "'collections' module": 1,
-    "'subprocess' module": 1,
-    "'sorted(key)'": 1
+    "'sorted(key)'": 1,
+    "'subprocess' module": 1
   },
   "2.5": {
     "`with`": 33,
@@ -52,8 +52,8 @@
   "2.7": {
     "set literals": 8,
     "`\"..{}..\".format(..)`": 2,
-    "set comprehensions": 2,
     "dict comprehensions": 2,
+    "set comprehensions": 2,
     "'importlib' module": 1
   },
   "3.0": {

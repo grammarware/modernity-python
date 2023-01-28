@@ -56,9 +56,9 @@
     "'socket.create_connection' member": 2,
     "'str.format' member": 1,
     "'platform.python_implementation' member": 1,
+    "'logging.StreamHandler' member": 1,
     "'collections.namedtuple' member": 1,
     "'ssl' module": 1,
-    "'logging.StreamHandler' member": 1,
     "'Queue.LifoQueue' member": 1,
     "'operator.methodcaller' member": 1
   },

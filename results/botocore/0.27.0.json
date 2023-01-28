@@ -50,9 +50,9 @@
     "'operator.attrgetter' member": 4,
     "'reversed' member": 2,
     "'os.urandom' member": 2,
-    "'email.utils.formatdate' member": 1,
     "'collections.deque' member": 1,
     "'itertools.tee' member": 1,
+    "'email.utils.formatdate' member": 1,
     "'decimal' module": 1,
     "'frozenset' member": 1
   },
@@ -62,9 +62,9 @@
     "'hashlib' module": 4,
     "'all' member": 4,
     "'__future__.absolute_import' member": 2,
-    "'operator.itemgetter' member": 1,
     "'collections.defaultdict' member": 1,
     "'functools' module": 1,
+    "'operator.itemgetter' member": 1,
     "'codecs.getincrementaldecoder' member": 1,
     "'uuid' module": 1
   },

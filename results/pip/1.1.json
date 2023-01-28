@@ -6,8 +6,8 @@
     "'Queue' module": 1
   },
   "2.1": {
-    "'inspect' module": 1,
-    "'difflib' module": 1
+    "'difflib' module": 1,
+    "'inspect' module": 1
   },
   "2.2": {
     "'super' member": 32,
@@ -36,9 +36,9 @@
     "'logging' module": 1,
     "'tarfile' module": 1,
     "'zipimport' module": 1,
-    "'dummy_threading' module": 1,
     "'textwrap' module": 1,
     "'UnicodeEncodeError' member": 1,
+    "'dummy_threading' module": 1,
     "'enumerate' member": 1
   },
   "2.4": {

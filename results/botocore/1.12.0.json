@@ -9,8 +9,8 @@
     "'urllib2' module": 1,
     "'httplib.HTTPException' member": 1,
     "'httplib.HTTPConnection' member": 1,
-    "'Queue' module": 1,
-    "'httplib.HTTPSConnection' member": 1
+    "'httplib.HTTPSConnection' member": 1,
+    "'Queue' module": 1
   },
   "2.1": {
     "'warnings' module": 9,
@@ -22,20 +22,20 @@
   "2.2": {
     "'super' member": 324,
     "'type' member": 62,
-    "'dict' member": 55,
-    "'iter' member": 40,
+    "'dict' member": 53,
+    "'iter' member": 38,
     "'object' member": 30,
     "'StopIteration' member": 8,
     "'help' member": 6,
     "'bool' member": 5,
     "'urlparse.urlsplit' member": 3,
-    "'os.stat.st_mode' member": 2,
     "'str.decode' member": 2,
+    "'os.stat.st_mode' member": 2,
     "'time.struct_time' member": 2,
     "'urlparse.urlunsplit' member": 1,
     "'hmac' module": 1,
-    "'__future__.division' member": 1,
-    "'socket.getaddrinfo' member": 1
+    "'socket.getaddrinfo' member": 1,
+    "'__future__.division' member": 1
   },
   "2.3": {
     "'logging' module": 34,
@@ -50,14 +50,14 @@
     "'socket.timeout' member": 4,
     "'platform' module": 3,
     "'shlex.split' member": 2,
-    "'os.walk' member": 2,
     "'socket.getdefaulttimeout' member": 2,
+    "'os.walk' member": 2,
     "'sys.getfilesystemencoding' member": 1,
-    "'tarfile' module": 1,
-    "'textwrap' module": 1,
     "'dummy_threading' module": 1,
+    "'textwrap' module": 1,
     "'socket.socket.settimeout' member": 1,
-    "'dummy_thread' module": 1
+    "'dummy_thread' module": 1,
+    "'tarfile' module": 1
   },
   "2.4": {
     "function decorators": 207,
@@ -73,11 +73,11 @@
     "'reversed' member": 2,
     "'decimal' module": 2,
     "'itertools.tee' member": 1,
-    "'pprint.pformat(width)'": 1,
-    "'str.rsplit' member": 1
+    "'str.rsplit' member": 1,
+    "'pprint.pformat(width)'": 1
   },
   "2.5": {
-    "`with`": 783,
+    "`with`": 779,
     "'any' member": 21,
     "'all' member": 13,
     "'functools' module": 7,
@@ -95,7 +95,7 @@
     "'urlparse.urlsplit.path' member": 1
   },
   "2.6": {
-    "byte string (b'..') or `str` synonym": 672,
+    "byte string (b'..') or `str` synonym": 670,
     "'str.format' member": 45,
     "'json' module": 16,
     "'io' module": 11,
@@ -113,58 +113,58 @@
     "'urlparse.parse_qs' member": 1,
     "'itertools.izip_longest' member": 1,
     "'numbers' module": 1,
-    "'ast' module": 1,
-    "'warnings.catch_warnings' member": 1,
-    "'platform.python_implementation' member": 1,
     "'__future__.print_function' member": 1,
-    "'Queue.LifoQueue' member": 1
+    "'platform.python_implementation' member": 1,
+    "'Queue.LifoQueue' member": 1,
+    "'ast' module": 1,
+    "'warnings.catch_warnings' member": 1
   },
   "2.7": {
     "'collections.OrderedDict' member": 3,
     "'unittest.skipIf' member": 3,
-    "'unittest.SkipTest' member": 2,
-    "'unittest.skip' member": 2,
     "'logging.NullHandler' member": 2,
     "'argparse' module": 2,
     "`\"..{}..\".format(..)`": 2,
+    "'unittest.SkipTest' member": 2,
+    "'unittest.skip' member": 2,
     "'ssl.OPENSSL_VERSION_INFO' member": 1,
     "'ssl.OPENSSL_VERSION' member": 1,
-    "'importlib' module": 1,
+    "'ssl.match_hostname' member": 1,
     "'ssl.HAS_SNI' member": 1,
     "'ssl.OP_NO_SSLv2' member": 1,
     "'ssl.OP_NO_SSLv3' member": 1,
     "'ssl.OP_NO_COMPRESSION' member": 1,
     "'ssl.SSLContext' member": 1,
     "'ssl.wrap_socket(ciphers)'": 1,
-    "'ssl.match_hostname' member": 1
+    "'importlib' module": 1
   },
   "3.0": {
     "'urllib.parse' module": 5,
     "'http' module": 1,
     "'http.cookiejar' module": 1,
-    "'queue' module": 1,
-    "'builtins' module": 1
+    "'builtins' module": 1,
+    "'queue' module": 1
   },
   "3.1": {
     "'collections.OrderedDict' member": 3,
     "'unittest.skipIf' member": 3,
+    "'logging.NullHandler' member": 2,
     "'unittest.SkipTest' member": 2,
     "'unittest.skip' member": 2,
-    "'logging.NullHandler' member": 2,
     "'base64.encodebytes' member": 1,
     "'importlib' module": 1
   },
   "3.2": {
-    "'callable' member": 2,
     "'argparse' module": 2,
+    "'callable' member": 2,
     "'ssl.OPENSSL_VERSION_INFO' member": 1,
     "'ssl.OPENSSL_VERSION' member": 1,
+    "'ssl.match_hostname' member": 1,
     "'ssl.HAS_SNI' member": 1,
     "'ssl.OP_NO_SSLv2' member": 1,
     "'ssl.OP_NO_SSLv3' member": 1,
     "'ssl.SSLContext' member": 1,
-    "'ssl.wrap_socket(ciphers)'": 1,
-    "'ssl.match_hostname' member": 1
+    "'ssl.wrap_socket(ciphers)'": 1
   },
   "3.3": {
     "'ConnectionError' member": 18,
@@ -172,8 +172,8 @@
     "'ssl.OP_NO_COMPRESSION' member": 1
   },
   "3.4": {
-    "'importlib.reload' member": 1,
-    "'ssl.SSLContext.check_hostname' member": 1
+    "'ssl.SSLContext.check_hostname' member": 1,
+    "'importlib.reload' member": 1
   },
   "3.5": {},
   "3.6": {},

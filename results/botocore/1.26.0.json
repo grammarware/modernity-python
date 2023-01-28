@@ -15,14 +15,14 @@
   },
   "2.2": {
     "'super' member": 390,
-    "'dict' member": 149,
+    "'dict' member": 147,
     "'object' member": 51,
     "'type' member": 45,
-    "'iter' member": 20,
+    "'iter' member": 18,
     "'StopIteration' member": 14,
     "'help' member": 6,
-    "'os.stat.st_mode' member": 2,
     "'str.decode' member": 2,
+    "'os.stat.st_mode' member": 2,
     "'time.struct_time' member": 2,
     "'hmac' module": 1,
     "'bool' member": 1
@@ -60,13 +60,13 @@
     "'pprint.pformat(width)'": 1
   },
   "2.5": {
-    "`with`": 1413,
+    "`with`": 1409,
     "'any' member": 16,
     "'all' member": 13,
     "'contextlib' module": 7,
     "'functools' module": 6,
-    "'datetime.datetime.strptime' member": 6,
     "'uuid' module": 6,
+    "'datetime.datetime.strptime' member": 6,
     "'hashlib' module": 5,
     "'collections.defaultdict' member": 3,
     "'xml.etree.ElementTree' module": 2,
@@ -75,7 +75,7 @@
     "'struct.Struct' member": 1
   },
   "2.6": {
-    "byte string (b'..') or `str` synonym": 953,
+    "byte string (b'..') or `str` synonym": 951,
     "'str.format' member": 45,
     "'json' module": 23,
     "'io' module": 12,
@@ -88,9 +88,9 @@
     "'threading.Thread.daemon' member": 3,
     "'ssl' module": 2,
     "'logging.StreamHandler' member": 2,
-    "'threading.Thread.is_alive' member": 2,
     "'threading.current_thread' member": 2,
     "'threading.Thread.name' member": 2,
+    "'threading.Thread.is_alive' member": 2,
     "'sys.flags' member": 1,
     "'numbers' module": 1,
     "'ast' module": 1,

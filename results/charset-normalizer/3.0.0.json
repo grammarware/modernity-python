@@ -14,9 +14,9 @@
     "'logging' module": 6,
     "'UnicodeDecodeError' member": 3,
     "'sum' member": 2,
-    "'UnicodeEncodeError' member": 1,
     "'platform' module": 1,
-    "'unicodedata.unidata_version' member": 1
+    "'unicodedata.unidata_version' member": 1,
+    "'UnicodeEncodeError' member": 1
   },
   "2.4": {
     "function decorators": 65,

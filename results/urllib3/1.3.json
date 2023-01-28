@@ -31,8 +31,8 @@
     "function decorators": 7,
     "'set' member": 6,
     "'operator.attrgetter' member": 4,
-    "'reversed' member": 2,
     "'sorted' member": 2,
+    "'reversed' member": 2,
     "'collections' module": 1,
     "'collections.deque' member": 1
   },

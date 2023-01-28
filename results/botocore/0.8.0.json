@@ -13,15 +13,15 @@
   "2.3": {
     "'logging' module": 9,
     "'enumerate' member": 5,
-    "'datetime' module": 1,
-    "'platform' module": 1
+    "'platform' module": 1,
+    "'datetime' module": 1
   },
   "2.4": {
     "'sorted' member": 10,
     "function decorators": 9,
     "'set' member": 4,
-    "'email.utils.formatdate' member": 1,
-    "'collections' module": 1
+    "'collections' module": 1,
+    "'email.utils.formatdate' member": 1
   },
   "2.5": {
     "'urlparse.urlsplit.netloc' member": 4,

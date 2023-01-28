@@ -7,8 +7,8 @@
     "'unittest' module": 16,
     "'warnings' module": 9,
     "'__future__' module": 7,
-    "'inspect' module": 1,
-    "'weakref' module": 1
+    "'weakref' module": 1,
+    "'inspect' module": 1
   },
   "2.2": {
     "'object' member": 341,
@@ -19,10 +19,10 @@
     "'bool' member": 8,
     "'property' member": 8,
     "'types.GeneratorType' member": 6,
-    "'str.decode' member": 4,
     "'StopIteration' member": 4,
-    "'gc.get_objects' member": 2,
-    "'__future__.division' member": 2
+    "'str.decode' member": 4,
+    "'__future__.division' member": 2,
+    "'gc.get_objects' member": 2
   },
   "2.3": {
     "'enumerate' member": 38,
@@ -50,9 +50,9 @@
     "`with`": 982,
     "'operator.itemgetter' member": 12,
     "'functools' module": 6,
-    "'any' member": 5,
     "'all' member": 5,
     "'datetime.datetime.strptime' member": 5,
+    "'any' member": 5,
     "'__future__.absolute_import' member": 4,
     "'uuid' module": 2,
     "'os.SEEK_SET' member": 2,
@@ -65,14 +65,14 @@
     "'next' member": 18,
     "'json' module": 4,
     "'io' module": 3,
-    "'math.isnan' member": 2,
-    "'math.isinf' member": 2,
-    "'bytearray' member": 2,
-    "'enumerate(start)'": 2,
     "class decorators": 2,
     "'collections.namedtuple' member": 2,
     "'__future__.print_function' member": 2,
     "'property.setter' member": 2,
+    "'math.isnan' member": 2,
+    "'math.isinf' member": 2,
+    "'bytearray' member": 2,
+    "'enumerate(start)'": 2,
     "'numbers' module": 1,
     "'ast' module": 1
   },
@@ -97,8 +97,8 @@
   },
   "3.2": {
     "'concurrent.futures' module": 7,
-    "'argparse' module": 1,
-    "'callable' member": 1
+    "'callable' member": 1,
+    "'argparse' module": 1
   },
   "3.3": {
     "'TimeoutError' member": 6,

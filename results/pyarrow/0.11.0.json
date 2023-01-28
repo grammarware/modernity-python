@@ -9,8 +9,8 @@
   "2.1": {
     "'warnings' module": 3,
     "'unittest' module": 3,
-    "'__future__' module": 2,
     "'random.setstate' member": 2,
+    "'__future__' module": 2,
     "'inspect' module": 1,
     "'weakref' module": 1,
     "'random.getstate' member": 1
@@ -20,9 +20,9 @@
     "'super' member": 16,
     "'dict' member": 11,
     "'iter' member": 8,
+    "'os.path.realpath' member": 2,
     "'bool' member": 2,
     "'object' member": 2,
-    "'os.path.realpath' member": 2,
     "'__future__.division' member": 2
   },
   "2.3": {
@@ -33,12 +33,12 @@
     "'tempfile.mkdtemp' member": 3,
     "'os.walk' member": 2,
     "'shlex.split' member": 2,
-    "'pickle.HIGHEST_PROTOCOL' member": 2,
     "'os.path.supports_unicode_filenames' member": 2,
+    "'pickle.HIGHEST_PROTOCOL' member": 2,
     "'timeit' module": 1,
     "'textwrap' module": 1,
-    "'tempfile.NamedTemporaryFile' member": 1,
     "'csv' module": 1,
+    "'tempfile.NamedTemporaryFile' member": 1,
     "'sum' member": 1
   },
   "2.4": {
@@ -72,17 +72,17 @@
     "'bytearray' member": 34,
     "'next' member": 13,
     "'io' module": 7,
-    "'json' module": 5,
     "'multiprocessing' module": 5,
+    "'json' module": 5,
     "'subprocess.Popen.kill' member": 2,
     "class decorators": 2,
     "'itertools.izip_longest' member": 1,
     "'numbers' module": 1,
     "'ast' module": 1,
     "'operator.methodcaller' member": 1,
-    "'__future__.print_function' member": 1,
     "'collections.namedtuple' member": 1,
-    "'tempfile.NamedTemporaryFile(delete)'": 1
+    "'tempfile.NamedTemporaryFile(delete)'": 1,
+    "'__future__.print_function' member": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 41,
@@ -107,8 +107,8 @@
     "'csv.DictWriter.writeheader' member": 1
   },
   "3.3": {
-    "'importlib.util.resolve_name' member": 1,
     "'textwrap.indent' member": 1,
+    "'importlib.util.resolve_name' member": 1,
     "'FileNotFoundError' member": 1,
     "'memoryview.nbytes' member": 1
   },

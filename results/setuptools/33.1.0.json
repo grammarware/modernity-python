@@ -4,8 +4,8 @@
     "print(expr)": 8,
     "'unicode' member": 4,
     "'callable' member": 2,
-    "'urllib2' module": 1,
     "'_winreg' module": 1,
+    "'urllib2' module": 1,
     "'__builtin__' module": 1
   },
   "2.1": {
@@ -76,11 +76,11 @@
     "'collections' module": 6,
     "'collections.deque' member": 4,
     "'os.devnull' member": 3,
-    "'os.path.lexists' member": 2,
     "'reversed' member": 2,
-    "'string.Template' member": 1,
+    "'os.path.lexists' member": 2,
     "'sorted(key)'": 1,
     "'sorted(reverse)'": 1,
+    "'string.Template' member": 1,
     "'logging.basicConfig(level)'": 1,
     "'logging.basicConfig(stream)'": 1
   },
@@ -94,12 +94,12 @@
     "'functools' module": 10,
     "'all' member": 9,
     "'collections.defaultdict' member": 3,
-    "'str.rpartition' member": 2,
     "'ctypes' module": 2,
-    "'hashlib' module": 1,
-    "'__import__(level)'": 1,
+    "'str.rpartition' member": 2,
     "'struct.Struct' member": 1,
-    "'operator.itemgetter' member": 1
+    "'operator.itemgetter' member": 1,
+    "'hashlib' module": 1,
+    "'__import__(level)'": 1
   },
   "2.6": {
     "'str.format' member": 78,
@@ -114,17 +114,17 @@
     "'os.path.relpath' member": 5,
     "'collections.namedtuple' member": 4,
     "class decorators": 4,
+    "'platform.python_implementation' member": 3,
     "'functools.reduce' member": 3,
     "'itertools.product' member": 3,
-    "'platform.python_implementation' member": 3,
     "'socket.create_connection' member": 2,
     "'site.USER_BASE' member": 2,
     "'sys.dont_write_bytecode' member": 2,
-    "'numbers' module": 1,
+    "'tempfile.NamedTemporaryFile(delete)'": 1,
+    "'abc' module": 1,
     "'ssl' module": 1,
     "'os.walk(followlinks)'": 1,
-    "'tempfile.NamedTemporaryFile(delete)'": 1,
-    "'abc' module": 1
+    "'numbers' module": 1
   },
   "2.7": {
     "'zipimport.zipimporter' member": 7,
@@ -138,8 +138,8 @@
     "'urllib.parse' module": 2,
     "super() without arguments": 2,
     "'list.copy' member": 2,
-    "'open(encoding)'": 1,
-    "'configparser' module": 1
+    "'configparser' module": 1,
+    "'open(encoding)'": 1
   },
   "3.1": {
     "'importlib' module": 1,
@@ -157,8 +157,8 @@
   "3.3": {
     "'sys.base_prefix' member": 4,
     "'unittest.mock' module": 3,
-    "'importlib.machinery.FileFinder' member": 2,
-    "'sys.implementation' member": 2
+    "'sys.implementation' member": 2,
+    "'importlib.machinery.FileFinder' member": 2
   },
   "3.4": {},
   "3.5": {},

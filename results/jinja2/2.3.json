@@ -37,10 +37,10 @@
     "'timeit' module": 2,
     "'tempfile.gettempdir' member": 2,
     "'enumerate' member": 2,
+    "'datetime' module": 1,
     "'sets' module": 1,
-    "'operator.pow' member": 1,
     "'UnicodeDecodeError' member": 1,
-    "'datetime' module": 1
+    "'operator.pow' member": 1
   },
   "2.4": {
     "'set' member": 21,

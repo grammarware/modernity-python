@@ -66,9 +66,9 @@
     "'functools' module": 3,
     "'codecs.getincrementalencoder' member": 2,
     "'__future__.with_statement' member": 2,
+    "'sqlite3' module": 1,
     "'operator.itemgetter' member": 1,
-    "'heapq.nlargest(key)'": 1,
-    "'sqlite3' module": 1
+    "'heapq.nlargest(key)'": 1
   },
   "2.6": {
     "'io' module": 2,

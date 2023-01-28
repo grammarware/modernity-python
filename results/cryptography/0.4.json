@@ -14,8 +14,8 @@
   },
   "2.3": {
     "'itertools' module": 3,
-    "'textwrap' module": 1,
-    "'platform' module": 1
+    "'platform' module": 1,
+    "'textwrap' module": 1
   },
   "2.4": {
     "function decorators": 205,

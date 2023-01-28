@@ -34,8 +34,8 @@
     "'itertools.product' member": 5,
     "'collections.namedtuple' member": 3,
     "'abc' module": 2,
-    "'json' module": 1,
-    "'bin' member": 1
+    "'bin' member": 1,
+    "'json' module": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 1

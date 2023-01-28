@@ -13,8 +13,8 @@
     "'types.GeneratorType' member": 4,
     "'str.decode' member": 4,
     "'dict' member": 3,
-    "'type' member": 2,
     "'StopIteration' member": 2,
+    "'type' member": 2,
     "'email' module": 1
   },
   "2.3": {
@@ -28,8 +28,8 @@
     "'sorted' member": 46,
     "'set' member": 8,
     "'collections' module": 4,
-    "'sorted(key)'": 2,
-    "'frozenset' member": 2
+    "'frozenset' member": 2,
+    "'sorted(key)'": 2
   },
   "2.5": {
     "`with`": 272,
@@ -48,8 +48,8 @@
     "'io' module": 2,
     "'math.isnan' member": 2,
     "'math.isinf' member": 2,
-    "'json' module": 2,
     "'property.setter' member": 2,
+    "'json' module": 2,
     "'numbers' module": 1,
     "'collections.namedtuple' member": 1
   },

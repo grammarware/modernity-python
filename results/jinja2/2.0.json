@@ -17,6 +17,7 @@
     "'dict.iteritems' member": 1,
     "'StopIteration' member": 1,
     "'types.GeneratorType' member": 1,
+    "'gc.get_objects' member": 1,
     "'operator.truediv' member": 1,
     "'operator.floordiv' member": 1,
     "'operator.eq' member": 1,
@@ -25,16 +26,15 @@
     "'operator.ge' member": 1,
     "'operator.lt' member": 1,
     "'operator.le' member": 1,
-    "'staticmethod' member": 1,
-    "'gc.get_objects' member": 1
+    "'staticmethod' member": 1
   },
   "2.3": {
     "'itertools' module": 3,
     "'timeit' module": 2,
     "'enumerate' member": 2,
+    "'datetime' module": 1,
     "'sets' module": 1,
-    "'operator.pow' member": 1,
-    "'datetime' module": 1
+    "'operator.pow' member": 1
   },
   "2.4": {
     "'set' member": 14,

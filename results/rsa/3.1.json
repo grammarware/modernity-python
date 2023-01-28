@@ -16,8 +16,8 @@
     "'os.path.realpath' member": 1
   },
   "2.3": {
-    "'tempfile.mkdtemp' member": 2,
     "'optparse' module": 2,
+    "'tempfile.mkdtemp' member": 2,
     "'tarfile' module": 1,
     "'enumerate' member": 1,
     "'logging' module": 1
@@ -37,8 +37,8 @@
   },
   "2.6": {
     "'io' module": 2,
-    "'site.USER_SITE' member": 1,
-    "'abc' module": 1
+    "'abc' module": 1,
+    "'site.USER_SITE' member": 1
   },
   "2.7": {},
   "3.0": {},

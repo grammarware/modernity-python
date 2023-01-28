@@ -9,9 +9,9 @@
     "'unichr' member": 3,
     "'urllib2' module": 2,
     "'httplib.HTTPException' member": 2,
+    "'md5' module": 1,
     "'__builtin__' module": 1,
-    "'urlparse' module": 1,
-    "'md5' module": 1
+    "'urlparse' module": 1
   },
   "2.1": {
     "'warnings' module": 56,
@@ -28,8 +28,8 @@
     "'iter' member": 92,
     "'bool' member": 58,
     "'property' member": 44,
-    "'operator.truediv' member": 31,
     "'__future__.division' member": 31,
+    "'operator.truediv' member": 31,
     "'StopIteration' member": 25,
     "'operator.le' member": 24,
     "'operator.lt' member": 24,
@@ -43,8 +43,8 @@
     "'types.GeneratorType' member": 9,
     "'str.decode' member": 5,
     "'tokenize.generate_tokens' member": 3,
-    "'dict.iteritems' member": 2,
     "'os.stat.st_mtime' member": 2,
+    "'dict.iteritems' member": 2,
     "'email' module": 1
   },
   "2.3": {
@@ -59,23 +59,23 @@
     "'csv' module": 7,
     "'UnicodeDecodeError' member": 6,
     "'bz2' module": 3,
-    "'tempfile.mkstemp' member": 3,
     "'UnicodeEncodeError' member": 3,
-    "'dict.fromkeys' member": 2,
+    "'tempfile.mkstemp' member": 3,
+    "'file.next' member": 2,
     "'os.walk' member": 2,
+    "'dict.fromkeys' member": 2,
+    "'tempfile.mkdtemp' member": 2,
     "'gc.get_referents' member": 2,
     "'logging' module": 2,
-    "'file.next' member": 2,
-    "'tempfile.mkdtemp' member": 2,
     "'time.tzset' member": 2,
     "'dummy_thread' module": 1,
     "'heapq' module": 1,
     "'locale.getpreferredencoding' member": 1,
-    "'random.sample' member": 1,
-    "'optparse' module": 1,
     "'pickle.dump(protocol)'": 1,
     "'socket.setdefaulttimeout' member": 1,
-    "'tempfile.gettempdir' member": 1
+    "'tempfile.gettempdir' member": 1,
+    "'random.sample' member": 1,
+    "'optparse' module": 1
   },
   "2.4": {
     "function decorators": 1117,
@@ -106,11 +106,11 @@
     "'inspect.isgetsetdescriptor' member": 4,
     "'codecs.getincrementalencoder' member": 2,
     "'ctypes' module": 2,
+    "'hashlib' module": 1,
     "'operator.itemgetter' member": 1,
     "'heapq.nlargest(key)'": 1,
     "'tokenize.untokenize' member": 1,
     "'uuid' module": 1,
-    "'hashlib' module": 1,
     "'sqlite3' module": 1
   },
   "2.6": {
@@ -134,14 +134,14 @@
     "'bin' member": 2,
     "'itertools.combinations' member": 2,
     "'smtplib.SMTP.starttls' member": 1,
+    "'__future__.unicode_literals' member": 1,
     "'functools.reduce' member": 1,
     "'enumerate(start)'": 1,
-    "'__future__.unicode_literals' member": 1,
     "'operator.methodcaller' member": 1
   },
   "2.7": {
-    "`\"..{}..\".format(..)`": 2,
     "'importlib' module": 2,
+    "`\"..{}..\".format(..)`": 2,
     "'argparse' module": 1,
     "'collections.Counter' member": 1,
     "'collections.OrderedDict' member": 1

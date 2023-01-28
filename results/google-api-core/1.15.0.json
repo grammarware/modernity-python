@@ -9,8 +9,8 @@
     "'inspect' module": 1
   },
   "2.2": {
-    "'super' member": 24,
     "'iter' member": 24,
+    "'super' member": 24,
     "'dict' member": 14,
     "'type' member": 13,
     "'object' member": 5,
@@ -34,8 +34,8 @@
     "'sorted' member": 12,
     "'collections' module": 5,
     "'collections.deque' member": 2,
-    "'sorted(key)'": 1,
-    "'reversed' member": 1
+    "'reversed' member": 1,
+    "'sorted(key)'": 1
   },
   "2.5": {
     "`with`": 133,
@@ -53,8 +53,8 @@
     "class decorators": 7,
     "'__future__.unicode_literals' member": 5,
     "'collections.namedtuple' member": 3,
-    "'threading.Thread.daemon' member": 3,
     "'abc' module": 3,
+    "'threading.Thread.daemon' member": 3,
     "'threading.Thread.name' member": 2,
     "'io' module": 1,
     "'collections.deque(maxlen)'": 1,

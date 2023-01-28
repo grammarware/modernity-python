@@ -39,12 +39,12 @@
     "class decorators": 7,
     "'__future__.unicode_literals' member": 5,
     "'next' member": 4,
-    "'collections.namedtuple' member": 3,
     "'abc' module": 3,
+    "'collections.namedtuple' member": 3,
     "'io' module": 1,
+    "'threading.Thread.daemon' member": 1,
     "'json' module": 1,
-    "byte string (b'..') or `str` synonym": 1,
-    "'threading.Thread.daemon' member": 1
+    "byte string (b'..') or `str` synonym": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 18,

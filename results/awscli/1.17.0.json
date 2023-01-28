@@ -28,8 +28,8 @@
     "'datetime' module": 13,
     "'UnicodeDecodeError' member": 8,
     "'shlex.split' member": 7,
-    "'tempfile.NamedTemporaryFile' member": 6,
     "'dict.pop' member": 6,
+    "'tempfile.NamedTemporaryFile' member": 6,
     "'platform' module": 5,
     "'sum' member": 5,
     "'os.walk' member": 5,
@@ -52,8 +52,8 @@
     "'reversed' member": 2,
     "'threading.local' member": 2,
     "'unicodedata.east_asian_width' member": 1,
-    "'os.urandom' member": 1,
     "'decimal' module": 1,
+    "'os.urandom' member": 1,
     "'collections.deque' member": 1
   },
   "2.5": {

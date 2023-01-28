@@ -28,15 +28,15 @@
     "'sum' member": 5,
     "'tempfile.mkstemp' member": 4,
     "'itertools' module": 2,
+    "'locale.getpreferredencoding' member": 2,
     "'shlex.split' member": 2,
     "'tempfile.mkdtemp' member": 2,
-    "'locale.getpreferredencoding' member": 2,
-    "'dict.pop' member": 2,
     "'ConfigParser.RawConfigParser' member": 2,
-    "'datetime' module": 1,
+    "'dict.pop' member": 2,
     "'textwrap' module": 1,
-    "'sys.getfilesystemencoding' member": 1,
     "'sys.getwindowsversion' member": 1,
+    "'sys.getfilesystemencoding' member": 1,
+    "'datetime' module": 1,
     "'optparse' module": 1
   },
   "2.4": {
@@ -57,8 +57,8 @@
     "'all' member": 4,
     "'functools' module": 3,
     "'uuid' module": 2,
-    "'any' member": 1,
-    "'ctypes' module": 1
+    "'ctypes' module": 1,
+    "'any' member": 1
   },
   "2.6": {
     "byte string (b'..') or `str` synonym": 30,

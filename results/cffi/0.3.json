@@ -32,8 +32,8 @@
   },
   "2.5": {
     "`with`": 18,
-    "'any' member": 2,
     "'subprocess.check_call' member": 2,
+    "'any' member": 2,
     "'ctypes' module": 2
   },
   "2.6": {

@@ -5,8 +5,8 @@
   },
   "2.1": {
     "'unittest' module": 14,
-    "'warnings' module": 2,
-    "'__future__' module": 2
+    "'__future__' module": 2,
+    "'warnings' module": 2
   },
   "2.2": {
     "'type' member": 4,
@@ -27,9 +27,9 @@
     "`with`": 118,
     "'all' member": 2,
     "'hashlib' module": 1,
+    "'__future__.absolute_import' member": 1,
     "'functools' module": 1,
-    "'contextlib' module": 1,
-    "'__future__.absolute_import' member": 1
+    "'contextlib' module": 1
   },
   "2.6": {
     "byte string (b'..') or `str` synonym": 174,

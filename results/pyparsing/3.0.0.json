@@ -30,8 +30,8 @@
     "'datetime' module": 7,
     "'pickle.HIGHEST_PROTOCOL' member": 6,
     "'itertools' module": 3,
-    "'slice.indices' member": 2,
     "'tempfile.NamedTemporaryFile' member": 2,
+    "'slice.indices' member": 2,
     "'operator.pow' member": 1,
     "'textwrap' module": 1,
     "'platform' module": 1
@@ -88,8 +88,8 @@
     "keyword-only parameters": 59,
     "ellipsis literal (`...`) out of slices": 43,
     "exception cause": 8,
-    "`nonlocal`": 6,
     "'str.maketrans' member": 6,
+    "`nonlocal`": 6,
     "'list.clear' member": 5,
     "'str.isidentifier' member": 4,
     "'urllib.parse' module": 3,
@@ -107,8 +107,8 @@
   },
   "3.3": {
     "`yield from`": 12,
-    "'collections.abc' module": 2,
     "'importlib.machinery.FileFinder' member": 2,
+    "'collections.abc' module": 2,
     "raise ... from None": 2,
     "'html.entities.html5' member": 1,
     "'types.SimpleNamespace' member": 1

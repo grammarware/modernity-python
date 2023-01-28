@@ -16,8 +16,8 @@
     "'object' member": 1
   },
   "2.3": {
-    "'enumerate' member": 5,
     "'sys.getfilesystemencoding' member": 5,
+    "'enumerate' member": 5,
     "'dict.pop' member": 4,
     "'locale.getpreferredencoding' member": 2,
     "'textwrap' module": 1,

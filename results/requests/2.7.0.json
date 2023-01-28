@@ -38,8 +38,8 @@
     "'platform' module": 1,
     "'UnicodeEncodeError' member": 1,
     "'socket.socket.settimeout' member": 1,
-    "'enumerate' member": 1,
-    "'dummy_thread' module": 1
+    "'dummy_thread' module": 1,
+    "'enumerate' member": 1
   },
   "2.4": {
     "function decorators": 30,
@@ -67,11 +67,11 @@
     "'ssl' module": 4,
     "'bytearray' member": 2,
     "'collections.namedtuple' member": 2,
-    "'platform.python_implementation' member": 1,
     "'__future__.print_function' member": 1,
     "'__future__.unicode_literals' member": 1,
-    "'json' module": 1,
+    "'platform.python_implementation' member": 1,
     "'logging.StreamHandler' member": 1,
+    "'json' module": 1,
     "'Queue.LifoQueue' member": 1,
     "'operator.methodcaller' member": 1
   },
@@ -80,13 +80,13 @@
     "'logging.NullHandler' member": 2,
     "`\"..{}..\".format(..)`": 2,
     "'argparse' module": 1,
+    "'ssl.match_hostname' member": 1,
     "'ssl.HAS_SNI' member": 1,
     "'ssl.OP_NO_SSLv2' member": 1,
     "'ssl.OP_NO_SSLv3' member": 1,
     "'ssl.OP_NO_COMPRESSION' member": 1,
     "'ssl.SSLContext' member": 1,
-    "'ssl.wrap_socket(ciphers)'": 1,
-    "'ssl.match_hostname' member": 1
+    "'ssl.wrap_socket(ciphers)'": 1
   },
   "3.0": {
     "'urllib.parse' module": 3,
@@ -101,12 +101,12 @@
   },
   "3.2": {
     "'argparse' module": 1,
+    "'ssl.match_hostname' member": 1,
     "'ssl.HAS_SNI' member": 1,
     "'ssl.OP_NO_SSLv2' member": 1,
     "'ssl.OP_NO_SSLv3' member": 1,
     "'ssl.SSLContext' member": 1,
-    "'ssl.wrap_socket(ciphers)'": 1,
-    "'ssl.match_hostname' member": 1
+    "'ssl.wrap_socket(ciphers)'": 1
   },
   "3.3": {
     "'ConnectionError' member": 15,

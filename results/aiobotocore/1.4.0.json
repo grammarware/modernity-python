@@ -51,13 +51,13 @@
     "coroutines (async)": 111,
     "`async with`": 23,
     "async for-loops": 14,
-    "'typing' module": 2,
     "'StopAsyncIteration' member": 2,
+    "'typing' module": 2,
     "generalized unpacking": 2
   },
   "3.6": {
-    "variable annotations": 2,
-    "async generators (await and yield in same func)": 2
+    "async generators (await and yield in same func)": 2,
+    "variable annotations": 2
   },
   "3.7": {},
   "3.8": {},

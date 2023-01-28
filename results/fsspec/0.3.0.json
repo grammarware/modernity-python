@@ -22,8 +22,8 @@
   "2.3": {
     "'sum' member": 5,
     "'logging' module": 4,
-    "'tempfile.mkdtemp' member": 2,
     "'tempfile.mkstemp' member": 2,
+    "'tempfile.mkdtemp' member": 2,
     "'os.walk' member": 2,
     "'bz2' module": 1,
     "'ConfigParser.SafeConfigParser' member": 1

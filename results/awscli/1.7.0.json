@@ -49,8 +49,8 @@
   },
   "2.5": {
     "`with`": 87,
-    "'all' member": 10,
     "'any' member": 10,
+    "'all' member": 10,
     "'functools' module": 6,
     "'subprocess.check_call' member": 6,
     "'hashlib' module": 3,

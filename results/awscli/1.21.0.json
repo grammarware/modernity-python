@@ -53,8 +53,8 @@
     "'reversed' member": 2,
     "'threading.local' member": 2,
     "'unicodedata.east_asian_width' member": 1,
-    "'os.urandom' member": 1,
     "'decimal' module": 1,
+    "'os.urandom' member": 1,
     "'collections.deque' member": 1
   },
   "2.5": {

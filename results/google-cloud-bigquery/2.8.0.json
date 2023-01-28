@@ -7,8 +7,8 @@
     "'unittest' module": 17,
     "'warnings' module": 10,
     "'__future__' module": 6,
-    "'inspect' module": 1,
-    "'weakref' module": 1
+    "'weakref' module": 1,
+    "'inspect' module": 1
   },
   "2.2": {
     "'object' member": 351,
@@ -16,8 +16,8 @@
     "'super' member": 46,
     "'iter' member": 28,
     "'dict' member": 17,
-    "'types.GeneratorType' member": 8,
     "'property' member": 8,
+    "'types.GeneratorType' member": 8,
     "'bool' member": 6,
     "'StopIteration' member": 4,
     "'str.decode' member": 4,
@@ -28,8 +28,8 @@
     "'enumerate' member": 38,
     "'datetime' module": 19,
     "'logging' module": 5,
-    "'dict.pop' member": 4,
     "'itertools' module": 4,
+    "'dict.pop' member": 4,
     "'pkgutil' module": 2,
     "'tempfile.mkstemp' member": 2,
     "'sum' member": 2,
@@ -65,15 +65,15 @@
     "'warnings.catch_warnings' member": 61,
     "'io' module": 4,
     "'json' module": 4,
+    "class decorators": 2,
+    "'collections.namedtuple' member": 2,
+    "'__future__.print_function' member": 2,
+    "'property.setter' member": 2,
+    "'enumerate(start)'": 2,
     "'math.isnan' member": 2,
     "'math.isinf' member": 2,
     "'bytearray' member": 2,
-    "'property.setter' member": 2,
     "bytes `%` formatting or `str` synonym": 2,
-    "class decorators": 2,
-    "'collections.namedtuple' member": 2,
-    "'enumerate(start)'": 2,
-    "'__future__.print_function' member": 2,
     "'numbers' module": 1,
     "'ast' module": 1
   },
@@ -90,8 +90,8 @@
   "3.0": {
     "exception cause": 7,
     "'http' module": 3,
-    "'urllib.parse' module": 1,
-    "'queue' module": 1
+    "'queue' module": 1,
+    "'urllib.parse' module": 1
   },
   "3.1": {
     "'unittest.skipIf' member": 296,
@@ -106,8 +106,8 @@
   },
   "3.3": {
     "'TimeoutError' member": 6,
-    "'inspect.signature' member": 4,
-    "'collections.abc' module": 4
+    "'collections.abc' module": 4,
+    "'inspect.signature' member": 4
   },
   "3.4": {
     "'importlib.reload' member": 3,

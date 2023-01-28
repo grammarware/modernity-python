@@ -37,10 +37,10 @@
     "'__future__.unicode_literals' member": 5,
     "'abc' module": 3,
     "'next' member": 2,
-    "'json' module": 1,
-    "byte string (b'..') or `str` synonym": 1,
     "'threading.Thread.daemon' member": 1,
-    "'collections.namedtuple' member": 1
+    "'collections.namedtuple' member": 1,
+    "'json' module": 1,
+    "byte string (b'..') or `str` synonym": 1
   },
   "2.7": {
     "`\"..{}..\".format(..)`": 15,
