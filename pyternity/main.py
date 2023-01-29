@@ -21,8 +21,6 @@ def range_int(minimum: int = -math.inf, maximum: int = math.inf):
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Calculate modernity signatures for PyPI projects")
-    parser.add_argument('--max-release-date', type=datetime.fromisoformat, default=datetime.today(),
-                        help="Maximum date (in ISO 8601 format) any release of any project can have, e.g. 2023-01-31")
 
     type_group = parser.add_mutually_exclusive_group(required=True)
     type_group.add_argument('--most-popular-projects', type=range_int(minimum=1, maximum=5000),
@@ -31,6 +29,9 @@ def parse_arguments():
                             help="Calculate the signature for the given amount of biggest (in size) PyPI projects")
     type_group.add_argument('--projects', action='extend', nargs='+', type=str,
                             help="Calculate signature for specific PyPI projects")
+
+    parser.add_argument('--max-release-date', type=datetime.fromisoformat, default=datetime.today(),
+                        help="Maximum date (in ISO 8601 format) any release of any project can have, e.g. 2023-01-31")
 
     parser.add_argument('--most-popular-projects-hash', default='main',
                         help="Hash of the top-pypi-packages to use (default: 'main')")
