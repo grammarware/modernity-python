@@ -6,8 +6,6 @@ from pathlib import Path
 import sphinx.application
 import sphinx.domains.python
 
-from pyternity.utils import TMP_DIR
-
 
 def get_variable_from_file(file: Path, variable_name: str):
     with file.open() as f:
@@ -53,7 +51,6 @@ def generate_test_cases(doc_dir: Path, output_file: Path):
 
 
 if __name__ == '__main__':
-    _, python_version, test_cases_file = sys.argv
-
-    status_code = generate_test_cases(TMP_DIR / f"Python-{python_version}" / 'Doc', Path(test_cases_file))
+    _, python_doc_dir, test_cases_file = sys.argv
+    status_code = generate_test_cases(Path(python_doc_dir), Path(test_cases_file))
     exit(status_code)

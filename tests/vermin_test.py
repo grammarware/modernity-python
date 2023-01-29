@@ -82,10 +82,12 @@ class TestFeatures(unittest.TestCase):
 
         # Using Sphinx app twice in same Python process does cause some errors, so run them in a subprocess (parallel)
         sub2 = subprocess.Popen([
-            sys.executable, TESTS_DIR / "generate_test_cases.py", PYTHON_2_VERSION, TEST_CASES_FILE_PY2.absolute()
+            sys.executable, TESTS_DIR / "generate_test_cases.py", TMP_DIR / f"Python-{PYTHON_2_VERSION}" / 'Doc',
+            TEST_CASES_FILE_PY2.absolute()
         ])
         sub3 = subprocess.Popen([
-            sys.executable, TESTS_DIR / "generate_test_cases.py", PYTHON_3_VERSION, TEST_CASES_FILE_PY3.absolute()
+            sys.executable, TESTS_DIR / "generate_test_cases.py", TMP_DIR / f"Python-{PYTHON_3_VERSION}" / 'Doc',
+            TEST_CASES_FILE_PY3.absolute()
         ])
         self.assertEqual(sub2.wait(), 0)
         self.assertEqual(sub3.wait(), 0)
