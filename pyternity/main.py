@@ -39,10 +39,6 @@ def parse_arguments():
                         help="Calculate the signature for given type of releases of the projects "
                              "(leave out to calculate for all releases)")
 
-    parser.add_argument('--show-plots', action='store_true', default=False,
-                        help="Whether to show the plots (will pause program until closed; "
-                             "plots are always saved to file regardless)")
-
     # TODO add option to set logging level
 
     return parser.parse_args()
@@ -106,7 +102,7 @@ def main():
 
         # Don't render the plot if we (statistically) do not have enough
         if len(signatures) >= 5:
-            plot_project_signatures(project, signatures, args.show_plots)
+            plot_project_signatures(project, signatures)
         else:
             logger.warning(f"Not enough {args.release_type} releases found for {project.name:30}, all releases are: "
                            f"{[release.version for release in project.releases]}")
@@ -119,7 +115,7 @@ def main():
         logger.info(f"Python {version}: {features_count.most_common(5)}")
 
     logger.info("Plotting 'All Projects' plot ...")
-    plot_all_projects_signatures(all_signatures_per_project, args.show_plots)
+    plot_all_projects_signatures(all_signatures_per_project)
 
 
 if __name__ == '__main__':

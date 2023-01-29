@@ -25,6 +25,9 @@ def plot_3d_graph(X, Y, Z, name: str, z_axis_color: str = '') -> None:
     ax.yaxis.set_major_formatter(mdates.DateFormatter('%Y'))
     ax.set_box_aspect((8, 4, 3))
 
+    if z_axis_color:
+        ax.zaxis.set_pane_color(z_axis_color)
+
     # Matplotlib tries to convert the Python versions to floats, to fix that just use integers and custom labels
     ax.set_xticks(list(range(len(PYTHON_RELEASES))), labels=list(PYTHON_RELEASES))
 
@@ -72,27 +75,23 @@ def plot_all_projects_signatures(projects: list[dict[Release, dict]]) -> None:
     plot_3d_graph(all_versions, all_dates, all_data, "All Projects", 'lightgrey')
 
 
-def plot_vermin_vs_test_features(vermin_features: dict[str, list[str]], test_features: dict[str, set[str]],
+def plot_vermin_vs_test_features(vermin_features: dict[str, list[str]], all_test_features: dict[str, set[str]],
                                  failed_per_version: dict[str, int]):
     fig: FigureBase = plt.figure(figsize=(10, 7))
     ax: Axes = fig.add_subplot()
     ax.set_xlabel("Python version", fontsize=14)
     ax.set_ylabel("Amount of version-specific features", fontsize=14)
 
-    ax.plot(
-        list(PYTHON_RELEASES), [len(vermin_features.get(version, [])) for version in PYTHON_RELEASES],
-        label='Vermin'
-    )
+    failed_features = [failed_per_version.get(version, 0) for version in PYTHON_RELEASES]
+    test_features = [len(all_test_features.get(version, [])) for version in PYTHON_RELEASES]
+    vermin_features = [len(vermin_features.get(version, [])) for version in PYTHON_RELEASES]
 
-    ax.plot(
-        list(PYTHON_RELEASES), [len(test_features.get(version, [])) for version in PYTHON_RELEASES],
-        label='All tests'
-    )
+    logger.debug(f"{failed_features=}\n{test_features=}\n{vermin_features=}\npercentages_failed=" +
+                 ', '.join(f"{x / y * 100:.2f}" for x, y in zip(failed_features, test_features)))
 
-    ax.plot(
-        list(PYTHON_RELEASES), [failed_per_version.get(version, 0) for version in PYTHON_RELEASES],
-        label='Failed tests', color='red'
-    )
+    ax.plot(list(PYTHON_RELEASES), vermin_features, label='Vermin')
+    ax.plot(list(PYTHON_RELEASES), test_features, label='All tests')
+    ax.plot(list(PYTHON_RELEASES), failed_features, label='Failed tests', color='red')
 
     plt.tick_params(which='major')
     plt.legend(loc='upper right', fontsize=14)
