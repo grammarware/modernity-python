@@ -34,8 +34,8 @@ options:
 
 Calculate the signatures:
 
-```console
-.\pyternity\main.py --most-popular-projects 50 --release-type minor --max-release-date 2022-12-31 --most-popular-projects-hash fa998b797a5300a240e2b4c042f9a438ab91c7f5
+```shell
+.\pyternity\main.py --most-popular-projects 50 --release-type minor --max-release-date 2022-12-31 --most-popular-projects-hash fa998b797a5300a240e2b4c042f9a438ab91c7f5 --re-calculate-features
 ```
 
 Intermediate results of this can be found in `results` folder. All plots can be found in `plots` folder,

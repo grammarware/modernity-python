@@ -39,6 +39,12 @@ def parse_arguments():
                         help="Calculate the signature for given type of releases of the projects "
                              "(leave out to calculate for all releases)")
 
+    parser.add_argument('--re-download-projects', default=False, action='store_true',
+                        help="With this flag, all projects are always re-downloaded")
+
+    parser.add_argument('--re-calculate-features', default=False, action='store_true',
+                        help="With this flag, ignore the 'results' folder and instead process the PyPI files")
+
     # TODO add option to set logging level
 
     return parser.parse_args()
@@ -70,7 +76,7 @@ def main():
 
     for project_name in projects:
         logger.info(f"Calculating signatures for {project_name} ...")
-        project = PyPIProject(project_name)
+        project = PyPIProject(project_name, args.re_download_projects, args.re_calculate_features)
 
         signatures = {}
 

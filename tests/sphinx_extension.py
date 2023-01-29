@@ -177,10 +177,8 @@ def handle_versionmodified(version: str, node: sphinx.addnodes.versionmodified) 
             # So, this node should be before any new <section> (if any), then it tells something about the whole module
             next_section = section.next_node(docutils.nodes.section)
             if not next_section or node.line < next_section.line:
-                # FIXME Names attribute is always lowercase; so is wrong for e.g. 'DocXMLRPCServer'
+                # TODO Names attribute is always lowercase; so is wrong for e.g. 'DocXMLRPCServer'
                 module_name = section.get('names')[0].split(' ')[0].rstrip(':')
-
-                # TODO Currently only AST module has two versionmodified nodes, take first one
 
                 return [(
                     f"import {module_name}", Features(Features, {version: {f"'{module_name}' module": 1}})

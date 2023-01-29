@@ -22,11 +22,14 @@ MINOR_VERSION = re.compile(r"\d{1,7}\.\d+(\.0)*")  # Also includes MAJOR_VERSION
 
 
 class Release:
-    def __init__(self, project_name: str, version: str, files: list[dict[str, Any]]):
+    def __init__(self, project_name: str, version: str, files: list[dict[str, Any]],
+                 re_download: bool, re_calculate: bool):
         sdist_file = next(file for file in files if file['packagetype'] == "sdist")
 
         self.project_name = project_name.lower()
         self.version = version
+        self.re_download = re_download
+        self.re_calculate = re_calculate
         self.filename: str = sdist_file['filename']
         self.requires_python: str = sdist_file['requires_python'] or ''
         self.upload_date = datetime.fromisoformat(sdist_file['upload_time'])
@@ -44,7 +47,7 @@ class Release:
     def download_files(self):
         out_dir = EXAMPLES_DIR / self.project_name / self.version
         if out_dir.exists():
-            if not Config.redownload_examples:
+            if not self.re_download:
                 return out_dir
 
             shutil.rmtree(out_dir)
@@ -72,7 +75,7 @@ class Release:
         :return: Detected Features belonging to this release
         """
         result_path = RESULTS_DIR / self.project_name / (self.version + '.json')
-        if result_path.exists() and not Config.recalculate_examples:
+        if result_path.exists() and not self.re_calculate:
             with result_path.open() as result_file:
                 try:
                     return json.load(result_file)
@@ -103,7 +106,7 @@ class Release:
 
 
 class PyPIProject:
-    def __init__(self, project_name: str):
+    def __init__(self, project_name: str, re_download_releases: bool, re_calculate: bool):
         with request.urlopen(f"{PYPI_ENDPOINT}/pypi/{project_name}/json") as f:
             meta_data = json.load(f)
 
@@ -112,7 +115,7 @@ class PyPIProject:
             releases = []
             for version, files in meta_data['releases'].items():
                 try:
-                    releases.append(Release(self.name, version, files))
+                    releases.append(Release(self.name, version, files, re_download_releases, re_calculate))
                 except StopIteration:
                     # Not all releases have a sdist file, skip those
                     continue
