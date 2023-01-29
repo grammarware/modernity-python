@@ -1,5 +1,6 @@
 import argparse
 import math
+from collections import Counter
 
 from pyternity.plotting import plot_project_signatures, plot_all_projects_signatures
 from pyternity.pypi_crawler import PyPIProject, get_most_popular_projects, get_biggest_projects, Release
@@ -69,6 +70,7 @@ def main():
             version_check = lambda *_: True
 
     all_signatures_per_project = []
+    features_count_per_version = defaultdict(Counter)
 
     for project_name in projects:
         logger.info(f"Calculating signatures for {project_name} ...")
@@ -82,13 +84,6 @@ def main():
             logger.info(f"Calculating signature for {release.project_name} {release.version} ...")
 
             all_features = release.get_features()
-
-            # Log all those features that were detected before its Python version released
-            for version, features in all_features.items():
-                if features and version not in possible_versions(release.upload_date):
-                    logger.warning(f"Following Python {version} ({PYTHON_RELEASES[version].date()}) features "
-                                   f"should not be able to be detected on {release.upload_date.date()}: \n{features}")
-
             features_per_version = {version: sum(features.values()) for version, features in all_features.items()}
             total_features = sum(features_per_version.values())
 
@@ -97,8 +92,15 @@ def main():
                 continue
 
             signature = {version: features_per_version[version] / total_features for version in all_features}
-
             signatures[release] = signature
+
+            # Log all those features that were detected before its Python version released
+            for version, features in all_features.items():
+                features_count_per_version[version].update(features)
+
+                if features and version not in possible_versions(release.upload_date):
+                    logger.warning(f"Following Python {version} ({PYTHON_RELEASES[version].date()}) features "
+                                   f"should not be able to be detected on {release.upload_date.date()}: \n{features}")
 
         all_signatures_per_project.append(signatures)
 
@@ -108,6 +110,13 @@ def main():
         else:
             logger.warning(f"Not enough {args.release_type} releases found for {project.name:30}, all releases are: "
                            f"{[release.version for release in project.releases]}")
+
+    amount_of_features_detected = sum(map(Counter.total, features_count_per_version.values()))
+    logger.info(f"In total {amount_of_features_detected} features were detected")
+
+    logger.info("5 most common features detected per Python version:")
+    for version, features_count in features_count_per_version.items():
+        logger.info(f"Python {version}: {features_count.most_common(5)}")
 
     logger.info("Plotting 'All Projects' plot ...")
     plot_all_projects_signatures(all_signatures_per_project, args.show_plots)
