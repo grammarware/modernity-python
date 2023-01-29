@@ -41,29 +41,29 @@ pip install .
 Note: For security reasons, only use this tool on trusted PyPI projects.
 
 ```console
->>> .\pyternity\main.py -h 
+>>> .\pyternity\main.py -h
 
 usage: main.py [-h] (--most-popular-projects MOST_POPULAR_PROJECTS | --biggest-projects BIGGEST_PROJECTS | --projects PROJECTS [PROJECTS ...])
-               [--max-release-date MAX_RELEASE_DATE] [--most-popular-projects-hash MOST_POPULAR_PROJECTS_HASH] [--release-type {major,minor}] 
+               [--max-release-date MAX_RELEASE_DATE] [--most-popular-projects-hash MOST_POPULAR_PROJECTS_HASH] [--release-type {major,minor}]
                [--re-download-projects] [--re-calculate-features]
 
 Calculate modernity signatures for PyPI projects
 
-options:                                                                                                                                                                                                                                                                                              
-  -h, --help            show this help message and exit                                                                                                                                                                                                                                               
-  --most-popular-projects MOST_POPULAR_PROJECTS                                                                                                                                                                                                                                                       
-                        Calculate the signature for the given amount of most popular PyPI projects                                                                                                                                                                                                    
+options:
+  -h, --help            show this help message and exit
+  --most-popular-projects MOST_POPULAR_PROJECTS
+                        Calculate the signature for the given amount of most popular PyPI projects
   --biggest-projects BIGGEST_PROJECTS
                         Calculate the signature for the given amount of biggest (in size) PyPI projects
-  --projects PROJECTS [PROJECTS ...]                                                                                                                                                                                                                                                                  
-                        Calculate signature for specific PyPI projects                                                                                                                                                                                                                                
-  --max-release-date MAX_RELEASE_DATE                                                                                                                                                                                                                                                                 
-                        Maximum date (in ISO 8601 format) any release of any project can have, e.g. 2023-01-31                                                                                                                                                                                        
-  --most-popular-projects-hash MOST_POPULAR_PROJECTS_HASH                                                                                                                                                                                                                                             
-                        Hash of the top-pypi-packages to use (default: 'main')                                                                                                                                                                                                                        
-  --release-type {major,minor}                                                                                                                                                                                                                                                                        
-                        Calculate the signature for given type of releases of the projects (leave out to calculate for all releases)                                                                                                                                                                  
-  --re-download-projects                                                                                                                                                                                                                                                                              
+  --projects PROJECTS [PROJECTS ...]
+                        Calculate signature for specific PyPI projects
+  --max-release-date MAX_RELEASE_DATE
+                        Maximum date (in ISO 8601 format) any release of any project can have, e.g. 2023-01-31
+  --most-popular-projects-hash MOST_POPULAR_PROJECTS_HASH
+                        Hash of the top-pypi-packages to use (default: 'main')
+  --release-type {major,minor}
+                        Calculate the signature for given type of releases of the projects (leave out to calculate for all releases)
+  --re-download-projects
                         With this flag, all projects are always re-downloaded
   --re-calculate-features
                         With this flag, ignore the 'results' folder and instead process the PyPI files
