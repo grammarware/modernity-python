@@ -81,15 +81,23 @@ def main():
         for release in releases:
             logger.info(f"Calculating signature for {release.project_name} {release.version} ...")
 
-            features = release.get_features()
-            features_per_version = {version: sum(features.values()) for version, features in features.items()}
+            all_features = release.get_features()
+
+            # Log all those features that were detected before its Python version released
+            for version, features in all_features.items():
+                if features and version not in possible_versions(release.upload_date):
+                    logger.warning(f"Following Python {version} ({PYTHON_RELEASES[version].date()}) features "
+                                   f"should not be able to be detected on {release.upload_date.date()}: \n{features}")
+
+            features_per_version = {version: sum(features.values()) for version, features in all_features.items()}
             total_features = sum(features_per_version.values())
 
             if total_features == 0:
                 logger.info(f"Did not found any features for {release.project_name} {release.version}")
                 continue
 
-            signature = {version: features_per_version[version] / total_features for version in features}
+            signature = {version: features_per_version[version] / total_features for version in all_features}
+
             signatures[release] = signature
 
         all_signatures_per_project.append(signatures)
