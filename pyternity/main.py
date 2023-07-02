@@ -1,6 +1,7 @@
 import argparse
 import math
 from collections import Counter
+import numpy as np
 
 from pyternity.plotting import plot_project_signatures, plot_all_projects_signatures
 from pyternity.pypi_crawler import PyPIProject, get_most_popular_projects, get_biggest_projects, Release
@@ -76,25 +77,80 @@ def main():
     features_count_per_version = defaultdict(Counter)
 
     for project_name in projects:
-        logger.info(f"Calculating signatures for {project_name} ...")
+        # logger.info(f"Calculating signatures for {project_name} ...")
         project = PyPIProject(project_name, args.re_download_projects, args.re_calculate_features)
 
         signatures = {}
 
         releases = [r for r in project.releases if version_check(r) and r.upload_date <= args.max_release_date]
-        logger.info(f"Found {len(releases)} {args.release_type} releases: {', '.join(r.version for r in releases)}")
+        # logger.info(f"Found {len(releases)} {args.release_type} releases: {', '.join(r.version for r in releases)}")
         for release in releases:
-            logger.info(f"Calculating signature for {release.project_name} {release.version} ...")
+            # logger.info(f"Calculating signature for {release.project_name} {release.version} ...")
 
             all_features = release.get_features()
             features_per_version = {version: sum(features.values()) for version, features in all_features.items()}
             total_features = sum(features_per_version.values())
 
+            median_features = np.median(list(features_per_version.values()))
+
+            min_features = min(features_per_version.values())
+            max_features = max(features_per_version.values())
+            mean_features = np.mean(list(features_per_version.values()))
+            std_features = np.std(list(features_per_version.values()))
+            squared_sum = sum(value**2 for value in features_per_version.values())
+
+            q1_features = np.percentile(list(features_per_version.values()), 25)  # 1st quartile (25th percentile)
+            q3_features = np.percentile(list(features_per_version.values()), 75)  # 3rd quartile (75th percentile)
+            iqr_features = q3_features - q1_features  # Interquartile Range (IQR)
+           
+
             if total_features == 0:
                 logger.info(f"Did not found any features for {release.project_name} {release.version}")
                 continue
 
-            signature = {version: features_per_version[version] / total_features for version in all_features}
+         
+            # Linear: Max
+            signature = {version: features_per_version[version] / max_features for version in all_features}
+
+            # Linear: Max-Min
+            # signature = {version: (features_per_version[version] - min_features) / (max_features - min_features) 
+            # for version in all_features if max_features != min_features}
+
+            # Linear: Sum
+            # signature = {version: features_per_version[version] / total_features for version in all_features}
+  
+            # Semi-Linear: Vector
+            # signature = {version: features_per_version[version] / math.sqrt(squared_sum) for version in all_features}
+
+           # Applying z-score normalization to the signatures.
+            # if std_features != 0:
+            #     signature = {version: (features_per_version[version] - mean_features) / std_features 
+            #         for version in all_features}
+            # else:
+            #     signature = {version: 0 for version in all_features}  # or some other predefined constant
+            
+            # Semi-Linear: Log
+            # signature = {version: math.log1p(features_per_version[version]) / math.log1p(max_features) for version in all_features}
+
+            # Apply Robust Scaling
+            # signature = {}
+            # for version in all_features:
+            #     if iqr_features != 0:
+            #         signature[version] = (features_per_version[version] - median_features) / iqr_features
+            #     else:
+            #         signature[version] = 0  # or some other predefined constant
+
+            # Semi-Linear: Median
+            # signature = {version: (features_per_version[version] - median_features) for version in all_features}
+
+           # Applying VSS normalization to the signatures.
+            # if std_features != 0:
+            #     signature = {version: ((features_per_version[version] - mean_features) / std_features) * (mean_features/std_features) 
+            #         for version in all_features}
+            # else:
+            #     signature = {version: 0 for version in all_features}  # or some other predefined constant
+
+
             signatures[release] = signature
 
             # Log all those features that were detected before its Python version released
@@ -117,11 +173,11 @@ def main():
     amount_of_features_detected = sum(map(Counter.total, features_count_per_version.values()))
     logger.info(f"In total {amount_of_features_detected} features were detected")
 
-    logger.info("5 most common features detected per Python version:")
+    # logger.info("5 most common features detected per Python version:")
     for version, features_count in features_count_per_version.items():
         logger.info(f"Python {version}: {features_count.most_common(5)}")
 
-    logger.info("Plotting 'All Projects' plot ...")
+    # logger.info("Plotting 'All Projects' plot ...")
     plot_all_projects_signatures(all_signatures_per_project)
 
 
