@@ -42,10 +42,48 @@ def plot_3d_graph(X, Y, Z, name: str, z_axis_color: str = '') -> None:
     }
     ax.plot(list(releases_after_2008), mdates.date2num(list(releases_after_2008.values())), color='red')
 
-    plt.savefig(PLOTS_DIR / f"{name}.svg", bbox_inches=Bbox.from_extents(1.3, 2, 9.9, 7.7), metadata={'Date': ''})
+    
+    # plt.savefig(PLOTS_DIR / f"{name}.svg", bbox_inches=Bbox.from_extents(1.3, 2, 9.9, 7.7), metadata={'Date': ''})
+    plt.savefig(PLOTS_DIR / f"{name}_max.svg", bbox_inches=Bbox.from_extents(1.3, 2, 9.9, 7.7), metadata={'Date': ''})
+
+    # plt.savefig(PLOTS_DIR / f"{name}_robust.svg", bbox_inches=Bbox.from_extents(1.3, 2, 9.9, 7.7), metadata={'Date': ''})
 
     fig.clear()
     plt.close(fig)
+
+def plot_3d_graph_b(X, Y, Z, name: str, z_axis_color: str = '') -> None:
+    fig: FigureBase = plt.figure(figsize=(10, 10))
+
+    ax: Axes3D = fig.add_subplot(projection='3d')
+    ax.set_ylabel("Python version", fontsize=12, labelpad=10)  
+    ax.set_xlabel("Release date", fontsize=12)  
+    ax.set_zlabel("Amount of version-specific features", fontsize=12)
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y'))  
+    ax.set_box_aspect((4, 8, 3))
+    ax.set_title("something")
+    if z_axis_color:
+        ax.zaxis.set_pane_color(z_axis_color)
+
+    # Reversed the order of Python versions
+    ax.set_yticks(list(range(len(PYTHON_RELEASES))), labels=list(PYTHON_RELEASES))
+
+    ax.plot_trisurf(Y, X, Z, cmap=cm.get_cmap('Blues')) 
+
+    years = [datetime(y, 1, 1) for y in range(2008, datetime.now().year + 1, 3)]
+    ax.set_xticks(years)
+
+    # Now just simply enumerating the releases after 2008, not reversing
+    releases_after_2008 = {
+        i: r_date for i, r_date in enumerate(PYTHON_RELEASES.values()) if r_date >= datetime(2008, 1, 1)
+    }
+    ax.plot(mdates.date2num(list(releases_after_2008.values())), list(releases_after_2008), color='red')
+   
+    plt.savefig(PLOTS_DIR / f"{name}_max_backwards.svg", bbox_inches=Bbox.from_extents(1.3, 2, 9.9, 7.7), metadata={'Date': ''})
+    #plt.savefig(PLOTS_DIR / f"{name}_default_max_backwards.svg", bbox_inches='tight', metadata={'Date': ''})
+ 
+    fig.clear()
+    plt.close(fig)
+
 
 
 def get_x_y_z(signatures: dict[Release, Signature]):
@@ -61,7 +99,9 @@ def get_x_y_z(signatures: dict[Release, Signature]):
 
 
 def plot_project_signatures(project: PyPIProject, signatures: dict[Release, Signature]) -> None:
-    plot_3d_graph(*get_x_y_z(signatures), project.name)
+    X,Y,Z = get_x_y_z(signatures)
+    plot_3d_graph(X,Y,Z, project.name)
+    plot_3d_graph_b(X,Y,Z, project.name)
 
 
 def plot_all_projects_signatures(projects: list[dict[Release, dict]]) -> None:
